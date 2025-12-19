@@ -1,0 +1,1740 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+</script>
+<!-- End Google Tag Manager -->
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (Computer Science (COMP)) - Computer Science (COMP)"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Computer Science (COMP) UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../c/c-departments.html"
+                  >C Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">(Computer Science (COMP)) - Computer Science (COMP)</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+              <li><a href="../../../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="degreenametitle">(Computer Science (COMP)) - Computer Science (COMP)</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="original">original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="placeholder, some schools dont have excel files generated yet." download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Computer Science (COMP) Courses with "Computer Science (COMP)"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              (Computer Science (COMP)) - Computer Science (COMP) Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">196</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                Approximate Computing System for Big Data, Supercomputing and Embedded Systems
+              </div>
+            </section>
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Big Data
+              </div>
+            </section>
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                11, 5.6%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                65, 33.2%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                120, 61.2%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Computer Science (COMP) Courses with "Computer Science (COMP)" in their name
+              </div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Computer Science (COMP) Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+
+        
+                    <table id="departmentcoursestable">
+                        <tr>
+                        <td colspan="2">Computer Science (COMP)</td>
+                       
+                        <td colspan="2" >Rice University</td>
+                        </tr>
+                        <tr>
+                        <td>Course Name</td>
+                        <td>Course Code</td>
+                        <td>Course Hours</td>
+                        <td>Classification</td>
+                        </tr>
+                        
+
+                    
+                        <tr>
+                       <td>Ap/oth Credit Computer Science</td>
+                       <td>COMP 105</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computational Thinking</td>
+                       <td>COMP 140</td>
+                       <td>4</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Game Programming in Python</td>
+                       <td>COMP 160</td>
+                       <td>4</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Game Content Creation</td>
+                       <td>COMP 162</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Proof Writing</td>
+                       <td>COMP 181</td>
+                       <td>1</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Algorithmic Thinking</td>
+                       <td>COMP 182</td>
+                       <td>4</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Program Design</td>
+                       <td>COMP 215</td>
+                       <td>4</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Computer Organization</td>
+                       <td>COMP 222</td>
+                       <td>4</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Special Topics</td>
+                       <td>COMP 238</td>
+                       <td>1-4</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computational Optimization for Ai</td>
+                       <td>COMP 282</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computer Science Projects</td>
+                       <td>COMP 290</td>
+                       <td>1-3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computer Ethics</td>
+                       <td>COMP 301</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Object - Oriented Programming and Design</td>
+                       <td>COMP 310</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Functional Programming</td>
+                       <td>COMP 311</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Programming Languages</td>
+                       <td>COMP 312</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concurrent Program Design</td>
+                       <td>COMP 318</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Computer Systems</td>
+                       <td>COMP 321</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Principles of Parallel Programming</td>
+                       <td>COMP 322</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Digital Logic Design</td>
+                       <td>COMP 326</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Computer Security</td>
+                       <td>COMP 327</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Tools and Models for Data Science</td>
+                       <td>COMP 330</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Statistical Models and Algorithms for Data Science</td>
+                       <td>COMP 340</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Practical Machine Learning for Real World Applications</td>
+                       <td>COMP 341</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Geometric Modeling</td>
+                       <td>COMP 361</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Practical Problem-solving</td>
+                       <td>COMP 380</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Reasoning About Algorithms</td>
+                       <td>COMP 382</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computer Science Projects</td>
+                       <td>COMP 590</td>
+                       <td>1-4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Production Programming</td>
+                       <td>COMP 402</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Reasoning and Software</td>
+                       <td>COMP 403</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Topics in Object-oriented Design</td>
+                       <td>COMP 405</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Verified Programming</td>
+                       <td>COMP 408</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Logic and Computer Science and Artificial Intelligence</td>
+                       <td>COMP 409</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Software Engineering Methodology</td>
+                       <td>COMP 410</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Principles of Programming Languages</td>
+                       <td>COMP 411</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Compiler Construction for Undergraduate Students</td>
+                       <td>COMP 412</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Distributed Program Construction</td>
+                       <td>COMP 413</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Optimization: Algorithms, Complexity and Approximations</td>
+                       <td>COMP 414</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Real-world Software Development</td>
+                       <td>COMP 415</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Genome-scale Algorithms and Data Structures</td>
+                       <td>COMP 416</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Operating Systems and Security</td>
+                       <td>COMP 417</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Iot Programming and Data Analysis</td>
+                       <td>COMP 418</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Distributed Computer Systems</td>
+                       <td>COMP 420</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Operating Systems and Concurrent Programming</td>
+                       <td>COMP 421</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Parallel Computing</td>
+                       <td>COMP 422</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Mathematical Cryptography</td>
+                       <td>COMP 423</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Mobile and Embedded System Design and Application</td>
+                       <td>COMP 424</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computer Systems Architecture</td>
+                       <td>COMP 425</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Computer Security</td>
+                       <td>COMP 541</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Computer Networks</td>
+                       <td>COMP 429</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Database Systems</td>
+                       <td>COMP 430</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Web Development</td>
+                       <td>COMP 431</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Database System Implementation</td>
+                       <td>COMP 432</td>
+                       <td>3-4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Election Systems, Technologies, and Administration</td>
+                       <td>COMP 435</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Secure and Cloud Computing</td>
+                       <td>COMP 436</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Artificial Intelligence</td>
+                       <td>COMP 440</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Large-scale Machine Learning</td>
+                       <td>COMP 441</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Reinforcement Learning</td>
+                       <td>COMP 442</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Computer Vision</td>
+                       <td>COMP 447</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concrete Mathematics</td>
+                       <td>COMP 448</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Applied Machine Learning and Data Science Projects</td>
+                       <td>COMP 449</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Algorithmic and Ai-driven Robotics</td>
+                       <td>COMP 450</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Design and Analysis of Cyber-physical Systems</td>
+                       <td>COMP 451</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Quantum Computing Algorithms</td>
+                       <td>COMP 458</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Machine Learning With Graphs</td>
+                       <td>COMP 459</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Computer Game Creation</td>
+                       <td>COMP 460</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Senior Design in a Robotized World</td>
+                       <td>COMP 461</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Modern Robotics</td>
+                       <td>COMP 462</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computer Graphics</td>
+                       <td>COMP 463</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Modeling and Inference in Computational Genomics</td>
+                       <td>COMP 471</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computational Genomics for Microbial Forensics</td>
+                       <td>COMP 474</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Toolkits for Theory of Quantum Computing Science</td>
+                       <td>COMP 475</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Special Topics</td>
+                       <td>COMP 677</td>
+                       <td>1,3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Probabilistic Algorithms and Data Structure</td>
+                       <td>COMP 480</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Automata, Formal Languages, and Computability</td>
+                       <td>COMP 481</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Natural Language Processing</td>
+                       <td>COMP 484</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computational Complexity</td>
+                       <td>COMP 487</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computer Science Teaching</td>
+                       <td>COMP 491</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Rtg Cross-training in Data Science</td>
+                       <td>COMP 496</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Robotics</td>
+                       <td>COMP 498</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Production Programming</td>
+                       <td>COMP 501</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Neural Machine Learning I</td>
+                       <td>COMP 502</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Reasoning and Software</td>
+                       <td>COMP 503</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Object-oriented Programming and Design</td>
+                       <td>COMP 504</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Topics in Object-oriented Design</td>
+                       <td>COMP 505</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Compiler Construction for Graduate Students</td>
+                       <td>COMP 506</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computer-aided Program Design</td>
+                       <td>COMP 507</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Design and Analysis of Secure Embedded Systems for Iot Era</td>
+                       <td>COMP 508</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Logic and Computer Science and Artificial Intelligence</td>
+                       <td>COMP 509</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computer Ethics</td>
+                       <td>COMP 510</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Principles of Programming Languages</td>
+                       <td>COMP 511</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Compiler Construction</td>
+                       <td>COMP 512</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Complexity in Modern Systems</td>
+                       <td>COMP 513</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Optimization: Algorithms, Complexity, and Approximations</td>
+                       <td>COMP 514</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Compilation for Vector Parallel Processors</td>
+                       <td>COMP 515</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Cloud Computing Practicum</td>
+                       <td>COMP 516</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Operating Systems and Security</td>
+                       <td>COMP 517</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Iot Programming and Data Analysis</td>
+                       <td>COMP 518</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Genome-scale Algorithms and Data Structures</td>
+                       <td>COMP 519</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Distributed Systems</td>
+                       <td>COMP 520</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Operating Systems and Concurrent Programming</td>
+                       <td>COMP 521</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Multi-core Computing</td>
+                       <td>COMP 522</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Mathematical Cryptography</td>
+                       <td>COMP 523</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Mobile and Wireless Networking</td>
+                       <td>COMP 524</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Virtualization and Cloud Resource Management</td>
+                       <td>COMP 525</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>High Performance Computer Architecture</td>
+                       <td>COMP 526</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computer Systems Security</td>
+                       <td>COMP 527</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Virtualization</td>
+                       <td>COMP 528</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Computer Networks</td>
+                       <td>COMP 529</td>
+                       <td>1-4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Database System Implementation</td>
+                       <td>COMP 530</td>
+                       <td>3-4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Web Development and Design</td>
+                       <td>COMP 531</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Distributed Computer Systems</td>
+                       <td>COMP 532</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Database Systems</td>
+                       <td>COMP 533</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Parallel Computing</td>
+                       <td>COMP 534</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Approximate Computing System for Big Data, Supercomputing and Embedded Systems</td>
+                       <td>COMP 535</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Secure and Cloud Computing</td>
+                       <td>COMP 536</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Security of Hw Embedded Systems</td>
+                       <td>COMP 538</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Software Engineering Methodology</td>
+                       <td>COMP 539</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Statistical Machine Learning</td>
+                       <td>COMP 540</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Large-scale Machine Learning</td>
+                       <td>COMP 542</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Tools and Models - Data Science</td>
+                       <td>COMP 543</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Functional Programming</td>
+                       <td>COMP 544</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Topics in Optimization: From Simple to Complex Ml Systems</td>
+                       <td>COMP 545</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Computer Vision</td>
+                       <td>COMP 546</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Verified Programming</td>
+                       <td>COMP 548</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Applied Machine Learning and Data Science Projects</td>
+                       <td>COMP 549</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Algorithmic Robotics</td>
+                       <td>COMP 550</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Reinforcement Learning</td>
+                       <td>COMP 552</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Big Data Management for Data Science</td>
+                       <td>COMP 553</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computer Systems Architecture</td>
+                       <td>COMP 554</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Design and Analysis of Cyber-physical Systems</td>
+                       <td>COMP 555</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Computer Networks</td>
+                       <td>COMP 556</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Artificial Intelligence</td>
+                       <td>COMP 557</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Quantum Computing Algorithms</td>
+                       <td>COMP 558</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Machine Learning With Graphs</td>
+                       <td>COMP 559</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computer Graphics and Geometric Modeling</td>
+                       <td>COMP 560</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Geometric Modeling</td>
+                       <td>COMP 561</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Modern Robotics</td>
+                       <td>COMP 562</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Human-machine Interaction</td>
+                       <td>COMP 565</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Ai Ethics</td>
+                       <td>COMP 566</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Modeling and Inference in Computational Genomics</td>
+                       <td>COMP 571</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Bioinformatics: Network Analysis</td>
+                       <td>COMP 572</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Professional Development for Biomedical Informatics</td>
+                       <td>COMP 573</td>
+                       <td>1-3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computational Genomics for Microbial Forensics</td>
+                       <td>COMP 574</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Toolkits for Theory of Quantum Computing Science</td>
+                       <td>COMP 575</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>a Practical Introduction to Deep Machine Learning</td>
+                       <td>COMP 576</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Probabilistic Algorithms and Data Structure</td>
+                       <td>COMP 580</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Automata, Formal Languages, and Computability</td>
+                       <td>COMP 581</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Design and Analysis of Algorithms</td>
+                       <td>COMP 582</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Algorithms</td>
+                       <td>COMP 583</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Natural Language Processing</td>
+                       <td>COMP 652</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Probabilistic Toolkit for Learning and Computing</td>
+                       <td>COMP 585</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computational Complexity</td>
+                       <td>COMP 587</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Computer Science Teaching</td>
+                       <td>COMP 591</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Robotics</td>
+                       <td>COMP 598</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Seminar in Computer Science</td>
+                       <td>COMP 600</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Writing and Editing Conference Papers</td>
+                       <td>COMP 601</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Neural Machine Learning and Data Mining II</td>
+                       <td>COMP 602</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Ai Ethics</td>
+                       <td>COMP 603</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Professional Ethics and Communication in Computer Science</td>
+                       <td>COMP 604</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Seminar in Learning Theory</td>
+                       <td>COMP 605</td>
+                       <td>1,3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Digital Humanism</td>
+                       <td>COMP 607</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Workplace Communication for Computer Science Professionals</td>
+                       <td>COMP 608</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Software Construction</td>
+                       <td>COMP 610</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Programming Languages and Formal Methods</td>
+                       <td>COMP 611</td>
+                       <td>1-3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Programming Languages and Design</td>
+                       <td>COMP 613</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computer Programming for Data Science</td>
+                       <td>COMP 614</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Seminar in Computer Systems</td>
+                       <td>COMP 620</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Systems Software</td>
+                       <td>COMP 621</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Data Ethics</td>
+                       <td>COMP 622</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computer Architecture</td>
+                       <td>COMP 625</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Cybersecurity</td>
+                       <td>COMP 628</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Databases</td>
+                       <td>COMP 630</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Information Retrieval</td>
+                       <td>COMP 631</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Seminar in Machine Learning</td>
+                       <td>COMP 640</td>
+                       <td>1-3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Seminar on Interactive Machine Learning</td>
+                       <td>COMP 641</td>
+                       <td>1-3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Machine Learning</td>
+                       <td>COMP 642</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Big Data</td>
+                       <td>COMP 643</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Data Privacy & Security</td>
+                       <td>COMP 644</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Topics in Distributed Systems</td>
+                       <td>COMP 645</td>
+                       <td>1-3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Deep Learning for Vision and Language</td>
+                       <td>COMP 646</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Deep Learning</td>
+                       <td>COMP 647</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Seminar on Computer Vision</td>
+                       <td>COMP 648</td>
+                       <td>1,3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Quantum Computing Seminar — Know the Quantum Computing World From Algorithms</td>
+                       <td>COMP 649</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Physical Computing</td>
+                       <td>COMP 650</td>
+                       <td>1-3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Statistical Machine Learning</td>
+                       <td>COMP 653</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Topics in Robotic Manipulation;</td>
+                       <td>COMP 655</td>
+                       <td>1-3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Data Visualization</td>
+                       <td>COMP 665</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Seminar on Computational Biology</td>
+                       <td>COMP 670</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Statistics for Computing and Data Science</td>
+                       <td>COMP 680</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Principles of Algorithms and Software Area</td>
+                       <td>COMP 682</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Learning and Algorithms for Computational Medicine</td>
+                       <td>COMP 685</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Research and Thesis</td>
+                       <td>COMP 690</td>
+                       <td>1-12</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Pedagogy for Computer Science</td>
+                       <td>COMP 691</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Topics-computer Systems</td>
+                       <td>COMP 693</td>
+                       <td>1-3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Rtg Cross-training in Data Science</td>
+                       <td>COMP 696</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Research</td>
+                       <td>COMP 800</td>
+                       <td>1-15</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>DegreeView</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                    </table>
+                    
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+    </div>
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+
+
+                    <!-- Hover Script -->
+
+                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../static/js/animatetable.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,760 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+</script>
+<!-- End Google Tag Manager -->
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (EDP) - Educational Psychology"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Educational Psychology UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../e/e-departments.html"
+                  >E Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">(EDP) - Educational Psychology</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+              <li><a href="../../../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="degreenametitle">(EDP) - Educational Psychology</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="original">original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/edp-educationalpsychology/excel-files/edp-educationalpsychology-courses-originaltheme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Educational Psychology Courses with "Educational Psychology"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              (EDP) - Educational Psychology Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">56</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                Research Practicum in Human Development, Culture, and Learning Sciences
+              </div>
+            </section>
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Thesis
+              </div>
+            </section>
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                5, 8.9%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                14, 25.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                37, 66.1%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                33
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Educational Psychology Courses with "Educational Psychology" in their name
+              </div>
+              <div class="statscontent">
+                5, 8.9%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Educational Psychology Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+
+        
+                    <table id="departmentcoursestable">
+                        <tr>
+                        <td colspan="2">Educational Psychology</td>
+                       
+                        <td colspan="2" >The University of Texas at Austin</td>
+                        </tr>
+                        <tr>
+                        <td>Course Name</td>
+                        <td>Course Code</td>
+                        <td>Course Hours</td>
+                        <td>Classification</td>
+                        </tr>
+                        
+
+                    
+                        <tr>
+                       <td>Strategic Learning for the Twenty-First Century</td>
+                       <td>EDP 304 (TCCN: EDUC 1300, PSYC 1300)</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Statistical Reasoning and Literacy</td>
+                       <td>EDP 308</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Intergroup Dialogue</td>
+                       <td>EDP 216, 316, 416</td>
+                       <td>2, 3, 4</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Selected Topics in Educational Psychology</td>
+                       <td>EDP 118T, 218T, 318T, 418T</td>
+                       <td>1, 2, 3, 4</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Educational Psychology</td>
+                       <td>EDP 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
+                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Cognition, Human Learning, and Motivation</td>
+                       <td>EDP 320</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Educational Psychology</td>
+                       <td>EDP 187T, 287T, 387T, 487T, 587T, 687T</td>
+                       <td>1, 2, 3, 4, 5, 6</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Life Span Development</td>
+                       <td>EDP 350E</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Adolescent Development</td>
+                       <td>EDP 350G</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Human Sexuality</td>
+                       <td>EDP 350L</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Individual Counseling and Psychotherapy</td>
+                       <td>EDP 352D</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Multicultural Approach to Counseling and Psychotherapy</td>
+                       <td>EDP 352G</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Mindfulness, Compassion, and the Self</td>
+                       <td>EDP 352K</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Addiction Counseling and Theories</td>
+                       <td>EDP 352N</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Psychology of Women</td>
+                       <td>EDP 354E</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Psychology of the African American Experience</td>
+                       <td>EDP 354G</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Psychology of Race and Racism</td>
+                       <td>EDP 354J</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Emotional and Behavioral Disorders</td>
+                       <td>EDP 358D</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Statistics</td>
+                       <td>EDP 371</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Research in Educational Psychology</td>
+                       <td>EDP 379L</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Quantitative Methods</td>
+                       <td>EDP 380C, 480C</td>
+                       <td>3, 4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Psychometrics</td>
+                       <td>EDP 380D</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Practicum in Psychometrics</td>
+                       <td>EDP 380Q</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Research Methodology</td>
+                       <td>EDP 381C</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Statistical Modeling</td>
+                       <td>EDP 381D</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Item Response Theory</td>
+                       <td>EDP 381E</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Practicum in Program Evaluation</td>
+                       <td>EDP 381S</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Social Psychology and Behavioral Sciences in Education</td>
+                       <td>EDP 382C</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Learning and Motivation</td>
+                       <td>EDP 382D</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Biological Basis of Behavior and Learning</td>
+                       <td>EDP 382E</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Human Development</td>
+                       <td>EDP 382F</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Cultural Diversity and Individual Differences</td>
+                       <td>EDP 382G</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Research Practicum in Human Development, Culture, and Learning Sciences</td>
+                       <td>EDP 382Q</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Assessment and Diagnosis</td>
+                       <td>EDP 383C, 483C</td>
+                       <td>3, 4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Practicum: Level One</td>
+                       <td>EDP 383D</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Practicum: Level Two</td>
+                       <td>EDP 383E</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Practicum: Level Three</td>
+                       <td>EDP 383F</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Prevention and Intervention</td>
+                       <td>EDP 384C</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Group Counseling and Interventions</td>
+                       <td>EDP 384D</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Practicum in Counseling</td>
+                       <td>EDP 184Q, 384Q</td>
+                       <td>1, 3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Practicum in Spanish for the Helping Professions</td>
+                       <td>EDP 384S</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Practicum</td>
+                       <td>EDP 184V, 384V</td>
+                       <td>1, 3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Professional Issues, Leadership, and Development</td>
+                       <td>EDP 385C</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Practicum in Post-Secondary Teaching</td>
+                       <td>EDP 386Q</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>School Psychology Specialist Internship</td>
+                       <td>EDP 193E, 393E</td>
+                       <td>1, 3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Internship in School Psychology</td>
+                       <td>EDP 193N, 393N</td>
+                       <td>1, 3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Colloquium in Educational Psychology</td>
+                       <td>EDP 194</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Internship in Counseling</td>
+                       <td>EDP 194E, 394E</td>
+                       <td>1, 3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Internship in Counseling</td>
+                       <td>EDP 194L, 394L</td>
+                       <td>1, 3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Internship in Counseling Psychology</td>
+                       <td>EDP 194N, 394N</td>
+                       <td>1, 3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Research</td>
+                       <td>EDP 194R, 294R, 394R</td>
+                       <td>1, 2, 3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Qualifying Process Research</td>
+                       <td>EDP 395R</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Thesis</td>
+                       <td>EDP 698</td>
+                       <td>6</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Master's Report</td>
+                       <td>EDP 398R</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>College Teaching Methodology</td>
+                       <td>EDP 398T</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Dissertation</td>
+                       <td>EDP 399W, 699W, 999W</td>
+                       <td>3, 6, 9</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>DegreeView</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                    </table>
+                    
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+    </div>
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+
+
+                    <!-- Hover Script -->
+
+                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../static/js/animatetable.js"></script>
+    
+  </body>
+</html>

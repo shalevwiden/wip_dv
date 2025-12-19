@@ -1,0 +1,1817 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+</script>
+<!-- End Google Tag Manager -->
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (Earth, Environmental and Planetary Sciences (EEPS<br>"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Earth, Environmental and Planetary Sciences (EEPS) UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../e/e-departments.html"
+                  >E Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">(Earth, Environmental and Planetary Sciences (EEPS<br></li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+              <li><a href="../../../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="degreenametitle">(Earth, Environmental and Planetary Sciences (EEPS<br></h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="original">original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="placeholder, some schools dont have excel files generated yet." download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Earth, Environmental and Planetary Sciences (EEPS) Courses with "Earth, Environmental and Planetary Sciences (EEPS)"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              (Earth, Environmental and Planetary Sciences (EEPS<br> Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">207</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                Climate Change, Economics, and the Wine Industry: Applied Environmental Problem Solving for the 21st
+              </div>
+            </section>
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                the Earth
+              </div>
+            </section>
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                18, 8.7%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                72, 34.8%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                117, 56.5%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Earth, Environmental and Planetary Sciences (EEPS) Courses with "Earth, Environmental and Planetary Sciences (EEPS)" in their name
+              </div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Earth, Environmental and Planetary Sciences (EEPS) Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+
+        
+                    <table id="departmentcoursestable">
+                        <tr>
+                        <td colspan="2">Earth, Environmental and Planetary Sciences (EEPS)</td>
+                       
+                        <td colspan="2" >Rice University</td>
+                        </tr>
+                        <tr>
+                        <td>Course Name</td>
+                        <td>Course Code</td>
+                        <td>Course Hours</td>
+                        <td>Classification</td>
+                        </tr>
+                        
+
+                    
+                        <tr>
+                       <td>the Earth</td>
+                       <td>EEPS 101</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>History of the Earth: Formation to Life</td>
+                       <td>EEPS 102</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Field Trips for the Earth</td>
+                       <td>EEPS 103</td>
+                       <td>1</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Investigating Earth's Surface</td>
+                       <td>EEPS 106</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Climate Change and Extreme Weather</td>
+                       <td>EEPS 107</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Natural Disasters</td>
+                       <td>EEPS 108</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Oceanography</td>
+                       <td>EEPS 109</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Earth System, Environment, and Society</td>
+                       <td>EEPS 110</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Inhabiting Planet Earth</td>
+                       <td>EEPS 111</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Environmental Crisis Seminar</td>
+                       <td>EEPS 113</td>
+                       <td>1</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Discoveries in Earth, Environmental and Planetary Sciences Seminar</td>
+                       <td>EEPS 114</td>
+                       <td>1</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Planets</td>
+                       <td>EEPS 115</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Earth and the Solar System</td>
+                       <td>EEPS 116</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Undergraduate Field Trip Seminar</td>
+                       <td>EEPS 203</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Computation in the Earth, Environmental and Planetary Sciences</td>
+                       <td>EEPS 220</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Climate Change, Economics, and the Wine Industry: Applied Environmental Problem Solving for the 21st</td>
+                       <td>EEPS 234</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Special Topics</td>
+                       <td>EEPS 238</td>
+                       <td>1-4</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Experiential Education in Earth, Environmental, and Planetary Sciences</td>
+                       <td>EEPS 299</td>
+                       <td>1</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Energy and the Environment</td>
+                       <td>EEPS 307</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Visualizing Nature</td>
+                       <td>EEPS 309</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Earth and Planetary Surface Environments</td>
+                       <td>EEPS 321</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Earth and Planetary Chemistry and Materials</td>
+                       <td>EEPS 322</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Earth and Planetary Structure and Dynamics</td>
+                       <td>EEPS 323</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Earth's Interior</td>
+                       <td>EEPS 324</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Oceans, Atmospheres and Climate</td>
+                       <td>EEPS 325</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Earth Laboratory</td>
+                       <td>EEPS 334</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Global Biogeochemical Cycles</td>
+                       <td>EEPS 340</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Geology Field Camp</td>
+                       <td>EEPS 390</td>
+                       <td>1-6</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Practical Experience in Earth, Environmental and Planetary Science</td>
+                       <td>EEPS 391</td>
+                       <td>1-6</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar: Undergraduate Honors Thesis</td>
+                       <td>EEPS 401</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar: Department Research</td>
+                       <td>EEPS 403</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar: Department Research</td>
+                       <td>EEPS 604</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar:  Current Research in Earth, Environmental and Planetary Sciences</td>
+                       <td>EEPS 405</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar: Current Research in Earth Science</td>
+                       <td>EEPS 406</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Optical Mineralogy and Petrography</td>
+                       <td>EEPS 410</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Characterization of Earth, Environmental, and Planetary Materials</td>
+                       <td>EEPS 411</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Petrology</td>
+                       <td>EEPS 412</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Petrology II</td>
+                       <td>EEPS 413</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Geochemistry of Earth’s Surface</td>
+                       <td>EEPS 415</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Cosmochemistry and Meteoritics</td>
+                       <td>EEPS 417</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Trace Element and Isotope Geochemistry</td>
+                       <td>EEPS 418</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Organic Geochemistry</td>
+                       <td>EEPS 420</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Planetary Surface Processes</td>
+                       <td>EEPS 425</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Geomorphology</td>
+                       <td>EEPS 426</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Mechanics of Sediment Transport</td>
+                       <td>EEPS 427</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Antarctic Marine Geology</td>
+                       <td>EEPS 428</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Paleoceanography</td>
+                       <td>EEPS 429</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Applied Stratigraphic Methods</td>
+                       <td>EEPS 430</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computational Modeling of Subsurface Fluid Flow</td>
+                       <td>EEPS 431</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Fluid Flow in Fractured Rocks</td>
+                       <td>EEPS 432</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Climate Dynamics</td>
+                       <td>EEPS 433</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Paleoclimate</td>
+                       <td>EEPS 434</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Remote Sensing</td>
+                       <td>EEPS 435</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Gis for Scientists and Engineers</td>
+                       <td>EEPS 436</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Earth’s Natural Resources for the Energy Transition</td>
+                       <td>EEPS 437</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Science of Nature-based Carbon Sequestration</td>
+                       <td>EEPS 438</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Geomicrobiology</td>
+                       <td>EEPS 439</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Geospatial Data Science</td>
+                       <td>EEPS 440</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Earth and Planetary Interiors</td>
+                       <td>EEPS 445</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seismology I</td>
+                       <td>EEPS 446</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Exploration Geophysics</td>
+                       <td>EEPS 448</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Geophysical Data Analysis:  Digital Signal Processing</td>
+                       <td>EEPS 450</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Geophysical Data Analysis:  Inverse Methods</td>
+                       <td>EEPS 451</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Seismic Interpretation: Structural Styles and Seismic Stratigraphy</td>
+                       <td>EEPS 454</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Reflection Seismic Data Processing</td>
+                       <td>EEPS 455</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>3d Seismic Reflection Data Interpretation</td>
+                       <td>EEPS 456</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Carbon Capture, Utilization and Storage</td>
+                       <td>EEPS 457</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Environmental & Applied Rock Physics</td>
+                       <td>EEPS 458</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Well Logging and Petrophysics</td>
+                       <td>EEPS 459</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Global Tectonics</td>
+                       <td>EEPS 460</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Structure and Evolution of Tectonic Systems</td>
+                       <td>EEPS 461</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Tectonophysics</td>
+                       <td>EEPS 462</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Physics of Faulting and Earthquakes</td>
+                       <td>EEPS 463</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Heat and Mass Transport on Earth and Planets</td>
+                       <td>EEPS 464</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Rock Deformation and Rheology</td>
+                       <td>EEPS 465</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Geomechanics</td>
+                       <td>EEPS 467</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Volcanoes</td>
+                       <td>EEPS 468</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Planetary Volcanism</td>
+                       <td>EEPS 469</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Earth Systems Modeling I: Philosophy and Fundamentals</td>
+                       <td>EEPS 471</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Earth Systems Modeling: Numerical Techniques and Applications</td>
+                       <td>EEPS 472</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Formation and Evolution of Planetary Systems</td>
+                       <td>EEPS 473</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Planetary Systems: Orbits, Atmospheres, Interiors, and Minor Bodies</td>
+                       <td>EEPS 474</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Special Topics</td>
+                       <td>EEPS 677</td>
+                       <td>1-4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Energy Transition Seminar</td>
+                       <td>EEPS 480</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Undergraduate Research in Earth, Environmental and Planetary Sciences</td>
+                       <td>EEPS 481</td>
+                       <td>1-6</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Decision Making and Economics in the Energy Industry</td>
+                       <td>EEPS 484</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Role of Geoscientists in the Energy Industry</td>
+                       <td>EEPS 485</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Petroleum Industry Economics and Management</td>
+                       <td>EEPS 486</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Economic Geology Mineral Deposits</td>
+                       <td>EEPS 488</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Special Studies for Undergraduates</td>
+                       <td>EEPS 491</td>
+                       <td>1-6</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar: Topics in Environmental Science</td>
+                       <td>EEPS 495</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graphic and Visual Design for Scientists</td>
+                       <td>EEPS 499</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Special Studies for Graduate Students</td>
+                       <td>EEPS 501</td>
+                       <td>1-15</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Biogeochemistry</td>
+                       <td>EEPS 510</td>
+                       <td>1-4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Topics in Geochemistry</td>
+                       <td>EEPS 511</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar:  Special Topics in High Temperature Geochemistry</td>
+                       <td>EEPS 514</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar: Special Topics in Cosmochemistry</td>
+                       <td>EEPS 515</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Field Trip for Advanced Geology</td>
+                       <td>EEPS 516</td>
+                       <td>1-4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Applied Sedimentology I</td>
+                       <td>EEPS 525</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Applied Sedimentology II</td>
+                       <td>EEPS 526</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Carbonate Sediments: Depositional Systems and Processes</td>
+                       <td>EEPS 527</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics on Carbonates</td>
+                       <td>EEPS 528</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Siliciclastic Sediments: Depositional Systems and Processes</td>
+                       <td>EEPS 530</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Topics in Basin Sedimentology and Stratigraphy</td>
+                       <td>EEPS 531</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Topics in Fluvial-deltaic Sedimentology and Stratigraphy</td>
+                       <td>EEPS 532</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Clastic Depositional Systems Field Trip</td>
+                       <td>EEPS 533</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Field Trip for Stratigraphy and Structural Geology</td>
+                       <td>EEPS 535</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar:  Topics in Sedimentology and Planetary Topics</td>
+                       <td>EEPS 537</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar:  Caribbean</td>
+                       <td>EEPS 538</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Cryosphere</td>
+                       <td>EEPS 540</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Mountains, Climate and Global Carbon Cycling</td>
+                       <td>EEPS 541</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Marine Geology Systems</td>
+                       <td>EEPS 542</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Earth's Atmosphere</td>
+                       <td>EEPS 543</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar:  Advanced Topics in Hydrogeology</td>
+                       <td>EEPS 544</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Theoretical Global Seismology I</td>
+                       <td>EEPS 545</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seismology II</td>
+                       <td>EEPS 546</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>3d Seismic Reflection Data Interpretation</td>
+                       <td>EEPS 548</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Economics and Policies of the Energy Transition</td>
+                       <td>EEPS 549</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Topics in the Solid Earth I</td>
+                       <td>EEPS 550</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Topics in the Solid Earth II</td>
+                       <td>EEPS 551</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Topics in Geophysics</td>
+                       <td>EEPS 552</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar: Seismology</td>
+                       <td>EEPS 555</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar:  Seismic Modeling and Inverse Methods</td>
+                       <td>EEPS 556</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar:  Global Seismology</td>
+                       <td>EEPS 557</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Tectonophysics/global Tectonics</td>
+                       <td>EEPS 560</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Planetary Dynamics and Magmatic Processes</td>
+                       <td>EEPS 561</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Planet Mars: Formation, Differentiation, Structure and Evolution</td>
+                       <td>EEPS 563</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Moon: Origin and Evolution of Earth's Companion</td>
+                       <td>EEPS 564</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar:  Advanced Topics in Earth Structure and Deformation</td>
+                       <td>EEPS 567</td>
+                       <td>1-4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar:  Developments in Structural Geology</td>
+                       <td>EEPS 568</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar:  Tectonics of Continental Margins</td>
+                       <td>EEPS 569</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar: Topics in Volcanology, Magmatic, and Hydrothermal Processes</td>
+                       <td>EEPS 571</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar: Advanced Topics in Geofluids, Geothermics, and Planetary Evolution</td>
+                       <td>EEPS 572</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Hydrocarbon Exploration</td>
+                       <td>EEPS 578</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Applied Subsurface Systems: Analytical Methods for Energy and Sustainability</td>
+                       <td>EEPS 579</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar:  Quantitative Petroleum Systems Analysis</td>
+                       <td>EEPS 580</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Modern Exploration Technology</td>
+                       <td>EEPS 581</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Geosciences for the Energy Transition</td>
+                       <td>EEPS 582</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Data Management and Data Governance</td>
+                       <td>EEPS 583</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Data Science Environmental and Geosciences</td>
+                       <td>EEPS 584</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computational and Data Science in the Energy Industry</td>
+                       <td>EEPS 585</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Data Science & Methods</td>
+                       <td>EEPS 586</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Sem:  Petroleum Geochemistry - Principals and Practice</td>
+                       <td>EEPS 587</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Geomathematics</td>
+                       <td>EEPS 589</td>
+                       <td>1-3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar:  Department Type-locale Field Trips</td>
+                       <td>EEPS 590</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar: Department Type - Locale Field Trip</td>
+                       <td>EEPS 591</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Special Topics in Earth, Environmental & Planetary Sciences</td>
+                       <td>EEPS 592</td>
+                       <td>1-2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Geothermal Energy Systems</td>
+                       <td>EEPS 593</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Practical Methods of Earth Science Communication</td>
+                       <td>EEPS 594</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Pitching Your Science</td>
+                       <td>EEPS 595</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Geophysical Field Work for Educators</td>
+                       <td>EEPS 597</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Putting Earth Science Into Action</td>
+                       <td>EEPS 598</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar:  Current Research in Earth, Environmental and Planetary Sciences</td>
+                       <td>EEPS 605</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar: Current Research in Earth, Environmental and Planetary Sciences</td>
+                       <td>EEPS 606</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Optical Mineralogy and Petrography</td>
+                       <td>EEPS 610</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Characterization of Earth, Environmental, and Planetary Materials</td>
+                       <td>EEPS 611</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Petrology</td>
+                       <td>EEPS 612</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Petrology II</td>
+                       <td>EEPS 613</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Geochemistry of Earth's Surface</td>
+                       <td>EEPS 615</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Cosmochemistry and Meteoritics</td>
+                       <td>EEPS 617</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Trace Element and Isotope Geochemistry</td>
+                       <td>EEPS 618</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Organic Geochemistry</td>
+                       <td>EEPS 620</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Planetary Surface Processes</td>
+                       <td>EEPS 625</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Geomorphology</td>
+                       <td>EEPS 626</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Mechanics of Sediment Transport</td>
+                       <td>EEPS 627</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Antarctic Marine Geology</td>
+                       <td>EEPS 628</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Paleoceanography</td>
+                       <td>EEPS 629</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Applied Stratigraphic Methods</td>
+                       <td>EEPS 630</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computational Modeling of Subsurface Fluid Flow</td>
+                       <td>EEPS 631</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Fluid Flow in Fractured Rocks</td>
+                       <td>EEPS 632</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Climate Dynamics</td>
+                       <td>EEPS 633</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Paleoclimate</td>
+                       <td>EEPS 634</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Remote Sensing</td>
+                       <td>EEPS 635</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Gis for Scientists and Engineers</td>
+                       <td>EEPS 636</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Earth's Natural Resources for the Energy Transition</td>
+                       <td>EEPS 637</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Science of Nature-based Carbon Sequestration</td>
+                       <td>EEPS 638</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Geomicrobiology</td>
+                       <td>EEPS 639</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Geospatial Data Science</td>
+                       <td>EEPS 640</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Earth and Planetary Interiors</td>
+                       <td>EEPS 645</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seismology I</td>
+                       <td>EEPS 646</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Exploration Geophysics</td>
+                       <td>EEPS 648</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Geophysical Data Analysis: Digital Signal Processing</td>
+                       <td>EEPS 650</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Geophysical Data Analysis:  Inverse Methods</td>
+                       <td>EEPS 651</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Seismic Interpretation: Structural Styles and Seismic Stratigraphy</td>
+                       <td>EEPS 654</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Carbon Capture, Utilization and Storage</td>
+                       <td>EEPS 657</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Environmental & Applied Rock Physics</td>
+                       <td>EEPS 658</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Well Logging and Petrophysics</td>
+                       <td>EEPS 659</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Global Tectonics</td>
+                       <td>EEPS 660</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Structure and Evolution of Tectonic Systems</td>
+                       <td>EEPS 661</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Tectonophysics</td>
+                       <td>EEPS 662</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Physics of Faulting and Earthquakes</td>
+                       <td>EEPS 663</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Heat, and Mass Transport on Earth and Planets</td>
+                       <td>EEPS 664</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Rock Deformation and Rheology</td>
+                       <td>EEPS 665</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Geomechanics</td>
+                       <td>EEPS 667</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Volcanoes</td>
+                       <td>EEPS 668</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Planetary Volcanism</td>
+                       <td>EEPS 669</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Earth Systems Modeling I: Philosophy and Fundamentals</td>
+                       <td>EEPS 671</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Earth Systems Modeling: Numerical Techniques and Applications</td>
+                       <td>EEPS 672</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Formation and Evolution of Planetary Systems</td>
+                       <td>EEPS 673</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Planetary Systems: Orbits, Atmospheres, Interiors, and Minor Bodies</td>
+                       <td>EEPS 674</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Energy Transition Seminar</td>
+                       <td>EEPS 680</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Decision Making and Economics in the Energy Industry</td>
+                       <td>EEPS 684</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Role of Geoscientists in the Energy Industry</td>
+                       <td>EEPS 685</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Petroleum Industry Economics and Management</td>
+                       <td>EEPS 686</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Economic Geology Mineral Deposits</td>
+                       <td>EEPS 688</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graphic and Visual Design for Scientists</td>
+                       <td>EEPS 699</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Thesis Research</td>
+                       <td>EEPS 800</td>
+                       <td>1-15</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>DegreeView</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                    </table>
+                    
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+    </div>
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+
+
+                    <!-- Hover Script -->
+
+                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../static/js/animatetable.js"></script>
+    
+  </body>
+</html>

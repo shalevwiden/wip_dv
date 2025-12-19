@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="Explore Visualizations and Tabular Data for all 141 Degrees at UT Austin"
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, csv, .xlsx,pdf"
+    />
+
+    <meta name="author" content="DegreeView" />
+    <!-- end seo -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://storage.googleapis.com/degreeview/degreeviewimages/site_favicon.png"
+      type="image/png"
+    />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+    <!-- to track the new update -->
+    <script>
+      if (window.location.pathname === "/utcoursesindex") {
+        gtag("event", "courses_index_view");
+      }
+    </script>
+
+    <title>Home - DegreeView UT Departments</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="static/css/main.css" />
+
+    <!-- animation stylesheet -->
+    <!-- Barlow Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons ( download icon from here is used) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- this is just testing -->
+
+    <link rel="stylesheet" href="cssfiles/filterchaos.css" />
+  </head>
+  <body>
+    <!-- this div basically has the entire site in it. Flex direction column -->
+    <div class="sitecontainer" id="schoolhomepage">
+      <!-- 
+      
+      -->
+      <div class="abovemainsite">
+        <div class="topnav">
+          <!-- this is empty but is just on the top to take up space for the color
+           KEEP THIS-->
+        </div>
+        <div class="biglogobox">
+          <a href="#" onclick="return false;" id="homeimagelink"
+            ><img
+              class="biglogo"
+              src="https://storage.googleapis.com/degreeview/degreeviewimages/logo5.png"
+              alt=""
+              id="biglogoid"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- mainsite
+        contains right and left sections
+      -->
+      <div class="mainsite">
+        <!-- intro box that is -->
+        <div class="introbox">
+          <div class="intro-paragraph">
+            <p>
+              See information on departments and their courses at UT Austin in a
+              new, unprecedented way, with features such as table animations,
+              colorful and themed Excel files, and statistics such as department
+              course count or longest department course name.
+            </p>
+          </div>
+        </div>
+        <!-- 3 buttons -->
+        <div class="middlenav">
+          <nav class="home_random_stats">
+            <ul>
+              <!-- keep in mind the entire li is clickable here -->
+              <li><a href="../aboutpage.html">About</a></li>
+              <li id="randompagebutton">
+                <a id="randomlink" href="">Random Page</a>
+              </li>
+              <li><a href="../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="selector">
+          <div class="coursedata" id="currentpage">Courses Data</div>
+
+          <div class="degreeplans">
+            <a href="../index.html">Degree Plans</a>
+          </div>
+        </div>
+        <!-- now have the list of schools -->
+        <div class="departmentcontainer">
+          {% for letter, data in departmentcontainerdata.items() %}
+          <h2>{{letter}}</h2>
+
+          <ul class="department-ul">
+            {% for dept in departments %}
+            <li class="department-li">
+              <a href="{{ dept.departmenturl }}">{{ dept.departmentname }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- end intro box -->
+
+      <!-- end left content -->
+
+      <!-- end main mainsite -->
+      <!-- this goes under main site( no way) -->
+      <div class="undermainsite"></div>
+      <!-- footer now -->
+      <footer>
+        <div class="footerleft">
+          <div class="links">
+            <div class="tooltip">
+              <a href="../aboutpage.html">About</a>
+            </div>
+
+            <div class="tooltip">
+              <a href="#biglogoid">Home</a>
+            </div>
+
+            <div class="tooltip">
+              <a href="../exceltemplates.html">Excel Templates Breakdown</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footerright">
+          <img
+            id="smalllogo"
+            src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+            alt="smalldegreeviewlogo"
+          />
+          <p id="statement">DegreeView 2025</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- script for random button  -->
+    <script src="static/js/randompage.js"></script>
+  </body>
+</html>

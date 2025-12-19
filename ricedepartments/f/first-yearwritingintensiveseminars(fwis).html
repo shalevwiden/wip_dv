@@ -1,0 +1,1348 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+</script>
+<!-- End Google Tag Manager -->
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (First) - Year Writing Intensive Seminars (FWIS)"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Year Writing Intensive Seminars (FWIS) UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../f/f-departments.html"
+                  >F Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">(First) - Year Writing Intensive Seminars (FWIS)</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+              <li><a href="../../../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="degreenametitle">(First) - Year Writing Intensive Seminars (FWIS)</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="original">original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="placeholder, some schools dont have excel files generated yet." download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Year Writing Intensive Seminars (FWIS) Courses with "Year Writing Intensive Seminars (FWIS)"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              (First) - Year Writing Intensive Seminars (FWIS) Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">140</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                Writing About Videogames:  Approaching Videogames As Literature Through Critical Reading and Writing
+              </div>
+            </section>
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Slavery on Film
+              </div>
+            </section>
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                140, 100.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Year Writing Intensive Seminars (FWIS) Courses with "Year Writing Intensive Seminars (FWIS)" in their name
+              </div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Year Writing Intensive Seminars (FWIS) Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+
+        
+                    <table id="departmentcoursestable">
+                        <tr>
+                        <td colspan="2">Year Writing Intensive Seminars (FWIS)</td>
+                       
+                        <td colspan="2" >Rice University</td>
+                        </tr>
+                        <tr>
+                        <td>Course Name</td>
+                        <td>Course Code</td>
+                        <td>Course Hours</td>
+                        <td>Classification</td>
+                        </tr>
+                        
+
+                    
+                        <tr>
+                       <td>Introduction to Academic Writing</td>
+                       <td>FWIS 100</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Bible in Popular Culture</td>
+                       <td>FWIS 101</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Blind Spots: Critical Approaches to Visual Culture</td>
+                       <td>FWIS 102</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Writing About the Arts: Looking at Historical Art in Its Cultural Context</td>
+                       <td>FWIS 103</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>What We Owe to Each Other: the Ethics of Writing and Research</td>
+                       <td>FWIS 104</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Us Politics and the Media</td>
+                       <td>FWIS 105</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Subversive Children's Literature to Make the World More Beautiful</td>
+                       <td>FWIS 106</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>in the Matrix: on Human Bondage and Liberation</td>
+                       <td>FWIS 107</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>From the China Desk: China Analysis and Reporting on China</td>
+                       <td>FWIS 108</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Newsroom 101: Writing for Print, Broadcast & Yearbook</td>
+                       <td>FWIS 109</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Drawing the Diaspora: Asian Diasporic Graphic Novels and Narratives</td>
+                       <td>FWIS 110</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Understanding the United States Through Baseball</td>
+                       <td>FWIS 111</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Writing About Videogames:  Approaching Videogames As Literature Through Critical Reading and Writing</td>
+                       <td>FWIS 112</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Holy Grail: Religion, Quest, and Transformation</td>
+                       <td>FWIS 114</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Exploring Biological Research Challenges</td>
+                       <td>FWIS 115</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>American Journeys</td>
+                       <td>FWIS 116</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Cultural Diplomacy in the American Century: "the Americanization of the World" in the Twentieth Cent</td>
+                       <td>FWIS 117</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Happily Ever Afterlives: the Enduring Cultural Impact of Fairy Tales</td>
+                       <td>FWIS 118</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Life Writing: Our Stories, Our Selves</td>
+                       <td>FWIS 119</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Fiction and Empathy</td>
+                       <td>FWIS 120</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Time Travel Narratives: Fiction, Film, Science</td>
+                       <td>FWIS 121</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Jane Austenland: Falling in Love With the Past and Its Many Adaptations</td>
+                       <td>FWIS 122</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Star Wars and the Writing of Popular Culture</td>
+                       <td>FWIS 123</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Witnessing the Holocaust</td>
+                       <td>FWIS 124</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Writing With Artificial Intelligence</td>
+                       <td>FWIS 125</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Black Mirror and Philosophy</td>
+                       <td>FWIS 126</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>King Arthur in Popular Culture: Time Travel, Space Aliens, and Holy Hand Grenades</td>
+                       <td>FWIS 127</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Space, Speed, Cinema: the Automobile in American Film</td>
+                       <td>FWIS 128</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Africa and Globalization</td>
+                       <td>FWIS 129</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Posthumanism: Literary Warnings And, Maybe, Some Hope for the Human</td>
+                       <td>FWIS 130</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the War on Drugs</td>
+                       <td>FWIS 131</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Slavery on Film</td>
+                       <td>FWIS 132</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Women and the Holocaust: Victims and Perpetrators</td>
+                       <td>FWIS 133</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Meiji Japanese Women’s Literature: Then and Now</td>
+                       <td>FWIS 134</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>What Is a Book? the Material Foundations of Reading and Writing</td>
+                       <td>FWIS 135</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Cowboys and Cornfields: (un)making the American West in Film, T.v., and Literature</td>
+                       <td>FWIS 136</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Pop Music and American Culture</td>
+                       <td>FWIS 137</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Plotting Marriage: Romance, Inheritance, Jurisprudence</td>
+                       <td>FWIS 138</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Shakespeare in Adaptation</td>
+                       <td>FWIS 139</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Imagining the Past: Film, Fiction, and History</td>
+                       <td>FWIS 140</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Storytelling in the Sciences</td>
+                       <td>FWIS 141</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Water and Cities</td>
+                       <td>FWIS 142</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Learning to Observe Through a Tour of the Natural History of Texas</td>
+                       <td>FWIS 143</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Exploring the Impacts, Purposes, and Revolutions of American Education</td>
+                       <td>FWIS 144</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Museums in World History</td>
+                       <td>FWIS 145</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Apartheid South Africa</td>
+                       <td>FWIS 146</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Art of Sportswriting</td>
+                       <td>FWIS 148</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Doing Things With Words in the Odyssey</td>
+                       <td>FWIS 149</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the World of Medieval Medicine</td>
+                       <td>FWIS 150</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Think of the Children – Histories of 20th Century American Childhood</td>
+                       <td>FWIS 151</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Nutritional Supplements: Real Remedies or Shady Science?</td>
+                       <td>FWIS 152</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Body Politics in Francophone Fictions</td>
+                       <td>FWIS 153</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Adapting Horror/adapting to Horror</td>
+                       <td>FWIS 154</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Writing Asian Food in the Age of Globalization</td>
+                       <td>FWIS 155</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Statistical Measures of Cause and Correlation</td>
+                       <td>FWIS 156</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Travel and Modern Asia: Lived Experiences Across Time and Space</td>
+                       <td>FWIS 157</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Holocaust in Historical Perspective</td>
+                       <td>FWIS 158</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>on Parents, Friends, and Other Kinships: From the Bible to Finding Nemo</td>
+                       <td>FWIS 159</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Gender, Race, and the Carceral State: Incarceration Through an Intersectional Lens</td>
+                       <td>FWIS 160</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Australian Culture and History</td>
+                       <td>FWIS 161</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>How to Write Essays About Love</td>
+                       <td>FWIS 162</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Sex, Death, and Spiritual Writing</td>
+                       <td>FWIS 163</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Ways of Walking in Literature and Culture</td>
+                       <td>FWIS 164</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Mediation, "fake News," and Democracy</td>
+                       <td>FWIS 165</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Exploring the World Through International Education</td>
+                       <td>FWIS 166</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Books You Can't Put Down: an Exploration of the Reading Experience</td>
+                       <td>FWIS 167</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Case Studies of Building Design Problems</td>
+                       <td>FWIS 168</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>What Are Human Rights?</td>
+                       <td>FWIS 169</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Devil and the World: the Image of the Devil in Western Culture</td>
+                       <td>FWIS 171</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Sites, Sounds, & Stories: the Rhetoric of Public Memory</td>
+                       <td>FWIS 172</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Learning to View and Interpret Art: Re-evaluating Classical Art for a Modern Era</td>
+                       <td>FWIS 173</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Sounding the City</td>
+                       <td>FWIS 174</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>What Is a Disaster?</td>
+                       <td>FWIS 175</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Dramatic Pauses: Introduction to East Asian Performance Studies</td>
+                       <td>FWIS 176</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Storytelling in Buddhism</td>
+                       <td>FWIS 177</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Debating the Philosophy of Religion: God, Suffering, Rationality, and Morality</td>
+                       <td>FWIS 178</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Medicine and Disease in Transnational Asia: a Historical Perspective</td>
+                       <td>FWIS 179</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graphic Blackness: the African American Comic Book Tradition</td>
+                       <td>FWIS 181</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Border Politics: Migrations and the Meaning of the Nation</td>
+                       <td>FWIS 182</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Utopias and Dystopias</td>
+                       <td>FWIS 183</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Contemporary American Poetry</td>
+                       <td>FWIS 185</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Country Music: an American Sound</td>
+                       <td>FWIS 187</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>How to Be Human: on the Virtues of the Personal Essay</td>
+                       <td>FWIS 188</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Post-apocalyptic Literature and Film</td>
+                       <td>FWIS 189</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Rule of Law and the Pursuit of Justice</td>
+                       <td>FWIS 193</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Latin American Dictatorships Through Film</td>
+                       <td>FWIS 194</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>on Nothing: Nihilism and After</td>
+                       <td>FWIS 195</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Science, Pseudoscience and Skepticism: How to Tell Good Science From Junk Science</td>
+                       <td>FWIS 197</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Essay As Literature: Montaigne and His Legacy</td>
+                       <td>FWIS 198</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Transfer Credit – First-year Writing (fwis)</td>
+                       <td>FWIS 200</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>'their Own Mysterious Stardom': Filming Environments; Viewing Environments</td>
+                       <td>FWIS 201</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Us Cultures of the Sixties</td>
+                       <td>FWIS 207</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Meaning and Impact of Quantum Mechanics</td>
+                       <td>FWIS 211</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Supernatural South: Haunted Plantations, Confederate Vampires, and Creatures in the Bayou</td>
+                       <td>FWIS 213</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>a History of the African Diaspora in the Americas in 12 Objects</td>
+                       <td>FWIS 214</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Exploring Biological Research Challenges</td>
+                       <td>FWIS 215</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>What’s so Funny? Theories of Humor and Histories of Comedy in the United States</td>
+                       <td>FWIS 216</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Cultural Diplomacy in the American Century: "the Americanization of the World" in the Twentieth Cent</td>
+                       <td>FWIS 217</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Fiction and Empathy</td>
+                       <td>FWIS 220</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Time Travel Narratives: Fiction, Film, Science</td>
+                       <td>FWIS 221</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Writing With Artificial Intelligence</td>
+                       <td>FWIS 225</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Multispecies Perspectives: Art, History, Ecology</td>
+                       <td>FWIS 226</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Heavy Metal & Society</td>
+                       <td>FWIS 229</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the War on Drugs</td>
+                       <td>FWIS 231</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Responsible Use of Ai for Research and Writing in Stem</td>
+                       <td>FWIS 232</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Mathematics As Metaphors</td>
+                       <td>FWIS 233</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Plotting Marriage: Romance, Inheritance, Jurisprudence</td>
+                       <td>FWIS 234</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Cowboys and Cornfields: (un)making the American West in Film, T.v., and Literature</td>
+                       <td>FWIS 236</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Pop Music and American Culture</td>
+                       <td>FWIS 237</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Imagining the Past: Film, Fiction, and History</td>
+                       <td>FWIS 240</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Water and Cities</td>
+                       <td>FWIS 242</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Learning to Observe Through a Tour of the Natural History of Texas</td>
+                       <td>FWIS 243</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Museums in World History</td>
+                       <td>FWIS 245</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Art of Sportswriting</td>
+                       <td>FWIS 248</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Think of the Children – Histories of 20th Century American Childhood</td>
+                       <td>FWIS 251</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Nutritional Supplements: Real Remedies or Shady Science?</td>
+                       <td>FWIS 252</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Gene Manipulation: an Evaluation of Gene-based Modifications to Animals and Plants</td>
+                       <td>FWIS 254</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Writing Asian Food in the Age of Globalization</td>
+                       <td>FWIS 255</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Travel and Modern Asia: Lived Experiences Across Time and Space</td>
+                       <td>FWIS 257</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Climate Crises, Environmental Justices</td>
+                       <td>FWIS 258</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Global Indigenous Environmentalism</td>
+                       <td>FWIS 260</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Australian Culture and History</td>
+                       <td>FWIS 261</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>How to Write Essays About Love</td>
+                       <td>FWIS 262</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Sex, Death, and Spiritual Writing</td>
+                       <td>FWIS 263</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Books You Can't Put Down: an Exploration of the Reading Experience</td>
+                       <td>FWIS 267</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Case Studies of Building Design Problems</td>
+                       <td>FWIS 268</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Devil and the World: the Image of the Devil in Western Culture</td>
+                       <td>FWIS 271</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Rhetoric of Star Trek</td>
+                       <td>FWIS 273</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Sounding the City</td>
+                       <td>FWIS 274</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Storytelling in Buddhism</td>
+                       <td>FWIS 277</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Across the Story-verse: Adaption and Storytelling</td>
+                       <td>FWIS 279</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graphic Blackness: the African American Comic Book Tradition</td>
+                       <td>FWIS 281</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Border Politics: Migrations and the Meaning of the Nation</td>
+                       <td>FWIS 282</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Minorities and Subcultures in East Asia</td>
+                       <td>FWIS 286</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Art of the Short Story</td>
+                       <td>FWIS 291</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Roaring Twenties</td>
+                       <td>FWIS 292</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Rule of Law and the Pursuit of Justice</td>
+                       <td>FWIS 293</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>on Nothing: Nihilism and After</td>
+                       <td>FWIS 295</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Science, Pseudoscience and Skepticism: How to Tell Good Science From Junk Science</td>
+                       <td>FWIS 297</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Essay As Literature: Montaigne and His Legacy</td>
+                       <td>FWIS 298</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>DegreeView</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                    </table>
+                    
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+    </div>
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+
+
+                    <!-- Hover Script -->
+
+                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../static/js/animatetable.js"></script>
+    
+  </body>
+</html>

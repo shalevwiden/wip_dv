@@ -1,0 +1,746 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+</script>
+<!-- End Google Tag Manager -->
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (French Studies (FREN)) - French Studies (FREN)"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>French Studies (FREN) UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../f/f-departments.html"
+                  >F Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">(French Studies (FREN)) - French Studies (FREN)</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+              <li><a href="../../../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="degreenametitle">(French Studies (FREN)) - French Studies (FREN)</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="original">original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="placeholder, some schools dont have excel files generated yet." download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    French Studies (FREN) Courses with "French Studies (FREN)"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              (French Studies (FREN)) - French Studies (FREN) Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">54</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                Women in Fiction and History: Notions of the Feminine Since the French Revolution
+              </div>
+            </section>
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Internship
+              </div>
+            </section>
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                7, 13.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                46, 85.2%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                1, 1.9%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of French Studies (FREN) Courses with "French Studies (FREN)" in their name
+              </div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          French Studies (FREN) Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+
+        
+                    <table id="departmentcoursestable">
+                        <tr>
+                        <td colspan="2">French Studies (FREN)</td>
+                       
+                        <td colspan="2" >Rice University</td>
+                        </tr>
+                        <tr>
+                        <td>Course Name</td>
+                        <td>Course Code</td>
+                        <td>Course Hours</td>
+                        <td>Classification</td>
+                        </tr>
+                        
+
+                    
+                        <tr>
+                       <td>Accelerated First-year French</td>
+                       <td>FREN 106</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>First Year French I</td>
+                       <td>FREN 141</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>First Year French II</td>
+                       <td>FREN 142</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Ap/oth Credit French Language</td>
+                       <td>FREN 222</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Special Topics</td>
+                       <td>FREN 238</td>
+                       <td>1-4</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Second Year French I</td>
+                       <td>FREN 263</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Second Year French II</td>
+                       <td>FREN 264</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Grammar and Cultural Literacy</td>
+                       <td>FREN 301</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Writing Workshop</td>
+                       <td>FREN 302</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>French Culture Through the Arts</td>
+                       <td>FREN 304</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Media in France</td>
+                       <td>FREN 305</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>French Society and Language Use</td>
+                       <td>FREN 306</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Many Facets of French Cultural Identity</td>
+                       <td>FREN 307</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Beauty and the Beast(s): Sex, Violence, and Folktales in the African Diaspora</td>
+                       <td>FREN 308</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Middle Ages to Enlightenment</td>
+                       <td>FREN 311</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the French Revolution to Wwii</td>
+                       <td>FREN 312</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Francophone World</td>
+                       <td>FREN 313</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Contemporary French Society</td>
+                       <td>FREN 314</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>France: the Soccer Empire</td>
+                       <td>FREN 319</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>French Children's Literature</td>
+                       <td>FREN 320</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to French Society and Culture</td>
+                       <td>FREN 321</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>French Comics</td>
+                       <td>FREN 322</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>From Decolonization to Globalization</td>
+                       <td>FREN 324</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>French Theory, in English</td>
+                       <td>FREN 325</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Banned Books</td>
+                       <td>FREN 326</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Shakespeare in the Caribbean: Post/colonial Readings</td>
+                       <td>FREN 337</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Gender Around the World</td>
+                       <td>FREN 340</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Paris: Beyond Fashion and Cuisine</td>
+                       <td>FREN 350</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Invention of La Province: Recasting the Regions of France</td>
+                       <td>FREN 351</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Voices of Haiti</td>
+                       <td>FREN 354</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Spirits, Science, and Mental Health in Africa</td>
+                       <td>FREN 357</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Black Paris</td>
+                       <td>FREN 359</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Street Art: Hip Hop, Graffiti, and Photography</td>
+                       <td>FREN 360</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Women in Tales of the Fantastic</td>
+                       <td>FREN 370</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Translation</td>
+                       <td>FREN 401</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Global French Cinema (in English)</td>
+                       <td>FREN 402</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Special Topics</td>
+                       <td>FREN 477</td>
+                       <td>1-4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Cinema in French</td>
+                       <td>FREN 407</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Unmasking Madness</td>
+                       <td>FREN 408</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Novels and Films</td>
+                       <td>FREN 409</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Black Venus/vénus Noire: Representations of Black Women in the Long 19th Century</td>
+                       <td>FREN 413</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Sex and Race in the French Atlantic</td>
+                       <td>FREN 414</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Literature and Culture of the Middle Ages:  King Arthur</td>
+                       <td>FREN 416</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Women in France</td>
+                       <td>FREN 424</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>French Caribbean Ecocriticism</td>
+                       <td>FREN 433</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Poetry and Poetics in the 19th Century</td>
+                       <td>FREN 450</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>America Through French Eyes</td>
+                       <td>FREN 451</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Immigration and Citizenship in Contemporary France</td>
+                       <td>FREN 453</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Women in Fiction and History: Notions of the Feminine Since the French Revolution</td>
+                       <td>FREN 460</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the French Caribbean</td>
+                       <td>FREN 478</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Fall Honor Thesis</td>
+                       <td>FREN 493</td>
+                       <td>3-6</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Spring Honor Thesis</td>
+                       <td>FREN 494</td>
+                       <td>3-6</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Internship</td>
+                       <td>FREN 499</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>French Theory, in English</td>
+                       <td>FREN 525</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>DegreeView</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                    </table>
+                    
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+    </div>
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+
+
+                    <!-- Hover Script -->
+
+                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../static/js/animatetable.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,1068 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+</script>
+<!-- End Google Tag Manager -->
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (INF) - Information Studies"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Information Studies UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../i/i-departments.html"
+                  >I Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">(INF) - Information Studies</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+              <li><a href="../../../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="degreenametitle">(INF) - Information Studies</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="original">original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/inf-informationstudies/excel-files/inf-informationstudies-courses-originaltheme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Information Studies Courses with "Information Studies"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              (INF) - Information Studies Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">100</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                Topics in Information Resources and Services for Children and Young Adults
+              </div>
+            </section>
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Thesis
+              </div>
+            </section>
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                100, 100.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                34
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Information Studies Courses with "Information Studies" in their name
+              </div>
+              <div class="statscontent">
+                6, 6.0%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Information Studies Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+
+        
+                    <table id="departmentcoursestable">
+                        <tr>
+                        <td colspan="2">Information Studies</td>
+                       
+                        <td colspan="2" >The University of Texas at Austin</td>
+                        </tr>
+                        <tr>
+                        <td>Course Name</td>
+                        <td>Course Code</td>
+                        <td>Course Hours</td>
+                        <td>Classification</td>
+                        </tr>
+                        
+
+                    
+                        <tr>
+                       <td>Information in Social and Cultural Context</td>
+                       <td>INF 380C</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Designing Dynamic Web Pages</td>
+                       <td>INF 380D</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Perspectives on Information</td>
+                       <td>INF 380E</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Internet Applications</td>
+                       <td>INF 380K</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Programming</td>
+                       <td>INF 380P</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Individual Studies</td>
+                       <td>INF 181, 281, 381</td>
+                       <td>1, 2, 3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Electronic Portfolio</td>
+                       <td>INF 181E</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Problems in Information Studies</td>
+                       <td>INF 381W</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Understanding and Serving Users</td>
+                       <td>INF 382C</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Information Resources and Services</td>
+                       <td>INF 382D</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Information Resources and Services for Children and Young Adults</td>
+                       <td>INF 382G</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Legal Information Resources</td>
+                       <td>INF 382H</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Information Resources in the Health Sciences</td>
+                       <td>INF 382K</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Information Resources and Services</td>
+                       <td>INF 382L</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Information Resources in Business</td>
+                       <td>INF 382N</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Competitive Intelligence Resources and Strategies</td>
+                       <td>INF 382P</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Scientific Data Informatics</td>
+                       <td>INF 382R</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Library Instruction and Information Literacy</td>
+                       <td>INF 382S</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Information Services: Theory, Techniques, and Subject Areas</td>
+                       <td>INF 382T</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Digital Resources for Children and Youth Seminar</td>
+                       <td>INF 382U</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Visual Resources for Youth Seminar</td>
+                       <td>INF 382V</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Mathematical Foundations of Information Studies</td>
+                       <td>INF 383D</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Interpreting Implicit Information on the Web</td>
+                       <td>INF 383E</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Digital Humanities</td>
+                       <td>INF 383H</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Library Information Science, Espionage, and Intelligence Gathering</td>
+                       <td>INF 383S</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Organizing Information</td>
+                       <td>INF 384C</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Collection Management</td>
+                       <td>INF 384D</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar in Information Organization</td>
+                       <td>INF 384F</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concepts of Information Retrieval</td>
+                       <td>INF 384H</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Description and Metadata</td>
+                       <td>INF 384M</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Digital Repositories</td>
+                       <td>INF 384R</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Descriptive Cataloging and Metadata</td>
+                       <td>INF 384W</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Human-Computer Interaction</td>
+                       <td>INF 385C</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Information Architecture and Design</td>
+                       <td>INF 385E</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Usability</td>
+                       <td>INF 385G</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Digital Media Design</td>
+                       <td>INF 385H</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Projects in Human-Computer Interaction</td>
+                       <td>INF 385K</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Information Networks</td>
+                       <td>INF 385L</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Database Management</td>
+                       <td>INF 385M</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Informatics</td>
+                       <td>INF 385N</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Usability</td>
+                       <td>INF 385P</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Knowledge Management Systems</td>
+                       <td>INF 385Q</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Survey of Digitization</td>
+                       <td>INF 385R</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Digital Libraries</td>
+                       <td>INF 385S</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Special Topics in Information Science</td>
+                       <td>INF 385T</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Digital Media Collections</td>
+                       <td>INF 385U</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Health Informatics</td>
+                       <td>INF 385V</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Security Informatics</td>
+                       <td>INF 385W</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in the History of Information and Society</td>
+                       <td>INF 386</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Archives, Records, and Preservation in the Modern World</td>
+                       <td>INF 386C</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Information and Culture</td>
+                       <td>INF 386E</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Gender, Technology, and Information</td>
+                       <td>INF 386G</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Theory and Methods of Oral History</td>
+                       <td>INF 386H</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Administration</td>
+                       <td>INF 387</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Managing Information Organizations</td>
+                       <td>INF 387C</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Evaluating Information Programs</td>
+                       <td>INF 387E</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Information Marketing</td>
+                       <td>INF 387M</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Information Technology and Work</td>
+                       <td>INF 387T</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Planning and Management of Programs for Children and Young Adults</td>
+                       <td>INF 388D</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Historical Museums: Context and Practice</td>
+                       <td>INF 388E</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Organizational Environments</td>
+                       <td>INF 388K</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Professional Experience and Project</td>
+                       <td>INF 388L</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Practicum in School Libraries</td>
+                       <td>INF 388R</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Internship in Libraries and Other Information Agencies</td>
+                       <td>INF 188T, 288T, 388T</td>
+                       <td>1, 2, 3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Archival and Records Enterprise</td>
+                       <td>INF 389C</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Records Management</td>
+                       <td>INF 389E</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Electronic and Digital Records</td>
+                       <td>INF 389G</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Appraisal and Selection of Records</td>
+                       <td>INF 389J</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Life Cycle Metadata for Digital Objects</td>
+                       <td>INF 389K</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Issues in Records Information</td>
+                       <td>INF 389M</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Archival Enterprise: Seminar</td>
+                       <td>INF 389N</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Archival Enterprise I</td>
+                       <td>INF 389R</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Archival Enterprise II</td>
+                       <td>INF 389S</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Copyright: Legal and Cultural Perspectives</td>
+                       <td>INF 390C</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Information Policy</td>
+                       <td>INF 390N</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Privacy</td>
+                       <td>INF 390P</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Doctoral Inquiry in Information Studies</td>
+                       <td>INF 391D</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Topics in Information Studies</td>
+                       <td>INF 391E</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Topics in Research Methods, Methodologies, and Design</td>
+                       <td>INF 391F</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Doctoral Writing Seminar</td>
+                       <td>INF 391G</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Directed Readings</td>
+                       <td>INF 191R, 291R, 391R, 491R, 591R, 691R, 791R, 891R, 991R</td>
+                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Directed Research</td>
+                       <td>INF 191S, 291S, 391S, 491S, 591S, 691S, 791S, 891S, 991S</td>
+                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Preservation Administration and Services</td>
+                       <td>INF 392C</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Preservation Basics</td>
+                       <td>INF 392D</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Materials in Libraries, Archives, and Museums</td>
+                       <td>INF 392E</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Risk Assessment and Collections Management</td>
+                       <td>INF 392F</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Management of Preservation Programs</td>
+                       <td>INF 392G</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Creating Sustainable Digital Collections</td>
+                       <td>INF 392H</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Digital Archiving and Preservation</td>
+                       <td>INF 392K</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Audio Preservation and Reformatting</td>
+                       <td>INF 392L</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Audio Preservation and Reformatting</td>
+                       <td>INF 392M</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>The Politics of Preservation</td>
+                       <td>INF 392P</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Conservation Laboratory Techniques</td>
+                       <td>INF 393C</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Information Studies Research</td>
+                       <td>INF 397</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Understanding Research</td>
+                       <td>INF 397C</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Bibliography and Methods in Historical Research</td>
+                       <td>INF 397D</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Thesis</td>
+                       <td>INF 698</td>
+                       <td>6</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Master's Report</td>
+                       <td>INF 398R</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Supervised Teaching in Information Studies</td>
+                       <td>INF 398T</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Dissertation</td>
+                       <td>INF 399W, 699W, 999W</td>
+                       <td>3, 6, 9</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>DegreeView</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                    </table>
+                    
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+    </div>
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+
+
+                    <!-- Hover Script -->
+
+                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../static/js/animatetable.js"></script>
+    
+  </body>
+</html>

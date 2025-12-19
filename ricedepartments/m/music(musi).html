@@ -1,0 +1,2454 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+</script>
+<!-- End Google Tag Manager -->
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (Music (MUSI)) - Music (MUSI)"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Music (MUSI) UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../m/m-departments.html"
+                  >M Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">(Music (MUSI)) - Music (MUSI)</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+              <li><a href="../../../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="degreenametitle">(Music (MUSI)) - Music (MUSI)</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="original">original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="placeholder, some schools dont have excel files generated yet." download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Music (MUSI) Courses with "Music (MUSI)"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              (Music (MUSI)) - Music (MUSI) Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">298</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                Imagination and Communication: Developing Musical Skills Through Theatrical Techniques
+              </div>
+            </section>
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Theory I
+              </div>
+            </section>
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                53, 17.8%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                94, 31.5%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                151, 50.7%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Music (MUSI) Courses with "Music (MUSI)" in their name
+              </div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Music (MUSI) Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+
+        
+                    <table id="departmentcoursestable">
+                        <tr>
+                        <td colspan="2">Music (MUSI)</td>
+                       
+                        <td colspan="2" >Rice University</td>
+                        </tr>
+                        <tr>
+                        <td>Course Name</td>
+                        <td>Course Code</td>
+                        <td>Course Hours</td>
+                        <td>Classification</td>
+                        </tr>
+                        
+
+                    
+                        <tr>
+                       <td>Ap/oth Credit in Music</td>
+                       <td>MUSI 107</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Fundamentals of Music I</td>
+                       <td>MUSI 117</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Experiencing Music, Expressing Culture: an Introduction to Chinese Music</td>
+                       <td>MUSI 119</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Music Theory for Non-majors</td>
+                       <td>MUSI 125</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Classical Guitar/non-major</td>
+                       <td>MUSI 141</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Flute for Non-majors</td>
+                       <td>MUSI 151</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Oboe for Non-majors</td>
+                       <td>MUSI 153</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Clarinet for Non-majors</td>
+                       <td>MUSI 155</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Bassoon for Non-majors</td>
+                       <td>MUSI 157</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Horn for Non-majors</td>
+                       <td>MUSI 161</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Trumpet for Non-majors</td>
+                       <td>MUSI 163</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Trombone for Non-majors</td>
+                       <td>MUSI 165</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Tuba for Non-majors</td>
+                       <td>MUSI 167</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Percussion for Non-majors</td>
+                       <td>MUSI 171</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Voice for Non-majors</td>
+                       <td>MUSI 173</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Piano for Non-majors</td>
+                       <td>MUSI 181</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Organ for Non-majors</td>
+                       <td>MUSI 183</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Harp for Non-majors</td>
+                       <td>MUSI 187</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Violin for Non-majors</td>
+                       <td>MUSI 191</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Viola for Non-majors</td>
+                       <td>MUSI 193</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Violoncello for Non-majors</td>
+                       <td>MUSI 195</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Double Bass for Non-majors</td>
+                       <td>MUSI 197</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Undergraduate Performance Seminar</td>
+                       <td>MUSI 205</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Theory I</td>
+                       <td>MUSI 211</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Theory II</td>
+                       <td>MUSI 212</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Survey of World Music</td>
+                       <td>MUSI 220</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Music, Magic, and Science in the Modern World</td>
+                       <td>MUSI 221</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Medieval and Renaissance Eras</td>
+                       <td>MUSI 222</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Monsters and Bards</td>
+                       <td>MUSI 223</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Riffs, Rebellion, and Revolution: the History of Rock</td>
+                       <td>MUSI 225</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Music in Global Perspective: Histories, Cultures, and Exchanges</td>
+                       <td>MUSI 226</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Aural Skills and Performance Technique I</td>
+                       <td>MUSI 231</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Aural Skills and Performance Technique II</td>
+                       <td>MUSI 232</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Special Topics</td>
+                       <td>MUSI 238</td>
+                       <td>1-4</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Unity and Variety in Music</td>
+                       <td>MUSI 240</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Secondary Flute</td>
+                       <td>MUSI 251</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Secondary Oboe</td>
+                       <td>MUSI 253</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Secondary Clarinet</td>
+                       <td>MUSI 255</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Secondary Bassoon</td>
+                       <td>MUSI 257</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Secondary Horn</td>
+                       <td>MUSI 261</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Secondary Trumpet</td>
+                       <td>MUSI 263</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Secondary Trombone</td>
+                       <td>MUSI 265</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Secondary Tuba</td>
+                       <td>MUSI 267</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Secondary Percussion</td>
+                       <td>MUSI 271</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Secondary Voice</td>
+                       <td>MUSI 273</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Secondary Piano</td>
+                       <td>MUSI 281</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Secondary Organ</td>
+                       <td>MUSI 283</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Secondary Harpsichord</td>
+                       <td>MUSI 285</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Secondary Harp</td>
+                       <td>MUSI 287</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Secondary Violin</td>
+                       <td>MUSI 291</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Secondary Viola</td>
+                       <td>MUSI 293</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Secondary Violoncello</td>
+                       <td>MUSI 295</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Secondary Double Bass</td>
+                       <td>MUSI 297</td>
+                       <td>2</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Undergrad Composition Seminar</td>
+                       <td>MUSI 303</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Composition Elective</td>
+                       <td>MUSI 305</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Composition for Non-majors</td>
+                       <td>MUSI 307</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Theoretical Studies III</td>
+                       <td>MUSI 311</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Theoretical Studies Iv</td>
+                       <td>MUSI 312</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Music in Western Culture</td>
+                       <td>MUSI 314</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Multi-media Composition</td>
+                       <td>MUSI 315</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Theory for Non-majors I</td>
+                       <td>MUSI 317</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Theory for Non-majors II</td>
+                       <td>MUSI 318</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Baroque and Early Classical Eras</td>
+                       <td>MUSI 321</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Classical and Romantic Eras</td>
+                       <td>MUSI 322</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Jazz History and Racial Politics</td>
+                       <td>MUSI 326</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Special Studies in Music History</td>
+                       <td>MUSI 329</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Aural Skills and Performance Techniques III</td>
+                       <td>MUSI 331</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Aural Skills and Performance Techniques Iv</td>
+                       <td>MUSI 332</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Campanile Orchestra</td>
+                       <td>MUSI 334</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Undergraduate Chorus</td>
+                       <td>MUSI 335</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Undergraduate Opera Workshop</td>
+                       <td>MUSI 336</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Undergraduate Orchestra</td>
+                       <td>MUSI 337</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Undergraduate Chamber Music</td>
+                       <td>MUSI 338</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Undergraduate Orchestral Repertoire</td>
+                       <td>MUSI 339</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Rice Symphonic Band</td>
+                       <td>MUSI 340</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Junior Recital</td>
+                       <td>MUSI 341</td>
+                       <td>0</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Rice Jazz Ensemble</td>
+                       <td>MUSI 342</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Undergraduate Conducting Seminar</td>
+                       <td>MUSI 343</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Applied Studies in Jazz</td>
+                       <td>MUSI 345</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concentration Flute</td>
+                       <td>MUSI 351</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concentration Oboe</td>
+                       <td>MUSI 353</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concentration Clarinet</td>
+                       <td>MUSI 355</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concentration Bassoon</td>
+                       <td>MUSI 357</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concentration Horn</td>
+                       <td>MUSI 361</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concentration Trumpet</td>
+                       <td>MUSI 363</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concentration Trombone</td>
+                       <td>MUSI 365</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concentration Tuba</td>
+                       <td>MUSI 367</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concentration Percussion</td>
+                       <td>MUSI 371</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concentration Voice</td>
+                       <td>MUSI 373</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Accessible Sounds: Exploring Diversity and Inclusion in Classical Music</td>
+                       <td>MUSI 374</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Undergraduate Opera Ensemble</td>
+                       <td>MUSI 377</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Classical, Contemporary, and Cross-cultural Asian Music</td>
+                       <td>MUSI 378</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Creativity up Close</td>
+                       <td>MUSI 379</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concentration Piano</td>
+                       <td>MUSI 381</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concentration Organ</td>
+                       <td>MUSI 383</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concentration Organ Intensive</td>
+                       <td>MUSI 384</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concentration Harp</td>
+                       <td>MUSI 387</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Collaborative Piano Skills</td>
+                       <td>MUSI 389</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concentration Violin</td>
+                       <td>MUSI 391</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concentration Viola</td>
+                       <td>MUSI 393</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concentration Violoncello</td>
+                       <td>MUSI 395</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Concentration Double Bass</td>
+                       <td>MUSI 397</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Composition for Majors</td>
+                       <td>MUSI 401</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Basic Electronic Music</td>
+                       <td>MUSI 403</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Electronic Music Composition</td>
+                       <td>MUSI 404</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Music Business and Law</td>
+                       <td>MUSI 405</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Chamber Music in the Classic Period</td>
+                       <td>MUSI 407</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Alexander Technique for Performance</td>
+                       <td>MUSI 410</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Dalcroze  Eurhythmics</td>
+                       <td>MUSI 413</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Piano Chamber Music Literature</td>
+                       <td>MUSI 414</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Band Arranging</td>
+                       <td>MUSI 415</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Orchestration</td>
+                       <td>MUSI 416</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Music for Media</td>
+                       <td>MUSI 417</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Modern Era</td>
+                       <td>MUSI 421</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Piano Literature - Survey</td>
+                       <td>MUSI 426</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Aural Skills Review</td>
+                       <td>MUSI 432</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Contemporary Music Ensemble</td>
+                       <td>MUSI 435</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Collegium Musicum</td>
+                       <td>MUSI 436</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Conducting for Majors</td>
+                       <td>MUSI 437</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Senior Recital</td>
+                       <td>MUSI 441</td>
+                       <td>0</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Practicum in Contemporary Music</td>
+                       <td>MUSI 444</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Keyboard Harmony and Figured Bass I</td>
+                       <td>MUSI 445</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Keyboard Harmony and Figured Bass II</td>
+                       <td>MUSI 446</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Piano Technology</td>
+                       <td>MUSI 447</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Piano Technology Practicum for Pianists</td>
+                       <td>MUSI 448</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Undergraduate Independent Study</td>
+                       <td>MUSI 449</td>
+                       <td>1-3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Qualifying Recital</td>
+                       <td>MUSI 450</td>
+                       <td>0</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Flute for Majors</td>
+                       <td>MUSI 451</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Oboe for Majors</td>
+                       <td>MUSI 453</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Clarinet for Majors</td>
+                       <td>MUSI 455</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Bassoon for Majors</td>
+                       <td>MUSI 457</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Horn for Majors</td>
+                       <td>MUSI 461</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Trumpet for Majors</td>
+                       <td>MUSI 463</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Trombone for Majors</td>
+                       <td>MUSI 465</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Tuba for Majors</td>
+                       <td>MUSI 467</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Percussion for Majors</td>
+                       <td>MUSI 471</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>General Percussion Studies</td>
+                       <td>MUSI 472</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Voice for Majors</td>
+                       <td>MUSI 473</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Theory of Vocal Performance Techniques</td>
+                       <td>MUSI 475</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Special Topics</td>
+                       <td>MUSI 677</td>
+                       <td>1-4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Piano for Majors</td>
+                       <td>MUSI 481</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Organ for Majors</td>
+                       <td>MUSI 483</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Harp for Majors</td>
+                       <td>MUSI 487</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Violin for Majors</td>
+                       <td>MUSI 491</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>String Technology</td>
+                       <td>MUSI 492</td>
+                       <td>2</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Viola for Majors</td>
+                       <td>MUSI 493</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Violoncello for Majors</td>
+                       <td>MUSI 495</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Double Bass for Majors</td>
+                       <td>MUSI 497</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Imagination and Communication: Developing Musical Skills Through Theatrical Techniques</td>
+                       <td>MUSI 500</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Enhanced Performance: Writing, Speaking, Playing</td>
+                       <td>MUSI 501</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Conducting: an Overview of Practical Skills</td>
+                       <td>MUSI 502</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Developing Career Enhancing Projects in Music</td>
+                       <td>MUSI 503</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Computer Assisted Music Composition</td>
+                       <td>MUSI 504</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Multimedia Authoring</td>
+                       <td>MUSI 505</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Performing With Today's Technology</td>
+                       <td>MUSI 506</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Technology for Musicians</td>
+                       <td>MUSI 507</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Fundamentals of Private Teaching</td>
+                       <td>MUSI 508</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Alexander Technique for Musicians</td>
+                       <td>MUSI 509</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Professional Development for Musicians</td>
+                       <td>MUSI 510</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Theory Review</td>
+                       <td>MUSI 511</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Analytical Systems</td>
+                       <td>MUSI 512</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Modal Counterpoint</td>
+                       <td>MUSI 513</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Score Reading and Theory at the Keyboard</td>
+                       <td>MUSI 514</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Music Entrepreneurship</td>
+                       <td>MUSI 515</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Orchestration</td>
+                       <td>MUSI 516</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Early Modern Masters</td>
+                       <td>MUSI 517</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Art and Business of Studio Teaching</td>
+                       <td>MUSI 518</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Thematic Programming: the Art of the Recital</td>
+                       <td>MUSI 519</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Business Communication for Musicians</td>
+                       <td>MUSI 520</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Review of Music History I</td>
+                       <td>MUSI 521</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Review of Music History II</td>
+                       <td>MUSI 522</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Bibliography and Research Methods</td>
+                       <td>MUSI 523</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>American Music</td>
+                       <td>MUSI 524</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Performance Practices Seminar</td>
+                       <td>MUSI 525</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Early Music</td>
+                       <td>MUSI 527</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in the 17th and 18th Centuries</td>
+                       <td>MUSI 528</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in 19th and 20th Centuries</td>
+                       <td>MUSI 529</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Music, Magic, and Science in the Modern World</td>
+                       <td>MUSI 530</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Orchestral Repertoire</td>
+                       <td>MUSI 531</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Feldenkrais Method and the Musician's Body</td>
+                       <td>MUSI 532</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Conducting Seminar</td>
+                       <td>MUSI 533</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Program Music in the 19th Century</td>
+                       <td>MUSI 534</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Leadership Through the Arts</td>
+                       <td>MUSI 536</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Satie, Cocteau, & Les Six: Paris in the 1920s and Beyond</td>
+                       <td>MUSI 537</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Art of Performance:  Presence on Stage</td>
+                       <td>MUSI 538</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Applied Jazz Improvisation: Developing Solo Improvisational Skills in the Jazz Idiom</td>
+                       <td>MUSI 540</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Music and Modernism in France</td>
+                       <td>MUSI 543</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Liturgical Organ Playing</td>
+                       <td>MUSI 545</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Accompanying at the Organ</td>
+                       <td>MUSI 546</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Church Music Seminar I</td>
+                       <td>MUSI 547</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Church Music Seminar II</td>
+                       <td>MUSI 548</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Vocal Physiology & Function</td>
+                       <td>MUSI 549</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Music of Richard Strauss</td>
+                       <td>MUSI 551</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Piano Literature I: Antiquity to 1900</td>
+                       <td>MUSI 552</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Piano Literature Ii: Twentieth and Twenty-first Century Repertoire</td>
+                       <td>MUSI 553</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Apprenticeship</td>
+                       <td>MUSI 555</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Brass Pedagogy</td>
+                       <td>MUSI 569</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Opera Studies</td>
+                       <td>MUSI 570</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Vocal Coaching</td>
+                       <td>MUSI 571</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Opera Performance</td>
+                       <td>MUSI 572</td>
+                       <td>1-2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Italian Diction</td>
+                       <td>MUSI 573</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>German Diction</td>
+                       <td>MUSI 574</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Voice Repertoire I</td>
+                       <td>MUSI 575</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Voice Repertoire II</td>
+                       <td>MUSI 576</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>English Diction</td>
+                       <td>MUSI 577</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>French Diction</td>
+                       <td>MUSI 578</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Aria Repertoire</td>
+                       <td>MUSI 581</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Vocal Collaboration for Pianists and Singers</td>
+                       <td>MUSI 582</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Instrumental Accompanying Techniques</td>
+                       <td>MUSI 583</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Vocal Accompanying Techniques for Pianists</td>
+                       <td>MUSI 584</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Sonata Class</td>
+                       <td>MUSI 585</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Diction for Singers</td>
+                       <td>MUSI 587</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Piano Pedagogy</td>
+                       <td>MUSI 588</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>String Pedagogy</td>
+                       <td>MUSI 599</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Composition for Majors Advanced and Graduates</td>
+                       <td>MUSI 601</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Composition Seminar</td>
+                       <td>MUSI 603</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Electronic and Computer Music Systems</td>
+                       <td>MUSI 605</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Computer Sound Synthesis</td>
+                       <td>MUSI 606</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Improvisation at the Organ</td>
+                       <td>MUSI 608</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Music Theories of the World: Cross-cultural Approaches to Pitch, Melody, and Rhythm</td>
+                       <td>MUSI 610</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Classroom Pedagogy</td>
+                       <td>MUSI 611</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Tonal Counterpoint</td>
+                       <td>MUSI 613</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Special Topics in Music Theory and Music Theory Composition</td>
+                       <td>MUSI 614</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Music of Ravel: Music Theory and Composition</td>
+                       <td>MUSI 615</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Music Since 1950</td>
+                       <td>MUSI 617</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>History of the 20th Century Pianism</td>
+                       <td>MUSI 619</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Historical Overview of Piano Technique</td>
+                       <td>MUSI 620</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Selected Studies in Music History</td>
+                       <td>MUSI 621</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>J.s. Bach: Career, Works, and Critical Reception</td>
+                       <td>MUSI 623</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar on a Selected Composer</td>
+                       <td>MUSI 624</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Mozart Operas</td>
+                       <td>MUSI 625</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>the Classical Style</td>
+                       <td>MUSI 626</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Romantic Songs and Piano Pieces</td>
+                       <td>MUSI 627</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Mock Audition</td>
+                       <td>MUSI 631</td>
+                       <td>0</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Orchestra</td>
+                       <td>MUSI 635</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Chamber Music</td>
+                       <td>MUSI 636</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Conducting for Majors</td>
+                       <td>MUSI 637</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Rice Chorale - Advanced</td>
+                       <td>MUSI 640</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Master's Recital I</td>
+                       <td>MUSI 641</td>
+                       <td>0</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Accompanying</td>
+                       <td>MUSI 642</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Organ Literature Before 1750</td>
+                       <td>MUSI 645</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Organ Literature Since 1750</td>
+                       <td>MUSI 646</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Master's Thesis</td>
+                       <td>MUSI 647</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Independent Study</td>
+                       <td>MUSI 649</td>
+                       <td>1-3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Flute for Majors-advanced</td>
+                       <td>MUSI 651</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Oboe for Majors-advanced</td>
+                       <td>MUSI 653</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Clarinet for Majors-advanced</td>
+                       <td>MUSI 655</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Bassoon for Majors-advanced</td>
+                       <td>MUSI 656</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Horn for Majors-advanced</td>
+                       <td>MUSI 661</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Trumpet for Majors-advanced</td>
+                       <td>MUSI 663</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Trombone for Majors-advanced</td>
+                       <td>MUSI 665</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Tuba for Majors-advanced</td>
+                       <td>MUSI 667</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Percussion for Majors-advanced</td>
+                       <td>MUSI 671</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Voice for Majors-advanced</td>
+                       <td>MUSI 673</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Piano for Majors-advanced</td>
+                       <td>MUSI 681</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Accompanying/vocal Coaching Seminar</td>
+                       <td>MUSI 682</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Organ for Majors-advanced</td>
+                       <td>MUSI 683</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Harp for Majors-advanced</td>
+                       <td>MUSI 687</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Piano for Chamber Music and Accompanying Majors, Advanced/graduate</td>
+                       <td>MUSI 689</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Individual Instrument Coaching for String Quartet Majors</td>
+                       <td>MUSI 690</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Violin for Majors-advanced</td>
+                       <td>MUSI 691</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Viola for Majors-advanced</td>
+                       <td>MUSI 693</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Violoncello for Majors-advanced</td>
+                       <td>MUSI 695</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Double Bass for Majors-advanced</td>
+                       <td>MUSI 697</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced String Quartets</td>
+                       <td>MUSI 698</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Graduate Research</td>
+                       <td>MUSI 700</td>
+                       <td>1-9</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Apprenticeship - Artistic Outreach</td>
+                       <td>MUSI 705</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Doctoral Independent Study, Composition</td>
+                       <td>MUSI 707</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Analytical Approaches</td>
+                       <td>MUSI 711</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar in Advanced Analysis</td>
+                       <td>MUSI 712</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Special Topics in Advanced Analysis</td>
+                       <td>MUSI 713</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Music of the Middle Ages</td>
+                       <td>MUSI 716</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Renaissance Music</td>
+                       <td>MUSI 717</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Music of Schoenberg</td>
+                       <td>MUSI 721</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Music of Stravinsky</td>
+                       <td>MUSI 722</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Aesthetics of Music</td>
+                       <td>MUSI 723</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Organ Literature Seminar</td>
+                       <td>MUSI 725</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Doctoral Seminar I: Career Skills</td>
+                       <td>MUSI 733</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Doctoral Seminar Ii: Repertory</td>
+                       <td>MUSI 735</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Solo Repertory for Doctoral Students</td>
+                       <td>MUSI 736</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Doctoral Seminar in Musicology</td>
+                       <td>MUSI 737</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Doctoral Individual Project</td>
+                       <td>MUSI 738</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Pedagogy for Doctoral Students</td>
+                       <td>MUSI 739</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Master's Recital II</td>
+                       <td>MUSI 741</td>
+                       <td>0</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>String Quartet Recital</td>
+                       <td>MUSI 742</td>
+                       <td>0</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Survey-orchestral Repertoire</td>
+                       <td>MUSI 747</td>
+                       <td>2</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Vocal Physiology & Function for Doctoral Students</td>
+                       <td>MUSI 749</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Doctoral Document</td>
+                       <td>MUSI 750</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Doctoral Solo Recital</td>
+                       <td>MUSI 751</td>
+                       <td>0</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Doctoral Chamber Music Recital</td>
+                       <td>MUSI 752</td>
+                       <td>0</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Doctoral Concerto Recital</td>
+                       <td>MUSI 753</td>
+                       <td>0</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Doctoral Lecture-recital</td>
+                       <td>MUSI 754</td>
+                       <td>0</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Individual and Committee Instruction for Artist Diploma</td>
+                       <td>MUSI 760</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Artist Diploma Recital</td>
+                       <td>MUSI 761</td>
+                       <td>0</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Artist Diploma Seminar</td>
+                       <td>MUSI 762</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Artist Diploma Special Project</td>
+                       <td>MUSI 763</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Artist Diploma Performance</td>
+                       <td>MUSI 764</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Dissertation</td>
+                       <td>MUSI 800</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>DegreeView</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                    </table>
+                    
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+    </div>
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+
+
+                    <!-- Hover Script -->
+
+                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../static/js/animatetable.js"></script>
+    
+  </body>
+</html>

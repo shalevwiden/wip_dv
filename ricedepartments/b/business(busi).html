@@ -1,0 +1,1110 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+</script>
+<!-- End Google Tag Manager -->
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (Business (BUSI)) - Business (BUSI)"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Business (BUSI) UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../b/b-departments.html"
+                  >B Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">(Business (BUSI)) - Business (BUSI)</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+              <li><a href="../../../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="degreenametitle">(Business (BUSI)) - Business (BUSI)</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="original">original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="placeholder, some schools dont have excel files generated yet." download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Business (BUSI) Courses with "Business (BUSI)"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              (Business (BUSI)) - Business (BUSI) Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">106</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                Bias and Medical Device Design: Exploring the Hidden Biases Behind Medical Products and Devices
+              </div>
+            </section>
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Auditing
+              </div>
+            </section>
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                9, 8.5%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                37, 34.9%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                60, 56.6%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Business (BUSI) Courses with "Business (BUSI)" in their name
+              </div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Business (BUSI) Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+
+        
+                    <table id="departmentcoursestable">
+                        <tr>
+                        <td colspan="2">Business (BUSI)</td>
+                       
+                        <td colspan="2" >Rice University</td>
+                        </tr>
+                        <tr>
+                        <td>Course Name</td>
+                        <td>Course Code</td>
+                        <td>Course Hours</td>
+                        <td>Classification</td>
+                        </tr>
+                        
+
+                    
+                        <tr>
+                       <td>Economics for Business</td>
+                       <td>BUSI 150</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Leading Across Social Divides</td>
+                       <td>BUSI 215</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Intro to Design and Innovation</td>
+                       <td>BUSI 220</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>New Enterprises: Discovery</td>
+                       <td>BUSI 221</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Tech Product Design and Development</td>
+                       <td>BUSI 222</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Business Modeling for Entrepreneurs</td>
+                       <td>BUSI 223</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Bias and Medical Device Design: Exploring the Hidden Biases Behind Medical Products and Devices</td>
+                       <td>BUSI 224</td>
+                       <td>1</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Genai for Business: Tools and Implementation</td>
+                       <td>BUSI 233</td>
+                       <td>3</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Special Topics</td>
+                       <td>BUSI 238</td>
+                       <td>1-4</td>
+                       <td>Undergraduate Lower-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Financial Accounting</td>
+                       <td>BUSI 305</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Leading People in Organizations</td>
+                       <td>BUSI 310</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Financial Management</td>
+                       <td>BUSI 343</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Founder's Journey</td>
+                       <td>BUSI 360</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Communications for Entrepreneurs</td>
+                       <td>BUSI 361</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Innovation for Social Impact</td>
+                       <td>BUSI 364</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>New Enterprises</td>
+                       <td>BUSI 369</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Product Development and Management</td>
+                       <td>BUSI 371</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Operations Management</td>
+                       <td>BUSI 374</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Marketing</td>
+                       <td>BUSI 380</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Strategic Management</td>
+                       <td>BUSI 390</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Data Analytics</td>
+                       <td>BUSI 395</td>
+                       <td>4</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Business Communication</td>
+                       <td>BUSI 396</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Financial Statement Analysis</td>
+                       <td>BUSI 401</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Issues in Financial Reporting I</td>
+                       <td>BUSI 405</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Leadership and Teams</td>
+                       <td>BUSI 420</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Power, Influence and Organizational Change</td>
+                       <td>BUSI 421</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Negotiations and Decision Making</td>
+                       <td>BUSI 422</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Emotional Intelligence for Leaders</td>
+                       <td>BUSI 423</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Management Accounting</td>
+                       <td>BUSI 430</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Strategic Management</td>
+                       <td>BUSI 431</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Business and Society</td>
+                       <td>BUSI 432</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Technology and Innovation Strategy</td>
+                       <td>BUSI 433</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Auditing</td>
+                       <td>BUSI 440</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Corporate Finance</td>
+                       <td>BUSI 447</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Investments</td>
+                       <td>BUSI 448</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Data-driven Investments Lab</td>
+                       <td>BUSI 449</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Derivatives</td>
+                       <td>BUSI 450</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Financing the Startup Venture</td>
+                       <td>BUSI 461</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Entrepreneurial Strategy</td>
+                       <td>BUSI 463</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Student Venture Fund: Evaluating Startup Investment Opportunities</td>
+                       <td>BUSI 465</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Lilie New Venture Challenge</td>
+                       <td>BUSI 469</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Real Estate Finance</td>
+                       <td>BUSI 475</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Special Topics</td>
+                       <td>BUSI 677</td>
+                       <td>1-4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Marketing Analytics</td>
+                       <td>BUSI 480</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Accounting Theory</td>
+                       <td>BUSI 491</td>
+                       <td>3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Applied Business Experience</td>
+                       <td>BUSI 498</td>
+                       <td>1</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Undergraduate Business Independent Study</td>
+                       <td>BUSI 499</td>
+                       <td>1-3</td>
+                       <td>Undergraduate Upper-Level</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Independent Study</td>
+                       <td>BUSI 500</td>
+                       <td>1.5-3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Doctoral Marketing Research Seminar</td>
+                       <td>BUSI 501</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar in Judgement and Decision Making</td>
+                       <td>BUSI 503</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Game Theory</td>
+                       <td>BUSI 504</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar in Consumer Behavior</td>
+                       <td>BUSI 505</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Topics in Marketing Research</td>
+                       <td>BUSI 506</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Bayesian Applications in Marketing Literature</td>
+                       <td>BUSI 507</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Analytical Models in Marketing</td>
+                       <td>BUSI 510</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Selected Topics in Marketing</td>
+                       <td>BUSI 511</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Micro Foundations of Organization and Management</td>
+                       <td>BUSI 515</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Python for Business Research</td>
+                       <td>BUSI 520</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Financial Economics I</td>
+                       <td>BUSI 521</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Corporate Finance</td>
+                       <td>BUSI 522</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Empirical Methods in Finance</td>
+                       <td>BUSI 523</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Finance: Special Topics I</td>
+                       <td>BUSI 524</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Finance: Special Topics II</td>
+                       <td>BUSI 525</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Finance: Special Topics III</td>
+                       <td>BUSI 526</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Finance: Special Topics Iv</td>
+                       <td>BUSI 527</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Accounting Research</td>
+                       <td>BUSI 530</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Empirical Methods in Accounting</td>
+                       <td>BUSI 531</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Analytical Research in Accounting</td>
+                       <td>BUSI 532</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Contemporary Accounting Research Topics</td>
+                       <td>BUSI 533</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Strategy I</td>
+                       <td>BUSI 540</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Strategy II</td>
+                       <td>BUSI 541</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Organizational Change</td>
+                       <td>BUSI 542</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Executive Leadership and Corporate Governance</td>
+                       <td>BUSI 543</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Contemporary Management Thought</td>
+                       <td>BUSI 544</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Strategy Research in Corporate Development</td>
+                       <td>BUSI 545</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Emerging Market Strategy</td>
+                       <td>BUSI 546</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Seminar on Innovation and Entrepreneurship</td>
+                       <td>BUSI 547</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Corporate Strategy</td>
+                       <td>BUSI 548</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Strategy Pro-seminar</td>
+                       <td>BUSI 549</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Corporate Social Responsibility</td>
+                       <td>BUSI 550</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Strategy Research in Corporate Development: Strategic Alliances and Acquisitions</td>
+                       <td>BUSI 551</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Design of Business Research</td>
+                       <td>BUSI 552</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Network Theory and Applications</td>
+                       <td>BUSI 553</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Social Evaluations of Organizations</td>
+                       <td>BUSI 554</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Management Scholarship</td>
+                       <td>BUSI 555</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Micro Organizational Behavior</td>
+                       <td>BUSI 561</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Becoming an Organizational Behavior Scholar</td>
+                       <td>BUSI 562</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Sociology of Organizational Behavior</td>
+                       <td>BUSI 563</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Organizational Behavior Special Topics I</td>
+                       <td>BUSI 564</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Organizational Behavior Special Topics II</td>
+                       <td>BUSI 565</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Organizational Behavior Special Topics III</td>
+                       <td>BUSI 566</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Organizational Behavior Special Topics Iv</td>
+                       <td>BUSI 567</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Organizational Behavior Special Topics V</td>
+                       <td>BUSI 568</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Organizational Behavior Special Topics Vi</td>
+                       <td>BUSI 569</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Organizational Behavior Special Topics Vii</td>
+                       <td>BUSI 570</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Markov Decision Processes in Operations Management</td>
+                       <td>BUSI 571</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Game Theory in Operations Management</td>
+                       <td>BUSI 572</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Stochastic Models in Operations Management</td>
+                       <td>BUSI 573</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Data-driven Marketing I</td>
+                       <td>BUSI 711</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Data-driven Marketing II</td>
+                       <td>BUSI 712</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Data-driven Finance I</td>
+                       <td>BUSI 721</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Data-driven Finance II</td>
+                       <td>BUSI 722</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Foundations of Operations Management</td>
+                       <td>BUSI 731</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Quantitative Operations</td>
+                       <td>BUSI 732</td>
+                       <td>1.5</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Phd Research</td>
+                       <td>BUSI 800</td>
+                       <td>1-12</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Phd Research II</td>
+                       <td>BUSI 801</td>
+                       <td>1-12</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>DegreeView</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                    </table>
+                    
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+    </div>
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+
+
+                    <!-- Hover Script -->
+
+                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../static/js/animatetable.js"></script>
+    
+  </body>
+</html>
