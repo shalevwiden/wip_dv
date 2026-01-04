@@ -358,6 +358,15 @@ Begin left content stuff
         }
       }
     }
+
+    .table-scroll {
+      width: 100%;
+      height: auto;
+
+      table {
+        // all styling in sorted_table.scss
+      }
+    }
   }
 
   /* add share icon in the future */

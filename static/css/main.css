@@ -2113,7 +2113,7 @@ This is all nav bar stuff:*/
   }
 }
 
-div.tablediv {
+div.tablediv div.table-scroll {
   /* for aniamtions
 
   */
@@ -2123,22 +2123,22 @@ div.tablediv {
   /* alternating bcg for lines */
   /* style Degreeview Logo */
 }
-div.tablediv table {
+div.tablediv div.table-scroll table {
   border-collapse: collapse;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
 }
-div.tablediv table tr {
+div.tablediv div.table-scroll table tr {
   /* transition: font-size calc(var(--order) * 300ms) ease; */
 }
-div.tablediv table td,
-div.tablediv table th {
+div.tablediv div.table-scroll table td,
+div.tablediv div.table-scroll table th {
   border: 1px solid #ccc;
   padding: 15px 9px;
   min-height: 40px;
 }
-div.tablediv table tr:first-child td {
+div.tablediv div.table-scroll table tr:first-child td {
   font-weight: bold;
   background-color: var(--vibrantorange);
   color: white;
@@ -2147,55 +2147,55 @@ div.tablediv table tr:first-child td {
   font-size: 20px;
   padding: 18px;
 }
-div.tablediv table tr:first-child td:nth-of-type(1) {
+div.tablediv div.table-scroll table tr:first-child td:nth-of-type(1) {
   border-top-left-radius: 10px;
   padding-left: 10px;
 }
-div.tablediv table tr:first-child td:nth-last-of-type(1) {
+div.tablediv div.table-scroll table tr:first-child td:nth-last-of-type(1) {
   border-top-right-radius: 10px;
   padding-right: 15px;
 }
-div.tablediv table tr:last-child td:nth-of-type(1) {
+div.tablediv div.table-scroll table tr:last-child td:nth-of-type(1) {
   border-bottom-left-radius: 10px;
 }
-div.tablediv table tr:last-child td:nth-of-type(5) {
+div.tablediv div.table-scroll table tr:last-child td:nth-of-type(5) {
   border-bottom-right-radius: 10px;
   border: 1px solid #ccc;
   border-collapse: separate;
 }
-div.tablediv td:nth-child(1),
-div.tablediv th:nth-child(1) {
+div.tablediv div.table-scroll td:nth-child(1),
+div.tablediv div.table-scroll th:nth-child(1) {
   text-align: left;
   padding-right: 15px !important;
   font-weight: bold;
   font-size: 17px;
 }
-div.tablediv td:nth-child(2),
-div.tablediv th:nth-child(2) {
+div.tablediv div.table-scroll td:nth-child(2),
+div.tablediv div.table-scroll th:nth-child(2) {
   text-align: left;
 }
-div.tablediv td:nth-child(3),
-div.tablediv th:nth-child(3) {
+div.tablediv div.table-scroll td:nth-child(3),
+div.tablediv div.table-scroll th:nth-child(3) {
   text-align: left;
 }
-div.tablediv td:nth-child(4) {
+div.tablediv div.table-scroll td:nth-child(4) {
   text-align: center;
 }
-div.tablediv td:nth-child(5),
-div.tablediv th:nth-child(5) {
+div.tablediv div.table-scroll td:nth-child(5),
+div.tablediv div.table-scroll th:nth-child(5) {
   /* this would remove the schoolname normally */
   /* display: none; */
 }
-div.tablediv tr:nth-child(even) {
+div.tablediv div.table-scroll tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-div.tablediv tr:nth-child(odd) {
+div.tablediv div.table-scroll tr:nth-child(odd) {
   background-color: #fafafa;
 }
-div.tablediv table tr:last-child {
+div.tablediv div.table-scroll table tr:last-child {
   background-color: #fff;
 }
-div.tablediv table tr:last-child td:first-child {
+div.tablediv div.table-scroll table tr:last-child td:first-child {
   font-weight: bold;
   color: #0c48a5;
   font-family: "Barlow";
@@ -2203,23 +2203,23 @@ div.tablediv table tr:last-child td:first-child {
   font-size: 30px;
   text-align: left;
 }
-div.tablediv table tr:last-child td:last-child {
+div.tablediv div.table-scroll table tr:last-child td:last-child {
   color: transparent;
 }
-div.tablediv .dummytd {
+div.tablediv div.table-scroll .dummytd {
   background-color: yellow;
 }
 @media screen and (max-width: 550px) {
-  div.tablediv {
+  div.tablediv div.table-scroll {
     /* now semester table */
     /* make the logo box smaller */
   }
-  div.tablediv table td {
+  div.tablediv div.table-scroll table td {
     width: 95%;
     padding: 15px 4px;
     font-size: 15.5px;
   }
-  div.tablediv table tr:last-child td:first-child {
+  div.tablediv div.table-scroll table tr:last-child td:first-child {
     font-weight: bold;
     color: #0c48a5;
     font-family: "Barlow";
@@ -2227,12 +2227,12 @@ div.tablediv .dummytd {
     /* make the logo box smaller */
     font-size: 20px !important;
   }
-  div.tablediv table td {
+  div.tablediv div.table-scroll table td {
     width: 95%;
     padding: 15px 4px;
     font-size: 15px;
   }
-  div.tablediv table tr:last-child td:first-child {
+  div.tablediv div.table-scroll table tr:last-child td:first-child {
     font-weight: bold;
     color: #0c48a5;
     font-family: "Barlow";
@@ -2240,8 +2240,8 @@ div.tablediv .dummytd {
     font-size: 20px !important;
   }
 }
-@media screen and (max-width: 550px) and (max-width: 450px) {
-  div.tablediv table {
+@media screen and (max-width: 450px) {
+  div.tablediv div.table-scroll {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; /* smoother scroll on mobile */
   }
@@ -2571,6 +2571,10 @@ This is all nav bar stuff:*/
 .sitecontainer#sorted-departments .tablediv .copyanddownload i:hover {
   cursor: pointer;
 }
+.sitecontainer#sorted-departments .tablediv .table-scroll {
+  width: 100%;
+  height: auto;
+}
 @media screen and (min-width: 700px) and (max-width: 1272px) {
   .sitecontainer#sorted-departments {
     /* all the following is in left content */
@@ -2833,24 +2837,6 @@ This is all nav bar stuff:*/
     padding-left: 30px;
     padding-right: 10px;
   }
-}
-.sitecontainer#sorted-departments .undermainsite {
-  width: 100%;
-  flex: 1 1 350px;
-  border-top: 10px solid var(--secondarynavy);
-  border-bottom: 10px solid var(--secondarynavy);
-  height: auto;
-  padding: 20px 0px 50px 0px;
-}
-.sitecontainer#sorted-departments #sorted-departments-table {
-  width: 90%;
-  border-radius: 26px;
-  /* border: 5px solid #081a75; */
-  padding: 0px;
-  min-height: 100px;
-  height: auto;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* smoother scroll on mobile */
 }
 
 /*  */
