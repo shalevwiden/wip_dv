@@ -210,11 +210,11 @@ body .sitecontainer#statspage .mainsite {
   border-bottom: 10px solid #153f66;
   row-gap: 35px;
 }
-body .sitecontainer#statspage .mainsite ul.otherpageslinks {
+body .sitecontainer#statspage .mainsite ul#other_pages_links {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100%;
+  height: 100px;
   align-items: center;
   -moz-column-gap: 90px;
        column-gap: 90px;
@@ -223,7 +223,7 @@ body .sitecontainer#statspage .mainsite ul.otherpageslinks {
   list-style-type: none;
   padding-left: 0;
 }
-body .sitecontainer#statspage .mainsite ul.otherpageslinks li {
+body .sitecontainer#statspage .mainsite ul#other_pages_links li {
   /* make them big so you can hover */
   width: 25%;
   display: flex;
@@ -235,11 +235,11 @@ body .sitecontainer#statspage .mainsite ul.otherpageslinks li {
   border-radius: 35px;
   padding: 20px;
 }
-body .sitecontainer#statspage .mainsite ul.otherpageslinks li:hover {
+body .sitecontainer#statspage .mainsite ul#other_pages_links li:hover {
   background-color: #284dbc;
   cursor: pointer;
 }
-body .sitecontainer#statspage .mainsite ul.otherpageslinks li a {
+body .sitecontainer#statspage .mainsite ul#other_pages_links li a {
   text-decoration: none;
   color: white;
   font-size: 19px;

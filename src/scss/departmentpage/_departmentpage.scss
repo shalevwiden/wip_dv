@@ -291,9 +291,17 @@ Begin left content stuff
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   transition: background-color 0.5s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #fdfbfa;
+    color: #153f66;
+
+    border: 3px solid rgb(15, 29, 89);
+  }
 }
 
-#animatebutton:hover {
+:hover {
   cursor: pointer;
   background-color: #fdfbfa;
   color: #153f66;

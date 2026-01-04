@@ -166,3 +166,23 @@ footer #smalllogo:hover {
   animation: updownred 2s cubic-bezier(0.42, 0, 0.58, 1) forwards;
   animation-delay: calc(var(--order) * 300ms);
 }
+
+@keyframes updown_ut {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+
+  50% {
+    transform: translateY(20px) scale(1);
+    background-color: rgba(243, 105, 50, 0.71);
+    font-size: 20px;
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.updown_ut {
+  animation: updown_ut 2s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+  animation-delay: calc(var(--order) * 300ms);
+}

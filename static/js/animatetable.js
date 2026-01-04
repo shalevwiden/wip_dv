@@ -7,6 +7,9 @@ console.log("Table Animation Script Present");
 departmentcoursestable = document.getElementById("departmentcoursestable");
 csvtablecontainer = document.getElementById("csvtablecontainer");
 
+// now do it for the sorted table
+sorted_table = document.getElementById("sorted-departments-table");
+
 animatebutton = document.getElementById("animatebutton");
 
 var shiftaniamtion = "tableanimationforwards";
@@ -134,6 +137,65 @@ window.addEventListener("load", () => {
       animatebutton.addEventListener("click", runfullanimation);
       animatebutton.addEventListener("click", (e) => console.log("clicked"));
     }
+    if (sorted_table) {
+      let trs = sorted_table.querySelectorAll("tr");
+
+      console.log(trs);
+      // skip the first two rows since heading and then display none
+      trs = Array.from(trs).slice(2);
+      //   remove last row(logo row)
+
+      trs = trs.slice(0, -1);
+
+      trs.forEach((el, i) => {
+        el.style.setProperty("--order", i);
+      });
+
+      function fullanimation(tr, animationclass2, index) {
+        // first add it
+        console.log("Animating", tr);
+        console.log(`Animation class 2: ${animationclass2}`);
+        tr.classList.add(animationclass2);
+        // any stylings should be done in css on the animation class - this will do it all instantly
+        // tr.style.backgroundColor = "#48f79dff";
+        // tr.style.fontWeight = "bold";
+      }
+
+      // now add the full animationtoeverytr
+      function runfullanimation(animationclass1) {
+        // pay attention to the classes
+        trs.forEach((tr, index) => {
+          fullanimation(tr, animationclass1, index);
+        });
+
+        // this should only run after every tr has done the animation
+        function removeanimation() {
+          trs.forEach((tr) => {
+            console.log("Running remove animation now");
+            tr.classList.remove(animationclass1);
+            // tr.style.backgroundColor = "#f76548ff";
+          });
+        }
+        removedelay = (trs.length - 1) * 300 + 2000; //the first animation that runs will be 2 seconds
+
+        setTimeout(removeanimation, removedelay);
+        // with this something can happen that will alert the user.
+        setTimeout(() => {
+          console.log("Done with aniamtion");
+        }, removedelay);
+      }
+      //   300 ms is the order delay
+
+      // this is where it all happens
+      animatebutton.addEventListener("click", function (event) {
+        // change the class you pass here to change the color
+        runfullanimation("updown_ut");
+      });
+
+      animatebutton.addEventListener("click", runfullanimation);
+      animatebutton.addEventListener("click", (e) => console.log("clicked"));
+    }
+
     // 1 second delay even after page loads.
   }, 1000);
 });
