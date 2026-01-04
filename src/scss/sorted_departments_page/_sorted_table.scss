@@ -110,13 +110,13 @@ div.tablediv {
   }
 
   @media screen and (max-width: 550px) {
-    #csvtablecontainer table td {
+    table td {
       width: 95%;
       padding: 15px 4px;
       font-size: 15.5px;
     }
 
-    #csvtablecontainer table tr:last-child td:first-child {
+    table tr:last-child td:first-child {
       font-weight: bold;
       color: #0c48a5;
       font-family: "Barlow";
@@ -140,6 +140,13 @@ div.tablediv {
       font-family: "Barlow";
       font-weight: 600;
       font-size: 20px !important;
+    }
+
+    @media screen and (max-width: 450px) {
+      table {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* smoother scroll on mobile */
+      }
     }
   }
 }
