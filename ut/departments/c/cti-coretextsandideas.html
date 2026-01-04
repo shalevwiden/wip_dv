@@ -1,0 +1,956 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+</script>
+<!-- End Google Tag Manager -->
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (CTI) - Core Texts and Ideas"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Core Texts and Ideas UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../c/c-departments.html"
+                  >C Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">(CTI) - Core Texts and Ideas</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+              <li><a href="../../../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="degreenametitle">(CTI) - Core Texts and Ideas</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="original">original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/cti-coretextsandideas/excel-files/cti-coretextsandideas-courses-originaltheme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Core Texts and Ideas Courses with "Core Texts and Ideas"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              (CTI) - Core Texts and Ideas Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">84</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                The Sacred and the Secular in Modern European Thought
+              </div>
+            </section>
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Dante
+              </div>
+            </section>
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                10, 11.9%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                74, 88.1%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                30
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Core Texts and Ideas Courses with "Core Texts and Ideas" in their name
+              </div>
+              <div class="statscontent">
+                2, 2.4%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Core Texts and Ideas Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+
+        
+                    <table id="departmentcoursestable">
+                        <tr>
+                        <td colspan="2">Core Texts and Ideas</td>
+                       
+                        <td colspan="2" >The University of Texas at Austin</td>
+                        </tr>
+                        <tr>
+                        <td>Course Name</td>
+                        <td>Course Code</td>
+                        <td>Course Hours</td>
+                        <td>Classification</td>
+                        </tr>
+                        
+
+                    
+                        <tr>
+                       <td>Introduction to Ancient Greece</td>
+                       <td>CTI 301G</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Classics of Social and Political Thought</td>
+                       <td>CTI 302</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Competing Visions of the Good Life</td>
+                       <td>CTI 303</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in World Religions: Traditions and Texts</td>
+                       <td>CTI 304</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to the Old Testament</td>
+                       <td>CTI 305G</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to the New Testament</td>
+                       <td>CTI 305N</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>History of the Religions of Asia</td>
+                       <td>CTI 306D</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Western Civilization in Medieval Times</td>
+                       <td>CTI 307E</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Western Civilization in Modern Times</td>
+                       <td>CTI 307M</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Core Texts and Ideas</td>
+                       <td>CTI 310</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Core Texts and Ideas</td>
+                       <td>CTI 375</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>The Classical Quest for Justice</td>
+                       <td>CTI 320</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>The Theoretical Foundations of Modern Politics</td>
+                       <td>CTI 321</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Spinoza and Modernity</td>
+                       <td>CTI 321F</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Critics of Modern Liberalism</td>
+                       <td>CTI 322</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Might and Right among Nations</td>
+                       <td>CTI 323</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Politics and Literature</td>
+                       <td>CTI 324</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Morality and Politics</td>
+                       <td>CTI 325</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Citizenship and Patriotism</td>
+                       <td>CTI 325C</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Chinese Ethics and Political Philosophy</td>
+                       <td>CTI 325D</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Liberty and Empire: Machiavelli</td>
+                       <td>CTI 325M</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Thomas Paine, Liberalism, and the Enlightenment</td>
+                       <td>CTI 325P</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Constitutional Interpretation</td>
+                       <td>CTI 326C</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>African American Social and Political Thought</td>
+                       <td>CTI 326J</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Civil Liberties</td>
+                       <td>CTI 326L</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Regime Perspectives on American Politics</td>
+                       <td>CTI 326R</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Structure of Individual Liberties</td>
+                       <td>CTI 326S</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>The Tragicomedy of American Democracy</td>
+                       <td>CTI 326T</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Archaic Greece: Society and Culture</td>
+                       <td>CTI 327C</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>The History of Rome: The Republic</td>
+                       <td>CTI 327D</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Roots of Democracy</td>
+                       <td>CTI 327E</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Death and the Afterlife in Graeco-Roman Antiquity</td>
+                       <td>CTI 328D</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>The Ancient Historians</td>
+                       <td>CTI 329</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Jerusalem and Athens</td>
+                       <td>CTI 330J</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Machiavelli: Politics and Culture</td>
+                       <td>CTI 330M</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>The Political Thought of the Reformation</td>
+                       <td>CTI 330R</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Origins of Liberalism</td>
+                       <td>CTI 331</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>The Sacred and the Secular in Modern European Thought</td>
+                       <td>CTI 332</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Rousseau and His Legacy</td>
+                       <td>CTI 333</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>History of Christian Philosophy</td>
+                       <td>CTI 335C</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Hegel and the Formation of Modern European Identity</td>
+                       <td>CTI 335E</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Marx and Marxist Theory</td>
+                       <td>CTI 335M</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Women in the History of Political Thought</td>
+                       <td>CTI 335W</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>The Question of Relativism</td>
+                       <td>CTI 338</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>The Pursuit of Happiness</td>
+                       <td>CTI 339</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>The Meaning of Life</td>
+                       <td>CTI 339M</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Ancient Epic</td>
+                       <td>CTI 340</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Moral Agency In Greek Tragedy</td>
+                       <td>CTI 341</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Satan and the Idea of Evil</td>
+                       <td>CTI 342</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Love in the East and West</td>
+                       <td>CTI 343</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Epics and Heroes of India</td>
+                       <td>CTI 344</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Dante</td>
+                       <td>CTI 344D</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>War and Epic Literature</td>
+                       <td>CTI 344E</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Italian Masterpieces</td>
+                       <td>CTI 344M</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Leadership: King Arthur to Queen Elizabeth</td>
+                       <td>CTI 345L</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>The Major Works of Dostoevsky</td>
+                       <td>CTI 346</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>The Russian Novel</td>
+                       <td>CTI 347</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>War and Revolution in Russian Literature and Culture</td>
+                       <td>CTI 348</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Masterworks of World Drama</td>
+                       <td>CTI 350</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>The Idea of the Beautiful</td>
+                       <td>CTI 351</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Early Italian Renaissance Art to 1470</td>
+                       <td>CTI 352D</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Abraham and Abrahamic Religions</td>
+                       <td>CTI 354</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>The Five Books of Moses</td>
+                       <td>CTI 354F</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>The Book of Job</td>
+                       <td>CTI 354J</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Law and Justice in the Bible</td>
+                       <td>CTI 354L</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Biblical Prophecy</td>
+                       <td>CTI 354P</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>The Bible in the Colonial Americas</td>
+                       <td>CTI 355</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Law, Liberty, and Faith</td>
+                       <td>CTI 355C</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>The Age of Reformation</td>
+                       <td>CTI 355R</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Origin of the Idea of Religious Liberty</td>
+                       <td>CTI 355S</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Debating the Bible in the Twenty-First Century</td>
+                       <td>CTI 355T</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Islamic Theology</td>
+                       <td>CTI 357</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>The French Revolution and Napoleon</td>
+                       <td>CTI 363</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Classics of Social Scientific Thought</td>
+                       <td>CTI 365</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Einstein in the Age of Conflict</td>
+                       <td>CTI 371</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Darwin on Origin of Species</td>
+                       <td>CTI 371D</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>History of Mathematics</td>
+                       <td>CTI 371M</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Newton's Principia</td>
+                       <td>CTI 371N</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Science and Religion to Newton</td>
+                       <td>CTI 371S</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Science and Religion from Newton to the Present</td>
+                       <td>CTI 371T</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Darwin and the Politics of Evolution</td>
+                       <td>CTI 372</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Great Works In Medicine</td>
+                       <td>CTI 373</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Biology, Behavior, and Injustice</td>
+                       <td>CTI 374</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Conference Course</td>
+                       <td>CTI 379</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>DegreeView</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                    </table>
+                    
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+    </div>
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+
+
+                    <!-- Hover Script -->
+
+                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../static/js/animatetable.js"></script>
+    
+  </body>
+</html>

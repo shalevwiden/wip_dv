@@ -1,0 +1,753 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+</script>
+<!-- End Google Tag Manager -->
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (S W) - Social Work"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Social Work UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../s/s-departments.html"
+                  >S Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">(S W) - Social Work</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+              <li><a href="../../../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="degreenametitle">(S W) - Social Work</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="original">original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/sw-socialwork/excel-files/sw-socialwork-courses-originaltheme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Social Work Courses with "Social Work"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              (S W) - Social Work Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">55</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                Foundations of Social Justice: Values, Diversity, Power, and Oppression
+              </div>
+            </section>
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Dissertation
+              </div>
+            </section>
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                6, 10.9%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                17, 30.9%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                32, 58.2%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                38
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Social Work Courses with "Social Work" in their name
+              </div>
+              <div class="statscontent">
+                17, 30.9%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Social Work Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+
+        
+                    <table id="departmentcoursestable">
+                        <tr>
+                        <td colspan="2">Social Work</td>
+                       
+                        <td colspan="2" >The University of Texas at Austin</td>
+                        </tr>
+                        <tr>
+                        <td>Course Name</td>
+                        <td>Course Code</td>
+                        <td>Course Hours</td>
+                        <td>Classification</td>
+                        </tr>
+                        
+
+                    
+                        <tr>
+                       <td>Introduction to Social Work and Social Welfare</td>
+                       <td>S W 310 (TCCN: SOCW 2361)</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introductory Topics in Social Work</td>
+                       <td>S W 311</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Generalist Social Work Practice: Knowledge, Values, and Skills</td>
+                       <td>S W 312</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Social Work Research Methods</td>
+                       <td>S W 313</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Social Work Statistics</td>
+                       <td>S W 318</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Social Work</td>
+                       <td>S W 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
+                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Social Welfare Programs, Policies, and Issues</td>
+                       <td>S W 323K</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Foundations of Social Justice</td>
+                       <td>S W 325</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Human Behavior and Social Environment</td>
+                       <td>S W 327</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Transformative Teams In Health Care</td>
+                       <td>S W 329</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Social Work</td>
+                       <td>S W 129S, 229S, 329S, 429S, 529S, 629S, 729S, 829S, 929S</td>
+                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Social Work Practice with Individuals and Families</td>
+                       <td>S W 332</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Social Work Practice with Groups</td>
+                       <td>S W 333</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Social Work Practice in Organizations and Communities</td>
+                       <td>S W 334</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Facilitating Dialogues on LGBTQ Oppression: Peers for Pride in Action</td>
+                       <td>S W 335</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Social Work Applied Practice</td>
+                       <td>S W 445</td>
+                       <td>4</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Social Work Practicum Instruction I</td>
+                       <td>S W 645F</td>
+                       <td>6</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Social Work Practicum Instruction II</td>
+                       <td>S W 645G</td>
+                       <td>6</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Special Topics in Generalist Social Work</td>
+                       <td>S W 350</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Disability Studies</td>
+                       <td>S W 355</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Current Social Work Topics</td>
+                       <td>S W 360K, 460K</td>
+                       <td>3, 4</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Social Justice and Change: A Critical International Perspective</td>
+                       <td>S W 367M, 467M</td>
+                       <td>3, 4</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Honors Tutorial Course</td>
+                       <td>S W 679H</td>
+                       <td>6</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Human Behavior and the Social Environment</td>
+                       <td>S W 381R</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Foundations of Social Justice: Values, Diversity, Power, and Oppression</td>
+                       <td>S W 381S</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Dynamics of Organizations and Communities</td>
+                       <td>S W 381T</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Social Policy Analysis and Social Problems</td>
+                       <td>S W 382R</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Dual MSSW Program with Partner Institutions</td>
+                       <td>S W 083C</td>
+                       <td>0</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Foundations of Social Work Practice I</td>
+                       <td>S W 384F</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Foundations of Social Work Practice II</td>
+                       <td>S W 384G</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Generalist Practicum Instruction I</td>
+                       <td>S W 385F</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Generalist Practicum Instruction II</td>
+                       <td>S W 385G</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Social Work Research Methods</td>
+                       <td>S W 385R</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Integrative Capstone in Social Work Knowledge and Practice</td>
+                       <td>S W 385T</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Direct Practice Immersion</td>
+                       <td>S W 387D</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Special Issues</td>
+                       <td>S W 387R</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Transformative Teams in Health Care</td>
+                       <td>S W 387T</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Advanced  Research in Social Work: Seminar</td>
+                       <td>S W 388R</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Strategies of Intervention: Seminar</td>
+                       <td>S W 390N</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Social Welfare Policy Analysis</td>
+                       <td>S W 392R</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Advanced Clinical Practice</td>
+                       <td>S W 393R</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Advanced Macro Practice</td>
+                       <td>S W 393T</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Social Justice and Populations at Risk</td>
+                       <td>S W 393U</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Social Work in Specific Settings</td>
+                       <td>S W 393V</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Practicum Instruction</td>
+                       <td>S W 394U, 694U</td>
+                       <td>3, 6</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Colloquium on Issues in Social Work Education and Research I</td>
+                       <td>S W 195F</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Research in Social Work</td>
+                       <td>S W 395J, 695J, 995J</td>
+                       <td>3, 6, 9</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Conference Course in Social Work</td>
+                       <td>S W 195K, 295K, 395K, 495K</td>
+                       <td>1, 2, 3, 4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Research Practicum</td>
+                       <td>S W 395L</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Colloquium on Issues in Social Work Education and Research II</td>
+                       <td>S W 195N</td>
+                       <td>1</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Area of Specialization Course</td>
+                       <td>S W 395S</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Writing Practicum</td>
+                       <td>S W 395W</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Social Justice and Change:  A Critical International Perspective</td>
+                       <td>S W 497M</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Pedagogy in Social Work</td>
+                       <td>S W 398T</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Dissertation</td>
+                       <td>S W 399W, 699W, 999W</td>
+                       <td>3, 6, 9</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>DegreeView</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                    </table>
+                    
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+    </div>
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+
+
+                    <!-- Hover Script -->
+
+                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../static/js/animatetable.js"></script>
+    
+  </body>
+</html>

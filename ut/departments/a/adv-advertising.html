@@ -1,0 +1,921 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+</script>
+<!-- End Google Tag Manager -->
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (ADV) - Advertising"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Advertising UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../a/a-departments.html"
+                  >A Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">(ADV) - Advertising</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+              <li><a href="../../../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="degreenametitle">(ADV) - Advertising</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="original">original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/adv-advertising/excel-files/adv-advertising-courses-originaltheme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Advertising Courses with "Advertising"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              (ADV) - Advertising Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">79</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                Topics in Theories of Persuasive Communication and Consumer Decision Making
+              </div>
+            </section>
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Thesis
+              </div>
+            </section>
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                10, 12.7%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                50, 63.3%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                19, 24.1%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                31
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Advertising Courses with "Advertising" in their name
+              </div>
+              <div class="statscontent">
+                21, 26.6%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Advertising Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+
+        
+                    <table id="departmentcoursestable">
+                        <tr>
+                        <td colspan="2">Advertising</td>
+                       
+                        <td colspan="2" >The University of Texas at Austin</td>
+                        </tr>
+                        <tr>
+                        <td>Course Name</td>
+                        <td>Course Code</td>
+                        <td>Course Hours</td>
+                        <td>Classification</td>
+                        </tr>
+                        
+
+                    
+                        <tr>
+                       <td>Advertising and Popular Culture</td>
+                       <td>ADV 303</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Fundamentals of Advertising</td>
+                       <td>ADV 305</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Integrated Communication for Sports</td>
+                       <td>ADV 305S</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Advertising and Public Relations Research</td>
+                       <td>ADV 309R</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Social and Ethical Issues</td>
+                       <td>ADV 314</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>History and Development of Advertising</td>
+                       <td>ADV 315</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Creativity and American Culture</td>
+                       <td>ADV 316</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Integrated Brand Communication</td>
+                       <td>ADV 318J</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Psychology of Advertising</td>
+                       <td>ADV 319</td>
+                       <td>3</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Advertising</td>
+                       <td>ADV 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
+                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                       <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Integrated Communication for Nonprofit Organizations</td>
+                       <td>ADV 320</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Leadership and Ethics</td>
+                       <td>ADV 321</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Health Communication: Messages, Campaigns, and the Media</td>
+                       <td>ADV 322</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Public Communication of Science and Technology</td>
+                       <td>ADV 323</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Communicating Sustainability</td>
+                       <td>ADV 324</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Introduction to Advertising Creativity</td>
+                       <td>ADV 325</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Account Planning</td>
+                       <td>ADV 327</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Psychology of Video Game Advertising</td>
+                       <td>ADV 328</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Advertising</td>
+                       <td>ADV 129S, 229S, 329S, 429S, 529S, 629S, 729S, 829S, 929S</td>
+                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Strategic Science Communication</td>
+                       <td>ADV 330</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Environmental Communication Campaigns</td>
+                       <td>ADV 331</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Technology Marketing and Advertising</td>
+                       <td>ADV 332</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>New Media Entrepreneurialism</td>
+                       <td>ADV 332C</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Entrepreneurialism in Communication</td>
+                       <td>ADV 332D</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>International Advertising</td>
+                       <td>ADV 334</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Multicultural Issues in Advertising and Public Relations</td>
+                       <td>ADV 336</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Digital Creative Portfolio</td>
+                       <td>ADV 338K</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Copywriting</td>
+                       <td>ADV 338L</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Digital Graphic Communication</td>
+                       <td>ADV 339K</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Brand Storytelling</td>
+                       <td>ADV 339L</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Research in Sports Communication and Media</td>
+                       <td>ADV 341S</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Portfolio I</td>
+                       <td>ADV 343K</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advertising and Public Relations Research</td>
+                       <td>ADV 344K</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advertising and Public Relations Media Planning</td>
+                       <td>ADV 345J</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Art Direction</td>
+                       <td>ADV 447C</td>
+                       <td>4</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>The Business of Sports Media</td>
+                       <td>ADV 348S</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advertising Internship</td>
+                       <td>ADV 350, 650</td>
+                       <td>3, 6</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Internship in Sports Media</td>
+                       <td>ADV 350S</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advertising Practicum</td>
+                       <td>ADV 151</td>
+                       <td>1</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advertising and Public Relations Law and Ethics</td>
+                       <td>ADV 353</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Creativity in Artificial Intelligence</td>
+                       <td>ADV 361</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Immersive Media Lab</td>
+                       <td>ADV 363</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Immersive Experiences</td>
+                       <td>ADV 364</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Audience Development and Engagement</td>
+                       <td>ADV 365</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Special Topics in Advertising</td>
+                       <td>ADV 366</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Experimental Storytelling</td>
+                       <td>ADV 367</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Advertising Senior Seminar</td>
+                       <td>ADV 368C</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Portfolio II</td>
+                       <td>ADV 368K, 468K</td>
+                       <td>3, 4</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Portfolio III</td>
+                       <td>ADV 368L, 468L</td>
+                       <td>3, 4</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Social Media</td>
+                       <td>ADV 369</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Integrated Communications Management</td>
+                       <td>ADV 370J</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Integrated Communications Campaigns</td>
+                       <td>ADV 373</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Portfolio IV</td>
+                       <td>ADV 375, 475</td>
+                       <td>3, 4</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advertising Media Topics</td>
+                       <td>ADV 377</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Media Studies</td>
+                       <td>ADV 377M</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advanced Topics in Advertising</td>
+                       <td>ADV 378</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Special Topics in Sports Media</td>
+                       <td>ADV 378S</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Integrated Communication for Sports and Entertainment</td>
+                       <td>ADV 379</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Honors Tutorial Course</td>
+                       <td>ADV 379H</td>
+                       <td>3</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Advertising Problems</td>
+                       <td>ADV 179J, 279J, 379J, 479J</td>
+                       <td>1, 2, 3, 4</td>
+                       <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Consumer Behavior</td>
+                       <td>ADV 381</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Quantitative and Qualitative Research</td>
+                       <td>ADV 382</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Theories of Persuasive Communication and Consumer Decision Making</td>
+                       <td>ADV 382J</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Supervised Individual Creative Studies</td>
+                       <td>ADV 483</td>
+                       <td>4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in International Advertising</td>
+                       <td>ADV 385</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Experimental Storytelling</td>
+                       <td>ADV 386</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Creative Strategies</td>
+                       <td>ADV 387</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Research Problems: Doctoral Examination Preparation</td>
+                       <td>ADV 388C</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Principles of Advertising Management</td>
+                       <td>ADV 388J</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Integrated Communications Management</td>
+                       <td>ADV 388K</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Problems in Specialized Fields of Advertising</td>
+                       <td>ADV 189, 389, 489</td>
+                       <td>1, 3, 4</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Seminar in Advertising</td>
+                       <td>ADV 391K</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Invisible Global Market</td>
+                       <td>ADV 391L</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Topics in Advertising Theory and Research</td>
+                       <td>ADV 392</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Advertising Internship</td>
+                       <td>ADV 395</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Thesis</td>
+                       <td>ADV 698</td>
+                       <td>6</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Master's Report</td>
+                       <td>ADV 398R</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Student Teaching in Advertising</td>
+                       <td>ADV 398T</td>
+                       <td>3</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>Dissertation</td>
+                       <td>ADV 399W, 699W, 999W</td>
+                       <td>3, 6, 9</td>
+                       <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                       <td>DegreeView</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                    </table>
+                    
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+    </div>
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+
+
+                    <!-- Hover Script -->
+
+                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../static/js/animatetable.js"></script>
+    
+  </body>
+</html>
