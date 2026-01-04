@@ -1,0 +1,145 @@
+div.tablediv {
+  // tablediv styling is not here, this is just to group them
+  table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  /* for aniamtions
+
+*/
+  table tr {
+    /* transition: font-size calc(var(--order) * 300ms) ease; */
+  }
+
+  table td,
+  table th {
+    border: 1px solid #ccc;
+    padding: 15px 9px;
+    min-height: 40px;
+  }
+
+  /* style first row bold */
+  table tr:first-child td {
+    font-weight: bold;
+    background-color: var(--vibrantorange);
+    color: white;
+    border: none;
+    text-align: left;
+    font-size: 20px;
+    padding: 18px;
+  }
+  /* add border radius to the whole table */
+  table tr:first-child td:nth-of-type(1) {
+    border-top-left-radius: 10px;
+    padding-left: 10px;
+  }
+  table tr:first-child td:nth-last-of-type(1) {
+    border-top-right-radius: 10px;
+
+    padding-right: 15px;
+  }
+
+  table tr:last-child td:nth-of-type(1) {
+    border-bottom-left-radius: 10px;
+  }
+  table tr:last-child td:nth-of-type(5) {
+    border-bottom-right-radius: 10px;
+    border: 1px solid #ccc;
+
+    border-collapse: separate;
+  }
+
+  /* change alignment */
+  td:nth-child(1),
+  th:nth-child(1) {
+    text-align: left;
+    padding-right: 15px !important;
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  td:nth-child(2),
+  th:nth-child(2) {
+    text-align: left;
+  }
+
+  td:nth-child(3),
+  th:nth-child(3) {
+    text-align: left;
+  }
+  td:nth-child(4) {
+    text-align: center;
+  }
+
+  td:nth-child(5),
+  th:nth-child(5) {
+    /* this would remove the schoolname normally */
+    /* display: none; */
+  }
+
+  /* alternating bcg for lines */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  tr:nth-child(odd) {
+    background-color: #fafafa;
+  }
+
+  /* style Degreeview Logo */
+
+  table tr:last-child {
+    background-color: #fff;
+  }
+  table tr:last-child td:first-child {
+    font-weight: bold;
+    color: #0c48a5;
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 30px;
+    text-align: left;
+  }
+
+  table tr:last-child td:last-child {
+    color: transparent;
+  }
+
+  .dummytd {
+    background-color: yellow;
+  }
+
+  @media screen and (max-width: 550px) {
+    #csvtablecontainer table td {
+      width: 95%;
+      padding: 15px 4px;
+      font-size: 15.5px;
+    }
+
+    #csvtablecontainer table tr:last-child td:first-child {
+      font-weight: bold;
+      color: #0c48a5;
+      font-family: "Barlow";
+      font-weight: 600;
+      /* make the logo box smaller */
+      font-size: 20px !important;
+    }
+
+    /* now semester table */
+
+    table td {
+      width: 95%;
+      padding: 15px 4px;
+      font-size: 15px;
+    }
+
+    /* make the logo box smaller */
+    table tr:last-child td:first-child {
+      font-weight: bold;
+      color: #0c48a5;
+      font-family: "Barlow";
+      font-weight: 600;
+      font-size: 20px !important;
+    }
+  }
+}

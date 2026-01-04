@@ -2,3 +2,9 @@
 @use "schoolhomepage/schoolhomepage";
 @use "sorted_departments_page/sorted_departments_page.scss";
 @use "statspage";
+@use "../utils/mixins" as *;
+
+// DRY
+body {
+  @include dvbody_styling;
+}

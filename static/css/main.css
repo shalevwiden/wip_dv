@@ -2113,141 +2113,32 @@ This is all nav bar stuff:*/
   }
 }
 
-:root {
-  --secondarynavy: #153f66;
-  --lighterblue: #284dbc;
-  --vibrantorange: rgb(244, 102, 70);
-}
+div.tablediv {
+  /* for aniamtions
 
-/* this will show up after sheetjs renders it */
-#csvtablecontainer table {
+  */
+  /* style first row bold */
+  /* add border radius to the whole table */
+  /* change alignment */
+  /* alternating bcg for lines */
+  /* style Degreeview Logo */
+}
+div.tablediv table {
   border-collapse: collapse;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
 }
-
-#csvtablecontainer table td,
-#csvtablecontainer table th {
-  border: 1px solid #ccc;
-  padding: 15px 9px;
-  min-height: 40px;
-}
-
-/* delete 2nd row */
-#csvtablecontainer table tr:nth-of-type(2) {
-  display: none;
-}
-
-/* style first row bold */
-#csvtablecontainer table tr:first-child td {
-  font-weight: bold;
-  background-color: var(--vibrantorange);
-  color: white;
-  border: none;
-  text-align: left;
-  font-size: 20px;
-  padding: 18px;
-}
-
-/* add border radius to the whole table */
-#csvtablecontainer table tr:first-child td:nth-of-type(1) {
-  border-top-left-radius: 10px;
-  padding-left: 10px;
-}
-
-#csvtablecontainer table tr:first-child td:nth-of-type(4) {
-  border-top-right-radius: 10px;
-  padding-right: 15px;
-}
-
-#csvtablecontainer table tr:last-child td:nth-of-type(1) {
-  border-bottom-left-radius: 10px;
-}
-
-#csvtablecontainer table tr:last-child td:nth-of-type(4) {
-  border-bottom-right-radius: 10px;
-  border: 1px solid #ccc;
-  border-collapse: separate;
-}
-
-#csvtablecontainer table tr:nth-of-type(3) td {
-  font-weight: bold;
-}
-
-/* change alignment */
-td:nth-child(1),
-th:nth-child(1) {
-  text-align: left;
-}
-
-td:nth-child(2),
-th:nth-child(2) {
-  text-align: left;
-}
-
-td:nth-child(3),
-th:nth-child(3) {
-  text-align: center;
-}
-
-#csvtablecontainer td:nth-child(5) {
-  display: none;
-}
-
-/* alternating bcg for lines */
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-/* style Degreeview Logo */
-#csvtablecontainer table tr:last-child {
-  background-color: #fff;
-}
-
-#csvtablecontainer table tr:last-child td:first-child {
-  font-weight: bold;
-  color: #0c48a5;
-  font-family: "Barlow";
-  font-weight: 600;
-  font-size: 30px;
-}
-
-/* for the rendered csv page, which is currently the semester one 
-
-
-
-
-
-*/
-#semester-csvtablecontainer table {
-  border-collapse: collapse;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-/* for aniamtions
-
-*/
-#semester-csvtablecontainer table tr {
+div.tablediv table tr {
   /* transition: font-size calc(var(--order) * 300ms) ease; */
 }
-
-#semester-csvtablecontainer table td,
-#semester-csvtablecontainer table th {
+div.tablediv table td,
+div.tablediv table th {
   border: 1px solid #ccc;
   padding: 15px 9px;
   min-height: 40px;
 }
-
-/* delete 2nd row */
-#semester-csvtablecontainer table tr:nth-of-type(2) {
-  display: none;
-}
-
-/* style first row bold */
-#semester-csvtablecontainer table tr:first-child td {
+div.tablediv table tr:first-child td {
   font-weight: bold;
   background-color: var(--vibrantorange);
   color: white;
@@ -2256,78 +2147,55 @@ tr:nth-child(even) {
   font-size: 20px;
   padding: 18px;
 }
-
-/* add border radius to the whole table */
-#semester-csvtablecontainer table tr:first-child td:nth-of-type(1) {
+div.tablediv table tr:first-child td:nth-of-type(1) {
   border-top-left-radius: 10px;
   padding-left: 10px;
 }
-
-#semester-csvtablecontainer table tr:first-child td:nth-of-type(6) {
+div.tablediv table tr:first-child td:nth-last-of-type(1) {
   border-top-right-radius: 10px;
   padding-right: 15px;
 }
-
-#semester-csvtablecontainer table tr:last-child td:nth-of-type(1) {
+div.tablediv table tr:last-child td:nth-of-type(1) {
   border-bottom-left-radius: 10px;
 }
-
-#semester-csvtablecontainer table tr:last-child td:nth-of-type(5) {
+div.tablediv table tr:last-child td:nth-of-type(5) {
   border-bottom-right-radius: 10px;
   border: 1px solid #ccc;
   border-collapse: separate;
 }
-
-#semester-csvtablecontainer table tr:nth-of-type(3) td {
-  /* this is the subheading row */
-  font-size: 17px;
-  font-weight: bold;
-}
-
-/* change alignment */
-#semester-csvtablecontainer td:nth-child(1),
-#semester-csvtablecontainer th:nth-child(1) {
-  text-align: right;
+div.tablediv td:nth-child(1),
+div.tablediv th:nth-child(1) {
+  text-align: left;
   padding-right: 15px !important;
   font-weight: bold;
   font-size: 17px;
 }
-
-td:nth-child(2),
-th:nth-child(2) {
+div.tablediv td:nth-child(2),
+div.tablediv th:nth-child(2) {
   text-align: left;
 }
-
-#semester-csvtablecontainer td:nth-child(3),
-th:nth-child(3) {
+div.tablediv td:nth-child(3),
+div.tablediv th:nth-child(3) {
   text-align: left;
 }
-
-#semester-csvtablecontainer td:nth-child(4) {
+div.tablediv td:nth-child(4) {
   text-align: center;
 }
-
-#semester-csvtablecontainer td:nth-child(5),
-th:nth-child(5) {
+div.tablediv td:nth-child(5),
+div.tablediv th:nth-child(5) {
   /* this would remove the schoolname normally */
   /* display: none; */
 }
-
-/* alternating bcg for lines */
-tr:nth-child(even) {
+div.tablediv tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-
-tr:nth-child(odd) {
+div.tablediv tr:nth-child(odd) {
   background-color: #fafafa;
 }
-
-/* style Degreeview Logo */
-#semester-csvtablecontainer table tr:last-child {
+div.tablediv table tr:last-child {
   background-color: #fff;
 }
-
-#semester-csvtablecontainer table tr:last-child td:first-child {
+div.tablediv table tr:last-child td:first-child {
   font-weight: bold;
   color: #0c48a5;
   font-family: "Barlow";
@@ -2335,22 +2203,23 @@ tr:nth-child(odd) {
   font-size: 30px;
   text-align: left;
 }
-
-#semester-csvtablecontainer table tr:last-child td:last-child {
+div.tablediv table tr:last-child td:last-child {
   color: transparent;
 }
-
-.dummytd {
+div.tablediv .dummytd {
   background-color: yellow;
 }
-
 @media screen and (max-width: 550px) {
-  #csvtablecontainer table td {
+  div.tablediv {
+    /* now semester table */
+    /* make the logo box smaller */
+  }
+  div.tablediv #csvtablecontainer table td {
     width: 95%;
     padding: 15px 4px;
     font-size: 15.5px;
   }
-  #csvtablecontainer table tr:last-child td:first-child {
+  div.tablediv #csvtablecontainer table tr:last-child td:first-child {
     font-weight: bold;
     color: #0c48a5;
     font-family: "Barlow";
@@ -2358,39 +2227,18 @@ tr:nth-child(odd) {
     /* make the logo box smaller */
     font-size: 20px !important;
   }
-  /* now semester table */
-  #semester-csvtablecontainer table td {
+  div.tablediv table td {
     width: 95%;
     padding: 15px 4px;
     font-size: 15px;
   }
-  /* make the logo box smaller */
-  #semester-csvtablecontainer table tr:last-child td:first-child {
+  div.tablediv table tr:last-child td:first-child {
     font-weight: bold;
     color: #0c48a5;
     font-family: "Barlow";
     font-weight: 600;
     font-size: 20px !important;
   }
-}
-.undermainsite {
-  width: 100%;
-  flex: 1 1 350px;
-  border-top: 10px solid var(--secondarynavy);
-  border-bottom: 10px solid var(--secondarynavy);
-  height: auto;
-  padding: 20px 0px 50px 0px;
-}
-
-#semester-csvtablecontainer {
-  width: 90%;
-  border-radius: 26px;
-  /* border: 5px solid #081a75; */
-  padding: 0px;
-  min-height: 100px;
-  height: auto;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* smoother scroll on mobile */
 }
 
 /* yeah so I just copy pasted the entire degreepage2 css and slightly modified the heading text instead of redoing  */
@@ -2410,39 +2258,63 @@ Basically everything is flex. To make it responsive switch direction from flex r
   scroll-behavior: smooth;
 }
 
-body {
-  scroll-behavior: smooth;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  filter: contrast(110%);
-  filter: saturate(110%);
-}
-
 /* 
 
 This is all nav bar stuff:*/
 /* end nav bar stuff */
-.sitecontainer {
+.sitecontainer#sorted-departments {
   min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex: 1 1;
-}
+  /* 
+  Above mainsite and its children
+  */
+  /* topnav beginning */
+  /* this is for the icon in the breadcrumbs */
+  /* 
 
-/* 
-Above mainsite and its children
-*/
-.abovemainsite {
+  still in top nav, but now the homeandabout section
+
+  */
+  /* now outside of top nav */
+  /* now done with above main site... */
+  /* mainsite will be the name, plus some of the files, plus some images. But there can be stuff below it in, Since sitecontainer is flex column  */
+  /* 
+  Begin left content stuff
+  */
+  /* this controls this h3 elements in files container */
+  /* this changes the styling on the names of the file like "Sample Semester PDF */
+  /* add animations to these mf's */
+  /* end left content stuff */
+  /* 
+
+
+
+
+
+  */
+  /* Right content stuff */
+  /* 
+
+
+
+
+
+  */
+  /* add share icon in the future */
+  /* all table styling is in tablestyling.css  */
+  /* beginning of all the media quieries */
+  /* 
+
+  Mobile Screens
+
+  */
+  /* even smaller screensizes here */
+}
+.sitecontainer#sorted-departments .abovemainsite {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2450,9 +2322,7 @@ Above mainsite and its children
   width: 100%;
   height: 250px;
 }
-
-/* topnav beginning */
-.topnav {
+.sitecontainer#sorted-departments .topnav {
   /* change this color to see it and make changes */
   background-color: #eee;
   width: 100%;
@@ -2463,8 +2333,7 @@ Above mainsite and its children
   justify-content: space-between;
   filter: drop-shadow(4px 0px 2px rgb(67, 66, 66));
 }
-
-.breadcrumbs #current {
+.sitecontainer#sorted-departments .breadcrumbs #current {
   /* this is the current page the user is on */
   text-decoration: none;
   color: rgb(200, 74, 12);
@@ -2472,8 +2341,7 @@ Above mainsite and its children
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.breadcrumbs {
+.sitecontainer#sorted-departments .breadcrumbs {
   background-color: #eee;
   width: 70%;
   height: 100px;
@@ -2482,8 +2350,7 @@ Above mainsite and its children
   align-items: center;
   justify-content: flex-start;
 }
-
-.breadcrumbs ul {
+.sitecontainer#sorted-departments .breadcrumbs ul {
   display: flex;
   flex-direction: row;
   padding-left: 30px;
@@ -2492,35 +2359,25 @@ Above mainsite and its children
   list-style-type: none;
   color: #081a75;
 }
-
-.breadcrumbs ul li a {
+.sitecontainer#sorted-departments .breadcrumbs ul li a {
   text-decoration: none;
   color: #081a75;
   font-size: 16px;
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.breadcrumbs ul li a:hover {
+.sitecontainer#sorted-departments .breadcrumbs ul li a:hover {
   text-decoration: underline;
   text-decoration-thickness: 4px;
   text-underline-offset: 3px;
 }
-
-/* this is for the icon in the breadcrumbs */
-.fa-chevron-right {
+.sitecontainer#sorted-departments .fa-chevron-right {
   vertical-align: middle; /* or baseline, or -2px tweak */
   font-size: 12px; /* adjust size */
   margin: 5px 0 0px 0; /* spacing */
   color: #081a75;
 }
-
-/* 
-
-still in top nav, but now the homeandabout section
-
-*/
-.homeandabout {
+.sitecontainer#sorted-departments .homeandabout {
   background-color: var(--secondarynavy);
   width: 25%;
   height: 100px;
@@ -2530,8 +2387,7 @@ still in top nav, but now the homeandabout section
   align-items: center;
   justify-content: center;
 }
-
-.homeandabout ul {
+.sitecontainer#sorted-departments .homeandabout ul {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -2541,8 +2397,7 @@ still in top nav, but now the homeandabout section
   list-style-type: none;
   padding-left: 0;
 }
-
-.homeandabout ul li {
+.sitecontainer#sorted-departments .homeandabout ul li {
   /* make them big so you can hover */
   /* each one takes up 1/3 width */
   flex: 1;
@@ -2552,12 +2407,10 @@ still in top nav, but now the homeandabout section
   justify-content: center;
   transition: background-color 0.3s;
 }
-
-.homeandabout li:hover {
+.sitecontainer#sorted-departments .homeandabout li:hover {
   background-color: #284dbc;
 }
-
-.homeandabout ul li a {
+.sitecontainer#sorted-departments .homeandabout ul li a {
   text-decoration: none;
   color: white;
   font-size: 16px;
@@ -2571,9 +2424,7 @@ still in top nav, but now the homeandabout section
   width: 100%;
   height: 100%;
 }
-
-/* now outside of top nav */
-.degreenamebox {
+.sitecontainer#sorted-departments .degreenamebox {
   /* border: 4px solid black; */
   width: 80%;
   height: 150px;
@@ -2583,15 +2434,11 @@ still in top nav, but now the homeandabout section
   align-items: center;
   justify-content: center;
 }
-
-#degreenametitle {
+.sitecontainer#sorted-departments #degreenametitle {
   font-size: 35px;
   color: #284dbc;
 }
-
-/* now done with above main site... */
-/* mainsite will be the name, plus some of the files, plus some images. But there can be stuff below it in, Since sitecontainer is flex column  */
-.mainsite {
+.sitecontainer#sorted-departments .mainsite {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -2599,11 +2446,7 @@ still in top nav, but now the homeandabout section
   border-top: 10px solid var(--secondarynavy);
   border-bottom: 10px solid var(--secondarynavy);
 }
-
-/* 
-Begin left content stuff
-*/
-.leftcontent {
+.sitecontainer#sorted-departments .leftcontent {
   /* this affects the width */
   flex: 40%;
   background-color: #ffffff;
@@ -2615,20 +2458,16 @@ Begin left content stuff
   justify-content: flex-start;
   row-gap: 25px;
 }
-
-.filescontainer {
+.sitecontainer#sorted-departments .filescontainer {
   border: 4px dashed rgb(16, 11, 82);
   border-radius: 26px;
   width: 92%;
   padding: 20px 29px;
 }
-
-/* this controls this h3 elements in files container */
-.filescontainer h3 {
+.sitecontainer#sorted-departments .filescontainer h3 {
   color: #284dbc;
 }
-
-.filescontainer .filesname {
+.sitecontainer#sorted-departments .filescontainer .filesname {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -2636,18 +2475,15 @@ Begin left content stuff
   -moz-column-gap: 10px;
        column-gap: 10px;
 }
-
-.filescontainer .filesname i {
+.sitecontainer#sorted-departments .filescontainer .filesname i {
   font-size: 20px;
 }
-
-.filescontainer ul {
+.sitecontainer#sorted-departments .filescontainer ul {
   list-style-type: none; /* Removes bullets */
   /* indent */
   padding-left: 30px;
 }
-
-.linkbox {
+.sitecontainer#sorted-departments .linkbox {
   display: flex;
   flex-direction: row;
   /* make the download text all even */
@@ -2656,29 +2492,15 @@ Begin left content stuff
   -moz-column-gap: 40px;
        column-gap: 40px;
 }
-
-/* this changes the styling on the names of the file like "Sample Semester PDF */
-.linkbox p:first-of-type {
+.sitecontainer#sorted-departments .linkbox p:first-of-type {
   margin-top: 10px;
   font-weight: bold;
   max-width: 137px;
 }
-
-/* add animations to these mf's */
-.linkbox a i {
+.sitecontainer#sorted-departments .linkbox a i {
   color: rgb(21, 21, 69);
 }
-
-/* end left content stuff */
-/* 
-
-
-
-
-
-*/
-/* Right content stuff */
-.rightcontent {
+.sitecontainer#sorted-departments .rightcontent {
   flex: 60%;
   background-color: rgb(113, 179, 185);
   padding: 0px 20px 30px 20px;
@@ -2687,8 +2509,7 @@ Begin left content stuff
   align-items: center;
   justify-content: flex-start;
 }
-
-.displayedpdfnamebox {
+.sitecontainer#sorted-departments .displayedpdfnamebox {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2697,8 +2518,7 @@ Begin left content stuff
   height: 80px;
   width: 100%;
 }
-
-.visuals {
+.sitecontainer#sorted-departments .visuals {
   height: calc(100% - 100px);
   width: 100%;
   display: flex;
@@ -2706,39 +2526,28 @@ Begin left content stuff
   align-items: center;
   justify-content: center;
 }
-
-.displayedpdfnamebox #displayedpdfname {
+.sitecontainer#sorted-departments .displayedpdfnamebox #displayedpdfname {
   color: white;
 }
-
-.visuals .displayedpdf {
+.sitecontainer#sorted-departments .visuals .displayedpdf {
   border-radius: 26px;
 }
-
-/* 
-
-
-
-
-
-*/
-.undermainsite {
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-  /* this is for now essentially footer top margin */
-  height: auto;
-  padding: 35px 0px 50px 0px;
-}
-
-.renderedcsvdiv {
+.sitecontainer#sorted-departments .tablediv {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: auto;
+  flex: 1 1 350px;
+  border-top: 10px solid var(--secondarynavy);
+  border-bottom: 10px solid var(--secondarynavy);
+  height: auto;
+  padding: 40px 0px 50px 0px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
-
-.copyanddownload {
+.sitecontainer#sorted-departments .tablediv .copyanddownload {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -2749,34 +2558,30 @@ Begin left content stuff
   width: 90%;
   margin: -20px 0px -14px 0px;
 }
-
-/* add share icon in the future */
-.copyanddownload i {
+.sitecontainer#sorted-departments .tablediv .copyanddownload i {
   font-size: 28px;
   color: rgb(21, 21, 69);
 }
-
-.copyanddownload i:hover {
+.sitecontainer#sorted-departments .tablediv .copyanddownload i:hover {
   cursor: pointer;
 }
-
-/* all table styling is in tablestyling.css  */
-/* beginning of all the media quieries */
 @media screen and (min-width: 700px) and (max-width: 1272px) {
-  #degreenametitle {
+  .sitecontainer#sorted-departments {
+    /* all the following is in left content */
+  }
+  .sitecontainer#sorted-departments #degreenametitle {
     font-size: clamp(32px, 7.5vw, 35px);
     color: #284dbc;
   }
-  .leftcontent {
+  .sitecontainer#sorted-departments .leftcontent {
     padding: 25px 10px;
   }
-  /* all the following is in left content */
-  .filescontainer {
+  .sitecontainer#sorted-departments .filescontainer {
     border: 4px dashed rgb(16, 11, 82);
     width: 92%;
     padding: 20px 20px;
   }
-  .linkbox {
+  .sitecontainer#sorted-departments .linkbox {
     display: flex;
     flex-direction: column;
     /* make the download text all even */
@@ -2784,22 +2589,26 @@ Begin left content stuff
     align-items: flex-start;
     row-gap: 20px;
   }
-  .linkbox p {
+  .sitecontainer#sorted-departments .linkbox p {
     margin: 0;
   }
-  .linkbox p:first-of-type {
+  .sitecontainer#sorted-departments .linkbox p:first-of-type {
     margin-top: 26px;
     font-weight: bold;
   }
 }
 @media screen and (max-width: 1135px) {
-  .abovemainsite {
+  .sitecontainer#sorted-departments {
+    /* theres already padding here from the originally declared style */
+    /* add some right padding */
+  }
+  .sitecontainer#sorted-departments .abovemainsite {
     display: flex;
     flex-direction: column;
     /* more height to allow both title and breadcrumbs to be seen */
     height: 300px;
   }
-  .degreenamebox {
+  .sitecontainer#sorted-departments .degreenamebox {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: auto;
@@ -2807,7 +2616,7 @@ Begin left content stuff
     width: 100%;
     padding-left: 20px;
   }
-  .topnav {
+  .sitecontainer#sorted-departments .topnav {
     background-color: #eee;
     width: 100%;
     display: flex;
@@ -2815,48 +2624,49 @@ Begin left content stuff
     align-items: center;
     justify-content: space-between;
   }
-  /* theres already padding here from the originally declared style */
-  .breadcrumbs {
+  .sitecontainer#sorted-departments .breadcrumbs {
     background-color: #eee;
     flex-basis: auto;
     width: 69%;
     height: 100px;
     /* the breadcrumbs content will possibly wrap */
   }
-  /* add some right padding */
-  .breadcrumbs ul {
+  .sitecontainer#sorted-departments .breadcrumbs ul {
     padding-left: 30px;
     padding-right: 10px;
   }
-  .homeandabout {
+  .sitecontainer#sorted-departments .homeandabout {
     width: 30%;
   }
 }
-/* 
-
-Mobile Screens
-
-*/
 @media screen and (max-width: 700px) {
-  .abovemainsite {
+  .sitecontainer#sorted-departments {
+    /* 
+
+
+
+
+    this one here is pretty important */
+  }
+  .sitecontainer#sorted-departments .abovemainsite {
     display: flex;
     flex-direction: column;
     /* more height to allow both title and breadcrumbs to be seen */
     /* bigger height as well for the bigger topnav */
     height: 345px;
   }
-  .degreenamebox {
+  .sitecontainer#sorted-departments .degreenamebox {
     height: 190px;
     width: 100%;
     flex: none;
     padding-bottom: 25px;
     padding-left: 10px;
   }
-  #degreenametitle {
+  .sitecontainer#sorted-departments #degreenametitle {
     font-size: 30px;
     color: #284dbc;
   }
-  .topnav {
+  .sitecontainer#sorted-departments .topnav {
     display: flex;
     flex-direction: column;
     /* height larger to have both on top of each other */
@@ -2864,7 +2674,7 @@ Mobile Screens
     /* removed the fixed navbar */
     filter: none;
   }
-  .homeandabout {
+  .sitecontainer#sorted-departments .homeandabout {
     /* bring it to the top */
     /* order: 1; */
     height: 75px;
@@ -2876,7 +2686,7 @@ Mobile Screens
     z-index: 999;*/
     filter: drop-shadow(4px 0px 2px rgb(67, 66, 66));
   }
-  .breadcrumbs {
+  .sitecontainer#sorted-departments .breadcrumbs {
     background-color: #eee;
     width: 100%;
     flex: none;
@@ -2885,71 +2695,64 @@ Mobile Screens
     order: 2;
     /*  */
   }
-  .breadcrumbs ul {
+  .sitecontainer#sorted-departments .breadcrumbs ul {
     padding-left: 30px;
     padding-right: 10px;
   }
-  .breadcrumbs ul li a {
+  .sitecontainer#sorted-departments .breadcrumbs ul li a {
     color: #081a75;
     font-size: 13.5px;
   }
-  .breadcrumbs #current {
+  .sitecontainer#sorted-departments .breadcrumbs #current {
     /* this is the current page the user is on */
     font-size: 13.5px;
     font-weight: bold;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
-  /* 
-
-
-
-
-   this one here is pretty important */
-  .mainsite {
+  .sitecontainer#sorted-departments .mainsite {
     flex-direction: column;
   }
-  .leftcontent {
+  .sitecontainer#sorted-departments .leftcontent {
     padding: 25px 10px;
   }
-  #pdfcontainer .linkbox,
-  #csvcontainer .linkbox {
+  .sitecontainer#sorted-departments #pdfcontainer .linkbox,
+  .sitecontainer#sorted-departments #csvcontainer .linkbox {
     flex-direction: column;
     row-gap: 3px;
     justify-content: center;
     align-items: flex-start;
   }
-  #pdfcontainer .linkbox p,
-  #csvcontainer .linkbox p {
+  .sitecontainer#sorted-departments #pdfcontainer .linkbox p,
+  .sitecontainer#sorted-departments #csvcontainer .linkbox p {
     margin: 6px;
   }
-  #pdfcontainer .linkbox p:first-of-type,
-  #csvcontainer .linkbox p:first-of-type {
+  .sitecontainer#sorted-departments #pdfcontainer .linkbox p:first-of-type,
+  .sitecontainer#sorted-departments #csvcontainer .linkbox p:first-of-type {
     margin-top: 15px;
     font-weight: bold;
     max-width: 137px;
   }
 }
-/* even smaller screensizes here */
 @media screen and (max-width: 550px) {
-  .abovemainsite {
+  .sitecontainer#sorted-departments .abovemainsite {
     display: flex;
     flex-direction: column;
     /* more height to allow both title and breadcrumbs to be seen */
     /* bigger height as well for the bigger topnav */
     height: 265px;
   }
-  .degreenamebox {
+  .sitecontainer#sorted-departments .degreenamebox {
     height: 190px;
     width: 100%;
     flex: none;
     padding-bottom: 25px;
     padding-left: 10px;
   }
-  #degreenametitle {
+  .sitecontainer#sorted-departments #degreenametitle {
     font-size: 30px;
     color: #284dbc;
   }
-  .topnav {
+  .sitecontainer#sorted-departments .topnav {
     display: flex;
     flex-direction: column;
     /* height larger to have both on top of each other */
@@ -2957,41 +2760,41 @@ Mobile Screens
     /* removed the fixed navbar */
     filter: none;
   }
-  .homeandabout .breadcrumbs ul li a {
+  .sitecontainer#sorted-departments .homeandabout .breadcrumbs ul li a {
     color: #081a75;
     font-size: 14px;
   }
-  .breadcrumbs {
+  .sitecontainer#sorted-departments .breadcrumbs {
     height: 80px;
     font-size: 10px;
   }
 }
 @media screen and (max-width: 450px) {
-  .breadcrumbs ul li a {
+  .sitecontainer#sorted-departments .breadcrumbs ul li a {
     color: #081a75;
     font-size: 9px;
   }
-  .breadcrumbs #current {
+  .sitecontainer#sorted-departments .breadcrumbs #current {
     /* this is the current page the user is on */
     font-weight: bold;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 9px;
   }
-  .abovemainsite {
+  .sitecontainer#sorted-departments .abovemainsite {
     display: flex;
     flex-direction: column;
     /* more height to allow both title and breadcrumbs to be seen */
     /* bigger height as well for the bigger topnav */
     height: 375px;
   }
-  .degreenamebox {
+  .sitecontainer#sorted-departments .degreenamebox {
     height: 210px;
     width: 100%;
     flex: none;
     padding-bottom: 25px;
     padding-left: 35px;
   }
-  .topnav {
+  .sitecontainer#sorted-departments .topnav {
     display: flex;
     flex-direction: column;
     /* height larger to have both on top of each other */
@@ -2999,7 +2802,7 @@ Mobile Screens
     /* removed the fixed navbar */
     filter: none;
   }
-  .homeandabout {
+  .sitecontainer#sorted-departments .homeandabout {
     /* bring it to the top */
     /* order: 1; */
     height: 75px;
@@ -3011,7 +2814,7 @@ Mobile Screens
     z-index: 999;*/
     filter: drop-shadow(4px 0px 2px rgb(67, 66, 66));
   }
-  .breadcrumbs {
+  .sitecontainer#sorted-departments .breadcrumbs {
     background-color: #eee;
     width: 100%;
     flex: none;
@@ -3020,11 +2823,30 @@ Mobile Screens
     order: 2;
     /*  */
   }
-  .breadcrumbs ul {
+  .sitecontainer#sorted-departments .breadcrumbs ul {
     padding-left: 30px;
     padding-right: 10px;
   }
 }
+.sitecontainer#sorted-departments .undermainsite {
+  width: 100%;
+  flex: 1 1 350px;
+  border-top: 10px solid var(--secondarynavy);
+  border-bottom: 10px solid var(--secondarynavy);
+  height: auto;
+  padding: 20px 0px 50px 0px;
+}
+.sitecontainer#sorted-departments #sorted-departments-table {
+  width: 90%;
+  border-radius: 26px;
+  /* border: 5px solid #081a75; */
+  padding: 0px;
+  min-height: 100px;
+  height: auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* smoother scroll on mobile */
+}
+
 /*  */
 :root {
   --secondarynavy: #153f66;
@@ -3037,44 +2859,63 @@ Mobile Screens
   scroll-behavior: smooth;
 }
 
-body {
-  scroll-behavior: smooth;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  max-width: 100vw;
-  /* crazy filters to apply */
-  /* filter: invert(100%); */
-  /* filter: grayscale(50%); */
-  filter: contrast(110%);
-  /* filter: blur(3px); */
-  filter: saturate(110%);
-}
-
-/* 
-
-This is all nav bar stuff:*/
-/* end nav bar stuff */
-.sitecontainer {
+body .sitecontainer#statspage {
   min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-}
+  /* topnav beginning */
+  /* this is for the icon in the breadcrumbs */
+  /* 
 
-/* 
-Above mainsite and its children
-*/
-.abovemainsite {
+  still in top nav, but now the homeandabout section
+
+  */
+  /* now outside of top nav */
+  /* now done with above main site... */
+  /* mainsite will be the name, plus some of the files, plus some images. But there can be stuff below it in, Since sitecontainer is flex column  */
+  /* end general stats styling, now specific for certain boxes */
+  /* now the longest and shortest courses */
+  /*
+  Begin left content stuff
+  */
+  /* this controls this h3 elements in files container */
+  /* this changes the styling on the names of the file like "Sample Semester PDF */
+  /* add animations to these mf's */
+  /* end left content stuff */
+  /* 
+
+
+
+
+
+  */
+  /* Right content stuff */
+  /* 
+
+
+
+
+  */
+  /* begin .sheetjs div */
+  /* style first row bold */
+  /* add border radius to the whole table */
+  /* change alignment */
+  /* alternating bcg for lines */
+  /* style Degreeview Logo */
+  /* select the 2nd to last child */
+  /* end under main site */
+  /* beginning of all the media quieries */
+  /* 
+
+  Mobile Screens
+
+  */
+  /* even smaller screensizes here */
+}
+body .sitecontainer#statspage .abovemainsite {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -3082,9 +2923,7 @@ Above mainsite and its children
   width: 100%;
   height: 250px;
 }
-
-/* topnav beginning */
-.topnav {
+body .sitecontainer#statspage .topnav {
   /* change this color to see it and make changes */
   background-color: #eee;
   width: 100%;
@@ -3096,19 +2935,16 @@ Above mainsite and its children
   /* keep this */
   filter: drop-shadow(4px 0px 2px rgb(67, 66, 66));
 }
-
-.biglogobox {
+body .sitecontainer#statspage .biglogobox {
   height: 100%;
   overflow: hidden; /* optional: clips the image if it's too big */
 }
-
-.biglogo {
+body .sitecontainer#statspage .biglogo {
   /* height the same as topnav here, 100px */
   height: 100%;
   width: auto;
 }
-
-.breadcrumbs {
+body .sitecontainer#statspage .breadcrumbs {
   background-color: #eee;
   width: 70%;
   height: 100px;
@@ -3117,8 +2953,7 @@ Above mainsite and its children
   align-items: center;
   justify-content: flex-start;
 }
-
-.breadcrumbs ul {
+body .sitecontainer#statspage .breadcrumbs ul {
   display: flex;
   flex-direction: row;
   padding-left: 30px;
@@ -3127,43 +2962,32 @@ Above mainsite and its children
   list-style-type: none;
   color: #081a75;
 }
-
-.breadcrumbs ul li a {
+body .sitecontainer#statspage .breadcrumbs ul li a {
   text-decoration: none;
   color: #081a75;
   font-size: 16px;
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.breadcrumbs ul li a:hover {
+body .sitecontainer#statspage .breadcrumbs ul li a:hover {
   text-decoration: underline;
   text-decoration-thickness: 4px;
   text-underline-offset: 3px;
 }
-
-.breadcrumbs li#current {
+body .sitecontainer#statspage .breadcrumbs li#current {
   /* this is the current page the user is on */
   text-decoration: none;
   color: rgb(200, 74, 12);
   font-size: 16px;
   font-weight: bold;
 }
-
-/* this is for the icon in the breadcrumbs */
-.fa-chevron-right {
+body .sitecontainer#statspage .fa-chevron-right {
   vertical-align: middle; /* or baseline, or -2px tweak */
   font-size: 12px; /* adjust size */
   margin: 5px 0 0px 0; /* spacing */
   color: #081a75;
 }
-
-/* 
-
-still in top nav, but now the homeandabout section
-
-*/
-.homeandabout {
+body .sitecontainer#statspage .homeandabout {
   background-color: #153f66;
   width: 25%;
   height: 100px;
@@ -3173,8 +2997,7 @@ still in top nav, but now the homeandabout section
   align-items: center;
   justify-content: center;
 }
-
-.homeandabout ul {
+body .sitecontainer#statspage .homeandabout ul {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -3184,8 +3007,7 @@ still in top nav, but now the homeandabout section
   list-style-type: none;
   padding-left: 0;
 }
-
-.homeandabout ul li {
+body .sitecontainer#statspage .homeandabout ul li {
   /* make them big so you can hover */
   /* each one takes up 1/3 width */
   flex: 1;
@@ -3195,12 +3017,10 @@ still in top nav, but now the homeandabout section
   justify-content: center;
   transition: background-color 0.3s;
 }
-
-.homeandabout li:hover {
+body .sitecontainer#statspage .homeandabout li:hover {
   background-color: #284dbc;
 }
-
-.homeandabout ul li a {
+body .sitecontainer#statspage .homeandabout ul li a {
   text-decoration: none;
   color: white;
   font-size: 16px;
@@ -3214,9 +3034,7 @@ still in top nav, but now the homeandabout section
   width: 100%;
   height: 100%;
 }
-
-/* now outside of top nav */
-.headingbox {
+body .sitecontainer#statspage .headingbox {
   /* border: 4px solid black; */
   width: 100%;
   height: 150px;
@@ -3225,15 +3043,11 @@ still in top nav, but now the homeandabout section
   align-items: center;
   justify-content: center;
 }
-
-#headingtitle {
+body .sitecontainer#statspage #headingtitle {
   font-size: 45px;
   color: #060212;
 }
-
-/* now done with above main site... */
-/* mainsite will be the name, plus some of the files, plus some images. But there can be stuff below it in, Since sitecontainer is flex column  */
-.mainsite {
+body .sitecontainer#statspage .mainsite {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3245,8 +3059,7 @@ still in top nav, but now the homeandabout section
   border-bottom: 10px solid #153f66;
   row-gap: 35px;
 }
-
-.topstats {
+body .sitecontainer#statspage .topstats {
   /* this is the top one */
   width: 100%;
   background-color: #ff7731;
@@ -3264,8 +3077,7 @@ still in top nav, but now the homeandabout section
   height: auto;
   min-height: 300px;
 }
-
-.statsbox {
+body .sitecontainer#statspage .statsbox {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -3278,8 +3090,7 @@ still in top nav, but now the homeandabout section
   border: 4px solid white;
   border-radius: 26px;
 }
-
-.statscontent {
+body .sitecontainer#statspage .statscontent {
   font-size: 35px;
   display: flex;
   flex-direction: column;
@@ -3289,89 +3100,72 @@ still in top nav, but now the homeandabout section
   height: 40%;
   padding-top: 10px;
 }
-
-.statstitle {
+body .sitecontainer#statspage .statstitle {
   font-size: 20px;
   width: 100%;
   padding: 22px 10px 22px 22px;
 }
-
-/* end general stats styling, now specific for certain boxes */
-#longestnamebox {
+body .sitecontainer#statspage #longestnamebox {
   width: 350px;
   height: 200px;
 }
-
-#longestnamebox .statscontent {
+body .sitecontainer#statspage #longestnamebox .statscontent {
   font-size: 22px;
   padding: 20px;
   padding-top: 35px;
 }
-
-#longestnamebox .statstitle {
+body .sitecontainer#statspage #longestnamebox .statstitle {
   margin-top: 5px;
   font-size: 20px;
 }
-
-#shortestnamebox {
+body .sitecontainer#statspage #shortestnamebox {
   width: 300px;
 }
-
-#shortestnamebox .statscontent {
+body .sitecontainer#statspage #shortestnamebox .statscontent {
   font-size: 24px;
   padding: 20px;
   align-items: flex-start;
 }
-
-#shortestnamebox .statstitle {
+body .sitecontainer#statspage #shortestnamebox .statstitle {
   font-size: 20px;
   padding: 20px;
   align-items: flex-start;
 }
-
-/* now the longest and shortest courses */
-#longestcoursebox {
+body .sitecontainer#statspage #longestcoursebox {
   width: 350px;
   height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-#longestcoursebox .statscontent {
+body .sitecontainer#statspage #longestcoursebox .statscontent {
   font-size: 20px;
   padding: 20px;
   padding-top: 35px;
 }
-
-#longestcoursebox .statstitle {
+body .sitecontainer#statspage #longestcoursebox .statstitle {
   margin-top: 5px;
   font-size: 18px;
   width: 100%;
   padding: 25px 10px 22px 22px;
 }
-
-#shortestcoursebox {
+body .sitecontainer#statspage #shortestcoursebox {
   width: 300px;
 }
-
-#shortestcoursebox .statscontent {
+body .sitecontainer#statspage #shortestcoursebox .statscontent {
   font-size: 22px;
   padding: 20px;
   align-items: flex-start;
 }
-
-#shortestcoursebox .statstitle {
+body .sitecontainer#statspage #shortestcoursebox .statstitle {
   font-size: 18px;
   padding: 20px;
   align-items: flex-start;
 }
-
-.topstats sup {
+body .sitecontainer#statspage .topstats sup {
   font-size: 11px;
 }
-
-.footnotes {
+body .sitecontainer#statspage .footnotes {
   display: flex;
   width: 100%;
   /* border: 3px solid black; */
@@ -3380,16 +3174,11 @@ still in top nav, but now the homeandabout section
   margin-top: -32px;
   margin-bottom: -23px;
 }
-
-.rightfootnotes {
+body .sitecontainer#statspage .rightfootnotes {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
 }
-
-/*
-Begin left content stuff
-*/
-.minimainsite {
+body .sitecontainer#statspage .minimainsite {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -3397,8 +3186,7 @@ Begin left content stuff
   border-top: 10px solid #740d40;
   border-bottom: 10px solid #740d40;
 }
-
-.leftcontent {
+body .sitecontainer#statspage .leftcontent {
   /* this affects the width */
   flex: 40%;
   background-color: #ffffff;
@@ -3409,26 +3197,21 @@ Begin left content stuff
   justify-content: flex-start;
   row-gap: 25px;
 }
-
-.filescontainer {
+body .sitecontainer#statspage .filescontainer {
   border: 4px dashed rgb(16, 11, 82);
   border-radius: 26px;
   width: 92%;
   padding: 20px 29px;
 }
-
-/* this controls this h3 elements in files container */
-.filescontainer h3 {
+body .sitecontainer#statspage .filescontainer h3 {
   color: #284dbc;
 }
-
-.filescontainer ul {
+body .sitecontainer#statspage .filescontainer ul {
   list-style-type: none; /* Removes bullets */
   /* indent */
   padding-left: 30px;
 }
-
-.linkbox {
+body .sitecontainer#statspage .linkbox {
   display: flex;
   flex-direction: row;
   /* make the download text all even */
@@ -3437,29 +3220,15 @@ Begin left content stuff
   -moz-column-gap: 40px;
        column-gap: 40px;
 }
-
-/* this changes the styling on the names of the file like "Sample Semester PDF */
-.linkbox p:first-of-type {
+body .sitecontainer#statspage .linkbox p:first-of-type {
   margin-top: 10px;
   font-weight: bold;
   max-width: 137px;
 }
-
-/* add animations to these mf's */
-.linkbox a i {
+body .sitecontainer#statspage .linkbox a i {
   color: rgb(21, 21, 69);
 }
-
-/* end left content stuff */
-/* 
-
-
-
-
-
-*/
-/* Right content stuff */
-.rightcontent {
+body .sitecontainer#statspage .rightcontent {
   flex: 60%;
   background-color: rgb(232, 80, 56);
   padding: 30px 20px 30px 20px;
@@ -3470,21 +3239,13 @@ Begin left content stuff
   color: white;
   /* just put some stats in this mf */
 }
-
-#degreecountpng {
+body .sitecontainer#statspage #degreecountpng {
   width: 90%;
   height: auto;
   border-radius: 26px;
   min-width: 300px;
 }
-
-/* 
-
-
-
-
-*/
-.morestats {
+body .sitecontainer#statspage .morestats {
   width: 100%;
   background-color: rgb(67, 153, 67);
   height: 550px;
@@ -3497,23 +3258,19 @@ Begin left content stuff
   border-radius: 26px;
   padding: 50px 10px;
 }
-
-.morestats img {
+body .sitecontainer#statspage .morestats img {
   width: 40%;
   height: auto;
   border-radius: 26px;
   min-width: 300px;
 }
-
-/* begin .sheetjs div */
-.renderedcsvdiv {
+body .sitecontainer#statspage .renderedcsvdiv {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
-#csvtablecontainer {
+body .sitecontainer#statspage #csvtablecontainer {
   width: 90%;
   border-radius: 26px;
   /* border: 5px solid #081a75; */
@@ -3521,29 +3278,24 @@ Begin left content stuff
   overflow-x: auto;
   -webkit-overflow-scrolling: touch; /* smoother scroll on mobile */
 }
-
-#csvheading {
+body .sitecontainer#statspage #csvheading {
   margin: 30px;
   color: #284dbc;
   font-size: 23px;
 }
-
-#csvtablecontainer table {
+body .sitecontainer#statspage #csvtablecontainer table {
   border-collapse: collapse;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
 }
-
-#csvtablecontainer table td,
-#csvtablecontainer table th {
+body .sitecontainer#statspage #csvtablecontainer table td,
+body .sitecontainer#statspage #csvtablecontainer table th {
   border: 1px solid #ccc;
   padding: 15px 9px;
   min-height: 40px;
 }
-
-/* style first row bold */
-#csvtablecontainer table tr:first-child td {
+body .sitecontainer#statspage #csvtablecontainer table tr:first-child td {
   font-weight: bold;
   background-color: var(--secondarynavy);
   color: white;
@@ -3552,77 +3304,59 @@ Begin left content stuff
   font-size: 20px;
   padding: 18px;
 }
-
-/* add border radius to the whole table */
-#csvtablecontainer table tr:first-child td:nth-of-type(1) {
+body .sitecontainer#statspage #csvtablecontainer table tr:first-child td:nth-of-type(1) {
   border-top-left-radius: 10px;
   padding-left: 15px;
 }
-
-#csvtablecontainer table tr:first-child td:nth-of-type(6) {
+body .sitecontainer#statspage #csvtablecontainer table tr:first-child td:nth-of-type(6) {
   border-top-right-radius: 10px;
   padding-right: 10px;
   /* color: #ff731f; */
 }
-
-#csvtablecontainer table tr:last-child td:nth-of-type(1) {
+body .sitecontainer#statspage #csvtablecontainer table tr:last-child td:nth-of-type(1) {
   border-bottom-left-radius: 10px;
 }
-
-#csvtablecontainer table tr:last-child td:nth-of-type(4) {
+body .sitecontainer#statspage #csvtablecontainer table tr:last-child td:nth-of-type(4) {
   border: none;
   border-bottom-right-radius: 10px;
   border: 1px solid #ccc;
   border-collapse: separate;
 }
-
-#csvtablecontainer table tr:nth-of-type(3) td {
+body .sitecontainer#statspage #csvtablecontainer table tr:nth-of-type(3) td {
   font-weight: bold;
 }
-
-/* change alignment */
-td:nth-child(1),
-th:nth-child(1) {
+body .sitecontainer#statspage td:nth-child(1),
+body .sitecontainer#statspage th:nth-child(1) {
   text-align: left;
 }
-
-td:nth-child(2),
-td:nth-child(3),
-td:nth-child(4),
-td:nth-child(5),
-td:nth-child(6) {
+body .sitecontainer#statspage td:nth-child(2),
+body .sitecontainer#statspage td:nth-child(3),
+body .sitecontainer#statspage td:nth-child(4),
+body .sitecontainer#statspage td:nth-child(5),
+body .sitecontainer#statspage td:nth-child(6) {
   text-align: center;
 }
-
-/* alternating bcg for lines */
-tr:nth-child(even) {
+body .sitecontainer#statspage tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-
-/* style Degreeview Logo */
-#csvtablecontainer table tr:last-child td:first-child {
+body .sitecontainer#statspage #csvtablecontainer table tr:last-child td:first-child {
   font-weight: bold;
   color: #0c48a5;
   font-family: "Barlow";
   font-weight: 600;
   font-size: 30px;
 }
-
-/* select the 2nd to last child */
-#csvtablecontainer table tr:nth-last-of-type(2) {
+body .sitecontainer#statspage #csvtablecontainer table tr:nth-last-of-type(2) {
   display: none;
 }
-
-#csvtablecontainer table tr:nth-of-type(2) {
+body .sitecontainer#statspage #csvtablecontainer table tr:nth-of-type(2) {
   display: none;
 }
-
-#csvtablecontainer td.schooltd {
+body .sitecontainer#statspage #csvtablecontainer td.schooltd {
   border-bottom: #eb7d46 solid 3px;
   font-weight: bold;
 }
-
-.undermainsite {
+body .sitecontainer#statspage .undermainsite {
   background-color: rgb(255, 255, 255);
   width: 100%;
   /* this is for now essentially footer top margin */
@@ -3632,8 +3366,7 @@ tr:nth-child(even) {
   align-items: center;
   justify-content: center;
 }
-
-#returnbutton {
+body .sitecontainer#statspage #returnbutton {
   width: 20%;
   height: 95px;
   display: flex;
@@ -3645,8 +3378,7 @@ tr:nth-child(even) {
   padding: 20px;
   color: white;
 }
-
-#returnbutton a {
+body .sitecontainer#statspage #returnbutton a {
   text-decoration: none;
   color: white;
   font-size: 19px;
@@ -3661,30 +3393,24 @@ tr:nth-child(even) {
   height: 100%;
   transition: color 0.3s;
 }
-
-#returnbutton:hover {
+body .sitecontainer#statspage #returnbutton:hover {
   cursor: pointer;
   background-color: #284dbc;
 }
-
-.visuals {
+body .sitecontainer#statspage .visuals {
   height: calc(100% - 100px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
-.visuals #displayeditemname {
+body .sitecontainer#statspage .visuals #displayeditemname {
   color: blue;
 }
-
-.visuals .displayedpdf {
+body .sitecontainer#statspage .visuals .displayedpdf {
   border-radius: 26px;
 }
-
-/* end under main site */
-footer {
+body .sitecontainer#statspage footer {
   height: 120px;
   width: 100%;
   background-color: rgba(0, 24, 75, 0.4549019608);
@@ -3699,8 +3425,7 @@ footer {
        column-gap: 30px;
   font-family: Helvetica, sans-serif;
 }
-
-footer .links {
+body .sitecontainer#statspage footer .links {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -3710,68 +3435,60 @@ footer .links {
        column-gap: 35px;
   font-size: 19px;
 }
-
-.footerleft {
+body .sitecontainer#statspage .footerleft {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   row-gap: 15px;
 }
-
-.footerleft #statement {
+body .sitecontainer#statspage .footerleft #statement {
   font-family: "Barlow", sans-serif;
   font-size: 25px;
   margin: 0;
   font-weight: 700;
 }
-
-footer #smalllogo {
+body .sitecontainer#statspage footer #smalllogo {
   /* animation has been added in animations.css  */
   width: 55px;
   height: 55px;
   border-radius: 10px;
   border: 3px solid #081a75;
 }
-
-.barlowtest {
+body .sitecontainer#statspage .barlowtest {
   font-family: "Barlow", sans-serif;
   font-size: 25px;
   margin: 0;
   font-weight: 600;
   color: black;
 }
-
-footer a {
+body .sitecontainer#statspage footer a {
   color: white;
   font-family: Helvetica, sans-serif;
   font-weight: 500;
   font-style: normal;
   text-decoration: none;
 }
-
-footer a:hover {
+body .sitecontainer#statspage footer a:hover {
   text-decoration: underline;
   text-decoration-thickness: 4px;
   text-underline-offset: 3px;
   font-weight: bold;
 }
-
-/* beginning of all the media quieries */
 @media screen and (min-width: 700px) and (max-width: 1272px) {
-  #headingtitle {
+  body .sitecontainer#statspage #headingtitle {
     font-size: 45px;
     color: #060212;
   }
 }
 @media screen and (max-width: 1135px) {
-  .abovemainsite {
+  body .sitecontainer#statspage .abovemainsite {
     display: flex;
     flex-direction: column;
     /* more height to allow both title and breadcrumbs to be seen */
     height: 250px;
   }
-  .headingbox {
+  body .sitecontainer#statspage .headingbox {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: auto;
@@ -3779,7 +3496,7 @@ footer a:hover {
     width: 100%;
     padding-left: 20px;
   }
-  .topnav {
+  body .sitecontainer#statspage .topnav {
     background-color: #eee;
     width: 100%;
     display: flex;
@@ -3788,52 +3505,54 @@ footer a:hover {
     justify-content: space-between;
     /* top nav currently 250px */
   }
-  .homeandabout {
+  body .sitecontainer#statspage .homeandabout {
     width: 30%;
   }
-  .minimainsite {
+  body .sitecontainer#statspage .minimainsite {
     flex-direction: column;
   }
-  .morestats {
+  body .sitecontainer#statspage .morestats {
     flex-direction: column;
     gap: 70px;
     height: auto;
   }
-  .morestats img {
+  body .sitecontainer#statspage .morestats img {
     width: 87%;
     height: auto;
     border-radius: 26px;
     min-width: 300px;
   }
-  #returnbutton {
+  body .sitecontainer#statspage #returnbutton {
     width: 40%;
   }
 }
-/* 
-
-Mobile Screens
-
-*/
 @media screen and (max-width: 700px) {
-  .abovemainsite {
+  body .sitecontainer#statspage {
+    /* 
+
+
+
+    this one here is pretty important */
+  }
+  body .sitecontainer#statspage .abovemainsite {
     display: flex;
     flex-direction: column;
     /* more height to allow both title and breadcrumbs to be seen */
     /* bigger height as well for the bigger topnav */
     height: 352px;
   }
-  .headingbox {
+  body .sitecontainer#statspage .headingbox {
     height: 185px;
     width: 100%;
     flex: none;
     padding-bottom: 25px;
     padding-left: 10px;
   }
-  #headingtitle {
+  body .sitecontainer#statspage #headingtitle {
     font-size: 45px;
     color: #060212;
   }
-  .topnav {
+  body .sitecontainer#statspage .topnav {
     display: flex;
     flex-direction: column;
     /* height larger to have both on top of each other */
@@ -3842,14 +3561,14 @@ Mobile Screens
     position: static;
     filter: none;
   }
-  .homeandabout {
+  body .sitecontainer#statspage .homeandabout {
     /* bring it to the top */
     order: 1;
     height: 65px;
     width: 100%;
     filter: drop-shadow(4px 1px 3px rgb(67, 66, 66));
   }
-  .biglogobox {
+  body .sitecontainer#statspage .biglogobox {
     background-color: #eee;
     width: 100%;
     flex: none;
@@ -3858,19 +3577,14 @@ Mobile Screens
     border-bottom: 2px solid #eee;
     /*  */
   }
-  .biglogo {
+  body .sitecontainer#statspage .biglogo {
     height: 100%;
     width: auto;
   }
-  /* 
-
-
-
-   this one here is pretty important */
-  .mainsite {
+  body .sitecontainer#statspage .mainsite {
     flex-direction: column;
   }
-  .linkbox {
+  body .sitecontainer#statspage .linkbox {
     display: flex;
     flex-direction: column;
     /* make the download text all even */
@@ -3878,39 +3592,38 @@ Mobile Screens
     align-items: flex-start;
     row-gap: 20px;
   }
-  .linkbox p {
+  body .sitecontainer#statspage .linkbox p {
     margin: 0;
   }
-  .linkbox p:first-of-type {
+  body .sitecontainer#statspage .linkbox p:first-of-type {
     margin-top: 26px;
     font-weight: bold;
   }
-  .sheetjs {
+  body .sitecontainer#statspage .sheetjs {
     /* make it not visible on small screens to avoid headache */
     display: none;
   }
 }
-/* even smaller screensizes here */
 @media screen and (max-width: 550px) {
-  .abovemainsite {
+  body .sitecontainer#statspage .abovemainsite {
     display: flex;
     flex-direction: column;
     /* more height to allow both title and breadcrumbs to be seen */
     /* bigger height as well for the bigger topnav */
     height: 360px;
   }
-  .headingbox {
+  body .sitecontainer#statspage .headingbox {
     height: 185px;
     width: 100%;
     flex: none;
     padding-bottom: 25px;
     padding-left: 10px;
   }
-  #headingtitle {
+  body .sitecontainer#statspage #headingtitle {
     font-size: 45px;
     color: #060212;
   }
-  .topnav {
+  body .sitecontainer#statspage .topnav {
     display: flex;
     flex-direction: column;
     /* height larger to have both on top of each other */
@@ -3918,7 +3631,7 @@ Mobile Screens
     /* removed the fixed navbar */
     filter: none;
   }
-  .homeandabout {
+  body .sitecontainer#statspage .homeandabout {
     /* bring it to the top */
     /* order: 1; */
     height: 65px;
@@ -3930,7 +3643,7 @@ Mobile Screens
     z-index: 999;*/
     filter: drop-shadow(4px 1px 3px rgb(67, 66, 66));
   }
-  .biglogobox {
+  body .sitecontainer#statspage .biglogobox {
     background-color: #eee;
     width: 100%;
     flex: none;
@@ -3939,34 +3652,34 @@ Mobile Screens
     border-bottom: 2px solid #eee;
     /*  */
   }
-  .biglogo {
+  body .sitecontainer#statspage .biglogo {
     height: 100%;
     width: auto;
   }
-  .topstats {
+  body .sitecontainer#statspage .topstats {
     /* this is the top one */
     padding: 30px 15px;
     font-size: 18px;
     row-gap: 35px;
     min-height: 300px;
   }
-  .statscontent {
+  body .sitecontainer#statspage .statscontent {
     font-size: 30px;
   }
-  .statstitle {
+  body .sitecontainer#statspage .statstitle {
     font-size: 18px;
   }
-  #csvtablecontainer {
+  body .sitecontainer#statspage #csvtablecontainer {
     width: 95%;
   }
-  #csvtablecontainer table td {
+  body .sitecontainer#statspage #csvtablecontainer table td {
     width: 95%;
     padding: 15px 4px;
   }
-  #csvtablecontainer table td {
+  body .sitecontainer#statspage #csvtablecontainer table td {
     font-size: 14px;
   }
-  #csvtablecontainer table tr:last-child td:first-child {
+  body .sitecontainer#statspage #csvtablecontainer table tr:last-child td:first-child {
     font-weight: bold;
     color: #0c48a5;
     font-family: "Barlow";
@@ -3975,25 +3688,25 @@ Mobile Screens
   }
 }
 @media screen and (max-width: 450px) {
-  .abovemainsite {
+  body .sitecontainer#statspage .abovemainsite {
     display: flex;
     flex-direction: column;
     /* more height to allow both title and breadcrumbs to be seen */
     /* bigger height as well for the bigger topnav */
     height: 360px;
   }
-  .headingbox {
+  body .sitecontainer#statspage .headingbox {
     height: 185px;
     width: 100%;
     flex: none;
     padding-bottom: 25px;
     padding-left: 10px;
   }
-  #headingtitle {
+  body .sitecontainer#statspage #headingtitle {
     font-size: 45px;
     color: #060212;
   }
-  .topnav {
+  body .sitecontainer#statspage .topnav {
     display: flex;
     flex-direction: column;
     /* height larger to have both on top of each other */
@@ -4002,7 +3715,7 @@ Mobile Screens
     /* removed the fixed navbar */
     filter: none;
   }
-  .homeandabout {
+  body .sitecontainer#statspage .homeandabout {
     /* bring it to the top */
     /* order: 1; */
     height: 65px;
@@ -4014,4 +3727,32 @@ Mobile Screens
     z-index: 999;*/
     filter: drop-shadow(4px 1px 3px rgb(67, 66, 66));
   }
+}
+
+/* 
+
+This is all nav bar stuff:*/
+/* end nav bar stuff */
+/* 
+Above mainsite and its children
+*/
+body {
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100vw;
+  gap: 10px;
+  /* filter: invert(100%); */
+  /* filter: grayscale(50%); */
+  filter: contrast(110%);
+  /* filter: blur(3px); */
+  filter: saturate(110%);
 }/*# sourceMappingURL=main.css.map */
