@@ -1,6 +1,14 @@
 let pages = []; // declared once, globally
 
-fetch("departmentpagelinks.json")
+// every path is different since per school
+// in each school folder that is
+// in general all the school folders should be the schoolabrvs
+
+let departmentpagelinks_jsonpath = document.getElementById(
+  "departmentpagelinks_jsonpath"
+);
+
+fetch(departmentpagelinks_jsonpath)
   .then((response) => {
     if (!response.ok) {
       throw new Error("Failed to load departmentpagelinks.json");
