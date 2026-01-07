@@ -141,10 +141,11 @@ window.addEventListener("load", () => {
       let trs = sorted_table.querySelectorAll("tr");
 
       console.log(trs);
-      // skip the first two rows since heading and then display none
-      trs = Array.from(trs).slice(2);
+      // remove heading row
+      trs = Array.from(trs).slice(1);
       //   remove last row(logo row)
 
+      // start at 0 end at -1
       trs = trs.slice(0, -1);
 
       trs.forEach((el, i) => {
@@ -196,8 +197,8 @@ window.addEventListener("load", () => {
       animatebutton.addEventListener("click", (e) => console.log("clicked"));
     }
 
-    // 1 second delay even after page loads.
-  }, 1000);
+    // 300 milli second delay even after page loads.
+  }, 300);
 });
 
 // this is the one on the degreepage

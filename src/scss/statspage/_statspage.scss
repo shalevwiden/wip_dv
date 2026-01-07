@@ -1,6 +1,9 @@
 /*  */
 
-@use "../utils/mixins" as *;
+@use "../../utils/mixins" as *;
+@use "statscontainer";
+@use "sectioncontainer";
+
 :root {
   --secondarynavy: #153f66;
 }
@@ -218,10 +221,6 @@ still in top nav, but now the homeandabout section
 
           border-radius: 35px;
           padding: 20px;
-          &:hover {
-            background-color: #284dbc;
-            cursor: pointer;
-          }
 
           a {
             text-decoration: none;
@@ -238,6 +237,10 @@ still in top nav, but now the homeandabout section
             width: 100%;
             height: 100%;
             transition: color 0.3s;
+          }
+          &:hover {
+            background-color: #284dbc;
+            cursor: pointer;
           }
         }
       }

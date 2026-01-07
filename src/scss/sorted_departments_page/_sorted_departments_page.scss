@@ -3,6 +3,7 @@
 @use "../../utils/tooltip";
 
 @use "../../utils/footer";
+@use "../../utils/buttons/animatebutton";
 
 // for the table use this one
 
@@ -22,9 +23,6 @@ Basically everything is flex. To make it responsive switch direction from flex r
 *::after {
   box-sizing: border-box;
   scroll-behavior: smooth;
-}
-
-body {
 }
 
 /* 
