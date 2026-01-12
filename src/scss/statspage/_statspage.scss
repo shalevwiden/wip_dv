@@ -3,6 +3,7 @@
 @use "../../utils/mixins" as *;
 // @use "statscontainer";
 @use "statscontainer2";
+@use "renderedcsvdiv";
 
 @use "sectioncontainer";
 
@@ -397,117 +398,6 @@ Begin left content stuff
       border-radius: 26px;
       min-width: 300px;
     }
-    /* begin .sheetjs div */
-    .renderedcsvdiv {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    #csvtablecontainer {
-      width: 90%;
-      border-radius: 26px;
-      /* border: 5px solid #081a75; */
-      min-height: 100px;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch; /* smoother scroll on mobile */
-    }
-
-    #csvheading {
-      margin: 30px;
-      color: #284dbc;
-      font-size: 23px;
-    }
-
-    #csvtablecontainer table {
-      border-collapse: collapse;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      width: 100%;
-    }
-
-    #csvtablecontainer table td,
-    #csvtablecontainer table th {
-      border: 1px solid #ccc;
-      padding: 15px 9px;
-      min-height: 40px;
-    }
-    /* style first row bold */
-    #csvtablecontainer table tr:first-child td {
-      font-weight: bold;
-      background-color: var(--secondarynavy);
-      color: white;
-      border: none;
-      text-align: left;
-      font-size: 20px;
-      padding: 18px;
-    }
-    /* add border radius to the whole table */
-    #csvtablecontainer table tr:first-child td:nth-of-type(1) {
-      border-top-left-radius: 10px;
-      padding-left: 15px;
-    }
-    #csvtablecontainer table tr:first-child td:nth-of-type(6) {
-      border-top-right-radius: 10px;
-      padding-right: 10px;
-      /* color: #ff731f; */
-    }
-
-    #csvtablecontainer table tr:last-child td:nth-of-type(1) {
-      border-bottom-left-radius: 10px;
-    }
-    #csvtablecontainer table tr:last-child td:nth-of-type(4) {
-      border: none;
-      border-bottom-right-radius: 10px;
-      border: 1px solid #ccc;
-
-      border-collapse: separate;
-    }
-    #csvtablecontainer table tr:nth-of-type(3) td {
-      font-weight: bold;
-    }
-    /* change alignment */
-    td:nth-child(1),
-    th:nth-child(1) {
-      text-align: left;
-    }
-    td:nth-child(2),
-    td:nth-child(3),
-    td:nth-child(4),
-    td:nth-child(5),
-    td:nth-child(6) {
-      text-align: center;
-    }
-
-    /* alternating bcg for lines */
-    tr:nth-child(even) {
-      background-color: #f2f2f2;
-    }
-
-    /* style Degreeview Logo */
-
-    #csvtablecontainer table tr:last-child td:first-child {
-      font-weight: bold;
-      color: #0c48a5;
-      font-family: "Barlow";
-      font-weight: 600;
-      font-size: 30px;
-    }
-
-    /* select the 2nd to last child */
-    #csvtablecontainer table tr:nth-last-of-type(2) {
-      display: none;
-    }
-
-    #csvtablecontainer table tr:nth-of-type(2) {
-      display: none;
-    }
-
-    #csvtablecontainer td.schooltd {
-      border-bottom: #eb7d46 solid 3px;
-      font-weight: bold;
-    }
-
     .undermainsite {
       background-color: rgb(255, 255, 255);
       width: 100%;
