@@ -2955,8 +2955,6 @@ body .sitecontainer#statspage {
   /* now outside of top nav */
   /* now done with above main site... */
   /* mainsite will be the name, plus some of the files, plus some images. But there can be stuff below it in, Since sitecontainer is flex column  */
-  /* end general stats styling, now specific for certain boxes */
-  /* now the longest and shortest courses */
   /*
   Begin left content stuff
   */
@@ -3199,91 +3197,6 @@ body .sitecontainer#statspage .topstats {
   gap: 35px;
   height: auto;
   min-height: 300px;
-}
-body .sitecontainer#statspage .statsbox {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 250px;
-  height: 200px;
-  font-family: Helvetica, sans-serif;
-  font-weight: bold;
-  color: white;
-  border: 4px solid white;
-  border-radius: 26px;
-}
-body .sitecontainer#statspage .statscontent {
-  font-size: 35px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 40%;
-  padding-top: 10px;
-}
-body .sitecontainer#statspage .statstitle {
-  font-size: 20px;
-  width: 100%;
-  padding: 22px 10px 22px 22px;
-}
-body .sitecontainer#statspage #longestnamebox {
-  width: 350px;
-  height: 200px;
-}
-body .sitecontainer#statspage #longestnamebox .statscontent {
-  font-size: 22px;
-  padding: 20px;
-  padding-top: 35px;
-}
-body .sitecontainer#statspage #longestnamebox .statstitle {
-  margin-top: 5px;
-  font-size: 20px;
-}
-body .sitecontainer#statspage #shortestnamebox {
-  width: 300px;
-}
-body .sitecontainer#statspage #shortestnamebox .statscontent {
-  font-size: 24px;
-  padding: 20px;
-  align-items: flex-start;
-}
-body .sitecontainer#statspage #shortestnamebox .statstitle {
-  font-size: 20px;
-  padding: 20px;
-  align-items: flex-start;
-}
-body .sitecontainer#statspage #longestcoursebox {
-  width: 350px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-body .sitecontainer#statspage #longestcoursebox .statscontent {
-  font-size: 20px;
-  padding: 20px;
-  padding-top: 35px;
-}
-body .sitecontainer#statspage #longestcoursebox .statstitle {
-  margin-top: 5px;
-  font-size: 18px;
-  width: 100%;
-  padding: 25px 10px 22px 22px;
-}
-body .sitecontainer#statspage #shortestcoursebox {
-  width: 300px;
-}
-body .sitecontainer#statspage #shortestcoursebox .statscontent {
-  font-size: 22px;
-  padding: 20px;
-  align-items: flex-start;
-}
-body .sitecontainer#statspage #shortestcoursebox .statstitle {
-  font-size: 18px;
-  padding: 20px;
-  align-items: flex-start;
 }
 body .sitecontainer#statspage .topstats sup {
   font-size: 11px;
