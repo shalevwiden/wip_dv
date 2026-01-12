@@ -1,7 +1,14 @@
 // this one will be a flex wrap box containing all the info for the stats container.
 // Use this in school stats pages and on the degreeviewhome
 
+// this is now the legacy stats container
+
 @use "../../utils/mixins" as *;
+
+// alright Jan 7, 2026
+
+// this stats container will contain the primary descriptive statistics
+// lets change up the styling
 
 .statscontainer {
   /* this is the top one */

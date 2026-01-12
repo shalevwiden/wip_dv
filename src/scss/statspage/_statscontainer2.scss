@@ -1,0 +1,35 @@
+@use "../../utils/mixins" as *;
+
+.statscontainer2 {
+  /* this is the top one */
+  width: 100%;
+  background-color: #ff3131e1;
+  border-radius: 26px;
+  padding: 30px 35px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 35px;
+  height: auto;
+  min-height: 300px;
+
+  & .statsbox {
+    .title {
+      font-weight: bold;
+    }
+    .content {
+      text-decoration: underline;
+
+      //   this is whats used for the top 3 and last 3 depts
+      .dept_ul {
+        border: 3px solid black;
+      }
+    }
+  }
+}
