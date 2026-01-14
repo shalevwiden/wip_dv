@@ -1515,31 +1515,11 @@ Basically everything is flex. To make it responsive switch direction from flex r
   scroll-behavior: smooth;
 }
 
-body {
-  scroll-behavior: smooth;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* crazy filters to apply */
-  /* filter: invert(100%); */
-  /* filter: grayscale(50%); */
-  filter: contrast(110%);
-  /* filter: blur(3px); */
-  filter: saturate(110%);
-}
-
 /* 
 
 This is all nav bar stuff:*/
 /* end nav bar stuff */
-.sitecontainer#schoolhomepage {
+.sitecontainer#unihomepage {
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -1587,13 +1567,13 @@ This is all nav bar stuff:*/
   */
   /* even smaller screensizes here */
 }
-.sitecontainer#schoolhomepage .abovemainsite {
+.sitecontainer#unihomepage .abovemainsite {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 270px;
 }
-.sitecontainer#schoolhomepage .abovemainsite .topnav {
+.sitecontainer#unihomepage .abovemainsite .topnav {
   /* change this color to see it and make changes */
   background-color: #dce2e6;
   width: 100%;
@@ -1605,7 +1585,7 @@ This is all nav bar stuff:*/
   /* keep this */
   filter: drop-shadow(4px 0px 2px rgb(67, 66, 66));
 }
-.sitecontainer#schoolhomepage .abovemainsite .biglogobox {
+.sitecontainer#unihomepage .abovemainsite .biglogobox {
   height: 200px;
   width: 100%;
   overflow: hidden; /* optional: clips the image if it's too big */
@@ -1614,16 +1594,16 @@ This is all nav bar stuff:*/
   align-items: center;
   justify-content: center;
 }
-.sitecontainer#schoolhomepage .abovemainsite .biglogobox a#homeimagelink {
+.sitecontainer#unihomepage .abovemainsite .biglogobox a#homeimagelink {
   /* height the same as topnav here, 100px */
   height: 70%;
   width: auto;
 }
-.sitecontainer#schoolhomepage .abovemainsite .biglogobox a#homeimagelink .biglogo {
+.sitecontainer#unihomepage .abovemainsite .biglogobox a#homeimagelink .biglogo {
   height: 100%;
   width: auto;
 }
-.sitecontainer#schoolhomepage .mainsite {
+.sitecontainer#unihomepage .mainsite {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1634,7 +1614,7 @@ This is all nav bar stuff:*/
   flex: 1 1 600px;
   border-top: 10px solid #153f66;
 }
-.sitecontainer#schoolhomepage .introbox {
+.sitecontainer#unihomepage .introbox {
   width: 90%;
   border: 5px black dashed;
   border-radius: 26px;
@@ -1648,7 +1628,7 @@ This is all nav bar stuff:*/
   justify-content: center;
   height: auto;
 }
-.sitecontainer#schoolhomepage .middlenav {
+.sitecontainer#unihomepage .middlenav {
   width: 90%;
   display: flex;
   display: flex;
@@ -1658,7 +1638,7 @@ This is all nav bar stuff:*/
   gap: 20px;
   gap: 0;
 }
-.sitecontainer#schoolhomepage .schoolist-ul {
+.sitecontainer#unihomepage .schoolist-ul {
   width: 90%;
   height: auto;
   background-color: #eee;
@@ -1670,7 +1650,7 @@ This is all nav bar stuff:*/
   gap: 30px;
   /* finish this later */
 }
-.sitecontainer#schoolhomepage .schoolist-column {
+.sitecontainer#unihomepage .schoolist-column {
   /*  add padding too */
   /* regenerate the  */
   display: flex;
@@ -1678,7 +1658,7 @@ This is all nav bar stuff:*/
   align-items: center;
   justify-content: center;
 }
-.sitecontainer#schoolhomepage .schoolist-column a {
+.sitecontainer#unihomepage .schoolist-column a {
   background-color: #ff7731;
   width: 100%;
   height: 190px;
@@ -1695,11 +1675,11 @@ This is all nav bar stuff:*/
   justify-content: center;
   transition: background-color 0.4s border 0.4s;
 }
-.sitecontainer#schoolhomepage .schoolist-column a:hover {
+.sitecontainer#unihomepage .schoolist-column a:hover {
   background-color: #bf5701;
   border: 2px solid white;
 }
-.sitecontainer#schoolhomepage .schoolnamediv {
+.sitecontainer#unihomepage .schoolnamediv {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1712,7 +1692,7 @@ This is all nav bar stuff:*/
   font-weight: bold;
   font-size: 25px;
 }
-.sitecontainer#schoolhomepage .leftcontent {
+.sitecontainer#unihomepage .leftcontent {
   /* this affects the width */
   flex: 50%;
   background-color: #1792ae;
@@ -1725,7 +1705,7 @@ This is all nav bar stuff:*/
   row-gap: 25px;
   min-height: 300px;
 }
-.sitecontainer#schoolhomepage .schoollistheaderbox {
+.sitecontainer#unihomepage .schoollistheaderbox {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1733,13 +1713,13 @@ This is all nav bar stuff:*/
   height: 80px;
   width: 100%;
 }
-.sitecontainer#schoolhomepage .schoollistbox {
+.sitecontainer#unihomepage .schoollistbox {
   border: 4px solid rgb(164, 12, 12);
   border-radius: 26px;
   width: calc(100% - 80px);
   padding: 20px 10px 20px 40px;
 }
-.sitecontainer#schoolhomepage .schoollistbox ul {
+.sitecontainer#unihomepage .schoollistbox ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -1747,7 +1727,7 @@ This is all nav bar stuff:*/
   /* control paddig in the schoollistbox instead, its easier */
   padding: 0;
 }
-.sitecontainer#schoolhomepage .schoollink {
+.sitecontainer#unihomepage .schoollink {
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -1757,32 +1737,32 @@ This is all nav bar stuff:*/
        column-gap: 10px;
   font-weight: bold;
 }
-.sitecontainer#schoolhomepage .schoollink a {
+.sitecontainer#unihomepage .schoollink a {
   text-decoration: none;
   color: white;
   font-weight: bold;
 }
-.sitecontainer#schoolhomepage .linksvg {
+.sitecontainer#unihomepage .linksvg {
   filter: invert(100%) brightness(200%);
   width: 20px;
   height: auto;
   margin-top: 6px;
 }
-.sitecontainer#schoolhomepage .filescontainer {
+.sitecontainer#unihomepage .filescontainer {
   border: 4px dashed rgb(16, 11, 82);
   border-radius: 26px;
   width: 92%;
   padding: 20px 29px;
 }
-.sitecontainer#schoolhomepage .filescontainer h3 {
+.sitecontainer#unihomepage .filescontainer h3 {
   color: #284dbc;
 }
-.sitecontainer#schoolhomepage .filescontainer ul {
+.sitecontainer#unihomepage .filescontainer ul {
   list-style-type: none; /* Removes bullets */
   /* indent */
   padding-left: 30px;
 }
-.sitecontainer#schoolhomepage .linkbox {
+.sitecontainer#unihomepage .linkbox {
   display: flex;
   flex-direction: row;
   /* make the download text all even */
@@ -1791,15 +1771,15 @@ This is all nav bar stuff:*/
   -moz-column-gap: 40px;
        column-gap: 40px;
 }
-.sitecontainer#schoolhomepage .linkbox p:first-of-type {
+.sitecontainer#unihomepage .linkbox p:first-of-type {
   margin-top: 10px;
   font-weight: bold;
   max-width: 137px;
 }
-.sitecontainer#schoolhomepage .linkbox a i {
+.sitecontainer#unihomepage .linkbox a i {
   color: rgb(21, 21, 69);
 }
-.sitecontainer#schoolhomepage .rightcontent {
+.sitecontainer#unihomepage .rightcontent {
   flex: 50%;
   background-color: rgb(232, 80, 56);
   padding: 0px 20px 30px 20px;
@@ -1810,7 +1790,7 @@ This is all nav bar stuff:*/
   color: white;
   padding: 40px 30px;
 }
-.sitecontainer#schoolhomepage .undermainsite {
+.sitecontainer#unihomepage .undermainsite {
   background-color: rgb(255, 255, 255);
   width: 100%;
   /* this is for now essentially footer top margin */
@@ -1820,7 +1800,7 @@ This is all nav bar stuff:*/
   align-items: center;
   justify-content: center;
 }
-.sitecontainer#schoolhomepage .home_random_stats {
+.sitecontainer#unihomepage .home_random_stats {
   /* its 100% of middlenav, which is 80% */
   width: 100%;
   height: 95px;
@@ -1830,7 +1810,7 @@ This is all nav bar stuff:*/
   align-items: center;
   justify-content: center;
 }
-.sitecontainer#schoolhomepage .home_random_stats ul {
+.sitecontainer#unihomepage .home_random_stats ul {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -1843,7 +1823,7 @@ This is all nav bar stuff:*/
   list-style-type: none;
   padding-left: 0;
 }
-.sitecontainer#schoolhomepage .home_random_stats ul li {
+.sitecontainer#unihomepage .home_random_stats ul li {
   /* make them big so you can hover */
   width: 25%;
   display: flex;
@@ -1855,11 +1835,11 @@ This is all nav bar stuff:*/
   border-radius: 35px;
   padding: 20px;
 }
-.sitecontainer#schoolhomepage .home_random_stats li:hover {
+.sitecontainer#unihomepage .home_random_stats li:hover {
   background-color: #284dbc;
   cursor: pointer;
 }
-.sitecontainer#schoolhomepage .home_random_stats ul li a {
+.sitecontainer#unihomepage .home_random_stats ul li a {
   text-decoration: none;
   color: white;
   font-size: 19px;
@@ -1874,44 +1854,44 @@ This is all nav bar stuff:*/
   height: 100%;
   transition: color 0.3s;
 }
-.sitecontainer#schoolhomepage #randompagebutton {
+.sitecontainer#unihomepage #randompagebutton {
   border: 3px solid rgb(35, 44, 116);
   color: white;
 }
-.sitecontainer#schoolhomepage #randompagebutton:hover {
+.sitecontainer#unihomepage #randompagebutton:hover {
   background-color: #fdfbfa;
   border: 5px solid rgb(15, 29, 89);
   border-radius: 25px;
 }
-.sitecontainer#schoolhomepage #randompagebutton:hover a {
+.sitecontainer#unihomepage #randompagebutton:hover a {
   color: #153f66 !important;
 }
 @media (min-width: 1000px) {
-  .sitecontainer#schoolhomepage {
+  .sitecontainer#unihomepage {
     /* this is the width that it will be 3 columns until */
   }
-  .sitecontainer#schoolhomepage .schoolist-ul {
+  .sitecontainer#unihomepage .schoolist-ul {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1272px) {
-  .sitecontainer#schoolhomepage #headingtitle {
+  .sitecontainer#unihomepage #headingtitle {
     font-size: 45px;
     color: #060212;
   }
 }
 @media screen and (max-width: 1135px) {
-  .sitecontainer#schoolhomepage {
+  .sitecontainer#unihomepage {
     /* for the home_random_stats stuff */
     /* theres already padding here from the originally declared style */
   }
-  .sitecontainer#schoolhomepage .abovemainsite {
+  .sitecontainer#unihomepage .abovemainsite {
     display: flex;
     flex-direction: column;
     /* more height to allow both title and breadcrumbs to be seen */
     height: 270px;
   }
-  .sitecontainer#schoolhomepage .headingbox {
+  .sitecontainer#unihomepage .headingbox {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: auto;
@@ -1919,7 +1899,7 @@ This is all nav bar stuff:*/
     width: 100%;
     padding-left: 20px;
   }
-  .sitecontainer#schoolhomepage .topnav {
+  .sitecontainer#unihomepage .topnav {
     background-color: #dce2e6;
     width: 100%;
     height: 60px;
@@ -1929,23 +1909,23 @@ This is all nav bar stuff:*/
     justify-content: space-between;
     /* top nav currently 250px */
   }
-  .sitecontainer#schoolhomepage .middlenav {
+  .sitecontainer#unihomepage .middlenav {
     width: 90%;
   }
-  .sitecontainer#schoolhomepage .home_random_stats ul {
+  .sitecontainer#unihomepage .home_random_stats ul {
     -moz-column-gap: 60px;
          column-gap: 60px;
   }
 }
 @media screen and (max-width: 700px) {
-  .sitecontainer#schoolhomepage {
+  .sitecontainer#unihomepage {
     /* 
 
 
 
     this one here is pretty important */
   }
-  .sitecontainer#schoolhomepage .abovemainsite {
+  .sitecontainer#unihomepage .abovemainsite {
     display: flex;
     flex-direction: column;
     /* more height to allow both title and breadcrumbs to be seen */
@@ -1953,7 +1933,7 @@ This is all nav bar stuff:*/
     /* add the 2px for the border bottom */
     height: 272px;
   }
-  .sitecontainer#schoolhomepage .topnav {
+  .sitecontainer#unihomepage .topnav {
     background-color: #dce2e6;
     width: 100%;
     height: 60px;
@@ -1964,26 +1944,26 @@ This is all nav bar stuff:*/
     /* keep this */
     filter: drop-shadow(4px 0px 2px rgb(67, 66, 66));
   }
-  .sitecontainer#schoolhomepage .middlenav {
+  .sitecontainer#unihomepage .middlenav {
     width: 90%;
     /* 300 px plus gap of 30 for 3 */
     height: 390px;
   }
-  .sitecontainer#schoolhomepage .home_random_stats {
+  .sitecontainer#unihomepage .home_random_stats {
     /* bring it to the top */
     width: 100%;
   }
-  .sitecontainer#schoolhomepage .home_random_stats ul {
+  .sitecontainer#unihomepage .home_random_stats ul {
     display: flex;
     flex-direction: column;
     height: 405px;
     row-gap: 35px;
   }
-  .sitecontainer#schoolhomepage .home_random_stats ul li {
+  .sitecontainer#unihomepage .home_random_stats ul li {
     width: 60%;
     height: 25%;
   }
-  .sitecontainer#schoolhomepage .biglogobox {
+  .sitecontainer#unihomepage .biglogobox {
     background-color: #fff;
     width: 100%;
     height: 200px;
@@ -1993,14 +1973,14 @@ This is all nav bar stuff:*/
     justify-content: center;
     /*  */
   }
-  .sitecontainer#schoolhomepage .biglogo {
+  .sitecontainer#unihomepage .biglogo {
     height: 65%;
     width: auto;
   }
-  .sitecontainer#schoolhomepage .mainsite {
+  .sitecontainer#unihomepage .mainsite {
     flex-direction: column;
   }
-  .sitecontainer#schoolhomepage .platformsbox {
+  .sitecontainer#unihomepage .platformsbox {
     width: 40%;
     min-width: 200px;
     padding: 10px 30px;
@@ -2009,7 +1989,7 @@ This is all nav bar stuff:*/
     font-weight: 600;
     font-size: 16px;
   }
-  .sitecontainer#schoolhomepage .icons {
+  .sitecontainer#unihomepage .icons {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -2019,14 +1999,14 @@ This is all nav bar stuff:*/
     /* this was that icon stuff I was trying to find */
     width: 100%;
   }
-  .sitecontainer#schoolhomepage .icons a .fa-linkedin {
+  .sitecontainer#unihomepage .icons a .fa-linkedin {
     font-size: 30px;
     width: 30px;
     height: 30px;
     color: #0072b1;
     margin-bottom: 7px;
   }
-  .sitecontainer#schoolhomepage .icons a .bi-substack {
+  .sitecontainer#unihomepage .icons a .bi-substack {
     font-size: 10px;
     width: 27px;
     height: 27px;
@@ -2034,14 +2014,14 @@ This is all nav bar stuff:*/
   }
 }
 @media screen and (max-width: 550px) {
-  .sitecontainer#schoolhomepage .abovemainsite {
+  .sitecontainer#unihomepage .abovemainsite {
     display: flex;
     flex-direction: column;
     /* more height to allow both title and breadcrumbs to be seen */
     /* bigger height as well for the bigger topnav */
     height: 220px;
   }
-  .sitecontainer#schoolhomepage .topnav {
+  .sitecontainer#unihomepage .topnav {
     background-color: #dce2e6;
     width: 100%;
     height: 60px;
@@ -2052,17 +2032,17 @@ This is all nav bar stuff:*/
     /* keep this */
     filter: drop-shadow(4px 0px 2px rgb(67, 66, 66));
   }
-  .sitecontainer#schoolhomepage .biglogobox {
+  .sitecontainer#unihomepage .biglogobox {
     width: 100%;
     /* keep in mind its still flex center */
     height: 160px;
     /*  */
   }
-  .sitecontainer#schoolhomepage .biglogo {
+  .sitecontainer#unihomepage .biglogo {
     height: 70%;
     width: auto;
   }
-  .sitecontainer#schoolhomepage .home_random_stats {
+  .sitecontainer#unihomepage .home_random_stats {
     /* bring it to the top */
     /* order: 1; */
     height: 65px;
@@ -2075,18 +2055,18 @@ This is all nav bar stuff:*/
   }
 }
 @media screen and (max-width: 450px) {
-  .sitecontainer#schoolhomepage .abovemainsite {
+  .sitecontainer#unihomepage .abovemainsite {
     display: flex;
     flex-direction: column;
     /* more height to allow both title and breadcrumbs to be seen */
     /* bigger height as well for the bigger topnav */
     height: 220px;
   }
-  .sitecontainer#schoolhomepage .biglogo {
+  .sitecontainer#unihomepage .biglogo {
     height: 65%;
     width: auto;
   }
-  .sitecontainer#schoolhomepage .topnav {
+  .sitecontainer#unihomepage .topnav {
     background-color: #dce2e6;
     width: 100%;
     height: 60px;
@@ -2096,7 +2076,7 @@ This is all nav bar stuff:*/
     justify-content: space-between;
     /* keep this */
   }
-  .sitecontainer#schoolhomepage .home_random_stats {
+  .sitecontainer#unihomepage .home_random_stats {
     height: 65px;
     width: 100%;
   }
@@ -2856,6 +2836,123 @@ This is all nav bar stuff:*/
   border: 3px solid black;
 }
 
+/* begin .sheetjs div */
+.renderedcsvdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#csvtablecontainer {
+  width: 90%;
+  border-radius: 26px;
+  /* border: 5px solid #081a75; */
+  min-height: 100px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* smoother scroll on mobile */
+}
+
+#csvheading {
+  margin: 30px;
+  color: #284dbc;
+  font-size: 23px;
+}
+
+#csvtablecontainer table {
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#csvtablecontainer table td,
+#csvtablecontainer table th {
+  border: 1px solid #ccc;
+  padding: 15px 9px;
+  min-height: 40px;
+}
+
+/* style first row bold */
+#csvtablecontainer table tr:first-child td {
+  font-weight: bold;
+  background-color: var(--secondarynavy);
+  color: white;
+  border: none;
+  text-align: left;
+  font-size: 20px;
+  padding: 18px;
+}
+
+/* add border radius to the whole table */
+#csvtablecontainer table tr:first-child td:nth-of-type(1) {
+  border-top-left-radius: 10px;
+  padding-left: 15px;
+}
+
+#csvtablecontainer table tr:first-child td:nth-of-type(6) {
+  border-top-right-radius: 10px;
+  padding-right: 10px;
+  /* color: #ff731f; */
+}
+
+#csvtablecontainer table tr:last-child td:nth-of-type(1) {
+  border-bottom-left-radius: 10px;
+}
+
+#csvtablecontainer table tr:last-child td:nth-of-type(4) {
+  border: none;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #ccc;
+  border-collapse: separate;
+}
+
+#csvtablecontainer table tr:nth-of-type(3) td {
+  font-weight: bold;
+}
+
+/* change alignment */
+td:nth-child(1),
+th:nth-child(1) {
+  text-align: left;
+}
+
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5),
+td:nth-child(6) {
+  text-align: center;
+}
+
+/* alternating bcg for lines */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* style Degreeview Logo */
+#csvtablecontainer table tr:last-child td:first-child {
+  font-weight: bold;
+  color: #0c48a5;
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 30px;
+}
+
+/* select the 2nd to last child */
+#csvtablecontainer table tr:nth-last-of-type(2) {
+  display: none;
+}
+
+#csvtablecontainer table tr:nth-of-type(2) {
+  display: none;
+}
+
+#csvtablecontainer td.schooltd {
+  border-bottom: #eb7d46 solid 3px;
+  font-weight: bold;
+}
+
 .sectioncontainer {
   display: flex;
   flex-direction: column;
@@ -2976,13 +3073,6 @@ body .sitecontainer#statspage {
 
 
   */
-  /* begin .sheetjs div */
-  /* style first row bold */
-  /* add border radius to the whole table */
-  /* change alignment */
-  /* alternating bcg for lines */
-  /* style Degreeview Logo */
-  /* select the 2nd to last child */
   /* end under main site */
   /* beginning of all the media quieries */
   /* 
@@ -3299,98 +3389,6 @@ body .sitecontainer#statspage .morestats img {
   height: auto;
   border-radius: 26px;
   min-width: 300px;
-}
-body .sitecontainer#statspage .renderedcsvdiv {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-body .sitecontainer#statspage #csvtablecontainer {
-  width: 90%;
-  border-radius: 26px;
-  /* border: 5px solid #081a75; */
-  min-height: 100px;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* smoother scroll on mobile */
-}
-body .sitecontainer#statspage #csvheading {
-  margin: 30px;
-  color: #284dbc;
-  font-size: 23px;
-}
-body .sitecontainer#statspage #csvtablecontainer table {
-  border-collapse: collapse;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 100%;
-}
-body .sitecontainer#statspage #csvtablecontainer table td,
-body .sitecontainer#statspage #csvtablecontainer table th {
-  border: 1px solid #ccc;
-  padding: 15px 9px;
-  min-height: 40px;
-}
-body .sitecontainer#statspage #csvtablecontainer table tr:first-child td {
-  font-weight: bold;
-  background-color: var(--secondarynavy);
-  color: white;
-  border: none;
-  text-align: left;
-  font-size: 20px;
-  padding: 18px;
-}
-body .sitecontainer#statspage #csvtablecontainer table tr:first-child td:nth-of-type(1) {
-  border-top-left-radius: 10px;
-  padding-left: 15px;
-}
-body .sitecontainer#statspage #csvtablecontainer table tr:first-child td:nth-of-type(6) {
-  border-top-right-radius: 10px;
-  padding-right: 10px;
-  /* color: #ff731f; */
-}
-body .sitecontainer#statspage #csvtablecontainer table tr:last-child td:nth-of-type(1) {
-  border-bottom-left-radius: 10px;
-}
-body .sitecontainer#statspage #csvtablecontainer table tr:last-child td:nth-of-type(4) {
-  border: none;
-  border-bottom-right-radius: 10px;
-  border: 1px solid #ccc;
-  border-collapse: separate;
-}
-body .sitecontainer#statspage #csvtablecontainer table tr:nth-of-type(3) td {
-  font-weight: bold;
-}
-body .sitecontainer#statspage td:nth-child(1),
-body .sitecontainer#statspage th:nth-child(1) {
-  text-align: left;
-}
-body .sitecontainer#statspage td:nth-child(2),
-body .sitecontainer#statspage td:nth-child(3),
-body .sitecontainer#statspage td:nth-child(4),
-body .sitecontainer#statspage td:nth-child(5),
-body .sitecontainer#statspage td:nth-child(6) {
-  text-align: center;
-}
-body .sitecontainer#statspage tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-body .sitecontainer#statspage #csvtablecontainer table tr:last-child td:first-child {
-  font-weight: bold;
-  color: #0c48a5;
-  font-family: "Barlow";
-  font-weight: 600;
-  font-size: 30px;
-}
-body .sitecontainer#statspage #csvtablecontainer table tr:nth-last-of-type(2) {
-  display: none;
-}
-body .sitecontainer#statspage #csvtablecontainer table tr:nth-of-type(2) {
-  display: none;
-}
-body .sitecontainer#statspage #csvtablecontainer td.schooltd {
-  border-bottom: #eb7d46 solid 3px;
-  font-weight: bold;
 }
 body .sitecontainer#statspage .undermainsite {
   background-color: rgb(255, 255, 255);
