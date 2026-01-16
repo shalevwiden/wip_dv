@@ -1,0 +1,11 @@
+// this will include the scss for all the main pages
+// Like main home page, main stats page, etc
+// maybe a history page or something
+// Ah yes the about page
+
+@use "../utils/mixins" as *;
+
+// DRY
+body {
+  @include dvbody_styling;
+}
