@@ -188,7 +188,7 @@ still in top nav, but now the homeandabout section
     align-items: flex-start;
     justify-content: center;
   }
-  #degreenametitle {
+  #departmenttitle {
     font-size: 45px;
     color: #060212;
   }
@@ -302,7 +302,7 @@ Begin left content stuff
   /* beginning of all the media quieries */
 
   @media screen and (min-width: 700px) and (max-width: 1272px) {
-    #degreenametitle {
+    #departmenttitle {
       font-size: clamp(40px, 9.5vw, 43px);
       color: #060212;
     }
@@ -406,7 +406,7 @@ Mobile Screens
       padding-bottom: 25px;
       padding-left: 10px;
     }
-    #degreenametitle {
+    #departmenttitle {
       font-size: 35px;
       color: #060212;
     }
@@ -527,7 +527,7 @@ Mobile Screens
       padding-bottom: 25px;
       padding-left: 35px;
     }
-    #degreenametitle {
+    #departmenttitle {
       font-size: 35px;
       color: #060212;
     }

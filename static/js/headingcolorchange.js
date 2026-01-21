@@ -3,6 +3,7 @@ console.log("Running hover script");
 schoolcolor = "#bf5700";
 breadcrumbs_current = document.getElementById("current");
 
+// this is for the OG DegreeView schools like CNS and McCombs
 schoolnametitle = document.getElementById("schoolnametitle");
 // add conditonals so it can work with all files. Only if the element exists will it proceed
 if (schoolnametitle) {
@@ -31,6 +32,22 @@ if (degreenametitle) {
     degreenametitle.style.color = originalColor;
   });
 }
+
+// now the other file
+departmenttitle = document.getElementById("departmenttitle");
+if (departmenttitle) {
+  // now degreepage file
+  const originalColor = getComputedStyle(departmenttitle).color;
+  breadcrumbs_current.addEventListener("mouseenter", () => {
+    // change this color for diferent schools
+    departmenttitle.style.color = schoolcolor;
+  });
+
+  breadcrumbs_current.addEventListener("mouseleave", () => {
+    departmenttitle.style.color = originalColor;
+  });
+}
+
 randombutton = document.getElementById("randompagebutton");
 randomlink = document.getElementById("randomlink");
 if (randombutton) {

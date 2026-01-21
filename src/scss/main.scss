@@ -7,4 +7,8 @@
 // DRY
 body {
   @include dvbody_styling;
+
+  #hiddeninfo {
+    display: none;
+  }
 }

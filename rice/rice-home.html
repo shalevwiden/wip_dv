@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="Explore Visualizations and Tabular Data for all 141 Degrees at UT Austin"
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, csv, .xlsx,pdf"
+    />
+
+    <meta name="author" content="DegreeView" />
+    <!-- end seo -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://storage.googleapis.com/degreeview/degreeviewimages/site_favicon.png"
+      type="image/png"
+    />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Rice Home Page</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../static/css/main.css" />
+
+    <!-- Barlow Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons ( download icon from here is used) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- this is just testing -->
+
+    <!-- <link rel="stylesheet" href="utaustin-site/cssfiles/filterchaos.css" /> -->
+  </head>
+  <body>
+    <!-- this div basically has the entire site in it. Flex direction column -->
+    <div class="sitecontainer" id="unihomepage">
+      <!-- 
+      
+      -->
+      <div class="abovemainsite">
+        <div class="topnav">
+          <!-- this is empty but is just on the top to take up space for the color
+           KEEP THIS-->
+        </div>
+        <div class="biglogobox">
+          <img
+            class="biglogo"
+            src="utaustin-site/metaassets/logo5.png"
+            alt=""
+            id="biglogoid"
+          />
+        </div>
+      </div>
+      <!-- mainsite
+        contains right and left sections
+      -->
+      <div class="mainsite">
+        <!-- intro box that is -->
+        <div class="introbox">
+          <div class="intro-paragraph">
+            <p>Course data for Rice University on DegreeView</p>
+          </div>
+        </div>
+        <!-- 3 buttons -->
+        <div class="middlenav">
+          <nav class="home_random_stats">
+            <ul>
+              <!-- keep in mind the entire li is clickable here -->
+              <li><a href="aboutpage.html">About</a></li>
+              <li id="randompagebutton">
+                <a id="randomlink" href="">Random Page</a>
+              </li>
+              <li><a href="ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- this selector is only used for some schools -->
+
+        <div class="selector" style="display: none">
+          <div class="coursedata">
+            <a href="option1">Courses Data</a>
+          </div>
+
+          <div class="degreeplans" id="currentpage">Option 2</div>
+        </div>
+
+        <!-- 
+        
+        
+        
+        -->
+        <!-- now the departments -->
+        <!-- remember this template works in conjuction with the create_uni_homepage() function -->
+        <div class="homepage-div">
+          
+          <h2 class="letter-section">A</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/a/accounting(macc).html">Accounting (MACC)</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/africanandafricanamericanstudies(aaas).html">African and African American Studies (AAAS)</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/airforcescience(afsc).html">Air Force Science (AFSC)</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/americasresearchcenter(arcr).html">Americas Research Center (ARCR)</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/ancientmediterraneancivilizations(amci).html">Ancient Mediterranean Civilizations (AMCI)</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/anthropology(anth).html">Anthropology (ANTH)</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/appliedphysics(appl).html">Applied Physics (APPL)</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/arabic(arab).html">Arabic (ARAB)</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/architecture(arch).html">Architecture (ARCH)</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/arthistory(hart).html">Art History (HART)</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/asianstudies(asia).html">Asian Studies (ASIA)</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/astronomy(astr).html">Astronomy (ASTR)</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">B</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/b/bioengineering(bioe).html">Bioengineering (BIOE)</a>
+            </li>
+            
+            <li>
+              <a href="departments/b/biosciences(bios).html">Biosciences (BIOS)</a>
+            </li>
+            
+            <li>
+              <a href="departments/b/business(busi).html">Business (BUSI)</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">C</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/c/centerforcivicleadership(lead).html">Center for Civic Leadership (LEAD)</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/centerforlanguagesandinterculturalcommunication(clic).html">Center for Languages and Intercultural Communication (CLIC)</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/chemicalandbiomolecularengineering(chbe).html">Chemical and Biomolecular Engineering (CHBE)</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/chemistry(chem).html">Chemistry (CHEM)</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/chinese(chin).html">Chinese (CHIN)</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/civilandenvironmentalengineering(ceve).html">Civil and Environmental Engineering (CEVE)</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/classicalstudies(clas).html">Classical Studies (CLAS)</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/cognitivesciences(csci).html">Cognitive Sciences (CSCI)</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/collegecourse(coll).html">College Course (COLL)</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/communication(comm).html">Communication (COMM)</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/computationalappliedmathematicsandoperationsresearch(cmor).html">Computational Applied Mathematics and Operations Research (CMOR)</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/computerscience(comp).html">Computer Science (COMP)</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">D</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/d/datascience(dsci).html">Data Science (DSCI)</a>
+            </li>
+            
+            <li>
+              <a href="departments/d/dissertation_thesissubmission(dsrt).html">Dissertation_Thesis Submission (DSRT)</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">E</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/e/earth-environmentalandplanetarysciences(eeps).html">Earth, Environmental and Planetary Sciences (EEPS)</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/economics(econ).html">Economics (ECON)</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/education(educ).html">Education (EDUC)</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/electricalandcomputerengineering(elec).html">Electrical and Computer Engineering (ELEC)</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/emergencymedicalstudies_practice(emsp).html">Emergency Medical Studies_Practice (EMSP)</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/engineering(engi).html">Engineering (ENGI)</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/engineeringdesign(edes).html">Engineering Design (EDES)</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/english(engl).html">English (ENGL)</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/environmentalstudies(enst).html">Environmental Studies (ENST)</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/europeanstudies(euro).html">European Studies (EURO)</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/executivemanagement(emba).html">Executive Management (EMBA)</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">F</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/f/film(film).html">Film (FILM)</a>
+            </li>
+            
+            <li>
+              <a href="departments/f/first-yearwritingintensiveseminars(fwis).html">First-Year Writing Intensive Seminars (FWIS)</a>
+            </li>
+            
+            <li>
+              <a href="departments/f/frenchstudies(fren).html">French Studies (FREN)</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">G</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/g/germanstudies(germ).html">German Studies (GERM)</a>
+            </li>
+            
+            <li>
+              <a href="departments/g/globalaffairs(glbl).html">Global Affairs (GLBL)</a>
+            </li>
+            
+            <li>
+              <a href="departments/g/globalhealthtechnologies(glht).html">Global Health Technologies (GLHT)</a>
+            </li>
+            
+            <li>
+              <a href="departments/g/greek(gree).html">Greek (GREE)</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">H</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/h/healthsciences(heal).html">Health Sciences (HEAL)</a>
+            </li>
+            
+            <li>
+              <a href="departments/h/hebrew(hebr).html">Hebrew (HEBR)</a>
+            </li>
+            
+            <li>
+              <a href="departments/h/history(hist).html">History (HIST)</a>
+            </li>
+            
+            <li>
+              <a href="departments/h/honorsprogram(hons).html">Honors Program (HONS)</a>
+            </li>
+            
+            <li>
+              <a href="departments/h/humanities(huma).html">Humanities (HUMA)</a>
+            </li>
+            
+            <li>
+              <a href="departments/h/humanitiesresearchcenter(hurc).html">Humanities Research Center (HURC)</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">I</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/i/industrialengineering(inde).html">Industrial Engineering (INDE)</a>
+            </li>
+            
+            <li>
+              <a href="departments/i/interdisciplinarystudies(inds).html">Interdisciplinary Studies (INDS)</a>
+            </li>
+            
+            <li>
+              <a href="departments/i/italianlanguageandculture(ital).html">Italian Language and Culture (ITAL)</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">J</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/j/japanese(japa).html">Japanese (JAPA)</a>
+            </li>
+            
+            <li>
+              <a href="departments/j/jewishstudies(jwst).html">Jewish Studies (JWST)</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">K</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/k/kinesiology(kine).html">Kinesiology (KINE)</a>
+            </li>
+            
+            <li>
+              <a href="departments/k/korean(kore).html">Korean (KORE)</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">L</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/l/latin(lati).html">Latin (LATI)</a>
+            </li>
+            
+            <li>
+              <a href="departments/l/latinamericanandlatinxstudies(lalx).html">Latin American and Latinx Studies (LALX)</a>
+            </li>
+            
+            <li>
+              <a href="departments/l/liberalstudiescore_capstone(mlsc).html">Liberal Studies Core_Capstone (MLSC)</a>
+            </li>
+            
+            <li>
+              <a href="departments/l/lifetimephysicalactivitycredit(lpcr).html">Lifetime Physical Activity Credit (LPCR)</a>
+            </li>
+            
+            <li>
+              <a href="departments/l/lifetimephysicalactivityprogram(lpap).html">Lifetime Physical Activity Program (LPAP)</a>
+            </li>
+            
+            <li>
+              <a href="departments/l/linguistics(ling).html">Linguistics (LING)</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">M</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/m/management(mgmt).html">Management (MGMT)</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/managerialeconomicsandorganizationalsciences(meos).html">Managerial Economics and Organizational Sciences (MEOS)</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/materialsscienceandnanoengineering(msne).html">Materials Science and NanoEngineering (MSNE)</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/mathematics(math).html">Mathematics (MATH)</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/mbaforprofessionals-evening(mgmp).html">MBA for Professionals-Evening (MGMP)</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/mbaforprofessionals-weekend(mgmw).html">MBA for Professionals-Weekend (MGMW)</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/mechanicalengineering(mech).html">Mechanical Engineering (MECH)</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/mediastudies(mdia).html">Media Studies (MDIA)</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/medicalhumanities(mdhm).html">Medical Humanities (MDHM)</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/medievalandearlymodernstudies(mdem).html">Medieval and Early Modern Studies (MDEM)</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/militaryscience(mili).html">Military Science (MILI)</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/museumsandculturalheritage(much).html">Museums and Cultural Heritage (MUCH)</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/music(musi).html">Music (MUSI)</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">N</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/n/naturalsciences(nsci).html">Natural Sciences (NSCI)</a>
+            </li>
+            
+            <li>
+              <a href="departments/n/navalscience(nava).html">Naval Science (NAVA)</a>
+            </li>
+            
+            <li>
+              <a href="departments/n/neuroscience(neur).html">Neuroscience (NEUR)</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">P</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/p/philosophy(phil).html">Philosophy (PHIL)</a>
+            </li>
+            
+            <li>
+              <a href="departments/p/photography(foto).html">Photography (FOTO)</a>
+            </li>
+            
+            <li>
+              <a href="departments/p/physics(phys).html">Physics (PHYS)</a>
+            </li>
+            
+            <li>
+              <a href="departments/p/politicalscience(poli).html">Political Science (POLI)</a>
+            </li>
+            
+            <li>
+              <a href="departments/p/politics-law-andsocialthought(plst).html">Politics, Law, and Social Thought (PLST)</a>
+            </li>
+            
+            <li>
+              <a href="departments/p/portuguese(port).html">Portuguese (PORT)</a>
+            </li>
+            
+            <li>
+              <a href="departments/p/psychology(psyc).html">Psychology (PSYC)</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">R</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/r/religion(reli).html">Religion (RELI)</a>
+            </li>
+            
+            <li>
+              <a href="departments/r/ricecenterforengineeringleadership(rcel).html">Rice Center for Engineering Leadership (RCEL)</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">S</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/s/socialpolicyanalysis(sopa).html">Social Policy Analysis (SOPA)</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/socialpolicyevaluation(sope).html">Social Policy Evaluation (SOPE)</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/socialsciences(sosc).html">Social Sciences (SOSC)</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/sociology(soci).html">Sociology (SOCI)</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/spanish(span).html">Spanish (SPAN)</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/sportmanagement(smgt).html">Sport Management (SMGT)</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/statistics(stat).html">Statistics (STAT)</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/studyofwomen-gender-andsexuality(swgs).html">Study of Women, Gender, and Sexuality (SWGS)</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/systems-synthetic-andphysicalbiology(sspb).html">Systems, Synthetic, and Physical Biology (SSPB)</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">T</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/t/theatre(thea).html">Theatre (THEA)</a>
+            </li>
+            
+            <li>
+              <a href="departments/t/tibetan(tibt).html">Tibetan (TIBT)</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">U</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/u/universitycourses(univ).html">University Courses (UNIV)</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">V</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/v/visualarts(arts).html">Visual Arts (ARTS)</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </div>
+
+      <!-- end intro box -->
+
+      <!-- end left content -->
+
+      <!-- end main mainsite -->
+      <!-- this goes under main site( no way) -->
+      <div class="undermainsite"></div>
+      <!-- footer now -->
+      <footer>
+        <div class="footerleft">
+          <div class="links">
+            <div class="tooltip">
+              <a href="aboutpage.html">About</a>
+            </div>
+
+            <div class="tooltip">
+              <a href="#biglogoid">Home</a>
+            </div>
+
+            <div class="tooltip">
+              <a href="exceltemplates.html">Excel Templates Breakdown</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footerright">
+          <img
+            id="smalllogo"
+            src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+            alt="smalldegreeviewlogo"
+          />
+          <p id="statement">DegreeView 2025</p>
+        </div>
+      </footer>
+
+      <div id="hiddeninfo">
+        <p id="departmentpagelinks_jsonpath">
+          
+        </p>
+      </div>
+    </div>
+    <script src="utaustin-site/javascript_files/headingcolorchange.js"></script>
+    <!-- script for random button  -->
+    <script src="utaustin-site/javascript_files/randomdegreepage.js"></script>
+  </body>
+</html>

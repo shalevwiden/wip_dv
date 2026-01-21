@@ -993,7 +993,7 @@ This is all nav bar stuff:*/
   align-items: flex-start;
   justify-content: center;
 }
-.sitecontainer#departmentpage #degreenametitle {
+.sitecontainer#departmentpage #departmenttitle {
   font-size: 45px;
   color: #060212;
 }
@@ -1067,7 +1067,7 @@ This is all nav bar stuff:*/
   .sitecontainer#departmentpage {
     /* all the following is in left content */
   }
-  .sitecontainer#departmentpage #degreenametitle {
+  .sitecontainer#departmentpage #departmenttitle {
     font-size: clamp(40px, 9.5vw, 43px);
     color: #060212;
   }
@@ -1163,7 +1163,7 @@ This is all nav bar stuff:*/
     padding-bottom: 25px;
     padding-left: 10px;
   }
-  .sitecontainer#departmentpage #degreenametitle {
+  .sitecontainer#departmentpage #departmenttitle {
     font-size: 35px;
     color: #060212;
   }
@@ -1265,7 +1265,7 @@ This is all nav bar stuff:*/
     padding-bottom: 25px;
     padding-left: 35px;
   }
-  .sitecontainer#departmentpage #degreenametitle {
+  .sitecontainer#departmentpage #departmenttitle {
     font-size: 35px;
     color: #060212;
   }
@@ -1534,8 +1534,6 @@ This is all nav bar stuff:*/
   /* mainsite will be the name, plus some of the files, plus some images. But there can be stuff below it in, Since sitecontainer is flex column  */
   /* index code */
   /* this is the ul */
-  /* 1/3 width for each column. Use media quieries to change width */
-  /* this div contains all the a's */
   /* 
 
   Begin left content stuff
@@ -1637,60 +1635,6 @@ This is all nav bar stuff:*/
   justify-content: center;
   gap: 20px;
   gap: 0;
-}
-.sitecontainer#unihomepage .schoolist-ul {
-  width: 90%;
-  height: auto;
-  background-color: #eee;
-  list-style-type: none;
-  padding: 45px 35px;
-  border-radius: 26px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  /* finish this later */
-}
-.sitecontainer#unihomepage .schoolist-column {
-  /*  add padding too */
-  /* regenerate the  */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.sitecontainer#unihomepage .schoolist-column a {
-  background-color: #ff7731;
-  width: 100%;
-  height: 190px;
-  border-radius: 25px;
-  padding: 25px 30px 30px 40px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  transition: background-color 0.4s border 0.4s;
-}
-.sitecontainer#unihomepage .schoolist-column a:hover {
-  background-color: #bf5701;
-  border: 2px solid white;
-}
-.sitecontainer#unihomepage .schoolnamediv {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 25px;
 }
 .sitecontainer#unihomepage .leftcontent {
   /* this affects the width */
@@ -1865,14 +1809,6 @@ This is all nav bar stuff:*/
 }
 .sitecontainer#unihomepage #randompagebutton:hover a {
   color: #153f66 !important;
-}
-@media (min-width: 1000px) {
-  .sitecontainer#unihomepage {
-    /* this is the width that it will be 3 columns until */
-  }
-  .sitecontainer#unihomepage .schoolist-ul {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 @media screen and (min-width: 700px) and (max-width: 1272px) {
   .sitecontainer#unihomepage #headingtitle {
@@ -3789,4 +3725,7 @@ body {
   filter: contrast(110%);
   /* filter: blur(3px); */
   filter: saturate(110%);
+}
+body #hiddeninfo {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
