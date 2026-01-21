@@ -5,7 +5,7 @@ let pages = []; // declared once, globally
 // in general all the school folders should be the schoolabrvs
 
 let departmentpagelinks_jsonpath = document.getElementById(
-  "departmentpagelinks_jsonpath"
+  "departmentpagelinks_jsonpath",
 );
 
 fetch(departmentpagelinks_jsonpath)
@@ -40,3 +40,18 @@ function gotorandompage(e) {
 
 // e means event handling
 randombutton.addEventListener("click", gotorandompage);
+
+function stylebutton() {
+  randomlink = document.getElementById("randomlink");
+  if (randombutton) {
+    // now degreepage file
+    const originalColor = getComputedStyle(randomlink).color;
+    randombutton.addEventListener("mouseenter", () => {
+      randomlink.style.color = "#153f66";
+    });
+
+    randombutton.addEventListener("mouseleave", () => {
+      randomlink.style.color = originalColor;
+    });
+  }
+}

@@ -1,6 +1,6 @@
 console.log("Running hover script");
 
-schoolcolor = "#bf5700";
+document.getElementById("unicolor")?.textContent.trim();
 breadcrumbs_current = document.getElementById("current");
 
 // this is for the OG DegreeView schools like CNS and McCombs
@@ -10,7 +10,7 @@ if (schoolnametitle) {
   // school file
   const originalcolor = getComputedStyle(schoolnametitle).color;
   breadcrumbs_current.addEventListener("mouseenter", () => {
-    schoolnametitle.style.color = schoolcolor;
+    schoolnametitle.style.color = unicolor;
   });
 
   breadcrumbs_current.addEventListener("mouseleave", () => {
@@ -25,7 +25,7 @@ if (degreenametitle) {
   const originalColor = getComputedStyle(degreenametitle).color;
   breadcrumbs_current.addEventListener("mouseenter", () => {
     // change this color for diferent schools
-    degreenametitle.style.color = schoolcolor;
+    degreenametitle.style.color = unicolor;
   });
 
   breadcrumbs_current.addEventListener("mouseleave", () => {
@@ -37,27 +37,14 @@ if (degreenametitle) {
 departmenttitle = document.getElementById("departmenttitle");
 if (departmenttitle) {
   // now degreepage file
+  console.log("Recieved department title");
   const originalColor = getComputedStyle(departmenttitle).color;
   breadcrumbs_current.addEventListener("mouseenter", () => {
     // change this color for diferent schools
-    departmenttitle.style.color = schoolcolor;
+    departmenttitle.style.color = unicolor;
   });
 
   breadcrumbs_current.addEventListener("mouseleave", () => {
     departmenttitle.style.color = originalColor;
-  });
-}
-
-randombutton = document.getElementById("randompagebutton");
-randomlink = document.getElementById("randomlink");
-if (randombutton) {
-  // now degreepage file
-  const originalColor = getComputedStyle(randomlink).color;
-  randombutton.addEventListener("mouseenter", () => {
-    randomlink.style.color = "#153f66";
-  });
-
-  randombutton.addEventListener("mouseleave", () => {
-    randomlink.style.color = originalColor;
   });
 }
