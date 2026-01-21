@@ -1,9 +1,11 @@
 console.log("Running hover script");
 
-document.getElementById("unicolor")?.textContent.trim();
+const unicolor = document.getElementById("unicolor")?.textContent.trim();
 breadcrumbs_current = document.getElementById("current");
 
-// this is for the OG DegreeView schools like CNS and McCombs
+if (breadcrumbs_current && unicolor) {
+  breadcrumbs_current.style.color = unicolor;
+} // this is for the OG DegreeView schools like CNS and McCombs
 schoolnametitle = document.getElementById("schoolnametitle");
 // add conditonals so it can work with all files. Only if the element exists will it proceed
 if (schoolnametitle) {
