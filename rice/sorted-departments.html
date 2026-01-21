@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta name="description" content="All departments at UT sorted." />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, Astronomy (BSA)"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link
+      rel="icon"
+      href="https://storage.googleapis.com/degreeview/degreeviewimages/site_favicon.png"
+      type="image/png"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+    <title>Rice Sorted Departments</title>
+    <link rel="stylesheet" href="../static/css/main.css" />
+
+    <!-- Barlow Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons ( download icon and file icons from here is used) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Barlow Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons ( download icon and file icons from here is used) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Material Symbols google -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="sitecontainer" id="sorted-departments">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li><a href="../../index.html">DegreeView UT</a></li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">Sorted Departments Table</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../../aboutpage.html">About</a></li>
+              <li><a href="../../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="degreenametitle">Rice Sorted Departments</h1>
+        </div>
+      </div>
+
+      <div class="tablediv">
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+        <div class="table-scroll">
+          <table id="sorted-departments-table">
+            <tr>
+              <td>Department</td>
+              <td>Course Count</td>
+              <td>Ranking</td>
+            </tr>
+            
+            <tr>
+              <td>Music (MUSI)</td>
+              <td>298</td>
+              <td>1</td>
+            </tr>
+            
+            <tr>
+              <td>Management (MGMT)</td>
+              <td>269</td>
+              <td>2</td>
+            </tr>
+            
+            <tr>
+              <td>Anthropology (ANTH)</td>
+              <td>217</td>
+              <td>3</td>
+            </tr>
+            
+            <tr>
+              <td>History (HIST)</td>
+              <td>213</td>
+              <td>4</td>
+            </tr>
+            
+            <tr>
+              <td>Earth, Environmental and Planetary Sciences (EEPS)</td>
+              <td>208</td>
+              <td>5</td>
+            </tr>
+            
+            <tr>
+              <td>Computer Science (COMP)</td>
+              <td>204</td>
+              <td>6</td>
+            </tr>
+            
+            <tr>
+              <td>Religion (RELI)</td>
+              <td>200</td>
+              <td>7</td>
+            </tr>
+            
+            <tr>
+              <td>Art History (HART)</td>
+              <td>188</td>
+              <td>8</td>
+            </tr>
+            
+            <tr>
+              <td>English (ENGL)</td>
+              <td>183</td>
+              <td>9</td>
+            </tr>
+            
+            <tr>
+              <td>Political Science (POLI)</td>
+              <td>181</td>
+              <td>10</td>
+            </tr>
+            
+            <tr>
+              <td>Electrical and Computer Engineering (ELEC)</td>
+              <td>174</td>
+              <td>11</td>
+            </tr>
+            
+            <tr>
+              <td>First-Year Writing Intensive Seminars (FWIS)</td>
+              <td>162</td>
+              <td>12</td>
+            </tr>
+            
+            <tr>
+              <td>Psychology (PSYC)</td>
+              <td>154</td>
+              <td>13</td>
+            </tr>
+            
+            <tr>
+              <td>Sociology (SOCI)</td>
+              <td>154</td>
+              <td>14</td>
+            </tr>
+            
+            <tr>
+              <td>Biosciences (BIOS)</td>
+              <td>153</td>
+              <td>15</td>
+            </tr>
+            
+            <tr>
+              <td>Bioengineering (BIOE)</td>
+              <td>129</td>
+              <td>16</td>
+            </tr>
+            
+            <tr>
+              <td>Civil and Environmental Engineering (CEVE)</td>
+              <td>129</td>
+              <td>17</td>
+            </tr>
+            
+            <tr>
+              <td>Economics (ECON)</td>
+              <td>129</td>
+              <td>18</td>
+            </tr>
+            
+            <tr>
+              <td>Mechanical Engineering (MECH)</td>
+              <td>122</td>
+              <td>19</td>
+            </tr>
+            
+            <tr>
+              <td>Chemical and Biomolecular Engineering (CHBE)</td>
+              <td>108</td>
+              <td>20</td>
+            </tr>
+            
+            <tr>
+              <td>Mathematics (MATH)</td>
+              <td>108</td>
+              <td>21</td>
+            </tr>
+            
+            <tr>
+              <td>Business (BUSI)</td>
+              <td>107</td>
+              <td>22</td>
+            </tr>
+            
+            <tr>
+              <td>Chemistry (CHEM)</td>
+              <td>104</td>
+              <td>23</td>
+            </tr>
+            
+            <tr>
+              <td>Statistics (STAT)</td>
+              <td>99</td>
+              <td>24</td>
+            </tr>
+            
+            <tr>
+              <td>Computational Applied Mathematics and Operations Research (CMOR)</td>
+              <td>93</td>
+              <td>25</td>
+            </tr>
+            
+            <tr>
+              <td>Architecture (ARCH)</td>
+              <td>89</td>
+              <td>26</td>
+            </tr>
+            
+            <tr>
+              <td>Philosophy (PHIL)</td>
+              <td>85</td>
+              <td>27</td>
+            </tr>
+            
+            <tr>
+              <td>Interdisciplinary Studies (INDS)</td>
+              <td>83</td>
+              <td>28</td>
+            </tr>
+            
+            <tr>
+              <td>Physics (PHYS)</td>
+              <td>83</td>
+              <td>29</td>
+            </tr>
+            
+            <tr>
+              <td>Asian Studies (ASIA)</td>
+              <td>80</td>
+              <td>30</td>
+            </tr>
+            
+            <tr>
+              <td>College Course (COLL)</td>
+              <td>77</td>
+              <td>31</td>
+            </tr>
+            
+            <tr>
+              <td>Lifetime Physical Activity Program (LPAP)</td>
+              <td>74</td>
+              <td>32</td>
+            </tr>
+            
+            <tr>
+              <td>Materials Science and NanoEngineering (MSNE)</td>
+              <td>73</td>
+              <td>33</td>
+            </tr>
+            
+            <tr>
+              <td>Education (EDUC)</td>
+              <td>61</td>
+              <td>34</td>
+            </tr>
+            
+            <tr>
+              <td>French Studies (FREN)</td>
+              <td>58</td>
+              <td>35</td>
+            </tr>
+            
+            <tr>
+              <td>Spanish (SPAN)</td>
+              <td>58</td>
+              <td>36</td>
+            </tr>
+            
+            <tr>
+              <td>Humanities (HUMA)</td>
+              <td>54</td>
+              <td>37</td>
+            </tr>
+            
+            <tr>
+              <td>Visual Arts (ARTS)</td>
+              <td>54</td>
+              <td>38</td>
+            </tr>
+            
+            <tr>
+              <td>Study of Women, Gender, and Sexuality (SWGS)</td>
+              <td>51</td>
+              <td>39</td>
+            </tr>
+            
+            <tr>
+              <td>Sport Management (SMGT)</td>
+              <td>49</td>
+              <td>40</td>
+            </tr>
+            
+            <tr>
+              <td>Environmental Studies (ENST)</td>
+              <td>46</td>
+              <td>41</td>
+            </tr>
+            
+            <tr>
+              <td>African and African American Studies (AAAS)</td>
+              <td>45</td>
+              <td>42</td>
+            </tr>
+            
+            <tr>
+              <td>Medical Humanities (MDHM)</td>
+              <td>41</td>
+              <td>43</td>
+            </tr>
+            
+            <tr>
+              <td>Medieval and Early Modern Studies (MDEM)</td>
+              <td>41</td>
+              <td>44</td>
+            </tr>
+            
+            <tr>
+              <td>German Studies (GERM)</td>
+              <td>40</td>
+              <td>45</td>
+            </tr>
+            
+            <tr>
+              <td>University Courses (UNIV)</td>
+              <td>38</td>
+              <td>46</td>
+            </tr>
+            
+            <tr>
+              <td>Film (FILM)</td>
+              <td>35</td>
+              <td>47</td>
+            </tr>
+            
+            <tr>
+              <td>Linguistics (LING)</td>
+              <td>35</td>
+              <td>48</td>
+            </tr>
+            
+            <tr>
+              <td>Theatre (THEA)</td>
+              <td>35</td>
+              <td>49</td>
+            </tr>
+            
+            <tr>
+              <td>Rice Center for Engineering Leadership (RCEL)</td>
+              <td>33</td>
+              <td>50</td>
+            </tr>
+            
+            <tr>
+              <td>Global Affairs (GLBL)</td>
+              <td>32</td>
+              <td>51</td>
+            </tr>
+            
+            <tr>
+              <td>Health Sciences (HEAL)</td>
+              <td>32</td>
+              <td>52</td>
+            </tr>
+            
+            <tr>
+              <td>Natural Sciences (NSCI)</td>
+              <td>32</td>
+              <td>53</td>
+            </tr>
+            
+            <tr>
+              <td>Kinesiology (KINE)</td>
+              <td>30</td>
+              <td>54</td>
+            </tr>
+            
+            <tr>
+              <td>Neuroscience (NEUR)</td>
+              <td>30</td>
+              <td>55</td>
+            </tr>
+            
+            <tr>
+              <td>Astronomy (ASTR)</td>
+              <td>27</td>
+              <td>56</td>
+            </tr>
+            
+            <tr>
+              <td>Accounting (MACC)</td>
+              <td>25</td>
+              <td>57</td>
+            </tr>
+            
+            <tr>
+              <td>Classical Studies (CLAS)</td>
+              <td>24</td>
+              <td>58</td>
+            </tr>
+            
+            <tr>
+              <td>MBA for Professionals-Evening (MGMP)</td>
+              <td>24</td>
+              <td>59</td>
+            </tr>
+            
+            <tr>
+              <td>Chinese (CHIN)</td>
+              <td>23</td>
+              <td>60</td>
+            </tr>
+            
+            <tr>
+              <td>MBA for Professionals-Weekend (MGMW)</td>
+              <td>22</td>
+              <td>61</td>
+            </tr>
+            
+            <tr>
+              <td>Engineering (ENGI)</td>
+              <td>21</td>
+              <td>62</td>
+            </tr>
+            
+            <tr>
+              <td>Industrial Engineering (INDE)</td>
+              <td>21</td>
+              <td>63</td>
+            </tr>
+            
+            <tr>
+              <td>Latin (LATI)</td>
+              <td>21</td>
+              <td>64</td>
+            </tr>
+            
+            <tr>
+              <td>Politics, Law, and Social Thought (PLST)</td>
+              <td>21</td>
+              <td>65</td>
+            </tr>
+            
+            <tr>
+              <td>Social Sciences (SOSC)</td>
+              <td>20</td>
+              <td>66</td>
+            </tr>
+            
+            <tr>
+              <td>Global Health Technologies (GLHT)</td>
+              <td>19</td>
+              <td>67</td>
+            </tr>
+            
+            <tr>
+              <td>Military Science (MILI)</td>
+              <td>19</td>
+              <td>68</td>
+            </tr>
+            
+            <tr>
+              <td>Photography (FOTO)</td>
+              <td>19</td>
+              <td>69</td>
+            </tr>
+            
+            <tr>
+              <td>Latin American and Latinx Studies (LALX)</td>
+              <td>18</td>
+              <td>70</td>
+            </tr>
+            
+            <tr>
+              <td>Communication (COMM)</td>
+              <td>17</td>
+              <td>71</td>
+            </tr>
+            
+            <tr>
+              <td>Center for Civic Leadership (LEAD)</td>
+              <td>16</td>
+              <td>72</td>
+            </tr>
+            
+            <tr>
+              <td>Greek (GREE)</td>
+              <td>16</td>
+              <td>73</td>
+            </tr>
+            
+            <tr>
+              <td>Jewish Studies (JWST)</td>
+              <td>15</td>
+              <td>74</td>
+            </tr>
+            
+            <tr>
+              <td>Korean (KORE)</td>
+              <td>15</td>
+              <td>75</td>
+            </tr>
+            
+            <tr>
+              <td>Naval Science (NAVA)</td>
+              <td>13</td>
+              <td>76</td>
+            </tr>
+            
+            <tr>
+              <td>Arabic (ARAB)</td>
+              <td>12</td>
+              <td>77</td>
+            </tr>
+            
+            <tr>
+              <td>Data Science (DSCI)</td>
+              <td>12</td>
+              <td>78</td>
+            </tr>
+            
+            <tr>
+              <td>Media Studies (MDIA)</td>
+              <td>12</td>
+              <td>79</td>
+            </tr>
+            
+            <tr>
+              <td>Air Force Science (AFSC)</td>
+              <td>11</td>
+              <td>80</td>
+            </tr>
+            
+            <tr>
+              <td>Executive Management (EMBA)</td>
+              <td>11</td>
+              <td>81</td>
+            </tr>
+            
+            <tr>
+              <td>Japanese (JAPA)</td>
+              <td>11</td>
+              <td>82</td>
+            </tr>
+            
+            <tr>
+              <td>Social Policy Evaluation (SOPE)</td>
+              <td>11</td>
+              <td>83</td>
+            </tr>
+            
+            <tr>
+              <td>Italian Language and Culture (ITAL)</td>
+              <td>10</td>
+              <td>84</td>
+            </tr>
+            
+            <tr>
+              <td>Portuguese (PORT)</td>
+              <td>10</td>
+              <td>85</td>
+            </tr>
+            
+            <tr>
+              <td>Cognitive Sciences (CSCI)</td>
+              <td>8</td>
+              <td>86</td>
+            </tr>
+            
+            <tr>
+              <td>Emergency Medical Studies_Practice (EMSP)</td>
+              <td>8</td>
+              <td>87</td>
+            </tr>
+            
+            <tr>
+              <td>Engineering Design (EDES)</td>
+              <td>8</td>
+              <td>88</td>
+            </tr>
+            
+            <tr>
+              <td>Social Policy Analysis (SOPA)</td>
+              <td>8</td>
+              <td>89</td>
+            </tr>
+            
+            <tr>
+              <td>Systems, Synthetic, and Physical Biology (SSPB)</td>
+              <td>8</td>
+              <td>90</td>
+            </tr>
+            
+            <tr>
+              <td>European Studies (EURO)</td>
+              <td>6</td>
+              <td>91</td>
+            </tr>
+            
+            <tr>
+              <td>Applied Physics (APPL)</td>
+              <td>5</td>
+              <td>92</td>
+            </tr>
+            
+            <tr>
+              <td>Museums and Cultural Heritage (MUCH)</td>
+              <td>5</td>
+              <td>93</td>
+            </tr>
+            
+            <tr>
+              <td>Tibetan (TIBT)</td>
+              <td>5</td>
+              <td>94</td>
+            </tr>
+            
+            <tr>
+              <td>Center for Languages and Intercultural Communication (CLIC)</td>
+              <td>4</td>
+              <td>95</td>
+            </tr>
+            
+            <tr>
+              <td>Hebrew (HEBR)</td>
+              <td>4</td>
+              <td>96</td>
+            </tr>
+            
+            <tr>
+              <td>Honors Program (HONS)</td>
+              <td>4</td>
+              <td>97</td>
+            </tr>
+            
+            <tr>
+              <td>Humanities Research Center (HURC)</td>
+              <td>4</td>
+              <td>98</td>
+            </tr>
+            
+            <tr>
+              <td>Americas Research Center (ARCR)</td>
+              <td>3</td>
+              <td>99</td>
+            </tr>
+            
+            <tr>
+              <td>Ancient Mediterranean Civilizations (AMCI)</td>
+              <td>3</td>
+              <td>100</td>
+            </tr>
+            
+            <tr>
+              <td>Dissertation_Thesis Submission (DSRT)</td>
+              <td>3</td>
+              <td>101</td>
+            </tr>
+            
+            <tr>
+              <td>Lifetime Physical Activity Credit (LPCR)</td>
+              <td>3</td>
+              <td>102</td>
+            </tr>
+            
+            <tr>
+              <td>Managerial Economics and Organizational Sciences (MEOS)</td>
+              <td>2</td>
+              <td>103</td>
+            </tr>
+            
+            <tr>
+              <td>Liberal Studies Core_Capstone (MLSC)</td>
+              <td>0</td>
+              <td>104</td>
+            </tr>
+            
+            <tr>
+              <td>DegreeView</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footerleft">
+          <div class="links">
+            <div class="tooltip">
+              <a href="../../aboutpage.html">About</a>
+            </div>
+
+            <div class="tooltip">
+              <a href="../../index.html">Home</a>
+            </div>
+
+            <div class="tooltip">
+              <a href="../../exceltemplates.html">Excel Templates Breakdown</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footerright">
+          <img
+            id="smalllogo"
+            src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+            alt="smalldegreeviewlogo"
+          />
+          <p id="statement">DegreeView 2025</p>
+        </div>
+      </footer>
+
+      <!-- Hover Script -->
+
+      <script src="../static/js/headingcolorchange.js"></script>
+
+      <!-- Sheet JS Script -->
+
+      <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+      <!-- copy script -->
+      <script src="../static/js/copytable.js"></script>
+
+      <!-- animate table script -->
+      <script src="../static/js/animatetable.js"></script>
+    </div>
+  </body>
+</html>

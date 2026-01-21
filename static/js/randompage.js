@@ -4,9 +4,7 @@ let pages = []; // declared once, globally
 // in each school folder that is
 // in general all the school folders should be the schoolabrvs
 
-let departmentpagelinks_jsonpath = document.getElementById(
-  "departmentpagelinks_jsonpath",
-);
+let departmentpagelinks_jsonpath = "departmentpagelinks.json";
 
 fetch(departmentpagelinks_jsonpath)
   .then((response) => {
