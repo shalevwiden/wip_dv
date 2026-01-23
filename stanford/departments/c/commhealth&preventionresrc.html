@@ -1,0 +1,690 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+</script>
+<!-- End Google Tag Manager -->
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, Comm Health & Prevention Resrc"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Comm Health & Prevention Resrc UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+<!-- test comment -->
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li>
+                <a href="../../stanford-home.html"> Stanford Home</a>
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../c/c-departments.html"
+                  >C Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">Comm Health & Prevention Resrc</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+              <li><a href="../../../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="departmenttitle">Comm Health & Prevention Resrc</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="original">original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/stanford/commhealth&preventionresrc/excel-files/commhealth&preventionresrc-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="Stanford Theme">Stanford Theme Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/stanford/commhealth&preventionresrc/excel-files/commhealth&preventionresrc-stanford-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li style="display: none">
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Comm Health & Prevention Resrc Courses with "Comm Health & Prevention Resrc"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              Comm Health & Prevention Resrc Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">41</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                Contemplation by Design Summit: Translating contemplative science into timely community programming
+              </div>
+            </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                99
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                TGR Project
+              </div>
+            </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                11
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                54
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Comm Health & Prevention Resrc Courses with "Comm Health & Prevention Resrc" in their name
+              </div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Comm Health & Prevention Resrc Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Comm Health & Prevention Resrc</td>
+
+            <td colspan="2">Stanford University</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
+
+                    
+                        <tr>
+                        <td>Healthy/Sustainable Food Systems: Maximum Sustainability across Health, Economics, and Environment</td>
+                        <td>CHPR113</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Human Nutrition</td>
+                        <td>CHPR130</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Contemplative Movement and Mindful Physical Activity</td>
+                        <td>CHPR141</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Food and Society: Exploring Eating Behaviors in Social, Environmental, and Policy Context</td>
+                        <td>CHPR166</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Undergraduate Research</td>
+                        <td>CHPR199</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Health Promotion and Disease Prevention over the Lifecourse</td>
+                        <td>CHPR201</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>R Fundamentals for Health Research</td>
+                        <td>CHPR202</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Communicating Health Research to Community, Research, and Policy Audiences</td>
+                        <td>CHPR203</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Meta-research: Appraising Research Findings, Bias, and Meta-analysis</td>
+                        <td>CHPR206</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Methods for Health Care Delivery Innovation, Implementation and Evaluation</td>
+                        <td>CHPR212</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Responsible Conduct of Research in the Community</td>
+                        <td>CHPR220</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Health Impact of Sexual Assault and Relationship Abuse across the Lifecourse</td>
+                        <td>CHPR224</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Science of Community Engagement in Health Research</td>
+                        <td>CHPR227</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Theoretical Foundations and Design of Behavioral Intervention Trials</td>
+                        <td>CHPR228</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sexual Function and Diversity in Medical Disciplines</td>
+                        <td>CHPR230</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Diet and Gene Expression</td>
+                        <td>CHPR231</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Social and Structural Determinants of Health: Achieving Health Equity</td>
+                        <td>CHPR232</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Contemplative Science: The Power of the Pause for Resilience, Relationships, and Resolve</td>
+                        <td>CHPR233</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Applying Contemplative Practices</td>
+                        <td>CHPR234</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Hunger & Food Insecurity: Challenges and Solution</td>
+                        <td>CHPR237</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Contemplative Competence for Sustainability of Public and Planetary Health and Well-being</td>
+                        <td>CHPR239</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Prevention Research: the Science of Healthy Living</td>
+                        <td>CHPR240</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Contemplative Movement and Mindful Physical Activity</td>
+                        <td>CHPR241</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Science of Well-being: A Global Perspective</td>
+                        <td>CHPR242</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sex and Gender in Human Physiology and Disease</td>
+                        <td>CHPR243</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Contemplation by Design Summit: Translating contemplative science into timely community programming</td>
+                        <td>CHPR244</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Methods in Community Assessment, Evaluation, and Research</td>
+                        <td>CHPR247</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>History of Nutrition Research: How our current guidelines came to fruition</td>
+                        <td>CHPR249</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Prevention Across Medical Disciplines: Evidence-based Guidelines</td>
+                        <td>CHPR250</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Current Topics and Controversies in Women's Health</td>
+                        <td>CHPR256</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Prevention Across Surgical and Other Medical Disciplines</td>
+                        <td>CHPR270</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Geography of Health</td>
+                        <td>CHPR272</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>A Case Based Approach to Clinical Genetics</td>
+                        <td>CHPR274A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>A Case Based Approach to Clinical Genetics</td>
+                        <td>CHPR274B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Prevention Medicine and Entrepreneurship for Societal Health</td>
+                        <td>CHPR275</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Community-Based Participatory Research for Health</td>
+                        <td>CHPR282</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cancer in Asian Americans: Epidemiology and Prevention</td>
+                        <td>CHPR288</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Curricular Practical Training and Internship</td>
+                        <td>CHPR290</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Reading</td>
+                        <td>CHPR299</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Community Health and Prevention Research Master's Thesis Writing</td>
+                        <td>CHPR399</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>TGR Project</td>
+                        <td>CHPR801</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+
+      <div id="hiddeninfo">
+        <p id="unicolor">#8C1515</p>
+      </div>
+    </div>
+    <!-- put hidden info here for the JavaScript to get -->
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+                    <!-- Hover Script -->
+
+                    <script src="../../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../../static/js/animatetable.js"></script>
+                
+  </body>
+</html>

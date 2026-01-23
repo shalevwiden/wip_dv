@@ -1,0 +1,767 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+</script>
+<!-- End Google Tag Manager -->
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, Stanford Program in Berlin"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Stanford Program in Berlin UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+<!-- test comment -->
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li>
+                <a href="../../stanford-home.html"> Stanford Home</a>
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../s/s-departments.html"
+                  >S Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">Stanford Program in Berlin</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+              <li><a href="../../../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="departmenttitle">Stanford Program in Berlin</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="original">original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/stanford/stanfordprograminberlin/excel-files/stanfordprograminberlin-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="Stanford Theme">Stanford Theme Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/stanford/stanfordprograminberlin/excel-files/stanfordprograminberlin-stanford-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li style="display: none">
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Stanford Program in Berlin Courses with "Stanford Program in Berlin"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              Stanford Program in Berlin Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">52</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                Everyday Life in a Global Metropolis: Exploring Berlin through History, Society, and Culture
+              </div>
+            </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                92
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                EU in Crisis
+              </div>
+            </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                12
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                41
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Stanford Program in Berlin Courses with "Stanford Program in Berlin" in their name
+              </div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Stanford Program in Berlin Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Stanford Program in Berlin</td>
+
+            <td colspan="2">Stanford University</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
+
+                    
+                        <tr>
+                        <td>21st Century Perspectives on Immigration and Integration in Germany</td>
+                        <td>OSPBER10</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Contemporary Theater</td>
+                        <td>OSPBER101A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Berlin University Lecture Series 1</td>
+                        <td>OSPBER104</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Berlin University Lecture Series 2</td>
+                        <td>OSPBER105</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Berlin University Lecture Series 3</td>
+                        <td>OSPBER106</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Germany between Old and New Normal</td>
+                        <td>OSPBER11G</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>A People's Union? Money, Markets, and Identity in the EU</td>
+                        <td>OSPBER126X</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Museums at the Crossroads</td>
+                        <td>OSPBER12G</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Decolonizing the Museum: Germany and Beyond</td>
+                        <td>OSPBER14</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Split Images: A Century of Cinema</td>
+                        <td>OSPBER17</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sports, Culture, and Gender in Comparative Perspective</td>
+                        <td>OSPBER174</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Expressing Ideas: Academic German for 2nd year learners</td>
+                        <td>OSPBER19</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Freie Universitat: Humanities 3</td>
+                        <td>OSPBER198H</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Reading A</td>
+                        <td>OSPBER199A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Reading B</td>
+                        <td>OSPBER199B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Berlin University Seminar 1</td>
+                        <td>OSPBER199F</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Berlin University Seminar 2</td>
+                        <td>OSPBER199G</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated German: First and Second Quarters</td>
+                        <td>OSPBER1Z</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate German</td>
+                        <td>OSPBER21B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Everyday Life in a Global Metropolis: Exploring Berlin through History, Society, and Culture</td>
+                        <td>OSPBER22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>History, Memory, and Trauma: Confronting The Past in Historically Divided Societies</td>
+                        <td>OSPBER24</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced German Grammar</td>
+                        <td>OSPBER24B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Topics in German Music and Culture</td>
+                        <td>OSPBER29</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated German, Second and Third Quarters</td>
+                        <td>OSPBER2Z</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Berlin vor Ort: A Field Trip Module</td>
+                        <td>OSPBER30</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ways of Hearing: Exploring Berlin Through its Music</td>
+                        <td>OSPBER31</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Politics of National Memory/ies</td>
+                        <td>OSPBER33</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Discovering German Culture Through Engineered Products</td>
+                        <td>OSPBER33B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>German Language and Culture</td>
+                        <td>OSPBER3B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>An Intro to Making: What is EE</td>
+                        <td>OSPBER40M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introductory Science of Materials</td>
+                        <td>OSPBER50M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Music and Society: Perspectives from Berlin</td>
+                        <td>OSPBER55</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cityscape as History: Architecture and Urban Design in Berlin</td>
+                        <td>OSPBER60</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Film and Writing</td>
+                        <td>OSPBER64</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Theory from the Bleachers: Reading German Sports and Culture</td>
+                        <td>OSPBER66</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Human Medical Research: Design and Ethics, a focus on Women's Health</td>
+                        <td>OSPBER67</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Trigger Points in Contemporary German Political Culture</td>
+                        <td>OSPBER69</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>EU in Crisis</td>
+                        <td>OSPBER71</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>CyberKant: a User Interface</td>
+                        <td>OSPBER73</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Understanding Intl' Politics Today: From the German Philosophers to Modern Social Science</td>
+                        <td>OSPBER77</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Economy of Germany in Europe: an Historical-Comparative Perspective</td>
+                        <td>OSPBER79</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Exploring German Colonialism and German Colonial Memory</td>
+                        <td>OSPBER8</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Globalization and Germany</td>
+                        <td>OSPBER82</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Integration of Refugees in Europe: German Education Settings</td>
+                        <td>OSPBER86</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Germany in a Changing World</td>
+                        <td>OSPBER87</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Religion & the Third Reich</td>
+                        <td>OSPBER88</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Social Psychology of Belonging</td>
+                        <td>OSPBER89</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Berlin StoryMaps</td>
+                        <td>OSPBER92</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Empowering Women in STEM Fields</td>
+                        <td>OSPBER93</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>From The Humboldt Ideal to Silicon Allee: Three Centuries of the Diffusion of Innovations</td>
+                        <td>OSPBER97</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Germany and the Bomb</td>
+                        <td>OSPBER98</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>German Language Specials</td>
+                        <td>OSPBER99</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+
+      <div id="hiddeninfo">
+        <p id="unicolor">#8C1515</p>
+      </div>
+    </div>
+    <!-- put hidden info here for the JavaScript to get -->
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+                    <!-- Hover Script -->
+
+                    <script src="../../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../../static/js/animatetable.js"></script>
+                
+  </body>
+</html>

@@ -1,0 +1,1985 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+</script>
+<!-- End Google Tag Manager -->
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, School of Medicine"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>School of Medicine UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+<!-- test comment -->
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li>
+                <a href="../../stanford-home.html"> Stanford Home</a>
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../s/s-departments.html"
+                  >S Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">School of Medicine</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+              <li><a href="../../../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="departmenttitle">School of Medicine</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="original">original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/stanford/schoolofmedicine/excel-files/schoolofmedicine-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="Stanford Theme">Stanford Theme Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/stanford/schoolofmedicine/excel-files/schoolofmedicine-stanford-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li style="display: none">
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    School of Medicine Courses with "School of Medicine"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              School of Medicine Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">226</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                No Pride in Stigma: Exploring viral outbreaks and the stigmas perpetuated against LGBTQ+ communities
+              </div>
+            </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                100
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Surgery
+              </div>
+            </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                7
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                44
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of School of Medicine Courses with "School of Medicine" in their name
+              </div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          School of Medicine Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">School of Medicine</td>
+
+            <td colspan="2">Stanford University</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
+
+                    
+                        <tr>
+                        <td>Peer Mentoring for Medical and MSPA Students</td>
+                        <td>ANES231</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Foundations in Experimental Biology</td>
+                        <td>BIOS200</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Understanding Kinetics for Biologists and Biology</td>
+                        <td>BIOS202</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Modeling Cell Signaling</td>
+                        <td>BIOS204</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>From Bench to Bedside: Stem Cell Therapies for CNS Injury</td>
+                        <td>BIOS205</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Geometry for biologists</td>
+                        <td>BIOS208</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cell, Gene, and Immune Therapies</td>
+                        <td>BIOS210</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>No Pride in Stigma: Exploring viral outbreaks and the stigmas perpetuated against LGBTQ+ communities</td>
+                        <td>BIOS211</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ecology and Evolution of Altruism</td>
+                        <td>BIOS213</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Stanford SKY Campus Happiness Retreat</td>
+                        <td>BIOS215</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Practice of Reproducible Research</td>
+                        <td>BIOS216</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Foundations of statistics and reproducible research</td>
+                        <td>BIOS217</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Evolution of Evolvability</td>
+                        <td>BIOS218</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Early Development Strategies for Neutralizing Antibodies and Brain Permeable Small Molecules</td>
+                        <td>BIOS219</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fantastical Pathogenesis: Real-world pathogenesis in fictional media</td>
+                        <td>BIOS220</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Mini-course on big cells</td>
+                        <td>BIOS222</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Development and reporting of robust and reproducible LC-MS/MS assays</td>
+                        <td>BIOS223</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Stem Cell Biology and Applications</td>
+                        <td>BIOS224</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Diversity and Inclusion in STEMM</td>
+                        <td>BIOS225</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Web3, AI, and Digital Health</td>
+                        <td>BIOS226</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Mass Spectrometry and Proteomics: Opening the Black Box</td>
+                        <td>BIOS227</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Open Source Prototyping: Translating Ideas to Reality using Rapid Prototyping Methods</td>
+                        <td>BIOS229</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Successful Fieldwork in Global Health Research</td>
+                        <td>BIOS230</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Public Speaking Bootcamp: How to Give a Stronger Presentation</td>
+                        <td>BIOS231</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Neuroimmunology of Aging and Neurodegenerative Disease</td>
+                        <td>BIOS233</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Comorbidity and Multimorbidities during Aging</td>
+                        <td>BIOS234</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Foundations of Computer Science: What the Tutorial Didn't Tell You</td>
+                        <td>BIOS235</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Engineering Wellness: Wearable Devices for Precision Medicine Applications</td>
+                        <td>BIOS237</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Science Ethics: More Than Just Experiments</td>
+                        <td>BIOS239</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>A Comprehensive Practical Guide to RNA Sequencing</td>
+                        <td>BIOS240</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Data Wrangling with Bash</td>
+                        <td>BIOS241</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Writing Compelling Fellowships and Career Development Awards</td>
+                        <td>BIOS242</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>An Excuse to Sleep: The Science of Sleep and Health</td>
+                        <td>BIOS243</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Applied Artificial Intelligence in Health Care</td>
+                        <td>BIOS244</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Bioscience Classroom Design Workshop</td>
+                        <td>BIOS245</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>A Practical Guide to Success in Science</td>
+                        <td>BIOS246</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Experimental evolution and whole genome sequencing: from yeast to fruit flies</td>
+                        <td>BIOS247</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Working with the Worm: Fundamentals of the C. elegans model system</td>
+                        <td>BIOS248</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Single-cell Spatial-omics: with Applications to Stem Cell Engineering and Cancer Immunotherapy</td>
+                        <td>BIOS249</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>An Introduction to Mathematical Modeling for Ecology</td>
+                        <td>BIOS250</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Explorations on the Culture of Science, Science Identity, and Society</td>
+                        <td>BIOS251</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Data Visualization and Publishing</td>
+                        <td>BIOS252</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Primary concepts in Bioinformatics- To Make Sense Of large scale  Biological and Biomedical Data</td>
+                        <td>BIOS253</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>DataLucence::Images</td>
+                        <td>BIOS254</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Solar energy conversion and storage</td>
+                        <td>BIOS255</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reproducibility through effective coding and data management</td>
+                        <td>BIOS258</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Art of Reproducible Science: A Hands-on Approach</td>
+                        <td>BIOS259</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Rigor and reproducibility in biological research: collection, analysis and use of biological data</td>
+                        <td>BIOS261</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fantastic beasts and where to find them: Biology with non-model organisms</td>
+                        <td>BIOS262</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Answering biological questions with Metagenomic Data</td>
+                        <td>BIOS264</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Quantitative Reasoning in Biology</td>
+                        <td>BIOS265</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Biology and Applications of CRISPR/Cas9: Genome Editing and Epigenome Modifications</td>
+                        <td>BIOS268</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>AI in Drug Discovery and Development</td>
+                        <td>BIOS269</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Bioinformatics Engineering</td>
+                        <td>BIOS270</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Science and Art</td>
+                        <td>BIOS272</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ethics and Justice at the Frontiers of Conservation Biology</td>
+                        <td>BIOS273</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>A Concise Survey of Biodiversity: Natural History and Field Methods Across Taxonomic Groups</td>
+                        <td>BIOS275</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Prions in Health & Disease</td>
+                        <td>BIOS277</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reproducibility and Data Science in Computational Brain Image Analysis</td>
+                        <td>BIOS278</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sleep for Academic Wellness</td>
+                        <td>BIOS280</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Clarifying Career Choices: Your Self-Reflective Research Project</td>
+                        <td>BIOS282</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Performing Quantitative Bottom-Up Chemoproteomics: From Theory to Real World Application</td>
+                        <td>BIOS284</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Maximizing Data, Minimizing Mice</td>
+                        <td>BIOS285</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Preparation & Practice: Finance of Biotechnology</td>
+                        <td>BIOS289</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Preparation & Practice: Law</td>
+                        <td>BIOS290</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Preparation & Practice: Management Consulting</td>
+                        <td>BIOS291</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Preparation & Practice: Science Communication & Media</td>
+                        <td>BIOS292</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Preparation & Practice: Science Policy</td>
+                        <td>BIOS293</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Chemistry for Biologists and Others</td>
+                        <td>BIOS294</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Statistical Methods and Data analysis for Clinical Research</td>
+                        <td>BIOS295</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Preparation & Practice: Biotechnology Business</td>
+                        <td>BIOS296</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Evidence for Us: Reimagining Clinical Trials in the Digital Age</td>
+                        <td>BIOS297</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Write a Grant Proposal in 9 Weeks</td>
+                        <td>BIOS299</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advance 1</td>
+                        <td>BIOS300</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Environment of Support</td>
+                        <td>BIOS301</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Designing Your Life: Empowering Emerging Scientists</td>
+                        <td>BIOS302</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Analysis of Public Companies in the Life Sciences</td>
+                        <td>BIOS319</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>(Hidden) Bias in Bioscience</td>
+                        <td>BIOS400</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Phase Separation in Biology</td>
+                        <td>BIOS401</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>An Overview of AI for Computational Pathology</td>
+                        <td>BIOS402</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Field Genomics: Long-Read Sequencing at Jasper Ridge Biological Preserve</td>
+                        <td>BIOS403</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Time Series Analysis for Neuroscience Data Using State Space Models</td>
+                        <td>BIOS404</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Human Memory: A Lens Through the Extremes</td>
+                        <td>BIOS405</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Microfluidics and Organ-on-a-chip in Biomedicine</td>
+                        <td>BIOS406</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Essentials of Deep Learning in Medicine</td>
+                        <td>BIOS407</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Prompt Engineering 101</td>
+                        <td>BIOS408</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Brain Dynamics and Connectivity</td>
+                        <td>BIOS409</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Health Innovations for Equity: The basics of design and innovation to create impact</td>
+                        <td>BIOS410</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Surgical Innovation: From Concept to the Operating Room</td>
+                        <td>BIOS411</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Antibody Anywhere All at Once: An Introduction to Techniques in Immunology</td>
+                        <td>BIOS412</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beyond the Hospital: Designing Remote Care Solutions</td>
+                        <td>BIOS413</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Philosophy of Psychiatry</td>
+                        <td>BIOS414</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Responsible Sharing of Human Research Data</td>
+                        <td>BIOS415</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Matrix Methods and Applications in Biology</td>
+                        <td>BIOS416</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Electronic Health Records and Clinical AI: "Back to the Future" and Beyond</td>
+                        <td>BIOS417</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Generating Models for Biological Processes Using Core Principles from Chemistry and Physics</td>
+                        <td>BIOS418</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Exploring Nature's Chemistry: Extracting and Interpreting Chemical Profiles for Biosciences</td>
+                        <td>BIOS419</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Building Connections, Defining the Future of Biosciences</td>
+                        <td>BIOS420</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>CoronaGuard: Mastering High-Containment Human Coronaviruses Research</td>
+                        <td>BIOS421</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Genetic Engineering: Principles, Applications, and Designing the Future</td>
+                        <td>BIOS422</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Aging: The Biology of Senescence</td>
+                        <td>BIOS423</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Revealing the Hidden Dimensions of Genomic Structural Variation</td>
+                        <td>BIOS424</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Online Proposal Bootcamp</td>
+                        <td>BIOS425</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Patient-Centered Care and Genetic Therapies for Rare Diseases</td>
+                        <td>BIOS426</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Biological Imaging of Marine Embryos and Larvae</td>
+                        <td>BIOS427</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Liquid Biopsy: Cell-Free Nucleic Acids and the Future of Precision Oncology</td>
+                        <td>BIOS428</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Protein Design and Modeling using Machine Learning Methods</td>
+                        <td>BIOS429</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Simulating Collective Dynamics in Living Systems: From Enzymes to Bird Flocks</td>
+                        <td>BIOS430</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Implement a Writing Practice to Increase your Scientific Productivity</td>
+                        <td>BIOS431</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Boost your Research Productivity With Design Thinking Tools</td>
+                        <td>BIOS432</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>High-Throughput Gene-Editing Screens: From Design to Data</td>
+                        <td>BIOS433</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Science of Sensing: Exploring Biosensors and Devices</td>
+                        <td>BIOS434</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Instability-Driven Patterns in Biology</td>
+                        <td>BIOS435</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Data Best Practices: Basics</td>
+                        <td>BIOS436</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Data Best Practices: Computation</td>
+                        <td>BIOS437</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Consumer Health in Action: From Concept to Market</td>
+                        <td>BIOS438</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Science Research through an Artistic Lens</td>
+                        <td>BIOS439</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Multimodal Biomarker Discovery in Neuroscience</td>
+                        <td>BIOS440</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Dos and Don'ts in Clinical Prediction Modeling</td>
+                        <td>BIOS441</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Computational Applications of High-Throughput Protein Data for Machine Learning</td>
+                        <td>BIOS442</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>MicroRobotics for Biomedical Applications</td>
+                        <td>BIOS443</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reimagining Scientific Visualization with Augmented Reality</td>
+                        <td>BIOS444</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Microbial Symbiosis and Pathogenesis in Marine Invertebrates: A Sequencing-Based Exploration</td>
+                        <td>BIOS445</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Metabolism and Metabolic Techniques in Research</td>
+                        <td>BIOS446</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Frontiers in Women's Health: Clinical, Digital, and Consumer Innovation</td>
+                        <td>BIOS447</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Storytelling in Science: Grants, Papers, and the Public</td>
+                        <td>BIOS450</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Grant Writing: Building Skills for Research Funding</td>
+                        <td>BIOS451</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Practice of Medicine I</td>
+                        <td>INDE201</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Practice of Medicine II</td>
+                        <td>INDE202</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Practice of Medicine III</td>
+                        <td>INDE203</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Practice of Medicine IV-A</td>
+                        <td>INDE204A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Practice of Medicine IV-B</td>
+                        <td>INDE204B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Practice of Medicine V-A</td>
+                        <td>INDE205A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Practice of Medicine V-B</td>
+                        <td>INDE205B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Practice of Medicine VI</td>
+                        <td>INDE206</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Foundations of Cancer Biology and Pathology</td>
+                        <td>INDE210</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Creative Writing</td>
+                        <td>INDE211</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Medical Humanities and the Arts</td>
+                        <td>INDE212</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Stanford Medical Student Journal</td>
+                        <td>INDE214</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Queer Health & Medicine</td>
+                        <td>INDE215</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Physician Scientist Hour</td>
+                        <td>INDE217</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Science of Medicine I</td>
+                        <td>INDE221</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Science of Medicine II-A</td>
+                        <td>INDE222A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Science of Medicine II-B</td>
+                        <td>INDE222B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Science of Medicine III-A</td>
+                        <td>INDE223A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Science of Medicine III-B</td>
+                        <td>INDE223B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Pathophysiology Capstone</td>
+                        <td>INDE224</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Topics in Scientific Management</td>
+                        <td>INDE230A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Topics in Scientific Management</td>
+                        <td>INDE230B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Topics in Scientific Management</td>
+                        <td>INDE230C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>MSTP Journal club</td>
+                        <td>INDE231</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Health Equity Education Seminar</td>
+                        <td>INDE232</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Health Equity Education Practicum: Medical-Legal Advocacy</td>
+                        <td>INDE232A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Health Equity Scholars: Foundations</td>
+                        <td>INDE233</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intro to Specialty Career Selection: Exploring Residency Specialty Selection with Career Advisors</td>
+                        <td>INDE241</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Perspectives on Cancer Care</td>
+                        <td>INDE242</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced English for Non-Native Speakers</td>
+                        <td>INDE254</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Physician Scientist Career Development Symposium</td>
+                        <td>INDE258</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>PSTP Career Development</td>
+                        <td>INDE259</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Pharmacological Treatment of Disease-A</td>
+                        <td>INDE260A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Pharmacological Treatment of Disease-B</td>
+                        <td>INDE260B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intro to Microbiology and Pharmacology</td>
+                        <td>INDE263</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Microbiology and Infectious Diseases II</td>
+                        <td>INDE265</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Planning and Writing a Research Proposal</td>
+                        <td>INDE267</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Early Clinical Engagement (ECE)</td>
+                        <td>INDE268</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Medical Spanish</td>
+                        <td>INDE274</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Student Community Outreach and Physician Support (S-CORPS)</td>
+                        <td>INDE280</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Leadership in Health Disparities Program</td>
+                        <td>INDE284</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Walk With Me:  A Patient and Family Engaged Exploration of Health & The Health Care System</td>
+                        <td>INDE290A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Walk With Me: A Patient and Family Engaged Exploration of Health & The Health Care System</td>
+                        <td>INDE290B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Walk With Me: A Patient and Family Engaged Exploration of Health & The Health Care System</td>
+                        <td>INDE290C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Clinical Intersession and Reflections and Contextual Medicine</td>
+                        <td>INDE297</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Foundations of Clinical Medicine</td>
+                        <td>PAS201</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Foundations of Clinical Neurosciences</td>
+                        <td>PAS202</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Principles of Clinical Medicine I</td>
+                        <td>PAS212</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Principles of Clinical Medicine II</td>
+                        <td>PAS213A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Principles of Clinical Med II</td>
+                        <td>PAS213B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Principles of Clinical Medicine III</td>
+                        <td>PAS214</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Principles of Clinical Medicine IV</td>
+                        <td>PAS215</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Clinical Therapeutics I</td>
+                        <td>PAS222</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Clinical Therapeutics II</td>
+                        <td>PAS223</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Clinical Therapeutics III</td>
+                        <td>PAS224</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Clinical Therapeutics IV</td>
+                        <td>PAS225</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Qualitative Research I</td>
+                        <td>PAS255</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Qualitative Research II</td>
+                        <td>PAS256</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Quantitative Research I</td>
+                        <td>PAS257</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Quantitative Research II</td>
+                        <td>PAS258</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Immersive Technologies in Healthcare</td>
+                        <td>PAS275</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>AHEC Scholars Program</td>
+                        <td>PAS282</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>PAs in Health Care I</td>
+                        <td>PAS291</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>PAs in Health Care II</td>
+                        <td>PAS292</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>PAs in Health Care III</td>
+                        <td>PAS293</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>PAs in Healthcare IV</td>
+                        <td>PAS294</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Reading in PA Studies</td>
+                        <td>PAS299</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Internal Medicine Clerkship I</td>
+                        <td>PAS301</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Internal Medicine Clerkship II</td>
+                        <td>PAS302</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Family Medicine/ Primary Care Medicine I</td>
+                        <td>PAS303</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Family Medicine/ Primary Care Medicine II</td>
+                        <td>PAS304</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Pediatrics</td>
+                        <td>PAS311</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Surgery</td>
+                        <td>PAS320</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Emergency Medicine</td>
+                        <td>PAS321</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Women's Health including Prenatal and Gynecologic Care</td>
+                        <td>PAS331</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Behavioral Medicine/ Mental Health</td>
+                        <td>PAS336</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>MSPA Elective I</td>
+                        <td>PAS351</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>MSPA Elective II</td>
+                        <td>PAS352</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>MSPA Elective III</td>
+                        <td>PAS353</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Reading in PA Studies</td>
+                        <td>PAS399</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>TGR Dissertation</td>
+                        <td>PAS802</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>MSPA Senior Clerkship</td>
+                        <td>PAS803</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sexual Diversity and Function Across Medical Disciplines</td>
+                        <td>SOMGEN130</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Beginning: the Brain, the Womb, and the Elusive Definition of Life</td>
+                        <td>SOMGEN140Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Challenging Sex and Gender Dichotomies in Biology and Medicine</td>
+                        <td>SOMGEN150Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sexual Assault Prevention</td>
+                        <td>SOMGEN160A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sexual Assault Prevention</td>
+                        <td>SOMGEN160B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Literature and Writing for Military Affiliated Students</td>
+                        <td>SOMGEN203</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Global Medical Issues Affecting Women</td>
+                        <td>SOMGEN206</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Theories of Change in Global Health</td>
+                        <td>SOMGEN207</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Art of Observation: Enhancing Clinical Skills Through Visual Analysis</td>
+                        <td>SOMGEN213</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Principles of Medical Education</td>
+                        <td>SOMGEN219A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advances in Medical Education</td>
+                        <td>SOMGEN219B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Physical Listening</td>
+                        <td>SOMGEN224</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Clinical Mandarin in Practice and Application</td>
+                        <td>SOMGEN231A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Clinical Mandarin in Practice and Application</td>
+                        <td>SOMGEN231B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Exploring perspectives of complex, post-viral, chronic illness and disability through podcast media</td>
+                        <td>SOMGEN243</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Vitality and Performance Optimization in the Age of AI</td>
+                        <td>SOMGEN267</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>SPRC Education Program Internship</td>
+                        <td>SOMGEN299</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+
+      <div id="hiddeninfo">
+        <p id="unicolor">#8C1515</p>
+      </div>
+    </div>
+    <!-- put hidden info here for the JavaScript to get -->
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+                    <!-- Hover Script -->
+
+                    <script src="../../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../../static/js/animatetable.js"></script>
+                
+  </body>
+</html>

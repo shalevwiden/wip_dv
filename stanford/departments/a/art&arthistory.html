@@ -1,0 +1,4113 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+</script>
+<!-- End Google Tag Manager -->
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, Art & Art History"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Art & Art History UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+<!-- test comment -->
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li>
+                <a href="../../stanford-home.html"> Stanford Home</a>
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../a/a-departments.html"
+                  >A Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">Art & Art History</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+              <li><a href="../../../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="departmenttitle">Art & Art History</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="original">original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/stanford/art&arthistory/excel-files/art&arthistory-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="Stanford Theme">Stanford Theme Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/stanford/art&arthistory/excel-files/art&arthistory-stanford-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li style="display: none">
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Art & Art History Courses with "Art & Art History"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              Art & Art History Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">530</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                Introduction to Middle Byzantine Music Notation: Transcribing and Singing Old Byzantine Chants
+              </div>
+            </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                94
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Beauty
+              </div>
+            </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                6
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                35
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Art & Art History Courses with "Art & Art History" in their name
+              </div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Art & Art History Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Art & Art History</td>
+
+            <td colspan="2">Stanford University</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
+
+                    
+                        <tr>
+                        <td>The Artist in Ancient Greek Society</td>
+                        <td>ARTHIST100N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Greek Art I: The Archaic Period</td>
+                        <td>ARTHIST101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Greek Art II: From the Parthenon to Scopas</td>
+                        <td>ARTHIST102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Coffee, Sugar, and Chocolate: Commodities and Consumption in World History, 1200-1800</td>
+                        <td>ARTHIST102B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Picturing Americans</td>
+                        <td>ARTHIST104Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Byzantine Art and Architecture, 300-1453 C.E.</td>
+                        <td>ARTHIST106</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beauty and the Beast: A History of West African Fashion and Sustainability</td>
+                        <td>ARTHIST107</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>All is Fair... Love and War in Italian Renaissance Art</td>
+                        <td>ARTHIST113</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reading Comics</td>
+                        <td>ARTHIST114Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Italian Renaissance, or the Art of Success</td>
+                        <td>ARTHIST115</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The American Civil War: A Ghost Story</td>
+                        <td>ARTHIST116</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Making Sense of the World: Art, Medicine, and Science in Venice</td>
+                        <td>ARTHIST116N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Love at First Sight: Visual Desire, Attraction, and the Pleasures of Art</td>
+                        <td>ARTHIST119</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Bay Area x Los Angeles Arts Immersion</td>
+                        <td>ARTHIST11AX</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Roman Portraits and Persons</td>
+                        <td>ARTHIST11N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Superhero Theory</td>
+                        <td>ARTHIST120</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Global Mughal World</td>
+                        <td>ARTHIST123</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Nineteenth-Century Visual Culture in Europe: The Art World en masse</td>
+                        <td>ARTHIST127</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Modern Africa</td>
+                        <td>ARTHIST128</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fashion</td>
+                        <td>ARTHIST129</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Age of Romanticism: Painting, Literature, Politics</td>
+                        <td>ARTHIST130N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Global Modern Art</td>
+                        <td>ARTHIST133</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>A Global History of Architecture and Engineering</td>
+                        <td>ARTHIST133E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Early Andean Visual Culture: Interspecies Value and More-than-Human Presence</td>
+                        <td>ARTHIST134</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Chinese Buddhist Painting: Visions and Practices</td>
+                        <td>ARTHIST139</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Architecture Since 1900</td>
+                        <td>ARTHIST142</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Architecture of Thought: Artists and Thinkers Design for Themselves</td>
+                        <td>ARTHIST142A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>American Architecture</td>
+                        <td>ARTHIST143A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>American Dream, American Nightmare: A History of the United States in Art and Literature</td>
+                        <td>ARTHIST146</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Modernism and Modernity</td>
+                        <td>ARTHIST147</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The American West</td>
+                        <td>ARTHIST152</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Censorship in American Art</td>
+                        <td>ARTHIST160</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Queer America: Art, Photography, and Politics</td>
+                        <td>ARTHIST163</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>History of World Cinema III: Queer Cinemas Around the World</td>
+                        <td>ARTHIST164</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Vincent van Gogh and His World</td>
+                        <td>ARTHIST165</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Creativity & Culture in the Age of AI</td>
+                        <td>ARTHIST168A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Race, Gender, and Sexuality in Contemporary Art</td>
+                        <td>ARTHIST173N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Art, Meditation, and Creation</td>
+                        <td>ARTHIST180</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cultures in Competition: Arts of Song-Era China, 960-1279 CE</td>
+                        <td>ARTHIST182B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Arts of China in the Early Modern World, 1550-1800</td>
+                        <td>ARTHIST185</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Asian American Art</td>
+                        <td>ARTHIST186B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Imperial Collecting, Patronage, and Taste in China and Japan</td>
+                        <td>ARTHIST188</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>From Shanghai Modern to Global Contemporary: Frontiers of Modern Chinese Art</td>
+                        <td>ARTHIST188B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Word Image & Emotion in Medieval Manuscripts</td>
+                        <td>ARTHIST189</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>African American Art</td>
+                        <td>ARTHIST191</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>U.S. Latinx Art</td>
+                        <td>ARTHIST194</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Close Cinematic Analysis: Caste, Sexuality, and Religion in Indian Media</td>
+                        <td>ARTHIST199</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Experiencing Early Global Art and Architecture</td>
+                        <td>ARTHIST1A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>How to Look at Art and Why: An Introduction to the History of Western Painting</td>
+                        <td>ARTHIST1B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Asian Arts and Cultures</td>
+                        <td>ARTHIST2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Soren Kierkegaard and the Visual Arts</td>
+                        <td>ARTHIST201A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Artists, Athletes, Courtesans and Crooks</td>
+                        <td>ARTHIST203</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Dialogues with the Dead</td>
+                        <td>ARTHIST204</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Enchanted Images: Medieval Art and Its Sonic Dimension</td>
+                        <td>ARTHIST205</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Alchemy of Art: Substance and Transformation in Artistic Practice</td>
+                        <td>ARTHIST206</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Persian Poetry: Text, Space, and Image</td>
+                        <td>ARTHIST206A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Audiovision in the Medieval Cult of Saints</td>
+                        <td>ARTHIST206B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Bodies that Remain: Art and Death in the Middle Ages</td>
+                        <td>ARTHIST207A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Art of Travel: Medieval Journeys to the Unknown</td>
+                        <td>ARTHIST207B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Race and Ethnicity in Premodern Europe</td>
+                        <td>ARTHIST207D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sacred Play: The Material Culture of Christian Festivals</td>
+                        <td>ARTHIST207E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Hagia Sophia</td>
+                        <td>ARTHIST208</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Dome as an All-Seeing Eye: Theatre of Judgment in Byzantine Art</td>
+                        <td>ARTHIST208A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Art of Medieval Spain: Muslims, Christians, Jews</td>
+                        <td>ARTHIST208B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Virginity and Power: The Mother of God and Visions of Empire</td>
+                        <td>ARTHIST208D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Medieval Image Theory</td>
+                        <td>ARTHIST209C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Great Minds of the Italian Renaissance and their World</td>
+                        <td>ARTHIST210</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Andean Textile Logic: Weaving as Practice and Process in the Precontact Andes</td>
+                        <td>ARTHIST211A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Desiring Machines: Buildings, Maps, and Clouds</td>
+                        <td>ARTHIST212</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>From the Ruins: Art, Literature, and Thought ca. 1945 and Beyond</td>
+                        <td>ARTHIST213A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Visualizing Race in California: An Art History</td>
+                        <td>ARTHIST215A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Architecture, Mysticism, and Myth</td>
+                        <td>ARTHIST217</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Design Theory</td>
+                        <td>ARTHIST217B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fashion and Other Disasters</td>
+                        <td>ARTHIST218</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Michelangelo: Gateway to Early Modern Italy</td>
+                        <td>ARTHIST218A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Looted Art: Histories and Restitution</td>
+                        <td>ARTHIST222</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Image Technologies in the 19th Century: Reproductions, Revivals, and Revolutions</td>
+                        <td>ARTHIST222A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>New Landscapes of China: Ecologies, Media, Imaginaries</td>
+                        <td>ARTHIST226</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>African Art, Modernism, Cosmopolitanism</td>
+                        <td>ARTHIST227</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Curating Contemporary Chinese Art</td>
+                        <td>ARTHIST228</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beauty</td>
+                        <td>ARTHIST230</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Image and Text in the Arts in China</td>
+                        <td>ARTHIST230B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Leonardo's World: Science, Technology, and Art</td>
+                        <td>ARTHIST231</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Construction: The Writing of Architecture</td>
+                        <td>ARTHIST232D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Censorship in American Art</td>
+                        <td>ARTHIST233</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Crusades: A Cultural History</td>
+                        <td>ARTHIST237</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Art and the Market</td>
+                        <td>ARTHIST238C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Art History (and Beyond) in the First Person</td>
+                        <td>ARTHIST242A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Black Divinities: Race, God, and Nation in the Photography of Deana Lawson</td>
+                        <td>ARTHIST243</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beyond Words: Early Books and the Design of the Reading Experience</td>
+                        <td>ARTHIST243N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Art, Business & the Law</td>
+                        <td>ARTHIST245</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Duchamp Then and Now</td>
+                        <td>ARTHIST246</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Latinx Art: Exhibition History and Theory</td>
+                        <td>ARTHIST249</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cultural Heritage and Urban Space in Cairo and Istanbul</td>
+                        <td>ARTHIST250</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Printing Protest: The Artist as Social Critic</td>
+                        <td>ARTHIST250A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Warhol's World</td>
+                        <td>ARTHIST251</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Aesthetics and Phenomenology</td>
+                        <td>ARTHIST253</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>What Was Photography?</td>
+                        <td>ARTHIST256</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Picturing Ecology: Flora and Fauna in East Asian Art</td>
+                        <td>ARTHIST256A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Middle Byzantine Music Notation: Transcribing and Singing Old Byzantine Chants</td>
+                        <td>ARTHIST258</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Middle Byzantine Music Notation II</td>
+                        <td>ARTHIST258B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Histories of the Museum: Collecting, Preserving, and Exhibiting Art</td>
+                        <td>ARTHIST260A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Black Aliveness</td>
+                        <td>ARTHIST261</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Starstuff: Space and the American Imagination</td>
+                        <td>ARTHIST264B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Word and Image</td>
+                        <td>ARTHIST265A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Couture Culture</td>
+                        <td>ARTHIST273</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>What is Contemporary Art?</td>
+                        <td>ARTHIST273N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Wonder: The Event of Art and Literature</td>
+                        <td>ARTHIST274</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Art of the Uncanny</td>
+                        <td>ARTHIST274A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Colonial Mexico: Images and Power</td>
+                        <td>ARTHIST277</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>From Aksum to Athens: African Antiquity</td>
+                        <td>ARTHIST278C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Material Metonymy: Ceramics and Asian America</td>
+                        <td>ARTHIST284</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Museum Practice</td>
+                        <td>ARTHIST284B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>American Photographs: A Magical History</td>
+                        <td>ARTHIST285</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Japanese Tea Ceremony: The History, Aesthetics, and Politics Behind a National Pastime</td>
+                        <td>ARTHIST287A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Putting it together: The Art of Curating</td>
+                        <td>ARTHIST288</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Curricular Practical Training</td>
+                        <td>ARTHIST290</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Riot: Visualizing Civil Unrest in the 20th and 21st Centuries</td>
+                        <td>ARTHIST291</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Black and Brown: American Artists of Color</td>
+                        <td>ARTHIST293</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Latin American Art and Literature:  100 Years of Modernisms</td>
+                        <td>ARTHIST293A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Art of Punk: Sound, Aesthetics and Performance</td>
+                        <td>ARTHIST293B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Writing and the Visual: The Art of Art Writing</td>
+                        <td>ARTHIST294</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Visual Arts Internship</td>
+                        <td>ARTHIST295</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Junior Seminar: Methods & Historiography of Art History</td>
+                        <td>ARTHIST296</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Honors Thesis Writing</td>
+                        <td>ARTHIST297</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Individual Work: Art History</td>
+                        <td>ARTHIST298</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Islamic Art</td>
+                        <td>ARTHIST2B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to World Architecture</td>
+                        <td>ARTHIST3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Coffee, Sugar, and Chocolate: Commodities and Consumption in World History, 1200-1800</td>
+                        <td>ARTHIST302B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Byzantine Art and Architecture, 300-1453 C.E.</td>
+                        <td>ARTHIST306</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Performance and Performativity</td>
+                        <td>ARTHIST313</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Italian Renaissance, or the Art of Success</td>
+                        <td>ARTHIST315</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Love at First Sight: Visual Desire, Attraction, and the Pleasures of Art</td>
+                        <td>ARTHIST319</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Superhero Theory</td>
+                        <td>ARTHIST320</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Modern Africa</td>
+                        <td>ARTHIST328</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fashion</td>
+                        <td>ARTHIST329</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Place: Making Space Now</td>
+                        <td>ARTHIST32P</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Global Modern Art</td>
+                        <td>ARTHIST333</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Chinese Buddhist Painting: Visions and Practices</td>
+                        <td>ARTHIST339</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Architecture of Thought: Artists and Thinkers Design for Themselves</td>
+                        <td>ARTHIST342A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>American Architecture</td>
+                        <td>ARTHIST343A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Modernism and Modernity</td>
+                        <td>ARTHIST347</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Queer America: Art, Photography, and Politics</td>
+                        <td>ARTHIST363</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>History of World Cinema III: Queer Cinemas Around the World</td>
+                        <td>ARTHIST364</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Blackness/Gender/Sexuality & Dis-ease: HIV/AIDS Art History</td>
+                        <td>ARTHIST366</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cultures in Competition: Arts of Song-Era China, 960-1279 CE</td>
+                        <td>ARTHIST382B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Arts of China in the Early Modern World, 1550-1800</td>
+                        <td>ARTHIST385</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Asian American Art</td>
+                        <td>ARTHIST386B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Imperial Collecting, Patronage, and Taste in China and Japan</td>
+                        <td>ARTHIST388</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>From Shanghai Modern to Global Contemporary: Frontiers of Modern Chinese Art</td>
+                        <td>ARTHIST388B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Soren Kierkegaard and the Visual Arts</td>
+                        <td>ARTHIST401A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Water and the Environment in Islamic Architecture</td>
+                        <td>ARTHIST404</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Enchanted Images: Medieval Art and Its Sonic Dimension</td>
+                        <td>ARTHIST405</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Pedagogy</td>
+                        <td>ARTHIST405A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Alchemy of Art: Substance and Transformation in Artistic Practice</td>
+                        <td>ARTHIST406</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Persian Poetry: Text, Space, and Image</td>
+                        <td>ARTHIST406A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Audiovision in the Medieval Cult of Saints</td>
+                        <td>ARTHIST406B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Art of Travel: Medieval Journeys to the Unknown</td>
+                        <td>ARTHIST407B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Race and Ethnicity in Premodern Europe</td>
+                        <td>ARTHIST407D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sacred Play: The Material Culture of Christian Festivals</td>
+                        <td>ARTHIST407E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Hagia Sophia</td>
+                        <td>ARTHIST408</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Dome as an All-Seeing Eye: Theatre of Judgment in Byzantine Art</td>
+                        <td>ARTHIST408A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Art of Medieval Spain: Muslims, Christians, Jews</td>
+                        <td>ARTHIST408B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Virginity and Power: The Mother of God and Visions of Empire</td>
+                        <td>ARTHIST408D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Medieval Image Theory</td>
+                        <td>ARTHIST409</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Image, Icon, Idol: Theories and Practices in Byzantium, Islam, and the Latin West</td>
+                        <td>ARTHIST409A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Andean Textile Logic: Weaving as Practice and Process in the Precontact Andes</td>
+                        <td>ARTHIST411A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Desiring Machines: Buildings, Maps, and Clouds</td>
+                        <td>ARTHIST412</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>From the Ruins: Art, Literature, and Thought ca. 1945 and Beyond</td>
+                        <td>ARTHIST413A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Visualizing Race in California: An Art History</td>
+                        <td>ARTHIST415A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Architecture, Mysticism, and Myth</td>
+                        <td>ARTHIST417</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Persona: The Artist as Fabricator of the Self</td>
+                        <td>ARTHIST417A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Design Theory</td>
+                        <td>ARTHIST417B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fashion and Other Disasters</td>
+                        <td>ARTHIST418</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Michelangelo: Gateway to Early Modern Italy</td>
+                        <td>ARTHIST418A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Pacific Ocean</td>
+                        <td>ARTHIST419A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Image Technologies in the 19th Century: Reproductions, Revivals, and Revolutions</td>
+                        <td>ARTHIST422A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>New Landscapes of China: Ecologies, Media, Imaginaries</td>
+                        <td>ARTHIST426</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Artists and Empire in India's Eighteenth Century</td>
+                        <td>ARTHIST427</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Curating Contemporary Chinese Art</td>
+                        <td>ARTHIST428</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cinema and Ideology</td>
+                        <td>ARTHIST430</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Image and Text in the Arts in China</td>
+                        <td>ARTHIST430B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Leonardo's World: Science, Technology, and Art</td>
+                        <td>ARTHIST431</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Global Modernisms: Theories, Methods, Narratives</td>
+                        <td>ARTHIST432A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Censorship in American Art</td>
+                        <td>ARTHIST433</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Race & Abstraction</td>
+                        <td>ARTHIST434</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Art of Paul Klee</td>
+                        <td>ARTHIST435</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Modern Art and the Global Cold War</td>
+                        <td>ARTHIST436</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Crusades: A Cultural History</td>
+                        <td>ARTHIST437</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Latinx Art Beyond Museum Walls</td>
+                        <td>ARTHIST438</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Morality and the Visual Arts</td>
+                        <td>ARTHIST439</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Overlooked/Understudied</td>
+                        <td>ARTHIST441</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Art History (and Beyond) in the First Person</td>
+                        <td>ARTHIST442</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>UnAmerican Art and Politics</td>
+                        <td>ARTHIST442A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Networks: A Visual History</td>
+                        <td>ARTHIST443</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Counter-Institution: Performance and Institutional Critique</td>
+                        <td>ARTHIST444</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Duchamp Then and Now</td>
+                        <td>ARTHIST446</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Latinx Art: Exhibition History and Theory</td>
+                        <td>ARTHIST449</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Printing Protest: The Artist as Social Critic</td>
+                        <td>ARTHIST450A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Warhol's World</td>
+                        <td>ARTHIST451</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Aesthetics and Phenomenology</td>
+                        <td>ARTHIST453</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cultural Heritage and Urban Space in Cairo and Istanbul</td>
+                        <td>ARTHIST455</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>What Was Photography?</td>
+                        <td>ARTHIST456</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Middle Byzantine Music Notation: Transcribing and Singing Old Byzantine Chants</td>
+                        <td>ARTHIST458</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Decolonization and Decoloniality: Theory, Praxis, and Pedagogy</td>
+                        <td>ARTHIST460</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Histories of the Museum: Collecting, Preserving, and Exhibiting Art</td>
+                        <td>ARTHIST460A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Word and Image</td>
+                        <td>ARTHIST465A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Blackness/Gender/Sexuality & Dis-ease: HIV/AIDS Art History</td>
+                        <td>ARTHIST466A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intimacies as Method: Studying Black and Brown Relation</td>
+                        <td>ARTHIST467</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Drugs and the Visual Imagination</td>
+                        <td>ARTHIST469</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Couture Culture</td>
+                        <td>ARTHIST473</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Wonder: The Event of Art and Literature</td>
+                        <td>ARTHIST474</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Art of the Uncanny</td>
+                        <td>ARTHIST474A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Media Cultures of the Cold War</td>
+                        <td>ARTHIST475</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Material Metonymy: Ceramics and Asian America</td>
+                        <td>ARTHIST484</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Riot: Visualizing Civil Unrest in the 20th and 21st Centuries</td>
+                        <td>ARTHIST491</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Art of Punk: Sound, Aesthetics and Performance</td>
+                        <td>ARTHIST493</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Complicating Minimal Art: Racializing, Queering, and Politicizing a Canon</td>
+                        <td>ARTHIST494</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Revisiting the Indian New Wave: Infrastructures & Ideologies of Art Cinema in the Postcolony</td>
+                        <td>ARTHIST495</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Art History as Practice</td>
+                        <td>ARTHIST496</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sensory Spaces, Tactile Objects: The Senses in Art and Architecture</td>
+                        <td>ARTHIST498</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Art and Power</td>
+                        <td>ARTHIST5</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Methods and Debates</td>
+                        <td>ARTHIST502</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>IMBY (In My Backyard): Faculty Scholarship in Art History and Film/Media Studies</td>
+                        <td>ARTHIST601</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Teaching Praxis</td>
+                        <td>ARTHIST610</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Qualifying Examination Preparation</td>
+                        <td>ARTHIST620</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Dissertation Proposal Preparation</td>
+                        <td>ARTHIST640</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Dissertation Research</td>
+                        <td>ARTHIST650</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Independent Study</td>
+                        <td>ARTHIST660</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Extended Seminar</td>
+                        <td>ARTHIST660E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Dissertation Seminar</td>
+                        <td>ARTHIST670</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Curricular Practical Training</td>
+                        <td>ARTHIST680</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Blockchain, NFTs, and the Art World</td>
+                        <td>ARTHIST69SI</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>TGR Dissertation</td>
+                        <td>ARTHIST802</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Looking into Portraits: Identities in Question</td>
+                        <td>ARTHIST80N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Curatorial Internship</td>
+                        <td>ARTHIST97</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Art Practice Foundation 2D</td>
+                        <td>ARTSTUDI101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Art Practice Foundation 3D/4D</td>
+                        <td>ARTSTUDI102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Moving Image I</td>
+                        <td>ARTSTUDI111</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intro to Relief Printing</td>
+                        <td>ARTSTUDI111S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Worldbuilding: Sound, Video, Space</td>
+                        <td>ARTSTUDI114</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Holt Visiting Artist: Introduction Photography: Blue</td>
+                        <td>ARTSTUDI115</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Painting and the Figure</td>
+                        <td>ARTSTUDI116</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intro to Installation Art</td>
+                        <td>ARTSTUDI118</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Art in the Metropolis</td>
+                        <td>ARTSTUDI11Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intro to Relief Printmaking</td>
+                        <td>ARTSTUDI120</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Printer as Artist as Printer</td>
+                        <td>ARTSTUDI121</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Decolonizing Archives: Video and AI</td>
+                        <td>ARTSTUDI122</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Multidisciplinary Art Making</td>
+                        <td>ARTSTUDI122S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Undergraduate Seminar in Composition: Music, Art, and Intermedia</td>
+                        <td>ARTSTUDI123I</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Quilt Making as Black Expression</td>
+                        <td>ARTSTUDI124</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Painting and Acrylics</td>
+                        <td>ARTSTUDI124S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Thinking and Exploring Drawing</td>
+                        <td>ARTSTUDI125</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Net Art</td>
+                        <td>ARTSTUDI126</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Augmented Reality: Placemaking and Storytelling</td>
+                        <td>ARTSTUDI129</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Interactive Art: Making it with Arduino</td>
+                        <td>ARTSTUDI130</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sound Art I</td>
+                        <td>ARTSTUDI131</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Storytelling Through Light</td>
+                        <td>ARTSTUDI132</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Arranging Things: Still Life and Composition</td>
+                        <td>ARTSTUDI133</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Re-Photography and Bricolage</td>
+                        <td>ARTSTUDI133S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fountains</td>
+                        <td>ARTSTUDI134</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Future Media, Media Archaeologies</td>
+                        <td>ARTSTUDI136A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Portraiture and Facial Anatomy for Artists</td>
+                        <td>ARTSTUDI139</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Drawing I</td>
+                        <td>ARTSTUDI140</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Anatomy of Figure Painting</td>
+                        <td>ARTSTUDI140P</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Plein Air Painting</td>
+                        <td>ARTSTUDI141</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Drawing from Life</td>
+                        <td>ARTSTUDI141A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Drawing Outdoors</td>
+                        <td>ARTSTUDI141S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>A Deep Dive in Artmaking During the Time of Covid-19</td>
+                        <td>ARTSTUDI142A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>PRINTMAKING AND ACTIVISM</td>
+                        <td>ARTSTUDI144</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Texture, and Time: Cameraless Filmmaking on 16m</td>
+                        <td>ARTSTUDI144S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Painting I</td>
+                        <td>ARTSTUDI145</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Painting as Storytelling</td>
+                        <td>ARTSTUDI145A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Painting: The Expanded Field</td>
+                        <td>ARTSTUDI145B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Mural Painting</td>
+                        <td>ARTSTUDI145M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Painting and Pivoting</td>
+                        <td>ARTSTUDI145S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Painting Off the Wall</td>
+                        <td>ARTSTUDI146M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Art Book Object</td>
+                        <td>ARTSTUDI147</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Monotype</td>
+                        <td>ARTSTUDI148</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Lithography</td>
+                        <td>ARTSTUDI148A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Printmaking</td>
+                        <td>ARTSTUDI148B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Hybrid Print</td>
+                        <td>ARTSTUDI148P</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Printing Without a Press</td>
+                        <td>ARTSTUDI148S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Etching</td>
+                        <td>ARTSTUDI149C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Queer Sculpture</td>
+                        <td>ARTSTUDI150N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sculpture I</td>
+                        <td>ARTSTUDI151A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Soft Sculpture I</td>
+                        <td>ARTSTUDI152A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ecology of Materials</td>
+                        <td>ARTSTUDI153</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Performance Art</td>
+                        <td>ARTSTUDI154</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Social Sculpture</td>
+                        <td>ARTSTUDI155</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Experimental Painting</td>
+                        <td>ARTSTUDI155S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ephemerality: Time in Sculpture and Digital Media</td>
+                        <td>ARTSTUDI158M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Constructing Narratives</td>
+                        <td>ARTSTUDI159</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Drawing 1: Perspective and Observation</td>
+                        <td>ARTSTUDI159S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Performance Art</td>
+                        <td>ARTSTUDI160M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Tele-Reality: Live-Streaming Art</td>
+                        <td>ARTSTUDI160X</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Constructing Color</td>
+                        <td>ARTSTUDI161</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Embodied Interfaces</td>
+                        <td>ARTSTUDI162</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to 3D and Digital Animation</td>
+                        <td>ARTSTUDI162A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Drawing with Code</td>
+                        <td>ARTSTUDI163</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Art of Resistance: Community Building and Self Preservation through Zine Making</td>
+                        <td>ARTSTUDI164M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intro to Art & Technology</td>
+                        <td>ARTSTUDI165A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sculptural Screens / Malleable Media</td>
+                        <td>ARTSTUDI166</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Landscape in the Field (Summer)</td>
+                        <td>ARTSTUDI166S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Animation</td>
+                        <td>ARTSTUDI167</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Animated By Origins: Africa and The Americas</td>
+                        <td>ARTSTUDI167M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>DIY Animation and Video</td>
+                        <td>ARTSTUDI167S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Data as Material</td>
+                        <td>ARTSTUDI168</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Virtual Reality: the possibility and peril of immersive artwork</td>
+                        <td>ARTSTUDI169</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Light and Shadow</td>
+                        <td>ARTSTUDI170</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Photography</td>
+                        <td>ARTSTUDI171</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Photography Zine</td>
+                        <td>ARTSTUDI171M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Lifecycles in Art</td>
+                        <td>ARTSTUDI172M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introductory Photography: Blue</td>
+                        <td>ARTSTUDI173A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cell Phone Photography</td>
+                        <td>ARTSTUDI173E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beyond Representation: Conceptual Photography</td>
+                        <td>ARTSTUDI173M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>SmART Phone Photography</td>
+                        <td>ARTSTUDI173S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Creativity in the Age of Facebook: Making Art for and from Networks</td>
+                        <td>ARTSTUDI174B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sound Installation</td>
+                        <td>ARTSTUDI175</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Video Installation</td>
+                        <td>ARTSTUDI175A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Installation: Sensorial Concepts</td>
+                        <td>ARTSTUDI176</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Video Art</td>
+                        <td>ARTSTUDI177</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>DIY Movies</td>
+                        <td>ARTSTUDI177M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cell Phone Media Art</td>
+                        <td>ARTSTUDI177S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Art and Electronics</td>
+                        <td>ARTSTUDI178</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Digital Art I</td>
+                        <td>ARTSTUDI179</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Media Art in the Age of Surveillance</td>
+                        <td>ARTSTUDI180</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Creating Public Art: Concept to Commission</td>
+                        <td>ARTSTUDI180M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Queered Tech and Speculative Design</td>
+                        <td>ARTSTUDI182</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Queer Storytelling: We Have Always Been Here</td>
+                        <td>ARTSTUDI182M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Interactive Storytelling</td>
+                        <td>ARTSTUDI185</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Black Experimental Narrative</td>
+                        <td>ARTSTUDI186</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Animation, Memory, and the Self-Portrait</td>
+                        <td>ARTSTUDI187</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Papermaking: Eastern and Western Traditions</td>
+                        <td>ARTSTUDI188</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Still Life Painting</td>
+                        <td>ARTSTUDI188S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Bookbinding I: Zines, Pamphlets, and Non-Adhesive Structures</td>
+                        <td>ARTSTUDI189</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>AI Art & Aesthetics</td>
+                        <td>ARTSTUDI192</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>AI & Aesthetics Practicum</td>
+                        <td>ARTSTUDI192P</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Art of the Hand Puppet</td>
+                        <td>ARTSTUDI199S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>An Artist's Life: Diverse Voices and Changing Contexts</td>
+                        <td>ARTSTUDI19N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Art Practice Major Seminar</td>
+                        <td>ARTSTUDI201</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Moving Image II</td>
+                        <td>ARTSTUDI209</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Fine Art Print</td>
+                        <td>ARTSTUDI213</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Drawing and Creative Writing</td>
+                        <td>ARTSTUDI22AX</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Interdisciplinary Art Survey</td>
+                        <td>ARTSTUDI230</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Interactive Art: Making it with Arduino</td>
+                        <td>ARTSTUDI231A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Future Media, Media Archaeologies</td>
+                        <td>ARTSTUDI236</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermedia Workshop</td>
+                        <td>ARTSTUDI239</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Drawing</td>
+                        <td>ARTSTUDI23AX</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Drawing II</td>
+                        <td>ARTSTUDI240</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Expression in Brush and Ink</td>
+                        <td>ARTSTUDI241</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Drawing from Life</td>
+                        <td>ARTSTUDI241A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Drawing and Creative Writing</td>
+                        <td>ARTSTUDI242</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Drawing and Cameras</td>
+                        <td>ARTSTUDI242A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Anatomy for Artists</td>
+                        <td>ARTSTUDI243</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Painting II</td>
+                        <td>ARTSTUDI245</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Individual Work: Drawing and Painting</td>
+                        <td>ARTSTUDI246</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Collage</td>
+                        <td>ARTSTUDI247</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Art Book Object</td>
+                        <td>ARTSTUDI247A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Between Mind and Play on Paper</td>
+                        <td>ARTSTUDI248</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Hybrid Print</td>
+                        <td>ARTSTUDI248P</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Major Capstone</td>
+                        <td>ARTSTUDI249</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Individual Work: Sculpture</td>
+                        <td>ARTSTUDI250</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Mold Making + Casting</td>
+                        <td>ARTSTUDI251</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sculpture II</td>
+                        <td>ARTSTUDI251A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Soft Sculpture II</td>
+                        <td>ARTSTUDI252A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Installation</td>
+                        <td>ARTSTUDI256</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Sculpture Seminar</td>
+                        <td>ARTSTUDI257</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Resisting Monuments at the End of the World</td>
+                        <td>ARTSTUDI258</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Tangled Images: Digital Weaving & Hybrid Printmaking</td>
+                        <td>ARTSTUDI260</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Performance Art</td>
+                        <td>ARTSTUDI260M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Individual Work: Emerging Practices in Design & Technology</td>
+                        <td>ARTSTUDI261</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Digital Fabrication</td>
+                        <td>ARTSTUDI262A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sculptural Screens / Malleable Media</td>
+                        <td>ARTSTUDI266</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Animation</td>
+                        <td>ARTSTUDI268</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Photography Seminar</td>
+                        <td>ARTSTUDI270</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>CREATING EXPERIMENTAL CINEMA</td>
+                        <td>ARTSTUDI270A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Photography: On Queerness</td>
+                        <td>ARTSTUDI271A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Photography: Composite and Time</td>
+                        <td>ARTSTUDI271B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Photography: Performance</td>
+                        <td>ARTSTUDI271C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Photography: Constructed Image</td>
+                        <td>ARTSTUDI271D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Light & Shadow III (4x5)</td>
+                        <td>ARTSTUDI271E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Photography: DIY Publishing</td>
+                        <td>ARTSTUDI271F</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Individual Work: Photography</td>
+                        <td>ARTSTUDI272</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Individual Work: Experimental Media</td>
+                        <td>ARTSTUDI273</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Photography Seminar</td>
+                        <td>ARTSTUDI277</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Video</td>
+                        <td>ARTSTUDI277A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Light and Shadow II</td>
+                        <td>ARTSTUDI278</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Media Art in the Age of Surveillance</td>
+                        <td>ARTSTUDI280</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Photography: Portraiture I</td>
+                        <td>ARTSTUDI286A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Photography: Portraiture II</td>
+                        <td>ARTSTUDI286B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Animation II</td>
+                        <td>ARTSTUDI287</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Photography: Documentary</td>
+                        <td>ARTSTUDI288</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Curricular Practical Training</td>
+                        <td>FILMEDIA680</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Visual Arts Internship</td>
+                        <td>ARTSTUDI295</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>AP Honors Tutorial</td>
+                        <td>ARTSTUDI297</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>AP Honors Seminar</td>
+                        <td>ARTSTUDI297S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Reading: Studio</td>
+                        <td>ARTSTUDI310B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Reading: Studio</td>
+                        <td>ARTSTUDI310C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sustainable Design and Practice in Native American Architecture</td>
+                        <td>ARTSTUDI32XSI</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>MFA Project: Tutorial</td>
+                        <td>ARTSTUDI342</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>MFA: Object Seminar</td>
+                        <td>ARTSTUDI342A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>MFA: Concept Seminar</td>
+                        <td>ARTSTUDI342B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>M.F.A Seminar</td>
+                        <td>ARTSTUDI342C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>AI Art & Aesthetics</td>
+                        <td>ARTSTUDI392</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>AI & Aesthetics Practicum</td>
+                        <td>ARTSTUDI392P</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Art in Entertainment</td>
+                        <td>ARTSTUDI40SI</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>TGR Project</td>
+                        <td>ARTSTUDI801</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>History of World Cinema I: Silent Film</td>
+                        <td>FILMEDIA100A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>History of World Cinema II: Film as Industrial Art</td>
+                        <td>FILMEDIA100B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>History of World Cinema III: Queer Cinemas Around the World</td>
+                        <td>FILMEDIA300C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Close Cinematic Analysis: Caste, Sexuality, and Religion in Indian Media</td>
+                        <td>FILMEDIA101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Theories of the Moving Image: The Technologically Mediated Image</td>
+                        <td>FILMEDIA102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Documentary Film: Telling it Like it Is?</td>
+                        <td>FILMEDIA107N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Coming-of-Age Movies</td>
+                        <td>FILMEDIA110N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Women in Contemporary French and Francophone Cinema</td>
+                        <td>FILMEDIA112</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reading Comics</td>
+                        <td>FILMEDIA114</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reading Comics</td>
+                        <td>FILMEDIA314</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>From Kino-Eye to AI: The Technological Shaping of Documentary Truth</td>
+                        <td>FILMEDIA116</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Art in the Metropolis</td>
+                        <td>FILMEDIA11Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Superhero Theory</td>
+                        <td>FILMEDIA320</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Animation and the Animated Film</td>
+                        <td>FILMEDIA129</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Queer Theory</td>
+                        <td>FILMEDIA131A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Around the World in Ten Films</td>
+                        <td>FILMEDIA135</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Black Fantastic: Sci-Fi, Horror, and Fantasy in the Black Diaspora</td>
+                        <td>FILMEDIA146</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Hella Cinematic: The Radical Impact of the Bay Area on Film</td>
+                        <td>FILMEDIA152A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Queer Cinema in the World</td>
+                        <td>FILMEDIA153</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Close Listening: Sound, Media, and Performance</td>
+                        <td>FILMEDIA153E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Film and History of Latin American Revolutions and Counterrevolutions</td>
+                        <td>FILMEDIA178</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>AI Art & Aesthetics</td>
+                        <td>FILMEDIA392</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>AI & Aesthetics Practicum</td>
+                        <td>FILMEDIA392P</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Almodovar's Cinema</td>
+                        <td>FILMEDIA193</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Documentary Perspectives I</td>
+                        <td>FILMEDIA210</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Documentary Perspectives II</td>
+                        <td>FILMEDIA211</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Childish Enthusiasms and Perishable Manias</td>
+                        <td>FILMEDIA211N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>A History of "Hollywood"</td>
+                        <td>FILMEDIA212</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Film and Fascism</td>
+                        <td>FILMEDIA213A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Decolonial Approaches to African Arts</td>
+                        <td>FILMEDIA214</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Media and the Environment</td>
+                        <td>FILMEDIA216</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Media Theory and the Sea</td>
+                        <td>FILMEDIA234</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Outcasts, Superheroes, and Rebels: Identity and Social Justice in Latin(x) American Cinema</td>
+                        <td>FILMEDIA248</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Aesthetics and Phenomenology</td>
+                        <td>FILMEDIA453</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Horror Comics</td>
+                        <td>FILMEDIA256Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Black Contemporary Filmmakers</td>
+                        <td>FILMEDIA257</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Starstuff: Space and the American Imagination</td>
+                        <td>FILMEDIA264B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>German Media Theory</td>
+                        <td>FILMEDIA270</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Contemporary Asian Filmmakers</td>
+                        <td>FILMEDIA281</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Movies and Methods: Coming of Age Films</td>
+                        <td>FILMEDIA290</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Riot: Visualizing Civil Unrest in the 20th and 21st Centuries</td>
+                        <td>FILMEDIA491</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Films & Media Studies Internship</td>
+                        <td>FILMEDIA295</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Honors Thesis Writing</td>
+                        <td>FILMEDIA297</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Independent Study: Film and Media Studies</td>
+                        <td>FILMEDIA299</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>History of World Cinema I: Silent Film</td>
+                        <td>FILMEDIA300A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>History of World Cinema II: Film as Industrial Art</td>
+                        <td>FILMEDIA300B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Close Cinematic Analysis: Caste, Sexuality, and Religion in Indian Media</td>
+                        <td>FILMEDIA301</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Theories of the Moving Image: The Technologically Mediated Image</td>
+                        <td>FILMEDIA302</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Media and Mediums</td>
+                        <td>FILMEDIA306</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Close Analysis: Film Sound</td>
+                        <td>FILMEDIA307</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>From Kino-Eye to AI: The Technological Shaping of Documentary Truth</td>
+                        <td>FILMEDIA316</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Animation and the Animated Film</td>
+                        <td>FILMEDIA329</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Around the World in Ten Films</td>
+                        <td>FILMEDIA335</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>16mm Experimental Film Workshop</td>
+                        <td>FILMEDIA351</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Queer Cinema in the World</td>
+                        <td>FILMEDIA353</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Comics:  More than Words</td>
+                        <td>FILMEDIA38</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Film Study</td>
+                        <td>FILMEDIA4</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Montage</td>
+                        <td>FILMEDIA406</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Attention</td>
+                        <td>FILMEDIA408</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Documentary Perspectives I</td>
+                        <td>FILMEDIA410</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Childish Enthusiasms, Perishable Manias</td>
+                        <td>FILMEDIA411</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Documentary Perspectives II</td>
+                        <td>FILMEDIA411</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>A History of "Hollywood"</td>
+                        <td>FILMEDIA412</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Methods and Theories in Film and Media Studies</td>
+                        <td>FILMEDIA414</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Media and the Environment</td>
+                        <td>FILMEDIA416</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sergei Eisenstein: Theory, Practice, Method</td>
+                        <td>FILMEDIA422</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Animation and the Animated Film</td>
+                        <td>FILMEDIA429</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cinema and Ideology</td>
+                        <td>FILMEDIA430</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Landscape Cinema: Politics and Poetics</td>
+                        <td>FILMEDIA444</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Screened Thought</td>
+                        <td>FILMEDIA450</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Decolonization and Decoloniality: Theory, Praxis, and Pedagogy</td>
+                        <td>FILMEDIA460</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Post War American Avant-Garde Film</td>
+                        <td>FILMEDIA465</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intimacies as Method: Studying Black and Brown Relation</td>
+                        <td>FILMEDIA467</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Drugs and the Visual Imagination</td>
+                        <td>FILMEDIA469</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>German Media Theory</td>
+                        <td>FILMEDIA470</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Contemporary Asian Filmmakers</td>
+                        <td>FILMEDIA481</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Movies and Methods: Coming of Age Films</td>
+                        <td>FILMEDIA490</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Revisiting the Indian New Wave: Infrastructures & Ideologies of Art Cinema in the Postcolony</td>
+                        <td>FILMEDIA495</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Language of Film</td>
+                        <td>FILMEDIA4S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Video Essay: Writing with Video about Media and Culture</td>
+                        <td>FILMEDIA50Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Media and Mediums</td>
+                        <td>FILMEDIA6</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Qualifying Examination Preparation</td>
+                        <td>FILMEDIA620</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Independent Study</td>
+                        <td>FILMEDIA660</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Extended Seminar</td>
+                        <td>FILMEDIA660E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Blockchain, NFTs, and the Art World</td>
+                        <td>FILMEDIA69SI</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The New Wave: How The French Reinvented Cinema</td>
+                        <td>FILMEDIA87N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Screen Writing I: Visual Writing</td>
+                        <td>FILMPROD101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Writing the Television Pilot</td>
+                        <td>FILMPROD101T</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Topics in Screenwriting: Inside the Writers' Room</td>
+                        <td>FILMPROD102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Screenwriting II: Intermediate Screenwriting</td>
+                        <td>FILMPROD104</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Script Analysis</td>
+                        <td>FILMPROD105</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Image and Sound: Filmmaking for the Digital Age</td>
+                        <td>FILMPROD106</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Image and Sound: Filmmaking for the Digital Age</td>
+                        <td>FILMPROD106S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Industry Immersion: Film and Media</td>
+                        <td>FILMPROD107</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Screen Writing III: Advanced Screenwriting</td>
+                        <td>FILMPROD110</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Film and Video Production</td>
+                        <td>FILMPROD114</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Immersive Cinema: Experiments in Virtual Reality</td>
+                        <td>FILMPROD115</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Filmmaking: Ethno-fictions and Shared Anthropologies</td>
+                        <td>FILMPROD117</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Remixing the Moving Image</td>
+                        <td>FILMPROD118</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Documentary Cinematography</td>
+                        <td>FILMPROD119</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Narrative Filmmaking: From Script to Screen</td>
+                        <td>FILMPROD12AX</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Immersive Cinema</td>
+                        <td>FILMPROD13AX</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>16mm Experimental Film Workshop</td>
+                        <td>FILMPROD151</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Elements of Filmmaking: Sound Design</td>
+                        <td>FILMPROD210</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Writing the Television Pilot</td>
+                        <td>FILMPROD301T</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Screenwriting II: Intermediate Screenwriting</td>
+                        <td>FILMPROD304</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Script Analysis</td>
+                        <td>FILMPROD305</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>16mm Experimental Film Workshop</td>
+                        <td>FILMPROD351</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Non-Fiction Narratives</td>
+                        <td>FILMPROD400</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The 16mm Film</td>
+                        <td>FILMPROD401</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Spring Film I</td>
+                        <td>FILMPROD402</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Spring Film II</td>
+                        <td>FILMPROD403</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Video Production</td>
+                        <td>FILMPROD404</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Documentary M.F.A. Thesis Seminar: Intention</td>
+                        <td>FILMPROD405</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Documentary M.F.A. Thesis Seminar: Encounters</td>
+                        <td>FILMPROD406</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Documentary M.F.A. Thesis Seminar: Forms</td>
+                        <td>FILMPROD407</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Elements of Filmmaking: Sound Design</td>
+                        <td>FILMPROD410</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Elements of Filmmaking: Cinematography</td>
+                        <td>FILMPROD411</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Documentary Etudes</td>
+                        <td>FILMPROD412</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Filmmaking Practices</td>
+                        <td>FILMPROD413</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>INDEPENDENT STUDY</td>
+                        <td>FILMPROD450</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>TGR Project</td>
+                        <td>FILMPROD801</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+
+      <div id="hiddeninfo">
+        <p id="unicolor">#8C1515</p>
+      </div>
+    </div>
+    <!-- put hidden info here for the JavaScript to get -->
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+                    <!-- Hover Script -->
+
+                    <script src="../../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../../static/js/animatetable.js"></script>
+                
+  </body>
+</html>

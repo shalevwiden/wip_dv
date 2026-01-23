@@ -1,0 +1,2573 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+</script>
+<!-- End Google Tag Manager -->
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, Political Science"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Political Science UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+<!-- test comment -->
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li>
+                <a href="../../stanford-home.html"> Stanford Home</a>
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../p/p-departments.html"
+                  >P Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">Political Science</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+              <li><a href="../../../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="departmenttitle">Political Science</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="original">original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/stanford/politicalscience/excel-files/politicalscience-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="Stanford Theme">Stanford Theme Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/stanford/politicalscience/excel-files/politicalscience-stanford-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li style="display: none">
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Political Science Courses with "Political Science"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              Political Science Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">310</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                State, Capital, and Markets: Global History of Modern Finance from the Renaissance to Bretton Woods
+              </div>
+            </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                99
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Justice
+              </div>
+            </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                7
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                39
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Political Science Courses with "Political Science" in their name
+              </div>
+              <div class="statscontent">
+                5, 1.6%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Political Science Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Political Science</td>
+
+            <td colspan="2">Stanford University</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
+
+                    
+                        <tr>
+                        <td>The Science of Politics</td>
+                        <td>POLISCI1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to International Relations</td>
+                        <td>POLISCI101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to American Politics and Policy: In Defense of Democracy</td>
+                        <td>POLISCI102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Justice</td>
+                        <td>POLISCI103</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Justice</td>
+                        <td>POLISCI103X</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>America and the World Economy</td>
+                        <td>POLISCI110C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>War and Peace in American Foreign Policy</td>
+                        <td>POLISCI110D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Politics of International Law</td>
+                        <td>POLISCI110E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>America and the World Economy Non-WIM</td>
+                        <td>POLISCI110X</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>War and Peace in American Foreign Policy Non-WIM</td>
+                        <td>POLISCI110Y</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Politics of Climate Change</td>
+                        <td>POLISCI111</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Understanding Russia: Its Power and Purpose in a New Global Order</td>
+                        <td>POLISCI113</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Israel: Society, Politics, and Policy</td>
+                        <td>POLISCI114</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Democracy, Development, and the Rule of Law</td>
+                        <td>POLISCI114D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>International Security in a Changing World</td>
+                        <td>POLISCI114S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Spies, Lies, and Algorithms: The History and Future of American Intelligence</td>
+                        <td>POLISCI115</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Israel, the Middle East and Nuclear Weapons</td>
+                        <td>POLISCI115B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Global Futures: History, Statecraft, Systems</td>
+                        <td>POLISCI116M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Chinese Politics and Society: An Expert-Led Seminar</td>
+                        <td>POLISCI117</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>U.S. Relations with Iran</td>
+                        <td>POLISCI118P</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>SUSTAINABLE SOCIETIES LAB: MODELS OF ISRAELI-ARAB COOPERATION & PATHWAYS TO PEACE</td>
+                        <td>POLISCI119</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Campaigns, Voting, Media, and Elections</td>
+                        <td>POLISCI120B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>American Political Institutions in Uncertain Times</td>
+                        <td>POLISCI120C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Racial-Ethnic Politics in US</td>
+                        <td>POLISCI121L</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Politics of American Courts</td>
+                        <td>POLISCI123D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The American West</td>
+                        <td>POLISCI124A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Psychology of Communication About Politics in America</td>
+                        <td>POLISCI124L</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Tech Ethics and the Future of Human Values</td>
+                        <td>POLISCI125</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The First Amendment:  Freedom of Speech and Press</td>
+                        <td>POLISCI125P</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Between Malcolm X and Martin Luther King, JR.: Race, Religion, and the Politics of Freedom</td>
+                        <td>POLISCI126</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Controversies in American Public Policy</td>
+                        <td>POLISCI127</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Finance, Corporations, and Society</td>
+                        <td>POLISCI127A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Liberalism and its Critics</td>
+                        <td>POLISCI130</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Imagining Adaptive Societies</td>
+                        <td>POLISCI131</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Modern Political Thought: Machiavelli to Marx and Mill</td>
+                        <td>POLISCI131L</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Ethics of Elections</td>
+                        <td>POLISCI132A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ethics and Politics of Public Service</td>
+                        <td>POLISCI133</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ethics for Activists</td>
+                        <td>POLISCI134</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Environmental Ethics</td>
+                        <td>POLISCI134L</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Contemporary Moral Problems</td>
+                        <td>POLISCI134P</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Citizenship</td>
+                        <td>POLISCI135</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Philosophy of Law: Protest, Punishment, and Racial Justice</td>
+                        <td>POLISCI137</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Philosophy: The Social Contract Tradition</td>
+                        <td>POLISCI137A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Identity Politics 101</td>
+                        <td>POLISCI13N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Erosion of Democracy</td>
+                        <td>POLISCI140P</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Economy of Development</td>
+                        <td>POLISCI141</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Immigration and Multiculturalism</td>
+                        <td>POLISCI141A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Eurasian World From Plato to NATO: History, Politics, and Culture</td>
+                        <td>POLISCI142</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Politics of Internet Abuse</td>
+                        <td>POLISCI143C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Governing Artificial Intelligence: Law, Policy, and Institutions</td>
+                        <td>POLISCI145B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Comparative Democratic Development</td>
+                        <td>POLISCI147</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Gender, Identity, and Politics</td>
+                        <td>POLISCI147B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Chinese Politics</td>
+                        <td>POLISCI148</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Islam, Iran, and the West</td>
+                        <td>POLISCI149S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Middle Eastern Politics</td>
+                        <td>POLISCI149T</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>River and Region: The Columbia River and the Shaping of the Pacific Northwest</td>
+                        <td>POLISCI14SC</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Data Science for Politics</td>
+                        <td>POLISCI150A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Machine Learning for Social Scientists</td>
+                        <td>POLISCI150B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Causal Inference for Social Science</td>
+                        <td>POLISCI150C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Mastering Regression</td>
+                        <td>POLISCI150R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Tackling Big Questions Using Social Data Science</td>
+                        <td>POLISCI151</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Strategy: Introduction to Game Theory</td>
+                        <td>POLISCI153</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Data Science for Social Impact</td>
+                        <td>POLISCI154</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Data: Algorithms, Tools, Policy, and Society</td>
+                        <td>POLISCI156</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Politics of AI</td>
+                        <td>POLISCI157</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>AI Technologies for Social Applications</td>
+                        <td>POLISCI158</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ethics, Public Policy, and Technological Change</td>
+                        <td>POLISCI182</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Totalitarianism</td>
+                        <td>POLISCI204E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Curricular Practical Training</td>
+                        <td>POLISCI209</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Democracy in Crisis: Learning from the Past</td>
+                        <td>POLISCI20Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Revisionists: Chinese and Russian Politics and Foreign Policy</td>
+                        <td>POLISCI210</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Topics in Climate Change</td>
+                        <td>POLISCI210F</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Nuclear Strategy, Law, and Politics</td>
+                        <td>POLISCI211N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to European Studies</td>
+                        <td>POLISCI213E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The World and America</td>
+                        <td>POLISCI217</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Shaping the Future of the Bay Area</td>
+                        <td>POLISCI218X</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Reading and Research in International Relations</td>
+                        <td>POLISCI219</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Conflict and Climate Change</td>
+                        <td>POLISCI21N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Politics of Status, Symbols, and Inequality</td>
+                        <td>POLISCI21Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Presidency</td>
+                        <td>POLISCI220R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Seminar on Political Change</td>
+                        <td>POLISCI222F</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Gender & U.S. Politics</td>
+                        <td>POLISCI223</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Public Opinion and American Democracy</td>
+                        <td>POLISCI223A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Identity</td>
+                        <td>POLISCI224</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Gender and Politics</td>
+                        <td>POLISCI225</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Superpower California: The Indispensable State</td>
+                        <td>POLISCI226</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Environmental Governance and Climate Resilience</td>
+                        <td>POLISCI227B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Money in Politics</td>
+                        <td>POLISCI227C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The American Electorate in the Trump Era</td>
+                        <td>POLISCI227F</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Russian Politics Since 1991</td>
+                        <td>POLISCI227R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Law and Politics of Bureaucracy</td>
+                        <td>POLISCI228C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Strangers, Foreigners, and the Politics of Difference</td>
+                        <td>POLISCI228R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Reading and Research in American Politics</td>
+                        <td>POLISCI229</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Courts, Judges, and Controversies</td>
+                        <td>POLISCI229P</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Face of Battle</td>
+                        <td>POLISCI22SC</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Law & Politics of Growth: Why We Can't Build</td>
+                        <td>POLISCI22SI</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Theology</td>
+                        <td>POLISCI230</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Classical Seminar: Origins of Political Thought</td>
+                        <td>POLISCI230A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>High-Stakes Politics: Case Studies in Political Philosophy, Institutions, and Interests</td>
+                        <td>POLISCI231</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Democracy Ancient and Modern: From Politics to Political Theory</td>
+                        <td>POLISCI231A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Politics of Nature</td>
+                        <td>POLISCI231R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Dialogue of Democracy</td>
+                        <td>POLISCI232T</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Modern Islamic Political Thought</td>
+                        <td>POLISCI233R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Democratic Theory</td>
+                        <td>POLISCI234</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Deliberative Democracy and its Critics</td>
+                        <td>POLISCI234P</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Deadly Bands: Introduction to the Political Problem of Violent Male Groups</td>
+                        <td>POLISCI234R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Political Theory of Progress Reconsidered</td>
+                        <td>POLISCI234S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Chinese Political Thought: 1895-2021</td>
+                        <td>POLISCI235</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>From Cold War to New Cold War: Politics and Political Theory in Contemporary China</td>
+                        <td>POLISCI235A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Memory and Democratic Citizenship</td>
+                        <td>POLISCI235B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cold War Political Theory: From the Center to the Peripheries</td>
+                        <td>POLISCI235M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Thought in Modern Asia</td>
+                        <td>POLISCI235N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Liberalism and Populism in the American Political Economy</td>
+                        <td>POLISCI235U</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Philanthropy for Sustainable Development</td>
+                        <td>POLISCI236</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Philanthropy for Sustainable Development</td>
+                        <td>POLISCI236S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Varieties of Conservatism in America</td>
+                        <td>POLISCI237</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Liberty, Tyranny, and Resistance in the History of Political Thought</td>
+                        <td>POLISCI237L</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>How to Think About Catastrophe Toward a Theory of Enlightened Doomsaying</td>
+                        <td>POLISCI237R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Philanthropy Fellows Seminar</td>
+                        <td>POLISCI238</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ancient Greek Rationality, Public and Private</td>
+                        <td>POLISCI238R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Designing Democracy: Constitutional Crises, Change, and Continuity</td>
+                        <td>POLISCI238T</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Reading and Research in Political Theory</td>
+                        <td>POLISCI239</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Political Economy of China: Policy and Development from Antiquity to Revolution</td>
+                        <td>POLISCI241</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Language in Political Societies</td>
+                        <td>POLISCI241K</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Mobilization and Democratic Breakthroughs</td>
+                        <td>POLISCI242G</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Economy of Latin America</td>
+                        <td>POLISCI243</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>State and Society in Modern Southeast Asia</td>
+                        <td>POLISCI243P</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Authoritarian Politics</td>
+                        <td>POLISCI244A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Wealth of Nations</td>
+                        <td>POLISCI244C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Societal Collapse</td>
+                        <td>POLISCI244D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>What Future for Democracy?  Turkey's Experience in a Comparative Perspective</td>
+                        <td>POLISCI244H</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Culture</td>
+                        <td>POLISCI244U</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Logics of Violence: Rebels, Criminal Groups and the State</td>
+                        <td>POLISCI245C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>States and Regimes</td>
+                        <td>POLISCI245F</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Politics in Modern Iran</td>
+                        <td>POLISCI245R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Immigration and Citizenship: The American Experience.</td>
+                        <td>POLISCI246</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Paths to the Modern World: The West in Comparative Perspective</td>
+                        <td>POLISCI246A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Populism in the Americas</td>
+                        <td>POLISCI246H</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>State, Capital, and Markets: Global History of Modern Finance from the Renaissance to Bretton Woods</td>
+                        <td>POLISCI247</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Games Developing Nations Play</td>
+                        <td>POLISCI247A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Classical Leadership</td>
+                        <td>POLISCI247C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Governance and Poverty</td>
+                        <td>POLISCI247G</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Gender and Development</td>
+                        <td>POLISCI247T</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Economy of Conflict</td>
+                        <td>POLISCI248</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>China in the Global Economy</td>
+                        <td>POLISCI248D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Latin American Politics</td>
+                        <td>POLISCI248S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Reading and Research in Comparative Politics</td>
+                        <td>POLISCI249</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Political Economy of Tax Evasion</td>
+                        <td>POLISCI249R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Reading and Research in Political Methodology</td>
+                        <td>POLISCI259</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The US Congress in Historical and Comparative Perspective</td>
+                        <td>POLISCI25N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Policing, Violence and Migration in Latin America: Historical Origins and Contemporary Challenges</td>
+                        <td>POLISCI27SC</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Climate Resilience and Energy in Hawaii</td>
+                        <td>POLISCI28SC</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Capstone Project - Autumn</td>
+                        <td>POLISCI290A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Capstone Project - Winter</td>
+                        <td>POLISCI290B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Capstone Project - Spring</td>
+                        <td>POLISCI290C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Democracy in the Balance: Polarization and the Road Ahead</td>
+                        <td>POLISCI293</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>AI Policy Development: Leveraging Social Science to Ensure Responsible Generative AI</td>
+                        <td>POLISCI294</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Research Design</td>
+                        <td>POLISCI299A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Honors Thesis Seminar</td>
+                        <td>POLISCI299B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Honors Thesis</td>
+                        <td>POLISCI299C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Honors Thesis</td>
+                        <td>POLISCI299D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Is Privacy Dead? Privacy, Surveillance, and Freedom in the Digital Age</td>
+                        <td>POLISCI29N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Coastal Resilience: Problems and Solutions to Extreme Weather Challenges on the West Coast</td>
+                        <td>POLISCI29SC</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Curricular Practical Training for PhD Students</td>
+                        <td>POLISCI309</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Democracy and Disagreement</td>
+                        <td>POLISCI31</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Topics in Climate Change</td>
+                        <td>POLISCI310F</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Nuclear Strategy, Law, and Politics</td>
+                        <td>POLISCI311N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>A New Cold War? Great Power Relations in the 21st Century</td>
+                        <td>POLISCI312</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Democracy, Development, and the Rule of Law</td>
+                        <td>POLISCI314D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ethics and Law of War</td>
+                        <td>POLISCI315</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Global Futures: History, Statecraft, Systems</td>
+                        <td>POLISCI316M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Chinese Politics and Society: An Expert-Led Seminar</td>
+                        <td>POLISCI317</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Reading and Research in International Relations</td>
+                        <td>POLISCI319</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Presidency</td>
+                        <td>POLISCI320R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Seminar in Political Psychology</td>
+                        <td>POLISCI321</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Psychology of Communication About Politics in America</td>
+                        <td>POLISCI324L</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Executive Power Under the Constitution</td>
+                        <td>POLISCI326</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Law of Democracy</td>
+                        <td>POLISCI327C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Russian Politics Since 1991</td>
+                        <td>POLISCI327R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Strangers, Foreigners, and the Politics of Difference</td>
+                        <td>POLISCI328R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Reading and Research in American Politics</td>
+                        <td>POLISCI329</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Classical Seminar: Origins of Political Thought</td>
+                        <td>POLISCI330A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>High-Stakes Politics: Case Studies in Political Philosophy, Institutions, and Interests</td>
+                        <td>POLISCI331</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Democracy Ancient and Modern: From Politics to Political Theory</td>
+                        <td>POLISCI331A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Imagining Adaptive Societies</td>
+                        <td>POLISCI331D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Smith and Marx Seminar</td>
+                        <td>POLISCI331M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Dialogue of Democracy</td>
+                        <td>POLISCI332T</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Research and Methods in Political Theory</td>
+                        <td>POLISCI333M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Philanthropy and Civil Society</td>
+                        <td>POLISCI334</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Thucydides: Power, Politics, War</td>
+                        <td>POLISCI334A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Deliberative Democracy and its Critics</td>
+                        <td>POLISCI334P</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Deadly Bands: Introduction to the Political Problem of Violent Male Groups</td>
+                        <td>POLISCI334R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Chinese Political Thought: 1895-2021</td>
+                        <td>POLISCI335</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>From Cold War to New Cold War: Politics and Political Theory in Contemporary China</td>
+                        <td>POLISCI335A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Memory and Democratic Citizenship</td>
+                        <td>POLISCI335B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Thought in Modern Asia</td>
+                        <td>POLISCI335N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Representation and Democracy</td>
+                        <td>POLISCI335T</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Liberalism and Populism in the American Political Economy</td>
+                        <td>POLISCI335U</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Justice</td>
+                        <td>POLISCI336S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Philosophy of Law: Protest, Punishment, and Racial Justice</td>
+                        <td>POLISCI337</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Philosophy: The Social Contract Tradition</td>
+                        <td>POLISCI337A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Hannah Arendt</td>
+                        <td>POLISCI337M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>How to Think About Catastrophe Toward a Theory of Enlightened Doomsaying</td>
+                        <td>POLISCI337R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Unequal Relationships</td>
+                        <td>POLISCI338B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Problem of Evil in Literature, Film, and Philosophy</td>
+                        <td>POLISCI338E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Reading and Research in Political Theory</td>
+                        <td>POLISCI339</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Workplace Democracy: Are Workers the Citizens of their Workplace?</td>
+                        <td>POLISCI33Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Move Fast and Fix Things: Innovating for Effective Government</td>
+                        <td>POLISCI33SI</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Political Economy of China: Policy and Development from Antiquity to Revolution</td>
+                        <td>POLISCI341</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Mobilization and Democratic Breakthroughs</td>
+                        <td>POLISCI342G</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Public Opinion and Elections in the Populist Era</td>
+                        <td>POLISCI343C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>State and Society in Modern Southeast Asia</td>
+                        <td>POLISCI343P</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Wealth of Nations</td>
+                        <td>POLISCI344C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Culture</td>
+                        <td>POLISCI344U</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Games Developing Nations Play</td>
+                        <td>POLISCI347A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Governance and Poverty</td>
+                        <td>POLISCI347G</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Chinese Politics</td>
+                        <td>POLISCI348</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>China in the Global Economy</td>
+                        <td>POLISCI348D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Latin American Politics</td>
+                        <td>POLISCI348S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Reading and Research in Comparative Politics</td>
+                        <td>POLISCI349</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Nationalism</td>
+                        <td>POLISCI34N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sustainability and Civilization</td>
+                        <td>POLISCI35</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Formal Models of International Relations</td>
+                        <td>POLISCI351</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Foundations of Political Economy</td>
+                        <td>POLISCI351A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Economic Analysis of Political Institutions</td>
+                        <td>POLISCI351B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Institutions and Bridge-Building in Political Economy</td>
+                        <td>POLISCI351C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Workshop in Political Methodology</td>
+                        <td>POLISCI353A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Workshop in Political Methodology</td>
+                        <td>POLISCI353B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Workshop in Political Methodology</td>
+                        <td>POLISCI353C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Strategy: Introduction to Game Theory</td>
+                        <td>POLISCI354</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Political Economy of American Elections</td>
+                        <td>POLISCI355</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Data Science for Politics</td>
+                        <td>POLISCI355A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Machine Learning for Social Scientists</td>
+                        <td>POLISCI355B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Causal Inference for Social Science</td>
+                        <td>POLISCI355C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Mastering Regression</td>
+                        <td>POLISCI355R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Formal Theory I</td>
+                        <td>POLISCI356A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Formal Theory II</td>
+                        <td>POLISCI356B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Individual Study in Political Methodology</td>
+                        <td>POLISCI359</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Dissertation</td>
+                        <td>POLISCI400</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Research Design</td>
+                        <td>POLISCI400C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>International Relations Theory, Part I</td>
+                        <td>POLISCI410A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>International Relations Theory, Part II</td>
+                        <td>POLISCI410B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>International Relations Theory, Part III</td>
+                        <td>POLISCI410C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Research in International Relations</td>
+                        <td>POLISCI410D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Workshop in International Relations</td>
+                        <td>POLISCI411A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Workshop in International Relations</td>
+                        <td>POLISCI411B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Workshop in International Relations</td>
+                        <td>POLISCI411C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>American Political Institutions</td>
+                        <td>POLISCI420A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Topics in American Political Behavior</td>
+                        <td>POLISCI420B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Current Debates in American Political Institutions</td>
+                        <td>POLISCI421A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Questionnaire Design for Surveys and Laboratory Experiments: Social and Cognitive Perspectives</td>
+                        <td>POLISCI421K</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Workshop in American Politics</td>
+                        <td>POLISCI422</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Seminar on Political Change</td>
+                        <td>POLISCI422F</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Survey Lab I</td>
+                        <td>POLISCI423A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Survey Lab II</td>
+                        <td>POLISCI423B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Party Polarization</td>
+                        <td>POLISCI424C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Identity Politics</td>
+                        <td>POLISCI426</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advances in Political Behavior: Illiberal Politics in an Illiberal Time</td>
+                        <td>POLISCI427</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Money in Politics</td>
+                        <td>POLISCI427C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The American Electorate in the Trump Era</td>
+                        <td>POLISCI427F</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Judicial Politics</td>
+                        <td>POLISCI428</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Law and Politics of Bureaucracy</td>
+                        <td>POLISCI428C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ancient Greek Economic Development</td>
+                        <td>POLISCI430A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Grad seminar: Contemporary Political Theory</td>
+                        <td>POLISCI431</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Selections in Modern Political Thought</td>
+                        <td>POLISCI432R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Workshop in Political Theory</td>
+                        <td>POLISCI433</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>20th Century and Contemporary Political Theory</td>
+                        <td>POLISCI437C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ancient Greek Rationality, Public and Private</td>
+                        <td>POLISCI438R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Theories in Comparative Politics</td>
+                        <td>POLISCI440A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Comparative Political Economy</td>
+                        <td>POLISCI440B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Research Design in Comparative Politics</td>
+                        <td>POLISCI440C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Workshop in Comparative Politics</td>
+                        <td>POLISCI440D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Economy of Reform in China</td>
+                        <td>POLISCI443S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Approaches to Chinese Politics</td>
+                        <td>POLISCI443T</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Authoritarian Politics</td>
+                        <td>POLISCI444A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Governing Artificial Intelligence: Law, Policy, and Institutions</td>
+                        <td>POLISCI445B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Logics of Violence: Rebels, Criminal Groups and the State</td>
+                        <td>POLISCI445C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>States and Regimes</td>
+                        <td>POLISCI445F</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Development Economics</td>
+                        <td>POLISCI446</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Paths to the Modern World: The West in Comparative Perspective</td>
+                        <td>POLISCI446A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Gender and Development</td>
+                        <td>POLISCI447T</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Workshop: China Social Science</td>
+                        <td>POLISCI448R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Societal Collapse</td>
+                        <td>POLISCI44Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Methodology I: Regression</td>
+                        <td>POLISCI450A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Methodology II: Causal Inference</td>
+                        <td>POLISCI450B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Methodology III: Model-Based Inference</td>
+                        <td>POLISCI450C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Methodology IV: Advanced Topics</td>
+                        <td>POLISCI450D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Readings on Causal Inference with Panel Data</td>
+                        <td>POLISCI451</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Topics in Quantitative Political Methodology</td>
+                        <td>POLISCI455</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Economy I</td>
+                        <td>POLISCI460A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Economy II</td>
+                        <td>POLISCI460B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advances in Experimental Political Science</td>
+                        <td>POLISCI461</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>How to Write and Publish a Quantitative Political Science Paper</td>
+                        <td>POLISCI462</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Survey Design and Implementation</td>
+                        <td>POLISCI464</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Contemporary African Politics</td>
+                        <td>POLISCI46N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Science of Politics: Foundational Concepts for Political Science Graduate Students</td>
+                        <td>POLISCI480</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Designing Your Dissertation I</td>
+                        <td>POLISCI481</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Designing Your Dissertation II</td>
+                        <td>POLISCI482</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Science Departmental Workshop</td>
+                        <td>POLISCI482A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Science Guest Speaker Workshop</td>
+                        <td>POLISCI482B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>International Relations in Science Fiction</td>
+                        <td>POLISCI51N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Defending Democracy at Home and Abroad</td>
+                        <td>POLISCI62</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Energy Policy in California and the West</td>
+                        <td>POLISCI73</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Pathways to Public Service</td>
+                        <td>POLISCI74</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Public Service for Social Impact: Pathways to Purposeful Careers</td>
+                        <td>POLISCI74B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Protagonists in Policy</td>
+                        <td>POLISCI76</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Security Issues in the Middle East</td>
+                        <td>POLISCI79</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>TGR Project</td>
+                        <td>POLISCI801</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>TGR Dissertation</td>
+                        <td>POLISCI802</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Politics 2022: America at a Crossroads</td>
+                        <td>POLISCI82</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+
+      <div id="hiddeninfo">
+        <p id="unicolor">#8C1515</p>
+      </div>
+    </div>
+    <!-- put hidden info here for the JavaScript to get -->
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+                    <!-- Hover Script -->
+
+                    <script src="../../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../../static/js/animatetable.js"></script>
+                
+  </body>
+</html>

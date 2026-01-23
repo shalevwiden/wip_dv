@@ -1,0 +1,4617 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+</script>
+<!-- End Google Tag Manager -->
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, Language Center"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Language Center UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+<!-- test comment -->
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li>
+                <a href="../../stanford-home.html"> Stanford Home</a>
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../l/l-departments.html"
+                  >L Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">Language Center</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+              <li><a href="../../../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="departmenttitle">Language Center</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="original">original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/stanford/languagecenter/excel-files/languagecenter-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="Stanford Theme">Stanford Theme Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/stanford/languagecenter/excel-files/languagecenter-stanford-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li style="display: none">
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Language Center Courses with "Language Center"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              Language Center Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">602</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                Beginning Conversational Cantonese for Standard Modern Chinese Speakers, First Quarter
+              </div>
+            </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                86
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Brazil Today
+              </div>
+            </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                12
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                37
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Language Center Courses with "Language Center" in their name
+              </div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Language Center Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Language Center</td>
+
+            <td colspan="2">Stanford University</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
+
+                    
+                        <tr>
+                        <td>Reflection on the Other: The Arab Israeli Conflict in Literature and Film</td>
+                        <td>AMELANG126</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Amharic, First Quarter</td>
+                        <td>AMHRLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Amharic, Second Quarter</td>
+                        <td>AMHRLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Amharic, First Quarter</td>
+                        <td>AMHRLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Amharic, Second Quarter</td>
+                        <td>AMHRLANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Amharic, Third Quarter</td>
+                        <td>AMHRLANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Amharic, Third Quarter</td>
+                        <td>AMHRLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Amharic</td>
+                        <td>AMHRLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Arabic, First Quarter</td>
+                        <td>ARABLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Arabic Calligraphy</td>
+                        <td>ARABLANG10</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Colloquial Arabic, First Quarter</td>
+                        <td>ARABLANG125A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Colloquial Arabic, Second Quarter</td>
+                        <td>ARABLANG125B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Colloquial Arabic, Third Quarter</td>
+                        <td>ARABLANG125C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate to Advanced  Conversation</td>
+                        <td>ARABLANG127</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Arabic, First Quarter</td>
+                        <td>ARABLANG131</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Arabic, Second Quarter</td>
+                        <td>ARABLANG132</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Arabic, Third Quarter</td>
+                        <td>ARABLANG133</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Arabic, Part I</td>
+                        <td>ARABLANG1A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Arabic, Second Quarter</td>
+                        <td>ARABLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Arabic, First Quarter</td>
+                        <td>ARABLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated Second-Year Arabic, Part I</td>
+                        <td>ARABLANG21A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Arabic, Second Quarter</td>
+                        <td>ARABLANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated second-Year Arabic, Part II</td>
+                        <td>ARABLANG22A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Arabic, Third Quarter</td>
+                        <td>ARABLANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Arabic Skills Workshop</td>
+                        <td>ARABLANG24</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Reading</td>
+                        <td>ARABLANG297</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Arabic, Part II</td>
+                        <td>ARABLANG2A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Arabic, Third Quarter</td>
+                        <td>ARABLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Arabic Conversation</td>
+                        <td>ARABLANG394</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Arabic</td>
+                        <td>ARABLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Armenian, First Quarter</td>
+                        <td>ARMELANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Armenian</td>
+                        <td>ARMELANG101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Armenian, Second Quarter</td>
+                        <td>ARMELANG102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Armenian, Third Quarter</td>
+                        <td>ARMELANG103</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Armenian, Second Quarter</td>
+                        <td>ARMELANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Armenian, second Quarter</td>
+                        <td>ARMELANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Armenian, Third Quarter</td>
+                        <td>ARMELANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Armenian, Third Quarter</td>
+                        <td>ARMELANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Armenian</td>
+                        <td>ARMELANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year American  Sign Language, First Quarter</td>
+                        <td>ASLLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First- Year American Sign Language</td>
+                        <td>ASLLANG1A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Sign Language, Second Quarter</td>
+                        <td>ASLLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Sign Language, First Quarter</td>
+                        <td>ASLLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Sign Language, Second Quarter</td>
+                        <td>ASLLANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Sign Language, Third Quarter</td>
+                        <td>ASLLANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First- Year American Sign Language -2nd Qtr</td>
+                        <td>ASLLANG2A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Sign Language, Third Quarter</td>
+                        <td>ASLLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies of American Sign Language</td>
+                        <td>ASLLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated Second-Year Catalan, Part 1</td>
+                        <td>CATLANG11A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Individual Work</td>
+                        <td>CATLANG199</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Catalan, Part 1</td>
+                        <td>CATLANG1A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Catalan, Part 2</td>
+                        <td>CATLANG2A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Catalan</td>
+                        <td>CATLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Modern Chinese, First Quarter</td>
+                        <td>CHINLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beginning Southern Min (Taiwanese) Conversation, First Quarter</td>
+                        <td>CHINLANG10</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Modern Chinese, First Quarter</td>
+                        <td>CHINLANG101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Modern Chinese for Bilingual Students, First Quarter</td>
+                        <td>CHINLANG101B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Modern Chinese, Second Quarter</td>
+                        <td>CHINLANG102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Modern Chinese for Bilingual Students, Second Quarter</td>
+                        <td>CHINLANG102B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Modern Chinese, Third Quarter</td>
+                        <td>CHINLANG103</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Modern Chinese for Bilingual Students, Third Quarter</td>
+                        <td>CHINLANG103B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beginning Southern Min (Taiwanese) Conversation, Second Quarter</td>
+                        <td>CHINLANG11</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beginning Southern Min (Taiwanese) Conversation, Third Quarter</td>
+                        <td>CHINLANG12</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Chinese Conversation, First Quarter</td>
+                        <td>CHINLANG121</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Chinese Conversation, Second Quarter</td>
+                        <td>CHINLANG122</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Chinese Conversation, Third Quarter</td>
+                        <td>CHINLANG123</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Chinese through Modern Fiction</td>
+                        <td>CHINLANG125</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Business Chinese, First Quarter</td>
+                        <td>CHINLANG131</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Business Chinese, Second Quarter</td>
+                        <td>CHINLANG132</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Business Chinese, Third Quarter</td>
+                        <td>CHINLANG133</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First- Year Cantonese, First quarter</td>
+                        <td>CHINLANG14A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First -Year Cantonese, Second Quarter</td>
+                        <td>CHINLANG14B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Cantonese, Third Quarter</td>
+                        <td>CHINLANG14C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beginning Conversational Cantonese, First Quarter</td>
+                        <td>CHINLANG15</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beginning Conversational Cantonese for Standard Modern Chinese Speakers, First Quarter</td>
+                        <td>CHINLANG15M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beginning Cantonese Conversation, Second Quarter</td>
+                        <td>CHINLANG16</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beginning Conversational Cantonese for Mandarin Speakers, Second Quarter</td>
+                        <td>CHINLANG16M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beginning Conversational Cantonese, Third Quarter</td>
+                        <td>CHINLANG17</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beginning Conversational Cantonese for Mandarin Speakers, Third Quarter</td>
+                        <td>CHINLANG17M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Conversational Cantonese, First Quarter</td>
+                        <td>CHINLANG18</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Conversational Cantonese, Second Quarter</td>
+                        <td>CHINLANG19</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Individual Reading</td>
+                        <td>CHINLANG199</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Chinese</td>
+                        <td>CHINLANG1A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Modern Chinese for Bilingual Students, First Quarter</td>
+                        <td>CHINLANG1B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Modern Chinese, Second Quarter</td>
+                        <td>CHINLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Conversational Cantonese, Third Quarter</td>
+                        <td>CHINLANG20</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Reading</td>
+                        <td>CHINLANG200</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cantonese Through Films, First Quarter</td>
+                        <td>CHINLANG20A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cantonese Through Films, Second Quarter</td>
+                        <td>CHINLANG20B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cantonese Through Films, Third Quarter</td>
+                        <td>CHINLANG20C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Modern Chinese, First Quarter</td>
+                        <td>CHINLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fourth-Year Modern Chinese, First Quarter</td>
+                        <td>CHINLANG211</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fourth- Year Modern Chinese for Bilingual Students, First Quarter</td>
+                        <td>CHINLANG211B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fourth-Year Modern Chinese, Second Quarter</td>
+                        <td>CHINLANG212</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fourth-Year Modern Chinese for Bilingual Students, Second Quarter</td>
+                        <td>CHINLANG212B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fourth-Year Modern Chinese, Third Quarter</td>
+                        <td>CHINLANG213</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fourth-Year Modern Chinese for Bilingual Students, Third Quarter</td>
+                        <td>CHINLANG213B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Modern Chinese for Bilingual Students, First Quarter</td>
+                        <td>CHINLANG21B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Modern Chinese, Second Quarter</td>
+                        <td>CHINLANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Chinese through Modern Fiction</td>
+                        <td>CHINLANG225</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Chinese for Bilingual Students, Second Quarter</td>
+                        <td>CHINLANG22B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Modern Chinese, Third Quarter</td>
+                        <td>CHINLANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fifth-Year Modern Chinese: Current Issues, First Quarter</td>
+                        <td>CHINLANG231A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fifth-Year Modern Chinese: Cultural Texts, First Quarter</td>
+                        <td>CHINLANG231B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fifth-Year Modern Chinese: Current Issues, Second Quarter</td>
+                        <td>CHINLANG232A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fifth-Year Modern Chinese: Cultural Texts, Second Quarter</td>
+                        <td>CHINLANG232B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fifth-Year Modern Chinese: Current Issues, Third Quarter</td>
+                        <td>CHINLANG233A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fifth-Year Modern Chinese: Cultural Texts, Third Quarter</td>
+                        <td>CHINLANG233B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Chinese for Bilingual Students, Third Quarter</td>
+                        <td>CHINLANG23B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Chinese for Academic Discussion and Reading</td>
+                        <td>CHINLANG251</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Cantonese Conversation</td>
+                        <td>CHINLANG25A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Cantonese Conversation</td>
+                        <td>CHINLANG25B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Cantonese Conversation</td>
+                        <td>CHINLANG25C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Chinese Conversation, First Quarter</td>
+                        <td>CHINLANG27</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Chinese Conversation, Second Quarter</td>
+                        <td>CHINLANG28</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Chinese Conversation, Third Quarter</td>
+                        <td>CHINLANG29</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Modern Chinese for Bilingual Students, Second Quarter</td>
+                        <td>CHINLANG2B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Modern Chinese, Third Quarter</td>
+                        <td>CHINLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Chinese Conversation</td>
+                        <td>CHINLANG394</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Chinese</td>
+                        <td>CHINLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Modern Chinese for Bilingual Students, Third Quarter</td>
+                        <td>CHINLANG3B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate-to-Advanced Chinese Conversation, First Quarter</td>
+                        <td>CHINLANG41</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate-to-Advanced Chinese Conversation, Second Quarter</td>
+                        <td>CHINLANG42</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate-to-Advanced Chinese Conversation, Third Quarter</td>
+                        <td>CHINLANG43</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Character Writing Lab for Intermediate Speakers of Mandarin</td>
+                        <td>CHINLANG4W</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Chinese Calligraphy</td>
+                        <td>CHINLANG51</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beginning Conversational Chinese, First Quarter</td>
+                        <td>CHINLANG6</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beginning Conversational Chinese, Second Quarter</td>
+                        <td>CHINLANG7</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beginning Conversational Chinese, Third Quarter</td>
+                        <td>CHINLANG8</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Language Specials</td>
+                        <td>CHINLANG99</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beginning-Intermediate Conversational Chinese</td>
+                        <td>CHINLANG9A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beginning-Intermediate Conversational Chinese, Second Quarter</td>
+                        <td>CHINLANG9B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beginning-Intermediate Conversational Chinese, Third Quarter</td>
+                        <td>CHINLANG9C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Cherokee, First Quarter</td>
+                        <td>CHRKELNG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Cherokee, Second Quarter</td>
+                        <td>CHRKELNG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Cherokee, Third Quarter</td>
+                        <td>CHRKELNG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Czech, First Quarter</td>
+                        <td>CZECLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Czech, Second Quarter</td>
+                        <td>CZECLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Czech, First Quarter</td>
+                        <td>CZECLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Czech, Second Quarter</td>
+                        <td>CZECLANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Czech, Third Quarter</td>
+                        <td>CZECLANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Czech, Third Quarter</td>
+                        <td>CZECLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Czech</td>
+                        <td>CZECLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Dutch, First Quarter</td>
+                        <td>DUTCHLNG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Dutch, First Quarter</td>
+                        <td>DUTCHLNG101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Dutch, Second Quarter</td>
+                        <td>DUTCHLNG102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Dutch, Third Quarter</td>
+                        <td>DUTCHLNG103</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Dutch, Second Quarter</td>
+                        <td>DUTCHLNG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Dutch, First Quarter</td>
+                        <td>DUTCHLNG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Dutch, Second Quarter</td>
+                        <td>DUTCHLNG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Dutch,Third Quarter</td>
+                        <td>DUTCHLNG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Dutch,Third Quarter</td>
+                        <td>DUTCHLNG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Dutch</td>
+                        <td>DUTCHLNG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Study</td>
+                        <td>ESOLLANG197</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Study</td>
+                        <td>ESOLLANG397</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Academic Speaking and Listening</td>
+                        <td>ESOLLANG686A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Academic Writing and Reading</td>
+                        <td>ESOLLANG686B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Interacting in California's Vineyard Culture</td>
+                        <td>ESOLLANG689T</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Interacting in English</td>
+                        <td>ESOLLANG690A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Academic Discussion</td>
+                        <td>ESOLLANG690B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Interacting in English</td>
+                        <td>ESOLLANG690C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Oral Presentation</td>
+                        <td>ESOLLANG691</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Oral Presentation</td>
+                        <td>ESOLLANG691S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Speaking and Teaching in English</td>
+                        <td>ESOLLANG692</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Listening Comprehension</td>
+                        <td>ESOLLANG693A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Listening Comprehension, and Vocabulary Development</td>
+                        <td>ESOLLANG693B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Pronunciation and Intonation</td>
+                        <td>ESOLLANG695A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Gateway to Graduate Writing</td>
+                        <td>ESOLLANG697</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Writing Academic English</td>
+                        <td>ESOLLANG698A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Graduate Writing</td>
+                        <td>ESOLLANG698B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Writing Academic English</td>
+                        <td>ESOLLANG698S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Individual Writing Projects</td>
+                        <td>ESOLLANG699W</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Online Coaching: Accent Reduction</td>
+                        <td>ESOLLANG703</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Filipino, First Quarter</td>
+                        <td>FILILANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Filipino, Second Quarter</td>
+                        <td>FILILANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Filipino, First Quarter</td>
+                        <td>FILILANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Filipino, Second Quarter</td>
+                        <td>FILILANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Filipino, Third Quarter</td>
+                        <td>FILILANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Filipino, Third Quarter</td>
+                        <td>FILILANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Filipino</td>
+                        <td>FILILANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Finnish, First Quarter</td>
+                        <td>FINNLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Finnish, Third  Quarter</td>
+                        <td>FINNLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year French, First Quarter</td>
+                        <td>FRENLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>French Immersion: Contemporary Issues in the French-Speaking World</td>
+                        <td>FRENLANG10SC</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced French Oral Communication</td>
+                        <td>FRENLANG120</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced French: Composition, Writing, and Presentation</td>
+                        <td>FRENLANG124</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate French Oral Communication</td>
+                        <td>FRENLANG15</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Language Specials</td>
+                        <td>FRENLANG199</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year French, Part 1</td>
+                        <td>FRENLANG1A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year French, Second Quarter</td>
+                        <td>FRENLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year French: Cultural Emphasis, First Quarter</td>
+                        <td>FRENLANG21C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year French: Cultural Emphasis, Second Quarter</td>
+                        <td>FRENLANG22C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year French: Cultural Emphasis, Third Quarter</td>
+                        <td>FRENLANG23C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reading French</td>
+                        <td>FRENLANG250</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year French, Part 2</td>
+                        <td>FRENLANG2A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year French, Third Quarter</td>
+                        <td>FRENLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate/Advanced  French Conversation</td>
+                        <td>FRENLANG30</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in French Conversation</td>
+                        <td>FRENLANG394</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in French</td>
+                        <td>FRENLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year German, First Quarter</td>
+                        <td>GERLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Individual Reading</td>
+                        <td>GERLANG199</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year German, Part1</td>
+                        <td>GERLANG1A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year German, Second Quarter</td>
+                        <td>GERLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year German, First Quarter</td>
+                        <td>GERLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year German, Second Quarter</td>
+                        <td>GERLANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second Year German, Third Quarter</td>
+                        <td>GERLANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reading German</td>
+                        <td>GERLANG250</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year German, Part 2</td>
+                        <td>GERLANG2A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year German, Third Quarter</td>
+                        <td>GERLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in German</td>
+                        <td>GERLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Language Specials</td>
+                        <td>SPANLANG99</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Modern Greek, First Quarter</td>
+                        <td>GREELANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Modern Greek, First Quarter</td>
+                        <td>GREELANG101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Modern Greek, Second Quarter</td>
+                        <td>GREELANG102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Modern Greek, Third Quarter</td>
+                        <td>GREELANG103</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Modern Greek, Second Quarter</td>
+                        <td>GREELANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Modern Greek, First Quarter</td>
+                        <td>GREELANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Modern Greek, Second Quarter</td>
+                        <td>GREELANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Modern Greek, Third Quarter</td>
+                        <td>GREELANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Modern Greek, Third Quarter</td>
+                        <td>GREELANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Greek</td>
+                        <td>GREELANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Haitian Creole, First Quarter</td>
+                        <td>HAITLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Haitian Creole, Second Quarter</td>
+                        <td>HAITLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Haitian Creole, First Quarter</td>
+                        <td>HAITLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Haitian Creole, Second Quarter</td>
+                        <td>HAITLANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Haitian Creole, Third Quarter</td>
+                        <td>HAITLANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Haitian Creole,Third Quarter</td>
+                        <td>HAITLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Haitian</td>
+                        <td>HAITLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Hawaiian, First Quarter</td>
+                        <td>HAWALANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Beginning Hawaiian, Second Quarter</td>
+                        <td>HAWALANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Hawaiian, Third Quarter</td>
+                        <td>HAWALANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Hawaiian</td>
+                        <td>HAWALANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Hebrew, First Quarter</td>
+                        <td>HEBRLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Hebrew, Second Quarter</td>
+                        <td>HEBRLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Hebrew, First Quarter</td>
+                        <td>HEBRLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Hebrew, Second Quarter</td>
+                        <td>HEBRLANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Hebrew, Third Quarter</td>
+                        <td>HEBRLANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Hebrew, Third Quarter</td>
+                        <td>HEBRLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Hebrew</td>
+                        <td>HEBRLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Hindi, First Quarter</td>
+                        <td>HINDLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Hindi, First Quarter</td>
+                        <td>HINDLANG101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Hindi, Second Quarter</td>
+                        <td>HINDLANG102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Hindi, Third Quarter</td>
+                        <td>HINDLANG103</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Hindi, Second Quarter</td>
+                        <td>HINDLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Hindi, First Quarter</td>
+                        <td>HINDLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Hindi, Second Quarter</td>
+                        <td>HINDLANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Hindi, Third Quarter</td>
+                        <td>HINDLANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Hindi, Third Quarter</td>
+                        <td>HINDLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Hindi</td>
+                        <td>HINDLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Hittite, First Quarter</td>
+                        <td>HITTLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Hittite, Second Quarter</td>
+                        <td>HITTLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Hittite, Third Quarter</td>
+                        <td>HITTLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Hungarian, First Quarter</td>
+                        <td>HNGRLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Hungarian, First Quarter</td>
+                        <td>HNGRLANG101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Hungarian, Second Quarter</td>
+                        <td>HNGRLANG102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Hungarian, Third Quarter</td>
+                        <td>HNGRLANG103</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Hungarian, Second Quarter</td>
+                        <td>HNGRLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Hungarian, First Quarter</td>
+                        <td>HNGRLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fourth-Year Hungarian, First Quarter</td>
+                        <td>HNGRLANG211</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fourth-Year Hungarian, 2nd Quarter</td>
+                        <td>HNGRLANG212</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fourth-Year Hungarian, 3rd Quarter</td>
+                        <td>HNGRLANG213</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Hungarian, Second Quarter</td>
+                        <td>HNGRLANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Hungarian, Third Quarter</td>
+                        <td>HNGRLANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Hungarian, Third Quarter</td>
+                        <td>HNGRLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Hungarian</td>
+                        <td>HNGRLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Igbo, First Quarter</td>
+                        <td>IGBOLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Igbo, Second Quarter</td>
+                        <td>IGBOLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Igbo, First Quarter</td>
+                        <td>IGBOLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Igbo, Second Quarter</td>
+                        <td>IGBOLANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Igbo, Third Quarter</td>
+                        <td>IGBOLANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Igbo, Third Quarter</td>
+                        <td>IGBOLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Igbo</td>
+                        <td>IGBOLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First- Year Indonesian</td>
+                        <td>INDOLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Indonesian, Second Quarter</td>
+                        <td>INDOLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Indonesian, Third Quarter</td>
+                        <td>INDOLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Indonesian</td>
+                        <td>INDOLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Inupiaq, First Quarter</td>
+                        <td>INUPQLNG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Inupiaq, third quarter</td>
+                        <td>INUPQLNG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Italian, First Quarter</td>
+                        <td>ITALLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Academic and Creative Writing</td>
+                        <td>ITALLANG115</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Italian, Part 1</td>
+                        <td>ITALLANG1A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Italian, Second Quarter</td>
+                        <td>ITALLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Oral Communication: Italy Today</td>
+                        <td>ITALLANG20</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated Second-Year Italian, Part 1</td>
+                        <td>ITALLANG21A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated Second-Year Italian, Part 2</td>
+                        <td>ITALLANG22A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reading Italian</td>
+                        <td>ITALLANG250</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Italian, Part 2</td>
+                        <td>ITALLANG2A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Italian, Third Quarter</td>
+                        <td>ITALLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Italian Conversation</td>
+                        <td>ITALLANG394</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Italian</td>
+                        <td>ITALLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Japanese Language, Culture, and Communication, First Quarter</td>
+                        <td>JAPANLNG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reading in Japanese</td>
+                        <td>JAPANLNG100</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Japanese Language, Culture, and Communication, First Quarter</td>
+                        <td>JAPANLNG101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Japanese Language, Culture, and Communication, Second Quarter</td>
+                        <td>JAPANLNG102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Japanese Language, Culture, and Communication, Third Quarter</td>
+                        <td>JAPANLNG103</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intensive 3rd Year Modern Japanese</td>
+                        <td>JAPANLNG105</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Japanese Conversation, First Quarter</td>
+                        <td>JAPANLNG111A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Japanese Conversation, Second Quarter</td>
+                        <td>JAPANLNG111B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Japanese Conversation, Third Quarter</td>
+                        <td>JAPANLNG111C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Japanese Conversation, First Quarter</td>
+                        <td>JAPANLNG11A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Japanese Conversation, Second Quarter</td>
+                        <td>JAPANLNG11B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Japanese Conversation, Third Quarter</td>
+                        <td>JAPANLNG11C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Japanese Calligraphy</td>
+                        <td>JAPANLNG15</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First- Year Japanese, Part 1</td>
+                        <td>JAPANLNG1A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Japanese Language, Culture, and Communication, Second Quarter</td>
+                        <td>JAPANLNG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Reading</td>
+                        <td>PORTLANG297</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Japanese Language, Culture, and Communication, First Quarter</td>
+                        <td>JAPANLNG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fourth-Year Japanese, First Quarter</td>
+                        <td>JAPANLNG211</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fourth-Year Japanese, Second Quarter</td>
+                        <td>JAPANLNG212</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fourth-Year Japanese, Third Quarter</td>
+                        <td>JAPANLNG213</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Japanese Language, Culture, and Communication, Second Quarter</td>
+                        <td>JAPANLNG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Japanese Language, Culture, and Communication, Third Quarter</td>
+                        <td>JAPANLNG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Japanese Language, Culture, and Communication, Third Quarter</td>
+                        <td>JAPANLNG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Japanese Conversation</td>
+                        <td>JAPANLNG394</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Japanese</td>
+                        <td>JAPANLNG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Kazakh, First Quarter</td>
+                        <td>KAZKHLNG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Kazakh, Second Quarter</td>
+                        <td>KAZKHLNG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First- Year Khmer, First Quarter</td>
+                        <td>KHMRLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Khmer, Second Quarter</td>
+                        <td>KHMRLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second Year Khmer, First Quarter</td>
+                        <td>KHMRLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second Year Khmer, Second Quarter</td>
+                        <td>KHMRLANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second Year Khmer, Third Quarter</td>
+                        <td>KHMRLANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Khmer,Third Quarter</td>
+                        <td>KHMRLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Khmer</td>
+                        <td>KHMRLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Kinyarwanda Third Quarter</td>
+                        <td>KINYLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Korean, First Quarter</td>
+                        <td>KORLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Korean, First Quarter</td>
+                        <td>KORLANG101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Korean, Second Quarter</td>
+                        <td>KORLANG102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Korean, Third Quarter</td>
+                        <td>KORLANG103</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reading Korean</td>
+                        <td>KORLANG130</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Korean, Part 1</td>
+                        <td>KORLANG1A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Korean, Second Quarter</td>
+                        <td>KORLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Reading in Korean</td>
+                        <td>KORLANG200</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Korean, First Quarter</td>
+                        <td>KORLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fourth-Year Korean, First Quarter</td>
+                        <td>KORLANG211</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fourth-Year Korean, Second Quarter</td>
+                        <td>KORLANG212</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fourth-Year Korean,Third Quarter</td>
+                        <td>KORLANG213</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Korean, Second Quarter</td>
+                        <td>KORLANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated Second-Year Korean, Part 2</td>
+                        <td>KORLANG22A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Korean, Third Quarter</td>
+                        <td>KORLANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Korean, Part 2</td>
+                        <td>KORLANG2A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Korean, Third Quarter</td>
+                        <td>KORLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Korean</td>
+                        <td>KORLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate-to-Advanced Conversation</td>
+                        <td>KORLANG40</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Lakota, First Quarter</td>
+                        <td>LAKOTLNG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Lakota, Second Quarter</td>
+                        <td>LAKOTLNG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Lakota, First Quarter</td>
+                        <td>LAKOTLNG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Lakota</td>
+                        <td>LAKOTLNG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Lakota, third Quarter</td>
+                        <td>LAKOTLNG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Lakota, Third Quarter</td>
+                        <td>LAKOTLNG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Lakota</td>
+                        <td>LAKOTLNG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First -Year Luganda, First Quarter</td>
+                        <td>LUGALANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Luganda, Second Quarter</td>
+                        <td>LUGALANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Nahuatl, First Quarter</td>
+                        <td>NAHUALNG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third- year Nahuatl- First Quarter</td>
+                        <td>NAHUALNG101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third- Year Nahuatl, Second Quarter</td>
+                        <td>NAHUALNG102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third- Year Nahuatl,Third Quarter</td>
+                        <td>NAHUALNG103</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Nahuatl, Second Quarter</td>
+                        <td>NAHUALNG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year  Nahuatl, First Quarter</td>
+                        <td>NAHUALNG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second -Year Nahuatl, Second Quarter</td>
+                        <td>NAHUALNG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second Year Nahuatl, Third Quarter</td>
+                        <td>NAHUALNG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Nahuatl, Third Quarter</td>
+                        <td>NAHUALNG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Nahuatl</td>
+                        <td>NAHUALNG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Navajo, First Quarter</td>
+                        <td>NVJOLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Navajo, Second Quarter</td>
+                        <td>NVJOLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Navajo, First Quarter</td>
+                        <td>NVJOLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Navajo, Second Quarter</td>
+                        <td>NVJOLANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Navajo, Third Quarter</td>
+                        <td>NVJOLANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Navajo, Third Quarter</td>
+                        <td>NVJOLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Navajo</td>
+                        <td>NVJOLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Oromo, First Quarter</td>
+                        <td>OROMLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Oromo, Second quarter</td>
+                        <td>OROMLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Oromo, Third Quarter</td>
+                        <td>OROMLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Oromo</td>
+                        <td>OROMLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Modern Persian, First Quarter</td>
+                        <td>PERSLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Persian, First Quarter</td>
+                        <td>PERSLANG101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Persian, Second Quarter</td>
+                        <td>PERSLANG102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Persian, Third Quarter</td>
+                        <td>PERSLANG103</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated Second-Year Persian, First Quarter</td>
+                        <td>PERSLANG11A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated Second-Year Persian, Second Quarter</td>
+                        <td>PERSLANG12A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Persian, First Quarter</td>
+                        <td>PERSLANG1A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Modern Persian, Second Quarter</td>
+                        <td>PERSLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Modern Persian, First Quarter</td>
+                        <td>PERSLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Modern Persian, Second Quarter</td>
+                        <td>PERSLANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Modern Persian ,Third Quarter</td>
+                        <td>PERSLANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Persian, Second Quarter</td>
+                        <td>PERSLANG2A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Modern Persian, Third Quarter</td>
+                        <td>PERSLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Persian</td>
+                        <td>PERSLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Polish, First Quarter</td>
+                        <td>POLSHLNG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Polish, First Quarter</td>
+                        <td>POLSHLNG101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Polish, Second Quarter</td>
+                        <td>POLSHLNG102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Polish, Third Quarter</td>
+                        <td>POLSHLNG103</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Polish, Second Quarter</td>
+                        <td>POLSHLNG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Polish, First Quarter</td>
+                        <td>POLSHLNG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fourth-Year Polish, First Quarter</td>
+                        <td>POLSHLNG211</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Polish, Second Quarter</td>
+                        <td>POLSHLNG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Polish, Third Quarter</td>
+                        <td>POLSHLNG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Polish</td>
+                        <td>POLSHLNG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reading Brazil</td>
+                        <td>PORTLANG101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Brazil in Text: Advanced Grammar and Composition</td>
+                        <td>PORTLANG102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Brazil Today</td>
+                        <td>PORTLANG103</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated Second-Year Portuguese, Part 1</td>
+                        <td>PORTLANG11A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated Second-Year Portuguese, Part 2</td>
+                        <td>PORTLANG12A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Reading in Portuguese, Fourth-year Portuguese</td>
+                        <td>PORTLANG161</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Writing in Portuguese, Fourth-year Portuguese</td>
+                        <td>PORTLANG162</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Contemporary Issues in the Lusophone World. Fourth-Year Portuguese</td>
+                        <td>PORTLANG163</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Portuguese, Part 1</td>
+                        <td>PORTLANG1A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Portuguese, Part 2</td>
+                        <td>PORTLANG2A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Portuguese Conversation</td>
+                        <td>PORTLANG394</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Portuguese</td>
+                        <td>PORTLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Punjabi, First Quarter</td>
+                        <td>PUNJLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year  Punjabi, Second Quarter</td>
+                        <td>PUNJLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Punjabi, First Quarter</td>
+                        <td>PUNJLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Punjabi, Second Quarter</td>
+                        <td>PUNJLANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Punjabi, Third Quarter</td>
+                        <td>PUNJLANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Punjabi, Third Quarter</td>
+                        <td>PUNJLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Punjabi</td>
+                        <td>PUNJLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Quechua, First Quarter</td>
+                        <td>QUECHLNG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Quechua, First Quarter</td>
+                        <td>QUECHLNG101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Quechua, Second Qtr</td>
+                        <td>QUECHLNG102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Quechua, Third Quarter</td>
+                        <td>QUECHLNG103</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Quechua, Second Quarter</td>
+                        <td>QUECHLNG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Quechua, First Quarter</td>
+                        <td>QUECHLNG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Quechua, Second Quarter</td>
+                        <td>QUECHLNG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Quechua, Third Quarter</td>
+                        <td>QUECHLNG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Quechua, Third Quarter</td>
+                        <td>QUECHLNG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies of Quechua</td>
+                        <td>QUECHLNG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Romanian, First Quarter</td>
+                        <td>ROMALANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Romanian, First Quarter</td>
+                        <td>ROMALANG101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Romanian, Second Quarter</td>
+                        <td>ROMALANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Romanian, First Quarter</td>
+                        <td>ROMALANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Romanian, Second Quarter</td>
+                        <td>ROMALANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Romanian, Third Quarter</td>
+                        <td>ROMALANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Romanian, Third Quarter</td>
+                        <td>ROMALANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Romanian</td>
+                        <td>ROMALANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Russian, First Quarter</td>
+                        <td>RUSSLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Old Church Slavonic</td>
+                        <td>RUSSLANG10</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Russian, First Quarter</td>
+                        <td>RUSSLANG101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Russian, Second Quarter</td>
+                        <td>RUSSLANG102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Russian, Third Quarter</td>
+                        <td>RUSSLANG103</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Russian Advanced Conversation and Composition</td>
+                        <td>RUSSLANG184C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Individual Work</td>
+                        <td>RUSSLANG199</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Russian, Part 1</td>
+                        <td>RUSSLANG1A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Russian, Second Quarter</td>
+                        <td>RUSSLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Russian, First Quarter</td>
+                        <td>RUSSLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fourth-Year Russian, First Quarter</td>
+                        <td>RUSSLANG211</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fourth-Year Russian, Second Quarter</td>
+                        <td>RUSSLANG212</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fourth-Year Russian, Third Quarter</td>
+                        <td>RUSSLANG213</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Russian, Second Quarter</td>
+                        <td>RUSSLANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Russian for Slavic PhD Students</td>
+                        <td>RUSSLANG220</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Russian, Third Quarter</td>
+                        <td>RUSSLANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fifth-Year Russian, First Quarter</td>
+                        <td>RUSSLANG231</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fifth-Year Russian, Second Quarter</td>
+                        <td>RUSSLANG232</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fifth-Year Russian, Third Quarter</td>
+                        <td>RUSSLANG233</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Russian, Second Quarter</td>
+                        <td>RUSSLANG2A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Russian, Third Quarter</td>
+                        <td>RUSSLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Russian Conversation</td>
+                        <td>RUSSLANG394</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Russian</td>
+                        <td>RUSSLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Russian for Heritage Speakers, First Quarter</td>
+                        <td>RUSSLANG5</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Russian Conversation</td>
+                        <td>RUSSLANG55</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reading in Russian</td>
+                        <td>RUSSLANG70</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Samoan, First quarter</td>
+                        <td>SAMOALNG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Samoan, second quarter</td>
+                        <td>SAMOALNG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Samoan, third quarter</td>
+                        <td>SAMOALNG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Samoan</td>
+                        <td>SAMOALNG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Independent Study</td>
+                        <td>SLAVLANG299</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Slovenian, First Quarter</td>
+                        <td>SLVNLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Sanskrit, First Quarter</td>
+                        <td>SNSKTLNG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Sanskrit, Second Quarter</td>
+                        <td>SNSKTLNG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Sanskrit, Third Quarter</td>
+                        <td>SNSKTLNG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Sanskrit</td>
+                        <td>SNSKTLNG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Spanish, First Quarter</td>
+                        <td>SPANLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beginning Oral Communication</td>
+                        <td>SPANLANG10</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Oral Communication</td>
+                        <td>SPANLANG100</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Structure of Spanish</td>
+                        <td>SPANLANG101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Composition and Writing Workshop</td>
+                        <td>SPANLANG102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Spanish Service-Learning: Migration, Asylum & Human Rights at the Border</td>
+                        <td>SPANLANG108SL</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Spanish Immersion: Latino Stories of Democracy, Migration, and Culture in the Bay Area</td>
+                        <td>SPANLANG10SC</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Spanish Service-Learning: Campus Workers' Health and Empowerment Outreach</td>
+                        <td>SPANLANG110SL</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Spanish: Cultural Emphasis, First Quarter</td>
+                        <td>SPANLANG11C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Spanish: Emphasis on International Relations, First Quarter</td>
+                        <td>SPANLANG11R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Spanish:  Emphasis on Service Learning, First Quarter</td>
+                        <td>SPANLANG11SL</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Concurrent Writing Course</td>
+                        <td>SPANLANG121</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Spanish: Cultural Emphasis, Second Quarter</td>
+                        <td>SPANLANG12C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Spanish: Emphasis on International Relations, Second Quarter</td>
+                        <td>SPANLANG12R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Spanish: Emphasis on Service Learning, Second Quarter</td>
+                        <td>SPANLANG12SL</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Spanish: Cultural Emphasis, Third Quarter</td>
+                        <td>SPANLANG13C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Spanish: Emphasis on International Relations, Third Quarter</td>
+                        <td>SPANLANG13R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Spanish: Emphasis on Service Learning, Third Quarter</td>
+                        <td>SPANLANG13SL</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Oral Communication</td>
+                        <td>SPANLANG15</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Individual Reading</td>
+                        <td>SPANLANG199</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Service Learning</td>
+                        <td>SPANLANG199SL</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Spanish, Part 1</td>
+                        <td>SPANLANG1A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Spanish, Second Quarter</td>
+                        <td>SPANLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Spanish for Heritage Language Students, First Quarter</td>
+                        <td>SPANLANG21B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Spanish for Heritage Language Students, Second Quarter</td>
+                        <td>SPANLANG22B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Spanish for Heritage Language Students, Third Quarter</td>
+                        <td>SPANLANG23B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reading Spanish</td>
+                        <td>SPANLANG250</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Spanish, Part 2</td>
+                        <td>SPANLANG2A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Spanish, Third Quarter</td>
+                        <td>SPANLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Spanish Conversation</td>
+                        <td>SPANLANG394</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Spanish</td>
+                        <td>SPANLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Community Engaged with Habla</td>
+                        <td>SPANLANG99SL</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Swahili, First Quarter</td>
+                        <td>SWAHLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Swahili, First Quarter</td>
+                        <td>SWAHLANG101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Swahili, Second Quarter</td>
+                        <td>SWAHLANG102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated Second-Year Swahili, First Quarter</td>
+                        <td>SWAHLANG11A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated Second-Year Swahili, Second Quarter</td>
+                        <td>SWAHLANG12A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Swahili, First Quarter</td>
+                        <td>SWAHLANG1A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Swahili, Second Quarter</td>
+                        <td>SWAHLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Independent Study</td>
+                        <td>SWAHLANG299</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Swahili, Second Quarter</td>
+                        <td>SWAHLANG2A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Swahili, Third Quarter</td>
+                        <td>SWAHLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Swahili</td>
+                        <td>SWAHLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Tamil, First Quarter</td>
+                        <td>TAMILANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Tamil, Second Quarter</td>
+                        <td>TAMILANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Tamil, Third Quarter</td>
+                        <td>TAMILANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Telugu</td>
+                        <td>TELULANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Telugu, Second Quarter</td>
+                        <td>TELULANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Telugu, Third Quarter</td>
+                        <td>TELULANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Telugu</td>
+                        <td>TELULANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Tibetan, First Quarter</td>
+                        <td>TIBETLNG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Tibetan, Second Quarter</td>
+                        <td>TIBETLNG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second Year Tibetan- First-Quarter</td>
+                        <td>TIBETLNG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second Year Tibetan- Second -Quarter</td>
+                        <td>TIBETLNG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Tibetan, Third Quarter</td>
+                        <td>TIBETLNG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Tibetan, Third Quarter</td>
+                        <td>TIBETLNG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Tibetan</td>
+                        <td>TIBETLNG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Tigrinya, First quarter</td>
+                        <td>TIGRYLNG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Tigrinya, Second Quarter</td>
+                        <td>TIGRYLNG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Tigrinya, First Quarter</td>
+                        <td>TIGRYLNG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Tigrinya, Second Quarter</td>
+                        <td>TIGRYLNG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Tigrinya, Third Quarter</td>
+                        <td>TIGRYLNG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Year Tigrinya, Third Quarter</td>
+                        <td>TIGRYLNG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Tigrinya</td>
+                        <td>TIGRYLNG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Turkish, First Quarter</td>
+                        <td>TURKLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Turkish for Heritage Learners</td>
+                        <td>TURKLANG101H</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Turkish for Heritage Learners</td>
+                        <td>TURKLANG102H</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Turkish for Heritage Learners</td>
+                        <td>TURKLANG103H</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate to Advanced Turkish Conversation</td>
+                        <td>TURKLANG15</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Turkish, First Quarter</td>
+                        <td>TURKLANG1A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Turkish, Second Quarter</td>
+                        <td>TURKLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Turkish, First Quarter</td>
+                        <td>TURKLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Turkish, Second Quarter</td>
+                        <td>TURKLANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Turkish, Third Quarter</td>
+                        <td>TURKLANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accelerated First-Year Turkish, Second Quarter</td>
+                        <td>TURKLANG2A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Turkish, Third Quarter</td>
+                        <td>TURKLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Turkish</td>
+                        <td>TURKLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Twi, First Quarter</td>
+                        <td>TWILANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Twi, Second Quarter</td>
+                        <td>TWILANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Twi, First Quarter</td>
+                        <td>TWILANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Twi, Second Quarter</td>
+                        <td>TWILANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Twi, Third Quarter</td>
+                        <td>TWILANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Twi, Third Quarter</td>
+                        <td>TWILANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Twi</td>
+                        <td>TWILANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Ukrainian, First Quarter</td>
+                        <td>UKRNLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Ukrainian, Second Quarter</td>
+                        <td>UKRNLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Ukrainian, First Quarter</td>
+                        <td>UKRNLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Ukrainian, Second Quarter</td>
+                        <td>UKRNLANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Ukrainian, Third Quarter</td>
+                        <td>UKRNLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Ukrainian</td>
+                        <td>UKRNLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ukrainian Language for Slavic Speakers</td>
+                        <td>UKRNLANG60</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Urdu, First Quarter</td>
+                        <td>URDULANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Urdu, Second Quarter</td>
+                        <td>URDULANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second Year Urdu, first quarter</td>
+                        <td>URDULANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second Year Urdu, second quarter</td>
+                        <td>URDULANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second Year Urdu, third quarter</td>
+                        <td>URDULANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Urdu, Third Quarter</td>
+                        <td>URDULANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Urdu</td>
+                        <td>URDULANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Uyghur First Quarter</td>
+                        <td>UYGHLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Uyghur, First Quarter</td>
+                        <td>UYGHLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Uyghur, Third Quarter</td>
+                        <td>UYGHLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Vietnamese, First Quarter</td>
+                        <td>VIETLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Vietnamese, First Quarter</td>
+                        <td>VIETLANG101</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Vietnamese, Second Quarter</td>
+                        <td>VIETLANG102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Third-Year Vietnamese, Third Quarter</td>
+                        <td>VIETLANG103</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Vietnamese, Second Quarter</td>
+                        <td>VIETLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Vietnamese, First Quarter</td>
+                        <td>VIETLANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Vietnamese, Second quarter</td>
+                        <td>VIETLANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Vietnamese, Third Quarter</td>
+                        <td>VIETLANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Vietnamese, Third Quarter</td>
+                        <td>VIETLANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Vietnamese</td>
+                        <td>VIETLANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Yiddish, First Quarter</td>
+                        <td>YDDSHLNG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Yiddish, Second Quarter</td>
+                        <td>YDDSHLNG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Yiddish, First Quarter</td>
+                        <td>YDDSHLNG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Yiddish, Second Quarter</td>
+                        <td>YDDSHLNG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Yiddish, Third Quarter</td>
+                        <td>YDDSHLNG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Yiddish, Third Quarter</td>
+                        <td>YDDSHLNG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Yiddish</td>
+                        <td>YDDSHLNG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Yoruba, First Quarter</td>
+                        <td>YORULANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Yoruba, Second Quarter</td>
+                        <td>YORULANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Yoruba, First Quarter</td>
+                        <td>YORULANG21</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Yoruba, Second Quarter</td>
+                        <td>YORULANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Yoruba, Third Year</td>
+                        <td>YORULANG23</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Yoruba, Third Quarter</td>
+                        <td>YORULANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Studies in Yoruba</td>
+                        <td>YORULANG395</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First- Yup'ik, First Quarter</td>
+                        <td>YUPKLANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First -Year  Yup'ik, Second Quarter</td>
+                        <td>YUPKLANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Zulu, First Quarter</td>
+                        <td>ZULULANG1</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Zulu, Second Quarter</td>
+                        <td>ZULULANG2</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Second-Year Zulu, Second Quarter</td>
+                        <td>ZULULANG22</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First-Year Zulu, Third Quarter</td>
+                        <td>ZULULANG3</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+
+      <div id="hiddeninfo">
+        <p id="unicolor">#8C1515</p>
+      </div>
+    </div>
+    <!-- put hidden info here for the JavaScript to get -->
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+                    <!-- Hover Script -->
+
+                    <script src="../../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../../static/js/animatetable.js"></script>
+                
+  </body>
+</html>

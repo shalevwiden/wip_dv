@@ -572,6 +572,13 @@ footer a:hover {
   padding: 0px 10px;
   background-color: white;
 }
+.mainsite .rightcontent .departmentstats .statsline.shortbox .statsname {
+  width: 80%;
+}
+.mainsite .rightcontent .departmentstats .statsline.shortbox .statscontent {
+  font-size: 25px;
+  width: 20%;
+}
 .mainsite .rightcontent .departmentstats #coursecount .statsname {
   width: 60%;
 }

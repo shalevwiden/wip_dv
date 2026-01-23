@@ -1,0 +1,3098 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+</script>
+<!-- End Google Tag Manager -->
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, English"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>English UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+<!-- test comment -->
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li>
+                <a href="../../stanford-home.html"> Stanford Home</a>
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../e/e-departments.html"
+                  >E Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">English</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+              <li><a href="../../../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="departmenttitle">English</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="original">original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/stanford/english/excel-files/english-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="Stanford Theme">Stanford Theme Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/stanford/english/excel-files/english-stanford-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li style="display: none">
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    English Courses with "English"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              English Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">385</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                Quantum Narratives:Writing Fiction about Science, Philosophy and Human Experience in the Quantum Age
+              </div>
+            </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                100
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Milton
+              </div>
+            </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                6
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                36
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of English Courses with "English" in their name
+              </div>
+              <div class="statscontent">
+                18, 4.7%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          English Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">English</td>
+
+            <td colspan="2">Stanford University</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
+
+                    
+                        <tr>
+                        <td>Pathogens and Populations: Representing Infectious Disease</td>
+                        <td>ENGLISH102</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Medieval Violence</td>
+                        <td>ENGLISH104C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Stories from the Viking Age</td>
+                        <td>ENGLISH104D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Aesthetics and the Audience: Literary Landmarks</td>
+                        <td>ENGLISH105A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Creativity & Culture in the Age of AI</td>
+                        <td>ENGLISH106A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intro to Disability Studies: Disability and Technology</td>
+                        <td>ENGLISH108A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intro to English I: Love and Death from Chaucer to Milton</td>
+                        <td>ENGLISH10E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intro to English I: The Natural World in Early English Literary History</td>
+                        <td>ENGLISH10F</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intro to English I: Voice and Style in Medieval and Renaissance Literature</td>
+                        <td>ENGLISH10G</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to English I: What Women Want in Med/Ren Literature</td>
+                        <td>ENGLISH10H</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Technologies of Handwriting: History, Theory, Practice</td>
+                        <td>ENGLISH10Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Indian Novel</td>
+                        <td>ENGLISH110</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Women Making Modernism</td>
+                        <td>ENGLISH111</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Making Shakespeare</td>
+                        <td>ENGLISH112</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Humanities Core: Great Minds of the Italian Renaissance and their World</td>
+                        <td>ENGLISH112C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>African American Ecologies</td>
+                        <td>ENGLISH113A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Media and Communication from the Middle Ages to the Printing Press</td>
+                        <td>ENGLISH113P</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Paradise Lost</td>
+                        <td>ENGLISH114B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Virtual Italy</td>
+                        <td>ENGLISH115</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Shakespeare and his Contexts: Race, Religion, Sexuality, Gender</td>
+                        <td>ENGLISH115E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Essential Shakespeare, Shakespearean Essence</td>
+                        <td>ENGLISH115H</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Shakespeare's Globes: Race and Place</td>
+                        <td>ENGLISH117</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Literature and the Brain</td>
+                        <td>ENGLISH118</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Pitching and Publishing in Popular Media</td>
+                        <td>ENGLISH119</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to English II: From Milton to the Romantics</td>
+                        <td>ENGLISH11A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to English II: American Literature and Culture to 1855</td>
+                        <td>ENGLISH11B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to English II: Revolutionary Energies (1640-1820)</td>
+                        <td>ENGLISH11C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Art in the Metropolis</td>
+                        <td>ENGLISH11Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Medieval Fantasy Literature</td>
+                        <td>ENGLISH122C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The American West</td>
+                        <td>ENGLISH124</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Virginia Woolf in the Age of #MeToo</td>
+                        <td>ENGLISH125</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Lost Generation: American literature between the World Wars</td>
+                        <td>ENGLISH125C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Walking: Place, Discipline, Dissent</td>
+                        <td>ENGLISH126</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Asian Myths, Modern Retellings</td>
+                        <td>ENGLISH128</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to English III: Modern Literature</td>
+                        <td>ENGLISH12C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intro to English III: Latinx Literature</td>
+                        <td>ENGLISH12D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to English III: Introduction to Modern Literature: People, Politics, Place</td>
+                        <td>ENGLISH12E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to English III: Introduction to Asian American Literature: Fantastic Fictions</td>
+                        <td>ENGLISH12F</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Taboo</td>
+                        <td>ENGLISH12Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Chaucer's Troilus and Criseyde: Love and War in the Middle Ages</td>
+                        <td>ENGLISH131</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Imagining Adaptive Societies</td>
+                        <td>ENGLISH131D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Modernism and its Manifestos</td>
+                        <td>ENGLISH132</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Storytelling and Mythmaking: Modern Odysseys</td>
+                        <td>ENGLISH133B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Long Victorian Novels</td>
+                        <td>ENGLISH136</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Discard Studies and Environmental Literature</td>
+                        <td>ENGLISH137</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Gothic in Literature and Culture</td>
+                        <td>ENGLISH138E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Queer Ecologies</td>
+                        <td>ENGLISH139</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>American Women Writers, 1850-1920</td>
+                        <td>ENGLISH139B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>American Literature and Social Justice</td>
+                        <td>ENGLISH139C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Media and Communication from the Middle Ages to the Printing Press</td>
+                        <td>ENGLISH13P</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Imaginative Realms</td>
+                        <td>ENGLISH13Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sex and Violence in Jacobean Tragedy</td>
+                        <td>ENGLISH140C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Latinx Literature</td>
+                        <td>ENGLISH141</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Environmental Justice and Literature</td>
+                        <td>ENGLISH142</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Trans Literature</td>
+                        <td>ENGLISH142A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Animal Self</td>
+                        <td>ENGLISH143</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Contemporary British Fiction: History, Language, Place</td>
+                        <td>ENGLISH144B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Gothic and the Supernatural</td>
+                        <td>ENGLISH145B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Curating 20th Century U.S. Literature</td>
+                        <td>ENGLISH145I</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Black Ecologies</td>
+                        <td>ENGLISH146</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Contemporary Women Writers</td>
+                        <td>ENGLISH146CW</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Black Fantastic: Sci-Fi, Horror, and Fantasy in the Black Diaspora</td>
+                        <td>ENGLISH146D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fiction Intensive: Crafting a Short Story Collection</td>
+                        <td>ENGLISH146F</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Native American Creative Writing</td>
+                        <td>ENGLISH146N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>A Short History of the Short Story</td>
+                        <td>ENGLISH146SH</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Iconic Short Stories</td>
+                        <td>ENGLISH146W</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Integrative Ocean Study</td>
+                        <td>ENGLISH149</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Stories Everywhere</td>
+                        <td>ENGLISH14N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Romantic Poetry</td>
+                        <td>ENGLISH150</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Poetry as Time Travel</td>
+                        <td>ENGLISH150F</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Queer Poetry and Poetics</td>
+                        <td>ENGLISH150J</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Animal Poems</td>
+                        <td>ENGLISH150K</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Poetry of Migration</td>
+                        <td>ENGLISH150L</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Literary Adaption: Narrative Form from Page to Screen</td>
+                        <td>ENGLISH151</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Bestseller Business: Reading, Writing, and Selling Popular Books</td>
+                        <td>ENGLISH152</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Black Mirror: Representations of Race & Gender in AI</td>
+                        <td>ENGLISH152E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Harlem Renaissance</td>
+                        <td>ENGLISH152G</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Mixed-Race Politics and Culture</td>
+                        <td>ENGLISH152K</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Literature and the Future</td>
+                        <td>ENGLISH153G</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>American Disaster</td>
+                        <td>ENGLISH154D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Film & Philosophy</td>
+                        <td>ENGLISH154F</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Stories at the Border</td>
+                        <td>ENGLISH155</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>'Women in Rage': Conditions of Production in Women's Literature</td>
+                        <td>ENGLISH156</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Literature and the Internet</td>
+                        <td>ENGLISH157</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Literature of the Anthropocene</td>
+                        <td>ENGLISH157D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>James Baldwin & Twentieth Century Literature</td>
+                        <td>ENGLISH159</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Wastelands</td>
+                        <td>ENGLISH15N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Family Trees: The Intergenerational Novel</td>
+                        <td>ENGLISH15Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Poetry and Poetics</td>
+                        <td>ENGLISH160</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Narrative and Narrative Theory</td>
+                        <td>ENGLISH161</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Victorian Long Novel</td>
+                        <td>ENGLISH162</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Black Lens/Black Lines: Cinematic Movement</td>
+                        <td>ENGLISH162B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Queer Times: Past, Present, Future in LGBTQ+ Literature</td>
+                        <td>ENGLISH163</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Old English 1: Introduction to Old English Language and Literature</td>
+                        <td>ENGLISH164</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Old English 2: Beowulf</td>
+                        <td>ENGLISH164A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Perspectives on American Identity</td>
+                        <td>ENGLISH165</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Queer Poetics</td>
+                        <td>ENGLISH167</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Environmental Studies</td>
+                        <td>ENGLISH167A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Revenge Tragedy</td>
+                        <td>ENGLISH168</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Early Medieval Literature</td>
+                        <td>ENGLISH169</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Contemporary Asian American Stories</td>
+                        <td>ENGLISH169D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Family Stories</td>
+                        <td>ENGLISH16Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Spatial Concepts in African Literature</td>
+                        <td>ENGLISH170</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reading Games and Playing Literature: Intro to Literary Game Studies</td>
+                        <td>ENGLISH172</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Comparative Studies in Race and Ethnicity</td>
+                        <td>ENGLISH172D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Medieval Dreams and Visions</td>
+                        <td>ENGLISH173</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Artist's Book in Theory and Practice</td>
+                        <td>ENGLISH174</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Chaucer's Canterbury Tales</td>
+                        <td>ENGLISH175</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Meaning of Newness: Traditions of British Modernism</td>
+                        <td>ENGLISH176</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Contemporary Novel in U.S. Perspective</td>
+                        <td>ENGLISH177</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Contemporary American Short Stories</td>
+                        <td>ENGLISH177B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>19th-Century Popular Fiction: Austen, Dickens, Stoker</td>
+                        <td>ENGLISH178</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Animal Poems</td>
+                        <td>ENGLISH17N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>After 2001: A 21st Century Science Fiction Odyssey</td>
+                        <td>ENGLISH17Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>London through Time, Text, and Technology</td>
+                        <td>ENGLISH17SC</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Public Service for Social Impact: Pathways to Purposeful Careers</td>
+                        <td>ENGLISH180</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Velocity and Suspension: The Sense of Time in Early Modern Writing</td>
+                        <td>ENGLISH180A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Critical Game Studies</td>
+                        <td>ENGLISH182</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Transpacific Ecologies: Race, Migration, Environment</td>
+                        <td>ENGLISH183</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Literary Text Mining</td>
+                        <td>ENGLISH184E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Literary Text Mining 2: Studies in Cultural Analytics</td>
+                        <td>ENGLISH184F</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Mad Fiction: Literature of Mental Illness</td>
+                        <td>ENGLISH185B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Media Theory for an Analog, Digital, and Networked World</td>
+                        <td>ENGLISH186</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The American Underground: Crime and the Criminal in American Literature</td>
+                        <td>ENGLISH186B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Evolution of the Feminist First-Person Essay, 2000-present</td>
+                        <td>ENGLISH187C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Black Feminism and the SciFi of Octavia Butler</td>
+                        <td>ENGLISH188</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Shakespeare in Love</td>
+                        <td>ENGLISH18N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Black Mirror: AI, Art, Social Action</td>
+                        <td>ENGLISH18SC</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Fiction Writing</td>
+                        <td>ENGLISH190</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>AAPI Fiction Writing</td>
+                        <td>ENGLISH190A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Novel Writing Intensive</td>
+                        <td>ENGLISH190E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fiction into Film</td>
+                        <td>ENGLISH190F</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Graphic Novel</td>
+                        <td>ENGLISH190G</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Graphic Novel</td>
+                        <td>ENGLISH190H</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Creatures of the Dark: Ghosts and Ghouls of Horror Fiction</td>
+                        <td>ENGLISH190HO</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Levinthal Tutorial in Fiction</td>
+                        <td>ENGLISH190L</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Levinthal Tutorial in Graphic Novel/Comics</td>
+                        <td>ENGLISH190LC</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Novel Salon</td>
+                        <td>ENGLISH190NS</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Quantum Narratives</td>
+                        <td>ENGLISH190QN</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Short Story Salon</td>
+                        <td>ENGLISH190S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Screenwriting Intensive</td>
+                        <td>ENGLISH190SW</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reading for Writers: STRANGE ENCOUNTERS</td>
+                        <td>ENGLISH190V</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Young Adult Fiction</td>
+                        <td>ENGLISH190YA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Creative Nonfiction</td>
+                        <td>ENGLISH191</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>DCI Intermediate Memoir Workshop</td>
+                        <td>ENGLISH191DC</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Levinthal Tutorial in Nonfiction</td>
+                        <td>ENGLISH191L</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Poetry Writing</td>
+                        <td>ENGLISH192</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Poetry Is Not a Luxury</td>
+                        <td>ENGLISH192B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Levinthal Tutorial in Poetry</td>
+                        <td>ENGLISH192L</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Writing Poetry in the Age of the Moving Picture</td>
+                        <td>ENGLISH192V</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Lord of the Rings</td>
+                        <td>ENGLISH193</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Curricular Practical Training</td>
+                        <td>ENGLISH194C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>When Algorithms Become Oracles The Sacred, the Secular, and the Synthetic: Speculative Fiction</td>
+                        <td>ENGLISH195</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Literature of Escape: Women, the Romance Novel, and the Representation of Reality</td>
+                        <td>ENGLISH196</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Honors Seminar: Critical Approaches to Literature</td>
+                        <td>ENGLISH196A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Seniors Honors Essay</td>
+                        <td>ENGLISH197</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Individual Work</td>
+                        <td>ENGLISH198</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Capstone: Why Literature Matters (To Me)</td>
+                        <td>ENGLISH199</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>I Bet You Think You're Funny: Humor Writing Workshop</td>
+                        <td>ENGLISH19Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Comics:  More than Words</td>
+                        <td>ENGLISH1C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Dickens Reading</td>
+                        <td>ENGLISH1D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Bible and Literature</td>
+                        <td>ENGLISH201</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Practical Paleography</td>
+                        <td>ENGLISH202</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Poetry: Wordsworth, Dickinson, Rilke</td>
+                        <td>ENGLISH20N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Transoceanic Renaissance</td>
+                        <td>ENGLISH210</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Making and Interpreting Historical Records, 100-1600</td>
+                        <td>ENGLISH212</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Shakespeare and His Contexts: Race, Religion, Sexuality, Gender</td>
+                        <td>ENGLISH215E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Huckleberry Finn and its Afterlives</td>
+                        <td>ENGLISH216</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Literature and the Brain</td>
+                        <td>ENGLISH218</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Global Cultural Heritage: Past, Present, Future</td>
+                        <td>ENGLISH21N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Write Like a Poet: From Tradition to Innovation</td>
+                        <td>ENGLISH21Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Software, Hardware, Wetware: Cyberpunk Systems Theory</td>
+                        <td>ENGLISH221</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>How Do We Get Out of Here? Global Ecocide</td>
+                        <td>ENGLISH223</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Doing Literary History: Orwell in the World</td>
+                        <td>ENGLISH224</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Gender and Intersectionality in Medieval and Early Modern Literature</td>
+                        <td>ENGLISH229</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Medieval Fantasy Literature</td>
+                        <td>ENGLISH22C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Writing Mystical, Spiritual, and Altered Experiences</td>
+                        <td>ENGLISH22Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fact and Fiction</td>
+                        <td>ENGLISH234</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Literature Against the Law</td>
+                        <td>ENGLISH235</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Before Novels</td>
+                        <td>ENGLISH237</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Gothic in Literature and Culture</td>
+                        <td>ENGLISH238E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Henry James</td>
+                        <td>ENGLISH239</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Chapters: Please Allow Me to Introduce My Novel</td>
+                        <td>ENGLISH23Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Close Reading: History, Theory, Practice</td>
+                        <td>ENGLISH242C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Experiments in Critical AI</td>
+                        <td>ENGLISH243</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Literature and Technology from Frankenstein to the Futurists</td>
+                        <td>ENGLISH244</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Female Modernists: Women Writers in Paris Between the Wars</td>
+                        <td>ENGLISH244F</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sylvia Wynter: Being Human</td>
+                        <td>ENGLISH248</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Integrative Ocean Study</td>
+                        <td>ENGLISH249</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>New Technologies of Literature</td>
+                        <td>ENGLISH24N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Leaving Patriarchy: A Course for All Genders</td>
+                        <td>ENGLISH24Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Character: Studies in Fictional Being</td>
+                        <td>ENGLISH250A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Spatial Thinking Through Black Writing</td>
+                        <td>ENGLISH252</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Speaking Medieval: Ecologies of Inscribed Objects</td>
+                        <td>ENGLISH255</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Old English Anew</td>
+                        <td>ENGLISH255A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Queer Stories</td>
+                        <td>ENGLISH25Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Black Mirror: Representations of Race & Gender in AI</td>
+                        <td>ENGLISH261E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Old English 1: Introduction to Old English Language and Literature</td>
+                        <td>ENGLISH264</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Old English 2: Beowulf</td>
+                        <td>ENGLISH264A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Imagining the Oceans</td>
+                        <td>ENGLISH268A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Becoming Modern: American Literature 1880-1920</td>
+                        <td>ENGLISH269B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Brontes: a Victorian Family and its Marvelous Daughters</td>
+                        <td>ENGLISH26Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Comedy and Social Critique</td>
+                        <td>ENGLISH274</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Traveling through Eternity: Literary Pilgrimage from Dante to Blake</td>
+                        <td>ENGLISH279</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Childhood Novel</td>
+                        <td>ENGLISH27Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Sublime and the Ugly</td>
+                        <td>ENGLISH283</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Self-Impersonation: Fiction, Autobiography, Memoir</td>
+                        <td>ENGLISH283E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Self-Impersonation: Autobiography, Memoir, Fictional Autobiography</td>
+                        <td>ENGLISH284</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Moving the Message: Reading and Embodying the Works of Audre Lorde</td>
+                        <td>ENGLISH287</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Campus Novel</td>
+                        <td>ENGLISH28Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Fiction Writing</td>
+                        <td>ENGLISH290</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Creative Nonfiction</td>
+                        <td>ENGLISH291</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>DCI Advanced Memoir Workshop</td>
+                        <td>ENGLISH291DC</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Poetry Writing</td>
+                        <td>ENGLISH292</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Contemporary Black Feminist Paths</td>
+                        <td>ENGLISH292B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Literary Translation: Theory and Practice</td>
+                        <td>ENGLISH293</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Writing About Art</td>
+                        <td>ENGLISH29Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Medieval Methodologies</td>
+                        <td>ENGLISH300</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Theories and Methods in Comparative Studies in Race and Ethnicity</td>
+                        <td>ENGLISH300A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Court Theater from Shakespeare to Mozart</td>
+                        <td>ENGLISH301</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Blake and the Bible</td>
+                        <td>ENGLISH303</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Interruption of the Machine: Introduction to Sound Studies through Literature</td>
+                        <td>ENGLISH303A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Aesthetics: Reception Theory, Audiences, and Literature as Media</td>
+                        <td>ENGLISH305A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Theory and Practice of the American Short Story</td>
+                        <td>ENGLISH307</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Civilizing Process</td>
+                        <td>ENGLISH308</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Topics in Digital Humanities</td>
+                        <td>ENGLISH308A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Gilded Age American Literature</td>
+                        <td>ENGLISH308B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sustainable Narratives</td>
+                        <td>ENGLISH309CSN</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Character</td>
+                        <td>ENGLISH30N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Transoceanic Renaissance</td>
+                        <td>ENGLISH310</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Native Intelligence</td>
+                        <td>ENGLISH312</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Making and Interpreting Historical Records, 100-1600</td>
+                        <td>ENGLISH312A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Performance and Performativity</td>
+                        <td>ENGLISH313</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Epic and Empire</td>
+                        <td>ENGLISH314</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Publishing on Paradise Lost</td>
+                        <td>ENGLISH315</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>American Story Cycles</td>
+                        <td>ENGLISH316</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>History, Memory , Fiction</td>
+                        <td>ENGLISH317</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Pitching and Publishing in Popular Media</td>
+                        <td>ENGLISH318</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Workshop in Pitching and Publishing for Popular Media</td>
+                        <td>ENGLISH318A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The World, The Globe, The Planet</td>
+                        <td>ENGLISH319A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Utopian Realism and the Global South</td>
+                        <td>ENGLISH319C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Love and Death</td>
+                        <td>ENGLISH31N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Single Author Seminar</td>
+                        <td>ENGLISH320</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sixteenth-Century Poetry and Poetics</td>
+                        <td>ENGLISH321</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Enlightenment and its Shadows:  British Literature of the long Eighteenth Century</td>
+                        <td>ENGLISH322</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Baroque Tragedy</td>
+                        <td>ENGLISH323A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Moby-Dick</td>
+                        <td>ENGLISH324</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Dickens and Eliot</td>
+                        <td>ENGLISH325</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Diaspora and Translation</td>
+                        <td>ENGLISH326</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Literature, Narrative, and the Self</td>
+                        <td>ENGLISH328</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Description Before the Novel</td>
+                        <td>ENGLISH329</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Dickens on Growing Up and Growing Older: David Copperfield and Great Expectations</td>
+                        <td>ENGLISH32Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Philosophy, Literature, and the Arts Core Seminar</td>
+                        <td>ENGLISH333</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Practices of Early Modern Literature</td>
+                        <td>ENGLISH334</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Concepts of Modernity II: Culture, Aesthetics, and Society in the Age of Globalization</td>
+                        <td>ENGLISH334B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Bilingual Loyalties</td>
+                        <td>ENGLISH335</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>CESTA DH Residency</td>
+                        <td>ENGLISH335A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Literature of Exile</td>
+                        <td>ENGLISH336</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Style in the Age of AI</td>
+                        <td>ENGLISH337</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Transatlantic Gothic</td>
+                        <td>ENGLISH338</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>High Life and Low Life: Polite and Popular Forms in 18th-century British Literature</td>
+                        <td>ENGLISH341</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Milton</td>
+                        <td>ENGLISH342</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Culture and Subculture</td>
+                        <td>ENGLISH343</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Premodern Aesthetics</td>
+                        <td>ENGLISH344</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Practices of Early Modern Writing</td>
+                        <td>ENGLISH345</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Modeling the Post45 Literary Field: Forms, Frames, Contexts, Themes</td>
+                        <td>ENGLISH345G</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Thinking Through Genre</td>
+                        <td>ENGLISH346</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sylvia Wynter: Being Human</td>
+                        <td>ENGLISH348</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Law and Literature: Liberalism and Beyond</td>
+                        <td>ENGLISH350</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Constitutional Theory</td>
+                        <td>ENGLISH350D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Old English Anew</td>
+                        <td>ENGLISH355A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Poetry, Transhistorically</td>
+                        <td>ENGLISH357</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>History and Theory of the Novel I & II</td>
+                        <td>ENGLISH360C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Language Politics and the Literary Imagination in Africa</td>
+                        <td>ENGLISH362C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Toni Morrison: Modernism, Postmodernism, and World Literature</td>
+                        <td>ENGLISH362E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Modern Physics and Literature</td>
+                        <td>ENGLISH363</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Women and Puritanism</td>
+                        <td>ENGLISH363C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Virginia Woolf: Modernist, Maker, Media</td>
+                        <td>ENGLISH364</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Media Theory for Literary Studies</td>
+                        <td>ENGLISH366F</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Contemporary Theory Lab</td>
+                        <td>ENGLISH367E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Imagining the Oceans</td>
+                        <td>ENGLISH368A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Sustainability of the Human Record</td>
+                        <td>ENGLISH370</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Comparative Studies in Race and Ethnicity</td>
+                        <td>ENGLISH372D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Shakespearean Tragedy and Its Critics</td>
+                        <td>ENGLISH373</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Computationally Mapping the Literary Imagination</td>
+                        <td>ENGLISH385</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>What was (is?) Modernism?</td>
+                        <td>ENGLISH389</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Fiction Workshop</td>
+                        <td>ENGLISH390</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Poetry Workshop</td>
+                        <td>ENGLISH392</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Independent Study</td>
+                        <td>ENGLISH394</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Curricular Practical Training</td>
+                        <td>ENGLISH394C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Graduate Study for Ph.D. Students</td>
+                        <td>ENGLISH396</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Pedagogy Seminar I</td>
+                        <td>ENGLISH396L</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Research Course</td>
+                        <td>ENGLISH398</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Pedagogy Committee Course</td>
+                        <td>ENGLISH398A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Literary Lab</td>
+                        <td>ENGLISH398L</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Qualifying Exam Workshop</td>
+                        <td>ENGLISH398Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Revision and Development of a Paper</td>
+                        <td>ENGLISH398R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Orals, Publication and Dissertation Workshop</td>
+                        <td>ENGLISH398W</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Thesis</td>
+                        <td>ENGLISH399</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Were They Really "Hard Times"? Mid-Victorian Social Movements and Charles Dickens</td>
+                        <td>ENGLISH39Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Life Stories</td>
+                        <td>ENGLISH40L</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Family Drama: American Plays about Families</td>
+                        <td>ENGLISH41N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Shakespearean Stage</td>
+                        <td>ENGLISH45N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Pirates in the Western Imaginary: From Blackbeard to Jack Sparrow</td>
+                        <td>ENGLISH45Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>American Moderns: Hemingway, Hurston, Faulkner, & Fitzgerald</td>
+                        <td>ENGLISH46N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Humanities House Workshop</td>
+                        <td>ENGLISH50</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Writing and Gender in the Age of Disruption</td>
+                        <td>ENGLISH53Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Shakespeare and Social Justice</td>
+                        <td>ENGLISH55N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Meaning and Medieval Manuscripts: a community of learning</td>
+                        <td>ENGLISH57</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Gender Under Pressure: Identity and Politics, 1970-2025</td>
+                        <td>ENGLISH57N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reading and Writing in the Digital Age</td>
+                        <td>ENGLISH5BA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>WISE: Anti-Social Heroes in the Nineteenth Century</td>
+                        <td>ENGLISH5CA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>WISE: Poetic Intelligences</td>
+                        <td>ENGLISH5DA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>WISE: Haunted Reading: Intertextuality, Adaptation, and the Gothic</td>
+                        <td>ENGLISH5EA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Romance and its Readers</td>
+                        <td>ENGLISH5FA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Shakespeare and His Critics</td>
+                        <td>ENGLISH5GA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Haunted Rooms: Gothic and Horror Short Fiction</td>
+                        <td>ENGLISH5HA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Women Without Men: Experiments in American Literature, 1890-1940</td>
+                        <td>ENGLISH5JA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Migrants, Natives, or Settlers? Asians in South African Literature</td>
+                        <td>ENGLISH5KA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>A Perfect World? Utopian Satire in Early Modernity</td>
+                        <td>ENGLISH5LA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Black Diaspora(s) Old and New</td>
+                        <td>ENGLISH5MA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Resisting English: Multilingualism in American Literature</td>
+                        <td>ENGLISH5PA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>"Dressing Up" in the Eighteenth Century</td>
+                        <td>ENGLISH5QA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Race and Technology in the African American Literary Tradition</td>
+                        <td>ENGLISH5RA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Indigeneity Across American Literary Cultures</td>
+                        <td>ENGLISH5SA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Renaissance Posthumans</td>
+                        <td>ENGLISH5TA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Queer Monstrosity</td>
+                        <td>ENGLISH5UA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Influencers: Conduct Literature from Medieval Origins to Social Media</td>
+                        <td>ENGLISH5VA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Law and Literature</td>
+                        <td>ENGLISH5WA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Jane Austen's Fiction</td>
+                        <td>ENGLISH61N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>'A Model Island': Britain in Historical and Cultural Perspective</td>
+                        <td>ENGLISH66</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Ethical Gangster:  How to be Moral, How to be Good--Mafia Style</td>
+                        <td>ENGLISH67N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Mark Twain and American Culture</td>
+                        <td>ENGLISH68N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Serial Storytelling</td>
+                        <td>ENGLISH72N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>TGR Dissertation</td>
+                        <td>ENGLISH802</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Philosophy and Literature</td>
+                        <td>ENGLISH81</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>City, Space, Literature</td>
+                        <td>ENGLISH83N</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Political Shakespeare</td>
+                        <td>ENGLISH87</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ethical Issues in Creative Nonfiction</td>
+                        <td>ENGLISH8A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Page to Stage: The Case of Shakespeare's Richard III</td>
+                        <td>ENGLISH8B</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Medieval Ecologies</td>
+                        <td>ENGLISH8C</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Poetry and Magic</td>
+                        <td>ENGLISH8D</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Autofiction: Transforming the Story of the Self</td>
+                        <td>ENGLISH8E</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Science Fiction: Time (Travel) in Narrative</td>
+                        <td>ENGLISH8F</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Climate Lit: Survival, Activism, and Writing 'The Natural World'</td>
+                        <td>ENGLISH8G</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Autobiographical Writing</td>
+                        <td>ENGLISH8H</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>American Sports Literature: Critical and Personal Perspectives</td>
+                        <td>ENGLISH8J</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fiction Writing</td>
+                        <td>ENGLISH90</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Story of a Story: Asian American Fiction (A Creative Writing Workshop)</td>
+                        <td>ENGLISH90A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Creative Writing: The Magic of Baseball in Film & Fiction</td>
+                        <td>ENGLISH90AX</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>DCI Sports Writing</td>
+                        <td>ENGLISH90DC</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>First Chapters</td>
+                        <td>ENGLISH90FC</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Humor Writing Workshop</td>
+                        <td>ENGLISH90H</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Latine Stories</td>
+                        <td>ENGLISH90L</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Queer Stories</td>
+                        <td>ENGLISH90M</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sports Writing</td>
+                        <td>ENGLISH90Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Quantum Narratives:Writing Fiction about Science, Philosophy and Human Experience in the Quantum Age</td>
+                        <td>ENGLISH90QN</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>American Road Trip</td>
+                        <td>ENGLISH90R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reading and Writing Science Fiction</td>
+                        <td>ENGLISH90S</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fiction Writing</td>
+                        <td>ENGLISH90V</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Writing Mystical, Spiritual, and Altered States: A Workshop</td>
+                        <td>ENGLISH90WM</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Creative Nonfiction</td>
+                        <td>ENGLISH91</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Asian American Autobiography</td>
+                        <td>ENGLISH91A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Creative Writing & Science: The Artful Interpreter</td>
+                        <td>ENGLISH91AI</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>DCI Writing the Memoir</td>
+                        <td>ENGLISH91DC</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Nature Writing</td>
+                        <td>ENGLISH91NW</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Creative Nonfiction</td>
+                        <td>ENGLISH91V</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reading and Writing Poetry</td>
+                        <td>ENGLISH92</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Contemporary Black Poetry and Poetics</td>
+                        <td>ENGLISH92BP</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Poems of Love and Sexuality</td>
+                        <td>ENGLISH92L</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reading and Writing Poetry</td>
+                        <td>ENGLISH92V</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The American Road Trip</td>
+                        <td>ENGLISH93Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Future is Feminine</td>
+                        <td>ENGLISH94Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Many Wizards of Oz</td>
+                        <td>ENGLISH95Q</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Creative Expression in Writing</td>
+                        <td>ENGLISH9CE</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fire Stories: Narrative in the Digital Age</td>
+                        <td>ENGLISH9CFS</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Inspired by Science: A Workshop "Oceans Edition"</td>
+                        <td>ENGLISH9CI</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Writing Off the Page: Songwriting, Film, and Spoken Word</td>
+                        <td>ENGLISH9CP</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>For Real: Writing Based on Interview and Documentary Sources</td>
+                        <td>ENGLISH9CR</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sustainable Narratives</td>
+                        <td>ENGLISH9CSN</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Creative Expression in Writing</td>
+                        <td>ENGLISH9CV</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Word/Art</td>
+                        <td>ENGLISH9CWA</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Humanities Research Intensive</td>
+                        <td>ENGLISH9R</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fight the Future: Speculative Fiction and Social Justice</td>
+                        <td>ENGLISH9SF</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Queer Poetics</td>
+                        <td>FEMGEN167A</td>
+                        <td>idk</td>
+                        <td>too hard</td>
+                        </tr>
+                        
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+
+      <div id="hiddeninfo">
+        <p id="unicolor">#8C1515</p>
+      </div>
+    </div>
+    <!-- put hidden info here for the JavaScript to get -->
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+                    <!-- Hover Script -->
+
+                    <script src="../../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../../static/js/animatetable.js"></script>
+                
+  </body>
+</html>

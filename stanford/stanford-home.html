@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="Explore Visualizations and Tabular Data for all 141 Degrees at UT Austin"
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, csv, .xlsx,pdf"
+    />
+
+    <meta name="author" content="DegreeView" />
+    <!-- end seo -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://storage.googleapis.com/degreeview/degreeviewimages/site_favicon.png"
+      type="image/png"
+    />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Stanford Home Page</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../static/css/main.css" />
+
+    <!-- Barlow Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons ( download icon from here is used) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- this is just testing -->
+
+    <!-- <link rel="stylesheet" href="utaustin-site/cssfiles/filterchaos.css" /> -->
+  </head>
+  <body>
+    <!-- this div basically has the entire site in it. Flex direction column -->
+    <div class="sitecontainer" id="unihomepage">
+      <!-- 
+      
+      -->
+      <div class="abovemainsite">
+        <div class="topnav">
+          <!-- this is empty but is just on the top to take up space for the color
+           KEEP THIS-->
+        </div>
+        <div class="biglogobox">
+          <img
+            class="biglogo"
+            src="utaustin-site/metaassets/logo5.png"
+            alt=""
+            id="biglogoid"
+          />
+        </div>
+      </div>
+      <!-- mainsite
+        contains right and left sections
+      -->
+      <div class="mainsite">
+        <!-- intro box that is -->
+        <div class="introbox">
+          <div class="intro-paragraph">
+            <p>Course data for Stanford University on DegreeView</p>
+          </div>
+        </div>
+        <!-- 3 buttons -->
+        <div class="middlenav">
+          <nav class="home_random_stats">
+            <ul>
+              <!-- keep in mind the entire li is clickable here -->
+              <li><a href="../aboutpage.html">About</a></li>
+              <li id="randompagebutton">
+                <a id="randomlink" href="">Random Page</a>
+              </li>
+              <li><a href="Stanfordstats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- this selector is only used for some schools -->
+
+        <div class="selector" style="display: none">
+          <div class="coursedata">
+            <a href="option1">Courses Data</a>
+          </div>
+
+          <div class="degreeplans" id="currentpage">Option 2</div>
+        </div>
+
+        <!-- 
+        
+        
+        
+        -->
+        <!-- now the departments -->
+        <!-- remember this template works in conjuction with the create_uni_homepage() function -->
+        <div class="homepage-div">
+          
+          <h2 class="letter-section">A</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/a/aeronauticsandastronautics.html">Aeronautics and Astronautics</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/africanandafrican-americanstudies.html">African and African-American Studies</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/africanstudies.html">African Studies</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/americanstudies.html">American Studies</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/anesthesiology.html">Anesthesiology</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/anesthesiology-perioperative-andpainmedicine.html">Anesthesiology, Perioperative, and Pain Medicine</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/anthropology.html">Anthropology</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/appliedphysics.html">Applied Physics</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/archaeology.html">Archaeology</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/art&arthistory.html">Art & Art History</a>
+            </li>
+            
+            <li>
+              <a href="departments/a/athletics-physicaleducation-andrecreation.html">Athletics, Physical Education, and Recreation</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">B</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/b/biochemistry.html">Biochemistry</a>
+            </li>
+            
+            <li>
+              <a href="departments/b/bioengineering.html">Bioengineering</a>
+            </li>
+            
+            <li>
+              <a href="departments/b/biology.html">Biology</a>
+            </li>
+            
+            <li>
+              <a href="departments/b/biomedicaldatascience.html">Biomedical Data Science</a>
+            </li>
+            
+            <li>
+              <a href="departments/b/biomedicalphysics.html">Biomedical Physics</a>
+            </li>
+            
+            <li>
+              <a href="departments/b/biophysics.html">Biophysics</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">C</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/c/cancerbiology.html">Cancer Biology</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/centerforhumanrightsandinternationaljustice.html">Center for Human Rights and International Justice</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/centerforpopulationhealthscience.html">Center for Population Health Science</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/centerforteachingandlearning.html">Center for Teaching and Learning</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/centerforturbulenceresearch.html">Center for Turbulence Research</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/chemicalandsystemsbiology.html">Chemical and Systems Biology</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/chemicalengineering.html">Chemical Engineering</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/chemistry.html">Chemistry</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/civilandenvironmentalengineering.html">Civil and Environmental Engineering</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/classics.html">Classics</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/clinicalinformaticsmanagement.html">Clinical Informatics Management</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/commhealth&preventionresrc.html">Comm Health & Prevention Resrc</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/communication.html">Communication</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/comparativeliterature.html">Comparative Literature</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/comparativemedicine.html">Comparative Medicine</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/comparativestudiesinraceandethnicity.html">Comparative Studies in Race and Ethnicity</a>
+            </li>
+            
+            <li>
+              <a href="departments/c/computerscience.html">Computer Science</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">D</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/d/datascience.html">Data Science</a>
+            </li>
+            
+            <li>
+              <a href="departments/d/departmentofmedicine.html">Department of Medicine</a>
+            </li>
+            
+            <li>
+              <a href="departments/d/developmentalbiology.html">Developmental Biology</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">E</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/e/earthandplanetarysciences.html">Earth and Planetary Sciences</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/earthsystems.html">Earth Systems</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/eastasianlanguagesandcultures.html">East Asian Languages and Cultures</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/eastasianstudies.html">East Asian Studies</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/economics.html">Economics</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/electricalengineering.html">Electrical Engineering</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/emergencymedicine.html">Emergency Medicine</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/emmettinterdiscproginenvironmentandresources.html">Emmett Interdisc Prog in Environment and Resources</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/energyscienceandengineering.html">Energy Science and Engineering</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/engineeringdean.html">Engineering Dean</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/english.html">English</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/environmentalearthsystemscience.html">Environmental Earth System Science</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/environmentalsocialsciences.html">Environmental Social Sciences</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/epidemiology.html">Epidemiology</a>
+            </li>
+            
+            <li>
+              <a href="departments/e/ethicsinsociety.html">Ethics in Society</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">F</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/f/feminist-gender-andsexualitystudies.html">Feminist, Gender, and Sexuality Studies</a>
+            </li>
+            
+            <li>
+              <a href="departments/f/frenchanditalian.html">French and Italian</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">G</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/g/genetics.html">Genetics</a>
+            </li>
+            
+            <li>
+              <a href="departments/g/geophysics.html">Geophysics</a>
+            </li>
+            
+            <li>
+              <a href="departments/g/germanstudies.html">German Studies</a>
+            </li>
+            
+            <li>
+              <a href="departments/g/graduateschoolofbusiness.html">Graduate School of Business</a>
+            </li>
+            
+            <li>
+              <a href="departments/g/graduateschoolofeducation.html">Graduate School of Education</a>
+            </li>
+            
+            <li>
+              <a href="departments/g/gynecologyandobstetrics.html">Gynecology and Obstetrics</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">H</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/h/h&sdivisionofliteratures-cultures-&languages.html">H&S Division of Literatures, Cultures, & Languages</a>
+            </li>
+            
+            <li>
+              <a href="departments/h/hassoplattnerinstituteofdesign.html">Hasso Plattner Institute of Design</a>
+            </li>
+            
+            <li>
+              <a href="departments/h/healthpolicy.html">Health Policy</a>
+            </li>
+            
+            <li>
+              <a href="departments/h/history.html">History</a>
+            </li>
+            
+            <li>
+              <a href="departments/h/historyandphilosophyofscience.html">History and Philosophy of Science</a>
+            </li>
+            
+            <li>
+              <a href="departments/h/hooverinstitution.html">Hoover Institution</a>
+            </li>
+            
+            <li>
+              <a href="departments/h/hopkinsmarinestation.html">Hopkins Marine Station</a>
+            </li>
+            
+            <li>
+              <a href="departments/h/humanbiology.html">Human Biology</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">I</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/i/iberianandlatinamericancultures.html">Iberian and Latin American Cultures</a>
+            </li>
+            
+            <li>
+              <a href="departments/i/immunology.html">Immunology</a>
+            </li>
+            
+            <li>
+              <a href="departments/i/instforresearchinsocialscience.html">Inst for Research  in Social Science</a>
+            </li>
+            
+            <li>
+              <a href="departments/i/instituteforcomputationalandmathematicalengr.html">Institute for Computational and Mathematical Engr</a>
+            </li>
+            
+            <li>
+              <a href="departments/i/instituteforinternationalstudies.html">Institute for International Studies</a>
+            </li>
+            
+            <li>
+              <a href="departments/i/interdisciplinarystudiesinhumanities.html">Interdisciplinary Studies in Humanities</a>
+            </li>
+            
+            <li>
+              <a href="departments/i/internationalpolicy.html">International Policy</a>
+            </li>
+            
+            <li>
+              <a href="departments/i/internationalrelations.html">International Relations</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">J</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/j/jewishstudies.html">Jewish Studies</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">L</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/l/languagecenter.html">Language Center</a>
+            </li>
+            
+            <li>
+              <a href="departments/l/latin-americanstudies.html">Latin-American Studies</a>
+            </li>
+            
+            <li>
+              <a href="departments/l/lawschool.html">Law School</a>
+            </li>
+            
+            <li>
+              <a href="departments/l/linguistics.html">Linguistics</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">M</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/m/managementscienceandengineering.html">Management Science and Engineering</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/materialsscienceandengineering.html">Materials Science and Engineering</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/mathematicalandcomputationalscience.html">Mathematical and Computational Science</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/mathematics.html">Mathematics</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/mechanicalengineering.html">Mechanical Engineering</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/microbiologyandimmunology.html">Microbiology and Immunology</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/mlaprogram.html">MLA Program</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/modernthoughtandliterature.html">Modern Thought and Literature</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/molecularandcellularphysiology.html">Molecular and Cellular Physiology</a>
+            </li>
+            
+            <li>
+              <a href="departments/m/music.html">Music</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">N</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/n/neurobiology.html">Neurobiology</a>
+            </li>
+            
+            <li>
+              <a href="departments/n/neurologyandneurologicalsciences.html">Neurology and Neurological Sciences</a>
+            </li>
+            
+            <li>
+              <a href="departments/n/neurosciencesprogram.html">Neurosciences Program</a>
+            </li>
+            
+            <li>
+              <a href="departments/n/neurosurgery.html">Neurosurgery</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">O</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/o/oceans.html">Oceans</a>
+            </li>
+            
+            <li>
+              <a href="departments/o/ophthalmology.html">Ophthalmology</a>
+            </li>
+            
+            <li>
+              <a href="departments/o/orthopedicsurgery.html">Orthopedic Surgery</a>
+            </li>
+            
+            <li>
+              <a href="departments/o/otolaryngology.html">Otolaryngology</a>
+            </li>
+            
+            <li>
+              <a href="departments/o/overseasstudiesprogram.html">Overseas Studies Program</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">P</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/p/pathology.html">Pathology</a>
+            </li>
+            
+            <li>
+              <a href="departments/p/pediatrics.html">Pediatrics</a>
+            </li>
+            
+            <li>
+              <a href="departments/p/philosophy.html">Philosophy</a>
+            </li>
+            
+            <li>
+              <a href="departments/p/physicianassistantstudies.html">Physician Assistant Studies</a>
+            </li>
+            
+            <li>
+              <a href="departments/p/physics.html">Physics</a>
+            </li>
+            
+            <li>
+              <a href="departments/p/politicalscience.html">Political Science</a>
+            </li>
+            
+            <li>
+              <a href="departments/p/programinwritingandrhetoric.html">Program in Writing and Rhetoric</a>
+            </li>
+            
+            <li>
+              <a href="departments/p/psychiatryandbehavioralsciences.html">Psychiatry and Behavioral Sciences</a>
+            </li>
+            
+            <li>
+              <a href="departments/p/psychology.html">Psychology</a>
+            </li>
+            
+            <li>
+              <a href="departments/p/publicpolicy.html">Public Policy</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">R</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/r/radiationoncology.html">Radiation Oncology</a>
+            </li>
+            
+            <li>
+              <a href="departments/r/radiology.html">Radiology</a>
+            </li>
+            
+            <li>
+              <a href="departments/r/religiousstudies.html">Religious Studies</a>
+            </li>
+            
+            <li>
+              <a href="departments/r/russian-easteuropean-andeurasianstudies.html">Russian, East European, and Eurasian Studies</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">S</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/s/schoolofearth-energyandenvironmentalsciences.html">School of Earth, Energy and Environmental Sciences</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/schoolofengineering.html">School of Engineering</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/schoolofhumanities&sciences.html">School of Humanities & Sciences</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/schoolofmedicine.html">School of Medicine</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/science-technology-andsociety.html">Science, Technology, and Society</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/slacnationalacceleratorlaboratory.html">SLAC National Accelerator Laboratory</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/slaviclanguagesandliteratures.html">Slavic Languages and Literatures</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/sociology.html">Sociology</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stanfordartsinstitute.html">Stanford Arts Institute</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stanfordcancerinstitute.html">Stanford Cancer Institute</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stanfordcenterforclinicalresearch.html">Stanford Center for Clinical Research</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stanforddoerrschoolofsustainability.html">Stanford Doerr School of Sustainability</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stanfordglobalstudies.html">Stanford Global Studies</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stanfordinnewyork.html">Stanford in New York</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stanfordinwashington.html">Stanford in Washington</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stanfordprograminaustralia.html">Stanford Program in Australia</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stanfordprograminbeijing.html">Stanford Program in Beijing</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stanfordprograminberlin.html">Stanford Program in Berlin</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stanfordprogramincapetown.html">Stanford Program in Cape Town</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stanfordprograminflorence.html">Stanford Program in Florence</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stanfordprograminhongkong.html">Stanford Program in Hong Kong</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stanfordprograministanbul.html">Stanford Program in Istanbul</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stanfordprograminkyoto.html">Stanford Program in Kyoto</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stanfordprograminkyotocenter.html">Stanford Program in Kyoto Center</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stanfordprograminmadrid.html">Stanford Program in Madrid</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stanfordprograminoxford.html">Stanford Program in Oxford</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stanfordprograminparis.html">Stanford Program in Paris</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stanfordprograminsantiago.html">Stanford Program in Santiago</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/statistics.html">Statistics</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/stemcellbioregenerativemedicine.html">Stem Cell Bio Regenerative Medicine</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/structuralbiology.html">Structural Biology</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/structuredliberaleducation.html">Structured Liberal Education</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/surgery.html">Surgery</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/sustainabilityscienceandpractice.html">Sustainability Science and Practice</a>
+            </li>
+            
+            <li>
+              <a href="departments/s/symbolicsystems.html">Symbolic Systems</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">T</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/t/theaterandperformancestudies.html">Theater and Performance Studies</a>
+            </li>
+            
+            <li>
+              <a href="departments/t/translationalresandappmed.html">Translational Res and App Med</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">U</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/u/urbanstudies.html">Urban Studies</a>
+            </li>
+            
+            <li>
+              <a href="departments/u/urology.html">Urology</a>
+            </li>
+            
+          </ul>
+          
+          <h2 class="letter-section">V</h2>
+
+          <ul>
+            
+            <li>
+              <a href="departments/v/viceprovostforundergraduateeducation.html">Vice Provost for Undergraduate Education</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </div>
+
+      <!-- end intro box -->
+
+      <!-- end left content -->
+
+      <!-- end main mainsite -->
+      <!-- this goes under main site( no way) -->
+      <div class="undermainsite"></div>
+      <!-- footer now -->
+      <footer>
+        <div class="footerleft">
+          <div class="links">
+            <div class="tooltip">
+              <a href="aboutpage.html">About</a>
+            </div>
+
+            <div class="tooltip">
+              <a href="#biglogoid">Home</a>
+            </div>
+
+            <div class="tooltip">
+              <a href="exceltemplates.html">Excel Templates Breakdown</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footerright">
+          <img
+            id="smalllogo"
+            src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+            alt="smalldegreeviewlogo"
+          />
+          <p id="statement">DegreeView 2025</p>
+        </div>
+      </footer>
+
+      <div id="hiddeninfo">
+        <!-- this is no longer needed -->
+        <!-- commented cause idk maybe one day or something -->
+        <!-- <p id="departmentpagelinks_jsonpath">
+          
+        </p> -->
+      </div>
+    </div>
+    
+        <script src="../static/js/headingcolorchange.js"></script>
+        <!-- script for random button  -->
+        <script src="../static/js/randompage.js"></script>
+        
+  </body>
+</html>

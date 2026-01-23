@@ -1,0 +1,1509 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+</script>
+<!-- End Google Tag Manager -->
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, Psychology"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Psychology UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+<!-- test comment -->
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li>
+                <a href="../../stanford-home.html"> Stanford Home</a>
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../p/p-departments.html"
+                  >P Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">Psychology</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+              <li><a href="../../../ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="departmenttitle">Psychology</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="original">original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/stanford/psychology/excel-files/psychology-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="Stanford Theme">Stanford Theme Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/stanford/psychology/excel-files/psychology-stanford-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li style="display: none">
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Psychology Courses with "Psychology"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              Psychology Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">158</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                The New Ecology of Early Childhood: Real World Implications for Policy, Research, and Practice
+              </div>
+            </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                94
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Longevity
+              </div>
+            </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                9
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                0, 0.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                39
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Psychology Courses with "Psychology" in their name
+              </div>
+              <div class="statscontent">
+                28, 17.7%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Psychology Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Psychology</td>
+
+            <td colspan="2">Stanford University</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
+
+                    
+                        <tr>
+                        <td>Introduction to Psychology</td>
+                        <td>PSYCH1</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Statistical Methods: Precalculus</td>
+                        <td>PSYCH10</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Longevity</td>
+                        <td>PSYCH102</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intergroup Communication</td>
+                        <td>PSYCH103</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intergroup Communication Facilitation</td>
+                        <td>PSYCH103F</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ghosts, Gods, Spirits, and Companion AI: Talking with Non-Human Others Across the World</td>
+                        <td>PSYCH118A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Literature and the Brain</td>
+                        <td>PSYCH118F</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Belonging in a Diverse Society</td>
+                        <td>PSYCH11N</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Language Neuroscience Seminar</td>
+                        <td>PSYCH122</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>What Makes You Tick? An Introduction to Affective Science</td>
+                        <td>PSYCH124</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Research Methods in Psychology</td>
+                        <td>PSYCH125</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Self Theories</td>
+                        <td>PSYCH12N</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>How to Think Like a Shrink</td>
+                        <td>PSYCH131A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Developing Mind: How Humans Learn, Think, and Communicate</td>
+                        <td>PSYCH131S</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Language and Thought</td>
+                        <td>PSYCH132</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Beyond Willpower: Social Psychology, Identity, and Behavior Change</td>
+                        <td>PSYCH132S</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Brain and Decision Making</td>
+                        <td>PSYCH134</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Psychology of Scarcity: Its Implications for Psychological Functioning and Education</td>
+                        <td>PSYCH136</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Wise Interventions</td>
+                        <td>PSYCH138</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Data Science and the Science of Learning</td>
+                        <td>PSYCH139</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Psychology Beyond Undergrad</td>
+                        <td>PSYCH139B</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Bird Brains and Monkey Business</td>
+                        <td>PSYCH13Q</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Psycholinguistics</td>
+                        <td>PSYCH140</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Special Topics in Adolescent Mental Health</td>
+                        <td>PSYCH142A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Sociocultural Shaping of Psychological Experience</td>
+                        <td>PSYCH144</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Monitoring the Crisis</td>
+                        <td>PSYCH145A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Observation of Children</td>
+                        <td>PSYCH146</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Development in Early Childhood</td>
+                        <td>PSYCH147</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>How did you get here?</td>
+                        <td>PSYCH14N</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ensemble Sonification of Temporal Data</td>
+                        <td>PSYCH153D</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Judgment and Decision-Making</td>
+                        <td>PSYCH154</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Comparative Studies in Race and Ethnicity</td>
+                        <td>PSYCH155</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Narratives of Trauma and Recovery</td>
+                        <td>PSYCH156A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Becoming Kinder</td>
+                        <td>PSYCH15N</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Community Engaged Psychology and Education Field Experience</td>
+                        <td>PSYCH161</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Brain decoding</td>
+                        <td>PSYCH164</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Emotion Regulation</td>
+                        <td>PSYCH168</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Seminar on Memory</td>
+                        <td>PSYCH169</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Psychology of Communication About Politics in America</td>
+                        <td>PSYCH170</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Research Seminar on Aging</td>
+                        <td>PSYCH171</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Developmental Science of Social Cognition</td>
+                        <td>PSYCH175</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Seminar on Racial Bias and Structural Inequality</td>
+                        <td>PSYCH180</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Practicum in Teaching PSYCH 1</td>
+                        <td>PSYCH182</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>SPARQ Lab</td>
+                        <td>PSYCH183</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Obedience and Otherness</td>
+                        <td>PSYCH185A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Practicum on Racial Bias and the Law</td>
+                        <td>PSYCH188</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Stanford Center on Longevity Practicum</td>
+                        <td>PSYCH189</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Public Service for Social Impact: Pathways to Purposeful Careers</td>
+                        <td>PSYCH190A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reading and Special Work</td>
+                        <td>PSYCH194</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Special Laboratory Projects</td>
+                        <td>PSYCH195</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Capstone: Psych Applied</td>
+                        <td>PSYCH196</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Senior Honors Research</td>
+                        <td>PSYCH198</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Individually Supervised Practicum</td>
+                        <td>PSYCH199</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cognitive Neuroscience</td>
+                        <td>PSYCH202</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intergroup Communication Facilitation</td>
+                        <td>PSYCH203F</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Human Neuroimaging Methods</td>
+                        <td>PSYCH204A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Computational Neuroimaging: Data Analyses</td>
+                        <td>PSYCH204B</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Foundations of Cognition</td>
+                        <td>PSYCH205</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cortical Plasticity: Perception and Memory</td>
+                        <td>PSYCH206</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Professional Seminar for First-Year Ph.D. Graduate Students</td>
+                        <td>PSYCH207</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Neural Network Models of Cognition</td>
+                        <td>PSYCH209</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>How Beliefs Create Reality</td>
+                        <td>PSYCH20N</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Developmental Psychology</td>
+                        <td>PSYCH211</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Social Psychology</td>
+                        <td>PSYCH212</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Affective Science</td>
+                        <td>PSYCH213</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Mind, Culture, and Society</td>
+                        <td>PSYCH215</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Public Policy and Social Psychology: Implications and Applications</td>
+                        <td>PSYCH216</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Topics and Methods Related to Cultural Psychology</td>
+                        <td>PSYCH217</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>How to Make a Racist</td>
+                        <td>PSYCH21N</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Probabilistic models of cognition: Reasoning and Learning</td>
+                        <td>PSYCH220A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Probabilistic Models of Cognition: Language</td>
+                        <td>PSYCH220B</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Image Systems Engineering</td>
+                        <td>PSYCH221</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Language Neuroscience Seminar</td>
+                        <td>PSYCH222</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Social Norms</td>
+                        <td>PSYCH223</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Mapping the human visual system</td>
+                        <td>PSYCH224</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Triangulating Intelligence: Melding Neuroscience, Psychology, and AI</td>
+                        <td>PSYCH225</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Models and Mechanisms of Memory</td>
+                        <td>PSYCH226</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Seminar in Psycholinguistics: Advanced Topics</td>
+                        <td>PSYCH227</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The New Ecology of Early Childhood: Real World Implications for Policy, Research, and Practice</td>
+                        <td>PSYCH228</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cognitive Technologies: The Past, Present, and Future of Human Learning</td>
+                        <td>PSYCH229</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Computational Models of the Creative Process</td>
+                        <td>PSYCH230</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Questionnaire Design for Surveys and Laboratory Experiments: Social and Cognitive Perspectives</td>
+                        <td>PSYCH231</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Brain and Decision Making</td>
+                        <td>PSYCH232</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Understanding Depression</td>
+                        <td>PSYCH234</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Human Motivation</td>
+                        <td>PSYCH235</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Mind Reading with Movies and Neuroimaging</td>
+                        <td>PSYCH236</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Psychology of Scarcity: Its Implications for Psychological Functioning and Education</td>
+                        <td>PSYCH236A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Wise Interventions</td>
+                        <td>PSYCH238</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Big Questions About Small Brains</td>
+                        <td>PSYCH240</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Curiosity in Artificial Intelligence</td>
+                        <td>PSYCH240A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>A modern explainable AI approach to Theoretical Neuroscience</td>
+                        <td>PSYCH242</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>General Development Seminar</td>
+                        <td>PSYCH243</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Designing Psychologically Wise Interventions</td>
+                        <td>PSYCH244</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Understanding Racial and Ethnic Identity Development</td>
+                        <td>PSYCH245A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Topics in Natural and Artificial Intelligence</td>
+                        <td>PSYCH247</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Large-Scale Neural Network Modeling for Neuroscience</td>
+                        <td>PSYCH249</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Topics in Neurodiversity: Design Thinking Approaches</td>
+                        <td>PSYCH249B</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Neuroforecasting</td>
+                        <td>PSYCH24N</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>High-level Vision: From Neurons to Deep Neural Networks</td>
+                        <td>PSYCH250</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Experimental Methods</td>
+                        <td>PSYCH251</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Statistical Methods for Behavioral and Social Sciences</td>
+                        <td>PSYCH252</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Multivariate Analysis, Measurement, and Study of Change in Social Science Research</td>
+                        <td>PSYCH253</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Statistical Modeling for Behavioral and Neural Sciences</td>
+                        <td>PSYCH254A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Affective Neuroscience</td>
+                        <td>PSYCH257</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Race and Natural Language Processing</td>
+                        <td>PSYCH257A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Seminar in Social Psychology Research</td>
+                        <td>PSYCH258</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>African American Child and Adolescent Mental Health: An Ecological Approach</td>
+                        <td>PSYCH261</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Metacognition: What Is It, What Is It For, And What Do We Know About It?</td>
+                        <td>PSYCH262</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Neuroscience of Visual Intelligence</td>
+                        <td>PSYCH263</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Unleashing Personal Potential: Behavioral Science and Design Thinking Applied to Self</td>
+                        <td>PSYCH264</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Social Psychology and Social Change</td>
+                        <td>PSYCH265</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Current Debates in Learning and Memory</td>
+                        <td>PSYCH266</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Bids for Scale in Psychological Science</td>
+                        <td>PSYCH267A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advancing Cognitive Science and AI with Cognitive-AI Benchmarking</td>
+                        <td>PSYCH267B</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Emotion Regulation</td>
+                        <td>PSYCH268</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Seminar in Affective Science</td>
+                        <td>PSYCH269</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Social Psychology of Contemporary American Politics</td>
+                        <td>PSYCH270</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Communicating Psychology</td>
+                        <td>PSYCH271</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Psychology and American Indian/Alaska Native Mental Health</td>
+                        <td>PSYCH272</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Changing Mindsets and Contexts: How to Create Authentic, Lasting Improvement</td>
+                        <td>PSYCH273</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Research</td>
+                        <td>PSYCH275</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Research</td>
+                        <td>PSYCH276</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Psychology of the Climate Crisis</td>
+                        <td>PSYCH278</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Psychological Foundations of Climate Solutions</td>
+                        <td>PSYCH278B</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Measuring Learning in the Brain</td>
+                        <td>PSYCH279</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Practicum in Teaching</td>
+                        <td>PSYCH281</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Practicum in Teaching PSYCH 1</td>
+                        <td>PSYCH282</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Seminar in Political Psychology</td>
+                        <td>PSYCH284</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Anti-Racist Psychologist</td>
+                        <td>PSYCH285</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>How Can We Enforce Good Norms in Inclusive Ways?</td>
+                        <td>PSYCH285A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Seminar: Preparing for Leadership in Early Childhood Policy, Research, and Practice</td>
+                        <td>PSYCH286A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Rethinking the Development of the Self</td>
+                        <td>PSYCH287A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Longitudinal Data Analysis in Social Science Research</td>
+                        <td>PSYCH289</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Cultural Shaping of Emotion</td>
+                        <td>PSYCH28N</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Natural Language Processing in the Social Sciences</td>
+                        <td>PSYCH290</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Topics in Emotion Regulation</td>
+                        <td>PSYCH292</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>What Makes a Good Explanation? Psychological and Philosophical Perspectives</td>
+                        <td>PSYCH293</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Longitudinal Design and Data Analysis</td>
+                        <td>PSYCH294</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Data Science for Neuroscience</td>
+                        <td>PSYCH294N</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Levels of Analysis in Cognitive Science</td>
+                        <td>PSYCH296</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Research Methods in Social Psychology and Allied Fields</td>
+                        <td>PSYCH297</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Studies in Health Psychology</td>
+                        <td>PSYCH298</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Individually Supervised Practicum</td>
+                        <td>PSYCH299</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Perception</td>
+                        <td>PSYCH30</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Science of Diverse Communities</td>
+                        <td>PSYCH30N</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Democracy and Disagreement</td>
+                        <td>PSYCH31A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Minds and Machines</td>
+                        <td>PSYCH35</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Psychology Beyond the Classroom</td>
+                        <td>PSYCH39SI</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Learning and Memory</td>
+                        <td>PSYCH45</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Cognitive Neuroscience</td>
+                        <td>PSYCH50</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Practicum in Teaching: Intro to Cognitive Neuroscience</td>
+                        <td>PSYCH50A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Developmental Psychology</td>
+                        <td>PSYCH60</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Developmental Psychology Section</td>
+                        <td>PSYCH60A</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Self and Society: Introduction to Social Psychology</td>
+                        <td>PSYCH70</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Personality and Affective Science</td>
+                        <td>PSYCH80</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>PhD TGR Dissertation</td>
+                        <td>PSYCH802</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Clinical Psychology: A Neuroscience Perspective</td>
+                        <td>PSYCH90</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Abnormal Psychology</td>
+                        <td>PSYCH95</td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                        
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+
+      <div id="hiddeninfo">
+        <p id="unicolor">#8C1515</p>
+      </div>
+    </div>
+    <!-- put hidden info here for the JavaScript to get -->
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+                    <!-- Hover Script -->
+
+                    <script src="../../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../../static/js/animatetable.js"></script>
+                
+  </body>
+</html>

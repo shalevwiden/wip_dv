@@ -261,6 +261,15 @@ $statslineborderscolor: #1c94e5;
           background-color: white;
         }
       }
+      .statsline.shortbox {
+        .statsname {
+          width: 80%;
+        }
+        .statscontent {
+          font-size: 25px;
+          width: 20%;
+        }
+      }
       #coursecount {
         .statsname {
           width: 60%;
