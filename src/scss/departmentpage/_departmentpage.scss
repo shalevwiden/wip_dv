@@ -34,13 +34,19 @@ This is all nav bar stuff:*/
 // no body cause thats handles in main.scss
 
 .sitecontainer#departmentpage {
-  min-height: 100vh;
+  @include mainsite.styles;
+  @include undermainsite.styles;
+  @include departmentcoursestable.styles;
 
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1 1;
+  & {
+    min-height: 100vh;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1;
+  }
 
   /* 
 Above mainsite and its children
@@ -68,16 +74,6 @@ Above mainsite and its children
     filter: drop-shadow(4px 0px 2px rgb(67, 66, 66));
   }
 
-  .breadcrumbs #current {
-    /* this is the current page the user is on */
-    text-decoration: none;
-
-    color: rgb(200, 74, 12);
-    font-size: 16px;
-    font-weight: bold;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-
   .breadcrumbs {
     background-color: #eee;
     width: 70%;
@@ -96,29 +92,38 @@ Above mainsite and its children
     column-gap: 19px;
     list-style-type: none;
     color: #081a75;
+    li {
+      &#current {
+        /* this is the current page the user is on */
+        text-decoration: none;
+
+        color: rgb(200, 74, 12);
+        font-size: 16px;
+        font-weight: bold;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      a {
+        text-decoration: none;
+        color: #081a75;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        &:hover {
+          text-decoration: underline;
+          text-decoration-thickness: 4px;
+          text-underline-offset: 3px;
+        }
+      }
+    }
+    /* this is for the icon in the breadcrumbs */
+    .fa-chevron-right {
+      vertical-align: middle; /* or baseline, or -2px tweak */
+      font-size: 12px; /* adjust size */
+      margin: 5px 0 0px 0; /* spacing */
+      color: #081a75;
+    }
   }
 
-  .breadcrumbs ul li a {
-    text-decoration: none;
-    color: #081a75;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-  .breadcrumbs ul li a:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 3px;
-  }
-
-  /* this is for the icon in the breadcrumbs */
-  .fa-chevron-right {
-    vertical-align: middle; /* or baseline, or -2px tweak */
-    font-size: 12px; /* adjust size */
-    margin: 5px 0 0px 0; /* spacing */
-    color: #081a75;
-  }
   /* 
 
 still in top nav, but now the homeandabout section

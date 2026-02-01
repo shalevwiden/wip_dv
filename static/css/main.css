@@ -1,6 +1,10 @@
 /* Idea for this one:
 Basically everything is flex. To make it responsive switch direction from flex row to flex column
 */
+body.darkmode {
+  filter: invert(1) hue-rotate(180deg);
+}
+
 @keyframes scaleup {
   0% {
     transform: scale(1);
@@ -222,6 +226,9 @@ footer #smalllogo:hover {
   opacity: 1;
 }
 
+/* Idea for this one:
+Basically everything is flex. To make it responsive switch direction from flex row to flex column
+*/
 footer {
   height: 220px;
   width: 100%;
@@ -310,394 +317,18 @@ footer a:hover {
   border: 3px solid rgb(15, 29, 89);
 }
 
+/* Idea for this one:
+Basically everything is flex. To make it responsive switch direction from flex row to flex column
+*/
 :root {
   --secondarynavy: #153f66;
   --lighterblue: #284dbc;
   --statsnameorder: 1;
 }
 
-.mainsite {
-  display: flex;
-  flex-direction: row;
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-  flex: 1 1 350px;
-  border-top: 10px solid var(--secondarynavy);
-  border-bottom: 10px solid var(--secondarynavy);
-}
-.mainsite .leftcontent {
-  /* this affects the width */
-  flex: 40%;
-  background-color: #ffffff;
-  padding: 15px;
-  padding-top: 120px;
-  padding-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  row-gap: 35px;
-}
-.mainsite .leftcontent .filescontainer {
-  border: 4px dashed rgb(16, 11, 82);
-  border-radius: 26px;
-  width: 92%;
-  padding: 20px 29px;
-}
-.mainsite .leftcontent .filescontainer h3 {
-  color: #284dbc;
-}
-.mainsite .leftcontent .filescontainer .filesname {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-}
-.mainsite .leftcontent .filescontainer .filesname i {
-  font-size: 20px;
-}
-.mainsite .leftcontent .filescontainer ul {
-  list-style-type: none; /* Removes bullets */
-  /* indent */
-  padding-left: 30px;
-}
-.mainsite .leftcontent .filescontainer ul .linkbox {
-  display: flex;
-  flex-direction: row;
-  /* make the download text all even */
-  justify-content: space-between;
-  align-items: center;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
-}
-@media screen and (max-width: 700px) {
-  .mainsite .leftcontent .filescontainer ul .linkbox {
-    display: flex;
-    flex-direction: column;
-    /* make the download text all even */
-    justify-content: center;
-    align-items: flex-start;
-    row-gap: 20px;
-  }
-}
-.mainsite .leftcontent .filescontainer ul .linkbox p:first-of-type {
-  margin-top: 10px;
-  font-weight: bold;
-  max-width: 137px;
-}
-.mainsite .leftcontent .filescontainer ul .linkbox #underconstruction {
-  display: block; /* or block if you want it on its own line */
-  margin-top: 10px;
-  margin-bottom: 3px;
-  color: rgb(209, 76, 14);
-  border-bottom: 2px solid rgb(209, 76, 14);
-}
-.mainsite .leftcontent .filescontainer ul .linkbox a i {
-  color: rgb(21, 21, 69);
-}
-.mainsite .leftcontent .filescontainer ul .linkbox span#original {
-  color: white;
-  -webkit-text-stroke: 0.5px black; /* outline around text */
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px; /* pushes the underline away from the text */
-  text-decoration-color: #284dbc; /* underline is red, text can be another color */
-}
-.mainsite .leftcontent .filescontainer ul .linkbox span#darktheme {
-  color: #041442;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px; /* pushes the underline away from the text */
-  text-decoration-color: #041442; /* underline is red, text can be another color */
-}
-.mainsite .leftcontent .filescontainer ul .linkbox span#greentheme {
-  color: #238808;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px; /* pushes the underline away from the text */
-  text-decoration-color: #238808; /* underline is red, text can be another color */
-}
-.mainsite .leftcontent .filescontainer ul .linkbox span#deserttheme {
-  color: #603303;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px; /* pushes the underline away from the text */
-  text-decoration-color: #603303; /* underline is red, text can be another color */
-}
-.mainsite .leftcontent .filescontainer ul .linkbox span#greyscaletheme {
-  color: #5f6470;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px; /* pushes the underline away from the text */
-  text-decoration-color: #2e3138; /* underline is red, text can be another color */
-}
-.mainsite .leftcontent .filescontainer ul .linkbox span#oceantheme {
-  color: #033f60;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px; /* pushes the underline away from the text */
-  text-decoration-color: #033f60; /* underline is red, text can be another color */
-}
-.mainsite .leftcontent .filescontainer ul .linkbox span#pasteltheme {
-  color: #925c8b;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px; /* pushes the underline away from the text */
-  text-decoration-color: #925c8b; /* underline is red, text can be another color */
-}
-.mainsite .leftcontent .filescontainer ul .linkbox span#primarytheme {
-  color: rgb(249, 55, 55);
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px; /* pushes the underline away from the text */
-  text-decoration-color: #d8024d; /* underline is red, text can be another color */
-}
-.mainsite .leftcontent .filescontainer ul .linkbox span#blacktheme {
-  color: #000000;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px; /* pushes the underline away from the text */
-  text-decoration-color: #000; /* underline is red, text can be another color */
-}
-.mainsite .leftcontent .filescontainer ul .linkbox span#neontheme {
-  color: #dd098b;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px; /* pushes the underline away from the text */
-  text-decoration-color: #dd098b; /* underline is red, text can be another color */
-}
-.mainsite .rightcontent {
-  flex: 60%;
-  background-color: rgb(113, 179, 185);
-  padding: 0px 20px 30px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  height: auto;
-}
-@media screen and (max-width: 700px) {
-  .mainsite .rightcontent {
-    padding-top: 40px;
-  }
-  .mainsite .rightcontent .displaynamebox {
-    margin-bottom: 50px;
-  }
-  .mainsite .rightcontent .displaynamebox #displayname {
-    font-size: 20px;
-    overflow-wrap: anywhere; /* lets words break anywhere if needed */
-    word-break: break-word; /* fallback */
-  }
-}
-.mainsite .rightcontent .displaynamebox {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  /* padding top 30 plus this height 50  equals 80 which is padding top of right content */
-  height: 120px;
-  width: 100%;
-}
-.mainsite .rightcontent .displaynamebox #displayname {
-  color: white;
-  font-size: 25px;
-  margin: 0; /* reset browser h3 margins */
-  margin-bottom: 20px;
-}
-.mainsite .rightcontent .displaynamebox #charticon {
-  font-size: 30px;
-  color: white;
-  display: inline;
-  margin: 0 0 0 0;
-  margin-left: -40px; /* small space between text and icon */
-  margin-bottom: 20px;
-  vertical-align: middle; /* aligns icon with text baseline */
-}
-.mainsite .rightcontent .departmentstats {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  justify-content: flex-start;
-  width: 90%;
-  height: auto;
-  border-right: 10px solid #1c94e5;
-  border-left: 0px solid white;
-}
-@media screen and (max-width: 700px) {
-  .mainsite .rightcontent .departmentstats section.statsline {
-    font-size: 14px;
-    height: 200px !important;
-  }
-}
-.mainsite .rightcontent .departmentstats section.statsline {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  justify-content: center;
-  gap: 0;
-  border-top: 10px solid #1c94e5;
-  border-bottom: 10px solid #1c94e5;
-  width: 100%;
-  height: 100px;
-  font-weight: bold;
-  font-family: Helvetica, sans-serif;
-  align-items: stretch;
-}
-.mainsite .rightcontent .departmentstats section.statsline div.statsname {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  gap: 0;
-  width: 30%;
-  margin: 0 10px;
-  order: var(--statsnameorder);
-}
-.mainsite .rightcontent .departmentstats section.statsline div.statscontent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  gap: 0;
-  width: 70%;
-  padding: 0px 10px;
-  background-color: white;
-}
-.mainsite .rightcontent .departmentstats .statsline.shortbox .statsname {
-  width: 80%;
-}
-.mainsite .rightcontent .departmentstats .statsline.shortbox .statscontent {
-  font-size: 25px;
-  width: 20%;
-}
-.mainsite .rightcontent .departmentstats #coursecount .statsname {
-  width: 60%;
-}
-.mainsite .rightcontent .departmentstats #coursecount .statscontent {
-  font-size: 25px;
-  width: 40%;
-}
-.mainsite .rightcontent .departmentstats #longestname .statscontent {
-  font-size: 15px;
-}
-.mainsite .rightcontent .departmentstats #shortestname .statsname {
-  width: 60%;
-}
-.mainsite .rightcontent .departmentstats #shortestname .statscontent {
-  width: 40%;
-}
-.mainsite .rightcontent .departmentstats #uppercount .statscontent {
-  font-size: 25px;
-  width: 40%;
-}
-.mainsite .rightcontent .departmentstats #uppercount .statsname {
-  width: 60%;
-}
-.mainsite .rightcontent .departmentstats #lowercount .statscontent {
-  font-size: 25px;
-  width: 40%;
-}
-.mainsite .rightcontent .departmentstats #lowercount .statsname {
-  width: 60%;
-}
-.mainsite .rightcontent .departmentstats #gradcount .statscontent {
-  font-size: 25px;
-  width: 40%;
-}
-.mainsite .rightcontent .departmentstats #gradcount .statsname {
-  width: 60%;
-}
-.mainsite .rightcontent .departmentstats #samenamecount .statscontent {
-  font-size: 25px;
-  width: 40%;
-}
-.mainsite .rightcontent .departmentstats #samenamecount .statsname {
-  width: 60%;
-}
-.mainsite .rightcontent .departmentstats #averagelength .statsname {
-  width: 60%;
-}
-.mainsite .rightcontent .departmentstats #averagelength .statscontent {
-  font-size: 25px;
-  width: 40%;
-}
-
-.undermainsite {
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-  /* this is for now essentially footer top margin */
-  height: auto;
-  padding: 20px 0px 50px 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-.undermainsite #departmenttableheading {
-  color: #284dbc;
-  font-size: 26px;
-  margin: 19px;
-  margin-bottom: 6px;
-}
-.undermainsite .copyanddownload {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 10px;
-  -moz-column-gap: 19px;
-       column-gap: 19px;
-  height: 50px;
-  width: 90%;
-  margin: -20px 0px -14px 0px;
-}
-.undermainsite .copyanddownload #animatebutton {
-  border: 1px solid rgb(35, 44, 116);
-  color: white;
-  background-color: #153f66;
-  width: 75px;
-  padding: 0px 6px;
-  height: 40px;
-  border-radius: 25px;
-  margin-right: 10px;
-  font-weight: bold;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  transition: background-color 0.5s;
-}
-.undermainsite .copyanddownload #animatebutton:hover {
-  cursor: pointer;
-  background-color: #fdfbfa;
-  color: #153f66;
-  border: 3px solid rgb(15, 29, 89);
-}
-.undermainsite .copyanddownload i {
-  font-size: 28px;
-  color: rgb(21, 21, 69);
-}
-.undermainsite .copyanddownload i:hover {
-  cursor: pointer;
-}
-.undermainsite #departmentcoursestable {
-  width: 90%;
-  border-radius: 26px;
-  /* border: 5px solid #081a75; */
-  padding: 0px;
-  min-height: 100px;
-  height: auto;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* smoother scroll on mobile */
-}
-
-/* add share icon in the future */
+/* Idea for this one:
+Basically everything is flex. To make it responsive switch direction from flex row to flex column
+*/
 /* Idea for this one:
 Basically everything is flex. To make it responsive switch direction from flex row to flex column
 */
@@ -705,112 +336,6 @@ Basically everything is flex. To make it responsive switch direction from flex r
   --secondarynavy: #153f66;
   --lighterblue: #284dbc;
   --vibrantorange: rgb(244, 102, 70);
-}
-
-#departmentcoursestable {
-  border-collapse: collapse;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 100%;
-}
-@media screen and (max-width: 700px) {
-  #departmentcoursestable {
-    overflow-wrap: anywhere; /* lets words break anywhere if needed */
-    word-break: break-word; /* fallback */
-  }
-}
-
-#departmentcoursestable td,
-#departmentcoursestable th {
-  border: 1px solid #ccc;
-  padding: 15px 9px;
-  min-height: 40px;
-}
-
-/* delete 2nd row */
-/* style first row bold */
-#departmentcoursestable tr:first-child {
-  font-weight: bold;
-  background-color: var(--vibrantorange);
-  color: white;
-  border: none;
-  font-size: 20px;
-  padding: 18px;
-}
-#departmentcoursestable tr:first-child td:first-child {
-  text-align: left;
-  border: none;
-}
-#departmentcoursestable tr:first-child td:nth-child(2) {
-  text-align: right;
-  border: none;
-}
-
-/* add border radius to the whole #departmentcoursestable */
-#departmentcoursestable tr:first-child td:nth-of-type(1) {
-  border-top-left-radius: 10px;
-  padding-left: 10px;
-}
-
-#departmentcoursestable tr:first-child td:nth-of-type(2) {
-  border-top-right-radius: 10px;
-  padding-right: 15px;
-}
-
-#departmentcoursestable tr:last-child td:nth-of-type(1) {
-  border-bottom-left-radius: 10px;
-}
-
-#departmentcoursestable tr:last-child td:nth-of-type(4) {
-  border-bottom-right-radius: 10px;
-  border: 1px solid #ccc;
-  border-collapse: separate;
-}
-
-#departmentcoursestable tr:nth-of-type(2) td {
-  font-weight: bold;
-}
-
-/* change alignment */
-td:nth-child(1),
-th:nth-child(1) {
-  text-align: left;
-}
-
-td:nth-child(2),
-th:nth-child(2) {
-  text-align: left;
-}
-
-td:nth-child(3),
-th:nth-child(3) {
-  text-align: center;
-}
-
-td:nth-child(5) {
-  display: none;
-}
-
-/* alternating bcg for lines */
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-tr:nth-child(odd) {
-  background-color: #ffffff;
-}
-
-/* style Degreeview Logo */
-#departmentcoursestable tr:last-child {
-  background-color: #fff;
-}
-
-#departmentcoursestable tr:last-child td:first-child {
-  font-weight: bold;
-  color: #0c48a5;
-  font-family: "Barlow";
-  font-weight: 600;
-  font-size: 30px;
 }
 
 :root {
@@ -830,17 +355,17 @@ tr:nth-child(odd) {
 This is all nav bar stuff:*/
 /* end nav bar stuff */
 .sitecontainer#departmentpage {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1 1;
+  /* add share icon in the future */
+  /* delete 2nd row */
+  /* style first row bold */
+  /* add border radius to the whole #departmentcoursestable */
+  /* change alignment */
+  /* alternating bcg for lines */
+  /* style Degreeview Logo */
   /* 
   Above mainsite and its children
   */
   /* topnav beginning */
-  /* this is for the icon in the breadcrumbs */
   /* 
 
   still in top nav, but now the homeandabout section
@@ -880,6 +405,477 @@ This is all nav bar stuff:*/
   */
   /* even smaller screensizes here */
 }
+.sitecontainer#departmentpage .mainsite {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  flex: 1 1 350px;
+  border-top: 10px solid var(--secondarynavy);
+  border-bottom: 10px solid var(--secondarynavy);
+}
+.sitecontainer#departmentpage .mainsite .leftcontent {
+  /* this affects the width */
+  flex: 40%;
+  background-color: #ffffff;
+  padding: 15px;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  row-gap: 35px;
+}
+.sitecontainer#departmentpage .mainsite .leftcontent .filescontainer {
+  border: 4px dashed rgb(16, 11, 82);
+  border-radius: 26px;
+  width: 92%;
+  padding: 20px 29px;
+}
+.sitecontainer#departmentpage .mainsite .leftcontent .filescontainer h3 {
+  color: #284dbc;
+}
+.sitecontainer#departmentpage .mainsite .leftcontent .filescontainer .filesname {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.sitecontainer#departmentpage .mainsite .leftcontent .filescontainer .filesname i {
+  font-size: 20px;
+}
+.sitecontainer#departmentpage .mainsite .leftcontent .filescontainer ul {
+  list-style-type: none; /* Removes bullets */
+  /* indent */
+  padding-left: 30px;
+}
+.sitecontainer#departmentpage .mainsite .leftcontent .filescontainer ul .linkbox {
+  display: flex;
+  flex-direction: row;
+  /* make the download text all even */
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+@media screen and (max-width: 700px) {
+  .sitecontainer#departmentpage .mainsite .leftcontent .filescontainer ul .linkbox {
+    display: flex;
+    flex-direction: column;
+    /* make the download text all even */
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 20px;
+  }
+}
+.sitecontainer#departmentpage .mainsite .leftcontent .filescontainer ul .linkbox p:first-of-type {
+  margin-top: 10px;
+  font-weight: bold;
+  max-width: 137px;
+}
+.sitecontainer#departmentpage .mainsite .leftcontent .filescontainer ul .linkbox #underconstruction {
+  display: block; /* or block if you want it on its own line */
+  margin-top: 10px;
+  margin-bottom: 3px;
+  color: rgb(209, 76, 14);
+  border-bottom: 2px solid rgb(209, 76, 14);
+}
+.sitecontainer#departmentpage .mainsite .leftcontent .filescontainer ul .linkbox a i {
+  color: rgb(21, 21, 69);
+}
+.sitecontainer#departmentpage .mainsite .leftcontent .filescontainer ul .linkbox span#original {
+  color: white;
+  -webkit-text-stroke: 0.5px black; /* outline around text */
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px; /* pushes the underline away from the text */
+  text-decoration-color: #284dbc; /* underline is red, text can be another color */
+}
+.sitecontainer#departmentpage .mainsite .leftcontent .filescontainer ul .linkbox span#darktheme {
+  color: #041442;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px; /* pushes the underline away from the text */
+  text-decoration-color: #041442; /* underline is red, text can be another color */
+}
+.sitecontainer#departmentpage .mainsite .leftcontent .filescontainer ul .linkbox span#greentheme {
+  color: #238808;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px; /* pushes the underline away from the text */
+  text-decoration-color: #238808; /* underline is red, text can be another color */
+}
+.sitecontainer#departmentpage .mainsite .leftcontent .filescontainer ul .linkbox span#deserttheme {
+  color: #603303;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px; /* pushes the underline away from the text */
+  text-decoration-color: #603303; /* underline is red, text can be another color */
+}
+.sitecontainer#departmentpage .mainsite .leftcontent .filescontainer ul .linkbox span#greyscaletheme {
+  color: #5f6470;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px; /* pushes the underline away from the text */
+  text-decoration-color: #2e3138; /* underline is red, text can be another color */
+}
+.sitecontainer#departmentpage .mainsite .leftcontent .filescontainer ul .linkbox span#oceantheme {
+  color: #033f60;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px; /* pushes the underline away from the text */
+  text-decoration-color: #033f60; /* underline is red, text can be another color */
+}
+.sitecontainer#departmentpage .mainsite .leftcontent .filescontainer ul .linkbox span#pasteltheme {
+  color: #925c8b;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px; /* pushes the underline away from the text */
+  text-decoration-color: #925c8b; /* underline is red, text can be another color */
+}
+.sitecontainer#departmentpage .mainsite .leftcontent .filescontainer ul .linkbox span#primarytheme {
+  color: rgb(249, 55, 55);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px; /* pushes the underline away from the text */
+  text-decoration-color: #d8024d; /* underline is red, text can be another color */
+}
+.sitecontainer#departmentpage .mainsite .leftcontent .filescontainer ul .linkbox span#blacktheme {
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px; /* pushes the underline away from the text */
+  text-decoration-color: #000; /* underline is red, text can be another color */
+}
+.sitecontainer#departmentpage .mainsite .leftcontent .filescontainer ul .linkbox span#neontheme {
+  color: #dd098b;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px; /* pushes the underline away from the text */
+  text-decoration-color: #dd098b; /* underline is red, text can be another color */
+}
+.sitecontainer#departmentpage .mainsite .rightcontent {
+  flex: 60%;
+  background-color: rgb(113, 179, 185);
+  padding: 0px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+}
+@media screen and (max-width: 700px) {
+  .sitecontainer#departmentpage .mainsite .rightcontent {
+    padding-top: 40px;
+  }
+  .sitecontainer#departmentpage .mainsite .rightcontent .displaynamebox {
+    margin-bottom: 50px;
+  }
+  .sitecontainer#departmentpage .mainsite .rightcontent .displaynamebox #displayname {
+    font-size: 20px;
+    overflow-wrap: anywhere; /* lets words break anywhere if needed */
+    word-break: break-word; /* fallback */
+  }
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .displaynamebox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* padding top 30 plus this height 50  equals 80 which is padding top of right content */
+  height: 120px;
+  width: 100%;
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .displaynamebox #displayname {
+  color: white;
+  font-size: 25px;
+  margin: 0; /* reset browser h3 margins */
+  margin-bottom: 20px;
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .displaynamebox #charticon {
+  font-size: 30px;
+  color: white;
+  display: inline;
+  margin: 0 0 0 0;
+  margin-left: -40px; /* small space between text and icon */
+  margin-bottom: 20px;
+  vertical-align: middle; /* aligns icon with text baseline */
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  justify-content: flex-start;
+  width: 90%;
+  height: auto;
+  border-right: 10px solid #1c94e5;
+  border-left: 0px solid white;
+}
+@media screen and (max-width: 700px) {
+  .sitecontainer#departmentpage .mainsite .rightcontent .departmentstats section.statsline {
+    font-size: 14px;
+    height: 200px !important;
+  }
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats section.statsline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  justify-content: center;
+  gap: 0;
+  border-top: 10px solid #1c94e5;
+  border-bottom: 10px solid #1c94e5;
+  width: 100%;
+  height: 100px;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  align-items: stretch;
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats section.statsline div.statsname {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  gap: 0;
+  width: 30%;
+  margin: 0 10px;
+  order: var(--statsnameorder);
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats section.statsline div.statscontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  gap: 0;
+  width: 70%;
+  padding: 0px 10px;
+  background-color: white;
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats .statsline.shortbox .statsname {
+  width: 80%;
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats .statsline.shortbox .statscontent {
+  font-size: 25px;
+  width: 20%;
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats #coursecount .statsname {
+  width: 60%;
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats #coursecount .statscontent {
+  font-size: 25px;
+  width: 40%;
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats #longestname .statscontent {
+  font-size: 15px;
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats #shortestname .statsname {
+  width: 60%;
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats #shortestname .statscontent {
+  width: 40%;
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats #uppercount .statscontent {
+  font-size: 25px;
+  width: 40%;
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats #uppercount .statsname {
+  width: 60%;
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats #lowercount .statscontent {
+  font-size: 25px;
+  width: 40%;
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats #lowercount .statsname {
+  width: 60%;
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats #gradcount .statscontent {
+  font-size: 25px;
+  width: 40%;
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats #gradcount .statsname {
+  width: 60%;
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats #samenamecount .statscontent {
+  font-size: 25px;
+  width: 40%;
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats #samenamecount .statsname {
+  width: 60%;
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats #averagelength .statsname {
+  width: 60%;
+}
+.sitecontainer#departmentpage .mainsite .rightcontent .departmentstats #averagelength .statscontent {
+  font-size: 25px;
+  width: 40%;
+}
+.sitecontainer#departmentpage .undermainsite {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  /* this is for now essentially footer top margin */
+  height: auto;
+  padding: 20px 0px 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.sitecontainer#departmentpage .undermainsite #departmenttableheading {
+  color: #284dbc;
+  font-size: 26px;
+  margin: 19px;
+  margin-bottom: 6px;
+}
+.sitecontainer#departmentpage .undermainsite .copyanddownload {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  -moz-column-gap: 19px;
+       column-gap: 19px;
+  height: 50px;
+  width: 90%;
+  margin: -20px 0px -14px 0px;
+}
+.sitecontainer#departmentpage .undermainsite .copyanddownload #animatebutton {
+  border: 1px solid rgb(35, 44, 116);
+  color: white;
+  background-color: #153f66;
+  width: 75px;
+  padding: 0px 6px;
+  height: 40px;
+  border-radius: 25px;
+  margin-right: 10px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.5s;
+}
+.sitecontainer#departmentpage .undermainsite .copyanddownload #animatebutton:hover {
+  cursor: pointer;
+  background-color: #fdfbfa;
+  color: #153f66;
+  border: 3px solid rgb(15, 29, 89);
+}
+.sitecontainer#departmentpage .undermainsite .copyanddownload i {
+  font-size: 28px;
+  color: rgb(21, 21, 69);
+}
+.sitecontainer#departmentpage .undermainsite .copyanddownload i:hover {
+  cursor: pointer;
+}
+.sitecontainer#departmentpage .undermainsite #departmentcoursestable {
+  width: 90%;
+  border-radius: 26px;
+  /* border: 5px solid #081a75; */
+  padding: 0px;
+  min-height: 100px;
+  height: auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* smoother scroll on mobile */
+}
+.sitecontainer#departmentpage #departmentcoursestable {
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+@media screen and (max-width: 700px) {
+  .sitecontainer#departmentpage #departmentcoursestable {
+    overflow-wrap: anywhere; /* lets words break anywhere if needed */
+    word-break: break-word; /* fallback */
+  }
+}
+.sitecontainer#departmentpage #departmentcoursestable td,
+.sitecontainer#departmentpage #departmentcoursestable th {
+  border: 1px solid #ccc;
+  padding: 15px 9px;
+  min-height: 40px;
+}
+.sitecontainer#departmentpage #departmentcoursestable tr:first-child {
+  font-weight: bold;
+  background-color: var(--vibrantorange);
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 18px;
+}
+.sitecontainer#departmentpage #departmentcoursestable tr:first-child td:first-child {
+  text-align: left;
+  border: none;
+}
+.sitecontainer#departmentpage #departmentcoursestable tr:first-child td:nth-child(2) {
+  text-align: right;
+  border: none;
+}
+.sitecontainer#departmentpage #departmentcoursestable tr:first-child td:nth-of-type(1) {
+  border-top-left-radius: 10px;
+  padding-left: 10px;
+}
+.sitecontainer#departmentpage #departmentcoursestable tr:first-child td:nth-of-type(2) {
+  border-top-right-radius: 10px;
+  padding-right: 15px;
+}
+.sitecontainer#departmentpage #departmentcoursestable tr:last-child td:nth-of-type(1) {
+  border-bottom-left-radius: 10px;
+}
+.sitecontainer#departmentpage #departmentcoursestable tr:last-child td:nth-of-type(4) {
+  border-bottom-right-radius: 10px;
+  border: 1px solid #ccc;
+  border-collapse: separate;
+}
+.sitecontainer#departmentpage #departmentcoursestable tr:nth-of-type(2) td {
+  font-weight: bold;
+}
+.sitecontainer#departmentpage td:nth-child(1),
+.sitecontainer#departmentpage th:nth-child(1) {
+  text-align: left;
+}
+.sitecontainer#departmentpage td:nth-child(2),
+.sitecontainer#departmentpage th:nth-child(2) {
+  text-align: left;
+}
+.sitecontainer#departmentpage td:nth-child(3),
+.sitecontainer#departmentpage th:nth-child(3) {
+  text-align: center;
+}
+.sitecontainer#departmentpage td:nth-child(5) {
+  display: none;
+}
+.sitecontainer#departmentpage tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.sitecontainer#departmentpage tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+.sitecontainer#departmentpage #departmentcoursestable tr:last-child {
+  background-color: #fff;
+}
+.sitecontainer#departmentpage #departmentcoursestable tr:last-child td:first-child {
+  font-weight: bold;
+  color: #0c48a5;
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 30px;
+}
+.sitecontainer#departmentpage {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1;
+}
 .sitecontainer#departmentpage .abovemainsite {
   display: flex;
   flex-direction: column;
@@ -899,14 +895,6 @@ This is all nav bar stuff:*/
   justify-content: space-between;
   filter: drop-shadow(4px 0px 2px rgb(67, 66, 66));
 }
-.sitecontainer#departmentpage .breadcrumbs #current {
-  /* this is the current page the user is on */
-  text-decoration: none;
-  color: rgb(200, 74, 12);
-  font-size: 16px;
-  font-weight: bold;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
 .sitecontainer#departmentpage .breadcrumbs {
   background-color: #eee;
   width: 70%;
@@ -924,6 +912,15 @@ This is all nav bar stuff:*/
        column-gap: 19px;
   list-style-type: none;
   color: #081a75;
+  /* this is for the icon in the breadcrumbs */
+}
+.sitecontainer#departmentpage .breadcrumbs ul li#current {
+  /* this is the current page the user is on */
+  text-decoration: none;
+  color: rgb(200, 74, 12);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .sitecontainer#departmentpage .breadcrumbs ul li a {
   text-decoration: none;
@@ -937,7 +934,7 @@ This is all nav bar stuff:*/
   text-decoration-thickness: 4px;
   text-underline-offset: 3px;
 }
-.sitecontainer#departmentpage .fa-chevron-right {
+.sitecontainer#departmentpage .breadcrumbs ul .fa-chevron-right {
   vertical-align: middle; /* or baseline, or -2px tweak */
   font-size: 12px; /* adjust size */
   margin: 5px 0 0px 0; /* spacing */
@@ -1314,7 +1311,7 @@ This is all nav bar stuff:*/
 /* Idea for this one:
 Basically everything is flex. To make it responsive switch direction from flex row to flex column
 */
-.selector {
+.sitecontainer#unihomepage .selector {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -1330,7 +1327,7 @@ Basically everything is flex. To make it responsive switch direction from flex r
   width: 60%;
   margin-bottom: -60px;
 }
-.selector #currentpage {
+.sitecontainer#unihomepage .selector #currentpage {
   color: rgb(255, 239, 239);
   background-color: #284dbc;
   display: flex;
@@ -1342,17 +1339,17 @@ Basically everything is flex. To make it responsive switch direction from flex r
   height: 100%;
   transition: all 0.5s;
 }
-.selector #currentpage:hover {
+.sitecontainer#unihomepage .selector #currentpage:hover {
   background-color: #1f42a9;
 }
-.selector .degreeplans {
+.sitecontainer#unihomepage .selector .degreeplans {
   color: black;
   flex: 1;
   height: 100%;
   border-bottom-right-radius: inherit;
   border-top-right-radius: inherit;
 }
-.selector .degreeplans a {
+.sitecontainer#unihomepage .selector .degreeplans a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1368,57 +1365,57 @@ Basically everything is flex. To make it responsive switch direction from flex r
   border: 2px solid #284dbc;
   color: #284dbc;
 }
-.selector .degreeplans a:hover {
+.sitecontainer#unihomepage .selector .degreeplans a:hover {
   background-color: rgb(103, 125, 226);
   color: white;
 }
-.selector .degreeplans a:active {
+.sitecontainer#unihomepage .selector .degreeplans a:active {
   background-color: var(--secondarynavy);
 }
-.selector .degreeplans a:visited {
+.sitecontainer#unihomepage .selector .degreeplans a:visited {
   text-decoration: none;
 }
-.selector .coursedata {
+.sitecontainer#unihomepage .selector .coursedata {
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
 }
 @media screen and (max-width: 800px) {
-  .selector {
+  .sitecontainer#unihomepage .selector {
     flex-direction: column;
     width: 80%;
     border-radius: 0;
     gap: 0;
   }
-  .selector .coursedata {
+  .sitecontainer#unihomepage .selector .coursedata {
     width: 100%;
     border-radius: 0;
     padding: 10px;
   }
-  .selector .degreeplans {
+  .sitecontainer#unihomepage .selector .degreeplans {
     width: 100%;
   }
-  .selector .degreeplans a {
+  .sitecontainer#unihomepage .selector .degreeplans a {
     border-radius: 0;
     padding: 10px;
   }
 }
 @media screen and (max-width: 400px) {
-  .selector {
+  .sitecontainer#unihomepage .selector {
     flex-direction: column;
     width: 80%;
     border-radius: 0;
     gap: 0;
     font-size: 19px;
   }
-  .selector .coursedata {
+  .sitecontainer#unihomepage .selector .coursedata {
     width: 100%;
     border-radius: 0;
     padding: 10px;
   }
-  .selector .degreeplans {
+  .sitecontainer#unihomepage .selector .degreeplans {
     width: 100%;
   }
-  .selector .degreeplans a {
+  .sitecontainer#unihomepage .selector .degreeplans a {
     border-radius: 0;
     padding: 10px;
   }
@@ -1430,7 +1427,10 @@ Basically everything is flex. To make it responsive switch direction from flex r
   But the code here is still good and can be used somewhere in the future.
 
   */
-.homepage-ul {
+.sitecontainer#unihomepage {
+  /* this div contains all the a's */
+}
+.sitecontainer#unihomepage .homepage-ul {
   width: 90%;
   height: auto;
   background-color: #eee;
@@ -1443,7 +1443,7 @@ Basically everything is flex. To make it responsive switch direction from flex r
   /* 1/3 width for each column. Use media quieries to change width */
   /* finish this later */
 }
-.homepage-ul .homepage-column {
+.sitecontainer#unihomepage .homepage-ul .homepage-column {
   /*  add padding too */
   /* regenerate the  */
   display: flex;
@@ -1451,7 +1451,7 @@ Basically everything is flex. To make it responsive switch direction from flex r
   align-items: center;
   justify-content: center;
 }
-.homepage-ul .homepage-column a {
+.sitecontainer#unihomepage .homepage-ul .homepage-column a {
   background-color: #d45c21;
   width: 100%;
   height: 190px;
@@ -1468,7 +1468,7 @@ Basically everything is flex. To make it responsive switch direction from flex r
   justify-content: center;
   transition: background-color 0.4s border 0.4s;
 }
-.homepage-ul .homepage-column a .contentdiv {
+.sitecontainer#unihomepage .homepage-ul .homepage-column a .contentdiv {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1481,35 +1481,34 @@ Basically everything is flex. To make it responsive switch direction from flex r
   font-weight: bold;
   font-size: 25px;
 }
-.homepage-ul .homepage-column a:hover {
+.sitecontainer#unihomepage .homepage-ul .homepage-column a:hover {
   background-color: #bf5701;
   border: 2px solid white;
 }
 @media (min-width: 1000px) {
-  .homepage-ul {
+  .sitecontainer#unihomepage .homepage-ul {
     /* this is the width that it will be 3 columns until */
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (max-width: 550px) {
-  .homepage-ul {
+  .sitecontainer#unihomepage .homepage-ul {
     grid-template-columns: repeat(1, 90%);
     justify-content: center;
   }
-  .homepage-ul .homepage-column a {
+  .sitecontainer#unihomepage .homepage-ul .homepage-column a {
     padding: 25px 15px 30px 18px;
   }
-  .homepage-ul .homepage-column a .contentdiv {
+  .sitecontainer#unihomepage .homepage-ul .homepage-column a .contentdiv {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 550px) and (max-width: 375px) {
-  .homepage-ul .homepage-column a .contentdiv {
+  .sitecontainer#unihomepage .homepage-ul .homepage-column a .contentdiv {
     word-break: break-all;
   }
 }
 
-/* this div contains all the a's */
 :root {
   --secondarynavy: #153f66;
   --lighterblue: #284dbc;
@@ -2025,7 +2024,7 @@ This is all nav bar stuff:*/
   }
 }
 
-div.tablediv div.table-scroll {
+.sitecontainer#sorted-departments div.tablediv div.table-scroll {
   /* for aniamtions
 
   */
@@ -2035,22 +2034,22 @@ div.tablediv div.table-scroll {
   /* alternating bcg for lines */
   /* style Degreeview Logo */
 }
-div.tablediv div.table-scroll table {
+.sitecontainer#sorted-departments div.tablediv div.table-scroll table {
   border-collapse: collapse;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
 }
-div.tablediv div.table-scroll table tr {
+.sitecontainer#sorted-departments div.tablediv div.table-scroll table tr {
   /* transition: font-size calc(var(--order) * 300ms) ease; */
 }
-div.tablediv div.table-scroll table td,
-div.tablediv div.table-scroll table th {
+.sitecontainer#sorted-departments div.tablediv div.table-scroll table td,
+.sitecontainer#sorted-departments div.tablediv div.table-scroll table th {
   border: 1px solid #ccc;
   padding: 15px 9px;
   min-height: 40px;
 }
-div.tablediv div.table-scroll table tr:first-child td {
+.sitecontainer#sorted-departments div.tablediv div.table-scroll table tr:first-child td {
   font-weight: bold;
   background-color: var(--vibrantorange);
   color: white;
@@ -2059,55 +2058,55 @@ div.tablediv div.table-scroll table tr:first-child td {
   font-size: 20px;
   padding: 18px;
 }
-div.tablediv div.table-scroll table tr:first-child td:nth-of-type(1) {
+.sitecontainer#sorted-departments div.tablediv div.table-scroll table tr:first-child td:nth-of-type(1) {
   border-top-left-radius: 10px;
   padding-left: 10px;
 }
-div.tablediv div.table-scroll table tr:first-child td:nth-last-of-type(1) {
+.sitecontainer#sorted-departments div.tablediv div.table-scroll table tr:first-child td:nth-last-of-type(1) {
   border-top-right-radius: 10px;
   padding-right: 15px;
 }
-div.tablediv div.table-scroll table tr:last-child td:nth-of-type(1) {
+.sitecontainer#sorted-departments div.tablediv div.table-scroll table tr:last-child td:nth-of-type(1) {
   border-bottom-left-radius: 10px;
 }
-div.tablediv div.table-scroll table tr:last-child td:nth-of-type(5) {
+.sitecontainer#sorted-departments div.tablediv div.table-scroll table tr:last-child td:nth-of-type(5) {
   border-bottom-right-radius: 10px;
   border: 1px solid #ccc;
   border-collapse: separate;
 }
-div.tablediv div.table-scroll td:nth-child(1),
-div.tablediv div.table-scroll th:nth-child(1) {
+.sitecontainer#sorted-departments div.tablediv div.table-scroll td:nth-child(1),
+.sitecontainer#sorted-departments div.tablediv div.table-scroll th:nth-child(1) {
   text-align: left;
   padding-right: 15px !important;
   font-weight: bold;
   font-size: 17px;
 }
-div.tablediv div.table-scroll td:nth-child(2),
-div.tablediv div.table-scroll th:nth-child(2) {
+.sitecontainer#sorted-departments div.tablediv div.table-scroll td:nth-child(2),
+.sitecontainer#sorted-departments div.tablediv div.table-scroll th:nth-child(2) {
   text-align: left;
 }
-div.tablediv div.table-scroll td:nth-child(3),
-div.tablediv div.table-scroll th:nth-child(3) {
+.sitecontainer#sorted-departments div.tablediv div.table-scroll td:nth-child(3),
+.sitecontainer#sorted-departments div.tablediv div.table-scroll th:nth-child(3) {
   text-align: left;
 }
-div.tablediv div.table-scroll td:nth-child(4) {
+.sitecontainer#sorted-departments div.tablediv div.table-scroll td:nth-child(4) {
   text-align: center;
 }
-div.tablediv div.table-scroll td:nth-child(5),
-div.tablediv div.table-scroll th:nth-child(5) {
+.sitecontainer#sorted-departments div.tablediv div.table-scroll td:nth-child(5),
+.sitecontainer#sorted-departments div.tablediv div.table-scroll th:nth-child(5) {
   /* this would remove the schoolname normally */
   /* display: none; */
 }
-div.tablediv div.table-scroll tr:nth-child(even) {
+.sitecontainer#sorted-departments div.tablediv div.table-scroll tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-div.tablediv div.table-scroll tr:nth-child(odd) {
+.sitecontainer#sorted-departments div.tablediv div.table-scroll tr:nth-child(odd) {
   background-color: #fafafa;
 }
-div.tablediv div.table-scroll table tr:last-child {
+.sitecontainer#sorted-departments div.tablediv div.table-scroll table tr:last-child {
   background-color: #fff;
 }
-div.tablediv div.table-scroll table tr:last-child td:first-child {
+.sitecontainer#sorted-departments div.tablediv div.table-scroll table tr:last-child td:first-child {
   font-weight: bold;
   color: #0c48a5;
   font-family: "Barlow";
@@ -2115,23 +2114,23 @@ div.tablediv div.table-scroll table tr:last-child td:first-child {
   font-size: 30px;
   text-align: left;
 }
-div.tablediv div.table-scroll table tr:last-child td:last-child {
+.sitecontainer#sorted-departments div.tablediv div.table-scroll table tr:last-child td:last-child {
   color: transparent;
 }
-div.tablediv div.table-scroll .dummytd {
+.sitecontainer#sorted-departments div.tablediv div.table-scroll .dummytd {
   background-color: yellow;
 }
 @media screen and (max-width: 550px) {
-  div.tablediv div.table-scroll {
+  .sitecontainer#sorted-departments div.tablediv div.table-scroll {
     /* now semester table */
     /* make the logo box smaller */
   }
-  div.tablediv div.table-scroll table td {
+  .sitecontainer#sorted-departments div.tablediv div.table-scroll table td {
     width: 95%;
     padding: 15px 4px;
     font-size: 15.5px;
   }
-  div.tablediv div.table-scroll table tr:last-child td:first-child {
+  .sitecontainer#sorted-departments div.tablediv div.table-scroll table tr:last-child td:first-child {
     font-weight: bold;
     color: #0c48a5;
     font-family: "Barlow";
@@ -2139,12 +2138,12 @@ div.tablediv div.table-scroll .dummytd {
     /* make the logo box smaller */
     font-size: 20px !important;
   }
-  div.tablediv div.table-scroll table td {
+  .sitecontainer#sorted-departments div.tablediv div.table-scroll table td {
     width: 95%;
     padding: 15px 4px;
     font-size: 15px;
   }
-  div.tablediv div.table-scroll table tr:last-child td:first-child {
+  .sitecontainer#sorted-departments div.tablediv div.table-scroll table tr:last-child td:first-child {
     font-weight: bold;
     color: #0c48a5;
     font-family: "Barlow";
@@ -2153,7 +2152,7 @@ div.tablediv div.table-scroll .dummytd {
   }
 }
 @media screen and (max-width: 450px) {
-  div.tablediv div.table-scroll {
+  .sitecontainer#sorted-departments div.tablediv div.table-scroll {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; /* smoother scroll on mobile */
   }
@@ -2752,7 +2751,7 @@ This is all nav bar stuff:*/
 }
 
 /*  */
-.statscontainer2 {
+.sitecontainer#statspage .statscontainer2 {
   /* this is the top one */
   width: 100%;
   background-color: rgba(255, 49, 49, 0.8823529412);
@@ -2770,25 +2769,32 @@ This is all nav bar stuff:*/
   min-height: 300px;
   color: white;
 }
-.statscontainer2 .statsbox .title {
+.sitecontainer#statspage .statscontainer2 .statsbox .title {
   font-weight: bold;
 }
-.statscontainer2 .statsbox .content {
+.sitecontainer#statspage .statscontainer2 .statsbox .content {
   text-decoration: underline;
 }
-.statscontainer2 .statsbox .content .dept_ul {
+.sitecontainer#statspage .statscontainer2 .statsbox .content .dept_ul {
   border: 3px solid black;
 }
 
-/* begin .sheetjs div */
-.renderedcsvdiv {
+.sitecontainer#statspage {
+  /* begin .sheetjs div */
+  /* style first row bold */
+  /* add border radius to the whole table */
+  /* change alignment */
+  /* alternating bcg for lines */
+  /* style Degreeview Logo */
+  /* select the 2nd to last child */
+}
+.sitecontainer#statspage .renderedcsvdiv {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
-#csvtablecontainer {
+.sitecontainer#statspage #csvtablecontainer {
   width: 90%;
   border-radius: 26px;
   /* border: 5px solid #081a75; */
@@ -2796,29 +2802,24 @@ This is all nav bar stuff:*/
   overflow-x: auto;
   -webkit-overflow-scrolling: touch; /* smoother scroll on mobile */
 }
-
-#csvheading {
+.sitecontainer#statspage #csvheading {
   margin: 30px;
   color: #284dbc;
   font-size: 23px;
 }
-
-#csvtablecontainer table {
+.sitecontainer#statspage #csvtablecontainer table {
   border-collapse: collapse;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
 }
-
-#csvtablecontainer table td,
-#csvtablecontainer table th {
+.sitecontainer#statspage #csvtablecontainer table td,
+.sitecontainer#statspage #csvtablecontainer table th {
   border: 1px solid #ccc;
   padding: 15px 9px;
   min-height: 40px;
 }
-
-/* style first row bold */
-#csvtablecontainer table tr:first-child td {
+.sitecontainer#statspage #csvtablecontainer table tr:first-child td {
   font-weight: bold;
   background-color: var(--secondarynavy);
   color: white;
@@ -2827,77 +2828,60 @@ This is all nav bar stuff:*/
   font-size: 20px;
   padding: 18px;
 }
-
-/* add border radius to the whole table */
-#csvtablecontainer table tr:first-child td:nth-of-type(1) {
+.sitecontainer#statspage #csvtablecontainer table tr:first-child td:nth-of-type(1) {
   border-top-left-radius: 10px;
   padding-left: 15px;
 }
-
-#csvtablecontainer table tr:first-child td:nth-of-type(6) {
+.sitecontainer#statspage #csvtablecontainer table tr:first-child td:nth-of-type(6) {
   border-top-right-radius: 10px;
   padding-right: 10px;
   /* color: #ff731f; */
 }
-
-#csvtablecontainer table tr:last-child td:nth-of-type(1) {
+.sitecontainer#statspage #csvtablecontainer table tr:last-child td:nth-of-type(1) {
   border-bottom-left-radius: 10px;
 }
-
-#csvtablecontainer table tr:last-child td:nth-of-type(4) {
+.sitecontainer#statspage #csvtablecontainer table tr:last-child td:nth-of-type(4) {
   border: none;
   border-bottom-right-radius: 10px;
   border: 1px solid #ccc;
   border-collapse: separate;
 }
-
-#csvtablecontainer table tr:nth-of-type(3) td {
+.sitecontainer#statspage #csvtablecontainer table tr:nth-of-type(3) td {
   font-weight: bold;
 }
-
-/* change alignment */
-td:nth-child(1),
-th:nth-child(1) {
+.sitecontainer#statspage td:nth-child(1),
+.sitecontainer#statspage th:nth-child(1) {
   text-align: left;
 }
-
-td:nth-child(2),
-td:nth-child(3),
-td:nth-child(4),
-td:nth-child(5),
-td:nth-child(6) {
+.sitecontainer#statspage td:nth-child(2),
+.sitecontainer#statspage td:nth-child(3),
+.sitecontainer#statspage td:nth-child(4),
+.sitecontainer#statspage td:nth-child(5),
+.sitecontainer#statspage td:nth-child(6) {
   text-align: center;
 }
-
-/* alternating bcg for lines */
-tr:nth-child(even) {
+.sitecontainer#statspage tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-
-/* style Degreeview Logo */
-#csvtablecontainer table tr:last-child td:first-child {
+.sitecontainer#statspage #csvtablecontainer table tr:last-child td:first-child {
   font-weight: bold;
   color: #0c48a5;
   font-family: "Barlow";
   font-weight: 600;
   font-size: 30px;
 }
-
-/* select the 2nd to last child */
-#csvtablecontainer table tr:nth-last-of-type(2) {
+.sitecontainer#statspage #csvtablecontainer table tr:nth-last-of-type(2) {
   display: none;
 }
-
-#csvtablecontainer table tr:nth-of-type(2) {
+.sitecontainer#statspage #csvtablecontainer table tr:nth-of-type(2) {
   display: none;
 }
-
-#csvtablecontainer td.schooltd {
+.sitecontainer#statspage #csvtablecontainer td.schooltd {
   border-bottom: #eb7d46 solid 3px;
   font-weight: bold;
 }
 
-.sectioncontainer {
+.sitecontainer#statspage .sectioncontainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2907,7 +2891,7 @@ tr:nth-child(even) {
   border-radius: 15px;
   width: 100%;
 }
-.sectioncontainer .minimainsite {
+.sitecontainer#statspage .sectioncontainer .minimainsite {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -2915,7 +2899,7 @@ tr:nth-child(even) {
   border-top: 10px solid #740d40;
   border-bottom: 10px solid #740d40;
 }
-.sectioncontainer .minimainsite .leftcontent {
+.sitecontainer#statspage .sectioncontainer .minimainsite .leftcontent {
   /* this affects the width */
   flex: 40%;
   background-color: #ffffff;
@@ -2926,21 +2910,21 @@ tr:nth-child(even) {
   justify-content: flex-start;
   row-gap: 25px;
 }
-.sectioncontainer .minimainsite .leftcontent .filescontainer {
+.sitecontainer#statspage .sectioncontainer .minimainsite .leftcontent .filescontainer {
   border: 4px dashed rgb(16, 11, 82);
   border-radius: 26px;
   width: 92%;
   padding: 20px 29px;
 }
-.sectioncontainer .minimainsite .leftcontent .filescontainer h3 {
+.sitecontainer#statspage .sectioncontainer .minimainsite .leftcontent .filescontainer h3 {
   color: #284dbc;
 }
-.sectioncontainer .minimainsite .leftcontent .filescontainer ul {
+.sitecontainer#statspage .sectioncontainer .minimainsite .leftcontent .filescontainer ul {
   list-style-type: none; /* Removes bullets */
   /* indent */
   padding-left: 30px;
 }
-.sectioncontainer .minimainsite .leftcontent .filescontainer ul .linkbox {
+.sitecontainer#statspage .sectioncontainer .minimainsite .leftcontent .filescontainer ul .linkbox {
   display: flex;
   flex-direction: row;
   /* make the download text all even */
@@ -2949,15 +2933,15 @@ tr:nth-child(even) {
   -moz-column-gap: 40px;
        column-gap: 40px;
 }
-.sectioncontainer .minimainsite .leftcontent .filescontainer ul .linkbox p:first-of-type {
+.sitecontainer#statspage .sectioncontainer .minimainsite .leftcontent .filescontainer ul .linkbox p:first-of-type {
   margin-top: 10px;
   font-weight: bold;
   max-width: 137px;
 }
-.sectioncontainer .minimainsite .leftcontent .filescontainer ul .linkbox a i {
+.sitecontainer#statspage .sectioncontainer .minimainsite .leftcontent .filescontainer ul .linkbox a i {
   color: rgb(21, 21, 69);
 }
-.sectioncontainer .minimainsite .rightcontent {
+.sitecontainer#statspage .sectioncontainer .minimainsite .rightcontent {
   flex: 60%;
   background-color: rgb(232, 80, 56);
   padding: 30px 20px 30px 20px;
@@ -2979,7 +2963,7 @@ tr:nth-child(even) {
   scroll-behavior: smooth;
 }
 
-body .sitecontainer#statspage {
+.sitecontainer#statspage {
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -3026,7 +3010,7 @@ body .sitecontainer#statspage {
   */
   /* even smaller screensizes here */
 }
-body .sitecontainer#statspage .abovemainsite {
+.sitecontainer#statspage .abovemainsite {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -3034,7 +3018,7 @@ body .sitecontainer#statspage .abovemainsite {
   width: 100%;
   height: 250px;
 }
-body .sitecontainer#statspage .topnav {
+.sitecontainer#statspage .topnav {
   /* change this color to see it and make changes */
   background-color: #eee;
   width: 100%;
@@ -3046,16 +3030,16 @@ body .sitecontainer#statspage .topnav {
   /* keep this */
   filter: drop-shadow(4px 0px 2px rgb(67, 66, 66));
 }
-body .sitecontainer#statspage .biglogobox {
+.sitecontainer#statspage .biglogobox {
   height: 100%;
   overflow: hidden; /* optional: clips the image if it's too big */
 }
-body .sitecontainer#statspage .biglogo {
+.sitecontainer#statspage .biglogo {
   /* height the same as topnav here, 100px */
   height: 100%;
   width: auto;
 }
-body .sitecontainer#statspage .breadcrumbs {
+.sitecontainer#statspage .breadcrumbs {
   background-color: #eee;
   width: 70%;
   height: 100px;
@@ -3064,7 +3048,7 @@ body .sitecontainer#statspage .breadcrumbs {
   align-items: center;
   justify-content: flex-start;
 }
-body .sitecontainer#statspage .breadcrumbs ul {
+.sitecontainer#statspage .breadcrumbs ul {
   display: flex;
   flex-direction: row;
   padding-left: 30px;
@@ -3073,32 +3057,32 @@ body .sitecontainer#statspage .breadcrumbs ul {
   list-style-type: none;
   color: #081a75;
 }
-body .sitecontainer#statspage .breadcrumbs ul li a {
+.sitecontainer#statspage .breadcrumbs ul li a {
   text-decoration: none;
   color: #081a75;
   font-size: 16px;
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-body .sitecontainer#statspage .breadcrumbs ul li a:hover {
+.sitecontainer#statspage .breadcrumbs ul li a:hover {
   text-decoration: underline;
   text-decoration-thickness: 4px;
   text-underline-offset: 3px;
 }
-body .sitecontainer#statspage .breadcrumbs li#current {
+.sitecontainer#statspage .breadcrumbs li#current {
   /* this is the current page the user is on */
   text-decoration: none;
   color: rgb(200, 74, 12);
   font-size: 16px;
   font-weight: bold;
 }
-body .sitecontainer#statspage .fa-chevron-right {
+.sitecontainer#statspage .fa-chevron-right {
   vertical-align: middle; /* or baseline, or -2px tweak */
   font-size: 12px; /* adjust size */
   margin: 5px 0 0px 0; /* spacing */
   color: #081a75;
 }
-body .sitecontainer#statspage .homeandabout {
+.sitecontainer#statspage .homeandabout {
   background-color: #153f66;
   width: 25%;
   height: 100px;
@@ -3108,7 +3092,7 @@ body .sitecontainer#statspage .homeandabout {
   align-items: center;
   justify-content: center;
 }
-body .sitecontainer#statspage .homeandabout ul {
+.sitecontainer#statspage .homeandabout ul {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -3118,7 +3102,7 @@ body .sitecontainer#statspage .homeandabout ul {
   list-style-type: none;
   padding-left: 0;
 }
-body .sitecontainer#statspage .homeandabout ul li {
+.sitecontainer#statspage .homeandabout ul li {
   /* make them big so you can hover */
   /* each one takes up 1/3 width */
   flex: 1;
@@ -3128,10 +3112,10 @@ body .sitecontainer#statspage .homeandabout ul li {
   justify-content: center;
   transition: background-color 0.3s;
 }
-body .sitecontainer#statspage .homeandabout li:hover {
+.sitecontainer#statspage .homeandabout li:hover {
   background-color: #284dbc;
 }
-body .sitecontainer#statspage .homeandabout ul li a {
+.sitecontainer#statspage .homeandabout ul li a {
   text-decoration: none;
   color: white;
   font-size: 16px;
@@ -3145,7 +3129,7 @@ body .sitecontainer#statspage .homeandabout ul li a {
   width: 100%;
   height: 100%;
 }
-body .sitecontainer#statspage .headingbox {
+.sitecontainer#statspage .headingbox {
   /* border: 4px solid black; */
   width: 100%;
   height: 150px;
@@ -3154,11 +3138,11 @@ body .sitecontainer#statspage .headingbox {
   align-items: center;
   justify-content: center;
 }
-body .sitecontainer#statspage #headingtitle {
+.sitecontainer#statspage #headingtitle {
   font-size: 45px;
   color: #060212;
 }
-body .sitecontainer#statspage .mainsite {
+.sitecontainer#statspage .mainsite {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3170,7 +3154,7 @@ body .sitecontainer#statspage .mainsite {
   border-bottom: 10px solid #153f66;
   row-gap: 35px;
 }
-body .sitecontainer#statspage .mainsite ul#other_pages_links {
+.sitecontainer#statspage .mainsite ul#other_pages_links {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -3183,7 +3167,7 @@ body .sitecontainer#statspage .mainsite ul#other_pages_links {
   list-style-type: none;
   padding-left: 0;
 }
-body .sitecontainer#statspage .mainsite ul#other_pages_links li {
+.sitecontainer#statspage .mainsite ul#other_pages_links li {
   /* make them big so you can hover */
   width: 25%;
   display: flex;
@@ -3195,7 +3179,7 @@ body .sitecontainer#statspage .mainsite ul#other_pages_links li {
   border-radius: 35px;
   padding: 20px;
 }
-body .sitecontainer#statspage .mainsite ul#other_pages_links li a {
+.sitecontainer#statspage .mainsite ul#other_pages_links li a {
   text-decoration: none;
   color: white;
   font-size: 19px;
@@ -3210,11 +3194,11 @@ body .sitecontainer#statspage .mainsite ul#other_pages_links li a {
   height: 100%;
   transition: color 0.3s;
 }
-body .sitecontainer#statspage .mainsite ul#other_pages_links li:hover {
+.sitecontainer#statspage .mainsite ul#other_pages_links li:hover {
   background-color: #284dbc;
   cursor: pointer;
 }
-body .sitecontainer#statspage .topstats {
+.sitecontainer#statspage .topstats {
   /* this is the top one */
   width: 100%;
   background-color: #ff7731;
@@ -3232,10 +3216,10 @@ body .sitecontainer#statspage .topstats {
   height: auto;
   min-height: 300px;
 }
-body .sitecontainer#statspage .topstats sup {
+.sitecontainer#statspage .topstats sup {
   font-size: 11px;
 }
-body .sitecontainer#statspage .footnotes {
+.sitecontainer#statspage .footnotes {
   display: flex;
   width: 100%;
   /* border: 3px solid black; */
@@ -3244,11 +3228,11 @@ body .sitecontainer#statspage .footnotes {
   margin-top: -32px;
   margin-bottom: -23px;
 }
-body .sitecontainer#statspage .rightfootnotes {
+.sitecontainer#statspage .rightfootnotes {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
 }
-body .sitecontainer#statspage .minimainsite {
+.sitecontainer#statspage .minimainsite {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -3256,7 +3240,7 @@ body .sitecontainer#statspage .minimainsite {
   border-top: 10px solid #740d40;
   border-bottom: 10px solid #740d40;
 }
-body .sitecontainer#statspage .leftcontent {
+.sitecontainer#statspage .leftcontent {
   /* this affects the width */
   flex: 40%;
   background-color: #ffffff;
@@ -3267,21 +3251,21 @@ body .sitecontainer#statspage .leftcontent {
   justify-content: flex-start;
   row-gap: 25px;
 }
-body .sitecontainer#statspage .filescontainer {
+.sitecontainer#statspage .filescontainer {
   border: 4px dashed rgb(16, 11, 82);
   border-radius: 26px;
   width: 92%;
   padding: 20px 29px;
 }
-body .sitecontainer#statspage .filescontainer h3 {
+.sitecontainer#statspage .filescontainer h3 {
   color: #284dbc;
 }
-body .sitecontainer#statspage .filescontainer ul {
+.sitecontainer#statspage .filescontainer ul {
   list-style-type: none; /* Removes bullets */
   /* indent */
   padding-left: 30px;
 }
-body .sitecontainer#statspage .linkbox {
+.sitecontainer#statspage .linkbox {
   display: flex;
   flex-direction: row;
   /* make the download text all even */
@@ -3290,15 +3274,15 @@ body .sitecontainer#statspage .linkbox {
   -moz-column-gap: 40px;
        column-gap: 40px;
 }
-body .sitecontainer#statspage .linkbox p:first-of-type {
+.sitecontainer#statspage .linkbox p:first-of-type {
   margin-top: 10px;
   font-weight: bold;
   max-width: 137px;
 }
-body .sitecontainer#statspage .linkbox a i {
+.sitecontainer#statspage .linkbox a i {
   color: rgb(21, 21, 69);
 }
-body .sitecontainer#statspage .rightcontent {
+.sitecontainer#statspage .rightcontent {
   flex: 60%;
   background-color: rgb(232, 80, 56);
   padding: 30px 20px 30px 20px;
@@ -3309,13 +3293,13 @@ body .sitecontainer#statspage .rightcontent {
   color: white;
   /* just put some stats in this mf */
 }
-body .sitecontainer#statspage #degreecountpng {
+.sitecontainer#statspage #degreecountpng {
   width: 90%;
   height: auto;
   border-radius: 26px;
   min-width: 300px;
 }
-body .sitecontainer#statspage .morestats {
+.sitecontainer#statspage .morestats {
   width: 100%;
   background-color: rgb(67, 153, 67);
   height: 550px;
@@ -3328,13 +3312,13 @@ body .sitecontainer#statspage .morestats {
   border-radius: 26px;
   padding: 50px 10px;
 }
-body .sitecontainer#statspage .morestats img {
+.sitecontainer#statspage .morestats img {
   width: 40%;
   height: auto;
   border-radius: 26px;
   min-width: 300px;
 }
-body .sitecontainer#statspage .undermainsite {
+.sitecontainer#statspage .undermainsite {
   background-color: rgb(255, 255, 255);
   width: 100%;
   /* this is for now essentially footer top margin */
@@ -3344,7 +3328,7 @@ body .sitecontainer#statspage .undermainsite {
   align-items: center;
   justify-content: center;
 }
-body .sitecontainer#statspage #returnbutton {
+.sitecontainer#statspage #returnbutton {
   width: 20%;
   height: 95px;
   display: flex;
@@ -3356,7 +3340,7 @@ body .sitecontainer#statspage #returnbutton {
   padding: 20px;
   color: white;
 }
-body .sitecontainer#statspage #returnbutton a {
+.sitecontainer#statspage #returnbutton a {
   text-decoration: none;
   color: white;
   font-size: 19px;
@@ -3371,24 +3355,24 @@ body .sitecontainer#statspage #returnbutton a {
   height: 100%;
   transition: color 0.3s;
 }
-body .sitecontainer#statspage #returnbutton:hover {
+.sitecontainer#statspage #returnbutton:hover {
   cursor: pointer;
   background-color: #284dbc;
 }
-body .sitecontainer#statspage .visuals {
+.sitecontainer#statspage .visuals {
   height: calc(100% - 100px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-body .sitecontainer#statspage .visuals #displayeditemname {
+.sitecontainer#statspage .visuals #displayeditemname {
   color: blue;
 }
-body .sitecontainer#statspage .visuals .displayedpdf {
+.sitecontainer#statspage .visuals .displayedpdf {
   border-radius: 26px;
 }
-body .sitecontainer#statspage footer {
+.sitecontainer#statspage footer {
   height: 120px;
   width: 100%;
   background-color: rgba(0, 24, 75, 0.4549019608);
@@ -3403,7 +3387,7 @@ body .sitecontainer#statspage footer {
        column-gap: 30px;
   font-family: Helvetica, sans-serif;
 }
-body .sitecontainer#statspage footer .links {
+.sitecontainer#statspage footer .links {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -3413,60 +3397,60 @@ body .sitecontainer#statspage footer .links {
        column-gap: 35px;
   font-size: 19px;
 }
-body .sitecontainer#statspage .footerleft {
+.sitecontainer#statspage .footerleft {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   row-gap: 15px;
 }
-body .sitecontainer#statspage .footerleft #statement {
+.sitecontainer#statspage .footerleft #statement {
   font-family: "Barlow", sans-serif;
   font-size: 25px;
   margin: 0;
   font-weight: 700;
 }
-body .sitecontainer#statspage footer #smalllogo {
+.sitecontainer#statspage footer #smalllogo {
   /* animation has been added in animations.css  */
   width: 55px;
   height: 55px;
   border-radius: 10px;
   border: 3px solid #081a75;
 }
-body .sitecontainer#statspage .barlowtest {
+.sitecontainer#statspage .barlowtest {
   font-family: "Barlow", sans-serif;
   font-size: 25px;
   margin: 0;
   font-weight: 600;
   color: black;
 }
-body .sitecontainer#statspage footer a {
+.sitecontainer#statspage footer a {
   color: white;
   font-family: Helvetica, sans-serif;
   font-weight: 500;
   font-style: normal;
   text-decoration: none;
 }
-body .sitecontainer#statspage footer a:hover {
+.sitecontainer#statspage footer a:hover {
   text-decoration: underline;
   text-decoration-thickness: 4px;
   text-underline-offset: 3px;
   font-weight: bold;
 }
 @media screen and (min-width: 700px) and (max-width: 1272px) {
-  body .sitecontainer#statspage #headingtitle {
+  .sitecontainer#statspage #headingtitle {
     font-size: 45px;
     color: #060212;
   }
 }
 @media screen and (max-width: 1135px) {
-  body .sitecontainer#statspage .abovemainsite {
+  .sitecontainer#statspage .abovemainsite {
     display: flex;
     flex-direction: column;
     /* more height to allow both title and breadcrumbs to be seen */
     height: 250px;
   }
-  body .sitecontainer#statspage .headingbox {
+  .sitecontainer#statspage .headingbox {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: auto;
@@ -3474,7 +3458,7 @@ body .sitecontainer#statspage footer a:hover {
     width: 100%;
     padding-left: 20px;
   }
-  body .sitecontainer#statspage .topnav {
+  .sitecontainer#statspage .topnav {
     background-color: #eee;
     width: 100%;
     display: flex;
@@ -3483,54 +3467,54 @@ body .sitecontainer#statspage footer a:hover {
     justify-content: space-between;
     /* top nav currently 250px */
   }
-  body .sitecontainer#statspage .homeandabout {
+  .sitecontainer#statspage .homeandabout {
     width: 30%;
   }
-  body .sitecontainer#statspage .minimainsite {
+  .sitecontainer#statspage .minimainsite {
     flex-direction: column;
   }
-  body .sitecontainer#statspage .morestats {
+  .sitecontainer#statspage .morestats {
     flex-direction: column;
     gap: 70px;
     height: auto;
   }
-  body .sitecontainer#statspage .morestats img {
+  .sitecontainer#statspage .morestats img {
     width: 87%;
     height: auto;
     border-radius: 26px;
     min-width: 300px;
   }
-  body .sitecontainer#statspage #returnbutton {
+  .sitecontainer#statspage #returnbutton {
     width: 40%;
   }
 }
 @media screen and (max-width: 700px) {
-  body .sitecontainer#statspage {
+  .sitecontainer#statspage {
     /* 
 
 
 
     this one here is pretty important */
   }
-  body .sitecontainer#statspage .abovemainsite {
+  .sitecontainer#statspage .abovemainsite {
     display: flex;
     flex-direction: column;
     /* more height to allow both title and breadcrumbs to be seen */
     /* bigger height as well for the bigger topnav */
     height: 352px;
   }
-  body .sitecontainer#statspage .headingbox {
+  .sitecontainer#statspage .headingbox {
     height: 185px;
     width: 100%;
     flex: none;
     padding-bottom: 25px;
     padding-left: 10px;
   }
-  body .sitecontainer#statspage #headingtitle {
+  .sitecontainer#statspage #headingtitle {
     font-size: 45px;
     color: #060212;
   }
-  body .sitecontainer#statspage .topnav {
+  .sitecontainer#statspage .topnav {
     display: flex;
     flex-direction: column;
     /* height larger to have both on top of each other */
@@ -3539,14 +3523,14 @@ body .sitecontainer#statspage footer a:hover {
     position: static;
     filter: none;
   }
-  body .sitecontainer#statspage .homeandabout {
+  .sitecontainer#statspage .homeandabout {
     /* bring it to the top */
     order: 1;
     height: 65px;
     width: 100%;
     filter: drop-shadow(4px 1px 3px rgb(67, 66, 66));
   }
-  body .sitecontainer#statspage .biglogobox {
+  .sitecontainer#statspage .biglogobox {
     background-color: #eee;
     width: 100%;
     flex: none;
@@ -3555,14 +3539,14 @@ body .sitecontainer#statspage footer a:hover {
     border-bottom: 2px solid #eee;
     /*  */
   }
-  body .sitecontainer#statspage .biglogo {
+  .sitecontainer#statspage .biglogo {
     height: 100%;
     width: auto;
   }
-  body .sitecontainer#statspage .mainsite {
+  .sitecontainer#statspage .mainsite {
     flex-direction: column;
   }
-  body .sitecontainer#statspage .linkbox {
+  .sitecontainer#statspage .linkbox {
     display: flex;
     flex-direction: column;
     /* make the download text all even */
@@ -3570,38 +3554,38 @@ body .sitecontainer#statspage footer a:hover {
     align-items: flex-start;
     row-gap: 20px;
   }
-  body .sitecontainer#statspage .linkbox p {
+  .sitecontainer#statspage .linkbox p {
     margin: 0;
   }
-  body .sitecontainer#statspage .linkbox p:first-of-type {
+  .sitecontainer#statspage .linkbox p:first-of-type {
     margin-top: 26px;
     font-weight: bold;
   }
-  body .sitecontainer#statspage .sheetjs {
+  .sitecontainer#statspage .sheetjs {
     /* make it not visible on small screens to avoid headache */
     display: none;
   }
 }
 @media screen and (max-width: 550px) {
-  body .sitecontainer#statspage .abovemainsite {
+  .sitecontainer#statspage .abovemainsite {
     display: flex;
     flex-direction: column;
     /* more height to allow both title and breadcrumbs to be seen */
     /* bigger height as well for the bigger topnav */
     height: 360px;
   }
-  body .sitecontainer#statspage .headingbox {
+  .sitecontainer#statspage .headingbox {
     height: 185px;
     width: 100%;
     flex: none;
     padding-bottom: 25px;
     padding-left: 10px;
   }
-  body .sitecontainer#statspage #headingtitle {
+  .sitecontainer#statspage #headingtitle {
     font-size: 45px;
     color: #060212;
   }
-  body .sitecontainer#statspage .topnav {
+  .sitecontainer#statspage .topnav {
     display: flex;
     flex-direction: column;
     /* height larger to have both on top of each other */
@@ -3609,7 +3593,7 @@ body .sitecontainer#statspage footer a:hover {
     /* removed the fixed navbar */
     filter: none;
   }
-  body .sitecontainer#statspage .homeandabout {
+  .sitecontainer#statspage .homeandabout {
     /* bring it to the top */
     /* order: 1; */
     height: 65px;
@@ -3621,7 +3605,7 @@ body .sitecontainer#statspage footer a:hover {
     z-index: 999;*/
     filter: drop-shadow(4px 1px 3px rgb(67, 66, 66));
   }
-  body .sitecontainer#statspage .biglogobox {
+  .sitecontainer#statspage .biglogobox {
     background-color: #eee;
     width: 100%;
     flex: none;
@@ -3630,34 +3614,34 @@ body .sitecontainer#statspage footer a:hover {
     border-bottom: 2px solid #eee;
     /*  */
   }
-  body .sitecontainer#statspage .biglogo {
+  .sitecontainer#statspage .biglogo {
     height: 100%;
     width: auto;
   }
-  body .sitecontainer#statspage .topstats {
+  .sitecontainer#statspage .topstats {
     /* this is the top one */
     padding: 30px 15px;
     font-size: 18px;
     row-gap: 35px;
     min-height: 300px;
   }
-  body .sitecontainer#statspage .statscontent {
+  .sitecontainer#statspage .statscontent {
     font-size: 30px;
   }
-  body .sitecontainer#statspage .statstitle {
+  .sitecontainer#statspage .statstitle {
     font-size: 18px;
   }
-  body .sitecontainer#statspage #csvtablecontainer {
+  .sitecontainer#statspage #csvtablecontainer {
     width: 95%;
   }
-  body .sitecontainer#statspage #csvtablecontainer table td {
+  .sitecontainer#statspage #csvtablecontainer table td {
     width: 95%;
     padding: 15px 4px;
   }
-  body .sitecontainer#statspage #csvtablecontainer table td {
+  .sitecontainer#statspage #csvtablecontainer table td {
     font-size: 14px;
   }
-  body .sitecontainer#statspage #csvtablecontainer table tr:last-child td:first-child {
+  .sitecontainer#statspage #csvtablecontainer table tr:last-child td:first-child {
     font-weight: bold;
     color: #0c48a5;
     font-family: "Barlow";
@@ -3666,25 +3650,25 @@ body .sitecontainer#statspage footer a:hover {
   }
 }
 @media screen and (max-width: 450px) {
-  body .sitecontainer#statspage .abovemainsite {
+  .sitecontainer#statspage .abovemainsite {
     display: flex;
     flex-direction: column;
     /* more height to allow both title and breadcrumbs to be seen */
     /* bigger height as well for the bigger topnav */
     height: 360px;
   }
-  body .sitecontainer#statspage .headingbox {
+  .sitecontainer#statspage .headingbox {
     height: 185px;
     width: 100%;
     flex: none;
     padding-bottom: 25px;
     padding-left: 10px;
   }
-  body .sitecontainer#statspage #headingtitle {
+  .sitecontainer#statspage #headingtitle {
     font-size: 45px;
     color: #060212;
   }
-  body .sitecontainer#statspage .topnav {
+  .sitecontainer#statspage .topnav {
     display: flex;
     flex-direction: column;
     /* height larger to have both on top of each other */
@@ -3693,7 +3677,7 @@ body .sitecontainer#statspage footer a:hover {
     /* removed the fixed navbar */
     filter: none;
   }
-  body .sitecontainer#statspage .homeandabout {
+  .sitecontainer#statspage .homeandabout {
     /* bring it to the top */
     /* order: 1; */
     height: 65px;
