@@ -1,0 +1,1759 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
+</script>
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, ANTH - Anthropology"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Anthropology UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+<!-- test comment -->
+
+  </head>
+  <body>
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li>
+                <a href="../../tx_state-home.html"> TX State Home</a>
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../a/a-departments.html"
+                  >A Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">ANTH - Anthropology</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../TX_Statestats.html.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="departmenttitle">ANTH - Anthropology</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="Original">Original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/txstate/anthropologyanth/excel-files/anthropologyanth-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="TX State">TX State Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/txstate/anthropologyanth/excel-files/anthropologyanth-tx_state-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li style="display: none">
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Anthropology Courses with "Anthropology"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              ANTH - Anthropology Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">195</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                Mortuary Analysis: Perspectives on Death and Burial in the Past
+              </div>
+            </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                63
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Thesis
+              </div>
+            </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                6
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                5, 2.6%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                77, 39.5%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                113, 57.9%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                29
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Anthropology Courses with "Anthropology" in their name
+              </div>
+              <div class="statscontent">
+                56, 28.7%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Anthropology Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Anthropology</td>
+
+            <td colspan="2">Texas State University</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
+
+                    
+                        <tr>
+                        <td>Cultural Anthropology</td>
+                        <td>ANTH 1312</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Biological Anthropology Laboratory</td>
+                        <td>ANTH 2101</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Archaeology Laboratory</td>
+                        <td>ANTH 2102</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Biological Anthropology</td>
+                        <td>ANTH 2301</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Archaeology</td>
+                        <td>ANTH 2302</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Writing Anthropology</td>
+                        <td>ANTH 3101</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Skeletal Processing, Preparation, and Curation Techniques</td>
+                        <td>ANTH 3102</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Career Development in Anthropology</td>
+                        <td>ANTH 3201</td>
+                        <td>2</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Principles of Cultural Anthropology</td>
+                        <td>ANTH 3301</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Linguistic Anthropology</td>
+                        <td>ANTH 3302</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Applied Cultural Anthropology</td>
+                        <td>ANTH 3303</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Bioarchaeology</td>
+                        <td>ANTH 3304</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Magic, Ritual and Religion</td>
+                        <td>ANTH 3305</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>World Prehistory</td>
+                        <td>ANTH 3306</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>History of Evolutionary Thought</td>
+                        <td>ANTH 3307</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Public Archaeology</td>
+                        <td>ANTH 3308</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cultures Through Film</td>
+                        <td>ANTH 3309</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Disease and Society</td>
+                        <td>ANTH 3311</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Aztec: Native Americans and Empire</td>
+                        <td>ANTH 3313</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Latin American Cultures</td>
+                        <td>ANTH 3314</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Archaeology of the Southwest</td>
+                        <td>ANTH 3315</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Origin and Evolution of Human Behavior</td>
+                        <td>ANTH 3316</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Rock Art Field Methods</td>
+                        <td>ANTH 3317</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ancient Cultures of the Texas Crossroads</td>
+                        <td>ANTH 3318</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Peoples and Cultures of Africa</td>
+                        <td>ANTH 3322</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Mexican American Culture</td>
+                        <td>ANTH 3324</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Medical Anthropology</td>
+                        <td>ANTH 3325</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Anthropology of Religion and Fundamentalism</td>
+                        <td>ANTH 3327</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Archaeological Curation and Collections Management</td>
+                        <td>ANTH 3330</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Dental Anthropology and Oral Biology</td>
+                        <td>ANTH 3331D</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Body Talk: Gestures, Communication, and Society</td>
+                        <td>ANTH 3331F</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Design + Anthropology</td>
+                        <td>ANTH 3331I</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Race and Biological Anthropology</td>
+                        <td>ANTH 3331J</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Myths and Moundbuilders</td>
+                        <td>ANTH 3332</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Anthropology of Native American Belief Systems</td>
+                        <td>ANTH 3335</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Locally Engaged Research</td>
+                        <td>ANTH 3336</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Language and Linguistics</td>
+                        <td>ANTH 3337</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Geoarchaeology</td>
+                        <td>ANTH 3338</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Contemporary Film and Global Culture</td>
+                        <td>ANTH 3339</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Human and Primate Origins</td>
+                        <td>ANTH 3340</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Primate Behavior</td>
+                        <td>ANTH 3342</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Human Variation and Adaptation</td>
+                        <td>ANTH 3343</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Archaeology of Mesoamerica</td>
+                        <td>ANTH 3345</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Archaeology of North America</td>
+                        <td>ANTH 3347</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Primate Conservation: Adapting to Rapidly Changing Landscapes</td>
+                        <td>ANTH 3348</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Incas</td>
+                        <td>ANTH 3349</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Gender and Sexuality in Cross-cultural Perspective</td>
+                        <td>ANTH 3350</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Anthropology of Peace and Violence</td>
+                        <td>ANTH 3351</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Language and the Body</td>
+                        <td>ANTH 3352</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Human Structure and Function</td>
+                        <td>ANTH 3353</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Archaeology of Andean Civilizations</td>
+                        <td>ANTH 3356</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Historical Archaeology</td>
+                        <td>ANTH 3357</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Human Evolutionary Anatomy</td>
+                        <td>ANTH 3358</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Skeletal Processing, Preparation, and Curation Techniques</td>
+                        <td>ANTH 3359</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Economic Anthropology</td>
+                        <td>ANTH 3360</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Archaeological Field Methodology</td>
+                        <td>ANTH 3361</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Art and Archaeology of the Olmec</td>
+                        <td>ANTH 3363</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Social Impact & Innovation</td>
+                        <td>ANTH 3366</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Applied Statistics</td>
+                        <td>ANTH 3367</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Archaeology of Cannibalism and Sacrifice</td>
+                        <td>ANTH 3368</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Anthropology and the Law</td>
+                        <td>ANTH 3369</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Anthropology of Youth</td>
+                        <td>ANTH 3377</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Forensic Anthropology</td>
+                        <td>ANTH 3380</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Human Osteology</td>
+                        <td>ANTH 3381</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Archaeology of Ice Age America</td>
+                        <td>ANTH 3382</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Phonetics and Phonology</td>
+                        <td>ANTH 4303</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Language, Culture and Society</td>
+                        <td>ANTH 4304</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Culture, Medicine and the Body</td>
+                        <td>ANTH 4309</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Theories and Issues in Anthropology</td>
+                        <td>ANTH 4310</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Archaeological Artifact Identification and Analysis</td>
+                        <td>ANTH 4315</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Rise of Civilization</td>
+                        <td>ANTH 4320</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Field Methods in Forensic Anthropology</td>
+                        <td>ANTH 4326</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Theory in Linguistic Anthropology</td>
+                        <td>ANTH 4337</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Theoretical Concepts in Archaeology</td>
+                        <td>ANTH 4339</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Study</td>
+                        <td>ANTH 4360</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Qualitative Research Methods</td>
+                        <td>ANTH 4361</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Methods in Primate Research</td>
+                        <td>ANTH 4363</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Paleopathology</td>
+                        <td>ANTH 4381</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Methods in Skeletal Biology</td>
+                        <td>ANTH 4382</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Internship in Anthropology</td>
+                        <td>ANTH 4390</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Bioarchaeology Field and Laboratory Methods</td>
+                        <td>ANTH 4600</td>
+                        <td>6</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Archaeological Field School</td>
+                        <td>ANTH 4630</td>
+                        <td>6</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Thesis</td>
+                        <td>ANTH 5199B</td>
+                        <td>1</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Thesis</td>
+                        <td>ANTH 5299B</td>
+                        <td>2</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Principles of Cultural Anthropology</td>
+                        <td>ANTH 5301</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Practicum in Teaching Anthropology</td>
+                        <td>ANTH 5302</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Speech Analysis</td>
+                        <td>ANTH 5303</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sociolinguistics</td>
+                        <td>ANTH 5304</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Anthropological Statistics</td>
+                        <td>ANTH 5305</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Anthropology and Art</td>
+                        <td>ANTH 5306</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>History of Evolutionary Thought</td>
+                        <td>ANTH 5307</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cultural Resource Management and Archaeology</td>
+                        <td>ANTH 5308</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Culture, Medicine and the Body</td>
+                        <td>ANTH 5309</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Theories and Issues in Anthropology</td>
+                        <td>ANTH 5310</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Seminar in Cultural Anthropology</td>
+                        <td>ANTH 5311</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Seminar in Biological Anthropology</td>
+                        <td>ANTH 5312</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Seminar in Archaeology</td>
+                        <td>ANTH 5313</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Latin American Cultures</td>
+                        <td>ANTH 5314</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Archaeological Artifact Identification and Analysis</td>
+                        <td>ANTH 5315</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Origin and Evolution of Human Behavior</td>
+                        <td>ANTH 5316</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Rock Art Field Methods</td>
+                        <td>ANTH 5317</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ancient Cultures of the Texas Crossroads</td>
+                        <td>ANTH 5318</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Rise of Civilization</td>
+                        <td>ANTH 5320</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Peoples and Cultures of Africa</td>
+                        <td>ANTH 5322</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Mexican American Culture</td>
+                        <td>ANTH 5324</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Medical Anthropology</td>
+                        <td>ANTH 5325</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Field Methods in Forensic Anthropology</td>
+                        <td>ANTH 5326</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Curation of Archaeological Materials</td>
+                        <td>ANTH 5330</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Myths and Mound Builders</td>
+                        <td>ANTH 5332</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Research Design in Biological Anthropology</td>
+                        <td>ANTH 5333</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Anthropology of Native American Belief Systems</td>
+                        <td>ANTH 5335</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Community Research Project</td>
+                        <td>ANTH 5336</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Theory in Linguistics Anthropology</td>
+                        <td>ANTH 5337</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Geoarchaeology</td>
+                        <td>ANTH 5338</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Theoretical Concepts in Archaeology</td>
+                        <td>ANTH 5339</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Paleoanthropology</td>
+                        <td>ANTH 5340</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Gross Anatomy</td>
+                        <td>ANTH 5341</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Primate Behavior</td>
+                        <td>ANTH 5342</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Human Variation and Adaptation</td>
+                        <td>ANTH 5343</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Archaeology of Mesoamerica</td>
+                        <td>ANTH 5345</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Bioarchaeology</td>
+                        <td>ANTH 5346</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Archaeology of North America</td>
+                        <td>ANTH 5347</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cultural Heritage Management</td>
+                        <td>ANTH 5348</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Incas</td>
+                        <td>ANTH 5349</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Gender and Sexuality in Cross Cultural Perspective</td>
+                        <td>ANTH 5350</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Anthropology of Peace and Violence</td>
+                        <td>ANTH 5351</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Research Design in Archaeology</td>
+                        <td>ANTH 5352</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Applied Cultural Anthropology</td>
+                        <td>ANTH 5353</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Seminar in Culture Theory</td>
+                        <td>ANTH 5355</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Andean Civilizations</td>
+                        <td>ANTH 5356</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Historical Archaeology</td>
+                        <td>ANTH 5357</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Curation of Archaeological Materials</td>
+                        <td>ANTH 5358</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Qualitative Methods</td>
+                        <td>ANTH 5361</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Art and Archaeology of the Olmec</td>
+                        <td>ANTH 5363</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Research Design and Proposal Writing in Cultural Anthropology</td>
+                        <td>ANTH 5373G</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Anthropology in Practice</td>
+                        <td>ANTH 5373I</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Dental Anthropology and Oral Biology</td>
+                        <td>ANTH 5373J</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Nonverbal Communication-Gestures</td>
+                        <td>ANTH 5373K</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Design + Anthropology</td>
+                        <td>ANTH 5373M</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Seminar on Race in Biological Anthropology</td>
+                        <td>ANTH 5373O</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Science, Technologies, & Organizations</td>
+                        <td>ANTH 5373P</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Applied Multivariate Statistics</td>
+                        <td>ANTH 5373Q</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Human Evolutionary Anatomy</td>
+                        <td>ANTH 5374Y</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Methods in Skeletal Biology, Part I</td>
+                        <td>ANTH 5375</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Methods in Skeletal Biology, Part II</td>
+                        <td>ANTH 5376</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Paleopathology</td>
+                        <td>ANTH 5381</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Archaeology of the Earliest Americans</td>
+                        <td>ANTH 5382</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Seminar in Anthropology</td>
+                        <td>ANTH 5385</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Study</td>
+                        <td>ANTH 5390</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Internship</td>
+                        <td>ANTH 5395</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Thesis</td>
+                        <td>ANTH 5999B</td>
+                        <td>9</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Dissertation</td>
+                        <td>ANTH 7199</td>
+                        <td>1</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Dissertation</td>
+                        <td>ANTH 7299</td>
+                        <td>2</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Methods in Historical Archaeology</td>
+                        <td>ANTH 7300A</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Histological Analysis of Bone</td>
+                        <td>ANTH 7300B</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introductory Qualitative Methods</td>
+                        <td>ANTH 7300C</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Methods in Primatology</td>
+                        <td>ANTH 7300D</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Gross Anatomy I</td>
+                        <td>ANTH 7300F</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Gross Anatomy II</td>
+                        <td>ANTH 7300G</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Seminar in Forensic Anthropology</td>
+                        <td>ANTH 7301A</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Primate Conservation</td>
+                        <td>ANTH 7301B</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Design + Anthropology</td>
+                        <td>ANTH 7301C</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Archaeology of Hunter-Gatherers</td>
+                        <td>ANTH 7301E</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Mortuary Analysis: Perspectives on Death and Burial in the Past</td>
+                        <td>ANTH 7301G</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Medical Anthropology</td>
+                        <td>ANTH 7301I</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Applied Statistics Using R</td>
+                        <td>ANTH 7301J</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Language in Society</td>
+                        <td>ANTH 7301K</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Linguistic Anthropology</td>
+                        <td>ANTH 7301L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Science, Technologies & Organizations</td>
+                        <td>ANTH 7301M</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Teaching Anthropology</td>
+                        <td>ANTH 7302</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Anthropological Statistics</td>
+                        <td>ANTH 7305</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cultural Resource Management</td>
+                        <td>ANTH 7308</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Theory in Anthropology</td>
+                        <td>ANTH 7310</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ethnography of the US-Mexico Borderlands</td>
+                        <td>ANTH 7310F</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Seminar in Cultural Anthropology</td>
+                        <td>ANTH 7311</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Seminar in Biological Anthropology</td>
+                        <td>ANTH 7312</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Seminar in Archaeology</td>
+                        <td>ANTH 7313</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Archaeological Techniques</td>
+                        <td>ANTH 7315</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Technical Methods in Anthropology</td>
+                        <td>ANTH 7326</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Professional Ethics In Anthropology</td>
+                        <td>ANTH 7341</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Proposal Writing</td>
+                        <td>ANTH 7344</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cultural Heritage Management</td>
+                        <td>ANTH 7348</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>GIS in Anthropology</td>
+                        <td>ANTH 7351</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Qualitative Methods</td>
+                        <td>ANTH 7352</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Applied Anthropology Methods</td>
+                        <td>ANTH 7353</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Curation of Archaeological Materials</td>
+                        <td>ANTH 7358</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Human Osteology</td>
+                        <td>ANTH 7374</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Forensic Analysis of Human Skeletal Remains</td>
+                        <td>ANTH 7376</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Seminar in Anthropology</td>
+                        <td>ANTH 7385</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Professional Externship</td>
+                        <td>ANTH 7395</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Research</td>
+                        <td>ANTH 7397</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Collaborative Research</td>
+                        <td>ANTH 7398</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Dissertation</td>
+                        <td>ANTH 7999</td>
+                        <td>9</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Professional Externship</td>
+                        <td>ANTH 7695</td>
+                        <td>6</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Professional Externship</td>
+                        <td>ANTH 7995</td>
+                        <td>9</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+
+      <div id="hiddeninfo">
+        <p id="unicolor">#501214</p>
+      </div>
+    </div>
+    <!-- put hidden info here for the JavaScript to get -->
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+                    <!-- Hover Script -->
+
+                    <script src="../../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../../static/js/animatetable.js"></script>
+                
+  </body>
+</html>

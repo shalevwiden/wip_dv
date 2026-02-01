@@ -1,0 +1,1108 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
+</script>
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, CHEM - Chemistry"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Chemistry UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+<!-- test comment -->
+
+  </head>
+  <body>
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li>
+                <a href="../../tx_state-home.html"> TX State Home</a>
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../c/c-departments.html"
+                  >C Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">CHEM - Chemistry</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../TX_Statestats.html.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="departmenttitle">CHEM - Chemistry</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="Original">Original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/txstate/chemistrychem/excel-files/chemistrychem-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="TX State">TX State Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/txstate/chemistrychem/excel-files/chemistrychem-tx_state-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li style="display: none">
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Chemistry Courses with "Chemistry"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              CHEM - Chemistry Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">102</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                Predoctoral Biomedical Research Development for Undergraduates
+              </div>
+            </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                62
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Thesis
+              </div>
+            </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                6
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                17, 16.7%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                33, 32.4%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                52, 51.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                27
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Chemistry Courses with "Chemistry" in their name
+              </div>
+              <div class="statscontent">
+                56, 54.9%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Chemistry Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Chemistry</td>
+
+            <td colspan="2">Texas State University</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
+
+                    
+                        <tr>
+                        <td>Engineering Chemistry Laboratory</td>
+                        <td>CHEM 1135</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>General Chemistry Laboratory I</td>
+                        <td>CHEM 1141</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>General Chemistry Laboratory II</td>
+                        <td>CHEM 1142</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introductory Chemistry for Non-Science Majors</td>
+                        <td>CHEM 1310</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Foundations of Chemistry</td>
+                        <td>CHEM 1320</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Chemistry for Non-Science Majors</td>
+                        <td>CHEM 1330</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Engineering Chemistry</td>
+                        <td>CHEM 1335</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>General Chemistry I</td>
+                        <td>CHEM 1341</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>General Chemistry II</td>
+                        <td>CHEM 1342</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Laboratory Technique in Organic Chemistry</td>
+                        <td>CHEM 2130</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Organic Chemistry Laboratory I</td>
+                        <td>CHEM 2141</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Organic Chemistry Laboratory II</td>
+                        <td>CHEM 2142</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Biochemistry & Metabolism Lab</td>
+                        <td>CHEM 2150</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fundamentals of Organic Chemistry</td>
+                        <td>CHEM 2330</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Organic Chemistry I</td>
+                        <td>CHEM 2341</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Organic Chemistry II</td>
+                        <td>CHEM 2342</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Biochemistry & Metabolism</td>
+                        <td>CHEM 2350</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cooperative Education</td>
+                        <td>CHEM 3190</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Chemistry Pedagogy and Learning</td>
+                        <td>CHEM 3210</td>
+                        <td>2</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Physical Chemistry Laboratory</td>
+                        <td>CHEM 3245</td>
+                        <td>2</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Experimental Biochemistry</td>
+                        <td>CHEM 3276</td>
+                        <td>2</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Cooperative Education</td>
+                        <td>CHEM 3290</td>
+                        <td>2</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Physical Chemistry I</td>
+                        <td>CHEM 3330</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Physical Chemistry II</td>
+                        <td>CHEM 3340</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Descriptive Inorganic Chemistry</td>
+                        <td>CHEM 3341</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Principles of Biochemistry</td>
+                        <td>CHEM 3375</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Analytical Biochemistry</td>
+                        <td>CHEM 3380</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Biochemistry Techniques</td>
+                        <td>CHEM 3381</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Physical Chemistry for Biochemists</td>
+                        <td>CHEM 3390</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Quantitative Analysis</td>
+                        <td>CHEM 3410</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Predoctoral Biomedical Research Development for Undergraduates</td>
+                        <td>CHEM 4099</td>
+                        <td>0</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Laboratory I</td>
+                        <td>CHEM 4231</td>
+                        <td>2</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Laboratory II</td>
+                        <td>CHEM 4241</td>
+                        <td>2</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Laboratory Development and Practice</td>
+                        <td>CHEM 4295</td>
+                        <td>2</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Undergraduate Research</td>
+                        <td>CHEM 4299</td>
+                        <td>2</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Medicinal Chemistry</td>
+                        <td>CHEM 4310</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Organometallic Chemistry</td>
+                        <td>CHEM 4312</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Instrumental Analysis</td>
+                        <td>CHEM 4331</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Spectroscopy</td>
+                        <td>CHEM 4333</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Inorganic Chemistry</td>
+                        <td>CHEM 4341</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Modern Molecular Modeling</td>
+                        <td>CHEM 4350</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Polymers</td>
+                        <td>CHEM 4351</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Molecular Biology</td>
+                        <td>CHEM 4360</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Directed Study</td>
+                        <td>CHEM 4371</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Biochemistry</td>
+                        <td>CHEM 4375</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Biochemistry Research Laboratory II</td>
+                        <td>CHEM 4382</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Metabolism</td>
+                        <td>CHEM 4385</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Supramolecular Chemistry</td>
+                        <td>CHEM 4390</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Materials Chemistry</td>
+                        <td>CHEM 4396A</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Biochemistry Lab I</td>
+                        <td>CHEM 4481</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Seminar in Chemistry</td>
+                        <td>CHEM 5110</td>
+                        <td>1</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Professional Development of Graduate Assistants</td>
+                        <td>CHEM 5195</td>
+                        <td>1</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Thesis</td>
+                        <td>CHEM 5199B</td>
+                        <td>1</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Laboratory Development Practice</td>
+                        <td>CHEM 5285</td>
+                        <td>2</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Professional Development of Graduate Assistants</td>
+                        <td>CHEM 5295</td>
+                        <td>2</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Thesis</td>
+                        <td>CHEM 5299B</td>
+                        <td>2</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Medicinal Chemistry</td>
+                        <td>CHEM 5310</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Natural Products, Anti-Infective, and Anti-Cancer Agents</td>
+                        <td>CHEM 5311</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Organometallic Chemistry</td>
+                        <td>CHEM 5312</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Principles and Applications of Mass Spectrometry</td>
+                        <td>CHEM 5313</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Modern Molecular Modeling</td>
+                        <td>CHEM 5320</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Organic Chemistry</td>
+                        <td>CHEM 5321</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Physical Chemistry</td>
+                        <td>CHEM 5330</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Spectroscopy</td>
+                        <td>CHEM 5333</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Inorganic Chemistry</td>
+                        <td>CHEM 5341</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Bioinorganic Chemistry</td>
+                        <td>CHEM 5342</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Polymers and Polymer Synthesis</td>
+                        <td>CHEM 5351</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Polymer Processing and Characterization</td>
+                        <td>CHEM 5353</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Physical Chemistry of Polymers</td>
+                        <td>CHEM 5355</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Separation Methods in Chemical Analysis</td>
+                        <td>CHEM 5365</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Quantitative Methods in Biophysical Chemistry</td>
+                        <td>CHEM 5366</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Problems in Chemistry</td>
+                        <td>CHEM 5370</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Biochemistry</td>
+                        <td>CHEM 5375</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Physical Biochemistry</td>
+                        <td>CHEM 5381</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Enzymology</td>
+                        <td>CHEM 5382</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Molecular Biology & Molecular Genetics</td>
+                        <td>CHEM 5383</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Current Topics in Biochemistry and Molecular Biology</td>
+                        <td>CHEM 5384</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Metabolism</td>
+                        <td>CHEM 5385</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Proteins</td>
+                        <td>CHEM 5386</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Nucleic Acids Chemistry</td>
+                        <td>CHEM 5387</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Supramolecular Chemistry</td>
+                        <td>CHEM 5390</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Chemical Biology</td>
+                        <td>CHEM 5391</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fundamentals of Research</td>
+                        <td>CHEM 5395</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Materials Chemistry</td>
+                        <td>CHEM 5396A</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Thesis</td>
+                        <td>CHEM 5999B</td>
+                        <td>9</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Doctoral Assistant Development</td>
+                        <td>CHEM 7101</td>
+                        <td>1</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advances in Molecular and Biophysical Chemistry</td>
+                        <td>CHEM 7110</td>
+                        <td>1</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Dissertation</td>
+                        <td>CHEM 7199</td>
+                        <td>1</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Research</td>
+                        <td>CHEM 7200</td>
+                        <td>2</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Laboratory Rotations</td>
+                        <td>CHEM 7201</td>
+                        <td>2</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Dissertation</td>
+                        <td>CHEM 7299</td>
+                        <td>2</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Graduate Research</td>
+                        <td>CHEM 7300</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Physico-Chemical Properties and Metabolism of Xenobiotics</td>
+                        <td>CHEM 7305A</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Natural Products, Anti-Infective, and Anti-Cancer Agents</td>
+                        <td>CHEM 7311</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Environmental Chemistry</td>
+                        <td>CHEM 7330</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Bioinorganic Chemistry</td>
+                        <td>CHEM 7342</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Eukaryotic Molecular Biology and Macromolecular Structure</td>
+                        <td>CHEM 7354</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Quantitative Methods in Biophysical Chemistry</td>
+                        <td>CHEM 7361</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Metabolism and Metabolomics</td>
+                        <td>CHEM 7385</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Chemical Biology</td>
+                        <td>CHEM 7391</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fundamentals in Molecular and Biophysical Chemistry</td>
+                        <td>CHEM 7395</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Dissertation</td>
+                        <td>CHEM 7999</td>
+                        <td>9</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+
+      <div id="hiddeninfo">
+        <p id="unicolor">#501214</p>
+      </div>
+    </div>
+    <!-- put hidden info here for the JavaScript to get -->
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+                    <!-- Hover Script -->
+
+                    <script src="../../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../../static/js/animatetable.js"></script>
+                
+  </body>
+</html>

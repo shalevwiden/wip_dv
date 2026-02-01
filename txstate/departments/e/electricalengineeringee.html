@@ -1,0 +1,1031 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
+</script>
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, EE - Electrical Engineering"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Electrical Engineering UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+<!-- test comment -->
+
+  </head>
+  <body>
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li>
+                <a href="../../tx_state-home.html"> TX State Home</a>
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../e/e-departments.html"
+                  >E Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">EE - Electrical Engineering</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../TX_Statestats.html.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="departmenttitle">EE - Electrical Engineering</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="Original">Original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/txstate/electricalengineeringee/excel-files/electricalengineeringee-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="TX State">TX State Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/txstate/electricalengineeringee/excel-files/electricalengineeringee-tx_state-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li style="display: none">
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Electrical Engineering Courses with "Electrical Engineering"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              EE - Electrical Engineering Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">91</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                Research Methods and Technical Writing in Electrical and Computer Engineering
+              </div>
+            </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                77
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Circuits I
+              </div>
+            </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                10
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                6, 6.6%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                47, 51.6%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                38, 41.8%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                30
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Electrical Engineering Courses with "Electrical Engineering" in their name
+              </div>
+              <div class="statscontent">
+                5, 5.5%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Electrical Engineering Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Electrical Engineering</td>
+
+            <td colspan="2">Texas State University</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
+
+                    
+                        <tr>
+                        <td>Circuits I Lab</td>
+                        <td>EE 2100</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Digital Logic Lab</td>
+                        <td>EE 2120</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Circuits I</td>
+                        <td>EE 2300</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Digital Logic</td>
+                        <td>EE 2320</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Circuits I</td>
+                        <td>EE 2400</td>
+                        <td>4</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Digital Logic</td>
+                        <td>EE 2420</td>
+                        <td>4</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Instrumentation Laboratory</td>
+                        <td>EE 3100</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Microprocessors Lab</td>
+                        <td>EE 3120</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Microelectronics Laboratory</td>
+                        <td>EE 3150</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Circuits II</td>
+                        <td>EE 3300</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Microprocessors</td>
+                        <td>EE 3320</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Numerical and Scientific Data Analysis Using Python</td>
+                        <td>EE 3326</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Electromagnetics</td>
+                        <td>EE 3340</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Microelectronics</td>
+                        <td>EE 3350</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Solid State Devices</td>
+                        <td>EE 3355</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Signals and Systems</td>
+                        <td>EE 3370</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Circuits II</td>
+                        <td>EE 3400</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Microprocessors</td>
+                        <td>EE 3420</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to VLSI Design Lab</td>
+                        <td>EE 4152</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Analog and Mixed-Signal Lab</td>
+                        <td>EE 4155</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Electric Machines Lab</td>
+                        <td>EE 4180</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Microelectronics Manufacturing I Laboratory</td>
+                        <td>EE 4192</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to VLSI Design</td>
+                        <td>EE 4252</td>
+                        <td>2</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Analog and Mixed-Signal Design</td>
+                        <td>EE 4255</td>
+                        <td>2</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Electrical Engineering Design I</td>
+                        <td>EE 4290</td>
+                        <td>2</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Electrical Engineering Design II</td>
+                        <td>EE 4291</td>
+                        <td>2</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Digital Systems Design Using HDL</td>
+                        <td>EE 4321</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Digital Image Processing</td>
+                        <td>EE 4323</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Machine Learning for Engineering Applications</td>
+                        <td>EE 4331</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Computer-Aided Engineering Simulation on HPC Systems</td>
+                        <td>EE 4332</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Electronics II</td>
+                        <td>EE 4350</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fundamentals of Electroceramics</td>
+                        <td>EE 4351</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to VLSI Design</td>
+                        <td>EE 4352</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fundamentals of Advanced Semiconductor Technology</td>
+                        <td>EE 4353</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Flexible Electronics</td>
+                        <td>EE 4354</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Analog and Mixed Signal Design</td>
+                        <td>EE 4355</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Power Electronics</td>
+                        <td>EE 4356</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Power Systems</td>
+                        <td>EE 4357</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Electronic Materials and Devices</td>
+                        <td>EE 4359</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Linear Control Systems</td>
+                        <td>EE 4360</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Communication Systems</td>
+                        <td>EE 4370</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Communication Networks</td>
+                        <td>EE 4372</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Wireless Communication</td>
+                        <td>EE 4374</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Building a Smart Grid Architecture</td>
+                        <td>EE 4375</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Telecommunications</td>
+                        <td>EE 4376</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Digital Signal Processing</td>
+                        <td>EE 4377</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Data Compression and Error Control Coding</td>
+                        <td>EE 4378</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Electric Machines</td>
+                        <td>EE 4380</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sustainable Energy & Storage</td>
+                        <td>EE 4381</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Power Systems</td>
+                        <td>EE 4382</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Electrical Engineering Design I</td>
+                        <td>EE 4390</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Electrical Engineering Design II</td>
+                        <td>EE 4391</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Microelectronics Manufacturing I</td>
+                        <td>EE 4392</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Computer Architecture and Arithmetic</td>
+                        <td>EE 5320</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Computer-Aided Engineering Simulations on HPC Systems</td>
+                        <td>EE 5321</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Digital Image Processing</td>
+                        <td>EE 5323</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Embedded and Real-Time Computing</td>
+                        <td>EE 5330</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Machine Learning for Engineering Applications</td>
+                        <td>EE 5331</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Electronic Circuit Design</td>
+                        <td>EE 5350</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Fundamentals of Advanced Semiconductor Technology</td>
+                        <td>EE 5353</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Flexible Electronics</td>
+                        <td>EE 5354</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Electronic Materials and Devices</td>
+                        <td>EE 5355</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Power Systems for Engineering</td>
+                        <td>EE 5357</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Thin Film Technology</td>
+                        <td>EE 5360</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Nanofabrication Technology for Semiconductor Device Processing</td>
+                        <td>EE 5361</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Networking</td>
+                        <td>EE 5372</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Wireless Communication</td>
+                        <td>EE 5374</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Smart Grid: an Application Development Platform</td>
+                        <td>EE 5375</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Statistical Signal Processing</td>
+                        <td>EE 5377</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Electric Machines</td>
+                        <td>EE 5380</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Sustainable Energy & Storage</td>
+                        <td>EE 5381</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Power Systems Analysis</td>
+                        <td>EE 5382</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Antenna Theory, Design and Applications</td>
+                        <td>EE 5398A</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Electronic Materials and Beyond for Sustainable Energy</td>
+                        <td>EE 5398B</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Dissertation</td>
+                        <td>EE 7199</td>
+                        <td>1</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Dissertation</td>
+                        <td>EE 7299</td>
+                        <td>2</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Research Methods and Technical Writing in Electrical and Computer Engineering</td>
+                        <td>EE 7300</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Digital System Design</td>
+                        <td>EE 7301</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Hardware Acceleration for Machine Learning</td>
+                        <td>EE 7302</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Physical Electronics</td>
+                        <td>EE 7303</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Modern Semiconductor Devices</td>
+                        <td>EE 7304</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Energy Storage and Sustainability</td>
+                        <td>EE 7305</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Artificial Intelligence in Smart Grids</td>
+                        <td>EE 7306</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Mobile and Microgrid Design and Operations</td>
+                        <td>EE 7307</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>High and Medium Voltage Power Transmission</td>
+                        <td>EE 7308</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>AI and Machine Learning for Engineers</td>
+                        <td>EE 7331</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Flexible Electronics</td>
+                        <td>EE 7354</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Research in Electrical Engineering</td>
+                        <td>EE 7359</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Wireless and Mobile Networks</td>
+                        <td>EE 7372</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Smart Data Networks</td>
+                        <td>EE 7374</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Dissertation</td>
+                        <td>EE 7999</td>
+                        <td>9</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+
+      <div id="hiddeninfo">
+        <p id="unicolor">#501214</p>
+      </div>
+    </div>
+    <!-- put hidden info here for the JavaScript to get -->
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+                    <!-- Hover Script -->
+
+                    <script src="../../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../../static/js/animatetable.js"></script>
+                
+  </body>
+</html>

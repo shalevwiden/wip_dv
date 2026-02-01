@@ -1,0 +1,905 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
+</script>
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, PSY - Psychology"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Psychology UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+<!-- test comment -->
+
+  </head>
+  <body>
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li>
+                <a href="../../tx_state-home.html"> TX State Home</a>
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../p/p-departments.html"
+                  >P Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">PSY - Psychology</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../TX_Statestats.html.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="departmenttitle">PSY - Psychology</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="Original">Original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/txstate/psychologypsy/excel-files/psychologypsy-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="TX State">TX State Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/txstate/psychologypsy/excel-files/psychologypsy-tx_state-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li style="display: none">
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Psychology Courses with "Psychology"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              PSY - Psychology Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">73</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                Psychology of Prejudice, Discrimination, and Hate
+              </div>
+            </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                49
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Thesis
+              </div>
+            </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                6
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                5, 6.8%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                37, 50.7%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                31, 42.5%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                26
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Psychology Courses with "Psychology" in their name
+              </div>
+              <div class="statscontent">
+                29, 39.7%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Psychology Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Psychology</td>
+
+            <td colspan="2">Texas State University</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
+
+                    
+                        <tr>
+                        <td>Introduction to Psychology</td>
+                        <td>PSY 1300</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Professional Seminar</td>
+                        <td>PSY 2100</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Statistics Laboratory</td>
+                        <td>PSY 2101</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Statistics</td>
+                        <td>PSY 2301</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Psychology of Human Sexuality</td>
+                        <td>PSY 2311</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Lifespan Development</td>
+                        <td>PSY 3300</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Adolescent Psychology</td>
+                        <td>PSY 3312</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Psychology of Adulthood and Aging</td>
+                        <td>PSY 3313</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Psychology of Consciousness</td>
+                        <td>PSY 3314</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Psychopathology</td>
+                        <td>PSY 3315</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Personality Psychology</td>
+                        <td>PSY 3316</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sensation and Perception</td>
+                        <td>PSY 3321</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Brain and Behavior</td>
+                        <td>PSY 3322</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Evolution and Behavior</td>
+                        <td>PSY 3323</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Psychology of Persuasion</td>
+                        <td>PSY 3325</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Social Psychology</td>
+                        <td>PSY 3331</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Psychology of Gender</td>
+                        <td>PSY 3332</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Industrial Psychology</td>
+                        <td>PSY 3333</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Psychology of Human Diversity</td>
+                        <td>PSY 3334</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Forensic Psychology</td>
+                        <td>PSY 3335</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Sport Psychology</td>
+                        <td>PSY 3336</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Psychology of Prejudice, Discrimination, and Hate</td>
+                        <td>PSY 3337</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cognitive Processes</td>
+                        <td>PSY 3341</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cognitive Behavioral Therapies</td>
+                        <td>PSY 3350</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Health Psychology</td>
+                        <td>PSY 3361</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Experimental and Research Methods</td>
+                        <td>PSY 3402</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Research Methods</td>
+                        <td>PSY 3404</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Learning and Memory</td>
+                        <td>PSY 4342</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Reality Therapy/Choice Theory</td>
+                        <td>PSY 4350</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Clinical Psychology</td>
+                        <td>PSY 4352</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Psychopharmacology</td>
+                        <td>PSY 4353</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Human Factors and Ergonomics</td>
+                        <td>PSY 4354</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Latinx Psychology</td>
+                        <td>PSY 4355</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Emotion and Human Behavior</td>
+                        <td>PSY 4390B</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Developmental Disabilities</td>
+                        <td>PSY 4390Q</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Intermediate Statistics</td>
+                        <td>PSY 4390R</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Architectural Psychopathology</td>
+                        <td>PSY 4390T</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Neuroscience of Creativity</td>
+                        <td>PSY 4390U</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>History and Theory</td>
+                        <td>PSY 4391</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>International Psychology</td>
+                        <td>PSY 4393</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Individual Study</td>
+                        <td>PSY 4395</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Internship in Psychology</td>
+                        <td>PSY 4396</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Practicum in Teaching Psychology</td>
+                        <td>PSY 5105</td>
+                        <td>1</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Research Seminar</td>
+                        <td>PSY 5198</td>
+                        <td>1</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Thesis</td>
+                        <td>PSY 5199B</td>
+                        <td>1</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Thesis</td>
+                        <td>PSY 5299B</td>
+                        <td>2</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Psychological Development: Theories & Research</td>
+                        <td>PSY 5306</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Psychopathology</td>
+                        <td>PSY 5310</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Univariate and Bivariate Statistics</td>
+                        <td>PSY 5311</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Assessment in Psychology</td>
+                        <td>PSY 5318</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Principles of Measurement and Statistics</td>
+                        <td>PSY 5320</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Multivariate Statistics</td>
+                        <td>PSY 5321</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Biological Bases of Behavior</td>
+                        <td>PSY 5324</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Neuropsychological Assessment</td>
+                        <td>PSY 5326</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Foundations of Health Psychology</td>
+                        <td>PSY 5335</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Psychopharmacology</td>
+                        <td>PSY 5345</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Health Psychology: Prevention and Intervention</td>
+                        <td>PSY 5348</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Psychological Therapies</td>
+                        <td>PSY 5352</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Psychology of Women</td>
+                        <td>PSY 5360H</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Applied Biostatistics in Health Research</td>
+                        <td>PSY 5360O</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cognitive Neuroscience</td>
+                        <td>PSY 5362</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Forensic Psychology</td>
+                        <td>PSY 5363</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Statistical Methodology</td>
+                        <td>PSY 5364</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Psychology of Culture and Diversity</td>
+                        <td>PSY 5365</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Individual Study</td>
+                        <td>PSY 5366</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Research Seminar in Social Psychology</td>
+                        <td>PSY 5367</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Learning, Cognition, and Motivation</td>
+                        <td>PSY 5370</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Human Memory and Memory Disorders</td>
+                        <td>PSY 5373</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>The Psychology of Language</td>
+                        <td>PSY 5374</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Psychophysiology</td>
+                        <td>PSY 5381</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Research Methods & Experimental Design</td>
+                        <td>PSY 5391</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Internship in Psychology</td>
+                        <td>PSY 5398</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Thesis</td>
+                        <td>PSY 5999B</td>
+                        <td>9</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+
+      <div id="hiddeninfo">
+        <p id="unicolor">#501214</p>
+      </div>
+    </div>
+    <!-- put hidden info here for the JavaScript to get -->
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+                    <!-- Hover Script -->
+
+                    <script src="../../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../../static/js/animatetable.js"></script>
+                
+  </body>
+</html>

@@ -1,0 +1,737 @@
+<!-- this will be a template -->
+<!-- for the left content code one I can just pass it in as a variable  -->
+<!-- and programmatically generate it with the linkbox and stuff -->
+<!-- like pass in a leftcontentdata dictionationary -->
+
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
+</script>
+
+    <meta
+      name="description"
+      content="Visualize {departmentnamehalf} at UT Austin through diagrams and tabular data."
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, ISAN - Information Systems"
+    />
+
+    <meta name="author" content="DegreeView" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        {
+          dataLayer.push(arguments);
+        }
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Information Systems UT Page - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="../../../static/css/main.css" />
+
+    <!-- Barlow Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Roboto Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+<!-- Icons ( download icon and file icons from here is used) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<!-- Material Symbols google -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+/>
+<!-- test comment -->
+
+  </head>
+  <body>
+    <div class="sitecontainer" id="departmentpage">
+      <div class="abovemainsite">
+        <div class="topnav">
+          <nav class="breadcrumbs">
+            <ul>
+              <li>
+                <a href="../../tx_state-home.html"> TX State Home</a>
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li>
+                <a href="../i/i-departments.html"
+                  >I Departments</a
+                >
+              </li>
+              <i class="fa fa-chevron-right"></i>
+
+              <li id="current">ISAN - Information Systems</li>
+            </ul>
+          </nav>
+          <nav class="homeandabout">
+            <ul>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../../../aboutpage.html">About</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../TX_Statestats.html.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="degreenamebox">
+          <h1 id="departmenttitle">ISAN - Information Systems</h1>
+        </div>
+      </div>
+      <div class="mainsite">
+        <!-- left content has all the file references -->
+        <div class="leftcontent">
+          <div class="filescontainer" id="excelcontainer">
+            <div class="filesname">
+              <h3>Excel (.xlsx) Files</h3>
+              <span class="material-symbols-outlined"> view_module </span>
+            </div>
+            <ul>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="Original">Original Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/txstate/informationsystems(isan)/excel-files/informationsystems(isan)-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="TX State">TX State Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/txstate/informationsystems(isan)/excel-files/informationsystems(isan)-tx_state-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+            </ul>
+
+            <!-- end the for loop -->
+          </div>
+          <div class="filescontainer" id="tablecontainer">
+            <div class="filesname">
+              <h3>Tables</h3>
+              <span class="material-symbols-outlined"> table </span>
+            </div>
+
+            <ul>
+              <li>
+                <div class="linkbox">
+                  <p>Department Courses Table</p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#departmenttableheading" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+
+              <li style="display: none">
+                <div class="linkbox">
+                  <p>
+                    <small id="underconstruction"
+                      >Under construction, coming soon</small
+                    >
+                    <br />
+
+                    Information Systems Courses with "Information Systems"
+                    in their name Table
+                  </p>
+
+                  <p>
+                    View:&nbsp;&nbsp;
+                    <a href="#" onclick="return false;" target="_self"
+                      ><i class="fa-regular fa-eye"></i>
+                    </a>
+                    <!-- link icon above-->
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightcontent">
+          <div class="displaynamebox">
+            <h3 id="displayname">
+              ISAN - Information Systems Statistics &nbsp; &nbsp;<span
+                class="material-symbols-outlined"
+                id="charticon"
+              >
+                bar_chart_4_bars
+              </span>
+            </h3>
+          </div>
+          <!-- department stats here -->
+          <div class="departmentstats">
+            <section class="statsline" id="coursecount">
+              <div class="statsname">Department Course Count</div>
+              <div class="statscontent">49</div>
+            </section>
+
+            <section class="statsline" id="longestname">
+              <div class="statsname">Longest Course Name</div>
+              <div class="statscontent">
+                Agentic Artificial Intelligence Development for Business Applications
+              </div>
+            </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                69
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="shortestname">
+              <div class="statsname">Shortest Course Name</div>
+              <div class="statscontent">
+                Thesis
+              </div>
+            </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                6
+              </div>
+            </section>
+            
+
+            <section class="statsline" id="lowercount">
+              <div class="statsname">Lower Division Course Count</div>
+              <div class="statscontent">
+                1, 2.0%
+              </div>
+            </section>
+
+            <section class="statsline" id="uppercount">
+              <div class="statsname">Upper Division Course Count</div>
+              <div class="statscontent">
+                28, 57.1%
+              </div>
+            </section>
+
+            <section class="statsline" id="gradcount">
+              <div class="statsname">Graduate Courses Count</div>
+              <div class="statscontent">
+                20, 40.8%
+              </div>
+            </section>
+
+            <section class="statsline" id="averagelength">
+              <div class="statsname">
+                Average Course Name Length (characters)
+              </div>
+              <div class="statscontent">
+                34
+              </div>
+            </section>
+
+            <section class="statsline" id="samenamecount">
+              <div class="statsname">
+                Number of Information Systems Courses with "Information Systems" in their name
+              </div>
+              <div class="statscontent">
+                6, 12.2%
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="undermainsite">
+        <h3 id="departmenttableheading">
+          Information Systems Department Courses Table
+        </h3>
+
+        <div class="copyanddownload">
+          <div class="animatetable">
+            <button id="animatebutton">Animate</button>
+          </div>
+
+          <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
+          <!-- contains the rendered csv -->
+        </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Information Systems</td>
+
+            <td colspan="2">Texas State University</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
+
+                    
+                        <tr>
+                        <td>Introduction to Microcomputer Applications</td>
+                        <td>ISAN 1323</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Business Programming I</td>
+                        <td>ISAN 3305</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>E-Business</td>
+                        <td>ISAN 3317</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Business Programming II</td>
+                        <td>ISAN 3325</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Data Communications and Network Architecture</td>
+                        <td>ISAN 3348</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Information Systems Security</td>
+                        <td>ISAN 3350</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Web Design and Development</td>
+                        <td>ISAN 3360</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>System Analysis and Design</td>
+                        <td>ISAN 3374</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Enterprise Information Technology and Business Intelligence</td>
+                        <td>ISAN 3380</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Computer Data Base Systems</td>
+                        <td>ISAN 3382</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Programming for Data Processing</td>
+                        <td>ISAN 3389</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Agile Project Management</td>
+                        <td>ISAN 3390</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Machine Learning</td>
+                        <td>ISAN 3392</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Object Oriented Development</td>
+                        <td>ISAN 4318</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Mobile Application Development for Android</td>
+                        <td>ISAN 4321</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Computer System Development and Design</td>
+                        <td>ISAN 4322</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Legacy Systems: Applications, Development, and Support</td>
+                        <td>ISAN 4325</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Artificial Intelligence: Development and Application</td>
+                        <td>ISAN 4328</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Enterprise Resource Planning Systems</td>
+                        <td>ISAN 4332</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Advanced Database Management Systems</td>
+                        <td>ISAN 4349</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Ethical Hacking</td>
+                        <td>ISAN 4350</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Network and Cloud Administration</td>
+                        <td>ISAN 4358</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Developing AI Solutions for the Enterprise</td>
+                        <td>ISAN 4360</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Cyber-Warfare: Actors, Techniques, and Impact</td>
+                        <td>ISAN 4373A</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Artificial Intelligence in Business Operations</td>
+                        <td>ISAN 4373D</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Programming for Information Security</td>
+                        <td>ISAN 4373E</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Agentic Artificial Intelligence Development for Business Applications</td>
+                        <td>ISAN 4373F</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Independent Study in Information Systems</td>
+                        <td>ISAN 4395</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Information Systems Internship</td>
+                        <td>ISAN 4399</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Thesis</td>
+                        <td>ISAN 5199B</td>
+                        <td>1</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Thesis</td>
+                        <td>ISAN 5299B</td>
+                        <td>2</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Artificial Intelligence in Digital Economy</td>
+                        <td>ISAN 5318</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Database Management Systems</td>
+                        <td>ISAN 5355</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Computing for Data Analytics</td>
+                        <td>ISAN 5357</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Agile Project Management For Business Professionals</td>
+                        <td>ISAN 5358</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>E-Commerce: Strategies, Technologies, and Applications</td>
+                        <td>ISAN 5360</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Data Warehousing</td>
+                        <td>ISAN 5364</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Developing Generative AI Solutions for Business and Innovation</td>
+                        <td>ISAN 5365</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Machine Learning</td>
+                        <td>ISAN 5367</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Information Security</td>
+                        <td>ISAN 5368</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Independent Study in Information Systems</td>
+                        <td>ISAN 5369</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Enterprise Resource Planning and Business Intelligence</td>
+                        <td>ISAN 5370</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Accounting Information Systems and Controls</td>
+                        <td>ISAN 5371</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Information Security Policies and Compliance</td>
+                        <td>ISAN 5378</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Introduction to Design Thinking</td>
+                        <td>ISAN 5390A</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Business Data Visualization for Decision Making</td>
+                        <td>ISAN 5390B</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Internship in Information Systems</td>
+                        <td>ISAN 5395</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Thesis</td>
+                        <td>ISAN 5999B</td>
+                        <td>9</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+                        <tr>
+                        <td>Database Management Systems</td>
+                        <td>ISAN 7355</td>
+                        <td>3</td>
+                        <td>Graduate</td>
+                        </tr>
+                        
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <footer>
+  <div class="footerleft">
+    <div class="links">
+      <div class="tooltip">
+        <a href="../../../aboutpage.html">About</a>
+        <span class="tooltiptext">Go to aboutpage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../utcoursesindex.html">Home</a>
+        <span class="tooltiptext">Go back to the homepage</span>
+      </div>
+
+      <div class="tooltip">
+        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+        <span class="tooltiptext">Go to Excel templates page</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img
+      id="smalllogo"
+      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+      alt="smalldegreeviewlogo"
+    />
+    <p id="statement">DegreeView 2025</p>
+  </div>
+</footer>
+
+
+      <div id="hiddeninfo">
+        <p id="unicolor">#501214</p>
+      </div>
+    </div>
+    <!-- put hidden info here for the JavaScript to get -->
+
+    
+
+                    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+                    <!-- Hover Script -->
+
+                    <script src="../../../static/js/headingcolorchange.js"></script>
+                    <!-- copy script -->
+                    <script src="../../../static/js/copytable.js"></script>
+
+                    <!-- animate table script -->
+                    <script src="../../../static/js/animatetable.js"></script>
+                
+  </body>
+</html>

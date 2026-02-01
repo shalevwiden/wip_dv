@@ -219,7 +219,9 @@ still in top nav, but now the homeandabout section
           height: 100%;
           align-items: center;
           justify-content: center;
-          transition: background-color 0.3s, color 0.3s;
+          transition:
+            background-color 0.3s,
+            color 0.3s;
           background-color: #153f66;
 
           border-radius: 35px;
@@ -414,7 +416,9 @@ Begin left content stuff
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: background-color 0.3s, color 0.3s;
+      transition:
+        background-color 0.3s,
+        color 0.3s;
       background-color: #153f66;
 
       border-radius: 35px;
