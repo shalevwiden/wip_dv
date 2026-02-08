@@ -35,7 +35,7 @@
     <title>Home - DegreeView</title>
 
     <!-- main stylesheet -->
-    <link rel="stylesheet" href="static/css/index.css" />
+    <link rel="stylesheet" href="../static/css/dv_main.css" />
 
     <!-- animation stylesheet -->
     <link rel="stylesheet" href="cssfiles/animations.css" />
@@ -66,7 +66,7 @@
   </head>
   <body>
     <!-- this div basically has the entire site in it. Flex direction column -->
-    <div class="sitecontainer">
+    <div class="sitecontainer" id="index">
       <!-- 
       
       -->
@@ -100,27 +100,33 @@
       <div class="mainsite">
         <!-- in the future I want an interactive USA map here showing states stuff -->
         <ul class="universityul">
-          
+          <li class="universitybox" id="utbox" style="backgrouncolor: #bf5700">
+            <a href="ut/ut-home.html"> UT Austin</a>
+          </li>
+
           <li
             class="universitybox"
-            id="box"
-            style="background-color: #bf5700;"
+            id="ricebox"
+            style="backgrouncolor: #2153b8ff"
           >
-            <a href="utaustin/utaustin.html"
-              >utaustin</a
-            >
+            <a href="rice/rice-home.html"> Rice</a>
           </li>
-          
+
           <li
             class="universitybox"
-            id="box"
-            style="background-color: #2153b8ff;"
+            id="stanfordbox"
+            style="backgrouncolor: #8c1515"
           >
-            <a href="rice/rice.html"
-              >rice</a
-            >
+            <a href="stanford/stanford-home.html"> Stanford</a>
           </li>
-          
+
+          <li
+            class="universitybox"
+            id="tx_statebox"
+            style="backgrouncolor: #501214"
+          >
+            <a href="tx_state/tx_state-home.html"> Texas State</a>
+          </li>
         </ul>
 
         <!-- 3 buttons -->
@@ -135,9 +141,9 @@
             <nav class="home_random_stats">
               <ul>
                 <!-- keep in mind the entire li is clickable here -->
-                <li><a href="aboutpage.html">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li id="randompagebutton">
-                  <a id="randomlink" href="">Random School</a>
+                  <a id="randomunibutton" href="">Random University</a>
                 </li>
                 <li><a href="degreeviewstats.html">Stats</a></li>
               </ul>
@@ -162,9 +168,9 @@
       <div class="undermainsite">
         <h3>Statistics at a glance</h3>
         <div class="quickstats">
-          <h4> Schools</h4>
-          <h4> Files</h4>
-          <h4>Data on  courses</h4>
+          <h4>5 Schools</h4>
+          <h4>Files</h4>
+          <h4>Data on 39,258 courses</h4>
         </div>
         <button id="statslink">DegreeView Stats</button>
       </div>
@@ -176,7 +182,7 @@
 
             <a href="#biglogoid">Home</a>
           </div>
-          <p id="statement">DegreeView 2025</p>
+          <p id="statement">DegreeView 2026</p>
         </div>
 
         <div class="footerright">
@@ -188,8 +194,7 @@
         </div>
       </footer>
     </div>
-    <script src="javascript_files/headingcolorchange.js"></script>
     <!-- script for random button  -->
-    <script src="javascript_files/randomdegreepage.js"></script>
+    <script src="static/js/randomuni.js"></script>
   </body>
 </html>
