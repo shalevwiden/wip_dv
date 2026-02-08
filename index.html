@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta
@@ -15,11 +15,7 @@
     <!-- end seo -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      href="https://storage.googleapis.com/degreeview/degreeviewimages/site_favicon.png"
-      type="image/png"
-    />
+    <link rel="icon" href="metaassets/site_favicon.png" type="image/png" />
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -39,12 +35,10 @@
     <title>Home - DegreeView</title>
 
     <!-- main stylesheet -->
-    <link rel="stylesheet" href="utaustin-site/static/css/index.css" />
+    <link rel="stylesheet" href="static/css/index.css" />
 
     <!-- animation stylesheet -->
-    <link rel="stylesheet" href="utaustin-site/cssfiles/animations.css" />
-    <link rel="stylesheet" href="utaustin-site/static/css/footer.css" />
-
+    <link rel="stylesheet" href="cssfiles/animations.css" />
     <!-- Barlow Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,7 +62,7 @@
 
     <!-- this is just testing -->
 
-    <link rel="stylesheet" href="utaustin-site/cssfiles/filterchaos.css" />
+    <link rel="stylesheet" href="cssfiles/filterchaos.css" />
   </head>
   <body>
     <!-- this div basically has the entire site in it. Flex direction column -->
@@ -80,152 +74,83 @@
         <div class="topnav">
           <!-- this is empty but is just on the top to take up space for the color
            KEEP THIS-->
+          <img src="" alt="" id="minimagnifyingglass" />
         </div>
-        <div class="biglogobox">
-          <img
-            class="biglogo"
-            src="utaustin-site/metaassets/logo5.png"
-            alt=""
-            id="biglogoid"
-          />
+        <div class="hero">
+          <div class="lefthero">
+            <h1 class="heading">DegreeView</h1>
+            <p class="subheading">
+              This is a big data analysis project with the topic being course
+              catalogs at universities.
+            </p>
+            <button class="cta">See Schools</button>
+          </div>
+          <div class="righthero">
+            <img src="images/excellogo.png" alt="" id="excelicon" />
+            <img src="images/barchart.webp" alt="" id="barchart" />
+            <img src="images/csvicon.png" alt="" id="csvicon" />
+            <img src="images/htmltable.png" alt="tableicon" id="tableicon" />
+            <img src="images/piecharticon.png" alt="" id="piechart" />
+          </div>
         </div>
       </div>
       <!-- mainsite
         contains right and left sections
       -->
       <div class="mainsite">
-        <!-- intro box that is -->
-        <div class="introbox">
-          <div class="intro-paragraph">
-            <p>
-              See data and data visualizations within tables and Excel, CSV, and
-              PDF files across all 141 undergraduate degrees at UT Austin.
-            </p>
-          </div>
-        </div>
-        <!-- 3 buttons -->
-        <div class="middlenav">
-          <nav class="home_random_stats">
-            <ul>
-              <!-- keep in mind the entire li is clickable here -->
-              <li><a href="aboutpage.html">About</a></li>
-              <li id="randompagebutton">
-                <a id="randomlink" href="">Random Page</a>
-              </li>
-              <li><a href="ut-stats.html">Stats</a></li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="selector">
-          <div class="coursedata">
-            <a href="utcoursessite/utcoursesindex.html">Courses Data</a>
-          </div>
-
-          <div class="degreeplans" id="currentpage">Degree Plans</div>
-        </div>
-
-        <!-- 
-        
-        
-        
-        -->
-        <!-- now have the list of schools -->
-        <ul class="schoolist-ul">
-          <li class="schoolist-column">
-            <a
-              href="utaustin-site/schoolofarchitecture/schoolofarchitecture.html"
-              ><div class="schoolnamediv">School of Architecture</div></a
+        <!-- in the future I want an interactive USA map here showing states stuff -->
+        <ul class="universityul">
+          
+          <li
+            class="universitybox"
+            id="box"
+            style="background-color: #bf5700;"
+          >
+            <a href="utaustin/utaustin.html"
+              >utaustin</a
             >
           </li>
-          <li class="schoolist-column">
-            <a
-              href="utaustin-site/redmccombsschoolofbusiness/redmccombsschoolofbusiness.html"
-              ><div class="schoolnamediv">
-                Red McCombs School of Business
-              </div></a
+          
+          <li
+            class="universitybox"
+            id="box"
+            style="background-color: #2153b8ff;"
+          >
+            <a href="rice/rice.html"
+              >rice</a
             >
           </li>
-          <li class="schoolist-column">
-            <a
-              href="utaustin-site/schoolofcivicleadership/schoolofcivicleadership.html"
-              ><div class="schoolnamediv">School of Civic Leadership</div></a
-            >
-          </li>
-          <li class="schoolist-column">
-            <a
-              href="utaustin-site/moodycollegeofcommunication/moodycollegeofcommunication.html"
-              ><div class="schoolnamediv">
-                Moody College of Communication
-              </div></a
-            >
-          </li>
-          <li class="schoolist-column">
-            <a href="utaustin-site/collegeofeducation/collegeofeducation.html"
-              ><div class="schoolnamediv">College of Education</div></a
-            >
-          </li>
-          <li class="schoolist-column">
-            <a
-              href="utaustin-site/cockrellschoolofengineering/cockrellschoolofengineering.html"
-              ><div class="schoolnamediv">
-                Cockrell School of Engineering
-              </div></a
-            >
-          </li>
-          <li class="schoolist-column">
-            <a href="utaustin-site/collegeoffinearts/collegeoffinearts.html"
-              ><div class="schoolnamediv">College of Fine Arts</div></a
-            >
-          </li>
-          <li class="schoolist-column">
-            <a
-              href="utaustin-site/johna.andkatherineg.jacksonschoolofgeosciences/johna.andkatherineg.jacksonschoolofgeosciences.html"
-              ><div class="schoolnamediv">
-                John A. and Katherine G. Jackson School of Geosciences
-              </div></a
-            >
-          </li>
-          <li class="schoolist-column">
-            <a href="utaustin-site/schoolofinformation/schoolofinformation.html"
-              ><div class="schoolnamediv">School of Information</div></a
-            >
-          </li>
-          <li class="schoolist-column">
-            <a
-              href="utaustin-site/collegeofliberalarts/collegeofliberalarts.html"
-              ><div class="schoolnamediv">College of Liberal Arts</div></a
-            >
-          </li>
-          <li class="schoolist-column">
-            <a
-              href="utaustin-site/collegeofnaturalsciences/collegeofnaturalsciences.html"
-              ><div class="schoolnamediv">College of Natural Sciences</div></a
-            >
-          </li>
-          <li class="schoolist-column">
-            <a href="utaustin-site/schoolofnursing/schoolofnursing.html"
-              ><div class="schoolnamediv">School of Nursing</div></a
-            >
-          </li>
-          <li class="schoolist-column">
-            <a
-              href="utaustin-site/lyndonb.johnsonschoolofpublicaffairs/lyndonb.johnsonschoolofpublicaffairs.html"
-              ><div class="schoolnamediv">
-                Lyndon B. Johnson School of Public Affairs
-              </div></a
-            >
-          </li>
-          <li class="schoolist-column">
-            <a
-              href="utaustin-site/stevehicksschoolofsocialwork/stevehicksschoolofsocialwork.html"
-              ><div class="schoolnamediv">
-                Steve Hicks School of Social Work
-              </div></a
-            >
-          </li>
+          
         </ul>
+
+        <!-- 3 buttons -->
+        <div class="sidebar">
+          <h3 id="sidebartitle">Sidebar</h3>
+          <p>
+            See stats for schools, progress posts, and updates for DegreeView on
+            YouTube and X
+            <a href="">go to socials box</a>
+          </p>
+          <div class="middlenav">
+            <nav class="home_random_stats">
+              <ul>
+                <!-- keep in mind the entire li is clickable here -->
+                <li><a href="aboutpage.html">About</a></li>
+                <li id="randompagebutton">
+                  <a id="randomlink" href="">Random School</a>
+                </li>
+                <li><a href="degreeviewstats.html">Stats</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- now have the list of schools -->
       </div>
+
+      <!-- future search bar will go here -->
+
+      <div class="futuresearchbar" style="display: none"></div>
 
       <!-- end intro box -->
 
@@ -233,40 +158,38 @@
 
       <!-- end main mainsite -->
       <!-- this goes under main site( no way) -->
-      <div class="undermainsite"></div>
+      <div class="borderdiv"></div>
+      <div class="undermainsite">
+        <h3>Statistics at a glance</h3>
+        <div class="quickstats">
+          <h4> Schools</h4>
+          <h4> Files</h4>
+          <h4>Data on  courses</h4>
+        </div>
+        <button id="statslink">DegreeView Stats</button>
+      </div>
       <!-- footer now -->
       <footer>
         <div class="footerleft">
           <div class="links">
-            <div class="tooltip">
-              <a href="aboutpage.html">About</a>
-            </div>
+            <a href="aboutpage.html">About</a>
 
-            <div class="tooltip">
-              <a href="#biglogoid">Home</a>
-            </div>
-
-            <div class="tooltip">
-              <a href="exceltemplates.html">Excel Templates Breakdown</a>
-            </div>
+            <a href="#biglogoid">Home</a>
           </div>
+          <p id="statement">DegreeView 2025</p>
         </div>
 
         <div class="footerright">
           <img
             id="smalllogo"
-            src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
+            src="metaassets/minilogo.png"
             alt="smalldegreeviewlogo"
           />
-          <p id="statement">DegreeView 2025</p>
         </div>
       </footer>
-      <a
-        href="utaustinsite/schoolofarchitecture/interiordesign-bsid-rendered-csv.html"
-      ></a>
     </div>
-    <script src="utaustin-site/javascript_files/headingcolorchange.js"></script>
+    <script src="javascript_files/headingcolorchange.js"></script>
     <!-- script for random button  -->
-    <script src="utaustin-site/javascript_files/randomdegreepage.js"></script>
+    <script src="javascript_files/randomdegreepage.js"></script>
   </body>
 </html>

@@ -3,7 +3,9 @@
 // maybe a history page or something
 // Ah yes the about page
 
-@use "about/about";
+@use "dv_main/about/about";
+@use "dv_main/index/index";
+@use "dv_main/dv_stats/dv_stats";
 
 @use "../utils/mixins" as *;
 
