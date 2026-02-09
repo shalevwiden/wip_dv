@@ -872,6 +872,7 @@ This is all nav bar stuff:*/
 }
 .sitecontainer#departmentpage {
   min-height: 100vh;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1056,7 +1057,7 @@ This is all nav bar stuff:*/
   width: 90%;
   margin: -20px 0px -14px 0px;
 }
-.sitecontainer#departmentpage :hover {
+.sitecontainer#departmentpage .copyanddownload:hover {
   cursor: pointer;
   background-color: #fdfbfa;
   color: #153f66;
@@ -3378,71 +3379,6 @@ This is all nav bar stuff:*/
 }
 .sitecontainer#statspage .visuals .displayedpdf {
   border-radius: 26px;
-}
-.sitecontainer#statspage footer {
-  height: 120px;
-  width: 100%;
-  background-color: rgba(0, 24, 75, 0.4549019608);
-  color: White;
-  padding: 20px;
-  font-size: 16px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  font-family: Helvetica, sans-serif;
-}
-.sitecontainer#statspage footer .links {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  -moz-column-gap: 35px;
-       column-gap: 35px;
-  font-size: 19px;
-}
-.sitecontainer#statspage .footerleft {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  row-gap: 15px;
-}
-.sitecontainer#statspage .footerleft #statement {
-  font-family: "Barlow", sans-serif;
-  font-size: 25px;
-  margin: 0;
-  font-weight: 700;
-}
-.sitecontainer#statspage footer #smalllogo {
-  /* animation has been added in animations.css  */
-  width: 55px;
-  height: 55px;
-  border-radius: 10px;
-  border: 3px solid #081a75;
-}
-.sitecontainer#statspage .barlowtest {
-  font-family: "Barlow", sans-serif;
-  font-size: 25px;
-  margin: 0;
-  font-weight: 600;
-  color: black;
-}
-.sitecontainer#statspage footer a {
-  color: white;
-  font-family: Helvetica, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  text-decoration: none;
-}
-.sitecontainer#statspage footer a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 4px;
-  text-underline-offset: 3px;
-  font-weight: bold;
 }
 @media screen and (min-width: 700px) and (max-width: 1272px) {
   .sitecontainer#statspage #headingtitle {

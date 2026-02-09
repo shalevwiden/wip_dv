@@ -40,6 +40,7 @@ This is all nav bar stuff:*/
 
   & {
     min-height: 100vh;
+    height: auto;
 
     width: 100%;
     display: flex;
@@ -283,16 +284,16 @@ Begin left content stuff
 
     width: 90%;
     margin: -20px 0px -14px 0px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #fdfbfa;
+      color: #153f66;
+
+      border: 3px solid rgb(15, 29, 89);
+    }
   }
   /* add share icon in the future */
-
-  :hover {
-    cursor: pointer;
-    background-color: #fdfbfa;
-    color: #153f66;
-
-    border: 3px solid rgb(15, 29, 89);
-  }
 
   .copyanddownload i {
     font-size: 28px;
