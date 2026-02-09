@@ -2,6 +2,7 @@
 Basically everything is flex. To make it responsive switch direction from flex row to flex column
 */
 @use "layout";
+@use "universityul";
 @use "../../../utils/mixins" as *;
 @use "../../../utils/footer" as *;
 

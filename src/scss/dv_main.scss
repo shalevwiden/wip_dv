@@ -6,6 +6,7 @@
 @use "dv_main/about/about";
 @use "dv_main/index/index";
 @use "dv_main/dv_stats/dv_stats";
+@use "../utils/footer";
 
 @use "../utils/mixins" as *;
 

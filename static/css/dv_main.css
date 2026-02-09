@@ -1298,6 +1298,12 @@ Basically everything is flex. To make it responsive switch direction from flex r
   width: 90%;
 }
 
+.sitecontainer#index .universityul li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
 *,
 *::before,
 *::after {

@@ -1,0 +1,13 @@
+@use "../../../utils/mixins" as *;
+
+.sitecontainer#index {
+  .universityul {
+    li {
+      a {
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}

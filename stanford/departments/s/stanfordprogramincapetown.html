@@ -5,20 +5,20 @@
 
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
 <script>
-  (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
 </script>
-<!-- End Google Tag Manager -->
 
     <meta
       name="description"
@@ -89,17 +89,6 @@
 
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript
-  ><iframe
-    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
-    height="0"
-    width="0"
-    style="display: none; visibility: hidden"
-  ></iframe
-></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
     <div class="sitecontainer" id="departmentpage">
       <div class="abovemainsite">
         <div class="topnav">
@@ -108,13 +97,7 @@
               <li>
                 <a href="../../stanford-home.html"> Stanford Home</a>
               </li>
-              <i class="fa fa-chevron-right"></i>
 
-              <li>
-                <a href="../s/s-departments.html"
-                  >S Departments</a
-                >
-              </li>
               <i class="fa fa-chevron-right"></i>
 
               <li id="current">Stanford Program in Cape Town</li>
@@ -122,9 +105,11 @@
           </nav>
           <nav class="homeandabout">
             <ul>
-              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../index.html">Home</a></li>
               <li><a href="../../../aboutpage.html">About</a></li>
-              <li><a href="../../../ut-stats.html">Stats</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../Stanfordstats.html.html">Stats</a></li>
             </ul>
           </nav>
         </div>
@@ -146,7 +131,7 @@
                 <div class="linkbox">
                   <p>
                     Department Courses
-                    <span id="original">original Theme</span>
+                    <span id="Original">Original Theme</span>
                   </p>
                   <p>
                     <!-- download attribute means they will download it -->
@@ -162,7 +147,7 @@
                 <div class="linkbox">
                   <p>
                     Department Courses
-                    <span id="Stanford Theme">Stanford Theme Theme</span>
+                    <span id="Stanford">Stanford Theme</span>
                   </p>
                   <p>
                     <!-- download attribute means they will download it -->
@@ -543,18 +528,15 @@
   <div class="footerleft">
     <div class="links">
       <div class="tooltip">
-        <a href="../../../aboutpage.html">About</a>
-        <span class="tooltiptext">Go to aboutpage</span>
+        <a href="../../aboutpage.html">About</a>
       </div>
 
       <div class="tooltip">
-        <a href="../../utcoursesindex.html">Home</a>
-        <span class="tooltiptext">Go back to the homepage</span>
+        <a href="../../index.html">Home</a>
       </div>
 
       <div class="tooltip">
-        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
-        <span class="tooltiptext">Go to Excel templates page</span>
+        <a href="../../exceltemplates.html">Excel Templates Breakdown</a>
       </div>
     </div>
   </div>
@@ -565,7 +547,7 @@
       src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
       alt="smalldegreeviewlogo"
     />
-    <p id="statement">DegreeView 2025</p>
+    <p id="statement">DegreeView 2026</p>
   </div>
 </footer>
 
