@@ -5,20 +5,20 @@
 
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
 <script>
-  (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
 </script>
-<!-- End Google Tag Manager -->
 
     <meta
       name="description"
@@ -27,7 +27,7 @@
 
     <meta
       name="keywords"
-      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (PBH) - Public Health"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, PBH - Public Health"
     />
 
     <meta name="author" content="DegreeView" />
@@ -85,48 +85,36 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
 />
+<!-- test comment -->
 
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript
-  ><iframe
-    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
-    height="0"
-    width="0"
-    style="display: none; visibility: hidden"
-  ></iframe
-></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
     <div class="sitecontainer" id="departmentpage">
       <div class="abovemainsite">
         <div class="topnav">
           <nav class="breadcrumbs">
             <ul>
-              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
-              <i class="fa fa-chevron-right"></i>
-
               <li>
-                <a href="../p/p-departments.html"
-                  >P Departments</a
-                >
+                <a href="../../ut-home.html"> UT Home</a>
               </li>
+
               <i class="fa fa-chevron-right"></i>
 
-              <li id="current">(PBH) - Public Health</li>
+              <li id="current">PBH - Public Health</li>
             </ul>
           </nav>
           <nav class="homeandabout">
             <ul>
-              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../index.html">Home</a></li>
               <li><a href="../../../aboutpage.html">About</a></li>
-              <li><a href="../../../ut-stats.html">Stats</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../UTstats.html.html">Stats</a></li>
             </ul>
           </nav>
         </div>
         <div class="degreenamebox">
-          <h1 id="degreenametitle">(PBH) - Public Health</h1>
+          <h1 id="departmenttitle">PBH - Public Health</h1>
         </div>
       </div>
       <div class="mainsite">
@@ -143,12 +131,28 @@
                 <div class="linkbox">
                   <p>
                     Department Courses
-                    <span id="original">original Theme</span>
+                    <span id="Original">Original Theme</span>
                   </p>
                   <p>
                     <!-- download attribute means they will download it -->
                     Download:&nbsp;&nbsp;
-                    <a href="https://storage.googleapis.com/utcourses/pbh-publichealth/excel-files/pbh-publichealth-courses-originaltheme.xlsx" download>
+                    <a href="https://storage.googleapis.com/utcourses/pbh-publichealth/excel-files/pbh-publichealth-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="UT">UT Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/pbh-publichealth/excel-files/pbh-publichealth-ut-theme.xlsx" download>
                       <i class="fa-solid fa-arrow-up-from-bracket"></i>
                     </a>
                   </p>
@@ -180,7 +184,7 @@
                 </div>
               </li>
 
-              <li>
+              <li style="display: none">
                 <div class="linkbox">
                   <p>
                     <small id="underconstruction"
@@ -207,7 +211,7 @@
         <div class="rightcontent">
           <div class="displaynamebox">
             <h3 id="displayname">
-              (PBH) - Public Health Statistics &nbsp; &nbsp;<span
+              PBH - Public Health Statistics &nbsp; &nbsp;<span
                 class="material-symbols-outlined"
                 id="charticon"
               >
@@ -228,6 +232,14 @@
                 Topics in Health Informatics and Health Information Technology
               </div>
             </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                62
+              </div>
+            </section>
+            
 
             <section class="statsline" id="shortestname">
               <div class="statsname">Shortest Course Name</div>
@@ -235,6 +247,15 @@
                 Global Health
               </div>
             </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                13
+              </div>
+            </section>
+            
 
             <section class="statsline" id="lowercount">
               <div class="statsname">Lower Division Course Count</div>
@@ -290,233 +311,220 @@
           <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
           <!-- contains the rendered csv -->
         </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Public Health</td>
 
-        
-                    <table id="departmentcoursestable">
-                        <tr>
-                        <td colspan="2">Public Health</td>
-                       
-                        <td colspan="2" >The University of Texas at Austin</td>
-                        </tr>
-                        <tr>
-                        <td>Course Name</td>
-                        <td>Course Code</td>
-                        <td>Course Hours</td>
-                        <td>Classification</td>
-                        </tr>
-                        
+            <td colspan="2">The University of Texas at Austin</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
 
                     
                         <tr>
-                       <td>Introduction to Public Health</td>
-                       <td>PBH 317</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Introduction to Public Health</td>
+                        <td>PBH 317</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Public Health</td>
-                       <td>PBH 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Lower Division</td>
+                        <td>Topics in Public Health</td>
+                        <td>PBH 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Health Informatics and Health Information Technology</td>
-                       <td>PBH 320</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Health Informatics and Health Information Technology</td>
+                        <td>PBH 320</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Introduction to Health Informatics</td>
-                       <td>PBH 323</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Introduction to Health Informatics</td>
+                        <td>PBH 323</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Public Health</td>
-                       <td>PBH 330</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Public Health</td>
+                        <td>PBH 330</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Global Health</td>
-                       <td>PBH 334</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Global Health</td>
+                        <td>PBH 334</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Selected Topics in Public Health</td>
-                       <td>PBH 137, 237, 337, 437</td>
-                       <td>1, 2, 3, 4</td>
-                       <td>Upper Division</td>
+                        <td>Selected Topics in Public Health</td>
+                        <td>PBH 137, 237, 337, 437</td>
+                        <td>1, 2, 3, 4</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Environmental Health</td>
-                       <td>PBH 338</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Environmental Health</td>
+                        <td>PBH 338</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Public Health Research</td>
-                       <td>PBH 341R</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Public Health Research</td>
+                        <td>PBH 341R</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Epidemiology I</td>
-                       <td>PBH 354</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Epidemiology I</td>
+                        <td>PBH 354</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Health Behavior Theory and Practice</td>
-                       <td>PBH 356</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Health Behavior Theory and Practice</td>
+                        <td>PBH 356</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Health Policy and Health Systems</td>
-                       <td>PBH 358D</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Health Policy and Health Systems</td>
+                        <td>PBH 358D</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Public Health Internship</td>
-                       <td>PBH 361P</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Public Health Internship</td>
+                        <td>PBH 361P</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Epidemiology II: Quantitative Methods</td>
-                       <td>PBH 362</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Epidemiology II: Quantitative Methods</td>
+                        <td>PBH 362</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Project Management, Planning, and Evaluation</td>
-                       <td>PBH 363</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Project Management, Planning, and Evaluation</td>
+                        <td>PBH 363</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Field Epidemiology</td>
-                       <td>PBH 364</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Field Epidemiology</td>
+                        <td>PBH 364</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Public Health Informatics</td>
-                       <td>PBH 365</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Public Health Informatics</td>
+                        <td>PBH 365</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Global Health in Action</td>
-                       <td>PBH 366</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Global Health in Action</td>
+                        <td>PBH 366</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Emerging and Re-emerging Infectious Diseases</td>
-                       <td>PBH 367</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Emerging and Re-emerging Infectious Diseases</td>
+                        <td>PBH 367</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Maternal, Child, and Family Health</td>
-                       <td>PBH 368</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Maternal, Child, and Family Health</td>
+                        <td>PBH 368</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Diverse Communities and Health Equity</td>
-                       <td>PBH 369</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Diverse Communities and Health Equity</td>
+                        <td>PBH 369</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Honors Tutorial Course</td>
-                       <td>PBH 379H</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Honors Tutorial Course</td>
+                        <td>PBH 379H</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
-                        <tr>
-                       <td>DegreeView</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                        
-                    </table>
-                    
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
       </div>
       <footer>
   <div class="footerleft">
     <div class="links">
-      <div class="tooltip">
-        <a href="../../../aboutpage.html">About</a>
-        <span class="tooltiptext">Go to aboutpage</span>
-      </div>
+      <a href="../../../about.html">About</a>
 
-      <div class="tooltip">
-        <a href="../../utcoursesindex.html">Home</a>
-        <span class="tooltiptext">Go back to the homepage</span>
-      </div>
+      <a href="../../../index.html">Home</a>
 
-      <div class="tooltip">
-        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
-        <span class="tooltiptext">Go to Excel templates page</span>
-      </div>
+      <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+
+      <a href="../../../degreeviewstats.html">DegreeView Stats</a>
     </div>
   </div>
 
   <div class="footerright">
-    <img
-      id="smalllogo"
-      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
-      alt="smalldegreeviewlogo"
-    />
-    <p id="statement">DegreeView 2025</p>
+    <img id="smalllogo" src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="smalldegreeviewlogo" />
+    <p id="statement">DegreeView 2026</p>
   </div>
 </footer>
 
+      <div id="hiddeninfo">
+        <p id="unicolor">#BF5700</p>
+      </div>
     </div>
+    <!-- put hidden info here for the JavaScript to get -->
 
     
 
                     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-
-
-
                     <!-- Hover Script -->
 
-                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <script src="../../../static/js/headingcolorchange.js"></script>
                     <!-- copy script -->
-                    <script src="../../static/js/copytable.js"></script>
+                    <script src="../../../static/js/copytable.js"></script>
 
                     <!-- animate table script -->
-                    <script src="../../static/js/animatetable.js"></script>
-    
+                    <script src="../../../static/js/animatetable.js"></script>
+                
   </body>
 </html>

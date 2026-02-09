@@ -5,20 +5,20 @@
 
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
 <script>
-  (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
 </script>
-<!-- End Google Tag Manager -->
 
     <meta
       name="description"
@@ -27,7 +27,7 @@
 
     <meta
       name="keywords"
-      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (STA) - Statistics"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, STA - Statistics"
     />
 
     <meta name="author" content="DegreeView" />
@@ -85,48 +85,36 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
 />
+<!-- test comment -->
 
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript
-  ><iframe
-    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
-    height="0"
-    width="0"
-    style="display: none; visibility: hidden"
-  ></iframe
-></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
     <div class="sitecontainer" id="departmentpage">
       <div class="abovemainsite">
         <div class="topnav">
           <nav class="breadcrumbs">
             <ul>
-              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
-              <i class="fa fa-chevron-right"></i>
-
               <li>
-                <a href="../s/s-departments.html"
-                  >S Departments</a
-                >
+                <a href="../../ut-home.html"> UT Home</a>
               </li>
+
               <i class="fa fa-chevron-right"></i>
 
-              <li id="current">(STA) - Statistics</li>
+              <li id="current">STA - Statistics</li>
             </ul>
           </nav>
           <nav class="homeandabout">
             <ul>
-              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../index.html">Home</a></li>
               <li><a href="../../../aboutpage.html">About</a></li>
-              <li><a href="../../../ut-stats.html">Stats</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../UTstats.html.html">Stats</a></li>
             </ul>
           </nav>
         </div>
         <div class="degreenamebox">
-          <h1 id="degreenametitle">(STA) - Statistics</h1>
+          <h1 id="departmenttitle">STA - Statistics</h1>
         </div>
       </div>
       <div class="mainsite">
@@ -143,12 +131,28 @@
                 <div class="linkbox">
                   <p>
                     Department Courses
-                    <span id="original">original Theme</span>
+                    <span id="Original">Original Theme</span>
                   </p>
                   <p>
                     <!-- download attribute means they will download it -->
                     Download:&nbsp;&nbsp;
-                    <a href="https://storage.googleapis.com/utcourses/sta-statistics/excel-files/sta-statistics-courses-originaltheme.xlsx" download>
+                    <a href="https://storage.googleapis.com/utcourses/sta-statistics/excel-files/sta-statistics-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="UT">UT Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/sta-statistics/excel-files/sta-statistics-ut-theme.xlsx" download>
                       <i class="fa-solid fa-arrow-up-from-bracket"></i>
                     </a>
                   </p>
@@ -180,7 +184,7 @@
                 </div>
               </li>
 
-              <li>
+              <li style="display: none">
                 <div class="linkbox">
                   <p>
                     <small id="underconstruction"
@@ -207,7 +211,7 @@
         <div class="rightcontent">
           <div class="displaynamebox">
             <h3 id="displayname">
-              (STA) - Statistics Statistics &nbsp; &nbsp;<span
+              STA - Statistics Statistics &nbsp; &nbsp;<span
                 class="material-symbols-outlined"
                 id="charticon"
               >
@@ -228,6 +232,14 @@
                 Business Analytics and Decision Modelling for Executives
               </div>
             </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                56
+              </div>
+            </section>
+            
 
             <section class="statsline" id="shortestname">
               <div class="statsname">Shortest Course Name</div>
@@ -235,6 +247,15 @@
                 Sampling
               </div>
             </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                8
+              </div>
+            </section>
+            
 
             <section class="statsline" id="lowercount">
               <div class="statsname">Lower Division Course Count</div>
@@ -290,205 +311,192 @@
           <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
           <!-- contains the rendered csv -->
         </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Statistics</td>
 
-        
-                    <table id="departmentcoursestable">
-                        <tr>
-                        <td colspan="2">Statistics</td>
-                       
-                        <td colspan="2" >The University of Texas at Austin</td>
-                        </tr>
-                        <tr>
-                        <td>Course Name</td>
-                        <td>Course Code</td>
-                        <td>Course Hours</td>
-                        <td>Classification</td>
-                        </tr>
-                        
+            <td colspan="2">The University of Texas at Austin</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
 
                     
                         <tr>
-                       <td>Introduction to Data Science</td>
-                       <td>STA 301</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Introduction to Data Science</td>
+                        <td>STA 301</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Introduction to Data Science: Honors</td>
-                       <td>STA 301H</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Introduction to Data Science: Honors</td>
+                        <td>STA 301H</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Elementary Business Statistics</td>
-                       <td>STA 309</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Elementary Business Statistics</td>
+                        <td>STA 309</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Elementary Business Statistics: Honors</td>
-                       <td>STA 309H</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Elementary Business Statistics: Honors</td>
+                        <td>STA 309H</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Statistics</td>
-                       <td>STA 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Lower Division</td>
+                        <td>Topics in Statistics</td>
+                        <td>STA 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Statistics</td>
-                       <td>STA 280N</td>
-                       <td>2</td>
-                       <td>Graduate</td>
+                        <td>Topics in Statistics</td>
+                        <td>STA 280N</td>
+                        <td>2</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Data Science for Business Applications</td>
-                       <td>STA 235</td>
-                       <td>2</td>
-                       <td>Upper Division</td>
+                        <td>Data Science for Business Applications</td>
+                        <td>STA 235</td>
+                        <td>2</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Data Science for Business Applications: Honors</td>
-                       <td>STA 235H</td>
-                       <td>2</td>
-                       <td>Upper Division</td>
+                        <td>Data Science for Business Applications: Honors</td>
+                        <td>STA 235H</td>
+                        <td>2</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Statistics and Modeling</td>
-                       <td>STA 371G</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Statistics and Modeling</td>
+                        <td>STA 371G</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Statistics and Modeling: Honors</td>
-                       <td>STA 371H</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Statistics and Modeling: Honors</td>
+                        <td>STA 371H</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Statistics and Modeling for Finance</td>
-                       <td>STA 375</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Statistics and Modeling for Finance</td>
+                        <td>STA 375</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Statistics and Modeling for Finance: Honors</td>
-                       <td>STA 375H</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Statistics and Modeling for Finance: Honors</td>
+                        <td>STA 375H</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Intermediate Statistics</td>
-                       <td>STA 376</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Intermediate Statistics</td>
+                        <td>STA 376</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Seminar in Business Statistics</td>
-                       <td>STA 180, 280, 380</td>
-                       <td>1, 2, 3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Seminar in Business Statistics</td>
+                        <td>STA 180, 280, 380</td>
+                        <td>1, 2, 3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Sampling</td>
-                       <td>STA 381</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Sampling</td>
+                        <td>STA 381</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Business Analytics</td>
-                       <td>STA 184N, 284N, 384N</td>
-                       <td>1, 2, 3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Business Analytics</td>
+                        <td>STA 184N, 284N, 384N</td>
+                        <td>1, 2, 3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Business Analytics and Decision Modeling</td>
-                       <td>STA 287, 387</td>
-                       <td>2, 3</td>
-                       <td>Graduate</td>
+                        <td>Business Analytics and Decision Modeling</td>
+                        <td>STA 287, 387</td>
+                        <td>2, 3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Business Analytics and Decision Modelling for Executives</td>
-                       <td>STA 287C</td>
-                       <td>2</td>
-                       <td>Graduate</td>
+                        <td>Business Analytics and Decision Modelling for Executives</td>
+                        <td>STA 287C</td>
+                        <td>2</td>
+                        <td>Graduate</td>
                         </tr>
                         
-                        <tr>
-                       <td>DegreeView</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                        
-                    </table>
-                    
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
       </div>
       <footer>
   <div class="footerleft">
     <div class="links">
-      <div class="tooltip">
-        <a href="../../../aboutpage.html">About</a>
-        <span class="tooltiptext">Go to aboutpage</span>
-      </div>
+      <a href="../../../about.html">About</a>
 
-      <div class="tooltip">
-        <a href="../../utcoursesindex.html">Home</a>
-        <span class="tooltiptext">Go back to the homepage</span>
-      </div>
+      <a href="../../../index.html">Home</a>
 
-      <div class="tooltip">
-        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
-        <span class="tooltiptext">Go to Excel templates page</span>
-      </div>
+      <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+
+      <a href="../../../degreeviewstats.html">DegreeView Stats</a>
     </div>
   </div>
 
   <div class="footerright">
-    <img
-      id="smalllogo"
-      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
-      alt="smalldegreeviewlogo"
-    />
-    <p id="statement">DegreeView 2025</p>
+    <img id="smalllogo" src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="smalldegreeviewlogo" />
+    <p id="statement">DegreeView 2026</p>
   </div>
 </footer>
 
+      <div id="hiddeninfo">
+        <p id="unicolor">#BF5700</p>
+      </div>
     </div>
+    <!-- put hidden info here for the JavaScript to get -->
 
     
 
                     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-
-
-
                     <!-- Hover Script -->
 
-                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <script src="../../../static/js/headingcolorchange.js"></script>
                     <!-- copy script -->
-                    <script src="../../static/js/copytable.js"></script>
+                    <script src="../../../static/js/copytable.js"></script>
 
                     <!-- animate table script -->
-                    <script src="../../static/js/animatetable.js"></script>
-    
+                    <script src="../../../static/js/animatetable.js"></script>
+                
   </body>
 </html>

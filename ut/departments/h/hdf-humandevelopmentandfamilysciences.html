@@ -5,20 +5,20 @@
 
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
 <script>
-  (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
 </script>
-<!-- End Google Tag Manager -->
 
     <meta
       name="description"
@@ -27,7 +27,7 @@
 
     <meta
       name="keywords"
-      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (HDF) - Human Development and Family Sciences"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, HDF - Human Development and Family Sciences"
     />
 
     <meta name="author" content="DegreeView" />
@@ -85,48 +85,36 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
 />
+<!-- test comment -->
 
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript
-  ><iframe
-    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
-    height="0"
-    width="0"
-    style="display: none; visibility: hidden"
-  ></iframe
-></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
     <div class="sitecontainer" id="departmentpage">
       <div class="abovemainsite">
         <div class="topnav">
           <nav class="breadcrumbs">
             <ul>
-              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
-              <i class="fa fa-chevron-right"></i>
-
               <li>
-                <a href="../h/h-departments.html"
-                  >H Departments</a
-                >
+                <a href="../../ut-home.html"> UT Home</a>
               </li>
+
               <i class="fa fa-chevron-right"></i>
 
-              <li id="current">(HDF) - Human Development and Family Sciences</li>
+              <li id="current">HDF - Human Development and Family Sciences</li>
             </ul>
           </nav>
           <nav class="homeandabout">
             <ul>
-              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../index.html">Home</a></li>
               <li><a href="../../../aboutpage.html">About</a></li>
-              <li><a href="../../../ut-stats.html">Stats</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../UTstats.html.html">Stats</a></li>
             </ul>
           </nav>
         </div>
         <div class="degreenamebox">
-          <h1 id="degreenametitle">(HDF) - Human Development and Family Sciences</h1>
+          <h1 id="departmenttitle">HDF - Human Development and Family Sciences</h1>
         </div>
       </div>
       <div class="mainsite">
@@ -143,12 +131,28 @@
                 <div class="linkbox">
                   <p>
                     Department Courses
-                    <span id="original">original Theme</span>
+                    <span id="Original">Original Theme</span>
                   </p>
                   <p>
                     <!-- download attribute means they will download it -->
                     Download:&nbsp;&nbsp;
-                    <a href="https://storage.googleapis.com/utcourses/hdf-humandevelopmentandfamilysciences/excel-files/hdf-humandevelopmentandfamilysciences-courses-originaltheme.xlsx" download>
+                    <a href="https://storage.googleapis.com/utcourses/hdf-humandevelopmentandfamilysciences/excel-files/hdf-humandevelopmentandfamilysciences-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="UT">UT Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/hdf-humandevelopmentandfamilysciences/excel-files/hdf-humandevelopmentandfamilysciences-ut-theme.xlsx" download>
                       <i class="fa-solid fa-arrow-up-from-bracket"></i>
                     </a>
                   </p>
@@ -180,7 +184,7 @@
                 </div>
               </li>
 
-              <li>
+              <li style="display: none">
                 <div class="linkbox">
                   <p>
                     <small id="underconstruction"
@@ -207,7 +211,7 @@
         <div class="rightcontent">
           <div class="displaynamebox">
             <h3 id="displayname">
-              (HDF) - Human Development and Family Sciences Statistics &nbsp; &nbsp;<span
+              HDF - Human Development and Family Sciences Statistics &nbsp; &nbsp;<span
                 class="material-symbols-outlined"
                 id="charticon"
               >
@@ -228,6 +232,14 @@
                 Topics in Recent Advances in Human Development and Family Sciences
               </div>
             </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                66
+              </div>
+            </section>
+            
 
             <section class="statsline" id="shortestname">
               <div class="statsname">Shortest Course Name</div>
@@ -235,6 +247,15 @@
                 Thesis
               </div>
             </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                6
+              </div>
+            </section>
+            
 
             <section class="statsline" id="lowercount">
               <div class="statsname">Lower Division Course Count</div>
@@ -290,429 +311,416 @@
           <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
           <!-- contains the rendered csv -->
         </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Human Development and Family Sciences</td>
 
-        
-                    <table id="departmentcoursestable">
-                        <tr>
-                        <td colspan="2">Human Development and Family Sciences</td>
-                       
-                        <td colspan="2" >The University of Texas at Austin</td>
-                        </tr>
-                        <tr>
-                        <td>Course Name</td>
-                        <td>Course Code</td>
-                        <td>Course Hours</td>
-                        <td>Classification</td>
-                        </tr>
-                        
+            <td colspan="2">The University of Texas at Austin</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
 
                     
                         <tr>
-                       <td>Family Relationships</td>
-                       <td>HDF 304 (TCCN: TECA 1303)</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Family Relationships</td>
+                        <td>HDF 304 (TCCN: TECA 1303)</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Family Relationships: Honors</td>
-                       <td>HDF 304H</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Family Relationships: Honors</td>
+                        <td>HDF 304H</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Health and Development Across the Lifespan</td>
-                       <td>HDF 305</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Health and Development Across the Lifespan</td>
+                        <td>HDF 305</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Introduction to Gender and Sexuality</td>
-                       <td>HDF 306</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Introduction to Gender and Sexuality</td>
+                        <td>HDF 306</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Family Resource Management</td>
-                       <td>HDF 312</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Family Resource Management</td>
+                        <td>HDF 312</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Child Development</td>
-                       <td>HDF 313 (TCCN: TECA 1354)</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Child Development</td>
+                        <td>HDF 313 (TCCN: TECA 1354)</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Child Development: Honors</td>
-                       <td>HDF 313H</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Child Development: Honors</td>
+                        <td>HDF 313H</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Child Development Laboratory</td>
-                       <td>HDF 113L</td>
-                       <td>1</td>
-                       <td>Lower Division</td>
+                        <td>Child Development Laboratory</td>
+                        <td>HDF 113L</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Child Development Laboratory: Honors</td>
-                       <td>HDF 114H</td>
-                       <td>1</td>
-                       <td>Lower Division</td>
+                        <td>Child Development Laboratory: Honors</td>
+                        <td>HDF 114H</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Research Methods in Human Development and Family Sciences</td>
-                       <td>HDF 315L</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Research Methods in Human Development and Family Sciences</td>
+                        <td>HDF 315L</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Human Development and Family Sciences</td>
-                       <td>HDF 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Lower Division</td>
+                        <td>Topics in Human Development and Family Sciences</td>
+                        <td>HDF 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Personal and Family Finance</td>
-                       <td>HDF 322</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Personal and Family Finance</td>
+                        <td>HDF 322</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Human Development and Family Sciences</td>
-                       <td>HDF 129S, 229S, 329S, 429S, 529S, 629S, 729S, 829S, 929S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Human Development and Family Sciences</td>
+                        <td>HDF 129S, 229S, 329S, 429S, 529S, 629S, 729S, 829S, 929S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Adult Development</td>
-                       <td>HDF 335</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Adult Development</td>
+                        <td>HDF 335</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Personal Relationships</td>
-                       <td>HDF 337</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Personal Relationships</td>
+                        <td>HDF 337</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Developmentally Appropriate Practices with Young Children</td>
-                       <td>HDF 338</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Developmentally Appropriate Practices with Young Children</td>
+                        <td>HDF 338</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Ethical, Philosophical, and Professional Development Issues</td>
-                       <td>HDF 340</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Ethical, Philosophical, and Professional Development Issues</td>
+                        <td>HDF 340</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Development of Psychopathology from Infancy through Adolescence</td>
-                       <td>HDF 342</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Development of Psychopathology from Infancy through Adolescence</td>
+                        <td>HDF 342</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Human Development in Minority and Immigrant Families</td>
-                       <td>HDF 343</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Human Development in Minority and Immigrant Families</td>
+                        <td>HDF 343</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Peer Relationships</td>
-                       <td>HDF 345</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Peer Relationships</td>
+                        <td>HDF 345</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Socioeconomic Problems of Families</td>
-                       <td>HDF 347</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Socioeconomic Problems of Families</td>
+                        <td>HDF 347</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Infant Development and Attachment Relationships</td>
-                       <td>HDF 351</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Infant Development and Attachment Relationships</td>
+                        <td>HDF 351</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Field Experience: Community</td>
-                       <td>HDF 352</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Field Experience: Community</td>
+                        <td>HDF 352</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Field Practicum: Community</td>
-                       <td>HDF 652F</td>
-                       <td>6</td>
-                       <td>Upper Division</td>
+                        <td>Field Practicum: Community</td>
+                        <td>HDF 652F</td>
+                        <td>6</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Field Experience: Early Childhood</td>
-                       <td>HDF 352L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Field Experience: Early Childhood</td>
+                        <td>HDF 352L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Field Practicum: Early Childhood</td>
-                       <td>HDF 652P</td>
-                       <td>6</td>
-                       <td>Upper Division</td>
+                        <td>Field Practicum: Early Childhood</td>
+                        <td>HDF 652P</td>
+                        <td>6</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Longevity in the 21st Century</td>
-                       <td>HDF 353</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Longevity in the 21st Century</td>
+                        <td>HDF 353</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Problems Course: Honors</td>
-                       <td>HDF 155H, 255H, 355H, 655H</td>
-                       <td>1, 2, 3, 6</td>
-                       <td>Upper Division</td>
+                        <td>Problems Course: Honors</td>
+                        <td>HDF 155H, 255H, 355H, 655H</td>
+                        <td>1, 2, 3, 6</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Problems Course: Research Practicum</td>
-                       <td>HDF 155R, 255R, 355R, 655R</td>
-                       <td>1, 2, 3, 6</td>
-                       <td>Upper Division</td>
+                        <td>Problems Course: Research Practicum</td>
+                        <td>HDF 155R, 255R, 355R, 655R</td>
+                        <td>1, 2, 3, 6</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>The Evolution of Relationships</td>
-                       <td>HDF 356</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>The Evolution of Relationships</td>
+                        <td>HDF 356</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Applied Child Development</td>
-                       <td>HDF 157, 257, 357, 657</td>
-                       <td>1, 2, 3, 6</td>
-                       <td>Upper Division</td>
+                        <td>Applied Child Development</td>
+                        <td>HDF 157, 257, 357, 657</td>
+                        <td>1, 2, 3, 6</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Parent-Child Relationships</td>
-                       <td>HDF 358</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Parent-Child Relationships</td>
+                        <td>HDF 358</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Applied Research Experience</td>
-                       <td>HDF 159, 259, 359, 659</td>
-                       <td>1, 2, 3, 6</td>
-                       <td>Upper Division</td>
+                        <td>Advanced Applied Research Experience</td>
+                        <td>HDF 159, 259, 359, 659</td>
+                        <td>1, 2, 3, 6</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Methods of Family Life Education</td>
-                       <td>HDF 360</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Methods of Family Life Education</td>
+                        <td>HDF 360</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Children and Public Policy</td>
-                       <td>HDF 362</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Children and Public Policy</td>
+                        <td>HDF 362</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Guidance in Adult-Child Relationships</td>
-                       <td>HDF 266C</td>
-                       <td>2</td>
-                       <td>Upper Division</td>
+                        <td>Guidance in Adult-Child Relationships</td>
+                        <td>HDF 266C</td>
+                        <td>2</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Guidance in Adult Child Relationships Lab</td>
-                       <td>HDF 266L</td>
-                       <td>2</td>
-                       <td>Upper Division</td>
+                        <td>Guidance in Adult Child Relationships Lab</td>
+                        <td>HDF 266L</td>
+                        <td>2</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Adolescent Development in Context</td>
-                       <td>HDF 371</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Adolescent Development in Context</td>
+                        <td>HDF 371</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Families in Transition</td>
-                       <td>HDF 372K</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Families in Transition</td>
+                        <td>HDF 372K</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Advanced Child and Family Development</td>
-                       <td>HDF 378K</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Advanced Child and Family Development</td>
+                        <td>HDF 378K</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Theories of Child and Family Development</td>
-                       <td>HDF 378L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Theories of Child and Family Development</td>
+                        <td>HDF 378L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Honors Tutorial Course</td>
-                       <td>HDF 379H</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Honors Tutorial Course</td>
+                        <td>HDF 379H</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Research Methods</td>
-                       <td>HDF 380K</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Research Methods</td>
+                        <td>HDF 380K</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Research Problems</td>
-                       <td>HDF 192, 292, 392, 692</td>
-                       <td>1, 2, 3, 6</td>
-                       <td>Graduate</td>
+                        <td>Topics in Research Problems</td>
+                        <td>HDF 192, 292, 392, 692</td>
+                        <td>1, 2, 3, 6</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Graduate Seminar</td>
-                       <td>HDF 394</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Graduate Seminar</td>
+                        <td>HDF 394</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Recent Advances in Human Development and Family Sciences</td>
-                       <td>HDF 395</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Recent Advances in Human Development and Family Sciences</td>
+                        <td>HDF 395</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Practicum in Human Development and Family Sciences</td>
-                       <td>HDF 397P</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Practicum in Human Development and Family Sciences</td>
+                        <td>HDF 397P</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Thesis</td>
-                       <td>HDF 698</td>
-                       <td>6</td>
-                       <td>Graduate</td>
+                        <td>Thesis</td>
+                        <td>HDF 698</td>
+                        <td>6</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Supervised Teaching in Human Development and Family Sciences</td>
-                       <td>HDF 398T</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Supervised Teaching in Human Development and Family Sciences</td>
+                        <td>HDF 398T</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Dissertation</td>
-                       <td>HDF 399W, 699W, 999W</td>
-                       <td>3, 6, 9</td>
-                       <td>Graduate</td>
+                        <td>Dissertation</td>
+                        <td>HDF 399W, 699W, 999W</td>
+                        <td>3, 6, 9</td>
+                        <td>Graduate</td>
                         </tr>
                         
-                        <tr>
-                       <td>DegreeView</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                        
-                    </table>
-                    
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
       </div>
       <footer>
   <div class="footerleft">
     <div class="links">
-      <div class="tooltip">
-        <a href="../../../aboutpage.html">About</a>
-        <span class="tooltiptext">Go to aboutpage</span>
-      </div>
+      <a href="../../../about.html">About</a>
 
-      <div class="tooltip">
-        <a href="../../utcoursesindex.html">Home</a>
-        <span class="tooltiptext">Go back to the homepage</span>
-      </div>
+      <a href="../../../index.html">Home</a>
 
-      <div class="tooltip">
-        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
-        <span class="tooltiptext">Go to Excel templates page</span>
-      </div>
+      <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+
+      <a href="../../../degreeviewstats.html">DegreeView Stats</a>
     </div>
   </div>
 
   <div class="footerright">
-    <img
-      id="smalllogo"
-      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
-      alt="smalldegreeviewlogo"
-    />
-    <p id="statement">DegreeView 2025</p>
+    <img id="smalllogo" src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="smalldegreeviewlogo" />
+    <p id="statement">DegreeView 2026</p>
   </div>
 </footer>
 
+      <div id="hiddeninfo">
+        <p id="unicolor">#BF5700</p>
+      </div>
     </div>
+    <!-- put hidden info here for the JavaScript to get -->
 
     
 
                     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-
-
-
                     <!-- Hover Script -->
 
-                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <script src="../../../static/js/headingcolorchange.js"></script>
                     <!-- copy script -->
-                    <script src="../../static/js/copytable.js"></script>
+                    <script src="../../../static/js/copytable.js"></script>
 
                     <!-- animate table script -->
-                    <script src="../../static/js/animatetable.js"></script>
-    
+                    <script src="../../../static/js/animatetable.js"></script>
+                
   </body>
 </html>

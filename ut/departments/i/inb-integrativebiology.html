@@ -5,20 +5,20 @@
 
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
 <script>
-  (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
 </script>
-<!-- End Google Tag Manager -->
 
     <meta
       name="description"
@@ -27,7 +27,7 @@
 
     <meta
       name="keywords"
-      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (INB) - Integrative Biology"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, INB - Integrative Biology"
     />
 
     <meta name="author" content="DegreeView" />
@@ -85,48 +85,36 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
 />
+<!-- test comment -->
 
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript
-  ><iframe
-    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
-    height="0"
-    width="0"
-    style="display: none; visibility: hidden"
-  ></iframe
-></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
     <div class="sitecontainer" id="departmentpage">
       <div class="abovemainsite">
         <div class="topnav">
           <nav class="breadcrumbs">
             <ul>
-              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
-              <i class="fa fa-chevron-right"></i>
-
               <li>
-                <a href="../i/i-departments.html"
-                  >I Departments</a
-                >
+                <a href="../../ut-home.html"> UT Home</a>
               </li>
+
               <i class="fa fa-chevron-right"></i>
 
-              <li id="current">(INB) - Integrative Biology</li>
+              <li id="current">INB - Integrative Biology</li>
             </ul>
           </nav>
           <nav class="homeandabout">
             <ul>
-              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../index.html">Home</a></li>
               <li><a href="../../../aboutpage.html">About</a></li>
-              <li><a href="../../../ut-stats.html">Stats</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../UTstats.html.html">Stats</a></li>
             </ul>
           </nav>
         </div>
         <div class="degreenamebox">
-          <h1 id="degreenametitle">(INB) - Integrative Biology</h1>
+          <h1 id="departmenttitle">INB - Integrative Biology</h1>
         </div>
       </div>
       <div class="mainsite">
@@ -143,12 +131,28 @@
                 <div class="linkbox">
                   <p>
                     Department Courses
-                    <span id="original">original Theme</span>
+                    <span id="Original">Original Theme</span>
                   </p>
                   <p>
                     <!-- download attribute means they will download it -->
                     Download:&nbsp;&nbsp;
-                    <a href="https://storage.googleapis.com/utcourses/inb-integrativebiology/excel-files/inb-integrativebiology-courses-originaltheme.xlsx" download>
+                    <a href="https://storage.googleapis.com/utcourses/inb-integrativebiology/excel-files/inb-integrativebiology-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="UT">UT Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/inb-integrativebiology/excel-files/inb-integrativebiology-ut-theme.xlsx" download>
                       <i class="fa-solid fa-arrow-up-from-bracket"></i>
                     </a>
                   </p>
@@ -180,7 +184,7 @@
                 </div>
               </li>
 
-              <li>
+              <li style="display: none">
                 <div class="linkbox">
                   <p>
                     <small id="underconstruction"
@@ -207,7 +211,7 @@
         <div class="rightcontent">
           <div class="displaynamebox">
             <h3 id="displayname">
-              (INB) - Integrative Biology Statistics &nbsp; &nbsp;<span
+              INB - Integrative Biology Statistics &nbsp; &nbsp;<span
                 class="material-symbols-outlined"
                 id="charticon"
               >
@@ -228,6 +232,14 @@
                 Structure, Physiology, and Reproduction of Seed Plants Laboratory
               </div>
             </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                65
+              </div>
+            </section>
+            
 
             <section class="statsline" id="shortestname">
               <div class="statsname">Shortest Course Name</div>
@@ -235,6 +247,15 @@
                 Thesis
               </div>
             </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                6
+              </div>
+            </section>
+            
 
             <section class="statsline" id="lowercount">
               <div class="statsname">Lower Division Course Count</div>
@@ -290,450 +311,437 @@
           <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
           <!-- contains the rendered csv -->
         </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Integrative Biology</td>
 
-        
-                    <table id="departmentcoursestable">
-                        <tr>
-                        <td colspan="2">Integrative Biology</td>
-                       
-                        <td colspan="2" >The University of Texas at Austin</td>
-                        </tr>
-                        <tr>
-                        <td>Course Name</td>
-                        <td>Course Code</td>
-                        <td>Course Hours</td>
-                        <td>Classification</td>
-                        </tr>
-                        
+            <td colspan="2">The University of Texas at Austin</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
 
                     
                         <tr>
-                       <td>Field Biology</td>
-                       <td>INB 208L</td>
-                       <td>2</td>
-                       <td>Lower Division</td>
+                        <td>Field Biology</td>
+                        <td>INB 208L</td>
+                        <td>2</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Integrative Biology</td>
-                       <td>INB 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Lower Division</td>
+                        <td>Topics in Integrative Biology</td>
+                        <td>INB 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Principles of Computational Biology</td>
-                       <td>INB 321G</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Principles of Computational Biology</td>
+                        <td>INB 321G</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Aquatic Entomology</td>
-                       <td>INB 321L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Aquatic Entomology</td>
+                        <td>INB 321L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Structure, Physiology, and Reproduction of Seed Plants</td>
-                       <td>INB 322</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Structure, Physiology, and Reproduction of Seed Plants</td>
+                        <td>INB 322</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Structure, Physiology, and Reproduction of Seed Plants Laboratory</td>
-                       <td>INB 122L</td>
-                       <td>1</td>
-                       <td>Upper Division</td>
+                        <td>Structure, Physiology, and Reproduction of Seed Plants Laboratory</td>
+                        <td>INB 122L</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Mathematical Modeling for Biology</td>
-                       <td>INB 323</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Mathematical Modeling for Biology</td>
+                        <td>INB 323</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Survey of the Plant Kingdom</td>
-                       <td>INB 324</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Survey of the Plant Kingdom</td>
+                        <td>INB 324</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Survey of the Plant Kingdom Laboratory</td>
-                       <td>INB 124L</td>
-                       <td>1</td>
-                       <td>Upper Division</td>
+                        <td>Survey of the Plant Kingdom Laboratory</td>
+                        <td>INB 124L</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Integrative Biology</td>
-                       <td>INB 129S, 229S, 329S, 429S, 529S, 629S, 729S, 829S, 929S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Integrative Biology</td>
+                        <td>INB 129S, 229S, 329S, 429S, 529S, 629S, 729S, 829S, 929S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Biology</td>
-                       <td>INB 137, 237, 337, 437</td>
-                       <td>1, 2, 3, 4</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Biology</td>
+                        <td>INB 137, 237, 337, 437</td>
+                        <td>1, 2, 3, 4</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Animal Communication</td>
-                       <td>INB 438L</td>
-                       <td>4</td>
-                       <td>Upper Division</td>
+                        <td>Animal Communication</td>
+                        <td>INB 438L</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Biology of Birds</td>
-                       <td>INB 440L</td>
-                       <td>4</td>
-                       <td>Upper Division</td>
+                        <td>Biology of Birds</td>
+                        <td>INB 440L</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Endocrinology</td>
-                       <td>INB 345E</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Endocrinology</td>
+                        <td>INB 345E</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Human Biology</td>
-                       <td>INB 346</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Human Biology</td>
+                        <td>INB 346</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Human Microscopic and Gross Anatomy</td>
-                       <td>INB 446L</td>
-                       <td>4</td>
-                       <td>Upper Division</td>
+                        <td>Human Microscopic and Gross Anatomy</td>
+                        <td>INB 446L</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Invertebrate Biology</td>
-                       <td>INB 448L</td>
-                       <td>4</td>
-                       <td>Upper Division</td>
+                        <td>Invertebrate Biology</td>
+                        <td>INB 448L</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Pandemic Science</td>
-                       <td>INB 349P</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Pandemic Science</td>
+                        <td>INB 349P</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Economic Botany</td>
-                       <td>INB 351</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Economic Botany</td>
+                        <td>INB 351</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Reproductive Biology of Flowering Plants</td>
-                       <td>INB 352</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Reproductive Biology of Flowering Plants</td>
+                        <td>INB 352</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Field Entomology</td>
-                       <td>INB 353F</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Field Entomology</td>
+                        <td>INB 353F</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Entomology</td>
-                       <td>INB 453L</td>
-                       <td>4</td>
-                       <td>Upper Division</td>
+                        <td>Entomology</td>
+                        <td>INB 453L</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Sleep Science</td>
-                       <td>INB 353S</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Sleep Science</td>
+                        <td>INB 353S</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Ichthyology</td>
-                       <td>INB 354L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Ichthyology</td>
+                        <td>INB 354L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Vertebrate Natural History</td>
-                       <td>INB 455L</td>
-                       <td>4</td>
-                       <td>Upper Division</td>
+                        <td>Vertebrate Natural History</td>
+                        <td>INB 455L</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Limnology and Oceanography</td>
-                       <td>INB 456L</td>
-                       <td>4</td>
-                       <td>Upper Division</td>
+                        <td>Limnology and Oceanography</td>
+                        <td>INB 456L</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Behavioral Ecology</td>
-                       <td>INB 359J</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Behavioral Ecology</td>
+                        <td>INB 359J</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Principles of Animal Behavior</td>
-                       <td>INB 359K</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Principles of Animal Behavior</td>
+                        <td>INB 359K</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Animal Behavior Laboratory</td>
-                       <td>INB 359L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Animal Behavior Laboratory</td>
+                        <td>INB 359L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Comparative Animal Physiology</td>
-                       <td>INB 361T</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Comparative Animal Physiology</td>
+                        <td>INB 361T</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Plant Systematics</td>
-                       <td>INB 463L</td>
-                       <td>4</td>
-                       <td>Upper Division</td>
+                        <td>Plant Systematics</td>
+                        <td>INB 463L</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Microbial Ecology</td>
-                       <td>INB 364</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Microbial Ecology</td>
+                        <td>INB 364</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Human Systems Physiology</td>
-                       <td>INB 365S</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Human Systems Physiology</td>
+                        <td>INB 365S</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Human Systems Physiology Laboratory</td>
-                       <td>INB 165U</td>
-                       <td>1</td>
-                       <td>Upper Division</td>
+                        <td>Human Systems Physiology Laboratory</td>
+                        <td>INB 165U</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Field Herpetology</td>
-                       <td>INB 369F</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Field Herpetology</td>
+                        <td>INB 369F</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Herpetology</td>
-                       <td>INB 369L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Herpetology</td>
+                        <td>INB 369L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Evolution</td>
-                       <td>INB 370</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Evolution</td>
+                        <td>INB 370</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Evolution Laboratory</td>
-                       <td>INB 470L</td>
-                       <td>4</td>
-                       <td>Upper Division</td>
+                        <td>Evolution Laboratory</td>
+                        <td>INB 470L</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Introduction to Systematics</td>
-                       <td>INB 471</td>
-                       <td>4</td>
-                       <td>Upper Division</td>
+                        <td>Introduction to Systematics</td>
+                        <td>INB 471</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Natural History Museum Science</td>
-                       <td>INB 471G</td>
-                       <td>4</td>
-                       <td>Upper Division</td>
+                        <td>Natural History Museum Science</td>
+                        <td>INB 471G</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Experimental Physiology</td>
-                       <td>INB 371L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Experimental Physiology</td>
+                        <td>INB 371L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Ecology</td>
-                       <td>INB 373</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Ecology</td>
+                        <td>INB 373</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Ecology Laboratory</td>
-                       <td>INB 373L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Ecology Laboratory</td>
+                        <td>INB 373L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Plant Anatomy with Histological Techniques</td>
-                       <td>INB 374</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Plant Anatomy with Histological Techniques</td>
+                        <td>INB 374</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Laboratory in Plant Anatomy and Histological Techniques</td>
-                       <td>INB 174L</td>
-                       <td>1</td>
-                       <td>Upper Division</td>
+                        <td>Laboratory in Plant Anatomy and Histological Techniques</td>
+                        <td>INB 174L</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Conservation Biology</td>
-                       <td>INB 375</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Conservation Biology</td>
+                        <td>INB 375</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Biodiversity in the Anthropocene</td>
-                       <td>INB 376G</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Biodiversity in the Anthropocene</td>
+                        <td>INB 376G</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Undergraduate Research</td>
-                       <td>INB 177, 277, 377</td>
-                       <td>1, 2, 3</td>
-                       <td>Upper Division</td>
+                        <td>Undergraduate Research</td>
+                        <td>INB 177, 277, 377</td>
+                        <td>1, 2, 3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Comparative Vertebrate Anatomy</td>
-                       <td>INB 478L</td>
-                       <td>4</td>
-                       <td>Upper Division</td>
+                        <td>Comparative Vertebrate Anatomy</td>
+                        <td>INB 478L</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Honors Tutorial Course</td>
-                       <td>INB 379H, 679H</td>
-                       <td>3, 6</td>
-                       <td>Upper Division</td>
+                        <td>Honors Tutorial Course</td>
+                        <td>INB 379H, 679H</td>
+                        <td>3, 6</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Thesis</td>
-                       <td>INB 698</td>
-                       <td>6</td>
-                       <td>Graduate</td>
+                        <td>Thesis</td>
+                        <td>INB 698</td>
+                        <td>6</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Master's Report</td>
-                       <td>INB 398R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Master's Report</td>
+                        <td>INB 398R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Dissertation</td>
-                       <td>INB 399W, 699W, 999W</td>
-                       <td>3, 6, 9</td>
-                       <td>Graduate</td>
+                        <td>Dissertation</td>
+                        <td>INB 399W, 699W, 999W</td>
+                        <td>3, 6, 9</td>
+                        <td>Graduate</td>
                         </tr>
                         
-                        <tr>
-                       <td>DegreeView</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                        
-                    </table>
-                    
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
       </div>
       <footer>
   <div class="footerleft">
     <div class="links">
-      <div class="tooltip">
-        <a href="../../../aboutpage.html">About</a>
-        <span class="tooltiptext">Go to aboutpage</span>
-      </div>
+      <a href="../../../about.html">About</a>
 
-      <div class="tooltip">
-        <a href="../../utcoursesindex.html">Home</a>
-        <span class="tooltiptext">Go back to the homepage</span>
-      </div>
+      <a href="../../../index.html">Home</a>
 
-      <div class="tooltip">
-        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
-        <span class="tooltiptext">Go to Excel templates page</span>
-      </div>
+      <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+
+      <a href="../../../degreeviewstats.html">DegreeView Stats</a>
     </div>
   </div>
 
   <div class="footerright">
-    <img
-      id="smalllogo"
-      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
-      alt="smalldegreeviewlogo"
-    />
-    <p id="statement">DegreeView 2025</p>
+    <img id="smalllogo" src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="smalldegreeviewlogo" />
+    <p id="statement">DegreeView 2026</p>
   </div>
 </footer>
 
+      <div id="hiddeninfo">
+        <p id="unicolor">#BF5700</p>
+      </div>
     </div>
+    <!-- put hidden info here for the JavaScript to get -->
 
     
 
                     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-
-
-
                     <!-- Hover Script -->
 
-                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <script src="../../../static/js/headingcolorchange.js"></script>
                     <!-- copy script -->
-                    <script src="../../static/js/copytable.js"></script>
+                    <script src="../../../static/js/copytable.js"></script>
 
                     <!-- animate table script -->
-                    <script src="../../static/js/animatetable.js"></script>
-    
+                    <script src="../../../static/js/animatetable.js"></script>
+                
   </body>
 </html>

@@ -5,20 +5,20 @@
 
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
 <script>
-  (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
 </script>
-<!-- End Google Tag Manager -->
 
     <meta
       name="description"
@@ -27,7 +27,7 @@
 
     <meta
       name="keywords"
-      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (ASE) - Aerospace Engineering"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, ASE - Aerospace Engineering"
     />
 
     <meta name="author" content="DegreeView" />
@@ -85,48 +85,36 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
 />
+<!-- test comment -->
 
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript
-  ><iframe
-    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
-    height="0"
-    width="0"
-    style="display: none; visibility: hidden"
-  ></iframe
-></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
     <div class="sitecontainer" id="departmentpage">
       <div class="abovemainsite">
         <div class="topnav">
           <nav class="breadcrumbs">
             <ul>
-              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
-              <i class="fa fa-chevron-right"></i>
-
               <li>
-                <a href="../a/a-departments.html"
-                  >A Departments</a
-                >
+                <a href="../../ut-home.html"> UT Home</a>
               </li>
+
               <i class="fa fa-chevron-right"></i>
 
-              <li id="current">(ASE) - Aerospace Engineering</li>
+              <li id="current">ASE - Aerospace Engineering</li>
             </ul>
           </nav>
           <nav class="homeandabout">
             <ul>
-              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../index.html">Home</a></li>
               <li><a href="../../../aboutpage.html">About</a></li>
-              <li><a href="../../../ut-stats.html">Stats</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../UTstats.html.html">Stats</a></li>
             </ul>
           </nav>
         </div>
         <div class="degreenamebox">
-          <h1 id="degreenametitle">(ASE) - Aerospace Engineering</h1>
+          <h1 id="departmenttitle">ASE - Aerospace Engineering</h1>
         </div>
       </div>
       <div class="mainsite">
@@ -143,12 +131,28 @@
                 <div class="linkbox">
                   <p>
                     Department Courses
-                    <span id="original">original Theme</span>
+                    <span id="Original">Original Theme</span>
                   </p>
                   <p>
                     <!-- download attribute means they will download it -->
                     Download:&nbsp;&nbsp;
-                    <a href="https://storage.googleapis.com/utcourses/ase-aerospaceengineering/excel-files/ase-aerospaceengineering-courses-originaltheme.xlsx" download>
+                    <a href="https://storage.googleapis.com/utcourses/ase-aerospaceengineering/excel-files/ase-aerospaceengineering-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="UT">UT Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/ase-aerospaceengineering/excel-files/ase-aerospaceengineering-ut-theme.xlsx" download>
                       <i class="fa-solid fa-arrow-up-from-bracket"></i>
                     </a>
                   </p>
@@ -180,7 +184,7 @@
                 </div>
               </li>
 
-              <li>
+              <li style="display: none">
                 <div class="linkbox">
                   <p>
                     <small id="underconstruction"
@@ -207,7 +211,7 @@
         <div class="rightcontent">
           <div class="displaynamebox">
             <h3 id="displayname">
-              (ASE) - Aerospace Engineering Statistics &nbsp; &nbsp;<span
+              ASE - Aerospace Engineering Statistics &nbsp; &nbsp;<span
                 class="material-symbols-outlined"
                 id="charticon"
               >
@@ -228,6 +232,14 @@
                 Topics in Flight Mechanics, Guidance, Navigation, and Control
               </div>
             </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                61
+              </div>
+            </section>
+            
 
             <section class="statsline" id="shortestname">
               <div class="statsname">Shortest Course Name</div>
@@ -235,6 +247,15 @@
                 Thesis
               </div>
             </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                6
+              </div>
+            </section>
+            
 
             <section class="statsline" id="lowercount">
               <div class="statsname">Lower Division Course Count</div>
@@ -290,443 +311,430 @@
           <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
           <!-- contains the rendered csv -->
         </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Aerospace Engineering</td>
 
-        
-                    <table id="departmentcoursestable">
-                        <tr>
-                        <td colspan="2">Aerospace Engineering</td>
-                       
-                        <td colspan="2" >The University of Texas at Austin</td>
-                        </tr>
-                        <tr>
-                        <td>Course Name</td>
-                        <td>Course Code</td>
-                        <td>Course Hours</td>
-                        <td>Classification</td>
-                        </tr>
-                        
+            <td colspan="2">The University of Texas at Austin</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
 
                     
                         <tr>
-                       <td>Introduction to Aerospace Engineering</td>
-                       <td>ASE 102</td>
-                       <td>1</td>
-                       <td>Lower Division</td>
+                        <td>Introduction to Aerospace Engineering</td>
+                        <td>ASE 102</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Aerospace Engineering</td>
-                       <td>ASE 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Lower Division</td>
+                        <td>Topics in Aerospace Engineering</td>
+                        <td>ASE 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Low-Speed Aerodynamics</td>
-                       <td>ASE 320</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Low-Speed Aerodynamics</td>
+                        <td>ASE 320</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Low-Speed Aerodynamics Laboratory</td>
-                       <td>ASE 120K</td>
-                       <td>1</td>
-                       <td>Upper Division</td>
+                        <td>Low-Speed Aerodynamics Laboratory</td>
+                        <td>ASE 120K</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Aerospace Materials Laboratory</td>
-                       <td>ASE 324L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Aerospace Materials Laboratory</td>
+                        <td>ASE 324L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Aerospace Engineering Projects Laboratory</td>
-                       <td>ASE 128</td>
-                       <td>1</td>
-                       <td>Upper Division</td>
+                        <td>Aerospace Engineering Projects Laboratory</td>
+                        <td>ASE 128</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Linear System Analysis</td>
-                       <td>ASE 330M</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Linear System Analysis</td>
+                        <td>ASE 330M</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Strength of Materials</td>
-                       <td>ASE 339</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Advanced Strength of Materials</td>
+                        <td>ASE 339</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Viscous Fluid Flow</td>
-                       <td>ASE 346</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Viscous Fluid Flow</td>
+                        <td>ASE 346</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Aeroelasticity</td>
-                       <td>ASE 355</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Aeroelasticity</td>
+                        <td>ASE 355</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Mechanics of Composite Materials</td>
-                       <td>ASE 357</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Mechanics of Composite Materials</td>
+                        <td>ASE 357</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Aircraft Design I</td>
-                       <td>ASE 361K</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Aircraft Design I</td>
+                        <td>ASE 361K</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Aircraft Design II</td>
-                       <td>ASE 361L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Aircraft Design II</td>
+                        <td>ASE 361L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Compressible Flow</td>
-                       <td>ASE 362K</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Compressible Flow</td>
+                        <td>ASE 362K</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>High-Speed Aerodynamics Laboratory</td>
-                       <td>ASE 162M</td>
-                       <td>1</td>
-                       <td>Upper Division</td>
+                        <td>High-Speed Aerodynamics Laboratory</td>
+                        <td>ASE 162M</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Applied Aerodynamics</td>
-                       <td>ASE 364</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Applied Aerodynamics</td>
+                        <td>ASE 364</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Structural Dynamics</td>
-                       <td>ASE 365</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Structural Dynamics</td>
+                        <td>ASE 365</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Spacecraft Dynamics</td>
-                       <td>ASE 366K</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Spacecraft Dynamics</td>
+                        <td>ASE 366K</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Applied Orbital Mechanics</td>
-                       <td>ASE 366L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Applied Orbital Mechanics</td>
+                        <td>ASE 366L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Spacecraft Systems Laboratory</td>
-                       <td>ASE 166M</td>
-                       <td>1</td>
-                       <td>Upper Division</td>
+                        <td>Spacecraft Systems Laboratory</td>
+                        <td>ASE 166M</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Flight Dynamics</td>
-                       <td>ASE 367K</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Flight Dynamics</td>
+                        <td>ASE 367K</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Feedback Control Systems</td>
-                       <td>ASE 370C</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Feedback Control Systems</td>
+                        <td>ASE 370C</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Attitude Dynamics</td>
-                       <td>ASE 372K</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Attitude Dynamics</td>
+                        <td>ASE 372K</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Satellite-Based Navigation</td>
-                       <td>ASE 372N</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Satellite-Based Navigation</td>
+                        <td>ASE 372N</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Aerospace Systems Senior Design I</td>
-                       <td>ASE 374D</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Aerospace Systems Senior Design I</td>
+                        <td>ASE 374D</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Aerospace Systems Senior Design II</td>
-                       <td>ASE 374E</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Aerospace Systems Senior Design II</td>
+                        <td>ASE 374E</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Space Systems Engineering Design</td>
-                       <td>ASE 374K</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Space Systems Engineering Design</td>
+                        <td>ASE 374K</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Spacecraft/Mission Design</td>
-                       <td>ASE 374L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Spacecraft/Mission Design</td>
+                        <td>ASE 374L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Electromechanical Systems</td>
-                       <td>ASE 375</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Electromechanical Systems</td>
+                        <td>ASE 375</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Rocket Engineering Practicum I</td>
-                       <td>ASE 376C</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Rocket Engineering Practicum I</td>
+                        <td>ASE 376C</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Rocket Engineering Practicum II</td>
-                       <td>ASE 376D</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Rocket Engineering Practicum II</td>
+                        <td>ASE 376D</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Rocket Fluid System Design</td>
-                       <td>ASE 376F</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Rocket Fluid System Design</td>
+                        <td>ASE 376F</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Rocket Guidance, Navigation, and Control</td>
-                       <td>ASE 376G</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Rocket Guidance, Navigation, and Control</td>
+                        <td>ASE 376G</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Propulsion</td>
-                       <td>ASE 376K</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Propulsion</td>
+                        <td>ASE 376K</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Undergraduate Honors Thesis</td>
-                       <td>ASE 679H</td>
-                       <td>6</td>
-                       <td>Upper Division</td>
+                        <td>Undergraduate Honors Thesis</td>
+                        <td>ASE 679H</td>
+                        <td>6</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Research in Aerospace Engineering</td>
-                       <td>ASE 179K, 279K, 379K</td>
-                       <td>1, 2, 3</td>
-                       <td>Upper Division</td>
+                        <td>Research in Aerospace Engineering</td>
+                        <td>ASE 179K, 279K, 379K</td>
+                        <td>1, 2, 3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Aerospace Engineering</td>
-                       <td>ASE 189, 289, 389, 489, 589, 689</td>
-                       <td>1, 2, 3, 4, 5, 6</td>
-                       <td>Graduate</td>
+                        <td>Topics in Aerospace Engineering</td>
+                        <td>ASE 189, 289, 389, 489, 589, 689</td>
+                        <td>1, 2, 3, 4, 5, 6</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Aerial Robotics</td>
-                       <td>ASE 479W</td>
-                       <td>4</td>
-                       <td>Upper Division</td>
+                        <td>Aerial Robotics</td>
+                        <td>ASE 479W</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Mathematical Analysis for Aerospace Engineers</td>
-                       <td>ASE 380P</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Mathematical Analysis for Aerospace Engineers</td>
+                        <td>ASE 380P</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in System Theory</td>
-                       <td>ASE 381P</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in System Theory</td>
+                        <td>ASE 381P</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Fluid Mechanics</td>
-                       <td>ASE 382Q</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Fluid Mechanics</td>
+                        <td>ASE 382Q</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Aerodynamics</td>
-                       <td>ASE 382R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Aerodynamics</td>
+                        <td>ASE 382R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Structural and Solid Mechanics</td>
-                       <td>ASE 384P</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Structural and Solid Mechanics</td>
+                        <td>ASE 384P</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Flight Mechanics, Guidance, Navigation, and Control</td>
-                       <td>ASE 387P</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Flight Mechanics, Guidance, Navigation, and Control</td>
+                        <td>ASE 387P</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Celestial Mechanics</td>
-                       <td>ASE 388P</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Celestial Mechanics</td>
+                        <td>ASE 388P</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Satellite Applications</td>
-                       <td>ASE 389P</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Satellite Applications</td>
+                        <td>ASE 389P</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Graduate Seminar</td>
-                       <td>ASE 397</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Graduate Seminar</td>
+                        <td>ASE 397</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Research in Aerospace Engineering</td>
-                       <td>ASE 197R, 297R, 397R, 497R, 597R, 697R, 797R, 897R, 997R</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Graduate</td>
+                        <td>Research in Aerospace Engineering</td>
+                        <td>ASE 197R, 297R, 397R, 497R, 597R, 697R, 797R, 897R, 997R</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Thesis</td>
-                       <td>ASE 698</td>
-                       <td>6</td>
-                       <td>Graduate</td>
+                        <td>Thesis</td>
+                        <td>ASE 698</td>
+                        <td>6</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Master's Report</td>
-                       <td>ASE 398R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Master's Report</td>
+                        <td>ASE 398R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Supervised Teaching in Aerospace Engineering</td>
-                       <td>ASE 398T</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Supervised Teaching in Aerospace Engineering</td>
+                        <td>ASE 398T</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Dissertation</td>
-                       <td>ASE 399W, 699W, 999W</td>
-                       <td>3, 6, 9</td>
-                       <td>Graduate</td>
+                        <td>Dissertation</td>
+                        <td>ASE 399W, 699W, 999W</td>
+                        <td>3, 6, 9</td>
+                        <td>Graduate</td>
                         </tr>
                         
-                        <tr>
-                       <td>DegreeView</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                        
-                    </table>
-                    
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
       </div>
       <footer>
   <div class="footerleft">
     <div class="links">
-      <div class="tooltip">
-        <a href="../../../aboutpage.html">About</a>
-        <span class="tooltiptext">Go to aboutpage</span>
-      </div>
+      <a href="../../../about.html">About</a>
 
-      <div class="tooltip">
-        <a href="../../utcoursesindex.html">Home</a>
-        <span class="tooltiptext">Go back to the homepage</span>
-      </div>
+      <a href="../../../index.html">Home</a>
 
-      <div class="tooltip">
-        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
-        <span class="tooltiptext">Go to Excel templates page</span>
-      </div>
+      <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+
+      <a href="../../../degreeviewstats.html">DegreeView Stats</a>
     </div>
   </div>
 
   <div class="footerright">
-    <img
-      id="smalllogo"
-      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
-      alt="smalldegreeviewlogo"
-    />
-    <p id="statement">DegreeView 2025</p>
+    <img id="smalllogo" src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="smalldegreeviewlogo" />
+    <p id="statement">DegreeView 2026</p>
   </div>
 </footer>
 
+      <div id="hiddeninfo">
+        <p id="unicolor">#BF5700</p>
+      </div>
     </div>
+    <!-- put hidden info here for the JavaScript to get -->
 
     
 
                     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-
-
-
                     <!-- Hover Script -->
 
-                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <script src="../../../static/js/headingcolorchange.js"></script>
                     <!-- copy script -->
-                    <script src="../../static/js/copytable.js"></script>
+                    <script src="../../../static/js/copytable.js"></script>
 
                     <!-- animate table script -->
-                    <script src="../../static/js/animatetable.js"></script>
-    
+                    <script src="../../../static/js/animatetable.js"></script>
+                
   </body>
 </html>

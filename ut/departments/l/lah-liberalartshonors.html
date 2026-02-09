@@ -5,20 +5,20 @@
 
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
 <script>
-  (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
 </script>
-<!-- End Google Tag Manager -->
 
     <meta
       name="description"
@@ -27,7 +27,7 @@
 
     <meta
       name="keywords"
-      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (LAH) - Liberal Arts Honors"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, LAH - Liberal Arts Honors"
     />
 
     <meta name="author" content="DegreeView" />
@@ -85,48 +85,36 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
 />
+<!-- test comment -->
 
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript
-  ><iframe
-    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
-    height="0"
-    width="0"
-    style="display: none; visibility: hidden"
-  ></iframe
-></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
     <div class="sitecontainer" id="departmentpage">
       <div class="abovemainsite">
         <div class="topnav">
           <nav class="breadcrumbs">
             <ul>
-              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
-              <i class="fa fa-chevron-right"></i>
-
               <li>
-                <a href="../l/l-departments.html"
-                  >L Departments</a
-                >
+                <a href="../../ut-home.html"> UT Home</a>
               </li>
+
               <i class="fa fa-chevron-right"></i>
 
-              <li id="current">(LAH) - Liberal Arts Honors</li>
+              <li id="current">LAH - Liberal Arts Honors</li>
             </ul>
           </nav>
           <nav class="homeandabout">
             <ul>
-              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../index.html">Home</a></li>
               <li><a href="../../../aboutpage.html">About</a></li>
-              <li><a href="../../../ut-stats.html">Stats</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../UTstats.html.html">Stats</a></li>
             </ul>
           </nav>
         </div>
         <div class="degreenamebox">
-          <h1 id="degreenametitle">(LAH) - Liberal Arts Honors</h1>
+          <h1 id="departmenttitle">LAH - Liberal Arts Honors</h1>
         </div>
       </div>
       <div class="mainsite">
@@ -143,12 +131,28 @@
                 <div class="linkbox">
                   <p>
                     Department Courses
-                    <span id="original">original Theme</span>
+                    <span id="Original">Original Theme</span>
                   </p>
                   <p>
                     <!-- download attribute means they will download it -->
                     Download:&nbsp;&nbsp;
-                    <a href="https://storage.googleapis.com/utcourses/lah-liberalartshonors/excel-files/lah-liberalartshonors-courses-originaltheme.xlsx" download>
+                    <a href="https://storage.googleapis.com/utcourses/lah-liberalartshonors/excel-files/lah-liberalartshonors-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="UT">UT Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/lah-liberalartshonors/excel-files/lah-liberalartshonors-ut-theme.xlsx" download>
                       <i class="fa-solid fa-arrow-up-from-bracket"></i>
                     </a>
                   </p>
@@ -180,7 +184,7 @@
                 </div>
               </li>
 
-              <li>
+              <li style="display: none">
                 <div class="linkbox">
                   <p>
                     <small id="underconstruction"
@@ -207,7 +211,7 @@
         <div class="rightcontent">
           <div class="displaynamebox">
             <h3 id="displayname">
-              (LAH) - Liberal Arts Honors Statistics &nbsp; &nbsp;<span
+              LAH - Liberal Arts Honors Statistics &nbsp; &nbsp;<span
                 class="material-symbols-outlined"
                 id="charticon"
               >
@@ -228,6 +232,14 @@
                 African American Family in Historical and Contemporary Contexts
               </div>
             </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                63
+              </div>
+            </section>
+            
 
             <section class="statsline" id="shortestname">
               <div class="statsname">Shortest Course Name</div>
@@ -235,6 +247,15 @@
                 Homer and Plato
               </div>
             </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                15
+              </div>
+            </section>
+            
 
             <section class="statsline" id="lowercount">
               <div class="statsname">Lower Division Course Count</div>
@@ -290,513 +311,500 @@
           <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
           <!-- contains the rendered csv -->
         </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Liberal Arts Honors</td>
 
-        
-                    <table id="departmentcoursestable">
-                        <tr>
-                        <td colspan="2">Liberal Arts Honors</td>
-                       
-                        <td colspan="2" >The University of Texas at Austin</td>
-                        </tr>
-                        <tr>
-                        <td>Course Name</td>
-                        <td>Course Code</td>
-                        <td>Course Hours</td>
-                        <td>Classification</td>
-                        </tr>
-                        
+            <td colspan="2">The University of Texas at Austin</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
 
                     
                         <tr>
-                       <td>The Idea of Reacting to the Past</td>
-                       <td>LAH 101</td>
-                       <td>1</td>
-                       <td>Lower Division</td>
+                        <td>The Idea of Reacting to the Past</td>
+                        <td>LAH 101</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>The Idea of the Liberal Arts</td>
-                       <td>LAH 102H, 202H, 302H</td>
-                       <td>1, 2, 3</td>
-                       <td>Lower Division</td>
+                        <td>The Idea of the Liberal Arts</td>
+                        <td>LAH 102H, 202H, 302H</td>
+                        <td>1, 2, 3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>The Ideas of Civic Engagement</td>
-                       <td>LAH 103H</td>
-                       <td>1</td>
-                       <td>Lower Division</td>
+                        <td>The Ideas of Civic Engagement</td>
+                        <td>LAH 103H</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Professionalization and Career Development</td>
-                       <td>LAH 104H</td>
-                       <td>1</td>
-                       <td>Lower Division</td>
+                        <td>Professionalization and Career Development</td>
+                        <td>LAH 104H</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Liberal Arts Freshman Honors Seminar</td>
-                       <td>LAH 305</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Topics in Liberal Arts Freshman Honors Seminar</td>
+                        <td>LAH 305</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>The Nature of Inquiry</td>
-                       <td>LAH 112H</td>
-                       <td>1</td>
-                       <td>Lower Division</td>
+                        <td>The Nature of Inquiry</td>
+                        <td>LAH 112H</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Supervised Research</td>
-                       <td>LAH 318Q</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Supervised Research</td>
+                        <td>LAH 318Q</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Liberal Arts Honors</td>
-                       <td>LAH 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Lower Division</td>
+                        <td>Topics in Liberal Arts Honors</td>
+                        <td>LAH 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Law and Organizations</td>
-                       <td>LAH 322L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Law and Organizations</td>
+                        <td>LAH 322L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Liberal Arts Honors</td>
-                       <td>LAH 129S, 229S, 329S, 429S, 529S, 629S, 729S, 829S, 929S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Liberal Arts Honors</td>
+                        <td>LAH 129S, 229S, 329S, 429S, 529S, 629S, 729S, 829S, 929S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Legal Internships</td>
-                       <td>LAH 340L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Legal Internships</td>
+                        <td>LAH 340L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Business Consulting Internship</td>
-                       <td>LAH 340M</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Business Consulting Internship</td>
+                        <td>LAH 340M</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Nonprofit Management Internship</td>
-                       <td>LAH 340N</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Nonprofit Management Internship</td>
+                        <td>LAH 340N</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Public Health Internship</td>
-                       <td>LAH 340P</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Public Health Internship</td>
+                        <td>LAH 340P</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Technical Writing and Social Media Internship</td>
-                       <td>LAH 340Q</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Technical Writing and Social Media Internship</td>
+                        <td>LAH 340Q</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Public Policy Internships and Advocacy</td>
-                       <td>LAH 340R</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Public Policy Internships and Advocacy</td>
+                        <td>LAH 340R</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Foundations of Intercultural Competency</td>
-                       <td>LAH 340S</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Foundations of Intercultural Competency</td>
+                        <td>LAH 340S</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Creative Writing and Crisis</td>
-                       <td>LAH 341T</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Creative Writing and Crisis</td>
+                        <td>LAH 341T</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Poetics and Performance</td>
-                       <td>LAH 342U</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Poetics and Performance</td>
+                        <td>LAH 342U</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>American Literature and Culture of the Late 1960s</td>
-                       <td>LAH 343V</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>American Literature and Culture of the Late 1960s</td>
+                        <td>LAH 343V</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Tell Your Stories: A Workshop</td>
-                       <td>LAH 345C</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Tell Your Stories: A Workshop</td>
+                        <td>LAH 345C</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Scholars Honors Capstone</td>
-                       <td>LAH 149</td>
-                       <td>1</td>
-                       <td>Upper Division</td>
+                        <td>Scholars Honors Capstone</td>
+                        <td>LAH 149</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in the Liberal Arts</td>
-                       <td>LAH 350</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in the Liberal Arts</td>
+                        <td>LAH 350</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>African American Family in Historical and Contemporary Contexts</td>
-                       <td>LAH 351C</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>African American Family in Historical and Contemporary Contexts</td>
+                        <td>LAH 351C</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Ethical Issues in Medicine and Society</td>
-                       <td>LAH 351D</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Ethical Issues in Medicine and Society</td>
+                        <td>LAH 351D</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Gender Equality in World Development</td>
-                       <td>LAH 351E</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Gender Equality in World Development</td>
+                        <td>LAH 351E</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Philanthropy and Nonprofit Organizations</td>
-                       <td>LAH 351F</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Philanthropy and Nonprofit Organizations</td>
+                        <td>LAH 351F</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Reacting to Revolutionary Ideas</td>
-                       <td>LAH 351G</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Reacting to Revolutionary Ideas</td>
+                        <td>LAH 351G</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Rejection Immunity</td>
-                       <td>LAH 351I</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Rejection Immunity</td>
+                        <td>LAH 351I</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Regime Perspectives on American Politics</td>
-                       <td>LAH 351J</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Regime Perspectives on American Politics</td>
+                        <td>LAH 351J</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Citizenship in Democratic Politics</td>
-                       <td>LAH 351K</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Citizenship in Democratic Politics</td>
+                        <td>LAH 351K</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Homer and Plato</td>
-                       <td>LAH 351L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Homer and Plato</td>
+                        <td>LAH 351L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Jerusalem and Athens</td>
-                       <td>LAH 351M</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Jerusalem and Athens</td>
+                        <td>LAH 351M</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Archival Advocacy: Experiential Learning</td>
-                       <td>LAH 351N</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Archival Advocacy: Experiential Learning</td>
+                        <td>LAH 351N</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Data Analytics In Contemporary Society</td>
-                       <td>LAH 351O</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Data Analytics In Contemporary Society</td>
+                        <td>LAH 351O</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Machiavelli: Politics and Culture</td>
-                       <td>LAH 351P</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Machiavelli: Politics and Culture</td>
+                        <td>LAH 351P</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Holocaust Aftereffects</td>
-                       <td>LAH 351Q</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Holocaust Aftereffects</td>
+                        <td>LAH 351Q</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Social Inequality and Health in the United States</td>
-                       <td>LAH 351R</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Social Inequality and Health in the United States</td>
+                        <td>LAH 351R</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Interpreting Black Rage</td>
-                       <td>LAH 351S</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Interpreting Black Rage</td>
+                        <td>LAH 351S</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Jewish Identities in the Americas</td>
-                       <td>LAH 351T</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Jewish Identities in the Americas</td>
+                        <td>LAH 351T</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Neglected Middle Class</td>
-                       <td>LAH 351U</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Neglected Middle Class</td>
+                        <td>LAH 351U</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Health, Health Care, and Humanities</td>
-                       <td>LAH 351V</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Health, Health Care, and Humanities</td>
+                        <td>LAH 351V</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Hitler, Nazism, and World War II</td>
-                       <td>LAH 351W</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Hitler, Nazism, and World War II</td>
+                        <td>LAH 351W</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Germany in the Twentieth Century</td>
-                       <td>LAH 352C</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Germany in the Twentieth Century</td>
+                        <td>LAH 352C</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Dedman Scholars Seminar</td>
-                       <td>LAH 352D</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Dedman Scholars Seminar</td>
+                        <td>LAH 352D</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Language Truths, Myths, and Mysteries</td>
-                       <td>LAH 352E</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Language Truths, Myths, and Mysteries</td>
+                        <td>LAH 352E</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Image of the Cannibal in the Renaissance</td>
-                       <td>LAH 352I</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Image of the Cannibal in the Renaissance</td>
+                        <td>LAH 352I</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Global Sustainability and Soil</td>
-                       <td>LAH 352J</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Global Sustainability and Soil</td>
+                        <td>LAH 352J</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Supervised Research</td>
-                       <td>LAH 358Q</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Supervised Research</td>
+                        <td>LAH 358Q</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>The Enlightenment</td>
-                       <td>LAH 364H</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>The Enlightenment</td>
+                        <td>LAH 364H</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Honors Seminar in Political Theory</td>
-                       <td>LAH 365P</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Honors Seminar in Political Theory</td>
+                        <td>LAH 365P</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Literature of the Hispanic World</td>
-                       <td>LAH 368H</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Literature of the Hispanic World</td>
+                        <td>LAH 368H</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Honors Tutorial Course I</td>
-                       <td>LAH 368T</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Honors Tutorial Course I</td>
+                        <td>LAH 368T</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Comparative Legal Systems</td>
-                       <td>LAH 369H</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Comparative Legal Systems</td>
+                        <td>LAH 369H</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Honors Tutorial Course II</td>
-                       <td>LAH 369T</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Honors Tutorial Course II</td>
+                        <td>LAH 369T</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>The Birth of the Modern World, 1400-1700</td>
-                       <td>LAH 370H</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>The Birth of the Modern World, 1400-1700</td>
+                        <td>LAH 370H</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Classics of Greek Philosophy</td>
-                       <td>LAH 371H</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Classics of Greek Philosophy</td>
+                        <td>LAH 371H</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Literature of the Western World: Continuities</td>
-                       <td>LAH 373H</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Literature of the Western World: Continuities</td>
+                        <td>LAH 373H</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>The Rise of Modern America</td>
-                       <td>LAH 376H</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>The Rise of Modern America</td>
+                        <td>LAH 376H</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Ideas of the Twentieth Century</td>
-                       <td>LAH 377H</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Ideas of the Twentieth Century</td>
+                        <td>LAH 377H</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>The Natural Sciences in the Liberal Arts Context</td>
-                       <td>LAH 378H</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>The Natural Sciences in the Liberal Arts Context</td>
+                        <td>LAH 378H</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Classical Asian Civilizations</td>
-                       <td>LAH 379H</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Classical Asian Civilizations</td>
+                        <td>LAH 379H</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
-                        <tr>
-                       <td>DegreeView</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                        
-                    </table>
-                    
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
       </div>
       <footer>
   <div class="footerleft">
     <div class="links">
-      <div class="tooltip">
-        <a href="../../../aboutpage.html">About</a>
-        <span class="tooltiptext">Go to aboutpage</span>
-      </div>
+      <a href="../../../about.html">About</a>
 
-      <div class="tooltip">
-        <a href="../../utcoursesindex.html">Home</a>
-        <span class="tooltiptext">Go back to the homepage</span>
-      </div>
+      <a href="../../../index.html">Home</a>
 
-      <div class="tooltip">
-        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
-        <span class="tooltiptext">Go to Excel templates page</span>
-      </div>
+      <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+
+      <a href="../../../degreeviewstats.html">DegreeView Stats</a>
     </div>
   </div>
 
   <div class="footerright">
-    <img
-      id="smalllogo"
-      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
-      alt="smalldegreeviewlogo"
-    />
-    <p id="statement">DegreeView 2025</p>
+    <img id="smalllogo" src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="smalldegreeviewlogo" />
+    <p id="statement">DegreeView 2026</p>
   </div>
 </footer>
 
+      <div id="hiddeninfo">
+        <p id="unicolor">#BF5700</p>
+      </div>
     </div>
+    <!-- put hidden info here for the JavaScript to get -->
 
     
 
                     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-
-
-
                     <!-- Hover Script -->
 
-                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <script src="../../../static/js/headingcolorchange.js"></script>
                     <!-- copy script -->
-                    <script src="../../static/js/copytable.js"></script>
+                    <script src="../../../static/js/copytable.js"></script>
 
                     <!-- animate table script -->
-                    <script src="../../static/js/animatetable.js"></script>
-    
+                    <script src="../../../static/js/animatetable.js"></script>
+                
   </body>
 </html>

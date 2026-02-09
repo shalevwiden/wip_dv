@@ -5,20 +5,20 @@
 
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
 <script>
-  (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
 </script>
-<!-- End Google Tag Manager -->
 
     <meta
       name="description"
@@ -27,7 +27,7 @@
 
     <meta
       name="keywords"
-      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (BCH) - Biochemistry"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, BCH - Biochemistry"
     />
 
     <meta name="author" content="DegreeView" />
@@ -85,48 +85,36 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
 />
+<!-- test comment -->
 
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript
-  ><iframe
-    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
-    height="0"
-    width="0"
-    style="display: none; visibility: hidden"
-  ></iframe
-></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
     <div class="sitecontainer" id="departmentpage">
       <div class="abovemainsite">
         <div class="topnav">
           <nav class="breadcrumbs">
             <ul>
-              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
-              <i class="fa fa-chevron-right"></i>
-
               <li>
-                <a href="../b/b-departments.html"
-                  >B Departments</a
-                >
+                <a href="../../ut-home.html"> UT Home</a>
               </li>
+
               <i class="fa fa-chevron-right"></i>
 
-              <li id="current">(BCH) - Biochemistry</li>
+              <li id="current">BCH - Biochemistry</li>
             </ul>
           </nav>
           <nav class="homeandabout">
             <ul>
-              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../index.html">Home</a></li>
               <li><a href="../../../aboutpage.html">About</a></li>
-              <li><a href="../../../ut-stats.html">Stats</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../UTstats.html.html">Stats</a></li>
             </ul>
           </nav>
         </div>
         <div class="degreenamebox">
-          <h1 id="degreenametitle">(BCH) - Biochemistry</h1>
+          <h1 id="departmenttitle">BCH - Biochemistry</h1>
         </div>
       </div>
       <div class="mainsite">
@@ -143,12 +131,28 @@
                 <div class="linkbox">
                   <p>
                     Department Courses
-                    <span id="original">original Theme</span>
+                    <span id="Original">Original Theme</span>
                   </p>
                   <p>
                     <!-- download attribute means they will download it -->
                     Download:&nbsp;&nbsp;
-                    <a href="https://storage.googleapis.com/utcourses/bch-biochemistry/excel-files/bch-biochemistry-courses-originaltheme.xlsx" download>
+                    <a href="https://storage.googleapis.com/utcourses/bch-biochemistry/excel-files/bch-biochemistry-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="UT">UT Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/bch-biochemistry/excel-files/bch-biochemistry-ut-theme.xlsx" download>
                       <i class="fa-solid fa-arrow-up-from-bracket"></i>
                     </a>
                   </p>
@@ -180,7 +184,7 @@
                 </div>
               </li>
 
-              <li>
+              <li style="display: none">
                 <div class="linkbox">
                   <p>
                     <small id="underconstruction"
@@ -207,7 +211,7 @@
         <div class="rightcontent">
           <div class="displaynamebox">
             <h3 id="displayname">
-              (BCH) - Biochemistry Statistics &nbsp; &nbsp;<span
+              BCH - Biochemistry Statistics &nbsp; &nbsp;<span
                 class="material-symbols-outlined"
                 id="charticon"
               >
@@ -228,6 +232,14 @@
                 Professional Development for Graduate Students in Biochemistry
               </div>
             </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                62
+              </div>
+            </section>
+            
 
             <section class="statsline" id="shortestname">
               <div class="statsname">Shortest Course Name</div>
@@ -235,6 +247,15 @@
                 Thesis
               </div>
             </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                6
+              </div>
+            </section>
+            
 
             <section class="statsline" id="lowercount">
               <div class="statsname">Lower Division Course Count</div>
@@ -290,366 +311,353 @@
           <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
           <!-- contains the rendered csv -->
         </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Biochemistry</td>
 
-        
-                    <table id="departmentcoursestable">
-                        <tr>
-                        <td colspan="2">Biochemistry</td>
-                       
-                        <td colspan="2" >The University of Texas at Austin</td>
-                        </tr>
-                        <tr>
-                        <td>Course Name</td>
-                        <td>Course Code</td>
-                        <td>Course Hours</td>
-                        <td>Classification</td>
-                        </tr>
-                        
+            <td colspan="2">The University of Texas at Austin</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
 
                     
                         <tr>
-                       <td>Undergraduate Research</td>
-                       <td>BCH 206K</td>
-                       <td>2</td>
-                       <td>Lower Division</td>
+                        <td>Undergraduate Research</td>
+                        <td>BCH 206K</td>
+                        <td>2</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Special Topics in Biotechnology</td>
-                       <td>BCH 115T, 215T, 315T, 415T, 515T, 615T, 715T, 815T, 915T</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Lower Division</td>
+                        <td>Special Topics in Biotechnology</td>
+                        <td>BCH 115T, 215T, 315T, 415T, 515T, 615T, 715T, 815T, 915T</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Introduction to Biochemical Laboratory Practices and Skills</td>
-                       <td>BCH 219L</td>
-                       <td>2</td>
-                       <td>Lower Division</td>
+                        <td>Introduction to Biochemical Laboratory Practices and Skills</td>
+                        <td>BCH 219L</td>
+                        <td>2</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Biochemistry</td>
-                       <td>BCH 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Lower Division</td>
+                        <td>Topics in Biochemistry</td>
+                        <td>BCH 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Biochemistry</td>
-                       <td>BCH 190C, 290C</td>
-                       <td>1, 2</td>
-                       <td>Graduate</td>
+                        <td>Topics in Biochemistry</td>
+                        <td>BCH 190C, 290C</td>
+                        <td>1, 2</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Medical Biochemistry</td>
-                       <td>BCH 330M</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Medical Biochemistry</td>
+                        <td>BCH 330M</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Foundations of Biochemistry</td>
-                       <td>BCH 339F</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Foundations of Biochemistry</td>
+                        <td>BCH 339F</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Chemical and Synthetic Biology</td>
-                       <td>BCH 339J</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Chemical and Synthetic Biology</td>
+                        <td>BCH 339J</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Structure and Function of Molecular Machines</td>
-                       <td>BCH 339M</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Structure and Function of Molecular Machines</td>
+                        <td>BCH 339M</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Systems Biology and Bioinformatics</td>
-                       <td>BCH 339N</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Systems Biology and Bioinformatics</td>
+                        <td>BCH 339N</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Biochemistry in Physiology and Medicine</td>
-                       <td>BCH 339P</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Biochemistry in Physiology and Medicine</td>
+                        <td>BCH 339P</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Bioinformatics</td>
-                       <td>BCH 364C</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Bioinformatics</td>
+                        <td>BCH 364C</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Macromolecular Structure Determination</td>
-                       <td>BCH 364D</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Macromolecular Structure Determination</td>
+                        <td>BCH 364D</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Systems Biology</td>
-                       <td>BCH 364E</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Systems Biology</td>
+                        <td>BCH 364E</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Astrobiology</td>
-                       <td>BCH 364F</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Astrobiology</td>
+                        <td>BCH 364F</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Structure and Function of Proteins and Nucleic Acids</td>
-                       <td>BCH 365D</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Structure and Function of Proteins and Nucleic Acids</td>
+                        <td>BCH 365D</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Capstone Honors Research</td>
-                       <td>BCH 368H</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Capstone Honors Research</td>
+                        <td>BCH 368H</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Capstone Course-Based Research Experience</td>
-                       <td>BCH 368L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Capstone Course-Based Research Experience</td>
+                        <td>BCH 368L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Capstone Experience in Biochemistry</td>
-                       <td>BCH 368M</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Capstone Experience in Biochemistry</td>
+                        <td>BCH 368M</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Supervised Capstone Research</td>
-                       <td>BCH 368R</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Supervised Capstone Research</td>
+                        <td>BCH 368R</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Biotechnology Capstone</td>
-                       <td>BCH 368T</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Biotechnology Capstone</td>
+                        <td>BCH 368T</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Supervised Literature Review</td>
-                       <td>BCH 368W</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Supervised Literature Review</td>
+                        <td>BCH 368W</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Fundamentals of Biochemistry</td>
-                       <td>BCH 369</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Fundamentals of Biochemistry</td>
+                        <td>BCH 369</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Techniques of Research</td>
-                       <td>BCH 369K</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Techniques of Research</td>
+                        <td>BCH 369K</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Biochemistry Laboratory</td>
-                       <td>BCH 369L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Biochemistry Laboratory</td>
+                        <td>BCH 369L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Biotechnology Laboratory</td>
-                       <td>BCH 369T</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Biotechnology Laboratory</td>
+                        <td>BCH 369T</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Physical Methods of Biochemistry</td>
-                       <td>BCH 370</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Physical Methods of Biochemistry</td>
+                        <td>BCH 370</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Biochemistry Capstone Seminar</td>
-                       <td>BCH 175C</td>
-                       <td>1</td>
-                       <td>Upper Division</td>
+                        <td>Biochemistry Capstone Seminar</td>
+                        <td>BCH 175C</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Biochemistry Honors Tutorial Course</td>
-                       <td>BCH 379H, 679H</td>
-                       <td>3, 6</td>
-                       <td>Upper Division</td>
+                        <td>Biochemistry Honors Tutorial Course</td>
+                        <td>BCH 379H, 679H</td>
+                        <td>3, 6</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Dual MD/PhD Program with UT Medical Branch</td>
-                       <td>BCH 080M</td>
-                       <td>0</td>
-                       <td>Graduate</td>
+                        <td>Dual MD/PhD Program with UT Medical Branch</td>
+                        <td>BCH 080M</td>
+                        <td>0</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Physical Methods in Biochemistry and Molecular Biology</td>
-                       <td>BCH 387D</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Physical Methods in Biochemistry and Molecular Biology</td>
+                        <td>BCH 387D</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Structure and Function of Proteins and Nucleic Acids</td>
-                       <td>BCH 394</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Structure and Function of Proteins and Nucleic Acids</td>
+                        <td>BCH 394</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Bioinformatics</td>
-                       <td>BCH 394P</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Bioinformatics</td>
+                        <td>BCH 394P</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Biochemistry</td>
-                       <td>BCH 395F</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Advanced Biochemistry</td>
+                        <td>BCH 395F</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Structure and Function of Proteins and Membranes</td>
-                       <td>BCH 395G</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Structure and Function of Proteins and Membranes</td>
+                        <td>BCH 395G</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Genes, Genomes, and Gene Expression</td>
-                       <td>BCH 395J</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Genes, Genomes, and Gene Expression</td>
+                        <td>BCH 395J</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Synthetic Biology</td>
-                       <td>BCH 396S</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Synthetic Biology</td>
+                        <td>BCH 396S</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Study and Research in Biochemistry</td>
-                       <td>BCH 197C, 297C, 397C, 497C, 597C, 697C, 997C</td>
-                       <td>1, 2, 3, 4, 5, 6, 9</td>
-                       <td>Graduate</td>
+                        <td>Advanced Study and Research in Biochemistry</td>
+                        <td>BCH 197C, 297C, 397C, 497C, 597C, 697C, 997C</td>
+                        <td>1, 2, 3, 4, 5, 6, 9</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Thesis</td>
-                       <td>BCH 698</td>
-                       <td>6</td>
-                       <td>Graduate</td>
+                        <td>Thesis</td>
+                        <td>BCH 698</td>
+                        <td>6</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Professional Development for Graduate Students in Biochemistry</td>
-                       <td>BCH 398T</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Professional Development for Graduate Students in Biochemistry</td>
+                        <td>BCH 398T</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Dissertation</td>
-                       <td>BCH 399W, 699W, 999W</td>
-                       <td>3, 6, 9</td>
-                       <td>Graduate</td>
+                        <td>Dissertation</td>
+                        <td>BCH 399W, 699W, 999W</td>
+                        <td>3, 6, 9</td>
+                        <td>Graduate</td>
                         </tr>
                         
-                        <tr>
-                       <td>DegreeView</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                        
-                    </table>
-                    
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
       </div>
       <footer>
   <div class="footerleft">
     <div class="links">
-      <div class="tooltip">
-        <a href="../../../aboutpage.html">About</a>
-        <span class="tooltiptext">Go to aboutpage</span>
-      </div>
+      <a href="../../../about.html">About</a>
 
-      <div class="tooltip">
-        <a href="../../utcoursesindex.html">Home</a>
-        <span class="tooltiptext">Go back to the homepage</span>
-      </div>
+      <a href="../../../index.html">Home</a>
 
-      <div class="tooltip">
-        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
-        <span class="tooltiptext">Go to Excel templates page</span>
-      </div>
+      <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+
+      <a href="../../../degreeviewstats.html">DegreeView Stats</a>
     </div>
   </div>
 
   <div class="footerright">
-    <img
-      id="smalllogo"
-      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
-      alt="smalldegreeviewlogo"
-    />
-    <p id="statement">DegreeView 2025</p>
+    <img id="smalllogo" src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="smalldegreeviewlogo" />
+    <p id="statement">DegreeView 2026</p>
   </div>
 </footer>
 
+      <div id="hiddeninfo">
+        <p id="unicolor">#BF5700</p>
+      </div>
     </div>
+    <!-- put hidden info here for the JavaScript to get -->
 
     
 
                     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-
-
-
                     <!-- Hover Script -->
 
-                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <script src="../../../static/js/headingcolorchange.js"></script>
                     <!-- copy script -->
-                    <script src="../../static/js/copytable.js"></script>
+                    <script src="../../../static/js/copytable.js"></script>
 
                     <!-- animate table script -->
-                    <script src="../../static/js/animatetable.js"></script>
-    
+                    <script src="../../../static/js/animatetable.js"></script>
+                
   </body>
 </html>

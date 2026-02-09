@@ -5,20 +5,20 @@
 
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
 <script>
-  (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
 </script>
-<!-- End Google Tag Manager -->
 
     <meta
       name="description"
@@ -27,7 +27,7 @@
 
     <meta
       name="keywords"
-      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (E M) - Engineering Mechanics"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, E M - Engineering Mechanics"
     />
 
     <meta name="author" content="DegreeView" />
@@ -85,48 +85,36 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
 />
+<!-- test comment -->
 
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript
-  ><iframe
-    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
-    height="0"
-    width="0"
-    style="display: none; visibility: hidden"
-  ></iframe
-></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
     <div class="sitecontainer" id="departmentpage">
       <div class="abovemainsite">
         <div class="topnav">
           <nav class="breadcrumbs">
             <ul>
-              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
-              <i class="fa fa-chevron-right"></i>
-
               <li>
-                <a href="../e/e-departments.html"
-                  >E Departments</a
-                >
+                <a href="../../ut-home.html"> UT Home</a>
               </li>
+
               <i class="fa fa-chevron-right"></i>
 
-              <li id="current">(E M) - Engineering Mechanics</li>
+              <li id="current">E M - Engineering Mechanics</li>
             </ul>
           </nav>
           <nav class="homeandabout">
             <ul>
-              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../index.html">Home</a></li>
               <li><a href="../../../aboutpage.html">About</a></li>
-              <li><a href="../../../ut-stats.html">Stats</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../UTstats.html.html">Stats</a></li>
             </ul>
           </nav>
         </div>
         <div class="degreenamebox">
-          <h1 id="degreenametitle">(E M) - Engineering Mechanics</h1>
+          <h1 id="departmenttitle">E M - Engineering Mechanics</h1>
         </div>
       </div>
       <div class="mainsite">
@@ -143,12 +131,28 @@
                 <div class="linkbox">
                   <p>
                     Department Courses
-                    <span id="original">original Theme</span>
+                    <span id="Original">Original Theme</span>
                   </p>
                   <p>
                     <!-- download attribute means they will download it -->
                     Download:&nbsp;&nbsp;
-                    <a href="https://storage.googleapis.com/utcourses/em-engineeringmechanics/excel-files/em-engineeringmechanics-courses-originaltheme.xlsx" download>
+                    <a href="https://storage.googleapis.com/utcourses/em-engineeringmechanics/excel-files/em-engineeringmechanics-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="UT">UT Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/em-engineeringmechanics/excel-files/em-engineeringmechanics-ut-theme.xlsx" download>
                       <i class="fa-solid fa-arrow-up-from-bracket"></i>
                     </a>
                   </p>
@@ -180,7 +184,7 @@
                 </div>
               </li>
 
-              <li>
+              <li style="display: none">
                 <div class="linkbox">
                   <p>
                     <small id="underconstruction"
@@ -207,7 +211,7 @@
         <div class="rightcontent">
           <div class="displaynamebox">
             <h3 id="displayname">
-              (E M) - Engineering Mechanics Statistics &nbsp; &nbsp;<span
+              E M - Engineering Mechanics Statistics &nbsp; &nbsp;<span
                 class="material-symbols-outlined"
                 id="charticon"
               >
@@ -228,6 +232,14 @@
                 Numerical Methods for Flow and Transport Problems
               </div>
             </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                49
+              </div>
+            </section>
+            
 
             <section class="statsline" id="shortestname">
               <div class="statsname">Shortest Course Name</div>
@@ -235,6 +247,15 @@
                 Thesis
               </div>
             </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                6
+              </div>
+            </section>
+            
 
             <section class="statsline" id="lowercount">
               <div class="statsname">Lower Division Course Count</div>
@@ -290,366 +311,353 @@
           <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
           <!-- contains the rendered csv -->
         </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Engineering Mechanics</td>
 
-        
-                    <table id="departmentcoursestable">
-                        <tr>
-                        <td colspan="2">Engineering Mechanics</td>
-                       
-                        <td colspan="2" >The University of Texas at Austin</td>
-                        </tr>
-                        <tr>
-                        <td>Course Name</td>
-                        <td>Course Code</td>
-                        <td>Course Hours</td>
-                        <td>Classification</td>
-                        </tr>
-                        
+            <td colspan="2">The University of Texas at Austin</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
 
                     
                         <tr>
-                       <td>Statics</td>
-                       <td>E M 306 (TCCN: ENGR 2301)</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Statics</td>
+                        <td>E M 306 (TCCN: ENGR 2301)</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Dynamics</td>
-                       <td>E M 311M (TCCN: ENGR 2302)</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Dynamics</td>
+                        <td>E M 311M (TCCN: ENGR 2302)</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Mechanics of Solids</td>
-                       <td>E M 319 (TCCN: ENGR 2332)</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Mechanics of Solids</td>
+                        <td>E M 319 (TCCN: ENGR 2332)</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Engineering Mechanics</td>
-                       <td>E M 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Lower Division</td>
+                        <td>Topics in Engineering Mechanics</td>
+                        <td>E M 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Strength of Materials</td>
-                       <td>E M 339</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Advanced Strength of Materials</td>
+                        <td>E M 339</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Engineering Mechanics</td>
-                       <td>E M 179S, 279S, 379S, 479S, 579S, 679S, 779S, 879S, 979S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Engineering Mechanics</td>
+                        <td>E M 179S, 279S, 379S, 479S, 579S, 679S, 779S, 879S, 979S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Theory of Plasticity</td>
-                       <td>E M 380</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Theory of Plasticity</td>
+                        <td>E M 380</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Dynamics</td>
-                       <td>E M 381</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Advanced Dynamics</td>
+                        <td>E M 381</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Nonlinear Analysis</td>
-                       <td>E M 382</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Nonlinear Analysis</td>
+                        <td>E M 382</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Continuum Mechanics</td>
-                       <td>E M 384K</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Continuum Mechanics</td>
+                        <td>E M 384K</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Structural Dynamics</td>
-                       <td>E M 384L</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Structural Dynamics</td>
+                        <td>E M 384L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Analytical Methods I</td>
-                       <td>E M 386K</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Analytical Methods I</td>
+                        <td>E M 386K</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Analytical Methods II</td>
-                       <td>E M 386L</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Analytical Methods II</td>
+                        <td>E M 386L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Functional Analysis in Theoretical Mechanics</td>
-                       <td>E M 386M</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Functional Analysis in Theoretical Mechanics</td>
+                        <td>E M 386M</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Qualitative Methods in Nonlinear Mechanics</td>
-                       <td>E M 386N</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Qualitative Methods in Nonlinear Mechanics</td>
+                        <td>E M 386N</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Foundations of Fluid Mechanics</td>
-                       <td>E M 387</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Foundations of Fluid Mechanics</td>
+                        <td>E M 387</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Solid Mechanics I</td>
-                       <td>E M 388</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Solid Mechanics I</td>
+                        <td>E M 388</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Fracture Mechanics</td>
-                       <td>E M 388F</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Fracture Mechanics</td>
+                        <td>E M 388F</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Solid Mechanics II</td>
-                       <td>E M 388L</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Solid Mechanics II</td>
+                        <td>E M 388L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Micromechanics</td>
-                       <td>E M 388M</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Micromechanics</td>
+                        <td>E M 388M</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Mechanics of Soft Materials</td>
-                       <td>E M 388N</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Mechanics of Soft Materials</td>
+                        <td>E M 388N</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Soft Tissue Biomechanics</td>
-                       <td>E M 388S</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Soft Tissue Biomechanics</td>
+                        <td>E M 388S</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Thin Film Mechanics</td>
-                       <td>E M 388T</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Thin Film Mechanics</td>
+                        <td>E M 388T</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Theory of Viscoelasticity</td>
-                       <td>E M 388V</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Theory of Viscoelasticity</td>
+                        <td>E M 388V</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Experimental Mechanics</td>
-                       <td>E M 389J</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Experimental Mechanics</td>
+                        <td>E M 389J</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Behavior and Mechanics of Active/Smart Materials</td>
-                       <td>E M 391</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Behavior and Mechanics of Active/Smart Materials</td>
+                        <td>E M 391</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Random Vibrations</td>
-                       <td>E M 392R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Random Vibrations</td>
+                        <td>E M 392R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Numerical Methods for Flow and Transport Problems</td>
-                       <td>E M 393N</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Numerical Methods for Flow and Transport Problems</td>
+                        <td>E M 393N</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Structural Stability</td>
-                       <td>E M 394</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Structural Stability</td>
+                        <td>E M 394</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Finite Element Methods</td>
-                       <td>E M 394F</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Finite Element Methods</td>
+                        <td>E M 394F</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Computational Techniques in Finite Elements</td>
-                       <td>E M 394G</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Computational Techniques in Finite Elements</td>
+                        <td>E M 394G</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Theory of Finite Element Methods</td>
-                       <td>E M 394H</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Advanced Theory of Finite Element Methods</td>
+                        <td>E M 394H</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Wave Propagation I</td>
-                       <td>E M 394V</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Wave Propagation I</td>
+                        <td>E M 394V</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Advanced Engineering Mechanics</td>
-                       <td>E M 397, 697, 997</td>
-                       <td>3, 6, 9</td>
-                       <td>Graduate</td>
+                        <td>Topics in Advanced Engineering Mechanics</td>
+                        <td>E M 397, 697, 997</td>
+                        <td>3, 6, 9</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Individual Research</td>
-                       <td>E M 397R, 697R, 997R</td>
-                       <td>3, 6, 9</td>
-                       <td>Graduate</td>
+                        <td>Individual Research</td>
+                        <td>E M 397R, 697R, 997R</td>
+                        <td>3, 6, 9</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Mechanics Seminar</td>
-                       <td>E M 397S</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Mechanics Seminar</td>
+                        <td>E M 397S</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Computational Mechanics Seminar</td>
-                       <td>E M 397T</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Computational Mechanics Seminar</td>
+                        <td>E M 397T</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Thesis</td>
-                       <td>E M 698</td>
-                       <td>6</td>
-                       <td>Graduate</td>
+                        <td>Thesis</td>
+                        <td>E M 698</td>
+                        <td>6</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Master's Report</td>
-                       <td>E M 398R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Master's Report</td>
+                        <td>E M 398R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Supervised Teaching in Engineering Mechanics</td>
-                       <td>E M 398T</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Supervised Teaching in Engineering Mechanics</td>
+                        <td>E M 398T</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Dissertation</td>
-                       <td>E M 399W, 699W, 999W</td>
-                       <td>3, 6, 9</td>
-                       <td>Graduate</td>
+                        <td>Dissertation</td>
+                        <td>E M 399W, 699W, 999W</td>
+                        <td>3, 6, 9</td>
+                        <td>Graduate</td>
                         </tr>
                         
-                        <tr>
-                       <td>DegreeView</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                        
-                    </table>
-                    
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
       </div>
       <footer>
   <div class="footerleft">
     <div class="links">
-      <div class="tooltip">
-        <a href="../../../aboutpage.html">About</a>
-        <span class="tooltiptext">Go to aboutpage</span>
-      </div>
+      <a href="../../../about.html">About</a>
 
-      <div class="tooltip">
-        <a href="../../utcoursesindex.html">Home</a>
-        <span class="tooltiptext">Go back to the homepage</span>
-      </div>
+      <a href="../../../index.html">Home</a>
 
-      <div class="tooltip">
-        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
-        <span class="tooltiptext">Go to Excel templates page</span>
-      </div>
+      <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+
+      <a href="../../../degreeviewstats.html">DegreeView Stats</a>
     </div>
   </div>
 
   <div class="footerright">
-    <img
-      id="smalllogo"
-      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
-      alt="smalldegreeviewlogo"
-    />
-    <p id="statement">DegreeView 2025</p>
+    <img id="smalllogo" src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="smalldegreeviewlogo" />
+    <p id="statement">DegreeView 2026</p>
   </div>
 </footer>
 
+      <div id="hiddeninfo">
+        <p id="unicolor">#BF5700</p>
+      </div>
     </div>
+    <!-- put hidden info here for the JavaScript to get -->
 
     
 
                     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-
-
-
                     <!-- Hover Script -->
 
-                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <script src="../../../static/js/headingcolorchange.js"></script>
                     <!-- copy script -->
-                    <script src="../../static/js/copytable.js"></script>
+                    <script src="../../../static/js/copytable.js"></script>
 
                     <!-- animate table script -->
-                    <script src="../../static/js/animatetable.js"></script>
-    
+                    <script src="../../../static/js/animatetable.js"></script>
+                
   </body>
 </html>

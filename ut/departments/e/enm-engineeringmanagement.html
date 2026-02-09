@@ -5,20 +5,20 @@
 
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
 <script>
-  (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
 </script>
-<!-- End Google Tag Manager -->
 
     <meta
       name="description"
@@ -27,7 +27,7 @@
 
     <meta
       name="keywords"
-      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (ENM) - Engineering Management"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, ENM - Engineering Management"
     />
 
     <meta name="author" content="DegreeView" />
@@ -85,48 +85,36 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
 />
+<!-- test comment -->
 
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript
-  ><iframe
-    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
-    height="0"
-    width="0"
-    style="display: none; visibility: hidden"
-  ></iframe
-></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
     <div class="sitecontainer" id="departmentpage">
       <div class="abovemainsite">
         <div class="topnav">
           <nav class="breadcrumbs">
             <ul>
-              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
-              <i class="fa fa-chevron-right"></i>
-
               <li>
-                <a href="../e/e-departments.html"
-                  >E Departments</a
-                >
+                <a href="../../ut-home.html"> UT Home</a>
               </li>
+
               <i class="fa fa-chevron-right"></i>
 
-              <li id="current">(ENM) - Engineering Management</li>
+              <li id="current">ENM - Engineering Management</li>
             </ul>
           </nav>
           <nav class="homeandabout">
             <ul>
-              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../index.html">Home</a></li>
               <li><a href="../../../aboutpage.html">About</a></li>
-              <li><a href="../../../ut-stats.html">Stats</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../UTstats.html.html">Stats</a></li>
             </ul>
           </nav>
         </div>
         <div class="degreenamebox">
-          <h1 id="degreenametitle">(ENM) - Engineering Management</h1>
+          <h1 id="departmenttitle">ENM - Engineering Management</h1>
         </div>
       </div>
       <div class="mainsite">
@@ -143,12 +131,28 @@
                 <div class="linkbox">
                   <p>
                     Department Courses
-                    <span id="original">original Theme</span>
+                    <span id="Original">Original Theme</span>
                   </p>
                   <p>
                     <!-- download attribute means they will download it -->
                     Download:&nbsp;&nbsp;
-                    <a href="https://storage.googleapis.com/utcourses/enm-engineeringmanagement/excel-files/enm-engineeringmanagement-courses-originaltheme.xlsx" download>
+                    <a href="https://storage.googleapis.com/utcourses/enm-engineeringmanagement/excel-files/enm-engineeringmanagement-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="UT">UT Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/enm-engineeringmanagement/excel-files/enm-engineeringmanagement-ut-theme.xlsx" download>
                       <i class="fa-solid fa-arrow-up-from-bracket"></i>
                     </a>
                   </p>
@@ -180,7 +184,7 @@
                 </div>
               </li>
 
-              <li>
+              <li style="display: none">
                 <div class="linkbox">
                   <p>
                     <small id="underconstruction"
@@ -207,7 +211,7 @@
         <div class="rightcontent">
           <div class="displaynamebox">
             <h3 id="displayname">
-              (ENM) - Engineering Management Statistics &nbsp; &nbsp;<span
+              ENM - Engineering Management Statistics &nbsp; &nbsp;<span
                 class="material-symbols-outlined"
                 id="charticon"
               >
@@ -228,6 +232,14 @@
                 Topics in Management of People, Processes, Projects, and Organizations
               </div>
             </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                70
+              </div>
+            </section>
+            
 
             <section class="statsline" id="shortestname">
               <div class="statsname">Shortest Course Name</div>
@@ -235,6 +247,15 @@
                 Systems Engineering
               </div>
             </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                19
+              </div>
+            </section>
+            
 
             <section class="statsline" id="lowercount">
               <div class="statsname">Lower Division Course Count</div>
@@ -290,177 +311,164 @@
           <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
           <!-- contains the rendered csv -->
         </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Engineering Management</td>
 
-        
-                    <table id="departmentcoursestable">
-                        <tr>
-                        <td colspan="2">Engineering Management</td>
-                       
-                        <td colspan="2" >The University of Texas at Austin</td>
-                        </tr>
-                        <tr>
-                        <td>Course Name</td>
-                        <td>Course Code</td>
-                        <td>Course Hours</td>
-                        <td>Classification</td>
-                        </tr>
-                        
+            <td colspan="2">The University of Texas at Austin</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
 
                     
                         <tr>
-                       <td>Topics in Management of People, Processes, Projects, and Organizations</td>
-                       <td>ENM 380E</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Management of People, Processes, Projects, and Organizations</td>
+                        <td>ENM 380E</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Business Foundations</td>
-                       <td>ENM 381E</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Business Foundations</td>
+                        <td>ENM 381E</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Decision Making</td>
-                       <td>ENM 382E</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Decision Making</td>
+                        <td>ENM 382E</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Projects in Engineering Management I</td>
-                       <td>ENM 385C</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Projects in Engineering Management I</td>
+                        <td>ENM 385C</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Projects in Engineering Management II</td>
-                       <td>ENM 385D</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Projects in Engineering Management II</td>
+                        <td>ENM 385D</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Special Topics in Engineering Management</td>
-                       <td>ENM 185K, 285K, 385K</td>
-                       <td>1, 2, 3</td>
-                       <td>Graduate</td>
+                        <td>Special Topics in Engineering Management</td>
+                        <td>ENM 185K, 285K, 385K</td>
+                        <td>1, 2, 3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Marketing in an Engineering Environment</td>
-                       <td>ENM 286</td>
-                       <td>2</td>
-                       <td>Graduate</td>
+                        <td>Marketing in an Engineering Environment</td>
+                        <td>ENM 286</td>
+                        <td>2</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Art and Science of Negotiations</td>
-                       <td>ENM 187</td>
-                       <td>1</td>
-                       <td>Graduate</td>
+                        <td>Art and Science of Negotiations</td>
+                        <td>ENM 187</td>
+                        <td>1</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Legal Issues for Engineering Managers</td>
-                       <td>ENM 188</td>
-                       <td>1</td>
-                       <td>Graduate</td>
+                        <td>Legal Issues for Engineering Managers</td>
+                        <td>ENM 188</td>
+                        <td>1</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Management of Technology</td>
-                       <td>ENM 289</td>
-                       <td>2</td>
-                       <td>Graduate</td>
+                        <td>Management of Technology</td>
+                        <td>ENM 289</td>
+                        <td>2</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Systems Engineering</td>
-                       <td>ENM 390</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Systems Engineering</td>
+                        <td>ENM 390</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Lean Systems and Processes</td>
-                       <td>ENM 391</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Lean Systems and Processes</td>
+                        <td>ENM 391</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Engineering Management Seminar</td>
-                       <td>ENM 397K</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Engineering Management Seminar</td>
+                        <td>ENM 397K</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Projects in Engineering Management</td>
-                       <td>ENM 397P</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Projects in Engineering Management</td>
+                        <td>ENM 397P</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
-                        <tr>
-                       <td>DegreeView</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                        
-                    </table>
-                    
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
       </div>
       <footer>
   <div class="footerleft">
     <div class="links">
-      <div class="tooltip">
-        <a href="../../../aboutpage.html">About</a>
-        <span class="tooltiptext">Go to aboutpage</span>
-      </div>
+      <a href="../../../about.html">About</a>
 
-      <div class="tooltip">
-        <a href="../../utcoursesindex.html">Home</a>
-        <span class="tooltiptext">Go back to the homepage</span>
-      </div>
+      <a href="../../../index.html">Home</a>
 
-      <div class="tooltip">
-        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
-        <span class="tooltiptext">Go to Excel templates page</span>
-      </div>
+      <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+
+      <a href="../../../degreeviewstats.html">DegreeView Stats</a>
     </div>
   </div>
 
   <div class="footerright">
-    <img
-      id="smalllogo"
-      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
-      alt="smalldegreeviewlogo"
-    />
-    <p id="statement">DegreeView 2025</p>
+    <img id="smalllogo" src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="smalldegreeviewlogo" />
+    <p id="statement">DegreeView 2026</p>
   </div>
 </footer>
 
+      <div id="hiddeninfo">
+        <p id="unicolor">#BF5700</p>
+      </div>
     </div>
+    <!-- put hidden info here for the JavaScript to get -->
 
     
 
                     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-
-
-
                     <!-- Hover Script -->
 
-                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <script src="../../../static/js/headingcolorchange.js"></script>
                     <!-- copy script -->
-                    <script src="../../static/js/copytable.js"></script>
+                    <script src="../../../static/js/copytable.js"></script>
 
                     <!-- animate table script -->
-                    <script src="../../static/js/animatetable.js"></script>
-    
+                    <script src="../../../static/js/animatetable.js"></script>
+                
   </body>
 </html>

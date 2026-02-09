@@ -5,20 +5,20 @@
 
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
 <script>
-  (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
 </script>
-<!-- End Google Tag Manager -->
 
     <meta
       name="description"
@@ -27,7 +27,7 @@
 
     <meta
       name="keywords"
-      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (LAS) - Latin American Studies"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, LAS - Latin American Studies"
     />
 
     <meta name="author" content="DegreeView" />
@@ -85,48 +85,36 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
 />
+<!-- test comment -->
 
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript
-  ><iframe
-    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
-    height="0"
-    width="0"
-    style="display: none; visibility: hidden"
-  ></iframe
-></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
     <div class="sitecontainer" id="departmentpage">
       <div class="abovemainsite">
         <div class="topnav">
           <nav class="breadcrumbs">
             <ul>
-              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
-              <i class="fa fa-chevron-right"></i>
-
               <li>
-                <a href="../l/l-departments.html"
-                  >L Departments</a
-                >
+                <a href="../../ut-home.html"> UT Home</a>
               </li>
+
               <i class="fa fa-chevron-right"></i>
 
-              <li id="current">(LAS) - Latin American Studies</li>
+              <li id="current">LAS - Latin American Studies</li>
             </ul>
           </nav>
           <nav class="homeandabout">
             <ul>
-              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../index.html">Home</a></li>
               <li><a href="../../../aboutpage.html">About</a></li>
-              <li><a href="../../../ut-stats.html">Stats</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../UTstats.html.html">Stats</a></li>
             </ul>
           </nav>
         </div>
         <div class="degreenamebox">
-          <h1 id="degreenametitle">(LAS) - Latin American Studies</h1>
+          <h1 id="departmenttitle">LAS - Latin American Studies</h1>
         </div>
       </div>
       <div class="mainsite">
@@ -143,12 +131,28 @@
                 <div class="linkbox">
                   <p>
                     Department Courses
-                    <span id="original">original Theme</span>
+                    <span id="Original">Original Theme</span>
                   </p>
                   <p>
                     <!-- download attribute means they will download it -->
                     Download:&nbsp;&nbsp;
-                    <a href="https://storage.googleapis.com/utcourses/las-latinamericanstudies/excel-files/las-latinamericanstudies-courses-originaltheme.xlsx" download>
+                    <a href="https://storage.googleapis.com/utcourses/las-latinamericanstudies/excel-files/las-latinamericanstudies-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="UT">UT Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/las-latinamericanstudies/excel-files/las-latinamericanstudies-ut-theme.xlsx" download>
                       <i class="fa-solid fa-arrow-up-from-bracket"></i>
                     </a>
                   </p>
@@ -180,7 +184,7 @@
                 </div>
               </li>
 
-              <li>
+              <li style="display: none">
                 <div class="linkbox">
                   <p>
                     <small id="underconstruction"
@@ -207,7 +211,7 @@
         <div class="rightcontent">
           <div class="displaynamebox">
             <h3 id="displayname">
-              (LAS) - Latin American Studies Statistics &nbsp; &nbsp;<span
+              LAS - Latin American Studies Statistics &nbsp; &nbsp;<span
                 class="material-symbols-outlined"
                 id="charticon"
               >
@@ -228,6 +232,14 @@
                 Topics in Luso-Brazilian Literature, Culture, Civilization, and Linguistics
               </div>
             </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                75
+              </div>
+            </section>
+            
 
             <section class="statsline" id="shortestname">
               <div class="statsname">Shortest Course Name</div>
@@ -235,6 +247,15 @@
                 Thesis
               </div>
             </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                6
+              </div>
+            </section>
+            
 
             <section class="statsline" id="lowercount">
               <div class="statsname">Lower Division Course Count</div>
@@ -290,569 +311,556 @@
           <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
           <!-- contains the rendered csv -->
         </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Latin American Studies</td>
 
-        
-                    <table id="departmentcoursestable">
-                        <tr>
-                        <td colspan="2">Latin American Studies</td>
-                       
-                        <td colspan="2" >The University of Texas at Austin</td>
-                        </tr>
-                        <tr>
-                        <td>Course Name</td>
-                        <td>Course Code</td>
-                        <td>Course Hours</td>
-                        <td>Classification</td>
-                        </tr>
-                        
+            <td colspan="2">The University of Texas at Austin</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
 
                     
                         <tr>
-                       <td>Key Ideas and Issues in Latin America</td>
-                       <td>LAS 301</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Key Ideas and Issues in Latin America</td>
+                        <td>LAS 301</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>General Topics in Latin American Studies</td>
-                       <td>LAS 310</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>General Topics in Latin American Studies</td>
+                        <td>LAS 310</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Afro-Brazilian Diaspora</td>
-                       <td>LAS 310C</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Afro-Brazilian Diaspora</td>
+                        <td>LAS 310C</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Early Mesoamerican Religions</td>
-                       <td>LAS 310D</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Early Mesoamerican Religions</td>
+                        <td>LAS 310D</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Race, Deportation, and Diaspora</td>
-                       <td>LAS 310F</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Race, Deportation, and Diaspora</td>
+                        <td>LAS 310F</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Latinx Digital Worlds</td>
-                       <td>LAS 310I</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Latinx Digital Worlds</td>
+                        <td>LAS 310I</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Latin America and the United States</td>
-                       <td>LAS 310R</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Latin America and the United States</td>
+                        <td>LAS 310R</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Introductory Topics in Latin American Social Sciences</td>
-                       <td>LAS 315</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Introductory Topics in Latin American Social Sciences</td>
+                        <td>LAS 315</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Introduction to Religions of Latin America</td>
-                       <td>LAS 316L</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Introduction to Religions of Latin America</td>
+                        <td>LAS 316L</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Geography of Latin America</td>
-                       <td>LAS 319</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Geography of Latin America</td>
+                        <td>LAS 319</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Latin American Studies</td>
-                       <td>LAS 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Lower Division</td>
+                        <td>Topics in Latin American Studies</td>
+                        <td>LAS 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Latin American Studies</td>
-                       <td>LAS 381</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Latin American Studies</td>
+                        <td>LAS 381</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Race, Empire, And Modernity</td>
-                       <td>LAS 322C</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Race, Empire, And Modernity</td>
+                        <td>LAS 322C</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Religions of the Caribbean</td>
-                       <td>LAS 322D</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Religions of the Caribbean</td>
+                        <td>LAS 322D</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Latino Migrations and Asylum</td>
-                       <td>LAS 322E</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Latino Migrations and Asylum</td>
+                        <td>LAS 322E</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Latino Migration and Human Trafficking</td>
-                       <td>LAS 322F</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Latino Migration and Human Trafficking</td>
+                        <td>LAS 322F</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Black Freedom Movement</td>
-                       <td>LAS 322G</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Black Freedom Movement</td>
+                        <td>LAS 322G</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Racism and Inequality in Latin America</td>
-                       <td>LAS 322J</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Racism and Inequality in Latin America</td>
+                        <td>LAS 322J</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Empires: Aztec and Spanish</td>
-                       <td>LAS 322L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Empires: Aztec and Spanish</td>
+                        <td>LAS 322L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Colonial Encounters in Mesoamerica</td>
-                       <td>LAS 322M</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Colonial Encounters in Mesoamerica</td>
+                        <td>LAS 322M</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>African Religion in the New World</td>
-                       <td>LAS 322N</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>African Religion in the New World</td>
+                        <td>LAS 322N</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Afro-Latinidades in the United States and Latin America</td>
-                       <td>LAS 322Q</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Afro-Latinidades in the United States and Latin America</td>
+                        <td>LAS 322Q</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Sexuality in Global Perspective</td>
-                       <td>LAS 324G</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Sexuality in Global Perspective</td>
+                        <td>LAS 324G</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Latin American Anthropology</td>
-                       <td>LAS 324L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Latin American Anthropology</td>
+                        <td>LAS 324L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Daily Life in Mesoamerica</td>
-                       <td>LAS 324Q</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Daily Life in Mesoamerica</td>
+                        <td>LAS 324Q</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Jewish Cuba</td>
-                       <td>LAS 324S</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Jewish Cuba</td>
+                        <td>LAS 324S</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Latin American Sociology</td>
-                       <td>LAS 325</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Latin American Sociology</td>
+                        <td>LAS 325</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Geographies of Latin American to United States Migration</td>
-                       <td>LAS 325E</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Geographies of Latin American to United States Migration</td>
+                        <td>LAS 325E</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Latin American Music</td>
-                       <td>LAS 326</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Latin American Music</td>
+                        <td>LAS 326</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Latin American Art History</td>
-                       <td>LAS 327</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Latin American Art History</td>
+                        <td>LAS 327</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Latin American Arts, Literature, Film, and Dance</td>
-                       <td>LAS 328</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Latin American Arts, Literature, Film, and Dance</td>
+                        <td>LAS 328</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Transnational Latinx Popular Culture</td>
-                       <td>LAS 328C</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Transnational Latinx Popular Culture</td>
+                        <td>LAS 328C</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Latin American Geography</td>
-                       <td>LAS 330</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Latin American Geography</td>
+                        <td>LAS 330</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Water Resources in Latin America and the Caribbean</td>
-                       <td>LAS 331</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Water Resources in Latin America and the Caribbean</td>
+                        <td>LAS 331</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Issues in Third World Development</td>
-                       <td>LAS 337L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Issues in Third World Development</td>
+                        <td>LAS 337L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Latin American Politics</td>
-                       <td>LAS 337M</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Latin American Politics</td>
+                        <td>LAS 337M</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Afro-Caribbean Politics and Culture in Central America</td>
-                       <td>LAS 337N</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Afro-Caribbean Politics and Culture in Central America</td>
+                        <td>LAS 337N</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Law and Democracy in Latin America</td>
-                       <td>LAS 337O</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Law and Democracy in Latin America</td>
+                        <td>LAS 337O</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>International Politics of Latin America</td>
-                       <td>LAS 337P</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>International Politics of Latin America</td>
+                        <td>LAS 337P</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Politics, Economy, and Society of Contemporary Brazil</td>
-                       <td>LAS 337Q</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Politics, Economy, and Society of Contemporary Brazil</td>
+                        <td>LAS 337Q</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>The Politics of Development in Latin America</td>
-                       <td>LAS 337R</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>The Politics of Development in Latin America</td>
+                        <td>LAS 337R</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Latino Politics</td>
-                       <td>LAS 337S</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Latino Politics</td>
+                        <td>LAS 337S</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>The Politics of Mexico</td>
-                       <td>LAS 337T</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>The Politics of Mexico</td>
+                        <td>LAS 337T</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Latin American Economics</td>
-                       <td>LAS 355</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Latin American Economics</td>
+                        <td>LAS 355</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Honors Seminar</td>
-                       <td>LAS 359H</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Honors Seminar</td>
+                        <td>LAS 359H</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Latin American History</td>
-                       <td>LAS 366</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Latin American History</td>
+                        <td>LAS 366</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Nationalisms in the Caribbean</td>
-                       <td>LAS 366C</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Nationalisms in the Caribbean</td>
+                        <td>LAS 366C</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Race, Rebellion and Revolution in the Caribbean</td>
-                       <td>LAS 366D</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Race, Rebellion and Revolution in the Caribbean</td>
+                        <td>LAS 366D</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Luso-Brazilian Literature, Culture, Civilization, and Linguistics</td>
-                       <td>LAS 370P</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Luso-Brazilian Literature, Culture, Civilization, and Linguistics</td>
+                        <td>LAS 370P</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Hispanic Literature, Culture, Civilization, and Linguistics</td>
-                       <td>LAS 370S</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Hispanic Literature, Culture, Civilization, and Linguistics</td>
+                        <td>LAS 370S</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Capstone Course in Latin American Studies</td>
-                       <td>LAS 378</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Capstone Course in Latin American Studies</td>
+                        <td>LAS 378</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Conference Course in Latin American Studies</td>
-                       <td>LAS 379</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Conference Course in Latin American Studies</td>
+                        <td>LAS 379</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Honors Tutorial Course</td>
-                       <td>LAS 679H</td>
-                       <td>6</td>
-                       <td>Upper Division</td>
+                        <td>Honors Tutorial Course</td>
+                        <td>LAS 679H</td>
+                        <td>6</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Methods for Social Science in Latin America</td>
-                       <td>LAS 381F</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Methods for Social Science in Latin America</td>
+                        <td>LAS 381F</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Conference Course in Latin American Studies</td>
-                       <td>LAS 382</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Conference Course in Latin American Studies</td>
+                        <td>LAS 382</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Invisible Global Market</td>
-                       <td>LAS 383</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Invisible Global Market</td>
+                        <td>LAS 383</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Proseminar: Current Issues in Latin America</td>
-                       <td>LAS 384</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Proseminar: Current Issues in Latin America</td>
+                        <td>LAS 384</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Latin American Politics</td>
-                       <td>LAS 384L</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Latin American Politics</td>
+                        <td>LAS 384L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Latin American History</td>
-                       <td>LAS 386</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Latin American History</td>
+                        <td>LAS 386</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Latin American Geography</td>
-                       <td>LAS 388</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Latin American Geography</td>
+                        <td>LAS 388</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Proposal Preparation</td>
-                       <td>LAS 190K, 290K, 390K, 690K, 990K</td>
-                       <td>1, 2, 3, 6, 9</td>
-                       <td>Graduate</td>
+                        <td>Proposal Preparation</td>
+                        <td>LAS 190K, 290K, 390K, 690K, 990K</td>
+                        <td>1, 2, 3, 6, 9</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Latin American Anthropology</td>
-                       <td>LAS 391</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Latin American Anthropology</td>
+                        <td>LAS 391</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Latin American Economics</td>
-                       <td>LAS 391K</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Latin American Economics</td>
+                        <td>LAS 391K</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Luso-Brazilian Literature, Culture, Civilization, and Linguistics</td>
-                       <td>LAS 392P</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Luso-Brazilian Literature, Culture, Civilization, and Linguistics</td>
+                        <td>LAS 392P</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Hispanic Literature, Culture, Civilization, and Linguistics</td>
-                       <td>LAS 392S</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Hispanic Literature, Culture, Civilization, and Linguistics</td>
+                        <td>LAS 392S</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Qualifying Examination</td>
-                       <td>LAS 393L, 693L, 993L</td>
-                       <td>3, 6, 9</td>
-                       <td>Graduate</td>
+                        <td>Qualifying Examination</td>
+                        <td>LAS 393L, 693L, 993L</td>
+                        <td>3, 6, 9</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Secondary Report</td>
-                       <td>LAS 397R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Secondary Report</td>
+                        <td>LAS 397R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Thesis</td>
-                       <td>LAS 698</td>
-                       <td>6</td>
-                       <td>Graduate</td>
+                        <td>Thesis</td>
+                        <td>LAS 698</td>
+                        <td>6</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Master's Report</td>
-                       <td>LAS 398R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Master's Report</td>
+                        <td>LAS 398R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Dissertation</td>
-                       <td>LAS 399W, 699W, 999W</td>
-                       <td>3, 6, 9</td>
-                       <td>Graduate</td>
+                        <td>Dissertation</td>
+                        <td>LAS 399W, 699W, 999W</td>
+                        <td>3, 6, 9</td>
+                        <td>Graduate</td>
                         </tr>
                         
-                        <tr>
-                       <td>DegreeView</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                        
-                    </table>
-                    
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
       </div>
       <footer>
   <div class="footerleft">
     <div class="links">
-      <div class="tooltip">
-        <a href="../../../aboutpage.html">About</a>
-        <span class="tooltiptext">Go to aboutpage</span>
-      </div>
+      <a href="../../../about.html">About</a>
 
-      <div class="tooltip">
-        <a href="../../utcoursesindex.html">Home</a>
-        <span class="tooltiptext">Go back to the homepage</span>
-      </div>
+      <a href="../../../index.html">Home</a>
 
-      <div class="tooltip">
-        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
-        <span class="tooltiptext">Go to Excel templates page</span>
-      </div>
+      <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+
+      <a href="../../../degreeviewstats.html">DegreeView Stats</a>
     </div>
   </div>
 
   <div class="footerright">
-    <img
-      id="smalllogo"
-      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
-      alt="smalldegreeviewlogo"
-    />
-    <p id="statement">DegreeView 2025</p>
+    <img id="smalllogo" src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="smalldegreeviewlogo" />
+    <p id="statement">DegreeView 2026</p>
   </div>
 </footer>
 
+      <div id="hiddeninfo">
+        <p id="unicolor">#BF5700</p>
+      </div>
     </div>
+    <!-- put hidden info here for the JavaScript to get -->
 
     
 
                     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-
-
-
                     <!-- Hover Script -->
 
-                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <script src="../../../static/js/headingcolorchange.js"></script>
                     <!-- copy script -->
-                    <script src="../../static/js/copytable.js"></script>
+                    <script src="../../../static/js/copytable.js"></script>
 
                     <!-- animate table script -->
-                    <script src="../../static/js/animatetable.js"></script>
-    
+                    <script src="../../../static/js/animatetable.js"></script>
+                
   </body>
 </html>

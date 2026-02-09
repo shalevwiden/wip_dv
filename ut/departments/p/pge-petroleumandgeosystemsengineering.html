@@ -5,20 +5,20 @@
 
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
 <script>
-  (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
 </script>
-<!-- End Google Tag Manager -->
 
     <meta
       name="description"
@@ -27,7 +27,7 @@
 
     <meta
       name="keywords"
-      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (PGE) - Petroleum and Geosystems Engineering"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, PGE - Petroleum and Geosystems Engineering"
     />
 
     <meta name="author" content="DegreeView" />
@@ -85,48 +85,36 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
 />
+<!-- test comment -->
 
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript
-  ><iframe
-    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
-    height="0"
-    width="0"
-    style="display: none; visibility: hidden"
-  ></iframe
-></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
     <div class="sitecontainer" id="departmentpage">
       <div class="abovemainsite">
         <div class="topnav">
           <nav class="breadcrumbs">
             <ul>
-              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
-              <i class="fa fa-chevron-right"></i>
-
               <li>
-                <a href="../p/p-departments.html"
-                  >P Departments</a
-                >
+                <a href="../../ut-home.html"> UT Home</a>
               </li>
+
               <i class="fa fa-chevron-right"></i>
 
-              <li id="current">(PGE) - Petroleum and Geosystems Engineering</li>
+              <li id="current">PGE - Petroleum and Geosystems Engineering</li>
             </ul>
           </nav>
           <nav class="homeandabout">
             <ul>
-              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../index.html">Home</a></li>
               <li><a href="../../../aboutpage.html">About</a></li>
-              <li><a href="../../../ut-stats.html">Stats</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../UTstats.html.html">Stats</a></li>
             </ul>
           </nav>
         </div>
         <div class="degreenamebox">
-          <h1 id="degreenametitle">(PGE) - Petroleum and Geosystems Engineering</h1>
+          <h1 id="departmenttitle">PGE - Petroleum and Geosystems Engineering</h1>
         </div>
       </div>
       <div class="mainsite">
@@ -143,12 +131,28 @@
                 <div class="linkbox">
                   <p>
                     Department Courses
-                    <span id="original">original Theme</span>
+                    <span id="Original">Original Theme</span>
                   </p>
                   <p>
                     <!-- download attribute means they will download it -->
                     Download:&nbsp;&nbsp;
-                    <a href="https://storage.googleapis.com/utcourses/pge-petroleumandgeosystemsengineering/excel-files/pge-petroleumandgeosystemsengineering-courses-originaltheme.xlsx" download>
+                    <a href="https://storage.googleapis.com/utcourses/pge-petroleumandgeosystemsengineering/excel-files/pge-petroleumandgeosystemsengineering-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="UT">UT Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/pge-petroleumandgeosystemsengineering/excel-files/pge-petroleumandgeosystemsengineering-ut-theme.xlsx" download>
                       <i class="fa-solid fa-arrow-up-from-bracket"></i>
                     </a>
                   </p>
@@ -180,7 +184,7 @@
                 </div>
               </li>
 
-              <li>
+              <li style="display: none">
                 <div class="linkbox">
                   <p>
                     <small id="underconstruction"
@@ -207,7 +211,7 @@
         <div class="rightcontent">
           <div class="displaynamebox">
             <h3 id="displayname">
-              (PGE) - Petroleum and Geosystems Engineering Statistics &nbsp; &nbsp;<span
+              PGE - Petroleum and Geosystems Engineering Statistics &nbsp; &nbsp;<span
                 class="material-symbols-outlined"
                 id="charticon"
               >
@@ -228,6 +232,14 @@
                 Advanced Petroleum Laboratory for Master's Degree Candidates
               </div>
             </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                60
+              </div>
+            </section>
+            
 
             <section class="statsline" id="shortestname">
               <div class="statsname">Shortest Course Name</div>
@@ -235,6 +247,15 @@
                 Thesis
               </div>
             </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                6
+              </div>
+            </section>
+            
 
             <section class="statsline" id="lowercount">
               <div class="statsname">Lower Division Course Count</div>
@@ -290,478 +311,465 @@
           <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
           <!-- contains the rendered csv -->
         </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Petroleum and Geosystems Engineering</td>
 
-        
-                    <table id="departmentcoursestable">
-                        <tr>
-                        <td colspan="2">Petroleum and Geosystems Engineering</td>
-                       
-                        <td colspan="2" >The University of Texas at Austin</td>
-                        </tr>
-                        <tr>
-                        <td>Course Name</td>
-                        <td>Course Code</td>
-                        <td>Course Hours</td>
-                        <td>Classification</td>
-                        </tr>
-                        
+            <td colspan="2">The University of Texas at Austin</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
 
                     
                         <tr>
-                       <td>Engineering, Energy, and the Environment</td>
-                       <td>PGE 301</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Engineering, Energy, and the Environment</td>
+                        <td>PGE 301</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Numerical Methods and Programming</td>
-                       <td>PGE 311</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Numerical Methods and Programming</td>
+                        <td>PGE 311</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Physical and Chemical Behavior of Fluids I</td>
-                       <td>PGE 312</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Physical and Chemical Behavior of Fluids I</td>
+                        <td>PGE 312</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Petroleum  and Geosystems Engineering</td>
-                       <td>PGE 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Lower Division</td>
+                        <td>Topics in Petroleum  and Geosystems Engineering</td>
+                        <td>PGE 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Physical and Chemical Behavior of Fluids II</td>
-                       <td>PGE 421K</td>
-                       <td>4</td>
-                       <td>Upper Division</td>
+                        <td>Physical and Chemical Behavior of Fluids II</td>
+                        <td>PGE 421K</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Transport Phenomena in Geosystems</td>
-                       <td>PGE 322K</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Transport Phenomena in Geosystems</td>
+                        <td>PGE 322K</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Reservoir Engineering I: Primary Recovery</td>
-                       <td>PGE 323K</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Reservoir Engineering I: Primary Recovery</td>
+                        <td>PGE 323K</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Reservoir Engineering II: Secondary and Tertiary Recovery</td>
-                       <td>PGE 323L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Reservoir Engineering II: Secondary and Tertiary Recovery</td>
+                        <td>PGE 323L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Reservoir Engineering III: Numerical Simulation</td>
-                       <td>PGE 323M</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Reservoir Engineering III: Numerical Simulation</td>
+                        <td>PGE 323M</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Petrophysics</td>
-                       <td>PGE 424</td>
-                       <td>4</td>
-                       <td>Upper Division</td>
+                        <td>Petrophysics</td>
+                        <td>PGE 424</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Thermodynamics and Phase Behavior</td>
-                       <td>PGE 326</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Thermodynamics and Phase Behavior</td>
+                        <td>PGE 326</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Properties of Petroleum Fluids</td>
-                       <td>PGE 427</td>
-                       <td>4</td>
-                       <td>Upper Division</td>
+                        <td>Properties of Petroleum Fluids</td>
+                        <td>PGE 427</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Petroleum and Geosystems Engineering</td>
-                       <td>PGE 129S, 229S, 329S, 429S, 529S, 629S, 729S, 829S, 929S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Petroleum and Geosystems Engineering</td>
+                        <td>PGE 129S, 229S, 329S, 429S, 529S, 629S, 729S, 829S, 929S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Drilling and Well Completions</td>
-                       <td>PGE 430</td>
-                       <td>4</td>
-                       <td>Upper Division</td>
+                        <td>Drilling and Well Completions</td>
+                        <td>PGE 430</td>
+                        <td>4</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Engineering Communication</td>
-                       <td>PGE 333T</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Engineering Communication</td>
+                        <td>PGE 333T</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Reservoir Geomechanics</td>
-                       <td>PGE 334</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Reservoir Geomechanics</td>
+                        <td>PGE 334</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Geostatistics and Data Analysis</td>
-                       <td>PGE 338</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Geostatistics and Data Analysis</td>
+                        <td>PGE 338</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Principles of Formation Evaluation</td>
-                       <td>PGE 358</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Principles of Formation Evaluation</td>
+                        <td>PGE 358</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Reservoir Engineering</td>
-                       <td>PGE 361</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Advanced Reservoir Engineering</td>
+                        <td>PGE 361</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Production Technology and Design</td>
-                       <td>PGE 362</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Production Technology and Design</td>
+                        <td>PGE 362</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Petroleum Leasing Regulations and Practices</td>
-                       <td>PGE 363</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Petroleum Leasing Regulations and Practices</td>
+                        <td>PGE 363</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Natural Gas Engineering</td>
-                       <td>PGE 364</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Natural Gas Engineering</td>
+                        <td>PGE 364</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Resource Economics and Valuation</td>
-                       <td>PGE 365</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Resource Economics and Valuation</td>
+                        <td>PGE 365</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Fundamentals of Well Logging</td>
-                       <td>PGE 368</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Fundamentals of Well Logging</td>
+                        <td>PGE 368</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Energy Finance</td>
-                       <td>PGE 371</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Energy Finance</td>
+                        <td>PGE 371</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Drilling and Well Completions</td>
-                       <td>PGE 372</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Advanced Drilling and Well Completions</td>
+                        <td>PGE 372</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Geosystems Engineering Design and Analysis</td>
-                       <td>PGE 373L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Geosystems Engineering Design and Analysis</td>
+                        <td>PGE 373L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Special Problems in Petroleum and Geosystems Engineering</td>
-                       <td>PGE 176, 276, 376</td>
-                       <td>1, 2, 3</td>
-                       <td>Upper Division</td>
+                        <td>Special Problems in Petroleum and Geosystems Engineering</td>
+                        <td>PGE 176, 276, 376</td>
+                        <td>1, 2, 3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Deepwater Operations</td>
-                       <td>PGE 377</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Deepwater Operations</td>
+                        <td>PGE 377</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Applied Reservoir Characterization</td>
-                       <td>PGE 378</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Applied Reservoir Characterization</td>
+                        <td>PGE 378</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Petroleum and Geosystems Engineering</td>
-                       <td>PGE 379</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Petroleum and Geosystems Engineering</td>
+                        <td>PGE 379</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Undergraduate Honors Thesis</td>
-                       <td>PGE 679H</td>
-                       <td>6</td>
-                       <td>Upper Division</td>
+                        <td>Undergraduate Honors Thesis</td>
+                        <td>PGE 679H</td>
+                        <td>6</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Petroleum Laboratory for Master's Degree Candidates</td>
-                       <td>PGE 380, 680</td>
-                       <td>3, 6</td>
-                       <td>Graduate</td>
+                        <td>Advanced Petroleum Laboratory for Master's Degree Candidates</td>
+                        <td>PGE 380, 680</td>
+                        <td>3, 6</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Drilling Engineering</td>
-                       <td>PGE 381</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Drilling Engineering</td>
+                        <td>PGE 381</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Engineering Analysis</td>
-                       <td>PGE 381K</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Engineering Analysis</td>
+                        <td>PGE 381K</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Petrophysics</td>
-                       <td>PGE 381L</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Advanced Petrophysics</td>
+                        <td>PGE 381L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Transport Phenomena</td>
-                       <td>PGE 381M</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Transport Phenomena</td>
+                        <td>PGE 381M</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Basic Geological Concepts for Engineers</td>
-                       <td>PGE 382</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Basic Geological Concepts for Engineers</td>
+                        <td>PGE 382</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Theory and Application of Reservoir Transients</td>
-                       <td>PGE 382K</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Theory and Application of Reservoir Transients</td>
+                        <td>PGE 382K</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Numerical Methods in Petroleum and Geosystems Engineering</td>
-                       <td>PGE 382L</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Numerical Methods in Petroleum and Geosystems Engineering</td>
+                        <td>PGE 382L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Special Topics in Petroleum and Geosystems Engineering</td>
-                       <td>PGE 383</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Special Topics in Petroleum and Geosystems Engineering</td>
+                        <td>PGE 383</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Thermodynamics and Phase Behavior</td>
-                       <td>PGE 384</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Advanced Thermodynamics and Phase Behavior</td>
+                        <td>PGE 384</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Multi-Well Formation Evaluation</td>
-                       <td>PGE 385K</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Advanced Multi-Well Formation Evaluation</td>
+                        <td>PGE 385K</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Well-Logging and Correlation</td>
-                       <td>PGE 385M</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Advanced Well-Logging and Correlation</td>
+                        <td>PGE 385M</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Fluid Flow in Porous Media</td>
-                       <td>PGE 386K</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Advanced Fluid Flow in Porous Media</td>
+                        <td>PGE 386K</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Secondary Recovery of Petroleum</td>
-                       <td>PGE 387</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Secondary Recovery of Petroleum</td>
+                        <td>PGE 387</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Fundamentals of Enhanced Oil Recovery I</td>
-                       <td>PGE 387K</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Fundamentals of Enhanced Oil Recovery I</td>
+                        <td>PGE 387K</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Fundamentals of Enhanced Oil Recovery II</td>
-                       <td>PGE 387L</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Fundamentals of Enhanced Oil Recovery II</td>
+                        <td>PGE 387L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Reservoir Engineering</td>
-                       <td>PGE 388</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Advanced Reservoir Engineering</td>
+                        <td>PGE 388</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Economic Analysis in the Petroleum Industry</td>
-                       <td>PGE 389</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Economic Analysis in the Petroleum Industry</td>
+                        <td>PGE 389</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Laboratory for Doctoral Candidates</td>
-                       <td>PGE 290, 390, 690, 990</td>
-                       <td>2, 3, 6, 9</td>
-                       <td>Graduate</td>
+                        <td>Advanced Laboratory for Doctoral Candidates</td>
+                        <td>PGE 290, 390, 690, 990</td>
+                        <td>2, 3, 6, 9</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Numerical Simulation of Reservoirs</td>
-                       <td>PGE 392K</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Numerical Simulation of Reservoirs</td>
+                        <td>PGE 392K</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Research Seminar</td>
-                       <td>PGE 193, 293, 393</td>
-                       <td>1, 2, 3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Research Seminar</td>
+                        <td>PGE 193, 293, 393</td>
+                        <td>1, 2, 3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Graduate Research Internship</td>
-                       <td>PGE 397M</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Graduate Research Internship</td>
+                        <td>PGE 397M</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Thesis</td>
-                       <td>PGE 698</td>
-                       <td>6</td>
-                       <td>Graduate</td>
+                        <td>Thesis</td>
+                        <td>PGE 698</td>
+                        <td>6</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Master's Report</td>
-                       <td>PGE 398R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Master's Report</td>
+                        <td>PGE 398R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Dissertation</td>
-                       <td>PGE 399W, 699W, 999W</td>
-                       <td>3, 6, 9</td>
-                       <td>Graduate</td>
+                        <td>Dissertation</td>
+                        <td>PGE 399W, 699W, 999W</td>
+                        <td>3, 6, 9</td>
+                        <td>Graduate</td>
                         </tr>
                         
-                        <tr>
-                       <td>DegreeView</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                        
-                    </table>
-                    
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
       </div>
       <footer>
   <div class="footerleft">
     <div class="links">
-      <div class="tooltip">
-        <a href="../../../aboutpage.html">About</a>
-        <span class="tooltiptext">Go to aboutpage</span>
-      </div>
+      <a href="../../../about.html">About</a>
 
-      <div class="tooltip">
-        <a href="../../utcoursesindex.html">Home</a>
-        <span class="tooltiptext">Go back to the homepage</span>
-      </div>
+      <a href="../../../index.html">Home</a>
 
-      <div class="tooltip">
-        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
-        <span class="tooltiptext">Go to Excel templates page</span>
-      </div>
+      <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+
+      <a href="../../../degreeviewstats.html">DegreeView Stats</a>
     </div>
   </div>
 
   <div class="footerright">
-    <img
-      id="smalllogo"
-      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
-      alt="smalldegreeviewlogo"
-    />
-    <p id="statement">DegreeView 2025</p>
+    <img id="smalllogo" src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="smalldegreeviewlogo" />
+    <p id="statement">DegreeView 2026</p>
   </div>
 </footer>
 
+      <div id="hiddeninfo">
+        <p id="unicolor">#BF5700</p>
+      </div>
     </div>
+    <!-- put hidden info here for the JavaScript to get -->
 
     
 
                     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-
-
-
                     <!-- Hover Script -->
 
-                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <script src="../../../static/js/headingcolorchange.js"></script>
                     <!-- copy script -->
-                    <script src="../../static/js/copytable.js"></script>
+                    <script src="../../../static/js/copytable.js"></script>
 
                     <!-- animate table script -->
-                    <script src="../../static/js/animatetable.js"></script>
-    
+                    <script src="../../../static/js/animatetable.js"></script>
+                
   </body>
 </html>

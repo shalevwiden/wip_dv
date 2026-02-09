@@ -83,14 +83,20 @@
               This is a big data analysis project with the topic being course
               catalogs at universities.
             </p>
-            <button class="cta">See Schools</button>
+            <button class="cta"><a href="#universityul">See Schools</a></button>
           </div>
           <div class="righthero">
-            <img src="images/excellogo.png" alt="" id="excelicon" />
-            <img src="images/barchart.webp" alt="" id="barchart" />
-            <img src="images/csvicon.png" alt="" id="csvicon" />
-            <img src="images/htmltable.png" alt="tableicon" id="tableicon" />
-            <img src="images/piecharticon.png" alt="" id="piechart" />
+            <img src="https://storage.googleapis.com/degreeview/homepageimages/towericon.png" alt="towericon" id="towericon" />
+            <img src="https://storage.googleapis.com/degreeview/homepageimages/excellogo.png" alt="" id="excelicon" />
+            <img src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="" id="minilogohero" />
+
+            <img src="https://storage.googleapis.com/degreeview/homepageimages/universityicon.png" alt="" id="uniicon" />
+            <img src="https://storage.googleapis.com/degreeview/homepageimages/tableicon.png" alt="tableicon" id="tableicon" />
+            <img
+              src="https://storage.googleapis.com/degreeview/homepageimages/piecharticon.png"
+              alt="pie chart icon"
+              id="piecharticon"
+            />
           </div>
         </div>
       </div>
@@ -99,59 +105,59 @@
       -->
       <div class="mainsite">
         <!-- in the future I want an interactive USA map here showing states stuff -->
-        <ul class="universityul">
+        <ul class="universityul" id="universityul">
           
-
-          <li
-            class="universitybox"
-            id="utbox"
-            style="background-color: #bf5700;"
+          <a
+            href="ut/ut-home.html"
           >
-            <a
-              href="ut/ut-home.html"
+            <li
+              class="universitybox"
+              id="utbox"
+              style="background-color: #bf5700;"
             >
-              UT Austin</a
-            >
-          </li>
+              UT Austin
+            </li>
+          </a>
+
           
-
-          <li
-            class="universitybox"
-            id="ricebox"
-            style="background-color: #2153b8ff;"
+          <a
+            href="rice/rice-home.html"
           >
-            <a
-              href="rice/rice-home.html"
+            <li
+              class="universitybox"
+              id="ricebox"
+              style="background-color: #2153b8ff;"
             >
-              Rice</a
-            >
-          </li>
+              Rice
+            </li>
+          </a>
+
           
-
-          <li
-            class="universitybox"
-            id="stanfordbox"
-            style="background-color: #8C1515;"
+          <a
+            href="stanford/stanford-home.html"
           >
-            <a
-              href="stanford/stanford-home.html"
+            <li
+              class="universitybox"
+              id="stanfordbox"
+              style="background-color: #8C1515;"
             >
-              Stanford</a
-            >
-          </li>
+              Stanford
+            </li>
+          </a>
+
           
-
-          <li
-            class="universitybox"
-            id="tx_statebox"
-            style="background-color: #501214;"
+          <a
+            href="tx_state/tx_state-home.html"
           >
-            <a
-              href="tx_state/tx_state-home.html"
+            <li
+              class="universitybox"
+              id="tx_statebox"
+              style="background-color: #501214;"
             >
-              Texas State</a
-            >
-          </li>
+              Texas State
+            </li>
+          </a>
+
           
         </ul>
 
@@ -190,8 +196,9 @@
 
       <!-- end main mainsite -->
       <!-- this goes under main site( no way) -->
-      <div class="borderdiv"></div>
       <div class="undermainsite">
+        <div class="borderdiv"></div>
+
         <h3>Statistics at a glance</h3>
         <div class="quickstats">
           <h4>5 Universities</h4>
@@ -202,23 +209,23 @@
       </div>
       <!-- footer now -->
       <footer>
-        <div class="footerleft">
-          <div class="links">
-            <a href="aboutpage.html">About</a>
+  <div class="footerleft">
+    <div class="links">
+      <a href="about.html">About</a>
 
-            <a href="#biglogoid">Home</a>
-          </div>
-          <p id="statement">DegreeView 2026</p>
-        </div>
+      <a href="index.html">Home</a>
 
-        <div class="footerright">
-          <img
-            id="smalllogo"
-            src="metaassets/minilogo.png"
-            alt="smalldegreeviewlogo"
-          />
-        </div>
-      </footer>
+      <a href="exceltemplates.html">Excel Templates Breakdown</a>
+
+      <a href="degreeviewstats.html">DegreeView Stats</a>
+    </div>
+  </div>
+
+  <div class="footerright">
+    <img id="smalllogo" src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="smalldegreeviewlogo" />
+    <p id="statement">DegreeView 2026</p>
+  </div>
+</footer>
     </div>
     <!-- script for random button  -->
     <script src="static/js/randomuni.js"></script>

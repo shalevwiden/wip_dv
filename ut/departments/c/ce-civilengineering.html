@@ -5,20 +5,20 @@
 
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
 <script>
-  (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
 </script>
-<!-- End Google Tag Manager -->
 
     <meta
       name="description"
@@ -27,7 +27,7 @@
 
     <meta
       name="keywords"
-      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (C E) - Civil Engineering"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, C E - Civil Engineering"
     />
 
     <meta name="author" content="DegreeView" />
@@ -85,48 +85,36 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
 />
+<!-- test comment -->
 
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript
-  ><iframe
-    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
-    height="0"
-    width="0"
-    style="display: none; visibility: hidden"
-  ></iframe
-></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
     <div class="sitecontainer" id="departmentpage">
       <div class="abovemainsite">
         <div class="topnav">
           <nav class="breadcrumbs">
             <ul>
-              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
-              <i class="fa fa-chevron-right"></i>
-
               <li>
-                <a href="../c/c-departments.html"
-                  >C Departments</a
-                >
+                <a href="../../ut-home.html"> UT Home</a>
               </li>
+
               <i class="fa fa-chevron-right"></i>
 
-              <li id="current">(C E) - Civil Engineering</li>
+              <li id="current">C E - Civil Engineering</li>
             </ul>
           </nav>
           <nav class="homeandabout">
             <ul>
-              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../index.html">Home</a></li>
               <li><a href="../../../aboutpage.html">About</a></li>
-              <li><a href="../../../ut-stats.html">Stats</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../UTstats.html.html">Stats</a></li>
             </ul>
           </nav>
         </div>
         <div class="degreenamebox">
-          <h1 id="degreenametitle">(C E) - Civil Engineering</h1>
+          <h1 id="departmenttitle">C E - Civil Engineering</h1>
         </div>
       </div>
       <div class="mainsite">
@@ -143,12 +131,28 @@
                 <div class="linkbox">
                   <p>
                     Department Courses
-                    <span id="original">original Theme</span>
+                    <span id="Original">Original Theme</span>
                   </p>
                   <p>
                     <!-- download attribute means they will download it -->
                     Download:&nbsp;&nbsp;
-                    <a href="https://storage.googleapis.com/utcourses/ce-civilengineering/excel-files/ce-civilengineering-courses-originaltheme.xlsx" download>
+                    <a href="https://storage.googleapis.com/utcourses/ce-civilengineering/excel-files/ce-civilengineering-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="UT">UT Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/ce-civilengineering/excel-files/ce-civilengineering-ut-theme.xlsx" download>
                       <i class="fa-solid fa-arrow-up-from-bracket"></i>
                     </a>
                   </p>
@@ -180,7 +184,7 @@
                 </div>
               </li>
 
-              <li>
+              <li style="display: none">
                 <div class="linkbox">
                   <p>
                     <small id="underconstruction"
@@ -207,7 +211,7 @@
         <div class="rightcontent">
           <div class="displaynamebox">
             <h3 id="displayname">
-              (C E) - Civil Engineering Statistics &nbsp; &nbsp;<span
+              C E - Civil Engineering Statistics &nbsp; &nbsp;<span
                 class="material-symbols-outlined"
                 id="charticon"
               >
@@ -228,6 +232,14 @@
                 Topics in Construction Engineering and Projects: Seminar/Conference
               </div>
             </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                67
+              </div>
+            </section>
+            
 
             <section class="statsline" id="shortestname">
               <div class="statsname">Shortest Course Name</div>
@@ -235,6 +247,15 @@
                 Thesis
               </div>
             </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                6
+              </div>
+            </section>
+            
 
             <section class="statsline" id="lowercount">
               <div class="statsname">Lower Division Course Count</div>
@@ -290,1206 +311,1193 @@
           <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
           <!-- contains the rendered csv -->
         </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Civil Engineering</td>
 
-        
-                    <table id="departmentcoursestable">
-                        <tr>
-                        <td colspan="2">Civil Engineering</td>
-                       
-                        <td colspan="2" >The University of Texas at Austin</td>
-                        </tr>
-                        <tr>
-                        <td>Course Name</td>
-                        <td>Course Code</td>
-                        <td>Course Hours</td>
-                        <td>Classification</td>
-                        </tr>
-                        
+            <td colspan="2">The University of Texas at Austin</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
 
                     
                         <tr>
-                       <td>Civil Engineering Systems</td>
-                       <td>C E 301</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Civil Engineering Systems</td>
+                        <td>C E 301</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Introduction to Computer Methods</td>
-                       <td>C E 311K</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Introduction to Computer Methods</td>
+                        <td>C E 311K</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Probability and Statistics for Civil Engineers</td>
-                       <td>C E 311S</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Probability and Statistics for Civil Engineers</td>
+                        <td>C E 311S</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Elementary Mechanics of Fluids</td>
-                       <td>C E 319F</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Elementary Mechanics of Fluids</td>
+                        <td>C E 319F</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Civil Engineering</td>
-                       <td>C E 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Lower Division</td>
+                        <td>Topics in Civil Engineering</td>
+                        <td>C E 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Transportation Systems</td>
-                       <td>C E 321</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Transportation Systems</td>
+                        <td>C E 321</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Properties and Behavior of Engineering Materials</td>
-                       <td>C E 324P</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Properties and Behavior of Engineering Materials</td>
+                        <td>C E 324P</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Structural Analysis</td>
-                       <td>C E 329</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Structural Analysis</td>
+                        <td>C E 329</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Civil Engineering</td>
-                       <td>C E 177K, 277K, 377K</td>
-                       <td>1, 2, 3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Civil Engineering</td>
+                        <td>C E 177K, 277K, 377K</td>
+                        <td>1, 2, 3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Reinforced Concrete Design</td>
-                       <td>C E 331</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Reinforced Concrete Design</td>
+                        <td>C E 331</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Engineering Communication</td>
-                       <td>C E 333T</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Engineering Communication</td>
+                        <td>C E 333T</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Elements of Steel Design</td>
-                       <td>C E 335</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Elements of Steel Design</td>
+                        <td>C E 335</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Introduction to Environmental Engineering</td>
-                       <td>C E 341</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Introduction to Environmental Engineering</td>
+                        <td>C E 341</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Water and Wastewater Treatment Engineering</td>
-                       <td>C E 342</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Water and Wastewater Treatment Engineering</td>
+                        <td>C E 342</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Solid Waste Engineering and Management</td>
-                       <td>C E 346</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Solid Waste Engineering and Management</td>
+                        <td>C E 346</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Concrete Materials</td>
-                       <td>C E 351</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Concrete Materials</td>
+                        <td>C E 351</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Elements of Hydraulic Engineering</td>
-                       <td>C E 356</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Elements of Hydraulic Engineering</td>
+                        <td>C E 356</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Geotechnical Engineering</td>
-                       <td>C E 357</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Geotechnical Engineering</td>
+                        <td>C E 357</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Introductory Ocean Engineering</td>
-                       <td>C E 358</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Introductory Ocean Engineering</td>
+                        <td>C E 358</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Foundation Engineering</td>
-                       <td>C E 360K</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Foundation Engineering</td>
+                        <td>C E 360K</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Reinforced Concrete Design</td>
-                       <td>C E 362M</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Advanced Reinforced Concrete Design</td>
+                        <td>C E 362M</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Steel Design</td>
-                       <td>C E 362N</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Advanced Steel Design</td>
+                        <td>C E 362N</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Structural Analysis</td>
-                       <td>C E 363</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Advanced Structural Analysis</td>
+                        <td>C E 363</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Design of Wastewater and Water Treatment Facilities</td>
-                       <td>C E 364</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Design of Wastewater and Water Treatment Facilities</td>
+                        <td>C E 364</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Design of Bituminous Mixtures</td>
-                       <td>C E 366K</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Design of Bituminous Mixtures</td>
+                        <td>C E 366K</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Design and Evaluation of Ground-Based Transportation Systems</td>
-                       <td>C E 367G</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Design and Evaluation of Ground-Based Transportation Systems</td>
+                        <td>C E 367G</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Pavement Design and Performance</td>
-                       <td>C E 367P</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Pavement Design and Performance</td>
+                        <td>C E 367P</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Optimization Techniques for Transportation Engineers</td>
-                       <td>C E 367R</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Optimization Techniques for Transportation Engineers</td>
+                        <td>C E 367R</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Traffic Engineering</td>
-                       <td>C E 367T</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Traffic Engineering</td>
+                        <td>C E 367T</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Air Pollution Engineering</td>
-                       <td>C E 369L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Air Pollution Engineering</td>
+                        <td>C E 369L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Indoor Air Quality</td>
-                       <td>C E 369R</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Indoor Air Quality</td>
+                        <td>C E 369R</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Environmental Sampling and Analysis</td>
-                       <td>C E 370K</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Environmental Sampling and Analysis</td>
+                        <td>C E 370K</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Climate Change Mitigation</td>
-                       <td>C E 370L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Climate Change Mitigation</td>
+                        <td>C E 370L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Engineering Professionalism</td>
-                       <td>C E 370P</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Engineering Professionalism</td>
+                        <td>C E 370P</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Engineering Professionalism</td>
-                       <td>C E 171P</td>
-                       <td>1</td>
-                       <td>Upper Division</td>
+                        <td>Engineering Professionalism</td>
+                        <td>C E 171P</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Hydrology</td>
-                       <td>C E 374K</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Hydrology</td>
+                        <td>C E 374K</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Natural Water Systems Engineering</td>
-                       <td>C E 374N</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Natural Water Systems Engineering</td>
+                        <td>C E 374N</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Urban Water Systems Engineering</td>
-                       <td>C E 374U</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Urban Water Systems Engineering</td>
+                        <td>C E 374U</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Earth Slopes and Retaining Structures</td>
-                       <td>C E 375</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Earth Slopes and Retaining Structures</td>
+                        <td>C E 375</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Internship</td>
-                       <td>C E 177R</td>
-                       <td>1</td>
-                       <td>Upper Division</td>
+                        <td>Internship</td>
+                        <td>C E 177R</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Undergraduate Honors Thesis</td>
-                       <td>C E 679H</td>
-                       <td>6</td>
-                       <td>Upper Division</td>
+                        <td>Undergraduate Honors Thesis</td>
+                        <td>C E 679H</td>
+                        <td>6</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Experimental Methods in Fluid Dynamics</td>
-                       <td>C E 380D</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Experimental Methods in Fluid Dynamics</td>
+                        <td>C E 380D</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Ocean Engineering Principles: Theory and Applications</td>
-                       <td>C E 380P</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Ocean Engineering Principles: Theory and Applications</td>
+                        <td>C E 380P</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Environmental Fluid Mechanics</td>
-                       <td>C E 380S</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Environmental Fluid Mechanics</td>
+                        <td>C E 380S</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Computational Environmental Fluid Mechanics</td>
-                       <td>C E 380T</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Computational Environmental Fluid Mechanics</td>
+                        <td>C E 380T</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Water Resources Engineering Research Seminar</td>
-                       <td>C E 380W</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Water Resources Engineering Research Seminar</td>
+                        <td>C E 380W</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Linear Regression and Discrete Choice Methods</td>
-                       <td>C E 381D</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Linear Regression and Discrete Choice Methods</td>
+                        <td>C E 381D</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Design of Energy Efficient and Healthy Buildings</td>
-                       <td>C E 381E</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Design of Energy Efficient and Healthy Buildings</td>
+                        <td>C E 381E</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Computer Methods in Structural Analysis</td>
-                       <td>C E 381P</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Computer Methods in Structural Analysis</td>
+                        <td>C E 381P</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>The Finite Element Method</td>
-                       <td>C E 381R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>The Finite Element Method</td>
+                        <td>C E 381R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Numerical Modeling of Physical Systems</td>
-                       <td>C E 381T</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Numerical Modeling of Physical Systems</td>
+                        <td>C E 381T</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Introduction to Wave Physics</td>
-                       <td>C E 381W</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Introduction to Wave Physics</td>
+                        <td>C E 381W</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Structural Health Monitoring and Nondestructive Evaluation</td>
-                       <td>C E 382H</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Structural Health Monitoring and Nondestructive Evaluation</td>
+                        <td>C E 382H</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Plastic Design in Metals</td>
-                       <td>C E 382L</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Plastic Design in Metals</td>
+                        <td>C E 382L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Structural Systems</td>
-                       <td>C E 382N</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Structural Systems</td>
+                        <td>C E 382N</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Experimental Methods in Structural Engineering</td>
-                       <td>C E 383C</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Experimental Methods in Structural Engineering</td>
+                        <td>C E 383C</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Steel Bridge Design</td>
-                       <td>C E 383D</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Steel Bridge Design</td>
+                        <td>C E 383D</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Structural Fire Engineering</td>
-                       <td>C E 383F</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Structural Fire Engineering</td>
+                        <td>C E 383F</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Reinforced Concrete Members</td>
-                       <td>C E 383L</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Advanced Reinforced Concrete Members</td>
+                        <td>C E 383L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Reinforced Concrete Structures</td>
-                       <td>C E 383N</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Advanced Reinforced Concrete Structures</td>
+                        <td>C E 383N</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Prestressed Concrete</td>
-                       <td>C E 383P</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Prestressed Concrete</td>
+                        <td>C E 383P</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Repair and Strengthening of Reinforced Concrete Structures</td>
-                       <td>C E 383R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Repair and Strengthening of Reinforced Concrete Structures</td>
+                        <td>C E 383R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Structural Concrete Bridges</td>
-                       <td>C E 383S</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Structural Concrete Bridges</td>
+                        <td>C E 383S</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Plasticity in Structural Concrete</td>
-                       <td>C E 383T</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Plasticity in Structural Concrete</td>
+                        <td>C E 383T</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Dynamic Response of Structures</td>
-                       <td>C E 384P</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Dynamic Response of Structures</td>
+                        <td>C E 384P</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Earthquake Engineering</td>
-                       <td>C E 384R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Earthquake Engineering</td>
+                        <td>C E 384R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Structural Reliability</td>
-                       <td>C E 384S</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Structural Reliability</td>
+                        <td>C E 384S</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Blast-Resistant Structural Design</td>
-                       <td>C E 384T</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Blast-Resistant Structural Design</td>
+                        <td>C E 384T</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Water Resources Planning and Management</td>
-                       <td>C E 385D</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Water Resources Planning and Management</td>
+                        <td>C E 385D</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Transboundary Water Resources</td>
-                       <td>C E 385G</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Transboundary Water Resources</td>
+                        <td>C E 385G</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Hazardous Waste Management</td>
-                       <td>C E 385J</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Hazardous Waste Management</td>
+                        <td>C E 385J</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Water Quality</td>
-                       <td>C E 385K</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Water Quality</td>
+                        <td>C E 385K</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Water and Wastewater Treatment</td>
-                       <td>C E 385L</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Water and Wastewater Treatment</td>
+                        <td>C E 385L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Unit Operations in Water and Wastewater Treatment</td>
-                       <td>C E 385M</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Unit Operations in Water and Wastewater Treatment</td>
+                        <td>C E 385M</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Industrial Wastewater Treatment</td>
-                       <td>C E 385N</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Industrial Wastewater Treatment</td>
+                        <td>C E 385N</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Land Treatment of Wastes</td>
-                       <td>C E 385R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Land Treatment of Wastes</td>
+                        <td>C E 385R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Stochastic Hydrology</td>
-                       <td>C E 385S</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Stochastic Hydrology</td>
+                        <td>C E 385S</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Drinking Water: Treatment and Public Health Issues</td>
-                       <td>C E 385W</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Drinking Water: Treatment and Public Health Issues</td>
+                        <td>C E 385W</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Water Treatment and Wastewater Treatment Plant Design</td>
-                       <td>C E 386M</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Water Treatment and Wastewater Treatment Plant Design</td>
+                        <td>C E 386M</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Engineering Fracture Mechanics</td>
-                       <td>C E 386P</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Engineering Fracture Mechanics</td>
+                        <td>C E 386P</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Inelastic Behavior of Materials</td>
-                       <td>C E 386R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Inelastic Behavior of Materials</td>
+                        <td>C E 386R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Geoenvironmental Engineering</td>
-                       <td>C E 387C</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Geoenvironmental Engineering</td>
+                        <td>C E 387C</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Engineering Geology</td>
-                       <td>C E 387G</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Engineering Geology</td>
+                        <td>C E 387G</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Soil Mechanics I</td>
-                       <td>C E 387L</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Soil Mechanics I</td>
+                        <td>C E 387L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Soil Mechanics II</td>
-                       <td>C E 387M</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Soil Mechanics II</td>
+                        <td>C E 387M</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Soil Mechanics III</td>
-                       <td>C E 387R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Soil Mechanics III</td>
+                        <td>C E 387R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Decision, Risk, and Reliability</td>
-                       <td>C E 387T</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Decision, Risk, and Reliability</td>
+                        <td>C E 387T</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Climate Change Mitigation</td>
-                       <td>C E 388H</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Climate Change Mitigation</td>
+                        <td>C E 388H</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Engineering and Management of Municipal and Industrial Residuals</td>
-                       <td>C E 388N</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Engineering and Management of Municipal and Industrial Residuals</td>
+                        <td>C E 388N</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Novel Air Quality Measurement Techniques</td>
-                       <td>C E 388R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Novel Air Quality Measurement Techniques</td>
+                        <td>C E 388R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Technical Communication for Engineers</td>
-                       <td>C E 389C</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Advanced Technical Communication for Engineers</td>
+                        <td>C E 389C</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Sustainable Building Design</td>
-                       <td>C E 389D</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Sustainable Building Design</td>
+                        <td>C E 389D</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>HVAC Design</td>
-                       <td>C E 389H</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>HVAC Design</td>
+                        <td>C E 389H</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Smart Buildings and Cities</td>
-                       <td>C E 389S</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Smart Buildings and Cities</td>
+                        <td>C E 389S</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Indoor Air Quality: Transport and Control</td>
-                       <td>C E 389T</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Indoor Air Quality: Transport and Control</td>
+                        <td>C E 389T</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Modeling of Air and Pollutant Flows in Buildings</td>
-                       <td>C E 389V</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Modeling of Air and Pollutant Flows in Buildings</td>
+                        <td>C E 389V</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Engineering Microbiology</td>
-                       <td>C E 390J</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Engineering Microbiology</td>
+                        <td>C E 390J</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Environmental Analysis</td>
-                       <td>C E 390L</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Environmental Analysis</td>
+                        <td>C E 390L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Water Pollution Chemistry</td>
-                       <td>C E 390N</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Water Pollution Chemistry</td>
+                        <td>C E 390N</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Environmental Organic Chemistry</td>
-                       <td>C E 390P</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Environmental Organic Chemistry</td>
+                        <td>C E 390P</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Chemical Dynamics in the Environment</td>
-                       <td>C E 390Q</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Chemical Dynamics in the Environment</td>
+                        <td>C E 390Q</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Engineering Microbiology Applications</td>
-                       <td>C E 390R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Engineering Microbiology Applications</td>
+                        <td>C E 390R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Analysis and Design of Transportation Systems I</td>
-                       <td>C E 391C</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Analysis and Design of Transportation Systems I</td>
+                        <td>C E 391C</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Analysis and Design of Transportation Systems II</td>
-                       <td>C E 391D</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Analysis and Design of Transportation Systems II</td>
+                        <td>C E 391D</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advances in Transportation Demand Analysis</td>
-                       <td>C E 391E</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Advances in Transportation Demand Analysis</td>
+                        <td>C E 391E</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Theory of Traffic Flow</td>
-                       <td>C E 391F</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Advanced Theory of Traffic Flow</td>
+                        <td>C E 391F</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Transportation Planning: Methodology and Techniques</td>
-                       <td>C E 391J</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Transportation Planning: Methodology and Techniques</td>
+                        <td>C E 391J</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Traffic Engineering</td>
-                       <td>C E 391L</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Advanced Traffic Engineering</td>
+                        <td>C E 391L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Geometric Design</td>
-                       <td>C E 391M</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Advanced Geometric Design</td>
+                        <td>C E 391M</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Engineering System Evaluation and Decision Making</td>
-                       <td>C E 391N</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Engineering System Evaluation and Decision Making</td>
+                        <td>C E 391N</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Highway and Airport Pavement Systems</td>
-                       <td>C E 391P</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Highway and Airport Pavement Systems</td>
+                        <td>C E 391P</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Bituminous Materials</td>
-                       <td>C E 391Q</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Bituminous Materials</td>
+                        <td>C E 391Q</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Airport Design and Operation</td>
-                       <td>C E 391R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Airport Design and Operation</td>
+                        <td>C E 391R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Contemporary Transportation Issues</td>
-                       <td>C E 391T</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Contemporary Transportation Issues</td>
+                        <td>C E 391T</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Transportation Systems Operations and Control</td>
-                       <td>C E 391W</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Transportation Systems Operations and Control</td>
+                        <td>C E 391W</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Transportation Network Analysis</td>
-                       <td>C E 392C</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Transportation Network Analysis</td>
+                        <td>C E 392C</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Dynamic Traffic Assignment</td>
-                       <td>C E 392D</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Dynamic Traffic Assignment</td>
+                        <td>C E 392D</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Acquisition and Analysis of Transportation Data</td>
-                       <td>C E 392E</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Acquisition and Analysis of Transportation Data</td>
+                        <td>C E 392E</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Sensors and Signal Interpretation</td>
-                       <td>C E 392F</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Sensors and Signal Interpretation</td>
+                        <td>C E 392F</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Regional Transportation Planning: Applications and Tools</td>
-                       <td>C E 392H</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Regional Transportation Planning: Applications and Tools</td>
+                        <td>C E 392H</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Experimental Measurements of Soil Properties</td>
-                       <td>C E 392L</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Experimental Measurements of Soil Properties</td>
+                        <td>C E 392L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Public Transportation Engineering</td>
-                       <td>C E 392M</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Public Transportation Engineering</td>
+                        <td>C E 392M</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Infrastructure Systems</td>
-                       <td>C E 392N</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Infrastructure Systems</td>
+                        <td>C E 392N</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Sustainable Pavement Engineering</td>
-                       <td>C E 392P</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Sustainable Pavement Engineering</td>
+                        <td>C E 392P</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Discrete Choice Theory and Modeling</td>
-                       <td>C E 392R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Discrete Choice Theory and Modeling</td>
+                        <td>C E 392R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Intermodal Transportation Systems</td>
-                       <td>C E 392S</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Intermodal Transportation Systems</td>
+                        <td>C E 392S</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Transport Economics</td>
-                       <td>C E 392T</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Transport Economics</td>
+                        <td>C E 392T</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Transportation Systems Management</td>
-                       <td>C E 392U</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Transportation Systems Management</td>
+                        <td>C E 392U</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Methods to Characterize Bituminous Materials</td>
-                       <td>C E 392V</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Methods to Characterize Bituminous Materials</td>
+                        <td>C E 392V</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Characterization of Viscoelastic Materials</td>
-                       <td>C E 392W</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Characterization of Viscoelastic Materials</td>
+                        <td>C E 392W</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Concrete Materials</td>
-                       <td>C E 393</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Advanced Concrete Materials</td>
+                        <td>C E 393</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Experimental Methods in Cement Chemistry</td>
-                       <td>C E 393C</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Experimental Methods in Cement Chemistry</td>
+                        <td>C E 393C</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Concrete Durability</td>
-                       <td>C E 393D</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Concrete Durability</td>
+                        <td>C E 393D</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Environmental Engineering Research Seminar</td>
-                       <td>C E 393M</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Environmental Engineering Research Seminar</td>
+                        <td>C E 393M</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Novel Structural Materials</td>
-                       <td>C E 393N</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Novel Structural Materials</td>
+                        <td>C E 393N</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Structural Engineering Research Seminar</td>
-                       <td>C E 393S</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Structural Engineering Research Seminar</td>
+                        <td>C E 393S</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Interaction of Soils and Structures</td>
-                       <td>C E 394</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Interaction of Soils and Structures</td>
+                        <td>C E 394</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Engineering Hydrology</td>
-                       <td>C E 394K</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Engineering Hydrology</td>
+                        <td>C E 394K</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Analyses in Geotechnical Engineering</td>
-                       <td>C E 394M</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Advanced Analyses in Geotechnical Engineering</td>
+                        <td>C E 394M</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Project Automation</td>
-                       <td>C E 395P</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Project Automation</td>
+                        <td>C E 395P</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Project Controls</td>
-                       <td>C E 395Q</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Project Controls</td>
+                        <td>C E 395Q</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Project Information Systems</td>
-                       <td>C E 395R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Project Information Systems</td>
+                        <td>C E 395R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Project Organization</td>
-                       <td>C E 395S</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Project Organization</td>
+                        <td>C E 395S</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Project Technology</td>
-                       <td>C E 395T</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Project Technology</td>
+                        <td>C E 395T</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>General Topics in Construction Engineering and Project Management</td>
-                       <td>C E 395U</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>General Topics in Construction Engineering and Project Management</td>
+                        <td>C E 395U</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Construction Engineering and Projects: Seminar/Conference</td>
-                       <td>C E 395V</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Construction Engineering and Projects: Seminar/Conference</td>
+                        <td>C E 395V</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Air Resources Engineering</td>
-                       <td>C E 396L</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Air Resources Engineering</td>
+                        <td>C E 396L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Topics in Atmospheric Science</td>
-                       <td>C E 396M</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Advanced Topics in Atmospheric Science</td>
+                        <td>C E 396M</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Special Topics in Civil Engineering</td>
-                       <td>C E 197, 297, 397</td>
-                       <td>1, 2, 3</td>
-                       <td>Graduate</td>
+                        <td>Special Topics in Civil Engineering</td>
+                        <td>C E 197, 297, 397</td>
+                        <td>1, 2, 3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Master's Research</td>
-                       <td>C E 197C, 297C, 397C, 697C</td>
-                       <td>1, 2, 3, 6</td>
-                       <td>Graduate</td>
+                        <td>Master's Research</td>
+                        <td>C E 197C, 297C, 397C, 697C</td>
+                        <td>1, 2, 3, 6</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Dissertation Research</td>
-                       <td>C E 197D, 297D, 397D, 697D</td>
-                       <td>1, 2, 3, 6</td>
-                       <td>Graduate</td>
+                        <td>Dissertation Research</td>
+                        <td>C E 197D, 297D, 397D, 697D</td>
+                        <td>1, 2, 3, 6</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Forensic Engineering: Materials and Structures</td>
-                       <td>C E 397F</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Forensic Engineering: Materials and Structures</td>
+                        <td>C E 397F</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Stability of Structures</td>
-                       <td>C E 397K</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Stability of Structures</td>
+                        <td>C E 397K</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Structural Metals</td>
-                       <td>C E 397L</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Advanced Structural Metals</td>
+                        <td>C E 397L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Nondestructive Testing Techniques</td>
-                       <td>C E 397N</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Nondestructive Testing Techniques</td>
+                        <td>C E 397N</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Special Independent Studies in Civil Engineering</td>
-                       <td>C E 197Q, 297Q, 397Q, 697Q</td>
-                       <td>1, 2, 3, 6</td>
-                       <td>Graduate</td>
+                        <td>Special Independent Studies in Civil Engineering</td>
+                        <td>C E 197Q, 297Q, 397Q, 697Q</td>
+                        <td>1, 2, 3, 6</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Thesis</td>
-                       <td>C E 698</td>
-                       <td>6</td>
-                       <td>Graduate</td>
+                        <td>Thesis</td>
+                        <td>C E 698</td>
+                        <td>6</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Departmental Report</td>
-                       <td>C E 398D</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Departmental Report</td>
+                        <td>C E 398D</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Master's Report</td>
-                       <td>C E 398R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Master's Report</td>
+                        <td>C E 398R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Supervised Teaching in Civil Engineering</td>
-                       <td>C E 398T</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Supervised Teaching in Civil Engineering</td>
+                        <td>C E 398T</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Dissertation</td>
-                       <td>C E 399W, 699W, 999W</td>
-                       <td>3, 6, 9</td>
-                       <td>Graduate</td>
+                        <td>Dissertation</td>
+                        <td>C E 399W, 699W, 999W</td>
+                        <td>3, 6, 9</td>
+                        <td>Graduate</td>
                         </tr>
                         
-                        <tr>
-                       <td>DegreeView</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                        
-                    </table>
-                    
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
       </div>
       <footer>
   <div class="footerleft">
     <div class="links">
-      <div class="tooltip">
-        <a href="../../../aboutpage.html">About</a>
-        <span class="tooltiptext">Go to aboutpage</span>
-      </div>
+      <a href="../../../about.html">About</a>
 
-      <div class="tooltip">
-        <a href="../../utcoursesindex.html">Home</a>
-        <span class="tooltiptext">Go back to the homepage</span>
-      </div>
+      <a href="../../../index.html">Home</a>
 
-      <div class="tooltip">
-        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
-        <span class="tooltiptext">Go to Excel templates page</span>
-      </div>
+      <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+
+      <a href="../../../degreeviewstats.html">DegreeView Stats</a>
     </div>
   </div>
 
   <div class="footerright">
-    <img
-      id="smalllogo"
-      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
-      alt="smalldegreeviewlogo"
-    />
-    <p id="statement">DegreeView 2025</p>
+    <img id="smalllogo" src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="smalldegreeviewlogo" />
+    <p id="statement">DegreeView 2026</p>
   </div>
 </footer>
 
+      <div id="hiddeninfo">
+        <p id="unicolor">#BF5700</p>
+      </div>
     </div>
+    <!-- put hidden info here for the JavaScript to get -->
 
     
 
                     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-
-
-
                     <!-- Hover Script -->
 
-                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <script src="../../../static/js/headingcolorchange.js"></script>
                     <!-- copy script -->
-                    <script src="../../static/js/copytable.js"></script>
+                    <script src="../../../static/js/copytable.js"></script>
 
                     <!-- animate table script -->
-                    <script src="../../static/js/animatetable.js"></script>
-    
+                    <script src="../../../static/js/animatetable.js"></script>
+                
   </body>
 </html>

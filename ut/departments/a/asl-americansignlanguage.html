@@ -5,20 +5,20 @@
 
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
 <script>
-  (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
 </script>
-<!-- End Google Tag Manager -->
 
     <meta
       name="description"
@@ -27,7 +27,7 @@
 
     <meta
       name="keywords"
-      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (ASL) - American Sign Language"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, ASL - American Sign Language"
     />
 
     <meta name="author" content="DegreeView" />
@@ -85,48 +85,36 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
 />
+<!-- test comment -->
 
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript
-  ><iframe
-    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
-    height="0"
-    width="0"
-    style="display: none; visibility: hidden"
-  ></iframe
-></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
     <div class="sitecontainer" id="departmentpage">
       <div class="abovemainsite">
         <div class="topnav">
           <nav class="breadcrumbs">
             <ul>
-              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
-              <i class="fa fa-chevron-right"></i>
-
               <li>
-                <a href="../a/a-departments.html"
-                  >A Departments</a
-                >
+                <a href="../../ut-home.html"> UT Home</a>
               </li>
+
               <i class="fa fa-chevron-right"></i>
 
-              <li id="current">(ASL) - American Sign Language</li>
+              <li id="current">ASL - American Sign Language</li>
             </ul>
           </nav>
           <nav class="homeandabout">
             <ul>
-              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../index.html">Home</a></li>
               <li><a href="../../../aboutpage.html">About</a></li>
-              <li><a href="../../../ut-stats.html">Stats</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../UTstats.html.html">Stats</a></li>
             </ul>
           </nav>
         </div>
         <div class="degreenamebox">
-          <h1 id="degreenametitle">(ASL) - American Sign Language</h1>
+          <h1 id="departmenttitle">ASL - American Sign Language</h1>
         </div>
       </div>
       <div class="mainsite">
@@ -143,12 +131,28 @@
                 <div class="linkbox">
                   <p>
                     Department Courses
-                    <span id="original">original Theme</span>
+                    <span id="Original">Original Theme</span>
                   </p>
                   <p>
                     <!-- download attribute means they will download it -->
                     Download:&nbsp;&nbsp;
-                    <a href="https://storage.googleapis.com/utcourses/asl-americansignlanguage/excel-files/asl-americansignlanguage-courses-originaltheme.xlsx" download>
+                    <a href="https://storage.googleapis.com/utcourses/asl-americansignlanguage/excel-files/asl-americansignlanguage-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="UT">UT Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/asl-americansignlanguage/excel-files/asl-americansignlanguage-ut-theme.xlsx" download>
                       <i class="fa-solid fa-arrow-up-from-bracket"></i>
                     </a>
                   </p>
@@ -180,7 +184,7 @@
                 </div>
               </li>
 
-              <li>
+              <li style="display: none">
                 <div class="linkbox">
                   <p>
                     <small id="underconstruction"
@@ -207,7 +211,7 @@
         <div class="rightcontent">
           <div class="displaynamebox">
             <h3 id="displayname">
-              (ASL) - American Sign Language Statistics &nbsp; &nbsp;<span
+              ASL - American Sign Language Statistics &nbsp; &nbsp;<span
                 class="material-symbols-outlined"
                 id="charticon"
               >
@@ -228,6 +232,14 @@
                 Topics in American Sign Language, Deaf Studies, and Interpreting
               </div>
             </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                64
+              </div>
+            </section>
+            
 
             <section class="statsline" id="shortestname">
               <div class="statsname">Shortest Course Name</div>
@@ -235,6 +247,15 @@
                 Deaf Culture
               </div>
             </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                12
+              </div>
+            </section>
+            
 
             <section class="statsline" id="lowercount">
               <div class="statsname">Lower Division Course Count</div>
@@ -290,191 +311,178 @@
           <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
           <!-- contains the rendered csv -->
         </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">American Sign Language</td>
 
-        
-                    <table id="departmentcoursestable">
-                        <tr>
-                        <td colspan="2">American Sign Language</td>
-                       
-                        <td colspan="2" >The University of Texas at Austin</td>
-                        </tr>
-                        <tr>
-                        <td>Course Name</td>
-                        <td>Course Code</td>
-                        <td>Course Hours</td>
-                        <td>Classification</td>
-                        </tr>
-                        
+            <td colspan="2">The University of Texas at Austin</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
 
                     
                         <tr>
-                       <td>Accelerated First-Year American Sign Language</td>
-                       <td>ASL 601C</td>
-                       <td>6</td>
-                       <td>Lower Division</td>
+                        <td>Accelerated First-Year American Sign Language</td>
+                        <td>ASL 601C</td>
+                        <td>6</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>American Sign Language I: Beginning</td>
-                       <td>ASL 601D</td>
-                       <td>6</td>
-                       <td>Lower Division</td>
+                        <td>American Sign Language I: Beginning</td>
+                        <td>ASL 601D</td>
+                        <td>6</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>American Sign Language II: Beginning</td>
-                       <td>ASL 610D</td>
-                       <td>6</td>
-                       <td>Lower Division</td>
+                        <td>American Sign Language II: Beginning</td>
+                        <td>ASL 610D</td>
+                        <td>6</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>American Sign Language III: Intermediate</td>
-                       <td>ASL 311D</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>American Sign Language III: Intermediate</td>
+                        <td>ASL 311D</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in American Sign Language</td>
-                       <td>ASL 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Lower Division</td>
+                        <td>Topics in American Sign Language</td>
+                        <td>ASL 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced American Sign Language Conversation</td>
-                       <td>ASL 320</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Advanced American Sign Language Conversation</td>
+                        <td>ASL 320</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Sign Languages and Signing Communities</td>
-                       <td>ASL 326</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Sign Languages and Signing Communities</td>
+                        <td>ASL 326</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in American Sign Language</td>
-                       <td>ASL 129S, 229S, 329S, 429S, 529S, 629S, 729S, 829S, 929S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Upper Division</td>
+                        <td>Topics in American Sign Language</td>
+                        <td>ASL 129S, 229S, 329S, 429S, 529S, 629S, 729S, 829S, 929S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Introduction to Sign Interpreting</td>
-                       <td>ASL 336</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Introduction to Sign Interpreting</td>
+                        <td>ASL 336</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in American Sign Language, Deaf Studies, and Interpreting</td>
-                       <td>ASL 350</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in American Sign Language, Deaf Studies, and Interpreting</td>
+                        <td>ASL 350</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Deaf Culture</td>
-                       <td>ASL 352</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Deaf Culture</td>
+                        <td>ASL 352</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Undergraduate Research</td>
-                       <td>ASL 357</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Undergraduate Research</td>
+                        <td>ASL 357</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Conference Course in American Sign Language</td>
-                       <td>ASL 395</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Conference Course in American Sign Language</td>
+                        <td>ASL 395</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>American Sign Language for Graduate Students I</td>
-                       <td>ASL 395C</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>American Sign Language for Graduate Students I</td>
+                        <td>ASL 395C</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>American Sign Language for Graduate Students II</td>
-                       <td>ASL 395D</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>American Sign Language for Graduate Students II</td>
+                        <td>ASL 395D</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>American Sign Language for Graduate Students III</td>
-                       <td>ASL 395E</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>American Sign Language for Graduate Students III</td>
+                        <td>ASL 395E</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
-                        <tr>
-                       <td>DegreeView</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                        
-                    </table>
-                    
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
       </div>
       <footer>
   <div class="footerleft">
     <div class="links">
-      <div class="tooltip">
-        <a href="../../../aboutpage.html">About</a>
-        <span class="tooltiptext">Go to aboutpage</span>
-      </div>
+      <a href="../../../about.html">About</a>
 
-      <div class="tooltip">
-        <a href="../../utcoursesindex.html">Home</a>
-        <span class="tooltiptext">Go back to the homepage</span>
-      </div>
+      <a href="../../../index.html">Home</a>
 
-      <div class="tooltip">
-        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
-        <span class="tooltiptext">Go to Excel templates page</span>
-      </div>
+      <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+
+      <a href="../../../degreeviewstats.html">DegreeView Stats</a>
     </div>
   </div>
 
   <div class="footerright">
-    <img
-      id="smalllogo"
-      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
-      alt="smalldegreeviewlogo"
-    />
-    <p id="statement">DegreeView 2025</p>
+    <img id="smalllogo" src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="smalldegreeviewlogo" />
+    <p id="statement">DegreeView 2026</p>
   </div>
 </footer>
 
+      <div id="hiddeninfo">
+        <p id="unicolor">#BF5700</p>
+      </div>
     </div>
+    <!-- put hidden info here for the JavaScript to get -->
 
     
 
                     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-
-
-
                     <!-- Hover Script -->
 
-                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <script src="../../../static/js/headingcolorchange.js"></script>
                     <!-- copy script -->
-                    <script src="../../static/js/copytable.js"></script>
+                    <script src="../../../static/js/copytable.js"></script>
 
                     <!-- animate table script -->
-                    <script src="../../static/js/animatetable.js"></script>
-    
+                    <script src="../../../static/js/animatetable.js"></script>
+                
   </body>
 </html>

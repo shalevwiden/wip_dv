@@ -2,8 +2,21 @@
 
 .sitecontainer#index {
   .universityul {
-    li {
-      a {
+    @include flexcol;
+    @include border(green);
+    height: 100%;
+    width: 100%;
+
+    a {
+      width: 80%;
+      flex: 1 1 auto; // allow the item to expand
+      width: 100%;
+      @include flexrow;
+      justify-content: flex-start;
+      padding-left: 20px;
+      height: auto;
+
+      li {
         font-weight: bold;
         text-decoration: none;
         color: white;

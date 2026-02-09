@@ -62,12 +62,39 @@ $width: 200px;
       @include blackborder;
       background-color: var(--lighterblue);
       height: 100%;
-      align-items: flex-start;
       flex: 1;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: auto;
+      gap: 20px;
+
+      justify-items: center;
+      align-content: center;
+      padding: 24px;
 
       img {
         width: 100px;
         height: auto;
+        border-radius: 14px;
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+        cursor: pointer;
+
+        &:hover {
+          transform: translate(-6px, -6px);
+          box-shadow: 8px 10px 24px rgba(0, 0, 0, 0.25);
+        }
+      }
+
+      // Bottom row centered (2 images)
+      img:nth-child(4) {
+        grid-column: 2;
+      }
+
+      img:nth-child(5) {
+        grid-column: 3;
       }
     }
   }
@@ -93,6 +120,7 @@ $width: 200px;
 .mainsite {
   @include flexrow;
   align-items: flex-start;
+  justify-content: space-between;
   column-gap: 55px;
   width: 100%;
 
@@ -196,7 +224,7 @@ $width: 200px;
 .borderdiv {
   margin-top: 100px;
   border-top: 4px solid #eee;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   width: 90%;
   height: 0;
 }
@@ -204,9 +232,22 @@ $width: 200px;
   @include flexcol;
   width: 100%;
   /* this is for now essentially footer top margin */
-  height: 200px;
+  height: auto;
   .quickstats {
     @include flexrow;
     width: 90%;
+  }
+  #statslink {
+    margin: 100px 0px;
+
+    width: 260px;
+
+    background-color: rgb(47, 47, 159);
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 39px;
+
+    height: 190px;
   }
 }

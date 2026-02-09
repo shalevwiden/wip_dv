@@ -5,20 +5,20 @@
 
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
 <script>
-  (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
 </script>
-<!-- End Google Tag Manager -->
 
     <meta
       name="description"
@@ -27,7 +27,7 @@
 
     <meta
       name="keywords"
-      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (ITL) - Italian"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, ITL - Italian"
     />
 
     <meta name="author" content="DegreeView" />
@@ -85,48 +85,36 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
 />
+<!-- test comment -->
 
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript
-  ><iframe
-    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
-    height="0"
-    width="0"
-    style="display: none; visibility: hidden"
-  ></iframe
-></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
     <div class="sitecontainer" id="departmentpage">
       <div class="abovemainsite">
         <div class="topnav">
           <nav class="breadcrumbs">
             <ul>
-              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
-              <i class="fa fa-chevron-right"></i>
-
               <li>
-                <a href="../i/i-departments.html"
-                  >I Departments</a
-                >
+                <a href="../../ut-home.html"> UT Home</a>
               </li>
+
               <i class="fa fa-chevron-right"></i>
 
-              <li id="current">(ITL) - Italian</li>
+              <li id="current">ITL - Italian</li>
             </ul>
           </nav>
           <nav class="homeandabout">
             <ul>
-              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../index.html">Home</a></li>
               <li><a href="../../../aboutpage.html">About</a></li>
-              <li><a href="../../../ut-stats.html">Stats</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../UTstats.html.html">Stats</a></li>
             </ul>
           </nav>
         </div>
         <div class="degreenamebox">
-          <h1 id="degreenametitle">(ITL) - Italian</h1>
+          <h1 id="departmenttitle">ITL - Italian</h1>
         </div>
       </div>
       <div class="mainsite">
@@ -143,12 +131,28 @@
                 <div class="linkbox">
                   <p>
                     Department Courses
-                    <span id="original">original Theme</span>
+                    <span id="Original">Original Theme</span>
                   </p>
                   <p>
                     <!-- download attribute means they will download it -->
                     Download:&nbsp;&nbsp;
-                    <a href="https://storage.googleapis.com/utcourses/itl-italian/excel-files/itl-italian-courses-originaltheme.xlsx" download>
+                    <a href="https://storage.googleapis.com/utcourses/itl-italian/excel-files/itl-italian-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="UT">UT Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/itl-italian/excel-files/itl-italian-ut-theme.xlsx" download>
                       <i class="fa-solid fa-arrow-up-from-bracket"></i>
                     </a>
                   </p>
@@ -180,7 +184,7 @@
                 </div>
               </li>
 
-              <li>
+              <li style="display: none">
                 <div class="linkbox">
                   <p>
                     <small id="underconstruction"
@@ -207,7 +211,7 @@
         <div class="rightcontent">
           <div class="displaynamebox">
             <h3 id="displayname">
-              (ITL) - Italian Statistics &nbsp; &nbsp;<span
+              ITL - Italian Statistics &nbsp; &nbsp;<span
                 class="material-symbols-outlined"
                 id="charticon"
               >
@@ -228,6 +232,14 @@
                 Conference Course in Italian Language and Literature
               </div>
             </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                52
+              </div>
+            </section>
+            
 
             <section class="statsline" id="shortestname">
               <div class="statsname">Shortest Course Name</div>
@@ -235,6 +247,15 @@
                 Thesis
               </div>
             </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                6
+              </div>
+            </section>
+            
 
             <section class="statsline" id="lowercount">
               <div class="statsname">Lower Division Course Count</div>
@@ -290,436 +311,423 @@
           <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
           <!-- contains the rendered csv -->
         </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Italian</td>
 
-        
-                    <table id="departmentcoursestable">
-                        <tr>
-                        <td colspan="2">Italian</td>
-                       
-                        <td colspan="2" >The University of Texas at Austin</td>
-                        </tr>
-                        <tr>
-                        <td>Course Name</td>
-                        <td>Course Code</td>
-                        <td>Course Hours</td>
-                        <td>Classification</td>
-                        </tr>
-                        
+            <td colspan="2">The University of Texas at Austin</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
 
                     
                         <tr>
-                       <td>Beginning Italian</td>
-                       <td>ITL 601C</td>
-                       <td>6</td>
-                       <td>Lower Division</td>
+                        <td>Beginning Italian</td>
+                        <td>ITL 601C</td>
+                        <td>6</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Accelerated First-Year Italian</td>
-                       <td>ITL 604</td>
-                       <td>6</td>
-                       <td>Lower Division</td>
+                        <td>Accelerated First-Year Italian</td>
+                        <td>ITL 604</td>
+                        <td>6</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Introduction to Italian Language and Culture</td>
-                       <td>ITL 305</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Introduction to Italian Language and Culture</td>
+                        <td>ITL 305</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Intermediate Italian</td>
-                       <td>ITL 611C</td>
-                       <td>6</td>
-                       <td>Lower Division</td>
+                        <td>Intermediate Italian</td>
+                        <td>ITL 611C</td>
+                        <td>6</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Accelerated Second-Year Italian</td>
-                       <td>ITL 612</td>
-                       <td>6</td>
-                       <td>Lower Division</td>
+                        <td>Accelerated Second-Year Italian</td>
+                        <td>ITL 612</td>
+                        <td>6</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Enhancing Italian Skills</td>
-                       <td>ITL 317C</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Enhancing Italian Skills</td>
+                        <td>ITL 317C</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Practice in Spoken Italian I</td>
-                       <td>ITL 118K</td>
-                       <td>1</td>
-                       <td>Lower Division</td>
+                        <td>Practice in Spoken Italian I</td>
+                        <td>ITL 118K</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Practice in Spoken Italian II</td>
-                       <td>ITL 118L</td>
-                       <td>1</td>
-                       <td>Lower Division</td>
+                        <td>Practice in Spoken Italian II</td>
+                        <td>ITL 118L</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Italian</td>
-                       <td>ITL 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Lower Division</td>
+                        <td>Topics in Italian</td>
+                        <td>ITL 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Italian</td>
-                       <td>ITL 320</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Advanced Italian</td>
+                        <td>ITL 320</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Introduction to Italian Literature</td>
-                       <td>ITL 321</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Introduction to Italian Literature</td>
+                        <td>ITL 321</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Tradition and Change in Contemporary Italy</td>
-                       <td>ITL 322L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Tradition and Change in Contemporary Italy</td>
+                        <td>ITL 322L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Italian Through Cinema</td>
-                       <td>ITL 325C</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Italian Through Cinema</td>
+                        <td>ITL 325C</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Italian through Creative Writing</td>
-                       <td>ITL 326C</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Italian through Creative Writing</td>
+                        <td>ITL 326C</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Italian through Cuisine</td>
-                       <td>ITL 327C</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Italian through Cuisine</td>
+                        <td>ITL 327C</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Composition and Conversation</td>
-                       <td>ITL 328</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Composition and Conversation</td>
+                        <td>ITL 328</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Composition and Conversation</td>
-                       <td>ITL 329</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Advanced Composition and Conversation</td>
+                        <td>ITL 329</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Italian</td>
-                       <td>ITL 129S, 229S, 329S, 429S, 529S, 629S, 729S, 829S, 929S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Italian</td>
+                        <td>ITL 129S, 229S, 329S, 429S, 529S, 629S, 729S, 829S, 929S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Italian Studies</td>
-                       <td>ITL 330</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Italian Studies</td>
+                        <td>ITL 330</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>The Language of Italian Crime Fiction</td>
-                       <td>ITL 330C</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>The Language of Italian Crime Fiction</td>
+                        <td>ITL 330C</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Italian across Disciplines</td>
-                       <td>ITL 130D</td>
-                       <td>1</td>
-                       <td>Upper Division</td>
+                        <td>Italian across Disciplines</td>
+                        <td>ITL 130D</td>
+                        <td>1</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Introduction to Italian Linguistics</td>
-                       <td>ITL 330L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Introduction to Italian Linguistics</td>
+                        <td>ITL 330L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Italian Translation Workshop</td>
-                       <td>ITL 332</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Italian Translation Workshop</td>
+                        <td>ITL 332</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Italian Politics</td>
-                       <td>ITL 346</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Italian Politics</td>
+                        <td>ITL 346</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Italian Popular Cinema</td>
-                       <td>ITL 347</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Italian Popular Cinema</td>
+                        <td>ITL 347</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Italian Drama Workshop</td>
-                       <td>ITL 348</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Italian Drama Workshop</td>
+                        <td>ITL 348</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Italian Internship</td>
-                       <td>ITL 349P</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Italian Internship</td>
+                        <td>ITL 349P</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Supervised Research</td>
-                       <td>ITL 358Q</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Supervised Research</td>
+                        <td>ITL 358Q</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Conference Course in Italian Language and Literature</td>
-                       <td>ITL 365</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Conference Course in Italian Language and Literature</td>
+                        <td>ITL 365</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>The Antihero in the Twentieth-Century Italian Novel</td>
-                       <td>ITL 375C</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>The Antihero in the Twentieth-Century Italian Novel</td>
+                        <td>ITL 375C</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Writing Fascism: Writing the Resistance</td>
-                       <td>ITL 375F</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Writing Fascism: Writing the Resistance</td>
+                        <td>ITL 375F</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Neorealism and its Legacy</td>
-                       <td>ITL 375N</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Neorealism and its Legacy</td>
+                        <td>ITL 375N</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Sicily in Literature and Film</td>
-                       <td>ITL 375S</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Sicily in Literature and Film</td>
+                        <td>ITL 375S</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Honors Tutorial Course</td>
-                       <td>ITL 379H</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Honors Tutorial Course</td>
+                        <td>ITL 379H</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Italian for Graduate Students in Other Departments</td>
-                       <td>ITL 380C</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Italian for Graduate Students in Other Departments</td>
+                        <td>ITL 380C</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>History of the Italian Language</td>
-                       <td>ITL 380L</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>History of the Italian Language</td>
+                        <td>ITL 380L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Introduction to Studies in Literature and Culture</td>
-                       <td>ITL 180P</td>
-                       <td>1</td>
-                       <td>Graduate</td>
+                        <td>Introduction to Studies in Literature and Culture</td>
+                        <td>ITL 180P</td>
+                        <td>1</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Doctoral Writing Workshop</td>
-                       <td>ITL 380W</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Doctoral Writing Workshop</td>
+                        <td>ITL 380W</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Readings in Italian Literature</td>
-                       <td>ITL 381</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Readings in Italian Literature</td>
+                        <td>ITL 381</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Italian Studies</td>
-                       <td>ITL 382</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Italian Studies</td>
+                        <td>ITL 382</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Studies in Italian Language</td>
-                       <td>ITL 383K</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Studies in Italian Language</td>
+                        <td>ITL 383K</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Conference Course in Italian Language and Literature</td>
-                       <td>ITL 385L</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Conference Course in Italian Language and Literature</td>
+                        <td>ITL 385L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Graduate Teaching Practicum</td>
-                       <td>ITL 385T</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Graduate Teaching Practicum</td>
+                        <td>ITL 385T</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Italian Literature through the Renaissance</td>
-                       <td>ITL 390K</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Italian Literature through the Renaissance</td>
+                        <td>ITL 390K</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Italian Literature since the Renaissance</td>
-                       <td>ITL 390L</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Italian Literature since the Renaissance</td>
+                        <td>ITL 390L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Comprehensive Examination Preparation</td>
-                       <td>ITL 395L</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Comprehensive Examination Preparation</td>
+                        <td>ITL 395L</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Comparative Romance Linguistics</td>
-                       <td>ITL 396K</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Comparative Romance Linguistics</td>
+                        <td>ITL 396K</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Thesis</td>
-                       <td>ITL 698</td>
-                       <td>6</td>
-                       <td>Graduate</td>
+                        <td>Thesis</td>
+                        <td>ITL 698</td>
+                        <td>6</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Master's Report</td>
-                       <td>ITL 398R</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Master's Report</td>
+                        <td>ITL 398R</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Supervised Teaching in Italian</td>
-                       <td>ITL 398T</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Supervised Teaching in Italian</td>
+                        <td>ITL 398T</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Dissertation</td>
-                       <td>ITL 399W, 699W, 999W</td>
-                       <td>3, 6, 9</td>
-                       <td>Graduate</td>
+                        <td>Dissertation</td>
+                        <td>ITL 399W, 699W, 999W</td>
+                        <td>3, 6, 9</td>
+                        <td>Graduate</td>
                         </tr>
                         
-                        <tr>
-                       <td>DegreeView</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                        
-                    </table>
-                    
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
       </div>
       <footer>
   <div class="footerleft">
     <div class="links">
-      <div class="tooltip">
-        <a href="../../../aboutpage.html">About</a>
-        <span class="tooltiptext">Go to aboutpage</span>
-      </div>
+      <a href="../../../about.html">About</a>
 
-      <div class="tooltip">
-        <a href="../../utcoursesindex.html">Home</a>
-        <span class="tooltiptext">Go back to the homepage</span>
-      </div>
+      <a href="../../../index.html">Home</a>
 
-      <div class="tooltip">
-        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
-        <span class="tooltiptext">Go to Excel templates page</span>
-      </div>
+      <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+
+      <a href="../../../degreeviewstats.html">DegreeView Stats</a>
     </div>
   </div>
 
   <div class="footerright">
-    <img
-      id="smalllogo"
-      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
-      alt="smalldegreeviewlogo"
-    />
-    <p id="statement">DegreeView 2025</p>
+    <img id="smalllogo" src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="smalldegreeviewlogo" />
+    <p id="statement">DegreeView 2026</p>
   </div>
 </footer>
 
+      <div id="hiddeninfo">
+        <p id="unicolor">#BF5700</p>
+      </div>
     </div>
+    <!-- put hidden info here for the JavaScript to get -->
 
     
 
                     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-
-
-
                     <!-- Hover Script -->
 
-                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <script src="../../../static/js/headingcolorchange.js"></script>
                     <!-- copy script -->
-                    <script src="../../static/js/copytable.js"></script>
+                    <script src="../../../static/js/copytable.js"></script>
 
                     <!-- animate table script -->
-                    <script src="../../static/js/animatetable.js"></script>
-    
+                    <script src="../../../static/js/animatetable.js"></script>
+                
   </body>
 </html>

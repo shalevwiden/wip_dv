@@ -71,6 +71,11 @@ Above mainsite and its children
         /* height the same as topnav here, 100px */
         height: 70%;
         width: auto;
+        &:hover {
+          cursor: pointer;
+          transform: translateY(10px);
+          transition: 0.5s all;
+        }
         .biglogo {
           height: 100%;
           width: auto;

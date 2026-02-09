@@ -5,20 +5,20 @@
 
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
 <script>
-  (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
 </script>
-<!-- End Google Tag Manager -->
 
     <meta
       name="description"
@@ -27,7 +27,7 @@
 
     <meta
       name="keywords"
-      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (HDO) - Human Dimensions of Organizations"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, HDO - Human Dimensions of Organizations"
     />
 
     <meta name="author" content="DegreeView" />
@@ -85,48 +85,36 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
 />
+<!-- test comment -->
 
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript
-  ><iframe
-    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
-    height="0"
-    width="0"
-    style="display: none; visibility: hidden"
-  ></iframe
-></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
     <div class="sitecontainer" id="departmentpage">
       <div class="abovemainsite">
         <div class="topnav">
           <nav class="breadcrumbs">
             <ul>
-              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
-              <i class="fa fa-chevron-right"></i>
-
               <li>
-                <a href="../h/h-departments.html"
-                  >H Departments</a
-                >
+                <a href="../../ut-home.html"> UT Home</a>
               </li>
+
               <i class="fa fa-chevron-right"></i>
 
-              <li id="current">(HDO) - Human Dimensions of Organizations</li>
+              <li id="current">HDO - Human Dimensions of Organizations</li>
             </ul>
           </nav>
           <nav class="homeandabout">
             <ul>
-              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../index.html">Home</a></li>
               <li><a href="../../../aboutpage.html">About</a></li>
-              <li><a href="../../../ut-stats.html">Stats</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../UTstats.html.html">Stats</a></li>
             </ul>
           </nav>
         </div>
         <div class="degreenamebox">
-          <h1 id="degreenametitle">(HDO) - Human Dimensions of Organizations</h1>
+          <h1 id="departmenttitle">HDO - Human Dimensions of Organizations</h1>
         </div>
       </div>
       <div class="mainsite">
@@ -143,12 +131,28 @@
                 <div class="linkbox">
                   <p>
                     Department Courses
-                    <span id="original">original Theme</span>
+                    <span id="Original">Original Theme</span>
                   </p>
                   <p>
                     <!-- download attribute means they will download it -->
                     Download:&nbsp;&nbsp;
-                    <a href="https://storage.googleapis.com/utcourses/hdo-humandimensionsoforganizations/excel-files/hdo-humandimensionsoforganizations-courses-originaltheme.xlsx" download>
+                    <a href="https://storage.googleapis.com/utcourses/hdo-humandimensionsoforganizations/excel-files/hdo-humandimensionsoforganizations-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="UT">UT Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/hdo-humandimensionsoforganizations/excel-files/hdo-humandimensionsoforganizations-ut-theme.xlsx" download>
                       <i class="fa-solid fa-arrow-up-from-bracket"></i>
                     </a>
                   </p>
@@ -180,7 +184,7 @@
                 </div>
               </li>
 
-              <li>
+              <li style="display: none">
                 <div class="linkbox">
                   <p>
                     <small id="underconstruction"
@@ -207,7 +211,7 @@
         <div class="rightcontent">
           <div class="displaynamebox">
             <h3 id="displayname">
-              (HDO) - Human Dimensions of Organizations Statistics &nbsp; &nbsp;<span
+              HDO - Human Dimensions of Organizations Statistics &nbsp; &nbsp;<span
                 class="material-symbols-outlined"
                 id="charticon"
               >
@@ -228,6 +232,14 @@
                 Individual Perspectives on the Human Dimensions of Organizations
               </div>
             </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                64
+              </div>
+            </section>
+            
 
             <section class="statsline" id="shortestname">
               <div class="statsname">Shortest Course Name</div>
@@ -235,6 +247,15 @@
                 Bias
               </div>
             </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                4
+              </div>
+            </section>
+            
 
             <section class="statsline" id="lowercount">
               <div class="statsname">Lower Division Course Count</div>
@@ -290,296 +311,283 @@
           <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
           <!-- contains the rendered csv -->
         </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Human Dimensions of Organizations</td>
 
-        
-                    <table id="departmentcoursestable">
-                        <tr>
-                        <td colspan="2">Human Dimensions of Organizations</td>
-                       
-                        <td colspan="2" >The University of Texas at Austin</td>
-                        </tr>
-                        <tr>
-                        <td>Course Name</td>
-                        <td>Course Code</td>
-                        <td>Course Hours</td>
-                        <td>Classification</td>
-                        </tr>
-                        
+            <td colspan="2">The University of Texas at Austin</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
 
                     
                         <tr>
-                       <td>Introduction to the Human Dimensions of Organizations</td>
-                       <td>HDO 301</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Introduction to the Human Dimensions of Organizations</td>
+                        <td>HDO 301</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Researching People-Centered Problems</td>
-                       <td>HDO 310</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Researching People-Centered Problems</td>
+                        <td>HDO 310</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Human Dimensions of Organizations</td>
-                       <td>HDO 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
-                       <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
-                       <td>Lower Division</td>
+                        <td>Topics in Human Dimensions of Organizations</td>
+                        <td>HDO 119S, 219S, 319S, 419S, 519S, 619S, 719S, 819S, 919S</td>
+                        <td>1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Multidisciplinary Methods for Exploring Organizations</td>
-                       <td>HDO 320</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Multidisciplinary Methods for Exploring Organizations</td>
+                        <td>HDO 320</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Law and Organizations</td>
-                       <td>HDO 322L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Law and Organizations</td>
+                        <td>HDO 322L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Strategic Human Resources Management</td>
-                       <td>HDO 325</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Strategic Human Resources Management</td>
+                        <td>HDO 325</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Organizational Ethics</td>
-                       <td>HDO 325N</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Organizational Ethics</td>
+                        <td>HDO 325N</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Human Dimensions of Organizations</td>
-                       <td>HDO 330</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Human Dimensions of Organizations</td>
+                        <td>HDO 330</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Creativity and Innovation in Organizations</td>
-                       <td>HDO 330C</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Creativity and Innovation in Organizations</td>
+                        <td>HDO 330C</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Organizational Learning</td>
-                       <td>HDO 330L</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Organizational Learning</td>
+                        <td>HDO 330L</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Identities in Organizations</td>
-                       <td>HDO 350</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Identities in Organizations</td>
+                        <td>HDO 350</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Honors Research I</td>
-                       <td>HDO 359H</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Honors Research I</td>
+                        <td>HDO 359H</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Conference Course</td>
-                       <td>HDO 360</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Conference Course</td>
+                        <td>HDO 360</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Bias</td>
-                       <td>HDO 365</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Bias</td>
+                        <td>HDO 365</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Applying the Human Dimensions of Organizations</td>
-                       <td>HDO 379</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Applying the Human Dimensions of Organizations</td>
+                        <td>HDO 379</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Honors Research II</td>
-                       <td>HDO 379H</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Honors Research II</td>
+                        <td>HDO 379H</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Cultural Perspectives on the Human Dimensions of Organizations</td>
-                       <td>HDO 380</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Cultural Perspectives on the Human Dimensions of Organizations</td>
+                        <td>HDO 380</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Individual Perspectives on the Human Dimensions of Organizations</td>
-                       <td>HDO 381</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Individual Perspectives on the Human Dimensions of Organizations</td>
+                        <td>HDO 381</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Approaches to Leadership</td>
-                       <td>HDO 382</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Approaches to Leadership</td>
+                        <td>HDO 382</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Society, Culture and Organizational Diversity</td>
-                       <td>HDO 383</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Society, Culture and Organizational Diversity</td>
+                        <td>HDO 383</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Organizational Inertia, Decision Making and Change</td>
-                       <td>HDO 384</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Organizational Inertia, Decision Making and Change</td>
+                        <td>HDO 384</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Organizational Ethics</td>
-                       <td>HDO 285</td>
-                       <td>2</td>
-                       <td>Graduate</td>
+                        <td>Organizational Ethics</td>
+                        <td>HDO 285</td>
+                        <td>2</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Persuasion and Argumentation</td>
-                       <td>HDO 386</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Persuasion and Argumentation</td>
+                        <td>HDO 386</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>The Structure of Organizations</td>
-                       <td>HDO 287</td>
-                       <td>2</td>
-                       <td>Graduate</td>
+                        <td>The Structure of Organizations</td>
+                        <td>HDO 287</td>
+                        <td>2</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Conference Course in Human Dimensions of Organizations</td>
-                       <td>HDO 388</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Conference Course in Human Dimensions of Organizations</td>
+                        <td>HDO 388</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Writing and Researching Organizations</td>
-                       <td>HDO 289</td>
-                       <td>2</td>
-                       <td>Graduate</td>
+                        <td>Writing and Researching Organizations</td>
+                        <td>HDO 289</td>
+                        <td>2</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Qualitative Research Methods</td>
-                       <td>HDO 390</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Qualitative Research Methods</td>
+                        <td>HDO 390</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Quantitative Research Methods</td>
-                       <td>HDO 391</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Quantitative Research Methods</td>
+                        <td>HDO 391</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Computational Methods</td>
-                       <td>HDO 292</td>
-                       <td>2</td>
-                       <td>Graduate</td>
+                        <td>Computational Methods</td>
+                        <td>HDO 292</td>
+                        <td>2</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Capstone Project</td>
-                       <td>HDO 695</td>
-                       <td>6</td>
-                       <td>Graduate</td>
+                        <td>Capstone Project</td>
+                        <td>HDO 695</td>
+                        <td>6</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Practicum in Human Dimensions of Organizations</td>
-                       <td>HDO 197</td>
-                       <td>1</td>
-                       <td>Graduate</td>
+                        <td>Practicum in Human Dimensions of Organizations</td>
+                        <td>HDO 197</td>
+                        <td>1</td>
+                        <td>Graduate</td>
                         </tr>
                         
-                        <tr>
-                       <td>DegreeView</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                        
-                    </table>
-                    
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
       </div>
       <footer>
   <div class="footerleft">
     <div class="links">
-      <div class="tooltip">
-        <a href="../../../aboutpage.html">About</a>
-        <span class="tooltiptext">Go to aboutpage</span>
-      </div>
+      <a href="../../../about.html">About</a>
 
-      <div class="tooltip">
-        <a href="../../utcoursesindex.html">Home</a>
-        <span class="tooltiptext">Go back to the homepage</span>
-      </div>
+      <a href="../../../index.html">Home</a>
 
-      <div class="tooltip">
-        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
-        <span class="tooltiptext">Go to Excel templates page</span>
-      </div>
+      <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+
+      <a href="../../../degreeviewstats.html">DegreeView Stats</a>
     </div>
   </div>
 
   <div class="footerright">
-    <img
-      id="smalllogo"
-      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
-      alt="smalldegreeviewlogo"
-    />
-    <p id="statement">DegreeView 2025</p>
+    <img id="smalllogo" src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="smalldegreeviewlogo" />
+    <p id="statement">DegreeView 2026</p>
   </div>
 </footer>
 
+      <div id="hiddeninfo">
+        <p id="unicolor">#BF5700</p>
+      </div>
     </div>
+    <!-- put hidden info here for the JavaScript to get -->
 
     
 
                     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-
-
-
                     <!-- Hover Script -->
 
-                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <script src="../../../static/js/headingcolorchange.js"></script>
                     <!-- copy script -->
-                    <script src="../../static/js/copytable.js"></script>
+                    <script src="../../../static/js/copytable.js"></script>
 
                     <!-- animate table script -->
-                    <script src="../../static/js/animatetable.js"></script>
-    
+                    <script src="../../../static/js/animatetable.js"></script>
+                
   </body>
 </html>

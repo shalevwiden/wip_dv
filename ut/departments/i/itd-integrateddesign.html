@@ -5,20 +5,20 @@
 
 <html lang="en">
   <head>
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+></script>
 <script>
-  (function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-NRMVQC53");
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-S06MYR1FV6");
 </script>
-<!-- End Google Tag Manager -->
 
     <meta
       name="description"
@@ -27,7 +27,7 @@
 
     <meta
       name="keywords"
-      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, (ITD) - Integrated Design"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, ITD - Integrated Design"
     />
 
     <meta name="author" content="DegreeView" />
@@ -85,48 +85,36 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
 />
+<!-- test comment -->
 
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript
-  ><iframe
-    src="https://www.googletagmanager.com/ns.html?id=GTM-NRMVQC53"
-    height="0"
-    width="0"
-    style="display: none; visibility: hidden"
-  ></iframe
-></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
     <div class="sitecontainer" id="departmentpage">
       <div class="abovemainsite">
         <div class="topnav">
           <nav class="breadcrumbs">
             <ul>
-              <li><a href="../../utcoursesindex.html">DegreeView UT</a></li>
-              <i class="fa fa-chevron-right"></i>
-
               <li>
-                <a href="../i/i-departments.html"
-                  >I Departments</a
-                >
+                <a href="../../ut-home.html"> UT Home</a>
               </li>
+
               <i class="fa fa-chevron-right"></i>
 
-              <li id="current">(ITD) - Integrated Design</li>
+              <li id="current">ITD - Integrated Design</li>
             </ul>
           </nav>
           <nav class="homeandabout">
             <ul>
-              <li><a href="../../utcoursesindex.html">Home</a></li>
+              <li><a href="../../index.html">Home</a></li>
               <li><a href="../../../aboutpage.html">About</a></li>
-              <li><a href="../../../ut-stats.html">Stats</a></li>
+
+              <!-- or make it link to main dv stats -->
+              <li><a href="../../../UTstats.html.html">Stats</a></li>
             </ul>
           </nav>
         </div>
         <div class="degreenamebox">
-          <h1 id="degreenametitle">(ITD) - Integrated Design</h1>
+          <h1 id="departmenttitle">ITD - Integrated Design</h1>
         </div>
       </div>
       <div class="mainsite">
@@ -143,12 +131,28 @@
                 <div class="linkbox">
                   <p>
                     Department Courses
-                    <span id="original">original Theme</span>
+                    <span id="Original">Original Theme</span>
                   </p>
                   <p>
                     <!-- download attribute means they will download it -->
                     Download:&nbsp;&nbsp;
-                    <a href="https://storage.googleapis.com/utcourses/itd-integrateddesign/excel-files/itd-integrateddesign-courses-originaltheme.xlsx" download>
+                    <a href="https://storage.googleapis.com/utcourses/itd-integrateddesign/excel-files/itd-integrateddesign-original-theme.xlsx" download>
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                  </p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="linkbox">
+                  <p>
+                    Department Courses
+                    <span id="UT">UT Theme</span>
+                  </p>
+                  <p>
+                    <!-- download attribute means they will download it -->
+                    Download:&nbsp;&nbsp;
+                    <a href="https://storage.googleapis.com/utcourses/itd-integrateddesign/excel-files/itd-integrateddesign-ut-theme.xlsx" download>
                       <i class="fa-solid fa-arrow-up-from-bracket"></i>
                     </a>
                   </p>
@@ -180,7 +184,7 @@
                 </div>
               </li>
 
-              <li>
+              <li style="display: none">
                 <div class="linkbox">
                   <p>
                     <small id="underconstruction"
@@ -207,7 +211,7 @@
         <div class="rightcontent">
           <div class="displaynamebox">
             <h3 id="displayname">
-              (ITD) - Integrated Design Statistics &nbsp; &nbsp;<span
+              ITD - Integrated Design Statistics &nbsp; &nbsp;<span
                 class="material-symbols-outlined"
                 id="charticon"
               >
@@ -228,6 +232,14 @@
                 Presentation and Improvisational Skills in Design Thinking
               </div>
             </section>
+            
+            <section class="statsline shortbox">
+              <div class="statsname">Longest Course Name Length (chars)</div>
+              <div class="statscontent">
+                58
+              </div>
+            </section>
+            
 
             <section class="statsline" id="shortestname">
               <div class="statsname">Shortest Course Name</div>
@@ -235,6 +247,15 @@
                 Design Thinking
               </div>
             </section>
+            
+
+            <section class="statsline shortbox">
+              <div class="statsname">Shortest Course Name Length (chars)</div>
+              <div class="statscontent">
+                15
+              </div>
+            </section>
+            
 
             <section class="statsline" id="lowercount">
               <div class="statsname">Lower Division Course Count</div>
@@ -290,275 +311,262 @@
           <i class="fa-regular fa-copy" id="copyicon" title="Copy Table"></i>
           <!-- contains the rendered csv -->
         </div>
+        <table id="departmentcoursestable">
+          <tr>
+            <td colspan="2">Integrated Design</td>
 
-        
-                    <table id="departmentcoursestable">
-                        <tr>
-                        <td colspan="2">Integrated Design</td>
-                       
-                        <td colspan="2" >The University of Texas at Austin</td>
-                        </tr>
-                        <tr>
-                        <td>Course Name</td>
-                        <td>Course Code</td>
-                        <td>Course Hours</td>
-                        <td>Classification</td>
-                        </tr>
-                        
+            <td colspan="2">The University of Texas at Austin</td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>Course Code</td>
+            <td>Course Hours</td>
+            <td>Classification</td>
+          </tr>
+          
 
                     
                         <tr>
-                       <td>Introduction to Integrated Design</td>
-                       <td>ITD 101</td>
-                       <td>1</td>
-                       <td>Lower Division</td>
+                        <td>Introduction to Integrated Design</td>
+                        <td>ITD 101</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Introduction to Design Thinking</td>
-                       <td>ITD 301D</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Introduction to Design Thinking</td>
+                        <td>ITD 301D</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Sketching for Thinking and Communication</td>
-                       <td>ITD 102</td>
-                       <td>1</td>
-                       <td>Lower Division</td>
+                        <td>Sketching for Thinking and Communication</td>
+                        <td>ITD 102</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Design in Business</td>
-                       <td>ITD 104</td>
-                       <td>1</td>
-                       <td>Lower Division</td>
+                        <td>Design in Business</td>
+                        <td>ITD 104</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Presentation and Improvisational Skills in Design Thinking</td>
-                       <td>ITD 106</td>
-                       <td>1</td>
-                       <td>Lower Division</td>
+                        <td>Presentation and Improvisational Skills in Design Thinking</td>
+                        <td>ITD 106</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Integrated Design</td>
-                       <td>ITD 110, 210, 310</td>
-                       <td>1, 2, 3</td>
-                       <td>Lower Division</td>
+                        <td>Topics in Integrated Design</td>
+                        <td>ITD 110, 210, 310</td>
+                        <td>1, 2, 3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Innovative Design</td>
-                       <td>ITD 110T, 310T</td>
-                       <td>1, 3</td>
-                       <td>Lower Division</td>
+                        <td>Topics in Innovative Design</td>
+                        <td>ITD 110T, 310T</td>
+                        <td>1, 3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Intro to Design for Artificial Intelligence</td>
-                       <td>ITD 111</td>
-                       <td>1</td>
-                       <td>Lower Division</td>
+                        <td>Intro to Design for Artificial Intelligence</td>
+                        <td>ITD 111</td>
+                        <td>1</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Introduction to Design for Health</td>
-                       <td>ITD 312</td>
-                       <td>3</td>
-                       <td>Lower Division</td>
+                        <td>Introduction to Design for Health</td>
+                        <td>ITD 312</td>
+                        <td>3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Storytelling in Design</td>
-                       <td>ITD 119G, 319G</td>
-                       <td>1, 3</td>
-                       <td>Lower Division</td>
+                        <td>Storytelling in Design</td>
+                        <td>ITD 119G, 319G</td>
+                        <td>1, 3</td>
+                        <td>Lower Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Integrated Design</td>
-                       <td>ITD 185, 285, 385</td>
-                       <td>1, 2, 3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Integrated Design</td>
+                        <td>ITD 185, 285, 385</td>
+                        <td>1, 2, 3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Design for Artificial Intelligence</td>
-                       <td>ITD 320</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Advanced Design for Artificial Intelligence</td>
+                        <td>ITD 320</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Artificial Intelligence Design</td>
-                       <td>ITD 125, 225, 325</td>
-                       <td>1, 2, 3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Artificial Intelligence Design</td>
+                        <td>ITD 125, 225, 325</td>
+                        <td>1, 2, 3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Innovative Design</td>
-                       <td>ITD 130T, 330T</td>
-                       <td>1, 3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Innovative Design</td>
+                        <td>ITD 130T, 330T</td>
+                        <td>1, 3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Advanced Topics in Integrated Design</td>
-                       <td>ITD 150, 250, 350</td>
-                       <td>1, 2, 3</td>
-                       <td>Upper Division</td>
+                        <td>Advanced Topics in Integrated Design</td>
+                        <td>ITD 150, 250, 350</td>
+                        <td>1, 2, 3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Business of Design</td>
-                       <td>ITD 350D</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Business of Design</td>
+                        <td>ITD 350D</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Advanced Innovative Design</td>
-                       <td>ITD 150T, 350T</td>
-                       <td>1, 3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Advanced Innovative Design</td>
+                        <td>ITD 150T, 350T</td>
+                        <td>1, 3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Perspectives in Design</td>
-                       <td>ITD 360</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Perspectives in Design</td>
+                        <td>ITD 360</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Applied Ethnographic Research in Design</td>
-                       <td>ITD 365</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Applied Ethnographic Research in Design</td>
+                        <td>ITD 365</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Off-Site Field Studios</td>
-                       <td>ITD 170, 270, 370</td>
-                       <td>1, 2, 3</td>
-                       <td>Upper Division</td>
+                        <td>Topics in Off-Site Field Studios</td>
+                        <td>ITD 170, 270, 370</td>
+                        <td>1, 2, 3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Capstone in Integrated Design</td>
-                       <td>ITD 375</td>
-                       <td>3</td>
-                       <td>Upper Division</td>
+                        <td>Capstone in Integrated Design</td>
+                        <td>ITD 375</td>
+                        <td>3</td>
+                        <td>Upper Division</td>
                         </tr>
                         
                         <tr>
-                       <td>Design Thinking</td>
-                       <td>ITD 380</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Design Thinking</td>
+                        <td>ITD 380</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Integrated Design Studio</td>
-                       <td>ITD 186, 286, 386, 486, 586, 686</td>
-                       <td>1, 2, 3, 4, 5, 6</td>
-                       <td>Graduate</td>
+                        <td>Topics in Integrated Design Studio</td>
+                        <td>ITD 186, 286, 386, 486, 586, 686</td>
+                        <td>1, 2, 3, 4, 5, 6</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Design for Health</td>
-                       <td>ITD 390</td>
-                       <td>3</td>
-                       <td>Graduate</td>
+                        <td>Design for Health</td>
+                        <td>ITD 390</td>
+                        <td>3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Health Design Seminar</td>
-                       <td>ITD 291</td>
-                       <td>2</td>
-                       <td>Graduate</td>
+                        <td>Health Design Seminar</td>
+                        <td>ITD 291</td>
+                        <td>2</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Health Design Lab</td>
-                       <td>ITD 692</td>
-                       <td>6</td>
-                       <td>Graduate</td>
+                        <td>Health Design Lab</td>
+                        <td>ITD 692</td>
+                        <td>6</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Health Design</td>
-                       <td>ITD 195, 295, 395</td>
-                       <td>1, 2, 3</td>
-                       <td>Graduate</td>
+                        <td>Topics in Health Design</td>
+                        <td>ITD 195, 295, 395</td>
+                        <td>1, 2, 3</td>
+                        <td>Graduate</td>
                         </tr>
                         
                         <tr>
-                       <td>Topics in Health Design Studio</td>
-                       <td>ITD 196, 296, 396, 496, 596, 696</td>
-                       <td>1, 2, 3, 4, 5, 6</td>
-                       <td>Graduate</td>
+                        <td>Topics in Health Design Studio</td>
+                        <td>ITD 196, 296, 396, 496, 596, 696</td>
+                        <td>1, 2, 3, 4, 5, 6</td>
+                        <td>Graduate</td>
                         </tr>
                         
-                        <tr>
-                       <td>DegreeView</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        </tr>
-                        
-                    </table>
-                    
+          <!-- ending row -->
+          <tr>
+            <td>DegreeView</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
       </div>
       <footer>
   <div class="footerleft">
     <div class="links">
-      <div class="tooltip">
-        <a href="../../../aboutpage.html">About</a>
-        <span class="tooltiptext">Go to aboutpage</span>
-      </div>
+      <a href="../../../about.html">About</a>
 
-      <div class="tooltip">
-        <a href="../../utcoursesindex.html">Home</a>
-        <span class="tooltiptext">Go back to the homepage</span>
-      </div>
+      <a href="../../../index.html">Home</a>
 
-      <div class="tooltip">
-        <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
-        <span class="tooltiptext">Go to Excel templates page</span>
-      </div>
+      <a href="../../../exceltemplates.html">Excel Templates Breakdown</a>
+
+      <a href="../../../degreeviewstats.html">DegreeView Stats</a>
     </div>
   </div>
 
   <div class="footerright">
-    <img
-      id="smalllogo"
-      src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png"
-      alt="smalldegreeviewlogo"
-    />
-    <p id="statement">DegreeView 2025</p>
+    <img id="smalllogo" src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="smalldegreeviewlogo" />
+    <p id="statement">DegreeView 2026</p>
   </div>
 </footer>
 
+      <div id="hiddeninfo">
+        <p id="unicolor">#BF5700</p>
+      </div>
     </div>
+    <!-- put hidden info here for the JavaScript to get -->
 
     
 
                     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-
-
-
                     <!-- Hover Script -->
 
-                    <script src="../../static/js/headingcolorchange.js"></script>
+                    <script src="../../../static/js/headingcolorchange.js"></script>
                     <!-- copy script -->
-                    <script src="../../static/js/copytable.js"></script>
+                    <script src="../../../static/js/copytable.js"></script>
 
                     <!-- animate table script -->
-                    <script src="../../static/js/animatetable.js"></script>
-    
+                    <script src="../../../static/js/animatetable.js"></script>
+                
   </body>
 </html>
