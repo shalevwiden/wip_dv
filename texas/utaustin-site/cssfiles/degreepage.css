@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ok heres the plan
+Make everything in a big flex direction row. 
+Then once it gets to mobile, put everything in a flex direction column
+
+This was a grid idea.
+*/
+.sitecontainer {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1;
+}
+#navbar {
+  display: flex;
+
+  /* ok so this is in a row, good */
+
+  /* media quiery will change it to column */
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #3f5efb;
+  background: linear-gradient(
+    27deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 94, 1) 100%
+  );
+  width: 100%; /* Shrinks content area */
+  padding: 0 3% 0 3%;
+  height: 86px;
+  box-sizing: border-box;
+}
+
+.leftnavbar {
+  display: flex;
+  flex-direction: row;
+}
+#navheading {
+  color: white;
+  font-size: clamp(1rem, 5vw, 2rem);
+}
+.rightnavbar {
+  display: flex;
+  flex-direction: row;
+  /* padding: 0 26px; */
+}
+/* this is the small links themselves. */
+
+/* place this website structure more down */
+#websitestructure {
+  display: flex;
+  gap: 8px; /* space between links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#websitestructure li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* now main body stuff */
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 1fr repeat(6, 200px) 1fr;
+  grid-template-rows: repeat(6, 200px);
+  border: 4px solid black;
+
+  width: calc(90vw - 50px);
+  height: 85vh;
+  min-height: 550px;
+  margin: 50px 25px;
+  /* this border style is dooope */
+  border-radius: 26px;
+  /* this changes where the grid items are in the grid box */
+  justify-items: center; /*horizontal*/
+  align-items: center; /*vertical*/
+}
+
+/* items in the grid: */
+
+.degreenamebox {
+  grid-row: 1;
+  grid-column-start: 2;
+  grid-column-end: 5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filescontainer {
+  grid-row: 3 / span 3;
+  grid-column: 1 / span 3;
+  border: 3px black dashed;
+  padding: 4px;
+
+  /* this stretches it to the max width of the area */
+  align-self: stretch;
+  justify-self: stretch;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  height: 10vh;
+  width: 100%;
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px 10px;
+}
+
+/* this will make the page responsive on mobile */
+
+/* I need to change to put the links on the bottom when this happens */
+
+@media screen and (max-width: 700px) {
+  /* all this needs to be a  */
+  .sitecontainer,
+  #navbar,
+  .rightnavbar,
+  #websitestructure {
+    flex-direction: column;
+  }
+}

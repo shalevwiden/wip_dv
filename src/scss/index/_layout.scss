@@ -1,0 +1,212 @@
+@use "../../utils/mixins" as *;
+
+:root {
+  --secondarynavy: #153f66;
+  --lighterblue: #284dbc;
+}
+
+$width: 200px;
+
+.abovemainsite {
+  @include flexcol;
+  justify-content: flex-start;
+  gap: 0;
+  width: 100%;
+  height: 600px !important;
+
+  .topnav {
+    /* change this color to see it and make changes */
+
+    background-color: #dce2e6;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* keep this */
+    filter: drop-shadow(4px 0px 2px rgb(67, 66, 66));
+  }
+  .hero {
+    @include flexrow;
+    border: 3px solid red !important;
+    width: 100%;
+
+    .lefthero {
+      @include flexcol;
+      align-items: flex-start;
+      flex: 1;
+      padding: 40px;
+
+      h1.heading {
+        font-size: 80px;
+        color: navy;
+        font-family: "Barlow", Serif;
+        font-weight: 600;
+      }
+      p.subheading {
+        font-family:
+          Hind Vadodara,
+          sans-serif;
+        color: #887d7d;
+      }
+      & button.cta {
+        width: 100px;
+        height: 70px;
+        color: #fff;
+        background-color: blue;
+      }
+    }
+    .righthero {
+      @include flexcol;
+      @include blackborder;
+      background-color: var(--lighterblue);
+      height: 100%;
+      align-items: flex-start;
+      flex: 1;
+
+      img {
+        width: 100px;
+        height: auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1135px) {
+    .abovemainsite {
+      display: flex;
+      flex-direction: column;
+      height: 800px;
+
+      .topnav {
+        background-color: #dce2e6;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+.mainsite {
+  @include flexrow;
+  align-items: flex-start;
+  column-gap: 55px;
+  width: 100%;
+
+  padding: 50px 30px;
+
+  flex: 1 1 600px;
+  border-top: 10px solid #153f66;
+
+  .sidebar {
+    @include blackborder;
+    @include flexcol;
+
+    justify-content: flex-start;
+    padding: 30px 10px;
+    width: 30%;
+    height: 500px;
+
+    h3#sidebartitle {
+      width: 100%;
+      border-bottom: 5px solid #000;
+      margin-bottom: 4px;
+      font-weight: bold;
+      margin-top: 0;
+    }
+    p {
+      border-bottom: 3px solid #eee;
+      margin-bottom: 4px;
+    }
+    & .middlenav {
+      width: 100%;
+      & .home_random_stats {
+        width: 100%;
+        height: 300px;
+        background-color: red;
+
+        ul {
+          @include flexcol;
+          width: 100%;
+          height: 100%;
+          align-items: center;
+          row-gap: 20px;
+          /* since doing space evenly, remove gap */
+          justify-content: flex-start;
+          list-style-type: none;
+          padding-left: 0;
+          li {
+            /* make them big so you can hover */
+            width: 80%;
+            display: flex;
+            height: 60px;
+            align-items: center;
+            justify-content: center;
+            transition:
+              background-color 0.3s,
+              color 0.3s;
+            background-color: #153f66;
+
+            border-radius: 35px;
+            padding: 20px;
+
+            &:hover {
+              background-color: #284dbc;
+              cursor: pointer;
+            }
+
+            a {
+              text-decoration: none;
+              color: white;
+              font-size: 19px;
+              font-weight: bold;
+              /* nice font when bolded */
+              font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+              /* make the whole li box clickable */
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+              height: 100%;
+              transition: color 0.3s;
+            }
+          }
+
+          li#randompagebutton {
+            border: 3px solid rgb(35, 44, 116);
+
+            &:hover {
+              background-color: #fdfbfa;
+              color: #153f66;
+
+              border: 5px solid rgb(15, 29, 89);
+              border-radius: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.borderdiv {
+  margin-top: 100px;
+  border-top: 4px solid #eee;
+  padding-bottom: 50px;
+  width: 90%;
+  height: 0;
+}
+.undermainsite {
+  @include flexcol;
+  width: 100%;
+  /* this is for now essentially footer top margin */
+  height: 200px;
+  .quickstats {
+    @include flexrow;
+    width: 90%;
+  }
+}

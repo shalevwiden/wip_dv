@@ -1,0 +1,668 @@
+/* Idea for this one:
+Basically everything is flex. To make it responsive switch direction from flex row to flex column
+*/
+
+@use "schoolist" as *;
+
+@use "../../utils/mixins" as *;
+@use "selector.scss";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* crazy filters to apply */
+
+  /* filter: invert(100%); */
+
+  /* filter: grayscale(50%); */
+
+  filter: contrast(110%);
+
+  /* filter: blur(3px); */
+
+  filter: saturate(110%);
+}
+
+/* 
+
+This is all nav bar stuff:*/
+
+/* end nav bar stuff */
+
+.sitecontainer {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* 
+Above mainsite and its children
+*/
+
+.abovemainsite {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 270px;
+}
+/* topnav beginning */
+.topnav {
+  /* change this color to see it and make changes */
+
+  background-color: #dce2e6;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* keep this */
+  filter: drop-shadow(4px 0px 2px rgb(67, 66, 66));
+}
+
+.biglogobox {
+  height: 200px;
+  width: 100%;
+  overflow: hidden; /* optional: clips the image if it's too big */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.biglogo {
+  /* height the same as topnav here, 100px */
+  height: 70%;
+  width: auto;
+}
+
+/* 
+
+
+
+
+/* now outside o
+
+/* now done with above main site... */
+
+/* mainsite will be the name, plus some of the files, plus some images. But there can be stuff below it in, Since sitecontainer is flex column  */
+/* index code */
+
+.mainsite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 55px;
+  width: 100%;
+
+  padding: 40px 30px;
+
+  flex: 1 1 600px;
+  border-top: 10px solid #153f66;
+}
+
+.introbox {
+  width: 90%;
+
+  border: 5px black dashed;
+  border-radius: 26px;
+  padding: 30px 35px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: auto;
+}
+
+.middlenav {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+/* this is the ul */
+
+/* 
+
+Begin left content stuff
+*/
+.leftcontent {
+  /* this affects the width */
+  flex: 50%;
+  background-color: #1792ae;
+  padding: 10px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  row-gap: 25px;
+  min-height: 300px;
+}
+
+.schoollistheaderbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+}
+.schoollistbox {
+  border: 4px solid rgb(164, 12, 12);
+  border-radius: 26px;
+  width: calc(100% - 80px);
+  padding: 20px 10px 20px 40px;
+}
+.schoollistbox ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+
+  /* control paddig in the schoollistbox instead, its easier */
+  padding: 0;
+}
+.schoollink {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 10px;
+
+  font-weight: bold;
+}
+.schoollink a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.linksvg {
+  filter: invert(100%) brightness(200%);
+  width: 20px;
+  height: auto;
+
+  margin-top: 6px;
+}
+
+/* end all the linking stuff */
+.filescontainer {
+  border: 4px dashed rgb(16, 11, 82);
+  border-radius: 26px;
+  width: 92%;
+  padding: 20px 29px;
+}
+
+/* this controls this h3 elements in files container */
+.filescontainer h3 {
+  color: #284dbc;
+}
+.filescontainer ul {
+  list-style-type: none; /* Removes bullets */
+  /* indent */
+  padding-left: 30px;
+}
+.linkbox {
+  display: flex;
+  flex-direction: row;
+  /* make the download text all even */
+  justify-content: space-between;
+
+  align-items: center;
+  column-gap: 40px;
+}
+
+/* this changes the styling on the names of the file like "Sample Semester PDF */
+.linkbox p:first-of-type {
+  margin-top: 10px;
+  font-weight: bold;
+  max-width: 137px;
+}
+
+/* add animations to these mf's */
+.linkbox a i {
+  color: rgb(21, 21, 69);
+}
+
+/* end left content stuff */
+/* 
+
+
+
+
+
+*/
+/* Right content stuff */
+.rightcontent {
+  flex: 50%;
+  background-color: rgb(232, 80, 56);
+  padding: 0px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  padding: 40px 30px;
+}
+
+/* 
+
+
+
+
+*/
+.undermainsite {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  /* this is for now essentially footer top margin */
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_random_stats {
+  /* its 100% of middlenav, which is 80% */
+  width: 100%;
+  height: 95px;
+  display: flex;
+  flex-direction: row;
+  /* this jsut centers the ul */
+  align-items: center;
+  justify-content: center;
+}
+
+.home_random_stats ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  column-gap: 90px;
+  /* since doing space evenly, remove gap */
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.home_random_stats ul li {
+  /* make them big so you can hover */
+  width: 25%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #153f66;
+
+  border-radius: 35px;
+  padding: 20px;
+}
+
+.home_random_stats li:hover {
+  background-color: #284dbc;
+  cursor: pointer;
+}
+
+.home_random_stats ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  /* nice font when bolded */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  /* make the whole li box clickable */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: color 0.3s;
+}
+
+#randompagebutton {
+  border: 3px solid rgb(35, 44, 116);
+}
+
+#randompagebutton:hover {
+  background-color: #fdfbfa;
+  color: #153f66;
+
+  border: 5px solid rgb(15, 29, 89);
+  border-radius: 25px;
+}
+
+/* end under main site */
+
+footer {
+  height: 120px;
+  width: 100%;
+  background-color: #00184b74;
+  color: White;
+
+  padding: 20px;
+  font-size: 16px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  column-gap: 30px;
+
+  font-family: Helvetica, sans-serif;
+}
+footer .links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 35px;
+  font-size: 19px;
+}
+.footerleft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 15px;
+}
+.footerleft #statement {
+  font-family: "Barlow", sans-serif;
+
+  font-size: 25px;
+  margin: 0;
+  font-weight: 700;
+}
+footer #smalllogo {
+  /* animation has been added in animations.css  */
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  border: 3px solid #081a75;
+}
+.barlowtest {
+  font-family: "Barlow", sans-serif;
+
+  font-size: 25px;
+  margin: 0;
+  font-weight: 600;
+  color: black;
+}
+
+footer a {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 3px;
+  font-weight: bold;
+}
+
+/* beginning of all the media quieries */
+
+@media screen and (min-width: 700px) and (max-width: 1272px) {
+  #headingtitle {
+    font-size: 45px;
+    color: #060212;
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  .abovemainsite {
+    display: flex;
+    flex-direction: column;
+    /* more height to allow both title and breadcrumbs to be seen */
+    height: 270px;
+  }
+
+  .headingbox {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 150px;
+    width: 100%;
+    padding-left: 20px;
+  }
+  .topnav {
+    background-color: #dce2e6;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* top nav currently 250px */
+  }
+
+  /* for the home_random_stats stuff */
+  .middlenav {
+    width: 90%;
+  }
+  .home_random_stats ul {
+    column-gap: 60px;
+  }
+
+  /* theres already padding here from the originally declared style */
+}
+/* 
+
+Mobile Screens
+
+*/
+@media screen and (max-width: 700px) {
+  .abovemainsite {
+    display: flex;
+    flex-direction: column;
+    /* more height to allow both title and breadcrumbs to be seen */
+
+    /* bigger height as well for the bigger topnav */
+    /* add the 2px for the border bottom */
+    height: 272px;
+  }
+
+  .topnav {
+    background-color: #dce2e6;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* keep this */
+    filter: drop-shadow(4px 0px 2px rgb(67, 66, 66));
+  }
+  .middlenav {
+    width: 90%;
+    /* 300 px plus gap of 30 for 3 */
+
+    height: 390px;
+  }
+
+  .home_random_stats {
+    /* bring it to the top */
+
+    width: 100%;
+  }
+  .home_random_stats ul {
+    display: flex;
+    flex-direction: column;
+    height: 405px;
+    row-gap: 35px;
+  }
+  .home_random_stats ul li {
+    width: 60%;
+    height: 25%;
+  }
+  .biglogobox {
+    background-color: #fff;
+    width: 100%;
+
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    /*  */
+  }
+
+  .biglogo {
+    height: 65%;
+    width: auto;
+  }
+  /* 
+  
+
+  
+   this one here is pretty important */
+  .mainsite {
+    flex-direction: column;
+  }
+
+  .platformsbox {
+    width: 40%;
+    min-width: 200px;
+    padding: 10px 30px;
+    border-radius: 26px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 15px;
+    /* this was that icon stuff I was trying to find */
+    width: 100%;
+  }
+  .icons a .fa-linkedin {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    color: #0072b1;
+    margin-bottom: 7px;
+  }
+  .icons a .bi-substack {
+    font-size: 10px;
+    width: 27px;
+    height: 27px;
+    fill: #ff7731; /* for SVG */
+  }
+}
+
+/* even smaller screensizes here */
+@media screen and (max-width: 550px) {
+  .abovemainsite {
+    display: flex;
+    flex-direction: column;
+    /* more height to allow both title and breadcrumbs to be seen */
+
+    /* bigger height as well for the bigger topnav */
+    height: 220px;
+  }
+
+  .topnav {
+    background-color: #dce2e6;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* keep this */
+    filter: drop-shadow(4px 0px 2px rgb(67, 66, 66));
+  }
+  .biglogobox {
+    width: 100%;
+    /* keep in mind its still flex center */
+    height: 160px;
+    /*  */
+  }
+
+  .biglogo {
+    height: 70%;
+    width: auto;
+  }
+  .home_random_stats {
+    /* bring it to the top */
+    /* order: 1; */
+    height: 65px;
+    width: 100%;
+    /* instead make this be the new fixed one */
+    /* ok this wont work as long as I had the filter on topnav. For now I will keep the filter over the fixed positoin */
+    /* position: fixed;
+    top: 0;
+    z-index: 999;*/
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .abovemainsite {
+    display: flex;
+    flex-direction: column;
+    /* more height to allow both title and breadcrumbs to be seen */
+
+    /* bigger height as well for the bigger topnav */
+    height: calc(220px);
+  }
+
+  .biglogo {
+    height: 65%;
+    width: auto;
+  }
+
+  .topnav {
+    background-color: #dce2e6;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* keep this */
+  }
+  .home_random_stats {
+    height: 65px;
+    width: 100%;
+  }
+}

@@ -35,7 +35,7 @@
     <title>Home - DegreeView</title>
 
     <!-- main stylesheet -->
-    <link rel="stylesheet" href="../static/css/dv_main.css" />
+    <link rel="stylesheet" href="static/css/index.css" />
 
     <!-- animation stylesheet -->
     <link rel="stylesheet" href="cssfiles/animations.css" />
@@ -66,7 +66,7 @@
   </head>
   <body>
     <!-- this div basically has the entire site in it. Flex direction column -->
-    <div class="sitecontainer" id="index">
+    <div class="sitecontainer">
       <!-- 
       
       -->
@@ -83,20 +83,14 @@
               This is a big data analysis project with the topic being course
               catalogs at universities.
             </p>
-            <button class="cta"><a href="#universityul">See Schools</a></button>
+            <button class="cta">See Schools</button>
           </div>
           <div class="righthero">
-            <img src="https://storage.googleapis.com/degreeview/homepageimages/towericon.png" alt="towericon" id="towericon" />
-            <img src="https://storage.googleapis.com/degreeview/homepageimages/excellogo.png" alt="" id="excelicon" />
-            <img src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="" id="minilogohero" />
-
-            <img src="https://storage.googleapis.com/degreeview/homepageimages/universityicon.png" alt="" id="uniicon" />
-            <img src="https://storage.googleapis.com/degreeview/homepageimages/tableicon.png" alt="tableicon" id="tableicon" />
-            <img
-              src="https://storage.googleapis.com/degreeview/homepageimages/piecharticon.png"
-              alt="pie chart icon"
-              id="piecharticon"
-            />
+            <img src="images/excellogo.png" alt="" id="excelicon" />
+            <img src="images/barchart.webp" alt="" id="barchart" />
+            <img src="images/csvicon.png" alt="" id="csvicon" />
+            <img src="images/htmltable.png" alt="tableicon" id="tableicon" />
+            <img src="images/piecharticon.png" alt="" id="piechart" />
           </div>
         </div>
       </div>
@@ -105,77 +99,35 @@
       -->
       <div class="mainsite">
         <!-- in the future I want an interactive USA map here showing states stuff -->
-        <ul class="universityul" id="universityul">
-          
-          <a
-            href="ut/ut-home.html"
+        <ul class="universityul">
+          {% for university, data in universityuldata.items() %}
+          <li
+            class="universitybox"
+            id="{{ data.schoolabvr }}box"
+            style="background-color: {{ data.boxcolor}};"
           >
-            <li
-              class="universitybox"
-              id="utbox"
-              style="border-color: #bf5700;"
+            <a href="{{ university ~ '/' ~ university ~ '.html' }}"
+              >{{ university }}</a
             >
-              UT Austin
-            </li>
-          </a>
-
-          
-          <a
-            href="rice/rice-home.html"
-          >
-            <li
-              class="universitybox"
-              id="ricebox"
-              style="border-color: #2153b8ff;"
-            >
-              Rice
-            </li>
-          </a>
-
-          
-          <a
-            href="stanford/stanford-home.html"
-          >
-            <li
-              class="universitybox"
-              id="stanfordbox"
-              style="border-color: #8C1515;"
-            >
-              Stanford
-            </li>
-          </a>
-
-          
-          <a
-            href="tx_state/tx_state-home.html"
-          >
-            <li
-              class="universitybox"
-              id="tx_statebox"
-              style="border-color: #501214;"
-            >
-              Texas State
-            </li>
-          </a>
-
-          
+          </li>
+          {% endfor %}
         </ul>
 
         <!-- 3 buttons -->
         <div class="sidebar">
           <h3 id="sidebartitle">Sidebar</h3>
           <p>
-            See stats for universities, progress posts + behind the scenes, and
-            updates for DegreeView on X.
+            See stats for schools, progress posts, and updates for DegreeView on
+            YouTube and X
             <a href="">go to socials box</a>
           </p>
           <div class="middlenav">
             <nav class="home_random_stats">
               <ul>
                 <!-- keep in mind the entire li is clickable here -->
-                <li><a href="about.html">About</a></li>
-                <li id="randomunibutton">
-                  <a id="randomunibutton" href="">Random University</a>
+                <li><a href="aboutpage.html">About</a></li>
+                <li id="randompagebutton">
+                  <a id="randomlink" href="">Random School</a>
                 </li>
                 <li><a href="degreeviewstats.html">Stats</a></li>
               </ul>
@@ -196,40 +148,38 @@
 
       <!-- end main mainsite -->
       <!-- this goes under main site( no way) -->
+      <div class="borderdiv"></div>
       <div class="undermainsite">
-        <div class="borderdiv"></div>
-
         <h3>Statistics at a glance</h3>
         <div class="quickstats">
-          <h4>5 Universities</h4>
-          <h4>2,535 Excel Files</h4>
-          <h4>39,258 courses on the site</h4>
+          <h4>{{schoolcount}} Schools</h4>
+          <h4>{{total_file_count}} Files</h4>
+          <h4>Data on {{total_course_count}} courses</h4>
         </div>
-        <button id="statslink">
-          <a href="degreeviewstats.html">DegreeView Stats</a>
-        </button>
+        <button id="statslink">DegreeView Stats</button>
       </div>
       <!-- footer now -->
       <footer>
-  <div class="footerleft">
-    <div class="links">
-      <a href="about.html">About</a>
+        <div class="footerleft">
+          <div class="links">
+            <a href="aboutpage.html">About</a>
 
-      <a href="index.html">Home</a>
+            <a href="#biglogoid">Home</a>
+          </div>
+          <p id="statement">DegreeView 2025</p>
+        </div>
 
-      <a href="exceltemplates.html">Excel Templates Breakdown</a>
-
-      <a href="degreeviewstats.html">DegreeView Stats</a>
+        <div class="footerright">
+          <img
+            id="smalllogo"
+            src="metaassets/minilogo.png"
+            alt="smalldegreeviewlogo"
+          />
+        </div>
+      </footer>
     </div>
-  </div>
-
-  <div class="footerright">
-    <img id="smalllogo" src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="smalldegreeviewlogo" />
-    <p id="statement">DegreeView 2026</p>
-  </div>
-</footer>
-    </div>
+    <script src="javascript_files/headingcolorchange.js"></script>
     <!-- script for random button  -->
-    <script src="static/js/randomuni.js"></script>
+    <script src="javascript_files/randomdegreepage.js"></script>
   </body>
 </html>

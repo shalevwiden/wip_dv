@@ -1,0 +1,77 @@
+footer {
+  height: 220px;
+  width: 100%;
+  background-color: rgba(0, 24, 75, 0.4549019608);
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 20%;
+       column-gap: 20%;
+  font-family: Helvetica, sans-serif;
+  position: relative;
+  overflow: visible;
+}
+@media screen and (max-width: 500px) {
+  footer {
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  footer #smalllogo {
+    width: 65px;
+    height: 65px;
+  }
+}
+footer .footerleft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 15px;
+}
+footer .footerleft .links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+}
+footer .footerright #smalllogo {
+  /* animation has been added in animations.css  */
+  width: 85px;
+  height: 85px;
+  border-radius: 10px;
+  border: 3px solid #081a75;
+}
+footer .footerright #statement {
+  font-family: "Barlow", sans-serif;
+  font-size: 25px;
+  margin: 0;
+  margin-top: 19px;
+  font-weight: 700;
+}
+footer a {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 23px;
+  text-decoration: none;
+}
+@media screen and (max-width: 500px) {
+  footer a {
+    font-size: 19px;
+  }
+}
+footer a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 3px;
+}/*# sourceMappingURL=footer.css.map */

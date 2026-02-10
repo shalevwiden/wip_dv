@@ -1,0 +1,71 @@
+.infobox {
+  width: 90%;
+  border: 5px black dashed;
+  border-radius: 26px;
+  padding: 30px 35px;
+  font-family: Helvetica, sans-serif;
+
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: auto;
+  a {
+    text-decoration: none;
+    color: #153f66;
+    &:hover {
+      text-decoration: none;
+      color: #153f66;
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 5px;
+    }
+  }
+}
+
+.substackcontainer {
+  font-weight: normal;
+  margin-top: 50px;
+  border: 5px solid var(--secondarynavy);
+  border-radius: 26px;
+  width: 90%;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  p {
+    width: 80%;
+    a {
+      display: inline;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
+
+  a {
+    text-decoration: none;
+    color: #153f66;
+    width: 10%;
+    &:hover {
+      text-decoration: none;
+      color: #153f66;
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 5px;
+    }
+
+    .bi-substack {
+      font-size: 49px;
+      width: 45px;
+      height: 45px;
+      fill: #ff7731; /* for SVG */
+
+      /* remove it for now: */
+    }
+  }
+}

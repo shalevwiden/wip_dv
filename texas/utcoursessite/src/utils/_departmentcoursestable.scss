@@ -1,0 +1,109 @@
+@use "animations";
+@use "mixins";
+
+:root {
+  --secondarynavy: #153f66;
+  --lighterblue: #284dbc;
+  --vibrantorange: rgb(244, 102, 70);
+}
+#departmentcoursestable {
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+
+  @media screen and (max-width: 700px) {
+    overflow-wrap: anywhere; /* lets words break anywhere if needed */
+    word-break: break-word; /* fallback */
+  }
+}
+
+#departmentcoursestable td,
+#departmentcoursestable th {
+  border: 1px solid #ccc;
+  padding: 15px 9px;
+  min-height: 40px;
+}
+
+/* delete 2nd row */
+
+/* style first row bold */
+#departmentcoursestable tr:first-child {
+  font-weight: bold;
+  background-color: var(--vibrantorange);
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 18px;
+
+  td:first-child {
+    text-align: left;
+    border: none;
+  }
+  td:nth-child(2) {
+    text-align: right;
+    border: none;
+  }
+}
+/* add border radius to the whole #departmentcoursestable */
+#departmentcoursestable tr:first-child td:nth-of-type(1) {
+  border-top-left-radius: 10px;
+  padding-left: 10px;
+}
+#departmentcoursestable tr:first-child td:nth-of-type(2) {
+  border-top-right-radius: 10px;
+  padding-right: 15px;
+}
+
+#departmentcoursestable tr:last-child td:nth-of-type(1) {
+  border-bottom-left-radius: 10px;
+}
+#departmentcoursestable tr:last-child td:nth-of-type(4) {
+  border-bottom-right-radius: 10px;
+  border: 1px solid #ccc;
+
+  border-collapse: separate;
+}
+#departmentcoursestable tr:nth-of-type(2) td {
+  font-weight: bold;
+}
+/* change alignment */
+td:nth-child(1),
+th:nth-child(1) {
+  text-align: left;
+}
+
+td:nth-child(2),
+th:nth-child(2) {
+  text-align: left;
+}
+
+td:nth-child(3),
+th:nth-child(3) {
+  text-align: center;
+}
+
+td:nth-child(5) {
+  display: none;
+}
+
+/* alternating bcg for lines */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* style Degreeview Logo */
+
+#departmentcoursestable tr:last-child {
+  background-color: #fff;
+}
+#departmentcoursestable tr:last-child td:first-child {
+  font-weight: bold;
+  color: #0c48a5;
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 30px;
+}

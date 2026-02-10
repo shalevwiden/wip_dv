@@ -1,0 +1,70 @@
+@use "../../utils/mixins" as *;
+
+.undermainsite {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  /* this is for now essentially footer top margin */
+  height: auto;
+  padding: 20px 0px 50px 0px;
+  @include flexcol;
+
+  #allcoursestableheading {
+    color: #284dbc;
+    font-size: 26px;
+    margin: 19px;
+    margin-bottom: 6px;
+  }
+
+  .copyanddownload {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    column-gap: 19px;
+    height: 50px;
+
+    width: 90%;
+    margin: -20px 0px -14px 0px;
+
+    #animatebutton {
+      border: 1px solid rgb(35, 44, 116);
+      color: white;
+      background-color: #153f66;
+      width: 75px;
+      padding: 0px 6px;
+      height: 40px;
+      border-radius: 25px;
+      margin-right: 10px;
+      font-weight: bold;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      transition: background-color 0.5s;
+      &:hover {
+        cursor: pointer;
+        background-color: #fdfbfa;
+        color: #153f66;
+
+        border: 3px solid rgb(15, 29, 89);
+      }
+    }
+    i {
+      font-size: 28px;
+      color: rgb(21, 21, 69);
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  #allcoursestable {
+    width: 90%;
+    border-radius: 26px;
+    /* border: 5px solid #081a75; */
+    padding: 0px;
+    min-height: 100px;
+    height: auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* smoother scroll on mobile */
+  }
+}
+
+/* add share icon in the future */

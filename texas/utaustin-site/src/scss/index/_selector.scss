@@ -1,0 +1,119 @@
+@use "../../utils/mixins" as *;
+
+.selector {
+  box-sizing: border-box;
+
+  @include flexrow;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+
+  border-radius: 26px;
+  height: 100px;
+  gap: 0;
+  width: 60%;
+  //   thats the mainsite rowgap
+  margin-bottom: -60px;
+
+  #currentpage {
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+    color: rgb(255, 239, 239);
+    background-color: #284dbc;
+    @include flexcol;
+
+    flex: 1;
+    height: 100%;
+    transition: all 0.5s;
+
+    // use the same toggle selector from wordwave generator
+    &:hover {
+      background-color: #1f42a9;
+    }
+  }
+
+  .coursedata {
+    color: black;
+
+    flex: 1;
+    height: 100%;
+    border-bottom-left-radius: inherit;
+    border-top-left-radius: inherit;
+
+    // use the same toggle selector from wordwave generator
+
+    a {
+      width: 100%;
+      height: 100%;
+      @include flexcol;
+      text-decoration: none;
+      background-color: rgb(255, 255, 255);
+      transition: all 0.5s;
+      border-bottom-left-radius: inherit;
+      border-top-left-radius: inherit;
+      border: 2px solid #284dbc;
+      color: #284dbc;
+
+      &:hover {
+        background-color: rgb(103, 125, 226);
+        color: white;
+      }
+      &:active {
+        background-color: var(--secondarynavy);
+      }
+      &:visited {
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    // or whatever element/class you’re targeting
+    flex-direction: column;
+    width: 80%;
+    gap: 0;
+    border-radius: 0;
+
+    .degreeplans {
+      width: 100%;
+
+      padding: 10px;
+      border-bottom-left-radius: 26px;
+
+      border-bottom-right-radius: 26px !important;
+    }
+
+    .coursedata {
+      width: 100%;
+
+      a {
+        border-radius: 0;
+        padding: 10px;
+
+        border-top-left-radius: 26px;
+        border-top-right-radius: 26px;
+      }
+    }
+  }
+  @media screen and (max-width: 400px) {
+    // or whatever element/class you’re targeting
+    flex-direction: column;
+    width: 80%;
+    border-radius: 0;
+    gap: 0;
+    font-size: 19px;
+    .degreeplans {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .coursedata {
+      width: 100%;
+
+      a {
+        padding: 10px;
+      }
+    }
+  }
+}

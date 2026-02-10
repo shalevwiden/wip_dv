@@ -1,0 +1,654 @@
+/* Idea for this one:
+Basically everything is flex. To make it responsive switch direction from flex row to flex column
+*/
+
+@use "../../utils/animations";
+@use "rightcontent";
+@use "../../utils/tooltip";
+@use "../../utils/footer";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* crazy filters to apply */
+
+  /* filter: invert(100%); */
+
+  /* filter: grayscale(50%); */
+
+  filter: contrast(110%);
+
+  /* filter: blur(3px); */
+
+  filter: saturate(110%);
+}
+body.darkmode {
+  filter: invert(1) hue-rotate(180deg);
+}
+/* 
+
+This is all nav bar stuff:*/
+
+/* end nav bar stuff */
+
+.sitecontainer {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1;
+}
+
+/* 
+Above mainsite and its children
+*/
+
+.abovemainsite {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+}
+/* topnav beginning */
+.topnav {
+  /* change this color to see it and make changes */
+
+  background-color: #eee;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* keep this */
+  filter: drop-shadow(4px 0px 2px rgb(67, 66, 66));
+}
+
+.breadcrumbs {
+  background-color: #eee;
+  width: 70%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.breadcrumbs ul {
+  display: flex;
+  flex-direction: row;
+  padding-left: 30px;
+
+  column-gap: 19px;
+  list-style-type: none;
+  color: #081a75;
+}
+
+.breadcrumbs ul li a {
+  text-decoration: none;
+  color: #081a75;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.breadcrumbs ul li a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 3px;
+}
+
+.breadcrumbs li#current {
+  /* this is the current page the user is on */
+  text-decoration: none;
+
+  color: rgb(200, 74, 12);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* this is for the icon in the breadcrumbs */
+.fa-chevron-right {
+  vertical-align: middle; /* or baseline, or -2px tweak */
+  font-size: 12px; /* adjust size */
+  margin: 5px 0 0px 0; /* spacing */
+  color: #081a75;
+}
+/* 
+
+still in top nav, but now the homeandabout section
+
+*/
+.homeandabout {
+  background-color: #153f66;
+  width: 25%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  /* this jsut centers the ul */
+  align-items: center;
+  justify-content: center;
+}
+
+.homeandabout ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.homeandabout ul li {
+  /* make them big so you can hover */
+  /* each one takes up 1/3 width */
+  flex: 1;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.homeandabout li:hover {
+  background-color: #284dbc;
+}
+.homeandabout ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  /* nice font when bolded */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  /* make the whole li box clickable */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* now outside of top nav */
+
+.schoolnamebox {
+  /* border: 4px solid black; */
+  width: 60%;
+  height: 200px;
+  padding-left: 39px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#schoolnametitle {
+  font-size: 45px;
+  color: #060212;
+}
+.darktext {
+  /* double invert that mf */
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* now done with above main site... */
+
+/* mainsite will be the name, plus some of the files, plus some images. But there can be stuff below it in, Since sitecontainer is flex column  */
+
+.mainsite {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex: 1 1 350px;
+  border-top: 10px solid #153f66;
+  border-bottom: 10px solid #153f66;
+}
+
+/* 
+Begin left content stuff
+*/
+.leftcontent {
+  /* this affects the width */
+  flex: 40%;
+  background-color: #ffffff;
+  padding: 10px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  row-gap: 25px;
+  min-height: 300px;
+
+  #futuremessage {
+    margin-top: -40px;
+    font-size: 14px;
+    // border-bottom: 3px solid rgb(32, 93, 32);
+    color: navy;
+  }
+}
+
+.filescontainer {
+  border: 4px dashed rgb(16, 11, 82);
+  border-radius: 26px;
+  width: 92%;
+  padding: 20px 29px;
+}
+
+/* this controls this h3 elements in files container */
+.filescontainer h3 {
+  color: #284dbc;
+}
+.filescontainer ul {
+  list-style-type: none; /* Removes bullets */
+  /* indent */
+  padding-left: 30px;
+}
+.linkbox {
+  display: flex;
+  flex-direction: row;
+  /* make the download text all even */
+  justify-content: space-between;
+
+  align-items: center;
+  column-gap: 40px;
+}
+
+/* this changes the styling on the names of the file like "Sample Semester PDF */
+.linkbox p:first-of-type {
+  margin-top: 10px;
+  font-weight: bold;
+  max-width: 137px;
+}
+
+/* add animations to these mf's */
+.linkbox a i {
+  color: rgb(21, 21, 69);
+}
+
+/* end left content stuff */
+/* 
+
+
+
+
+
+*/
+/* Right content stuff */
+.rightcontent {
+  flex: 60%;
+  background-color: rgb(232, 80, 56);
+  padding: 0px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+}
+
+.degreelistheaderbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+}
+#degreelistheader {
+  font-size: 20px;
+}
+.departmentlistbox {
+  border: 4px solid rgb(224, 233, 244);
+  border-radius: 26px;
+  width: calc(100% - 80px);
+  padding: 20px 10px 20px 40px;
+}
+.departmentlistbox ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+
+  /* control paddig in the departmentlistbox instead, its easier */
+  padding: 0;
+}
+.degreelink {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 10px;
+
+  font-weight: bold;
+}
+.degreelink a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.linksvg {
+  filter: invert(100%) brightness(200%);
+  width: 20px;
+  height: auto;
+
+  margin-top: 6px;
+}
+/* 
+
+
+
+
+*/
+.undermainsite {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  /* this is for now essentially footer top margin */
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.visuals {
+  height: calc(100% - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.visuals #displayeditemname {
+  color: blue;
+}
+
+.visuals .displayedpdf {
+  border-radius: 26px;
+}
+/* end under main site */
+
+/* beginning of all the media quieries */
+
+@media screen and (min-width: 700px) and (max-width: 1272px) {
+  #schoolnametitle {
+    font-size: clamp(40px, 9.5vw, 43px);
+    color: #060212;
+  }
+
+  .leftcontent {
+    padding: 25px 10px;
+  }
+  /* all the following is in left content */
+  .filescontainer {
+    border: 4px dashed rgb(16, 11, 82);
+    width: 92%;
+    padding: 20px 20px;
+  }
+  .linkbox {
+    display: flex;
+    flex-direction: column;
+    /* make the download text all even */
+    justify-content: center;
+
+    align-items: flex-start;
+    row-gap: 20px;
+  }
+
+  .linkbox p {
+    margin: 0;
+  }
+
+  .linkbox p:first-of-type {
+    margin-top: 26px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  .abovemainsite {
+    display: flex;
+    flex-direction: column;
+    /* more height to allow both title and breadcrumbs to be seen */
+    height: 300px;
+  }
+
+  .schoolnamebox {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    height: 200px;
+    width: 100%;
+    padding-left: 30px;
+  }
+  .topnav {
+    background-color: #eee;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* theres already padding here from the originally declared style */
+  .breadcrumbs {
+    background-color: #eee;
+    flex-basis: auto;
+    width: 69%;
+
+    height: 100px;
+    /* the breadcrumbs content will possibly wrap */
+  }
+
+  /* add some right padding */
+  .breadcrumbs ul {
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+  .homeandabout {
+    width: 30%;
+  }
+}
+/* 
+
+Mobile Screens
+
+*/
+@media screen and (max-width: 700px) {
+  .abovemainsite {
+    display: flex;
+    flex-direction: column;
+    /* more height to allow both title and breadcrumbs to be seen */
+
+    /* bigger height as well for the bigger topnav */
+    height: 345px;
+  }
+
+  .schoolnamebox {
+    height: 190px;
+    width: 100%;
+    flex: none;
+    padding-bottom: 25px;
+    padding-left: 15px;
+  }
+  #schoolnametitle {
+    font-size: 35px;
+    color: #060212;
+  }
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    /* height larger to have both on top of each other */
+    height: 155px;
+    /* removed the fixed navbar */
+    position: static;
+    filter: none;
+  }
+  .homeandabout {
+    /* bring it to the top */
+    order: 1;
+    height: 75px;
+    width: 100%;
+    /* instead make this be the new fixed one */
+    /* ok this wont work as long as I had the filter on topnav. For now I will keep the filter over the fixed positoin */
+    /* 
+    position: fixed;
+    top: 0;
+    z-index: 999; */
+    filter: drop-shadow(4px 1px 3px rgb(67, 66, 66));
+  }
+  .breadcrumbs {
+    background-color: #eee;
+    width: 100%;
+    flex: none;
+
+    /* margin top needs to be added since home and about is now fixed position */
+    /* margin-top: 75px; */
+    height: 80px;
+    order: 2;
+
+    /*  */
+  }
+  .breadcrumbs ul {
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+  /* 
+  
+
+  
+   this one here is pretty important */
+  .mainsite {
+    flex-direction: column;
+  }
+
+  .leftcontent {
+    padding: 25px 10px;
+  }
+
+  #pdfcontainer .linkbox,
+  #csvcontainer .linkbox {
+    flex-direction: column;
+    row-gap: 3px;
+    justify-content: center;
+
+    align-items: flex-start;
+  }
+
+  #pdfcontainer .linkbox p,
+  #csvcontainer .linkbox p {
+    margin: 6px;
+  }
+  #pdfcontainer .linkbox p:first-of-type,
+  #csvcontainer .linkbox p:first-of-type {
+    margin-top: 15px;
+    font-weight: bold;
+    max-width: 137px;
+  }
+}
+/* even smaller screensizes here */
+@media screen and (max-width: 550px) {
+  .breadcrumbs ul li a {
+    color: #081a75;
+    font-size: 14px;
+  }
+
+  .breadcrumbs #current {
+    /* this is the current page the user is on */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .breadcrumbs ul li a {
+    color: #081a75;
+    font-size: 13px;
+  }
+
+  .breadcrumbs #current {
+    /* this is the current page the user is on */
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .abovemainsite {
+    display: flex;
+    flex-direction: column;
+    /* more height to allow both title and breadcrumbs to be seen */
+
+    /* bigger height as well for the bigger topnav */
+    height: 375px;
+  }
+
+  .schoolnamebox {
+    height: 210px;
+    width: 100%;
+    flex: none;
+    padding-bottom: 25px;
+    padding-left: 10px;
+  }
+  #schoolnametitle {
+    font-size: 35px;
+    color: #060212;
+  }
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    /* height larger to have both on top of each other */
+    height: 165px;
+    /* removed the fixed navbar */
+    filter: none;
+  }
+  .homeandabout {
+    /* bring it to the top */
+    /* order: 1; */
+    height: 75px;
+    width: 100%;
+    /* instead make this be the new fixed one */
+    /* ok this wont work as long as I had the filter on topnav. For now I will keep the filter over the fixed positoin */
+    /* position: fixed;
+    top: 0;
+    z-index: 999;*/
+    filter: drop-shadow(4px 0px 2px rgb(67, 66, 66));
+  }
+  .breadcrumbs {
+    background-color: #eee;
+    width: 100%;
+    flex: none;
+
+    /* margin top needs to be added since home and about is now fixed position */
+
+    height: 90px;
+    order: 2;
+
+    /*  */
+  }
+  .breadcrumbs ul {
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+}

@@ -1,0 +1,113 @@
+// This is a partial which contains all the styling for the statscontainers, which are
+// boxes that can have stats in them
+
+@mixin flexrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@mixin flexcol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@mixin blackborder {
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+.minimainsite {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex: 1 1 350px;
+  border-top: 10px solid rgba(56, 121, 232, 0.652);
+  border-bottom: 10px solid rgba(56, 121, 232, 0.652);
+
+  .leftcontent {
+    /* this affects the width */
+    flex: 40%;
+    background-color: #ffffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 25px;
+    order: 2;
+
+    @media screen and (max-width: 1135px) {
+      // put it first
+      order: 0;
+    }
+
+    .excelblock {
+      border-bottom: 5px solid #153f66;
+      border-top: 2px solid #eee;
+      border-radius: 15px;
+      width: 92%;
+      padding: 20px 29px;
+
+      & h3 {
+        color: #284dbc;
+      }
+      .exceldescription {
+        margin-left: 20px;
+        a {
+          font-style: italic;
+          font-weight: 500;
+          color: #5dabf3;
+          &:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 4px; /* moves the underline 4px below the text */
+          }
+        }
+
+        a:visited,
+        a:active,
+        a:focus {
+          color: inherit; /* uses the surrounding text color */
+          text-decoration: none; /* removes underline */
+          font-weight: inherit; /* keeps normal text weight */
+          cursor: default; /* makes it act less like a link */
+          outline: none; /* removes focus outline */
+        }
+      }
+    }
+  }
+
+  .rightcontent {
+    flex: 60%;
+    background-color: rgba(10, 94, 60, 0.515);
+    padding: 30px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    order: 1;
+    height: auto;
+
+    img {
+      width: 95%;
+      height: auto;
+      border-radius: 20px;
+    }
+  }
+}
+
+// add this back later:
+
+// main stuff here
+.sectioncontainer {
+  @include flexcol;
+  @include blackborder;
+  width: 100%;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="Explore Visualizations and Tabular Data for all 141 Degrees at UT Austin"
+    />
+
+    <meta
+      name="keywords"
+      content="degree, major, UT Austin, degreeview, course diagrams, course excel files, degree stats, csv, .xlsx,pdf"
+    />
+
+    <meta name="author" content="DegreeView" />
+    <!-- end seo -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="metaassets/site_favicon.png" type="image/png" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S06MYR1FV6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S06MYR1FV6");
+    </script>
+
+    <title>Home - DegreeView</title>
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="static/css/stateindex.css" />
+
+    <!-- animation stylesheet -->
+    <link rel="stylesheet" href="static/css/animations.css" />
+    <!-- Barlow Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,100;1,300;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons ( download icon from here is used) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- this is just testing -->
+
+    <link rel="stylesheet" href="cssfiles/filterchaos.css" />
+  </head>
+  <body>
+    <!-- this div basically has the entire site in it. Flex direction column -->
+    <div class="sitecontainer">
+      <!-- 
+      
+      -->
+      <div class="abovemainsite">
+        <div class="topnav">
+          <!-- this is empty but is just on the top to take up space for the color
+           KEEP THIS-->
+        </div>
+        <div class="biglogobox">
+          <img
+            class="biglogo"
+            src="metaassets/logo5.png"
+            alt=""
+            id="biglogoid"
+          />
+        </div>
+      </div>
+      <!-- mainsite
+        contains right and left sections
+      -->
+      <div class="mainsite">
+        <!-- intro box that is -->
+        <div class="introbox">
+          <div class="intro-paragraph">
+            <p>Homepage for Texas Schools</p>
+          </div>
+        </div>
+        <!-- 3 buttons -->
+        <div class="middlenav">
+          <nav class="home_random_stats">
+            <ul>
+              <!-- keep in mind the entire li is clickable here -->
+              <li><a href="aboutpage.html">About</a></li>
+              <li id="randompagebutton">
+                <a id="randomlink" href="">Random Page</a>
+              </li>
+              <li><a href="ut-stats.html">Stats</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- now have the list of schools -->
+        <ul class="schoolist-ul">
+          <li class="schoolist-column">
+            <a href="utaustin-site/degreeplansindex.html"
+              ><div class="schoolnamediv">UT Austin</div></a
+            >
+          </li>
+          <li class="schoolist-column">
+            <a href="redmccombsschoolofbusiness/redmccombsschoolofbusiness.html"
+              ><div class="schoolnamediv">UT Dallas</div></a
+            >
+          </li>
+          <li class="schoolist-column">
+            <a href=""><div class="schoolnamediv">UTSA</div></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- end intro box -->
+
+      <!-- end left content -->
+
+      <!-- end main mainsite -->
+      <!-- this goes under main site( no way) -->
+      <div class="undermainsite"></div>
+      <!-- footer now -->
+      <footer>
+        <div class="footerleft">
+          <div class="links">
+            <a href="aboutpage.html">About</a>
+
+            <a href="#biglogoid">Home</a>
+          </div>
+          <p id="statement">DegreeView 2025</p>
+        </div>
+
+        <div class="footerright">
+          <img
+            id="smalllogo"
+            src="metaassets/minilogo.png"
+            alt="smalldegreeviewlogo"
+          />
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

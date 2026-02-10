@@ -1,0 +1,246 @@
+/* define reusable styles */
+:root {
+  --main-color: #3498db;
+  --padding: 30px;
+  --contrastcolor: #bc401a;
+  --buttonsize: 100px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  filter: contrast(110%);
+  filter: saturate(110%);
+}
+
+/* 
+
+This is all nav bar stuff:*/
+/* end nav bar stuff */
+.sitecontainer {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex: 1 1;
+}
+
+.topdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 40px;
+  border: 4px solid rgb(50, 28, 28);
+}
+.topdiv .texteffects {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 26px;
+       column-gap: 26px;
+}
+
+.copyandshare {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 26px;
+       column-gap: 26px;
+}
+
+.copyandshare i {
+  font-size: 30px;
+}
+
+.copyandshare i:hover {
+  cursor: pointer;
+}
+
+div.animationpanel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 40px 10px;
+  /* collapsed state */
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 40px; /* no vertical padding when closed */
+  background: #f2f2f2;
+  transition: max-height 1s ease, padding 0.2s ease border 0.2s ease;
+}
+div.animationpanel .animationoptions {
+  border: 4px solid navy;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+div.animationpanel .animationoptions button {
+  background-color: blue;
+  color: white;
+  width: auto;
+  font-weight: bold;
+  height: 40px;
+  padding: 0px 25px;
+  border: 5px solid white;
+  border-radius: 25px;
+  transition: color 0.5;
+}
+div.animationpanel .animationoptions button:hover {
+  background-color: navy;
+  cursor: pointer;
+}
+div.animationpanel .fa-square-xmark {
+  color: rgb(177, 48, 42);
+  font-size: 35px;
+  transition: color 0.5s;
+}
+div.animationpanel .fa-square-xmark:hover {
+  cursor: pointer;
+  color: rgb(237, 101, 101);
+}
+
+.animationpanel.open {
+  max-height: 300px; /* expand (big enough to fit content) */
+  border: 4px solid rgb(50, 28, 28);
+  padding: 40px;
+}
+
+.outputcontainer {
+  width: 90vw;
+  height: auto;
+  border: 4px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1;
+  overflow: hidden;
+  padding: 10px;
+  background-color: #4986e8;
+}
+
+p.wordwaverow {
+  /* style the output: hell yeah */
+  color: #000;
+  color: white;
+  white-space: pre;
+  /* create font changing animations  */
+  font-family: monospace; /* ensures each character, including spaces, is same width */
+  font-family: Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 23px;
+  margin: 0px;
+  letter-spacing: 3px;
+}
+
+/* order var */
+.bottomdiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 90vw;
+  padding: 40px;
+  border: 4px solid red;
+}
+.bottomdiv table {
+  border: 4px solid var(--main-color);
+  border-collapse: collapse;
+}
+.bottomdiv div.specstablediv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0px;
+  border: 4px solid black;
+  width: 50%;
+}
+.bottomdiv div.specstablediv #updateform {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.bottomdiv div.nestedbottomdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  border: 4px solid red;
+  gap: 30px;
+}
+.bottomdiv div.nestedbottomdiv #stylingtable {
+  flex: 1;
+  min-width: 100%;
+}
+.bottomdiv div.nestedbottomdiv .linksbox {
+  flex: 1;
+  min-width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  border: 3px solid green;
+}
+.bottomdiv div.nestedbottomdiv .linksbox a button {
+  width: 150px;
+  height: 75px;
+  border-radius: 25px;
+  background-color: rgb(35, 113, 40);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: background-color 0.4s;
+}
+.bottomdiv div.nestedbottomdiv .linksbox a button:hover {
+  background-color: rgb(78, 169, 83);
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 1230px) {
+  .bottomdiv div.nestedbottomdiv {
+    gap: 30px;
+  }
+  .bottomdiv div.nestedbottomdiv #stylingtable {
+    width: 100%;
+  }
+  .bottomdiv div.nestedbottomdiv .linksbox {
+    width: 100%;
+  }
+}/*# sourceMappingURL=reference.css.map */

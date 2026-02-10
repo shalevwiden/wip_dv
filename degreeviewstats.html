@@ -1,4 +1,3 @@
-<!-- the main stats page for the whole site -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -36,7 +35,7 @@
     <title>DegreeView Stats</title>
 
     <!-- main stylesheet -->
-    <link rel="stylesheet" href="../static/css/dv_main.css" />
+    <link rel="stylesheet" href="static/css/degreeviewstats.css" />
 
     <!-- animation stylesheet -->
     <link rel="stylesheet" href="cssfiles/animations.css" />
@@ -68,7 +67,7 @@
   </head>
   <body>
     <!-- this div basically has the entire site in it. Flex direction column -->
-    <div class="sitecontainer" id="dvstats">
+    <div class="sitecontainer">
       <!-- 
       
       -->
@@ -338,23 +337,24 @@
         </button>
       </div>
       <footer>
-  <div class="footerleft">
-    <div class="links">
-      <a href="about.html">About</a>
+        <div class="footerleft">
+          <div class="links">
+            <a href="about.html">About</a>
 
-      <a href="index.html">Home</a>
+            <a href="index.html">Home</a>
+          </div>
+          <p id="statement">DegreeView 2025</p>
+        </div>
 
-      <a href="exceltemplates.html">Excel Templates Breakdown</a>
-
-      <a href="degreeviewstats.html">DegreeView Stats</a>
-    </div>
-  </div>
-
-  <div class="footerright">
-    <img id="smalllogo" src="https://storage.googleapis.com/degreeview/degreeviewimages/minilogo.png" alt="smalldegreeviewlogo" />
-    <p id="statement">DegreeView 2026</p>
-  </div>
-</footer>
+        <div class="footerright">
+          <img
+            id="smalllogo"
+            src="metaassets/minilogo.png"
+            alt="smalldegreeviewlogo"
+          />
+        </div>
+        <!--  -->
+      </footer>
     </div>
     <script src="javascript_files/headingcolorchange.js"></script>
     <!-- sheet js stuff -->
